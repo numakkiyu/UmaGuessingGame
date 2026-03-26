@@ -1,0 +1,1000 @@
+{
+  "source_url": "https://zh.moegirl.org.cn/%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby/%E7%99%BB%E5%9C%BA%E4%BA%BA%E7%89%A9",
+  "generated_at": "2026-03-25T05:02:36.684Z",
+  "moegirl_character_count": 141,
+  "local_character_count": 141,
+  "renamed_count": 141,
+  "unmatched_page_items": [],
+  "naming_rule": "NNN_id.json",
+  "items": [
+    {
+      "order": 1,
+      "name_zh": "特别周",
+      "name_jp": "スペシャルウィーク",
+      "official_en": "Special Week",
+      "file_name": "001_Special_Week.json"
+    },
+    {
+      "order": 2,
+      "name_zh": "无声铃鹿",
+      "name_jp": "サイレンススズカ",
+      "official_en": "Silence Suzuka",
+      "file_name": "002_Silence_Suzuka.json"
+    },
+    {
+      "order": 3,
+      "name_zh": "东海帝皇",
+      "name_jp": "トウカイテイオー",
+      "official_en": "Tokai Teio",
+      "file_name": "003_Tokai_Teio.json"
+    },
+    {
+      "order": 4,
+      "name_zh": "丸善斯基",
+      "name_jp": "マルゼンスキー",
+      "official_en": "Maruzensky",
+      "file_name": "004_Maruzensky.json"
+    },
+    {
+      "order": 5,
+      "name_zh": "富士奇迹",
+      "name_jp": "フジキセキ",
+      "official_en": "Fuji Kiseki",
+      "file_name": "005_Fuji_Kiseki.json"
+    },
+    {
+      "order": 6,
+      "name_zh": "小栗帽",
+      "name_jp": "オグリキャップ",
+      "official_en": "Oguri Cap",
+      "file_name": "006_Oguri_Cap.json"
+    },
+    {
+      "order": 7,
+      "name_zh": "黄金船",
+      "name_jp": "ゴールドシップ",
+      "official_en": "Gold Ship",
+      "file_name": "007_Gold_Ship.json"
+    },
+    {
+      "order": 8,
+      "name_zh": "伏特加",
+      "name_jp": "ウオッカ",
+      "official_en": "Vodka",
+      "file_name": "008_Vodka.json"
+    },
+    {
+      "order": 9,
+      "name_zh": "大和赤骥",
+      "name_jp": "ダイワスカーレット",
+      "official_en": "Daiwa Scarlet",
+      "file_name": "009_Daiwa_Scarlet.json"
+    },
+    {
+      "order": 10,
+      "name_zh": "大树快车",
+      "name_jp": "タイキシャトル",
+      "official_en": "Taiki Shuttle",
+      "file_name": "010_Taiki_Shuttle.json"
+    },
+    {
+      "order": 11,
+      "name_zh": "草上飞",
+      "name_jp": "グラスワンダー",
+      "official_en": "Grass Wonder",
+      "file_name": "011_Grass_Wonder.json"
+    },
+    {
+      "order": 12,
+      "name_zh": "菱亚马逊",
+      "name_jp": "ヒシアマゾン",
+      "official_en": "Hishi Amazon",
+      "file_name": "012_Hishi_Amazon.json"
+    },
+    {
+      "order": 13,
+      "name_zh": "目白麦昆",
+      "name_jp": "メジロマックイーン",
+      "official_en": "Mejiro McQueen",
+      "file_name": "013_Mejiro_McQueen.json"
+    },
+    {
+      "order": 14,
+      "name_zh": "神鹰",
+      "name_jp": "エルコンドルパサー",
+      "official_en": "El Condor Pasa",
+      "file_name": "014_El_Condor_Pasa.json"
+    },
+    {
+      "order": 15,
+      "name_zh": "好歌剧",
+      "name_jp": "テイエムオペラオー",
+      "official_en": "T.M. Opera O",
+      "file_name": "015_T.M._Opera_O.json"
+    },
+    {
+      "order": 16,
+      "name_zh": "成田白仁",
+      "name_jp": "ナリタブライアン",
+      "official_en": "Narita Brian",
+      "file_name": "016_Narita_Brian.json"
+    },
+    {
+      "order": 17,
+      "name_zh": "鲁道夫象征",
+      "name_jp": "シンボリルドルフ",
+      "official_en": "Symboli Rudolf",
+      "file_name": "017_Symboli_Rudolf.json"
+    },
+    {
+      "order": 18,
+      "name_zh": "气槽",
+      "name_jp": "エアグルーヴ",
+      "official_en": "Air Groove",
+      "file_name": "018_Air_Groove.json"
+    },
+    {
+      "order": 19,
+      "name_zh": "爱丽数码",
+      "name_jp": "アグネスデジタル",
+      "official_en": "Agnes Digital",
+      "file_name": "019_Agnes_Digital.json"
+    },
+    {
+      "order": 20,
+      "name_zh": "青云天空",
+      "name_jp": "セイウンスカイ",
+      "official_en": "Seiun Sky",
+      "file_name": "020_Seiun_Sky.json"
+    },
+    {
+      "order": 21,
+      "name_zh": "玉藻十字",
+      "name_jp": "タマモクロス",
+      "official_en": "Tamamo Cross",
+      "file_name": "021_Tamamo_Cross.json"
+    },
+    {
+      "order": 22,
+      "name_zh": "美妙姿势",
+      "name_jp": "ファインモーション",
+      "official_en": "Fine Motion",
+      "file_name": "022_Fine_Motion.json"
+    },
+    {
+      "order": 23,
+      "name_zh": "琵琶晨光",
+      "name_jp": "ビワハヤヒデ",
+      "official_en": "Biwa Hayahide",
+      "file_name": "023_Biwa_Hayahide.json"
+    },
+    {
+      "order": 24,
+      "name_zh": "摩耶重炮",
+      "name_jp": "マヤノトップガン",
+      "official_en": "Mayano Top Gun",
+      "file_name": "024_Mayano_Top_Gun.json"
+    },
+    {
+      "order": 25,
+      "name_zh": "曼城茶座",
+      "name_jp": "マンハッタンカフェ",
+      "official_en": "Manhattan Cafe",
+      "file_name": "025_Manhattan_Cafe.json"
+    },
+    {
+      "order": 26,
+      "name_zh": "美浦波旁",
+      "name_jp": "ミホノブルボン",
+      "official_en": "Mihono Bourbon",
+      "file_name": "026_Mihono_Bourbon.json"
+    },
+    {
+      "order": 27,
+      "name_zh": "目白赖恩",
+      "name_jp": "メジロライアン",
+      "official_en": "Mejiro Ryan",
+      "file_name": "027_Mejiro_Ryan.json"
+    },
+    {
+      "order": 28,
+      "name_zh": "菱曙",
+      "name_jp": "ヒシアケボノ",
+      "official_en": "Hishi Akebono",
+      "file_name": "028_Hishi_Akebono.json"
+    },
+    {
+      "order": 29,
+      "name_zh": "雪之美人",
+      "name_jp": "ユキノビジン",
+      "official_en": "Yukino Bijin",
+      "file_name": "029_Yukino_Bijin.json"
+    },
+    {
+      "order": 30,
+      "name_zh": "米浴",
+      "name_jp": "ライスシャワー",
+      "official_en": "Rice Shower",
+      "file_name": "030_Rice_Shower.json"
+    },
+    {
+      "order": 31,
+      "name_zh": "艾尼斯风神",
+      "name_jp": "アイネスフウジン",
+      "official_en": "Ines Fujin",
+      "file_name": "031_Ines_Fujin.json"
+    },
+    {
+      "order": 32,
+      "name_zh": "爱丽速子",
+      "name_jp": "アグネスタキオン",
+      "official_en": "Agnes Tachyon",
+      "file_name": "032_Agnes_Tachyon.json"
+    },
+    {
+      "order": 33,
+      "name_zh": "爱慕织姬",
+      "name_jp": "アドマイヤベガ",
+      "official_en": "Admire Vega",
+      "file_name": "033_Admire_Vega.json"
+    },
+    {
+      "order": 34,
+      "name_zh": "稻荷一",
+      "name_jp": "イナリワン",
+      "official_en": "Inari One",
+      "file_name": "034_Inari_One.json"
+    },
+    {
+      "order": 35,
+      "name_zh": "胜利奖券",
+      "name_jp": "ウイニングチケット",
+      "official_en": "Winning Ticket",
+      "file_name": "035_Winning_Ticket.json"
+    },
+    {
+      "order": 36,
+      "name_zh": "空中神宫",
+      "name_jp": "エアシャカール",
+      "official_en": "Air Shakur",
+      "file_name": "036_Air_Shakur.json"
+    },
+    {
+      "order": 37,
+      "name_zh": "荣进闪耀",
+      "name_jp": "エイシンフラッシュ",
+      "official_en": "Eishin Flash",
+      "file_name": "037_Eishin_Flash.json"
+    },
+    {
+      "order": 38,
+      "name_zh": "真机伶",
+      "name_jp": "カレンチャン",
+      "official_en": "Curren Chan",
+      "file_name": "038_Curren_Chan.json"
+    },
+    {
+      "order": 39,
+      "name_zh": "川上公主",
+      "name_jp": "カワカミプリンセス",
+      "official_en": "Kawakami Princess",
+      "file_name": "039_Kawakami_Princess.json"
+    },
+    {
+      "order": 40,
+      "name_zh": "黄金城",
+      "name_jp": "ゴールドシチー",
+      "official_en": "Gold City",
+      "file_name": "040_Gold_City.json"
+    },
+    {
+      "order": 41,
+      "name_zh": "樱花进王",
+      "name_jp": "サクラバクシンオー",
+      "official_en": "Sakura Bakushin O",
+      "file_name": "041_Sakura_Bakushin_O.json"
+    },
+    {
+      "order": 42,
+      "name_zh": "采珠",
+      "name_jp": "シーキングザパール",
+      "official_en": "Seeking the Pearl",
+      "file_name": "042_Seeking_the_Pearl.json"
+    },
+    {
+      "order": 43,
+      "name_zh": "新光风",
+      "name_jp": "シンコウウインディ",
+      "official_en": "Shinko Windy",
+      "file_name": "043_Shinko_Windy.json"
+    },
+    {
+      "order": 44,
+      "name_zh": "东商变革",
+      "name_jp": "スイープトウショウ",
+      "official_en": "Sweep Tosho",
+      "file_name": "044_Sweep_Tosho.json"
+    },
+    {
+      "order": 45,
+      "name_zh": "超级小海湾",
+      "name_jp": "スーパークリーク",
+      "official_en": "Super Creek",
+      "file_name": "045_Super_Creek.json"
+    },
+    {
+      "order": 46,
+      "name_zh": "醒目飞鹰",
+      "name_jp": "スマートファルコン",
+      "official_en": "Smart Falcon",
+      "file_name": "046_Smart_Falcon.json"
+    },
+    {
+      "order": 47,
+      "name_zh": "荒漠英雄",
+      "name_jp": "ゼンノロブロイ",
+      "official_en": "Zenno Rob Roy",
+      "file_name": "047_Zenno_Rob_Roy.json"
+    },
+    {
+      "order": 48,
+      "name_zh": "东瀛佐敦",
+      "name_jp": "トーセンジョーダン",
+      "official_en": "Tosen Jordan",
+      "file_name": "048_Tosen_Jordan.json"
+    },
+    {
+      "order": 49,
+      "name_zh": "中山庆典",
+      "name_jp": "ナカヤマフェスタ",
+      "official_en": "Nakayama Festa",
+      "file_name": "049_Nakayama_Festa.json"
+    },
+    {
+      "order": 50,
+      "name_zh": "成田大进",
+      "name_jp": "ナリタタイシン",
+      "official_en": "Narita Taishin",
+      "file_name": "050_Narita_Taishin.json"
+    },
+    {
+      "order": 51,
+      "name_zh": "西野花",
+      "name_jp": "ニシノフラワー",
+      "official_en": "Nishino Flower",
+      "file_name": "051_Nishino_Flower.json"
+    },
+    {
+      "order": 52,
+      "name_zh": "春乌拉拉",
+      "name_jp": "ハルウララ",
+      "official_en": "Haru Urara",
+      "file_name": "052_Haru_Urara.json"
+    },
+    {
+      "order": 53,
+      "name_zh": "青竹回忆",
+      "name_jp": "バンブーメモリー",
+      "official_en": "Bamboo Memory",
+      "file_name": "053_Bamboo_Memory.json"
+    },
+    {
+      "order": 54,
+      "name_zh": "微光飞驹",
+      "name_jp": "ビコーペガサス",
+      "official_en": "Biko Pegasus",
+      "file_name": "054_Biko_Pegasus.json"
+    },
+    {
+      "order": 55,
+      "name_zh": "美丽周日",
+      "name_jp": "マーベラスサンデー",
+      "official_en": "Marvelous Sunday",
+      "file_name": "055_Marvelous_Sunday.json"
+    },
+    {
+      "order": 56,
+      "name_zh": "待兼福来",
+      "name_jp": "マチカネフクキタル",
+      "official_en": "Matikanefukukitaru",
+      "file_name": "056_Matikanefukukitaru.json"
+    },
+    {
+      "order": 57,
+      "name_zh": "千明代表",
+      "name_jp": "ミスターシービー",
+      "official_en": "Mr. C.B.",
+      "file_name": "057_Mr._C.B..json"
+    },
+    {
+      "order": 58,
+      "name_zh": "名将怒涛",
+      "name_jp": "メイショウドトウ",
+      "official_en": "Meisho Doto",
+      "file_name": "058_Meisho_Doto.json"
+    },
+    {
+      "order": 59,
+      "name_zh": "目白多伯",
+      "name_jp": "メジロドーベル",
+      "official_en": "Mejiro Dober",
+      "file_name": "059_Mejiro_Dober.json"
+    },
+    {
+      "order": 60,
+      "name_zh": "优秀素质",
+      "name_jp": "ナイスネイチャ",
+      "official_en": "Nice Nature",
+      "file_name": "060_Nice_Nature.json"
+    },
+    {
+      "order": 61,
+      "name_zh": "帝王光辉",
+      "name_jp": "キングヘイロー",
+      "official_en": "King Halo",
+      "file_name": "061_King_Halo.json"
+    },
+    {
+      "order": 62,
+      "name_zh": "诗歌剧",
+      "name_jp": "マチカネタンホイザ",
+      "official_en": "Matikanetannhauser",
+      "file_name": "062_Matikanetannhauser.json"
+    },
+    {
+      "order": 63,
+      "name_zh": "狄杜斯",
+      "name_jp": "イクノディクタス",
+      "official_en": "Ikuno Dictus",
+      "file_name": "063_Ikuno_Dictus.json"
+    },
+    {
+      "order": 64,
+      "name_zh": "目白善信",
+      "name_jp": "メジロパーマー",
+      "official_en": "Mejiro Palmer",
+      "file_name": "064_Mejiro_Palmer.json"
+    },
+    {
+      "order": 65,
+      "name_zh": "大拓太阳神",
+      "name_jp": "ダイタクヘリオス",
+      "official_en": "Daitaku Helios",
+      "file_name": "065_Daitaku_Helios.json"
+    },
+    {
+      "order": 66,
+      "name_zh": "双涡轮",
+      "name_jp": "ツインターボ",
+      "official_en": "Twin Turbo",
+      "file_name": "066_Twin_Turbo.json"
+    },
+    {
+      "order": 67,
+      "name_zh": "里见光钻",
+      "name_jp": "サトノダイヤモンド",
+      "official_en": "Satono Diamond",
+      "file_name": "067_Satono_Diamond.json"
+    },
+    {
+      "order": 68,
+      "name_zh": "北部玄驹",
+      "name_jp": "キタサンブラック",
+      "official_en": "Kitasan Black",
+      "file_name": "068_Kitasan_Black.json"
+    },
+    {
+      "order": 69,
+      "name_zh": "樱花千代王",
+      "name_jp": "サクラチヨノオー",
+      "official_en": "Sakura Chiyono O",
+      "file_name": "069_Sakura_Chiyono_O.json"
+    },
+    {
+      "order": 70,
+      "name_zh": "天狼星象征",
+      "name_jp": "シリウスシンボリ",
+      "official_en": "Sirius Symboli",
+      "file_name": "070_Sirius_Symboli.json"
+    },
+    {
+      "order": 71,
+      "name_zh": "目白雅丹",
+      "name_jp": "メジロアルダン",
+      "official_en": "Mejiro Ardan",
+      "file_name": "071_Mejiro_Ardan.json"
+    },
+    {
+      "order": 72,
+      "name_zh": "八重无敌",
+      "name_jp": "ヤエノムテキ",
+      "official_en": "Yaeno Muteki",
+      "file_name": "072_Yaeno_Muteki.json"
+    },
+    {
+      "order": 73,
+      "name_zh": "鹤丸刚志",
+      "name_jp": "ツルマルツヨシ",
+      "official_en": "Tsurumaru Tsuyoshi",
+      "file_name": "073_Tsurumaru_Tsuyoshi.json"
+    },
+    {
+      "order": 74,
+      "name_zh": "目白光明",
+      "name_jp": "メジロブライト",
+      "official_en": "Mejiro Bright",
+      "file_name": "074_Mejiro_Bright.json"
+    },
+    {
+      "order": 75,
+      "name_zh": "谋勇兼备",
+      "name_jp": "デアリングタクト",
+      "official_en": "Daring Tact",
+      "file_name": "075_Daring_Tact.json"
+    },
+    {
+      "order": 76,
+      "name_zh": "樱花桂冠",
+      "name_jp": "サクラローレル",
+      "official_en": "Sakura Laurel",
+      "file_name": "076_Sakura_Laurel.json"
+    },
+    {
+      "order": 77,
+      "name_zh": "成田路",
+      "name_jp": "ナリタトップロード",
+      "official_en": "Narita Top Road",
+      "file_name": "077_Narita_Top_Road.json"
+    },
+    {
+      "order": 78,
+      "name_zh": "也文摄辉",
+      "name_jp": "ヤマニンゼファー",
+      "official_en": "Yamanin Zephyr",
+      "file_name": "078_Yamanin_Zephyr.json"
+    },
+    {
+      "order": 79,
+      "name_zh": "狂怒乐章",
+      "name_jp": "フリオーソ",
+      "official_en": "Furioso",
+      "file_name": "079_Furioso.json"
+    },
+    {
+      "order": 80,
+      "name_zh": "创升",
+      "name_jp": "トランセンド",
+      "official_en": "Transcend",
+      "file_name": "080_Transcend.json"
+    },
+    {
+      "order": 81,
+      "name_zh": "希望之城",
+      "name_jp": "エスポワールシチー",
+      "official_en": "Espoir City",
+      "file_name": "081_Espoir_City.json"
+    },
+    {
+      "order": 82,
+      "name_zh": "北方飞翔",
+      "name_jp": "ノースフライト",
+      "official_en": "North Flight",
+      "file_name": "082_North_Flight.json"
+    },
+    {
+      "order": 83,
+      "name_zh": "吉兆",
+      "name_jp": "シンボリクリスエス",
+      "official_en": "Symboli Kris S",
+      "file_name": "083_Symboli_Kris_S.json"
+    },
+    {
+      "order": 84,
+      "name_zh": "谷水琴蕾",
+      "name_jp": "タニノギムレット",
+      "official_en": "Tanino Gimlet",
+      "file_name": "084_Tanino_Gimlet.json"
+    },
+    {
+      "order": 85,
+      "name_zh": "第一红宝石",
+      "name_jp": "ダイイチルビー",
+      "official_en": "Daiichi Ruby",
+      "file_name": "085_Daiichi_Ruby.json"
+    },
+    {
+      "order": 86,
+      "name_zh": "目白高峰",
+      "name_jp": "メジロラモーヌ",
+      "official_en": "Mejiro Ramonu",
+      "file_name": "086_Mejiro_Ramonu.json"
+    },
+    {
+      "order": 87,
+      "name_zh": "真弓快车",
+      "name_jp": "アストンマーチャン",
+      "official_en": "Aston Machan",
+      "file_name": "087_Aston_Machan.json"
+    },
+    {
+      "order": 88,
+      "name_zh": "里见皇冠",
+      "name_jp": "サトノクラウン",
+      "official_en": "Satono Crown",
+      "file_name": "088_Satono_Crown.json"
+    },
+    {
+      "order": 89,
+      "name_zh": "高尚俊逸",
+      "name_jp": "シュヴァルグラン",
+      "official_en": "Cheval Grand",
+      "file_name": "089_Cheval_Grand.json"
+    },
+    {
+      "order": 90,
+      "name_zh": "极峰",
+      "name_jp": "ヴィルシーナ",
+      "official_en": "Verxina",
+      "file_name": "090_Verxina.json"
+    },
+    {
+      "order": 91,
+      "name_zh": "强击",
+      "name_jp": "ヴィブロス",
+      "official_en": "Vivlos",
+      "file_name": "091_Vivlos.json"
+    },
+    {
+      "order": 92,
+      "name_zh": "凯斯奇迹",
+      "name_jp": "ケイエスミラクル",
+      "official_en": "K.S.Miracle",
+      "file_name": "092_K.S.Miracle.json"
+    },
+    {
+      "order": 93,
+      "name_zh": "烈焰快驹",
+      "name_jp": "ダンツフレーム",
+      "official_en": "Dantsu Flame",
+      "file_name": "093_Dantsu_Flame.json"
+    },
+    {
+      "order": 94,
+      "name_zh": "森林宝穴",
+      "name_jp": "ジャングルポケット",
+      "official_en": "Jungle Pocket",
+      "file_name": "094_Jungle_Pocket.json"
+    },
+    {
+      "order": 95,
+      "name_zh": "信念",
+      "name_jp": "ビリーヴ",
+      "official_en": "Believe",
+      "file_name": "095_Believe.json"
+    },
+    {
+      "order": 96,
+      "name_zh": "莫名其妙",
+      "name_jp": "ノーリーズン",
+      "official_en": "No Reason",
+      "file_name": "096_No_Reason.json"
+    },
+    {
+      "order": 97,
+      "name_zh": "爱如往昔",
+      "name_jp": "スティルインラブ",
+      "official_en": "Still in Love",
+      "file_name": "097_Still_in_Love.json"
+    },
+    {
+      "order": 98,
+      "name_zh": "小林历奇",
+      "name_jp": "コパノリッキー",
+      "official_en": "Copano Rickey",
+      "file_name": "098_Copano_Rickey.json"
+    },
+    {
+      "order": 99,
+      "name_zh": "北港火山",
+      "name_jp": "ホッコータルマエ",
+      "official_en": "Hokko Tarumae",
+      "file_name": "099_Hokko_Tarumae.json"
+    },
+    {
+      "order": 100,
+      "name_zh": "奇锐骏",
+      "name_jp": "ワンダーアキュート",
+      "official_en": "Wonder Acute",
+      "file_name": "100_Wonder_Acute.json"
+    },
+    {
+      "order": 101,
+      "name_zh": "大森逊",
+      "name_jp": "サムソンビッグ",
+      "official_en": "Samson Big",
+      "file_name": "101_Samson_Big.json"
+    },
+    {
+      "order": 102,
+      "name_zh": "万籁争鸣",
+      "name_jp": "サウンズオブアース",
+      "official_en": "Sounds of Earth",
+      "file_name": "102_Sounds_of_Earth.json"
+    },
+    {
+      "order": 103,
+      "name_zh": "罗罗",
+      "name_jp": "ロイスアンドロイス",
+      "official_en": "Royce and Royce",
+      "file_name": "103_Royce_and_Royce.json"
+    },
+    {
+      "order": 104,
+      "name_zh": "葛城王牌",
+      "name_jp": "カツラギエース",
+      "official_en": "Katsuragi Ace",
+      "file_name": "104_Katsuragi_Ace.json"
+    },
+    {
+      "order": 105,
+      "name_zh": "新宇宙",
+      "name_jp": "ネオユニヴァース",
+      "official_en": "Neo Universe",
+      "file_name": "105_Neo_Universe.json"
+    },
+    {
+      "order": 106,
+      "name_zh": "菱钻奇宝",
+      "name_jp": "ヒシミラクル",
+      "official_en": "Hishi Miracle",
+      "file_name": "106_Hishi_Miracle.json"
+    },
+    {
+      "order": 107,
+      "name_zh": "跳舞城",
+      "name_jp": "タップダンスシチー",
+      "official_en": "Tap Dance City",
+      "file_name": "107_Tap_Dance_City.json"
+    },
+    {
+      "order": 108,
+      "name_zh": "大鸣大放",
+      "name_jp": "ドゥラメンテ",
+      "official_en": "Duramente",
+      "file_name": "108_Duramente.json"
+    },
+    {
+      "order": 109,
+      "name_zh": "莱茵力量",
+      "name_jp": "ラインクラフト",
+      "official_en": "Rhein Kraft",
+      "file_name": "109_Rhein_Kraft.json"
+    },
+    {
+      "order": 110,
+      "name_zh": "西沙里奥",
+      "name_jp": "シーザリオ",
+      "official_en": "Cesario",
+      "file_name": "110_Cesario.json"
+    },
+    {
+      "order": 111,
+      "name_zh": "空中救主",
+      "name_jp": "エアメサイア",
+      "official_en": "Air Messiah",
+      "file_name": "111_Air_Messiah.json"
+    },
+    {
+      "order": 112,
+      "name_zh": "勇敢的心",
+      "name_jp": "デアリングハート",
+      "official_en": "Daring Heart",
+      "file_name": "112_Daring_Heart.json"
+    },
+    {
+      "order": 113,
+      "name_zh": "房一魔盒",
+      "name_jp": "フサイチパンドラ",
+      "official_en": "Fusaichi Pandora",
+      "file_name": "113_Fusaichi_Pandora.json"
+    },
+    {
+      "order": 114,
+      "name_zh": "迷人景致",
+      "name_jp": "ブエナビスタ",
+      "official_en": "Buena Vista",
+      "file_name": "114_Buena_Vista.json"
+    },
+    {
+      "order": 115,
+      "name_zh": "黄金巨匠",
+      "name_jp": "オルフェーヴル",
+      "official_en": "Orfevre",
+      "file_name": "115_Orfevre.json"
+    },
+    {
+      "order": 116,
+      "name_zh": "贵妇人",
+      "name_jp": "ジェンティルドンナ",
+      "official_en": "Gentildonna",
+      "file_name": "116_Gentildonna.json"
+    },
+    {
+      "order": 117,
+      "name_zh": "凱旋芭蕾",
+      "name_jp": "ウインバリアシオン",
+      "official_en": "Win Variation",
+      "file_name": "117_Win_Variation.json"
+    },
+    {
+      "order": 118,
+      "name_zh": "爱慕律动",
+      "name_jp": "アドマイヤグルーヴ",
+      "official_en": "Admire Groove",
+      "file_name": "118_Admire_Groove.json"
+    },
+    {
+      "order": 119,
+      "name_zh": "梦之旅",
+      "name_jp": "ドリームジャーニー",
+      "official_en": "Dream Journey",
+      "file_name": "119_Dream_Journey.json"
+    },
+    {
+      "order": 120,
+      "name_zh": "金镇之光",
+      "name_jp": "カルストンライトオ",
+      "official_en": "Calstone Light O",
+      "file_name": "120_Calstone_Light_O.json"
+    },
+    {
+      "order": 121,
+      "name_zh": "杜兰达尔",
+      "name_jp": "デュランダル",
+      "official_en": "Durandal",
+      "file_name": "121_Durandal.json"
+    },
+    {
+      "order": 122,
+      "name_zh": "吹波糖",
+      "name_jp": "バブルガムフェロー",
+      "official_en": "Bubble Gum Fellow",
+      "file_name": "122_Bubble_Gum_Fellow.json"
+    },
+    {
+      "order": 123,
+      "name_zh": "樱花千岁王",
+      "name_jp": "サクラチトセオー",
+      "official_en": "Sakura Chitose O",
+      "file_name": "123_Sakura_Chitose_O.json"
+    },
+    {
+      "order": 124,
+      "name_zh": "超常骏骥",
+      "name_jp": "フェノーメノ",
+      "official_en": "Fenomeno",
+      "file_name": "124_Fenomeno.json"
+    },
+    {
+      "order": 125,
+      "name_zh": "防爆装束",
+      "name_jp": "ブラストワンピース",
+      "official_en": "Blast Onepiece",
+      "file_name": "125_Blast_Onepiece.json"
+    },
+    {
+      "order": 126,
+      "name_zh": "杏目",
+      "name_jp": "アーモンドアイ",
+      "official_en": "Almond Eye",
+      "file_name": "126_Almond_Eye.json"
+    },
+    {
+      "order": 127,
+      "name_zh": "旺紫丁",
+      "name_jp": "ラッキーライラック",
+      "official_en": "Lucky Lilac",
+      "file_name": "127_Lucky_Lilac.json"
+    },
+    {
+      "order": 128,
+      "name_zh": "放声欢呼",
+      "name_jp": "グランアレグリア",
+      "official_en": "Gran Alegria",
+      "file_name": "128_Gran_Alegria.json"
+    },
+    {
+      "order": 129,
+      "name_zh": "唯独爱你",
+      "name_jp": "ラヴズオンリーユー",
+      "official_en": "Loves Only You",
+      "file_name": "129_Loves_Only_You.json"
+    },
+    {
+      "order": 130,
+      "name_zh": "创世驹",
+      "name_jp": "クロノジェネシス",
+      "official_en": "Chrono Genesis",
+      "file_name": "130_Chrono_Genesis.json"
+    },
+    {
+      "order": 131,
+      "name_zh": "机伶金花",
+      "name_jp": "カレンブーケドール",
+      "official_en": "Curren Bouquetd'or",
+      "file_name": "131_Curren_Bouquetdor.json"
+    },
+    {
+      "order": 132,
+      "name_zh": "黄金旅程",
+      "name_jp": "ステイゴールド",
+      "official_en": "Stay Gold",
+      "file_name": "132_Stay_Gold.json"
+    },
+    {
+      "order": 133,
+      "name_zh": "红色梦想",
+      "name_jp": "レッドディザイア",
+      "official_en": "Red Desire",
+      "file_name": "133_Red_Desire.json"
+    },
+    {
+      "order": 134,
+      "name_zh": "神业",
+      "name_jp": "キセキ",
+      "official_en": "Kiseki",
+      "file_name": "134_Kiseki.json"
+    },
+    {
+      "order": 135,
+      "name_zh": "青春永驻",
+      "name_jp": "フォーエバーヤング",
+      "official_en": "Forever Young",
+      "file_name": "135_Forever_Young.json"
+    },
+    {
+      "order": 136,
+      "name_zh": "洛林军歌",
+      "name_jp": "マルシュロレーヌ",
+      "official_en": "Marche Lorraine",
+      "file_name": "136_Marche_Lorraine.json"
+    },
+    {
+      "order": 137,
+      "name_zh": "神威启示",
+      "name_jp": "エピファネイア",
+      "official_en": "Epiphaneia",
+      "file_name": "137_Epiphaneia.json"
+    },
+    {
+      "order": 138,
+      "name_zh": "标志名驹",
+      "name_jp": "ロゴタイプ",
+      "official_en": "Logotype",
+      "file_name": "138_Logotype.json"
+    },
+    {
+      "order": 139,
+      "name_zh": "比萨胜驹",
+      "name_jp": "ヴィクトワールピサ",
+      "official_en": "Victoire Pisa",
+      "file_name": "139_Victoire_Pisa.json"
+    },
+    {
+      "order": 140,
+      "name_zh": "玫瑰帝国",
+      "name_jp": "ローズキングダム",
+      "official_en": "Rose Kingdom",
+      "file_name": "140_Rose_Kingdom.json"
+    },
+    {
+      "order": 141,
+      "name_zh": "统治地位",
+      "name_jp": "ルーラーシップ",
+      "official_en": "Rulership",
+      "file_name": "141_Rulership.json"
+    }
+  ],
+  "file_naming_rule": "NNN_Official_English.json",
+  "official_english_source": "https://umamusume.jp/character/"
+}

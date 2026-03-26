@@ -1,0 +1,258 @@
+{
+  "id": "adomaiyaguruuvu",
+  "order": 118,
+  "file_name": "118_Admire_Groove.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "爱慕律动",
+    "zh_tw": null,
+    "jp": "アドマイヤグルーヴ",
+    "en": "Admire Groove"
+  },
+  "aliases": [
+    "爱慕律动",
+    "アドマイヤグルーヴ",
+    "Admire Groove",
+    "【氷結晶の静域】アドマイヤグルーヴ",
+    "氷結晶の静域"
+  ],
+  "profile": {
+    "birthday": "04-30",
+    "birthday_raw": "4月30日",
+    "birthday_day_of_year": 121,
+    "height_cm": 165,
+    "height_raw": "165cm",
+    "cv": "铃木日菜",
+    "cv_raw": "铃木日菜",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "G",
+      "nige": "G",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "C"
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426",
+    "image_urls": [
+      "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426"
+    ],
+    "image_local_path": "/api/assets/adomaiyaguruuvu-thumb",
+    "asset_id": "adomaiyaguruuvu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "登场人物补种子",
+      "角色详情页",
+      "登场人物",
+      "繁中服角色详情页"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E5%BE%8B%E5%8A%A8",
+      "https://zh.moegirl.org.cn/index.php?title=%E7%88%B1%E6%85%95%E5%BE%8B%E5%8A%A8&action=edit&redlink=1",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B0%B7%E7%B5%90%E6%99%B6%E3%81%AE%E9%9D%99%E5%9F%9F%E3%80%91%E3%82%A2%E3%83%89%E3%83%9E%E3%82%A4%E3%83%A4%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%B4"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "她始终秉持着『无需虚伪的亲近』『外界评价不过是杂音』的信念，以近乎苦行僧般的姿态不断磨砺自我，宛如孤高之花 ——然而，在这冰封般的美丽背后，似乎还隐藏着更深的渴求……？",
+    "intro_paragraphs": [
+      "她始终秉持着『无需虚伪的亲近』『外界评价不过是杂音』的信念，以近乎苦行僧般的姿态不断磨砺自我，宛如孤高之花",
+      "——然而，在这冰封般的美丽背后，似乎还隐藏着更深的渴求……？"
+    ],
+    "quote_raw": "自幼才华横溢，被誉为神童的精英赛马娘。",
+    "weight_desc_raw": "漂亮的完美状态",
+    "bust_raw": "88",
+    "waist_raw": "57",
+    "hip_raw": "84"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "moegirl",
+      "source_page": "登场人物补种子",
+      "raw_name_zh": "爱慕律动",
+      "raw_name_jp": "アドマイヤグルーヴ",
+      "character_id": null,
+      "birthday_raw": "4月30日",
+      "height_raw": "165cm",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "84",
+      "whr_raw": null,
+      "bust_waist_diff_raw": null,
+      "body_type_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E5%BE%8B%E5%8A%A8"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E5%BE%8B%E5%8A%A8",
+      "raw_name_zh": "爱慕律动",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E5%BE%8B%E5%8A%A8"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B0%B7%E7%B5%90%E6%99%B6%E3%81%AE%E9%9D%99%E5%9F%9F%E3%80%91%E3%82%A2%E3%83%89%E3%83%9E%E3%82%A4%E3%83%A4%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%B4",
+      "raw_name_zh": "爱慕律动",
+      "raw_name_jp": null,
+      "translated_name_raw": "爱慕律动",
+      "nickname_raw": null,
+      "page_title": "【氷結晶の静域】アドマイヤグルーヴ",
+      "page_title_aliases": [
+        "【氷結晶の静域】アドマイヤグルーヴ",
+        "アドマイヤグルーヴ",
+        "氷結晶の静域"
+      ],
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "introduction_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426",
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B0%B7%E7%B5%90%E6%99%B6%E3%81%AE%E9%9D%99%E5%9F%9F%E3%80%91%E3%82%A2%E3%83%89%E3%83%9E%E3%82%A4%E3%83%A4%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%B4",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "爱慕律动",
+      "raw_name_jp": "アドマイヤグルーヴ",
+      "cv_raw": "铃木日菜",
+      "birthday_raw": "4月30日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "漂亮的完美状态",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "84",
+      "quote_raw": "自幼才华横溢，被誉为神童的精英赛马娘。",
+      "intro_paragraphs": [
+        "她始终秉持着『无需虚伪的亲近』『外界评价不过是杂音』的信念，以近乎苦行僧般的姿态不断磨砺自我，宛如孤高之花",
+        "——然而，在这冰封般的美丽背后，似乎还隐藏着更深的渴求……？"
+      ],
+      "introduction": "她始终秉持着『无需虚伪的亲近』『外界评价不过是杂音』的信念，以近乎苦行僧般的姿态不断磨砺自我，宛如孤高之花\n——然而，在这冰封般的美丽背后，似乎还隐藏着更深的渴求……？",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E7%88%B1%E6%85%95%E5%BE%8B%E5%8A%A8&action=edit&redlink=1",
+      "canonical_name_zh": "爱慕律动",
+      "aliases": [
+        "爱慕律动"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E7%88%B1%E6%85%95%E5%BE%8B%E5%8A%A8&action=edit&redlink=1",
+      "raw_name_zh": "爱慕律动",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "アドマイヤグルーヴ",
+      "raw_name_en": null,
+      "aliases": [
+        "爱慕律动"
+      ],
+      "birthday_raw": "4月30日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "漂亮的完美状态",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "84",
+      "cv_raw": "铃木日菜",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_AdmireGroove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155426"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E7%88%B1%E6%85%95%E5%BE%8B%E5%8A%A8&action=edit&redlink=1"
+    }
+  }
+}

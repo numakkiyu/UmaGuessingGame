@@ -1,0 +1,293 @@
+{
+  "id": "haruurara",
+  "name_zh": "春乌拉拉",
+  "name_jp": "ハルウララ",
+  "aliases": [
+    "【烏菈菈得第一♪】春烏菈菈",
+    "春烏菈菈",
+    "烏菈菈得第一♪",
+    "乌拉拉（うらら）",
+    "不胜战神",
+    "灰流丽[1]",
+    "坏乌拉拉[2]",
+    "春丽",
+    "春乌拉拉",
+    "ハルウララ",
+    "うららん一等賞♪"
+  ],
+  "birthday": "02-27",
+  "birthday_day_of_year": 58,
+  "birthday_raw": "2月27日",
+  "height_cm": 140,
+  "height_raw": "140cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 1,
+  "star_raw": "1",
+  "cv": "首藤志奈",
+  "cv_raw": "首藤志奈",
+  "quote_raw": "“就算一直输一直输，也不会气馁哟！乌~拉拉~♪”",
+  "introduction": "一直在连战连败…是个虽然没有才能，但绝不会消沉的赛马娘。 原本在故乡高知跑步，但是想要更加的开心，以转入特雷森学园为目标。 虽然考试一团糟，但天生的开朗让她顺利地通过了入学面试。 是给了赛马娘们活力，被大家喜爱着的开心果。",
+  "intro_paragraphs": [
+    "一直在连战连败…是个虽然没有才能，但绝不会消沉的赛马娘。",
+    "原本在故乡高知跑步，但是想要更加的开心，以转入特雷森学园为目标。",
+    "虽然考试一团糟，但天生的开朗让她顺利地通过了入学面试。",
+    "是给了赛马娘们活力，被大家喜爱着的开心果。"
+  ],
+  "weight_desc_raw": "微增（但不在意）",
+  "bust_raw": "74",
+  "waist_raw": "51",
+  "hip_raw": "73",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/a/a8/chmt12gxt41vyuxljm25lr4rk1fyb69.png/100px-Chr_icon_1052.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/ly2fkwp8itixuo0bihghmoc24l7x26n.png/100px-Chr_icon_1052_105202_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/3/3d/UPDCH_HaruUrara_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041356",
+    "https://storage.moegirl.org.cn/moegirl/commons/5/50/PID94224318.jpg!/fw/280?v=20211124165540"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a8/chmt12gxt41vyuxljm25lr4rk1fyb69.png/100px-Chr_icon_1052.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/ly2fkwp8itixuo0bihghmoc24l7x26n.png/100px-Chr_icon_1052_105202_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/ly2fkwp8itixuo0bihghmoc24l7x26n.png/100px-Chr_icon_1052_105202_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/3/3d/UPDCH_HaruUrara_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041356"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/5/50/PID94224318.jpg!/fw/280?v=20211124165540",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/3d/UPDCH_HaruUrara_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041356"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E6%98%A5%E4%B9%8C%E6%8B%89%E6%8B%89",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E7%83%8F%E8%8F%88%E8%8F%88%E5%BE%97%E7%AC%AC%E4%B8%80%E2%99%AA%E3%80%91%E6%98%A5%E7%83%8F%E8%8F%88%E8%8F%88",
+    "https://zh.moegirl.org.cn/%E6%98%A5%E4%B8%BD(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "G",
+    "dirt": "A",
+    "sprint": "A",
+    "mile": "B",
+    "medium": "G",
+    "long": "G",
+    "nige": "G",
+    "senko": "G",
+    "sashi": "A",
+    "oikomi": "B"
+  },
+  "surface_group": [
+    "泥地"
+  ],
+  "distance_group": [
+    "短"
+  ],
+  "running_style_group": [
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "春乌拉拉",
+      "character_id": "1052",
+      "birthday_raw": "2月27日",
+      "height_raw": "140",
+      "bust_raw": "74",
+      "waist_raw": "51",
+      "hip_raw": "73",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "23",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a8/chmt12gxt41vyuxljm25lr4rk1fyb69.png/100px-Chr_icon_1052.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a8/chmt12gxt41vyuxljm25lr4rk1fyb69.png/100px-Chr_icon_1052.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%98%A5%E4%B9%8C%E6%8B%89%E6%8B%89"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "春乌拉拉",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%98%A5%E4%B9%8C%E6%8B%89%E6%8B%89",
+      "star_raw": "1",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%98%A5%E4%B9%8C%E6%8B%89%E6%8B%89",
+      "raw_name_zh": "春乌拉拉",
+      "raw_name_jp": "ハルウララ",
+      "nickname_raw": "うららん一等賞♪",
+      "star_raw": "1",
+      "birthday_raw": "2月27日",
+      "height_raw": "140cm",
+      "weight_desc_raw": "微增（但是并不在意）",
+      "bust_raw": "74",
+      "waist_raw": "51",
+      "hip_raw": "73",
+      "cv_raw": "首藤志奈",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "B",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/ly2fkwp8itixuo0bihghmoc24l7x26n.png/100px-Chr_icon_1052_105202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%98%A5%E4%B9%8C%E6%8B%89%E6%8B%89"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%83%8F%E8%8F%88%E8%8F%88%E5%BE%97%E7%AC%AC%E4%B8%80%E2%99%AA%E3%80%91%E6%98%A5%E7%83%8F%E8%8F%88%E8%8F%88",
+      "raw_name_zh": "春乌拉拉",
+      "raw_name_jp": null,
+      "translated_name_raw": "春烏菈菈",
+      "nickname_raw": "烏菈菈得第一♪",
+      "page_title": "【烏菈菈得第一♪】春烏菈菈",
+      "page_title_aliases": [
+        "【烏菈菈得第一♪】春烏菈菈",
+        "春烏菈菈",
+        "烏菈菈得第一♪"
+      ],
+      "star_raw": "1",
+      "birthday_raw": "2月27日",
+      "height_raw": "140cm",
+      "weight_desc_raw": "微增（但不在意）",
+      "bust_raw": "74",
+      "waist_raw": "51",
+      "hip_raw": "73",
+      "cv_raw": "首藤志奈",
+      "introduction_raw": "就算連敗也不放棄！不屈不撓的女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/ly2fkwp8itixuo0bihghmoc24l7x26n.png/100px-Chr_icon_1052_105202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%83%8F%E8%8F%88%E8%8F%88%E5%BE%97%E7%AC%AC%E4%B8%80%E2%99%AA%E3%80%91%E6%98%A5%E7%83%8F%E8%8F%88%E8%8F%88",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "春乌拉拉",
+      "raw_name_jp": "ハルウララ",
+      "cv_raw": "首藤志奈",
+      "birthday_raw": "2月27日",
+      "height_raw": "140cm",
+      "weight_desc_raw": "微增（不过并不在意）",
+      "bust_raw": "74",
+      "waist_raw": "51",
+      "hip_raw": "73",
+      "quote_raw": "“就算一直输一直输，也不会气馁哟！乌~拉拉~♪”",
+      "intro_paragraphs": [
+        "一直在连战连败…是个虽然没有才能，但绝不会消沉的赛马娘。",
+        "原本在故乡高知跑步，但是想要更加的开心，以转入特雷森学园为目标。",
+        "虽然考试一团糟，但天生的开朗让她顺利地通过了入学面试。",
+        "是给了赛马娘们活力，被大家喜爱着的开心果。"
+      ],
+      "introduction": "一直在连战连败…是个虽然没有才能，但绝不会消沉的赛马娘。\n原本在故乡高知跑步，但是想要更加的开心，以转入特雷森学园为目标。\n虽然考试一团糟，但天生的开朗让她顺利地通过了入学面试。\n是给了赛马娘们活力，被大家喜爱着的开心果。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/3d/UPDCH_HaruUrara_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041356",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3d/UPDCH_HaruUrara_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041356"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%98%A5%E4%B8%BD(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)",
+      "canonical_name_zh": "春丽",
+      "aliases": [
+        "春丽"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%98%A5%E4%B8%BD(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)",
+      "raw_name_zh": "春乌拉拉",
+      "page_title": "春丽",
+      "raw_name_jp": "ハルウララ",
+      "raw_name_en": null,
+      "aliases": [
+        "乌拉拉（うらら）",
+        "不胜战神",
+        "灰流丽[1]",
+        "坏乌拉拉[2]",
+        "春丽"
+      ],
+      "birthday_raw": "2月27日",
+      "height_raw": "140cm",
+      "weight_desc_raw": "微增（不过并不在意）",
+      "bust_raw": "74",
+      "waist_raw": "51",
+      "hip_raw": "73",
+      "cv_raw": "首藤志奈",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/50/PID94224318.jpg!/fw/280?v=20211124165540",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/PID94224318.jpg!/fw/280?v=20211124165540",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3d/UPDCH_HaruUrara_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041356"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%98%A5%E4%B8%BD(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)"
+    }
+  }
+}

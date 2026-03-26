@@ -1,0 +1,316 @@
+{
+  "id": "shiizario",
+  "order": 110,
+  "file_name": "110_Cesario.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "西沙里奥",
+    "zh_tw": "西薩里奧",
+    "jp": "シーザリオ",
+    "en": "Cesario"
+  },
+  "aliases": [
+    "西沙里奥",
+    "西薩里奧",
+    "シーザリオ",
+    "Cesario",
+    "【Future Weaver】西薩里奧",
+    "Future Weaver",
+    "日本的Super Star",
+    "西沙",
+    "特别周空中型",
+    "水属性特别周",
+    "西沙里on/off"
+  ],
+  "profile": {
+    "birthday": "03-31",
+    "birthday_raw": "3月31日",
+    "birthday_day_of_year": 91,
+    "height_cm": 167,
+    "height_raw": "167cm",
+    "cv": "佐藤榛夏",
+    "cv_raw": "佐藤榛夏",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "F",
+      "nige": "G",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "C"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/n938lkm1i29m3boeu47mjcpauzotd91.png/100px-Chr_icon_1110.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/irp0l1f32kov09pgtw1qd46vtsqg5v1.png/100px-Chr_icon_1110_111002_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/3f/UPDCH_Cesario_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240126092342",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0f/122462382_p0.jpg!/fw/280?v=20241002054804"
+    ],
+    "image_local_path": "/api/assets/shiizario-thumb",
+    "asset_id": "shiizario-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Future_Weaver%E3%80%91%E8%A5%BF%E8%96%A9%E9%87%8C%E5%A5%A7",
+      "https://zh.moegirl.org.cn/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/n938lkm1i29m3boeu47mjcpauzotd91.png/100px-Chr_icon_1110.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/irp0l1f32kov09pgtw1qd46vtsqg5v1.png/100px-Chr_icon_1110_111002_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3f/UPDCH_Cesario_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240126092342"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0f/122462382_p0.jpg!/fw/280?v=20241002054804",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3f/UPDCH_Cesario_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240126092342"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "受到名教练的父亲和热心教育的母亲的影响，她对培养后辈产生了兴趣。 她得知Tiara马娘在退役后更多地专注于后辈的培养，对此非常向往，视其为自己的理想。 据同室的好友说，她在工作和生活之间有着非常明确的界限。",
+    "intro_paragraphs": [
+      "受到名教练的父亲和热心教育的母亲的影响，她对培养后辈产生了兴趣。",
+      "她得知Tiara马娘在退役后更多地专注于后辈的培养，对此非常向往，视其为自己的理想。",
+      "据同室的好友说，她在工作和生活之间有着非常明确的界限。"
+    ],
+    "quote_raw": "她是一位理智而心胸开阔的马娘。",
+    "weight_desc_raw": "微減（競賽前略顯節制）",
+    "bust_raw": "80",
+    "waist_raw": "53",
+    "hip_raw": "84"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "西沙里奥",
+      "character_id": "1110",
+      "birthday_raw": "3月31日",
+      "height_raw": "167",
+      "bust_raw": "80",
+      "waist_raw": "53",
+      "hip_raw": "84",
+      "whr_raw": "0.63",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/n938lkm1i29m3boeu47mjcpauzotd91.png/100px-Chr_icon_1110.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/n938lkm1i29m3boeu47mjcpauzotd91.png/100px-Chr_icon_1110.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "西沙里奥",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5",
+      "raw_name_zh": "西沙里奥",
+      "raw_name_jp": "シーザリオ",
+      "nickname_raw": "Future Weaver",
+      "star_raw": "3",
+      "birthday_raw": "3月31日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微减（比赛前略有节制）",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "佐藤榛夏",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/irp0l1f32kov09pgtw1qd46vtsqg5v1.png/100px-Chr_icon_1110_111002_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Future_Weaver%E3%80%91%E8%A5%BF%E8%96%A9%E9%87%8C%E5%A5%A7",
+      "raw_name_zh": "西沙里奥",
+      "raw_name_jp": null,
+      "translated_name_raw": "西薩里奧",
+      "nickname_raw": "Future Weaver",
+      "page_title": "【Future Weaver】西薩里奧",
+      "page_title_aliases": [
+        "【Future Weaver】西薩里奧",
+        "西薩里奧",
+        "Future Weaver"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月31日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微減（競賽前略顯節制）",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "佐藤榛夏",
+      "introduction_raw": "既為嚴肅之士，又如慈愛的聖母――擁有兩副面孔的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Future_Weaver%E3%80%91%E8%A5%BF%E8%96%A9%E9%87%8C%E5%A5%A7",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "西沙里奥",
+      "raw_name_jp": "シーザリオ",
+      "cv_raw": "佐藤榛夏",
+      "birthday_raw": "3月31日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微减（比赛前会比较节制）",
+      "bust_raw": "80",
+      "waist_raw": "53",
+      "hip_raw": "84",
+      "quote_raw": "她是一位理智而心胸开阔的马娘。",
+      "intro_paragraphs": [
+        "受到名教练的父亲和热心教育的母亲的影响，她对培养后辈产生了兴趣。",
+        "她得知Tiara马娘在退役后更多地专注于后辈的培养，对此非常向往，视其为自己的理想。",
+        "据同室的好友说，她在工作和生活之间有着非常明确的界限。"
+      ],
+      "introduction": "受到名教练的父亲和热心教育的母亲的影响，她对培养后辈产生了兴趣。\n她得知Tiara马娘在退役后更多地专注于后辈的培养，对此非常向往，视其为自己的理想。\n据同室的好友说，她在工作和生活之间有着非常明确的界限。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/3f/UPDCH_Cesario_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240126092342",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3f/UPDCH_Cesario_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240126092342"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5",
+      "canonical_name_zh": "西沙里奥",
+      "aliases": [
+        "西沙里奥"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5",
+      "raw_name_zh": "西沙里奥",
+      "page_title": "西沙里奥",
+      "raw_name_jp": "シーザリオ",
+      "raw_name_en": null,
+      "aliases": [
+        "日本的Super Star",
+        "西沙",
+        "特别周空中型",
+        "水属性特别周",
+        "西沙里on/off",
+        "西沙里奥"
+      ],
+      "birthday_raw": "3月31日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微减（比赛前略有节制）",
+      "bust_raw": "80",
+      "waist_raw": "53",
+      "hip_raw": "84",
+      "cv_raw": "佐藤榛夏",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0f/122462382_p0.jpg!/fw/280?v=20241002054804",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0f/122462382_p0.jpg!/fw/280?v=20241002054804",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3f/UPDCH_Cesario_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240126092342"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%A5%BF%E6%B2%99%E9%87%8C%E5%A5%A5"
+    }
+  }
+}

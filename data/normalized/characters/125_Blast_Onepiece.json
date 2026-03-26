@@ -1,0 +1,214 @@
+{
+  "id": "burasutowanpiisu",
+  "order": 125,
+  "file_name": "125_Blast_Onepiece.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "防爆装束",
+    "zh_tw": null,
+    "jp": "ブラストワンピース",
+    "en": "Blast Onepiece"
+  },
+  "aliases": [
+    "防爆装束",
+    "ブラストワンピース",
+    "Blast Onepiece"
+  ],
+  "profile": {
+    "birthday": "04-02",
+    "birthday_raw": "4月2日",
+    "birthday_day_of_year": 93,
+    "height_cm": 174,
+    "height_raw": "174",
+    "cv": "紫月杏朱彩",
+    "cv_raw": "紫月杏朱彩",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": null,
+    "distance_group": null,
+    "running_style_group": null,
+    "aptitudes": {
+      "turf": null,
+      "dirt": null,
+      "sprint": null,
+      "mile": null,
+      "medium": null,
+      "long": null,
+      "nige": null,
+      "senko": null,
+      "sashi": null,
+      "oikomi": null
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/44gizn1qp1amx14j553we8zihshrx9z.png/100px-Chr_icon_1128.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/44gizn1qp1amx14j553we8zihshrx9z.png/100px-Chr_icon_1128.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_BlastOnepiece_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241127145025"
+    ],
+    "image_local_path": "/api/assets/burasutowanpiisu-thumb",
+    "asset_id": "burasutowanpiisu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%98%B2%E7%88%86%E8%A3%85%E6%9D%9F",
+      "https://zh.moegirl.org.cn/index.php?title=%E9%98%B2%E7%88%86%E8%A3%85%E6%9D%9F&action=edit&redlink=1"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/44gizn1qp1amx14j553we8zihshrx9z.png/100px-Chr_icon_1128.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_BlastOnepiece_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241127145025"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_BlastOnepiece_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241127145025"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "一旦发现人类的身影，便会满心欢喜地跑过来。 因为小时候被人类照顾过腿部，所以特别喜欢与马娘有关联的人类。 她对人类的文化、历史等等都充满了浓厚的兴趣！",
+    "intro_paragraphs": [
+      "一旦发现人类的身影，便会满心欢喜地跑过来。",
+      "因为小时候被人类照顾过腿部，所以特别喜欢与马娘有关联的人类。",
+      "她对人类的文化、历史等等都充满了浓厚的兴趣！"
+    ],
+    "quote_raw": "这位天真烂漫的马娘，浑身散发着亲人的气息。",
+    "weight_desc_raw": "咚咣！",
+    "bust_raw": "93",
+    "waist_raw": "63",
+    "hip_raw": "90"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "防爆装束",
+      "character_id": "1128",
+      "birthday_raw": "4月2日",
+      "height_raw": "174",
+      "bust_raw": "93",
+      "waist_raw": "63",
+      "hip_raw": "90",
+      "whr_raw": "0.7",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/44gizn1qp1amx14j553we8zihshrx9z.png/100px-Chr_icon_1128.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/44gizn1qp1amx14j553we8zihshrx9z.png/100px-Chr_icon_1128.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%98%B2%E7%88%86%E8%A3%85%E6%9D%9F"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%98%B2%E7%88%86%E8%A3%85%E6%9D%9F",
+      "raw_name_zh": "防爆装束",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%98%B2%E7%88%86%E8%A3%85%E6%9D%9F"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "防爆装束",
+      "raw_name_jp": "ブラストワンピース",
+      "cv_raw": "紫月杏朱彩",
+      "birthday_raw": "4月2日",
+      "height_raw": "174cm",
+      "weight_desc_raw": "咚咣！",
+      "bust_raw": "93",
+      "waist_raw": "63",
+      "hip_raw": "90",
+      "quote_raw": "这位天真烂漫的马娘，浑身散发着亲人的气息。",
+      "intro_paragraphs": [
+        "一旦发现人类的身影，便会满心欢喜地跑过来。",
+        "因为小时候被人类照顾过腿部，所以特别喜欢与马娘有关联的人类。",
+        "她对人类的文化、历史等等都充满了浓厚的兴趣！"
+      ],
+      "introduction": "一旦发现人类的身影，便会满心欢喜地跑过来。\n因为小时候被人类照顾过腿部，所以特别喜欢与马娘有关联的人类。\n她对人类的文化、历史等等都充满了浓厚的兴趣！",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_BlastOnepiece_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241127145025",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_BlastOnepiece_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241127145025"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E9%98%B2%E7%88%86%E8%A3%85%E6%9D%9F&action=edit&redlink=1",
+      "canonical_name_zh": "防爆装束",
+      "aliases": [
+        "防爆装束"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E9%98%B2%E7%88%86%E8%A3%85%E6%9D%9F&action=edit&redlink=1",
+      "raw_name_zh": "防爆装束",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "ブラストワンピース",
+      "raw_name_en": null,
+      "aliases": [
+        "防爆装束"
+      ],
+      "birthday_raw": "4月2日",
+      "height_raw": "174cm",
+      "weight_desc_raw": "咚咣！",
+      "bust_raw": "93",
+      "waist_raw": "63",
+      "hip_raw": "90",
+      "cv_raw": "紫月杏朱彩",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_BlastOnepiece_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241127145025",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_BlastOnepiece_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241127145025"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E9%98%B2%E7%88%86%E8%A3%85%E6%9D%9F&action=edit&redlink=1"
+    }
+  }
+}

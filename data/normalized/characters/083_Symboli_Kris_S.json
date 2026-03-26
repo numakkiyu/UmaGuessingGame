@@ -1,0 +1,312 @@
+{
+  "id": "shinborikurisuesu",
+  "order": 83,
+  "file_name": "083_Symboli_Kris_S.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "吉兆",
+    "zh_tw": null,
+    "jp": "シンボリクリスエス",
+    "en": "Symboli Kris S"
+  },
+  "aliases": [
+    "吉兆",
+    "シンボリクリスエス",
+    "Symboli Kris S",
+    "【Onyx Soldier】克莉斯耶絲象徵",
+    "克莉斯耶絲象徵",
+    "Onyx Soldier",
+    "关二爷",
+    "特雷森王牌狙击手"
+  ],
+  "profile": {
+    "birthday": "01-21",
+    "birthday_raw": "1月21日",
+    "birthday_day_of_year": 21,
+    "height_cm": 170,
+    "height_raw": "170cm",
+    "cv": "春川芽生",
+    "cv_raw": "春川芽生",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "D"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/45/id9g7cv4wh9wz2bjtnn0sxc0ht0nyws.png/100px-Chr_icon_1083.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/iy2sc1613b2fxxditqwcj1qmwwyis7z.png/100px-Chr_icon_1083_108302_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/48/UPDCH_SymboliKrisS_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220505102202",
+      "https://storage.moegirl.org.cn/moegirl/commons/b/b7/SymboliKrisS_Twitter1522556759684317185.jpg!/fw/280?v=20220508034000"
+    ],
+    "image_local_path": "/api/assets/shinborikurisuesu-thumb",
+    "asset_id": "shinborikurisuesu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%90%89%E5%85%86",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Onyx_Soldier%E3%80%91%E5%85%8B%E8%8E%89%E6%96%AF%E8%80%B6%E7%B5%B2%E8%B1%A1%E5%BE%B5",
+      "https://zh.moegirl.org.cn/%E5%90%89%E5%85%86"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/45/id9g7cv4wh9wz2bjtnn0sxc0ht0nyws.png/100px-Chr_icon_1083.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/iy2sc1613b2fxxditqwcj1qmwwyis7z.png/100px-Chr_icon_1083_108302_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/iy2sc1613b2fxxditqwcj1qmwwyis7z.png/100px-Chr_icon_1083_108302_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/48/UPDCH_SymboliKrisS_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220505102202"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b7/SymboliKrisS_Twitter1522556759684317185.jpg!/fw/280?v=20220508034000",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/48/UPDCH_SymboliKrisS_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220505102202"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "没有感情起伏、沉默寡言、最重视和比赛相关的效率与胜率的海外留学生—— 应该说是“工作狂”一般的风格虽让她常被害怕，但她对结果的这份执着，是为了履行与自己相关的人的道义。 总而言之，是位有着高尚精神的赛马娘。",
+    "intro_paragraphs": [
+      "没有感情起伏、沉默寡言、最重视和比赛相关的效率与胜率的海外留学生——",
+      "应该说是“工作狂”一般的风格虽让她常被害怕，但她对结果的这份执着，是为了履行与自己相关的人的道义。",
+      "总而言之，是位有着高尚精神的赛马娘。"
+    ],
+    "quote_raw": "“——我被赋予的使命就是胜利。——我要将这使命践行到底。”",
+    "weight_desc_raw": "出色",
+    "bust_raw": "91",
+    "waist_raw": "58",
+    "hip_raw": "88"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "吉兆",
+      "character_id": "1083",
+      "birthday_raw": "1月21日",
+      "height_raw": "170",
+      "bust_raw": "91",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "33",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/45/id9g7cv4wh9wz2bjtnn0sxc0ht0nyws.png/100px-Chr_icon_1083.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/45/id9g7cv4wh9wz2bjtnn0sxc0ht0nyws.png/100px-Chr_icon_1083.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%89%E5%85%86"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "吉兆",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%89%E5%85%86",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "15%",
+      "power_growth_raw": "15%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%90%89%E5%85%86",
+      "raw_name_zh": "吉兆",
+      "raw_name_jp": "シンボリクリスエス",
+      "nickname_raw": "Onyx Soldier",
+      "star_raw": "3",
+      "birthday_raw": "1月21日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "出色",
+      "bust_raw": "91",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "cv_raw": "春川芽生",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/iy2sc1613b2fxxditqwcj1qmwwyis7z.png/100px-Chr_icon_1083_108302_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%89%E5%85%86"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Onyx_Soldier%E3%80%91%E5%85%8B%E8%8E%89%E6%96%AF%E8%80%B6%E7%B5%B2%E8%B1%A1%E5%BE%B5",
+      "raw_name_zh": "吉兆",
+      "raw_name_jp": null,
+      "translated_name_raw": "克莉斯耶絲象徵",
+      "nickname_raw": "Onyx Soldier",
+      "page_title": "【Onyx Soldier】克莉斯耶絲象徵",
+      "page_title_aliases": [
+        "【Onyx Soldier】克莉斯耶絲象徵",
+        "克莉斯耶絲象徵",
+        "Onyx Soldier"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "1月21日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "出色",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "春川芽生",
+      "introduction_raw": "出生於國外，沉默寡言的任務執行者",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/iy2sc1613b2fxxditqwcj1qmwwyis7z.png/100px-Chr_icon_1083_108302_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Onyx_Soldier%E3%80%91%E5%85%8B%E8%8E%89%E6%96%AF%E8%80%B6%E7%B5%B2%E8%B1%A1%E5%BE%B5",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "吉兆",
+      "raw_name_jp": "シンボリクリスエス",
+      "cv_raw": "春川芽生",
+      "birthday_raw": "1月21日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "出色",
+      "bust_raw": "91",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "quote_raw": "“——我被赋予的使命就是胜利。——我要将这使命践行到底。”",
+      "intro_paragraphs": [
+        "没有感情起伏、沉默寡言、最重视和比赛相关的效率与胜率的海外留学生——",
+        "应该说是“工作狂”一般的风格虽让她常被害怕，但她对结果的这份执着，是为了履行与自己相关的人的道义。",
+        "总而言之，是位有着高尚精神的赛马娘。"
+      ],
+      "introduction": "没有感情起伏、沉默寡言、最重视和比赛相关的效率与胜率的海外留学生——\n应该说是“工作狂”一般的风格虽让她常被害怕，但她对结果的这份执着，是为了履行与自己相关的人的道义。\n总而言之，是位有着高尚精神的赛马娘。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/48/UPDCH_SymboliKrisS_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220505102202",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/48/UPDCH_SymboliKrisS_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220505102202"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%90%89%E5%85%86",
+      "canonical_name_zh": "吉兆",
+      "aliases": [
+        "吉兆"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%90%89%E5%85%86",
+      "raw_name_zh": "吉兆",
+      "page_title": "吉兆",
+      "raw_name_jp": "シンボリクリスエス",
+      "raw_name_en": null,
+      "aliases": [
+        "关二爷",
+        "特雷森王牌狙击手",
+        "吉兆"
+      ],
+      "birthday_raw": "1月21日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "出色",
+      "bust_raw": "91",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "cv_raw": "春川芽生",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/b7/SymboliKrisS_Twitter1522556759684317185.jpg!/fw/280?v=20220508034000",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b7/SymboliKrisS_Twitter1522556759684317185.jpg!/fw/280?v=20220508034000",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/48/UPDCH_SymboliKrisS_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220505102202"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%90%89%E5%85%86"
+    }
+  }
+}

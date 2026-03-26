@@ -1,0 +1,313 @@
+{
+  "id": "yukinobijin",
+  "order": 29,
+  "file_name": "029_Yukino_Bijin.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "雪之美人",
+    "zh_tw": null,
+    "jp": "ユキノビジン",
+    "en": "Yukino Bijin"
+  },
+  "aliases": [
+    "雪之美人",
+    "ユキノビジン",
+    "Yukino Bijin",
+    "雪中美人",
+    "【好口愛好口愛的銀粟】雪之美人",
+    "好口愛好口愛的銀粟",
+    "めんこいめんこいむつのはな"
+  ],
+  "profile": {
+    "birthday": "03-10",
+    "birthday_raw": "3月10日",
+    "birthday_day_of_year": 70,
+    "height_cm": 156,
+    "height_raw": "156",
+    "cv": "山本希望",
+    "cv_raw": "山本希望",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "D",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "nige": "C",
+      "senko": "A",
+      "sashi": "F",
+      "oikomi": "G"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kz1efd2fq0wyvrnek9howwe77ko7tuy.png/100px-Chr_icon_1029.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kz1efd2fq0wyvrnek9howwe77ko7tuy.png/100px-Chr_icon_1029.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/4b/UPDCH_YukinoBijin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922141723",
+      "https://storage.moegirl.org.cn/moegirl/commons/b/bd/PID93720968.jpg!/fw/280?v=20211124155532",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/6ue51n8y49o764mcewue77x6ikqdhdd.png/100px-Chr_icon_1029_102902_01.png"
+    ],
+    "image_local_path": "/api/assets/yukinobijin-thumb",
+    "asset_id": "yukinobijin-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物",
+      "登场人物补种子",
+      "赛马娘图鉴",
+      "繁中服角色详情页"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%9B%AA%E4%B8%AD%E7%BE%8E%E4%BA%BA",
+      "https://zh.moegirl.org.cn/%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA",
+      "https://wiki.biligame.com/umamusume/%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A5%BD%E5%8F%A3%E6%84%9B%E5%A5%BD%E5%8F%A3%E6%84%9B%E7%9A%84%E9%8A%80%E7%B2%9F%E3%80%91%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kz1efd2fq0wyvrnek9howwe77ko7tuy.png/100px-Chr_icon_1029.png",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/UPDCH_YukinoBijin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922141723"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/6ue51n8y49o764mcewue77x6ikqdhdd.png/100px-Chr_icon_1029_102902_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/6ue51n8y49o764mcewue77x6ikqdhdd.png/100px-Chr_icon_1029_102902_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/UPDCH_YukinoBijin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922141723"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/bd/PID93720968.jpg!/fw/280?v=20211124155532",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/UPDCH_YukinoBijin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922141723"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "来自岩手乡村的淳朴少女。家里是务农出身，会经常帮忙干农活。 另一方面，憧憬着大都市，希望能在闪光系列赛上大方异彩，成为闪亮的城市女孩。 坦率但不软弱，是位在北国长大的有毅力的姑娘。 憧憬的赛马娘为黄金城市。",
+    "intro_paragraphs": [
+      "来自岩手乡村的淳朴少女。家里是务农出身，会经常帮忙干农活。",
+      "另一方面，憧憬着大都市，希望能在闪光系列赛上大方异彩，成为闪亮的城市女孩。",
+      "坦率但不软弱，是位在北国长大的有毅力的姑娘。",
+      "憧憬的赛马娘为黄金城市。"
+    ],
+    "quote_raw": "“想要在闪光系列赛出道，成为可爱的城市女孩！”",
+    "weight_desc_raw": "无增减",
+    "bust_raw": "80",
+    "waist_raw": "55",
+    "hip_raw": "80"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "雪中美人",
+      "character_id": "1029",
+      "birthday_raw": "3月10日",
+      "height_raw": "156",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kz1efd2fq0wyvrnek9howwe77ko7tuy.png/100px-Chr_icon_1029.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kz1efd2fq0wyvrnek9howwe77ko7tuy.png/100px-Chr_icon_1029.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9B%AA%E4%B8%AD%E7%BE%8E%E4%BA%BA"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "雪之美人",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA",
+      "raw_name_zh": "雪之美人",
+      "raw_name_jp": "ユキノビジン",
+      "nickname_raw": "めんこいめんこいむつのはな",
+      "star_raw": "3",
+      "birthday_raw": "3月10日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "山本希望",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/6ue51n8y49o764mcewue77x6ikqdhdd.png/100px-Chr_icon_1029_102902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A5%BD%E5%8F%A3%E6%84%9B%E5%A5%BD%E5%8F%A3%E6%84%9B%E7%9A%84%E9%8A%80%E7%B2%9F%E3%80%91%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA",
+      "raw_name_zh": "雪之美人",
+      "raw_name_jp": null,
+      "translated_name_raw": "雪之美人",
+      "nickname_raw": "好口愛好口愛的銀粟",
+      "page_title": "【好口愛好口愛的銀粟】雪之美人",
+      "page_title_aliases": [
+        "【好口愛好口愛的銀粟】雪之美人",
+        "雪之美人",
+        "好口愛好口愛的銀粟"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月10日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "山本希望",
+      "introduction_raw": "目標是成為都市女孩！來自地方的拚命賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/80kt9i01riq11vm62bkdkacqtf0x1ll.png/100px-Chr_icon_1029_102901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/6ue51n8y49o764mcewue77x6ikqdhdd.png/100px-Chr_icon_1029_102902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A5%BD%E5%8F%A3%E6%84%9B%E5%A5%BD%E5%8F%A3%E6%84%9B%E7%9A%84%E9%8A%80%E7%B2%9F%E3%80%91%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "雪中美人",
+      "raw_name_jp": "ユキノビジン",
+      "cv_raw": "山本希望",
+      "birthday_raw": "3月10日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "“想要在闪光系列赛出道，成为可爱的城市女孩！”",
+      "intro_paragraphs": [
+        "来自岩手乡村的淳朴少女。家里是务农出身，会经常帮忙干农活。",
+        "另一方面，憧憬着大都市，希望能在闪光系列赛上大方异彩，成为闪亮的城市女孩。",
+        "坦率但不软弱，是位在北国长大的有毅力的姑娘。",
+        "憧憬的赛马娘为黄金城市。"
+      ],
+      "introduction": "来自岩手乡村的淳朴少女。家里是务农出身，会经常帮忙干农活。\n另一方面，憧憬着大都市，希望能在闪光系列赛上大方异彩，成为闪亮的城市女孩。\n坦率但不软弱，是位在北国长大的有毅力的姑娘。\n憧憬的赛马娘为黄金城市。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/4b/UPDCH_YukinoBijin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922141723",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/UPDCH_YukinoBijin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922141723"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA",
+      "canonical_name_zh": "雪之美人",
+      "aliases": [
+        "雪之美人"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA",
+      "raw_name_zh": "雪中美人",
+      "page_title": "雪之美人",
+      "raw_name_jp": "ユキノビジン",
+      "raw_name_en": null,
+      "aliases": [
+        "雪之美人"
+      ],
+      "birthday_raw": "3月10日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "山本希望",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/bd/PID93720968.jpg!/fw/280?v=20211124155532",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/bd/PID93720968.jpg!/fw/280?v=20211124155532",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/UPDCH_YukinoBijin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922141723"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%9B%AA%E4%B9%8B%E7%BE%8E%E4%BA%BA"
+    }
+  }
+}

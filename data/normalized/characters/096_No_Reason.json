@@ -1,0 +1,255 @@
+{
+  "id": "nooriizun",
+  "order": 96,
+  "file_name": "096_No_Reason.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "莫名其妙",
+    "zh_tw": null,
+    "jp": "ノーリーズン",
+    "en": "No Reason"
+  },
+  "aliases": [
+    "莫名其妙",
+    "ノーリーズン",
+    "No Reason",
+    "紅色塗早駆具足"
+  ],
+  "profile": {
+    "birthday": "06-04",
+    "birthday_raw": "6月4日",
+    "birthday_day_of_year": 156,
+    "height_cm": 160,
+    "height_raw": "160cm",
+    "cv": "河野ひより",
+    "cv_raw": "河野ひより",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "C",
+      "nige": "G",
+      "senko": "D",
+      "sashi": "A",
+      "oikomi": "F"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/8a/lekda5gjh4n46uujt4y77qt1c37xszl.png/100px-Chr_icon_1096.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0b/UPDCH_NoReason_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f3/121655387_p0.jpg!/fw/280?v=20241006143733"
+    ],
+    "image_local_path": "/api/assets/nooriizun-thumb",
+    "asset_id": "nooriizun-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99",
+      "https://zh.moegirl.org.cn/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8a/lekda5gjh4n46uujt4y77qt1c37xszl.png/100px-Chr_icon_1096.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png"
+      ],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0b/UPDCH_NoReason_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f3/121655387_p0.jpg!/fw/280?v=20241006143733",
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0b/UPDCH_NoReason_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "抱着成为天下人的宏大野心，为了在合战中取胜无所不用其极，那副英姿简直就像是战国武将。 ……然而偶尔也会整个大活。",
+    "intro_paragraphs": [
+      "抱着成为天下人的宏大野心，为了在合战中取胜无所不用其极，那副英姿简直就像是战国武将。",
+      "……然而偶尔也会整个大活。"
+    ],
+    "quote_raw": "在群雄割据的竞跑界扬名的豪放磊落赛马娘。",
+    "weight_desc_raw": "乱れ気味？",
+    "bust_raw": "80",
+    "waist_raw": "56",
+    "hip_raw": "85"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "莫名其妙",
+      "character_id": "1096",
+      "birthday_raw": "6月4日",
+      "height_raw": "160",
+      "bust_raw": "80",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "whr_raw": "0.65",
+      "bust_waist_diff_raw": "24",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8a/lekda5gjh4n46uujt4y77qt1c37xszl.png/100px-Chr_icon_1096.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8a/lekda5gjh4n46uujt4y77qt1c37xszl.png/100px-Chr_icon_1096.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "莫名其妙",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99",
+      "raw_name_zh": "莫名其妙",
+      "raw_name_jp": "ノーリーズン",
+      "nickname_raw": "紅色塗早駆具足",
+      "star_raw": "3",
+      "birthday_raw": "6月4日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "乱れ気味？",
+      "bust_raw": "80",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "cv_raw": "河野ひより",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "莫名其妙",
+      "raw_name_jp": "ノーリーズン",
+      "cv_raw": "河野日和",
+      "birthday_raw": "6月4日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "不咋稳定？",
+      "bust_raw": "80",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "quote_raw": "在群雄割据的竞跑界扬名的豪放磊落赛马娘。",
+      "intro_paragraphs": [
+        "抱着成为天下人的宏大野心，为了在合战中取胜无所不用其极，那副英姿简直就像是战国武将。",
+        "……然而偶尔也会整个大活。"
+      ],
+      "introduction": "抱着成为天下人的宏大野心，为了在合战中取胜无所不用其极，那副英姿简直就像是战国武将。\n……然而偶尔也会整个大活。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0b/UPDCH_NoReason_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0b/UPDCH_NoReason_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99",
+      "canonical_name_zh": "莫名其妙",
+      "aliases": [
+        "莫名其妙"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99",
+      "raw_name_zh": "莫名其妙",
+      "page_title": "莫名其妙",
+      "raw_name_jp": "ノーリーズン",
+      "raw_name_en": null,
+      "aliases": [
+        "莫名其妙"
+      ],
+      "birthday_raw": "6月4日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "不咋稳定？",
+      "bust_raw": "80",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "cv_raw": "河野日和",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/f3/121655387_p0.jpg!/fw/280?v=20241006143733",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f3/121655387_p0.jpg!/fw/280?v=20241006143733",
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0b/UPDCH_NoReason_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99"
+    }
+  }
+}

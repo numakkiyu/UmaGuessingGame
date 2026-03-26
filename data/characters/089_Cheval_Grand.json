@@ -1,0 +1,195 @@
+{
+  "id": "shuvuaruguran",
+  "name_zh": "高尚俊逸",
+  "name_jp": "シュヴァルグラン",
+  "aliases": [
+    "高尚骏逸",
+    "高尚俊逸",
+    "シュヴァルグラン",
+    "小帽",
+    "小高"
+  ],
+  "birthday": "03-14",
+  "birthday_day_of_year": 74,
+  "birthday_raw": "3月14日",
+  "height_cm": 160,
+  "height_raw": "160",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": null,
+  "star_raw": null,
+  "cv": "夏吉优子",
+  "cv_raw": "夏吉优子",
+  "quote_raw": "内向文静， 因为其拥有赛跑才能的姐姐与妹妹而对自己抱有极大自卑感的家中次女。",
+  "introduction": "“总有一天会超越那两个人，让她们承认自己的实力”，为此每天都在拼命努力着。 姐姐和妹妹关系不好……但事实并非如此，只是因为两人都散发着华丽的气质，所以在一起的时候就会有些摩擦。",
+  "intro_paragraphs": [
+    "“总有一天会超越那两个人，让她们承认自己的实力”，为此每天都在拼命努力着。",
+    "姐姐和妹妹关系不好……但事实并非如此，只是因为两人都散发着华丽的气质，所以在一起的时候就会有些摩擦。"
+  ],
+  "weight_desc_raw": "安定感○",
+  "bust_raw": "85",
+  "waist_raw": "56",
+  "hip_raw": "80",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/0f/duhndvzbyowoijyifl1dempz2sobxaz.png/100px-Chr_icon_1089.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/0f/duhndvzbyowoijyifl1dempz2sobxaz.png/100px-Chr_icon_1089.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/2/2c/UPDCH_ChevalGrand_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142756",
+    "https://storage.moegirl.org.cn/moegirl/commons/4/49/96910326_p0.png!/fw/280?v=20230130193744"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/0f/duhndvzbyowoijyifl1dempz2sobxaz.png/100px-Chr_icon_1089.png"
+    ],
+    "biliwiki_gallery": [],
+    "biliwiki_detail": [],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/2/2c/UPDCH_ChevalGrand_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142756"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/4/49/96910326_p0.png!/fw/280?v=20230130193744",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/2c/UPDCH_ChevalGrand_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142756"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E9%AB%98%E5%B0%9A%E4%BF%8A%E9%80%B8",
+    "https://zh.moegirl.org.cn/%E9%AB%98%E5%B0%9A%E9%AA%8F%E9%80%B8"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": null,
+    "dirt": null,
+    "sprint": null,
+    "mile": null,
+    "medium": null,
+    "long": null,
+    "nige": null,
+    "senko": null,
+    "sashi": null,
+    "oikomi": null
+  },
+  "surface_group": [],
+  "distance_group": [],
+  "running_style_group": [],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "高尚俊逸",
+      "character_id": "1089",
+      "birthday_raw": "3月14日",
+      "height_raw": "160",
+      "bust_raw": "85",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "29",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/0f/duhndvzbyowoijyifl1dempz2sobxaz.png/100px-Chr_icon_1089.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0f/duhndvzbyowoijyifl1dempz2sobxaz.png/100px-Chr_icon_1089.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%AB%98%E5%B0%9A%E4%BF%8A%E9%80%B8"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%AB%98%E5%B0%9A%E4%BF%8A%E9%80%B8",
+      "raw_name_zh": "高尚俊逸",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%AB%98%E5%B0%9A%E4%BF%8A%E9%80%B8"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "高尚俊逸",
+      "raw_name_jp": "シュヴァルグラン",
+      "cv_raw": "夏吉优子",
+      "birthday_raw": "3月14日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "安定感○",
+      "bust_raw": "85",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "quote_raw": "内向文静， 因为其拥有赛跑才能的姐姐与妹妹而对自己抱有极大自卑感的家中次女。",
+      "intro_paragraphs": [
+        "“总有一天会超越那两个人，让她们承认自己的实力”，为此每天都在拼命努力着。",
+        "姐姐和妹妹关系不好……但事实并非如此，只是因为两人都散发着华丽的气质，所以在一起的时候就会有些摩擦。"
+      ],
+      "introduction": "“总有一天会超越那两个人，让她们承认自己的实力”，为此每天都在拼命努力着。\n姐姐和妹妹关系不好……但事实并非如此，只是因为两人都散发着华丽的气质，所以在一起的时候就会有些摩擦。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/2c/UPDCH_ChevalGrand_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142756",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2c/UPDCH_ChevalGrand_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142756"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%AB%98%E5%B0%9A%E9%AA%8F%E9%80%B8",
+      "canonical_name_zh": "高尚骏逸",
+      "aliases": [
+        "高尚骏逸"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%AB%98%E5%B0%9A%E9%AA%8F%E9%80%B8",
+      "raw_name_zh": "高尚俊逸",
+      "page_title": "高尚骏逸",
+      "raw_name_jp": "シュヴァルグラン",
+      "raw_name_en": null,
+      "aliases": [
+        "小帽",
+        "小高",
+        "高尚骏逸"
+      ],
+      "birthday_raw": "3月14日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "安定感○",
+      "bust_raw": "85",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "cv_raw": "夏吉优子",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/49/96910326_p0.png!/fw/280?v=20230130193744",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/49/96910326_p0.png!/fw/280?v=20230130193744",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2c/UPDCH_ChevalGrand_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142756"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%AB%98%E5%B0%9A%E9%AA%8F%E9%80%B8"
+    }
+  }
+}

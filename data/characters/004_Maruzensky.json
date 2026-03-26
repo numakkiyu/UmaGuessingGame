@@ -1,0 +1,296 @@
+{
+  "id": "maruzensukii",
+  "name_zh": "丸善斯基",
+  "name_jp": "マルゼンスキー",
+  "aliases": [
+    "【嫣紅方程式】丸善斯基",
+    "丸善斯基",
+    "嫣紅方程式",
+    "姥爷",
+    "（老）司机",
+    "超级跑车（スーパーカー）",
+    "假面骑士Drive",
+    "昭和JK",
+    "マルゼンスキー",
+    "フォーミュラオブルージュ"
+  ],
+  "birthday": "05-19",
+  "birthday_day_of_year": 140,
+  "birthday_raw": "5月19日",
+  "height_cm": 164,
+  "height_raw": "164㎝",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "独居",
+  "dorm_raw": "独居",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "Lynn",
+  "cv_raw": "Lynn",
+  "quote_raw": "“今天跑的也超赞！在去到领奖台之前也要给力哦♪”",
+  "introduction": "飒爽的，说着不知道哪里来的词语的前辈赛马娘。 是个只是纯粹感觉到跑步很开心的速度狂，在道路上用自己的超跑爱车、在赛场上用自己的双脚来飞驰。 有着压倒性的潜质但从不摆架子，受到大家的仰慕。",
+  "intro_paragraphs": [
+    "飒爽的，说着不知道哪里来的词语的前辈赛马娘。",
+    "是个只是纯粹感觉到跑步很开心的速度狂，在道路上用自己的超跑爱车、在赛场上用自己的双脚来飞驰。",
+    "有着压倒性的潜质但从不摆架子，受到大家的仰慕。"
+  ],
+  "weight_desc_raw": "調整狀態相當理想",
+  "bust_raw": "92",
+  "waist_raw": "58",
+  "hip_raw": "88",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/5/5d/9ffge5m3hntw62yi2r7q89uqt49txfu.png/100px-Chr_icon_1004.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/1/13/rou9qz3ci4nqnoj5f5ifsau9idiquc5.png/100px-Chr_icon_1004_100402_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/qmgzyzgodjjkmappurdursp6ww5dcx3.png/100px-Chr_icon_1004_100403_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/a/a8/UPDCH_Maruzensky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207043846",
+    "https://storage.moegirl.org.cn/moegirl/commons/6/61/Pid92774681.jpg!/fw/280?v=20211016172545"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/5d/9ffge5m3hntw62yi2r7q89uqt49txfu.png/100px-Chr_icon_1004.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/13/rou9qz3ci4nqnoj5f5ifsau9idiquc5.png/100px-Chr_icon_1004_100402_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/qmgzyzgodjjkmappurdursp6ww5dcx3.png/100px-Chr_icon_1004_100403_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/13/rou9qz3ci4nqnoj5f5ifsau9idiquc5.png/100px-Chr_icon_1004_100402_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/qmgzyzgodjjkmappurdursp6ww5dcx3.png/100px-Chr_icon_1004_100403_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a8/UPDCH_Maruzensky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207043846"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/6/61/Pid92774681.jpg!/fw/280?v=20211016172545",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a8/UPDCH_Maruzensky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207043846"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E5%AB%A3%E7%B4%85%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%80%91%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA",
+    "https://zh.moegirl.org.cn/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "D",
+    "sprint": "B",
+    "mile": "A",
+    "medium": "B",
+    "long": "C",
+    "nige": "A",
+    "senko": "E",
+    "sashi": "G",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英"
+  ],
+  "running_style_group": [
+    "逃"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "丸善斯基",
+      "character_id": "1004",
+      "birthday_raw": "5月19日",
+      "height_raw": "164",
+      "bust_raw": "92",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "34",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5d/9ffge5m3hntw62yi2r7q89uqt49txfu.png/100px-Chr_icon_1004.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5d/9ffge5m3hntw62yi2r7q89uqt49txfu.png/100px-Chr_icon_1004.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "丸善斯基",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "20%",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "C",
+      "nige_raw": "A",
+      "senko_raw": "E",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA",
+      "raw_name_zh": "丸善斯基",
+      "raw_name_jp": "マルゼンスキー",
+      "nickname_raw": "フォーミュラオブルージュ",
+      "star_raw": "3",
+      "birthday_raw": "5月19日",
+      "height_raw": "164㎝",
+      "weight_desc_raw": "理想的完美状态",
+      "bust_raw": "93",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "cv_raw": "Lynn",
+      "grade_raw": "高等部",
+      "dorm_raw": "独居",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "C",
+      "nige_raw": "A",
+      "senko_raw": "E",
+      "sashi_raw": "G",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/13/rou9qz3ci4nqnoj5f5ifsau9idiquc5.png/100px-Chr_icon_1004_100402_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/qmgzyzgodjjkmappurdursp6ww5dcx3.png/100px-Chr_icon_1004_100403_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%AB%A3%E7%B4%85%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%80%91%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA",
+      "raw_name_zh": "丸善斯基",
+      "raw_name_jp": null,
+      "translated_name_raw": "丸善斯基",
+      "nickname_raw": "嫣紅方程式",
+      "page_title": "【嫣紅方程式】丸善斯基",
+      "page_title_aliases": [
+        "【嫣紅方程式】丸善斯基",
+        "丸善斯基",
+        "嫣紅方程式"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月19日",
+      "height_raw": "164㎝",
+      "weight_desc_raw": "調整狀態相當理想",
+      "bust_raw": "92",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "cv_raw": "Lynn",
+      "introduction_raw": "昭和復古風，超跑大姐姐",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/13/rou9qz3ci4nqnoj5f5ifsau9idiquc5.png/100px-Chr_icon_1004_100402_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/qmgzyzgodjjkmappurdursp6ww5dcx3.png/100px-Chr_icon_1004_100403_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%AB%A3%E7%B4%85%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%80%91%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "C",
+      "nige_raw": "A",
+      "senko_raw": "E",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "丸善斯基",
+      "raw_name_jp": "マルゼンスキー",
+      "cv_raw": "Lynn",
+      "birthday_raw": "5月19日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "理想的完美状态",
+      "bust_raw": "92",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "quote_raw": "“今天跑的也超赞！在去到领奖台之前也要给力哦♪”",
+      "intro_paragraphs": [
+        "飒爽的，说着不知道哪里来的词语的前辈赛马娘。",
+        "是个只是纯粹感觉到跑步很开心的速度狂，在道路上用自己的超跑爱车、在赛场上用自己的双脚来飞驰。",
+        "有着压倒性的潜质但从不摆架子，受到大家的仰慕。"
+      ],
+      "introduction": "飒爽的，说着不知道哪里来的词语的前辈赛马娘。\n是个只是纯粹感觉到跑步很开心的速度狂，在道路上用自己的超跑爱车、在赛场上用自己的双脚来飞驰。\n有着压倒性的潜质但从不摆架子，受到大家的仰慕。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a8/UPDCH_Maruzensky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207043846",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a8/UPDCH_Maruzensky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207043846"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA",
+      "canonical_name_zh": "丸善斯基",
+      "aliases": [
+        "丸善斯基"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA",
+      "raw_name_zh": "丸善斯基",
+      "page_title": "丸善斯基",
+      "raw_name_jp": "マルゼンスキー",
+      "raw_name_en": null,
+      "aliases": [
+        "姥爷",
+        "（老）司机",
+        "超级跑车（スーパーカー）",
+        "假面骑士Drive",
+        "昭和JK",
+        "丸善斯基"
+      ],
+      "birthday_raw": "5月19日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "理想的完美状态",
+      "bust_raw": "92",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "cv_raw": "Lynn",
+      "grade_raw": "高等部",
+      "dorm_raw": "独居",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/61/Pid92774681.jpg!/fw/280?v=20211016172545",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/61/Pid92774681.jpg!/fw/280?v=20211016172545",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a8/UPDCH_Maruzensky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207043846"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%B8%E5%96%84%E6%96%AF%E5%9F%BA"
+    }
+  }
+}

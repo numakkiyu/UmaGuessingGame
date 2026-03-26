@@ -1,0 +1,316 @@
+{
+  "id": "adomaiyabega",
+  "order": 33,
+  "file_name": "033_Admire_Vega.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "爱慕织姬",
+    "zh_tw": null,
+    "jp": "アドマイヤベガ",
+    "en": "Admire Vega"
+  },
+  "aliases": [
+    "爱慕织姬",
+    "アドマイヤベガ",
+    "Admire Vega",
+    "【Starry Nocturne】愛慕織姬",
+    "愛慕織姬",
+    "Starry Nocturne",
+    "织姬",
+    "アヤべ（ayabe）",
+    "アドベ（adobe)",
+    "AV[1]"
+  ],
+  "profile": {
+    "birthday": "03-12",
+    "birthday_raw": "3月12日",
+    "birthday_day_of_year": 72,
+    "height_cm": 157,
+    "height_raw": "157cm",
+    "cv": "咲々木瞳",
+    "cv_raw": "咲々木瞳",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "追"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "C",
+      "nige": "G",
+      "senko": "G",
+      "sashi": "B",
+      "oikomi": "A"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/tumnl0c71dtq9ahkdkw7gx4ojfp9ti1.png/100px-Chr_icon_1033.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/js9oa2jznuebhrw5dj9p3a3h3l6xna0.png/100px-Chr_icon_1033_103302_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_AdmireVega_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210828143826",
+      "https://storage.moegirl.org.cn/moegirl/commons/8/85/PID94038777.jpg!/fw/280?v=20211124160935"
+    ],
+    "image_local_path": "/api/assets/adomaiyabega-thumb",
+    "asset_id": "adomaiyabega-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Starry_Nocturne%E3%80%91%E6%84%9B%E6%85%95%E7%B9%94%E5%A7%AC",
+      "https://zh.moegirl.org.cn/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/tumnl0c71dtq9ahkdkw7gx4ojfp9ti1.png/100px-Chr_icon_1033.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/js9oa2jznuebhrw5dj9p3a3h3l6xna0.png/100px-Chr_icon_1033_103302_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/js9oa2jznuebhrw5dj9p3a3h3l6xna0.png/100px-Chr_icon_1033_103302_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_AdmireVega_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210828143826"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/85/PID94038777.jpg!/fw/280?v=20211124160935",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_AdmireVega_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210828143826"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "背负着某个影子，不想与周围的人产生关系的马娘。 年幼时好像发生了某件事情，参加比赛也仿佛是为了赎罪才做出的决定。 在心情低落的事件中压抑着自己的情感，总有无法放下的危机感。 经常被同期的好歌剧喋喋不休地纠缠着。",
+    "intro_paragraphs": [
+      "背负着某个影子，不想与周围的人产生关系的马娘。",
+      "年幼时好像发生了某件事情，参加比赛也仿佛是为了赎罪才做出的决定。",
+      "在心情低落的事件中压抑着自己的情感，总有无法放下的危机感。",
+      "经常被同期的好歌剧喋喋不休地纠缠着。"
+    ],
+    "quote_raw": "“那颗璀璨夺目的星……我曾向它发誓。哪怕只有我一人，我也会赢给你看。”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "85",
+    "waist_raw": "57",
+    "hip_raw": "82"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "爱慕织姬",
+      "character_id": "1033",
+      "birthday_raw": "3月12日",
+      "height_raw": "157",
+      "bust_raw": "85",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "28",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/tumnl0c71dtq9ahkdkw7gx4ojfp9ti1.png/100px-Chr_icon_1033.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/tumnl0c71dtq9ahkdkw7gx4ojfp9ti1.png/100px-Chr_icon_1033.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "爱慕织姬",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "B",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC",
+      "raw_name_zh": "爱慕织姬",
+      "raw_name_jp": "アドマイヤベガ",
+      "nickname_raw": "Starry Nocturne",
+      "star_raw": "3",
+      "birthday_raw": "3月12日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "85",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "cv_raw": "咲咲木瞳",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "B",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/js9oa2jznuebhrw5dj9p3a3h3l6xna0.png/100px-Chr_icon_1033_103302_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Starry_Nocturne%E3%80%91%E6%84%9B%E6%85%95%E7%B9%94%E5%A7%AC",
+      "raw_name_zh": "爱慕织姬",
+      "raw_name_jp": null,
+      "translated_name_raw": "愛慕織姬",
+      "nickname_raw": "Starry Nocturne",
+      "page_title": "【Starry Nocturne】愛慕織姬",
+      "page_title_aliases": [
+        "【Starry Nocturne】愛慕織姬",
+        "愛慕織姬",
+        "Starry Nocturne"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月12日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "咲々木瞳",
+      "introduction_raw": "背負著決心。始終孤傲的明亮之星",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/js9oa2jznuebhrw5dj9p3a3h3l6xna0.png/100px-Chr_icon_1033_103302_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Starry_Nocturne%E3%80%91%E6%84%9B%E6%85%95%E7%B9%94%E5%A7%AC",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "B",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "爱慕织姬",
+      "raw_name_jp": "アドマイヤベガ",
+      "cv_raw": "咲咲木瞳",
+      "birthday_raw": "3月12日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "85",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "quote_raw": "“那颗璀璨夺目的星……我曾向它发誓。哪怕只有我一人，我也会赢给你看。”",
+      "intro_paragraphs": [
+        "背负着某个影子，不想与周围的人产生关系的马娘。",
+        "年幼时好像发生了某件事情，参加比赛也仿佛是为了赎罪才做出的决定。",
+        "在心情低落的事件中压抑着自己的情感，总有无法放下的危机感。",
+        "经常被同期的好歌剧喋喋不休地纠缠着。"
+      ],
+      "introduction": "背负着某个影子，不想与周围的人产生关系的马娘。\n年幼时好像发生了某件事情，参加比赛也仿佛是为了赎罪才做出的决定。\n在心情低落的事件中压抑着自己的情感，总有无法放下的危机感。\n经常被同期的好歌剧喋喋不休地纠缠着。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_AdmireVega_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210828143826",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_AdmireVega_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210828143826"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC",
+      "canonical_name_zh": "爱慕织姬",
+      "aliases": [
+        "爱慕织姬"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC",
+      "raw_name_zh": "爱慕织姬",
+      "page_title": "爱慕织姬",
+      "raw_name_jp": "アドマイヤベガ",
+      "raw_name_en": null,
+      "aliases": [
+        "织姬",
+        "アヤべ（ayabe）",
+        "アドベ（adobe)",
+        "AV[1]",
+        "爱慕织姬"
+      ],
+      "birthday_raw": "3月12日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "85",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "cv_raw": "咲咲木瞳",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/85/PID94038777.jpg!/fw/280?v=20211124160935",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/85/PID94038777.jpg!/fw/280?v=20211124160935",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_AdmireVega_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210828143826"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%88%B1%E6%85%95%E7%BB%87%E5%A7%AC"
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "id": "shinkouuindei",
+  "name_zh": "新光风",
+  "name_jp": "シンコウウインディ",
+  "aliases": [
+    "【Wicked Punk】新光風",
+    "新光風",
+    "Wicked Punk",
+    "新光风",
+    "シンコウウインディ"
+  ],
+  "birthday": "04-14",
+  "birthday_day_of_year": 105,
+  "birthday_raw": "4月14日",
+  "height_cm": 152,
+  "height_raw": "152cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "高田憂希",
+  "cv_raw": "高田憂希",
+  "quote_raw": "“嘎嗷~！东张西望的话就要咬你了哦！”",
+  "introduction": "有咬人习惯的狼……不对是马娘。 性格调皮喜欢恶作剧，如果不被人注意到就会不甘心。 咬人是希望被在意的表现，但本人完全没有那种自觉，只是装出一副狂野的样子。 总是用“noda！”“nanoda！”的语气说话。",
+  "intro_paragraphs": [
+    "有咬人习惯的狼……不对是马娘。",
+    "性格调皮喜欢恶作剧，如果不被人注意到就会不甘心。",
+    "咬人是希望被在意的表现，但本人完全没有那种自觉，只是装出一副狂野的样子。",
+    "总是用“noda！”“nanoda！”的语气说话。"
+  ],
+  "weight_desc_raw": "無增減",
+  "bust_raw": "77",
+  "waist_raw": "57",
+  "hip_raw": "88",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/8/84/642giknamlv5e3k8s1kao25rpi88hsa.png/100px-Chr_icon_1043.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/6/6b/UPDCH_ShinkoWindy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632",
+    "https://storage.moegirl.org.cn/moegirl/commons/a/a1/PID93533065.png!/fw/280?v=20211122094701"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/84/642giknamlv5e3k8s1kao25rpi88hsa.png/100px-Chr_icon_1043.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/6/6b/UPDCH_ShinkoWindy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a1/PID93533065.png!/fw/280?v=20211122094701",
+      "https://storage.moegirl.org.cn/moegirl/commons/6/6b/UPDCH_ShinkoWindy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%85%89%E9%A3%8E",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Wicked_Punk%E3%80%91%E6%96%B0%E5%85%89%E9%A2%A8",
+    "https://zh.moegirl.org.cn/%E6%96%B0%E5%85%89%E9%A3%8E"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "F",
+    "dirt": "A",
+    "sprint": "C",
+    "mile": "A",
+    "medium": "B",
+    "long": "G",
+    "nige": "G",
+    "senko": "A",
+    "sashi": "B",
+    "oikomi": "F"
+  },
+  "surface_group": [
+    "泥地"
+  ],
+  "distance_group": [
+    "英"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "新光风",
+      "character_id": "1043",
+      "birthday_raw": "4月14日",
+      "height_raw": "152",
+      "bust_raw": "77",
+      "waist_raw": "57",
+      "hip_raw": "88",
+      "whr_raw": "0.65",
+      "bust_waist_diff_raw": "20",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/84/642giknamlv5e3k8s1kao25rpi88hsa.png/100px-Chr_icon_1043.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/84/642giknamlv5e3k8s1kao25rpi88hsa.png/100px-Chr_icon_1043.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%85%89%E9%A3%8E"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "新光风",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%85%89%E9%A3%8E",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "F",
+      "dirt_raw": "A",
+      "sprint_raw": "C",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%85%89%E9%A3%8E",
+      "raw_name_zh": "新光风",
+      "raw_name_jp": "シンコウウインディ",
+      "nickname_raw": "Wicked Punk",
+      "star_raw": "3",
+      "birthday_raw": "4月14日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "57",
+      "hip_raw": "88",
+      "cv_raw": "高田忧希",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦寮",
+      "turf_raw": "F",
+      "dirt_raw": "A",
+      "sprint_raw": "C",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%85%89%E9%A3%8E"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Wicked_Punk%E3%80%91%E6%96%B0%E5%85%89%E9%A2%A8",
+      "raw_name_zh": "新光风",
+      "raw_name_jp": null,
+      "translated_name_raw": "新光風",
+      "nickname_raw": "Wicked Punk",
+      "page_title": "【Wicked Punk】新光風",
+      "page_title_aliases": [
+        "【Wicked Punk】新光風",
+        "新光風",
+        "Wicked Punk"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月14日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "高田憂希",
+      "introduction_raw": "最喜歡惡作劇！不搭理她就會咬人喔！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Wicked_Punk%E3%80%91%E6%96%B0%E5%85%89%E9%A2%A8",
+      "turf_raw": "F",
+      "dirt_raw": "A",
+      "sprint_raw": "C",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "新光风",
+      "raw_name_jp": "シンコウウインディ",
+      "cv_raw": "高田忧希",
+      "birthday_raw": "4月14日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "57",
+      "hip_raw": "88",
+      "quote_raw": "“嘎嗷~！东张西望的话就要咬你了哦！”",
+      "intro_paragraphs": [
+        "有咬人习惯的狼……不对是马娘。",
+        "性格调皮喜欢恶作剧，如果不被人注意到就会不甘心。",
+        "咬人是希望被在意的表现，但本人完全没有那种自觉，只是装出一副狂野的样子。",
+        "总是用“noda！”“nanoda！”的语气说话。"
+      ],
+      "introduction": "有咬人习惯的狼……不对是马娘。\n性格调皮喜欢恶作剧，如果不被人注意到就会不甘心。\n咬人是希望被在意的表现，但本人完全没有那种自觉，只是装出一副狂野的样子。\n总是用“noda！”“nanoda！”的语气说话。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/6b/UPDCH_ShinkoWindy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/6b/UPDCH_ShinkoWindy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%96%B0%E5%85%89%E9%A3%8E",
+      "canonical_name_zh": "新光风",
+      "aliases": [
+        "新光风"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%96%B0%E5%85%89%E9%A3%8E",
+      "raw_name_zh": "新光风",
+      "page_title": "新光风",
+      "raw_name_jp": "シンコウウインディ",
+      "raw_name_en": null,
+      "aliases": [
+        "新光风"
+      ],
+      "birthday_raw": "4月14日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "57",
+      "hip_raw": "88",
+      "cv_raw": "高田忧希",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦寮",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a1/PID93533065.png!/fw/280?v=20211122094701",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a1/PID93533065.png!/fw/280?v=20211122094701",
+        "https://storage.moegirl.org.cn/moegirl/commons/6/6b/UPDCH_ShinkoWindy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%96%B0%E5%85%89%E9%A3%8E"
+    }
+  }
+}

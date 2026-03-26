@@ -1,0 +1,262 @@
+{
+  "id": "reddodeizaia",
+  "order": 133,
+  "file_name": "133_Red_Desire.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "红色梦想",
+    "zh_tw": null,
+    "jp": "レッドディザイア",
+    "en": "Red Desire"
+  },
+  "aliases": [
+    "红色梦想",
+    "レッドディザイア",
+    "Red Desire",
+    "【トレセン学園】レッドディザイア",
+    "トレセン学園"
+  ],
+  "profile": {
+    "birthday": "04-19",
+    "birthday_raw": "4月19日",
+    "birthday_day_of_year": 110,
+    "height_cm": 160,
+    "height_raw": "160",
+    "cv": "关根瞳",
+    "cv_raw": "关根瞳",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "F",
+      "nige": "G",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "F"
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/3gelwzym3hiwf31ap1oftqhktq3rhsq.png/100px-Chr_icon_1136.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/3gelwzym3hiwf31ap1oftqhktq3rhsq.png/100px-Chr_icon_1136.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155456",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/280?v=20251108155456"
+    ],
+    "image_local_path": "/api/assets/reddodeizaia-thumb",
+    "asset_id": "reddodeizaia-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物",
+      "繁中服角色详情页"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%BA%A2%E8%89%B2%E6%A2%A6%E6%83%B3",
+      "https://zh.moegirl.org.cn/%E7%BA%A2%E8%89%B2%E6%A2%A6%E6%83%B3",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E3%83%88%E3%83%AC%E3%82%BB%E3%83%B3%E5%AD%A6%E5%9C%92%E3%80%91%E3%83%AC%E3%83%83%E3%83%89%E3%83%87%E3%82%A3%E3%82%B6%E3%82%A4%E3%82%A2"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/3gelwzym3hiwf31ap1oftqhktq3rhsq.png/100px-Chr_icon_1136.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155456"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/280?v=20251108155456",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155456"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "『啊啊，这一切必定是通往那个“世界”的“圣女试炼”——我一定会跨越给你看的。』 常常被看到她一边啜饮着憧憬的前辈为她冲泡的拿铁咖啡，一边说着这样的话。",
+    "intro_paragraphs": [
+      "『啊啊，这一切必定是通往那个“世界”的“圣女试炼”——我一定会跨越给你看的。』",
+      "常常被看到她一边啜饮着憧憬的前辈为她冲泡的拿铁咖啡，一边说着这样的话。"
+    ],
+    "quote_raw": "背负着终将抵达遥远“异世界”并成为受人敬仰的圣女的宿命的赛马娘（自称）。",
+    "weight_desc_raw": "神圣的秘密",
+    "bust_raw": "74",
+    "waist_raw": "55",
+    "hip_raw": "79"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "红色梦想",
+      "character_id": "1136",
+      "birthday_raw": "4月19日",
+      "height_raw": "160",
+      "bust_raw": "74",
+      "waist_raw": "55",
+      "hip_raw": "79",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "19",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/3gelwzym3hiwf31ap1oftqhktq3rhsq.png/100px-Chr_icon_1136.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/3gelwzym3hiwf31ap1oftqhktq3rhsq.png/100px-Chr_icon_1136.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%BA%A2%E8%89%B2%E6%A2%A6%E6%83%B3"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%BA%A2%E8%89%B2%E6%A2%A6%E6%83%B3",
+      "raw_name_zh": "红色梦想",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%BA%A2%E8%89%B2%E6%A2%A6%E6%83%B3"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E3%83%88%E3%83%AC%E3%82%BB%E3%83%B3%E5%AD%A6%E5%9C%92%E3%80%91%E3%83%AC%E3%83%83%E3%83%89%E3%83%87%E3%82%A3%E3%82%B6%E3%82%A4%E3%82%A2",
+      "raw_name_zh": "红色梦想",
+      "raw_name_jp": null,
+      "translated_name_raw": "红色梦想",
+      "nickname_raw": null,
+      "page_title": "【トレセン学園】レッドディザイア",
+      "page_title_aliases": [
+        "【トレセン学園】レッドディザイア",
+        "レッドディザイア",
+        "トレセン学園"
+      ],
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "introduction_raw": null,
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/3gelwzym3hiwf31ap1oftqhktq3rhsq.png/100px-Chr_icon_1136.png",
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E3%83%88%E3%83%AC%E3%82%BB%E3%83%B3%E5%AD%A6%E5%9C%92%E3%80%91%E3%83%AC%E3%83%83%E3%83%89%E3%83%87%E3%82%A3%E3%82%B6%E3%82%A4%E3%82%A2",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "红色梦想",
+      "raw_name_jp": "レッドディザイア",
+      "cv_raw": "关根瞳",
+      "birthday_raw": "4月19日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "神圣的秘密",
+      "bust_raw": "74",
+      "waist_raw": "55",
+      "hip_raw": "79",
+      "quote_raw": "背负着终将抵达遥远“异世界”并成为受人敬仰的圣女的宿命的赛马娘（自称）。",
+      "intro_paragraphs": [
+        "『啊啊，这一切必定是通往那个“世界”的“圣女试炼”——我一定会跨越给你看的。』",
+        "常常被看到她一边啜饮着憧憬的前辈为她冲泡的拿铁咖啡，一边说着这样的话。"
+      ],
+      "introduction": "『啊啊，这一切必定是通往那个“世界”的“圣女试炼”——我一定会跨越给你看的。』\n常常被看到她一边啜饮着憧憬的前辈为她冲泡的拿铁咖啡，一边说着这样的话。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155456",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155456"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%BA%A2%E8%89%B2%E6%A2%A6%E6%83%B3",
+      "canonical_name_zh": "红色梦想",
+      "aliases": [
+        "红色梦想"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%BA%A2%E8%89%B2%E6%A2%A6%E6%83%B3",
+      "raw_name_zh": "红色梦想",
+      "page_title": "红色梦想",
+      "raw_name_jp": "レッドディザイア",
+      "raw_name_en": null,
+      "aliases": [
+        "红色梦想"
+      ],
+      "birthday_raw": "4月19日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "神圣的秘密",
+      "bust_raw": "74",
+      "waist_raw": "55",
+      "hip_raw": "79",
+      "cv_raw": "关根瞳",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/280?v=20251108155456",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/280?v=20251108155456",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/43/UPDCH_RedDesire_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251108155456"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%BA%A2%E8%89%B2%E6%A2%A6%E6%83%B3"
+    }
+  }
+}

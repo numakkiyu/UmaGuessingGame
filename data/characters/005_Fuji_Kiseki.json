@@ -1,0 +1,282 @@
+{
+  "id": "fujikiseki",
+  "name_zh": "富士奇迹",
+  "name_jp": "フジキセキ",
+  "aliases": [
+    "【流星歌舞劇】富士奇石",
+    "富士奇石",
+    "流星歌舞劇",
+    "富士奇迹",
+    "フジキセキ",
+    "シューティンスタァ・ルヴュ"
+  ],
+  "birthday": "04-15",
+  "birthday_day_of_year": 106,
+  "birthday_raw": "4月15日",
+  "height_cm": 168,
+  "height_raw": "168cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "松井恵理子",
+  "cv_raw": "松井恵理子",
+  "quote_raw": "“不要哭，小马驹。感到烦恼的话可以跟我说说看哦。”",
+  "introduction": "无论谁的手都会温柔地握住，帅气风的艺人。 在马娘们中间大受欢迎，但不是常说的“海王”，一直都会像一家人一样帮助她们。也担任了栗东宿舍的舍长。 有一位作为舞台演员的母亲，有着想要把同样的感动通过比赛送给大家的愿望。瞄准了前方的幻之三冠。",
+  "intro_paragraphs": [
+    "无论谁的手都会温柔地握住，帅气风的艺人。",
+    "在马娘们中间大受欢迎，但不是常说的“海王”，一直都会像一家人一样帮助她们。也担任了栗东宿舍的舍长。",
+    "有一位作为舞台演员的母亲，有着想要把同样的感动通过比赛送给大家的愿望。瞄准了前方的幻之三冠。"
+  ],
+  "weight_desc_raw": "無增減",
+  "bust_raw": "84",
+  "waist_raw": "58",
+  "hip_raw": "82",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ow8pf0l75uucwrwir3jl4qda3ray37g.png/100px-Chr_icon_1005.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/ijm1sjbstsh1p5qzng4a9cfd3t67eet.png/100px-Chr_icon_1005_100502_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/b/bb/UPDCH_FujiKiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040920",
+    "https://storage.moegirl.org.cn/moegirl/commons/e/e9/92031750_p0.jpg!/fw/280?v=20221218183358"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ow8pf0l75uucwrwir3jl4qda3ray37g.png/100px-Chr_icon_1005.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/ijm1sjbstsh1p5qzng4a9cfd3t67eet.png/100px-Chr_icon_1005_100502_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/ijm1sjbstsh1p5qzng4a9cfd3t67eet.png/100px-Chr_icon_1005_100502_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/bb/UPDCH_FujiKiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040920"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e9/92031750_p0.jpg!/fw/280?v=20221218183358",
+      "https://storage.moegirl.org.cn/moegirl/commons/b/bb/UPDCH_FujiKiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040920"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%AF%8C%E5%A3%AB%E5%A5%87%E8%BF%B9",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B5%81%E6%98%9F%E6%AD%8C%E8%88%9E%E5%8A%87%E3%80%91%E5%AF%8C%E5%A3%AB%E5%A5%87%E7%9F%B3",
+    "https://zh.moegirl.org.cn/%E5%AF%8C%E5%A3%AB%E5%A5%87%E7%9F%B3"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "F",
+    "sprint": "B",
+    "mile": "A",
+    "medium": "B",
+    "long": "E",
+    "nige": "C",
+    "senko": "A",
+    "sashi": "C",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "富士奇迹",
+      "character_id": "1005",
+      "birthday_raw": "4月15日",
+      "height_raw": "168",
+      "bust_raw": "84",
+      "waist_raw": "58",
+      "hip_raw": "82",
+      "whr_raw": "0.71",
+      "bust_waist_diff_raw": "26",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ow8pf0l75uucwrwir3jl4qda3ray37g.png/100px-Chr_icon_1005.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ow8pf0l75uucwrwir3jl4qda3ray37g.png/100px-Chr_icon_1005.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%AF%8C%E5%A3%AB%E5%A5%87%E8%BF%B9"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "富士奇迹",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%AF%8C%E5%A3%AB%E5%A5%87%E8%BF%B9",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%AF%8C%E5%A3%AB%E5%A5%87%E8%BF%B9",
+      "raw_name_zh": "富士奇迹",
+      "raw_name_jp": "フジキセキ",
+      "nickname_raw": "シューティンスタァ・ルヴュ",
+      "star_raw": "3",
+      "birthday_raw": "4月15日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "84",
+      "waist_raw": "58",
+      "hip_raw": "82",
+      "cv_raw": "松井惠理子",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/ijm1sjbstsh1p5qzng4a9cfd3t67eet.png/100px-Chr_icon_1005_100502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%AF%8C%E5%A3%AB%E5%A5%87%E8%BF%B9"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B5%81%E6%98%9F%E6%AD%8C%E8%88%9E%E5%8A%87%E3%80%91%E5%AF%8C%E5%A3%AB%E5%A5%87%E7%9F%B3",
+      "raw_name_zh": "富士奇迹",
+      "raw_name_jp": null,
+      "translated_name_raw": "富士奇石",
+      "nickname_raw": "流星歌舞劇",
+      "page_title": "【流星歌舞劇】富士奇石",
+      "page_title_aliases": [
+        "【流星歌舞劇】富士奇石",
+        "富士奇石",
+        "流星歌舞劇"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月15日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "松井恵理子",
+      "introduction_raw": "護送工作非我莫屬！華麗的紳士女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/ijm1sjbstsh1p5qzng4a9cfd3t67eet.png/100px-Chr_icon_1005_100502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B5%81%E6%98%9F%E6%AD%8C%E8%88%9E%E5%8A%87%E3%80%91%E5%AF%8C%E5%A3%AB%E5%A5%87%E7%9F%B3",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "富士奇迹",
+      "raw_name_jp": "フジキセキ",
+      "cv_raw": "松井惠理子",
+      "birthday_raw": "4月15日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "84",
+      "waist_raw": "58",
+      "hip_raw": "82",
+      "quote_raw": "“不要哭，小马驹。感到烦恼的话可以跟我说说看哦。”",
+      "intro_paragraphs": [
+        "无论谁的手都会温柔地握住，帅气风的艺人。",
+        "在马娘们中间大受欢迎，但不是常说的“海王”，一直都会像一家人一样帮助她们。也担任了栗东宿舍的舍长。",
+        "有一位作为舞台演员的母亲，有着想要把同样的感动通过比赛送给大家的愿望。瞄准了前方的幻之三冠。"
+      ],
+      "introduction": "无论谁的手都会温柔地握住，帅气风的艺人。\n在马娘们中间大受欢迎，但不是常说的“海王”，一直都会像一家人一样帮助她们。也担任了栗东宿舍的舍长。\n有一位作为舞台演员的母亲，有着想要把同样的感动通过比赛送给大家的愿望。瞄准了前方的幻之三冠。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/bb/UPDCH_FujiKiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040920",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/bb/UPDCH_FujiKiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040920"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%AF%8C%E5%A3%AB%E5%A5%87%E7%9F%B3",
+      "canonical_name_zh": "富士奇石",
+      "aliases": [
+        "富士奇石"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%AF%8C%E5%A3%AB%E5%A5%87%E7%9F%B3",
+      "raw_name_zh": "富士奇迹",
+      "page_title": "富士奇石",
+      "raw_name_jp": "フジキセキ",
+      "raw_name_en": null,
+      "aliases": [
+        "富士奇石"
+      ],
+      "birthday_raw": "4月15日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "84",
+      "waist_raw": "58",
+      "hip_raw": "82",
+      "cv_raw": "松井惠理子",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e9/92031750_p0.jpg!/fw/280?v=20221218183358",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e9/92031750_p0.jpg!/fw/280?v=20221218183358",
+        "https://storage.moegirl.org.cn/moegirl/commons/b/bb/UPDCH_FujiKiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040920"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%AF%8C%E5%A3%AB%E5%A5%87%E7%9F%B3"
+    }
+  }
+}

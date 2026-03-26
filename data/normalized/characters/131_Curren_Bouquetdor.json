@@ -1,0 +1,263 @@
+{
+  "id": "karenbuukedooru",
+  "order": 131,
+  "file_name": "131_Curren_Bouquetdor.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "机伶金花",
+    "zh_tw": null,
+    "jp": "カレンブーケドール",
+    "en": "Curren Bouquetd'or"
+  },
+  "aliases": [
+    "机伶金花",
+    "カレンブーケドール",
+    "Curren Bouquetd'or",
+    "【一輪ずつ、喜びを束ねて】カレンブーケドール",
+    "一輪ずつ、喜びを束ねて"
+  ],
+  "profile": {
+    "birthday": "04-23",
+    "birthday_raw": "4月23日",
+    "birthday_day_of_year": 114,
+    "height_cm": 153,
+    "height_raw": "153",
+    "cv": "小田杏树",
+    "cv_raw": "小田杏树",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "B",
+      "nige": "E",
+      "senko": "A",
+      "sashi": "B",
+      "oikomi": "G"
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/de/lose7974jg9tfdri2y8hiv2z0fxqsxo.png/100px-Chr_icon_1134.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/de/lose7974jg9tfdri2y8hiv2z0fxqsxo.png/100px-Chr_icon_1134.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_CurrenBouquetdor_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a3/127794083_p0.png!/fw/280?v=20250401010823"
+    ],
+    "image_local_path": "/api/assets/karenbuukedooru-thumb",
+    "asset_id": "karenbuukedooru-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物",
+      "繁中服角色详情页"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%9C%BA%E4%BC%B6%E9%87%91%E8%8A%B1",
+      "https://zh.moegirl.org.cn/%E6%9C%BA%E4%BC%B6%E9%87%91%E8%8A%B1",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E4%B8%80%E8%BC%AA%E3%81%9A%E3%81%A4%E3%80%81%E5%96%9C%E3%81%B3%E3%82%92%E6%9D%9F%E3%81%AD%E3%81%A6%E3%80%91%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%96%E3%83%BC%E3%82%B1%E3%83%89%E3%83%BC%E3%83%AB"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/de/lose7974jg9tfdri2y8hiv2z0fxqsxo.png/100px-Chr_icon_1134.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_CurrenBouquetdor_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a3/127794083_p0.png!/fw/280?v=20250401010823",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_CurrenBouquetdor_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "她总是体贴入微，设身处地为他人着想，倾向于将他人的感受放在首位而行动。 因此，在个性鲜明的同龄马娘中，她往往容易被忽视，但她的实力却是毋庸置疑的真实存在。 “时代”这束鲜花中，她是不可或缺的一朵。",
+    "intro_paragraphs": [
+      "她总是体贴入微，设身处地为他人着想，倾向于将他人的感受放在首位而行动。",
+      "因此，在个性鲜明的同龄马娘中，她往往容易被忽视，但她的实力却是毋庸置疑的真实存在。",
+      "“时代”这束鲜花中，她是不可或缺的一朵。"
+    ],
+    "quote_raw": "这是一位过于温柔、喜欢照料花朵和进行花艺设计的马娘。",
+    "weight_desc_raw": "和谐的演变",
+    "bust_raw": "78",
+    "waist_raw": "53",
+    "hip_raw": "77"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "机伶金花",
+      "character_id": "1134",
+      "birthday_raw": "4月23日",
+      "height_raw": "153",
+      "bust_raw": "78",
+      "waist_raw": "53",
+      "hip_raw": "77",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/de/lose7974jg9tfdri2y8hiv2z0fxqsxo.png/100px-Chr_icon_1134.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/de/lose7974jg9tfdri2y8hiv2z0fxqsxo.png/100px-Chr_icon_1134.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9C%BA%E4%BC%B6%E9%87%91%E8%8A%B1"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%9C%BA%E4%BC%B6%E9%87%91%E8%8A%B1",
+      "raw_name_zh": "机伶金花",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9C%BA%E4%BC%B6%E9%87%91%E8%8A%B1"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%B8%80%E8%BC%AA%E3%81%9A%E3%81%A4%E3%80%81%E5%96%9C%E3%81%B3%E3%82%92%E6%9D%9F%E3%81%AD%E3%81%A6%E3%80%91%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%96%E3%83%BC%E3%82%B1%E3%83%89%E3%83%BC%E3%83%AB",
+      "raw_name_zh": "机伶金花",
+      "raw_name_jp": null,
+      "translated_name_raw": "机伶金花",
+      "nickname_raw": null,
+      "page_title": "【一輪ずつ、喜びを束ねて】カレンブーケドール",
+      "page_title_aliases": [
+        "【一輪ずつ、喜びを束ねて】カレンブーケドール",
+        "カレンブーケドール",
+        "一輪ずつ、喜びを束ねて"
+      ],
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "introduction_raw": null,
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/de/lose7974jg9tfdri2y8hiv2z0fxqsxo.png/100px-Chr_icon_1134.png",
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%B8%80%E8%BC%AA%E3%81%9A%E3%81%A4%E3%80%81%E5%96%9C%E3%81%B3%E3%82%92%E6%9D%9F%E3%81%AD%E3%81%A6%E3%80%91%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%96%E3%83%BC%E3%82%B1%E3%83%89%E3%83%BC%E3%83%AB",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "机伶金花",
+      "raw_name_jp": "カレンブーケドール",
+      "cv_raw": "小田杏树",
+      "birthday_raw": "4月23日",
+      "height_raw": "153cm",
+      "weight_desc_raw": "和谐的演变",
+      "bust_raw": "78",
+      "waist_raw": "53",
+      "hip_raw": "77",
+      "quote_raw": "这是一位过于温柔、喜欢照料花朵和进行花艺设计的马娘。",
+      "intro_paragraphs": [
+        "她总是体贴入微，设身处地为他人着想，倾向于将他人的感受放在首位而行动。",
+        "因此，在个性鲜明的同龄马娘中，她往往容易被忽视，但她的实力却是毋庸置疑的真实存在。",
+        "“时代”这束鲜花中，她是不可或缺的一朵。"
+      ],
+      "introduction": "她总是体贴入微，设身处地为他人着想，倾向于将他人的感受放在首位而行动。\n因此，在个性鲜明的同龄马娘中，她往往容易被忽视，但她的实力却是毋庸置疑的真实存在。\n“时代”这束鲜花中，她是不可或缺的一朵。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_CurrenBouquetdor_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_CurrenBouquetdor_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%9C%BA%E4%BC%B6%E9%87%91%E8%8A%B1",
+      "canonical_name_zh": "机伶金花",
+      "aliases": [
+        "机伶金花"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%9C%BA%E4%BC%B6%E9%87%91%E8%8A%B1",
+      "raw_name_zh": "机伶金花",
+      "page_title": "机伶金花",
+      "raw_name_jp": "カレンブーケドール",
+      "raw_name_en": null,
+      "aliases": [
+        "机伶金花"
+      ],
+      "birthday_raw": "4月23日",
+      "height_raw": "153cm",
+      "weight_desc_raw": "和谐的演变",
+      "bust_raw": "78",
+      "waist_raw": "53",
+      "hip_raw": "77",
+      "cv_raw": "小田杏树",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a3/127794083_p0.png!/fw/280?v=20250401010823",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a3/127794083_p0.png!/fw/280?v=20250401010823",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_CurrenBouquetdor_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%9C%BA%E4%BC%B6%E9%87%91%E8%8A%B1"
+    }
+  }
+}

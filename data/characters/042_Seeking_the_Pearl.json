@@ -1,0 +1,284 @@
+{
+  "id": "shiikinguzapaaru",
+  "name_zh": "采珠",
+  "name_jp": "シーキングザパール",
+  "aliases": [
+    "【Rocket☆Star】採珠",
+    "採珠",
+    "Rocket☆Star",
+    "采珠",
+    "シーキングザパール"
+  ],
+  "birthday": "04-16",
+  "birthday_day_of_year": 107,
+  "birthday_raw": "4月16日",
+  "height_cm": 168,
+  "height_raw": "168cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "福原綾香",
+  "cv_raw": "福原綾香",
+  "quote_raw": "“世界充满了可能性！对，就像宛若珍珠的我一样！”",
+  "introduction": "很有自信爱表现，不论世界发生什么事情都敢挺身面对的姐系马娘。 身为长期在海外各地生活的归国子女却神奇地不懂英语，但能以身体语言沟通。 红颜祸水假面。",
+  "intro_paragraphs": [
+    "很有自信爱表现，不论世界发生什么事情都敢挺身面对的姐系马娘。",
+    "身为长期在海外各地生活的归国子女却神奇地不懂英语，但能以身体语言沟通。",
+    "红颜祸水假面。"
+  ],
+  "weight_desc_raw": "世界級完美",
+  "bust_raw": "91",
+  "waist_raw": "57",
+  "hip_raw": "87",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/ib1tzupjodz3nv8tsfqni46flbgb6gp.png/100px-Chr_icon_1042.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/aqslzl1qhy4ua1hf4hlbues3poy37tu.png/100px-Chr_icon_1042_104202_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/3/39/UPDCH_SeekingthePearl_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210603091635",
+    "https://storage.moegirl.org.cn/moegirl/commons/0/03/PID91180305.png!/fw/280?v=20211124163121"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/ib1tzupjodz3nv8tsfqni46flbgb6gp.png/100px-Chr_icon_1042.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/aqslzl1qhy4ua1hf4hlbues3poy37tu.png/100px-Chr_icon_1042_104202_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/aqslzl1qhy4ua1hf4hlbues3poy37tu.png/100px-Chr_icon_1042_104202_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/3/39/UPDCH_SeekingthePearl_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210603091635"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/0/03/PID91180305.png!/fw/280?v=20211124163121",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/39/UPDCH_SeekingthePearl_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210603091635"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E9%87%87%E7%8F%A0",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Rocket%E2%98%86Star%E3%80%91%E6%8E%A1%E7%8F%A0",
+    "https://zh.moegirl.org.cn/%E9%87%87%E7%8F%A0"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "F",
+    "sprint": "A",
+    "mile": "A",
+    "medium": "E",
+    "long": "G",
+    "nige": "C",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "B"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "短",
+    "英"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "采珠",
+      "character_id": "1042",
+      "birthday_raw": "4月16日",
+      "height_raw": "168",
+      "bust_raw": "91",
+      "waist_raw": "57",
+      "hip_raw": "87",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "34",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/ib1tzupjodz3nv8tsfqni46flbgb6gp.png/100px-Chr_icon_1042.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/ib1tzupjodz3nv8tsfqni46flbgb6gp.png/100px-Chr_icon_1042.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%87%E7%8F%A0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "采珠",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%87%E7%8F%A0",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "20%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%87%87%E7%8F%A0",
+      "raw_name_zh": "采珠",
+      "raw_name_jp": "シーキングザパール",
+      "nickname_raw": "Rocket☆Star",
+      "star_raw": "3",
+      "birthday_raw": "4月16日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "世界级的完美",
+      "bust_raw": "91",
+      "waist_raw": "57",
+      "hip_raw": "87",
+      "cv_raw": "福原绫香",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "B",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/aqslzl1qhy4ua1hf4hlbues3poy37tu.png/100px-Chr_icon_1042_104202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%87%E7%8F%A0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Rocket%E2%98%86Star%E3%80%91%E6%8E%A1%E7%8F%A0",
+      "raw_name_zh": "采珠",
+      "raw_name_jp": null,
+      "translated_name_raw": "採珠",
+      "nickname_raw": "Rocket☆Star",
+      "page_title": "【Rocket☆Star】採珠",
+      "page_title_aliases": [
+        "【Rocket☆Star】採珠",
+        "採珠",
+        "Rocket☆Star"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月16日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "世界級完美",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "福原綾香",
+      "introduction_raw": "挑戰世界！將不可能化為珍珠的大姐姐",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/aqslzl1qhy4ua1hf4hlbues3poy37tu.png/100px-Chr_icon_1042_104202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Rocket%E2%98%86Star%E3%80%91%E6%8E%A1%E7%8F%A0",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "采珠",
+      "raw_name_jp": "シーキングザパール",
+      "cv_raw": "福原绫香",
+      "birthday_raw": "4月16日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "世界级的完美",
+      "bust_raw": "91",
+      "waist_raw": "57",
+      "hip_raw": "87",
+      "quote_raw": "“世界充满了可能性！对，就像宛若珍珠的我一样！”",
+      "intro_paragraphs": [
+        "很有自信爱表现，不论世界发生什么事情都敢挺身面对的姐系马娘。",
+        "身为长期在海外各地生活的归国子女却神奇地不懂英语，但能以身体语言沟通。",
+        "红颜祸水假面。"
+      ],
+      "introduction": "很有自信爱表现，不论世界发生什么事情都敢挺身面对的姐系马娘。\n身为长期在海外各地生活的归国子女却神奇地不懂英语，但能以身体语言沟通。\n红颜祸水假面。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/39/UPDCH_SeekingthePearl_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210603091635",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/39/UPDCH_SeekingthePearl_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210603091635"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%87%87%E7%8F%A0",
+      "canonical_name_zh": "采珠",
+      "aliases": [
+        "采珠"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%87%87%E7%8F%A0",
+      "raw_name_zh": "采珠",
+      "page_title": "采珠",
+      "raw_name_jp": "シーキングザパール",
+      "raw_name_en": null,
+      "aliases": [
+        "採珠",
+        "采珠"
+      ],
+      "birthday_raw": "4月16日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "世界级的完美",
+      "bust_raw": "91",
+      "waist_raw": "57",
+      "hip_raw": "87",
+      "cv_raw": "福原绫香",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/03/PID91180305.png!/fw/280?v=20211124163121",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/03/PID91180305.png!/fw/280?v=20211124163121",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/39/UPDCH_SeekingthePearl_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210603091635"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%87%87%E7%8F%A0"
+    }
+  }
+}

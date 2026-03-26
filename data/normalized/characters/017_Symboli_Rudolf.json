@@ -1,0 +1,319 @@
+{
+  "id": "shinborirudorufu",
+  "order": 17,
+  "file_name": "017_Symboli_Rudolf.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "鲁道夫象征",
+    "zh_tw": null,
+    "jp": "シンボリルドルフ",
+    "en": "Symboli Rudolf"
+  },
+  "aliases": [
+    "鲁道夫象征",
+    "シンボリルドルフ",
+    "Symboli Rudolf",
+    "【皇帝之路】魯道夫象徵",
+    "魯道夫象徵",
+    "皇帝之路",
+    "皇帝",
+    "会长",
+    "露娜（ルナ）[1]",
+    "卤豆腐",
+    "ロード・オブ・エンペラー"
+  ],
+  "profile": {
+    "birthday": "03-13",
+    "birthday_raw": "3月13日",
+    "birthday_day_of_year": 73,
+    "height_cm": 165,
+    "height_raw": "165㎝",
+    "cv": "田所あずさ",
+    "cv_raw": "田所あずさ",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "E",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "B",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "C"
+    },
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/94/lfzxqjm0w2nfoh53nkj8s4hgyc1299k.png/100px-Chr_icon_1017.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/8oxqo9sxp1dpxdxz2poccn7it6y6aac.png/100px-Chr_icon_1017_101702_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a1/UPDCH_SymboliRudolf_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051835",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c8/Pid89915350.jpg!/fw/280?v=20211016170618"
+    ],
+    "image_local_path": "/api/assets/shinborirudorufu-thumb",
+    "asset_id": "shinborirudorufu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%9A%87%E5%B8%9D%E4%B9%8B%E8%B7%AF%E3%80%91%E9%AD%AF%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%B5",
+      "https://zh.moegirl.org.cn/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/94/lfzxqjm0w2nfoh53nkj8s4hgyc1299k.png/100px-Chr_icon_1017.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/8oxqo9sxp1dpxdxz2poccn7it6y6aac.png/100px-Chr_icon_1017_101702_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/8oxqo9sxp1dpxdxz2poccn7it6y6aac.png/100px-Chr_icon_1017_101702_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a1/UPDCH_SymboliRudolf_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051835"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c8/Pid89915350.jpg!/fw/280?v=20211016170618",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a1/UPDCH_SymboliRudolf_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051835"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "别名“皇帝”，担任特雷森学园的学生会长，在比赛中的实力、政治力量、人格都十分出众。 并非是利己主义者，而是时刻意识到自己是正确的规范。 是一位以创造每个赛马娘都能幸福的时代为目标的理想主义者。 受到东海帝王的仰慕。",
+    "intro_paragraphs": [
+      "别名“皇帝”，担任特雷森学园的学生会长，在比赛中的实力、政治力量、人格都十分出众。",
+      "并非是利己主义者，而是时刻意识到自己是正确的规范。",
+      "是一位以创造每个赛马娘都能幸福的时代为目标的理想主义者。",
+      "受到东海帝王的仰慕。"
+    ],
+    "quote_raw": "“百骏多幸。创造吧，所有赛马娘都能幸福生活的世界。”",
+    "weight_desc_raw": "相當理想",
+    "bust_raw": "86",
+    "waist_raw": "59",
+    "hip_raw": "85"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "鲁道夫象征",
+      "character_id": "1017",
+      "birthday_raw": "3月13日",
+      "height_raw": "165",
+      "bust_raw": "86",
+      "waist_raw": "59",
+      "hip_raw": "85",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/94/lfzxqjm0w2nfoh53nkj8s4hgyc1299k.png/100px-Chr_icon_1017.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/94/lfzxqjm0w2nfoh53nkj8s4hgyc1299k.png/100px-Chr_icon_1017.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "鲁道夫象征",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81",
+      "raw_name_zh": "鲁道夫象征",
+      "raw_name_jp": "シンボリルドルフ",
+      "nickname_raw": "ロード・オブ・エンペラー",
+      "star_raw": "3",
+      "birthday_raw": "3月13日",
+      "height_raw": "165㎝",
+      "weight_desc_raw": "十分理想",
+      "bust_raw": "86",
+      "waist_raw": "59",
+      "hip_raw": "85",
+      "cv_raw": "田所梓",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/8oxqo9sxp1dpxdxz2poccn7it6y6aac.png/100px-Chr_icon_1017_101702_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%9A%87%E5%B8%9D%E4%B9%8B%E8%B7%AF%E3%80%91%E9%AD%AF%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%B5",
+      "raw_name_zh": "鲁道夫象征",
+      "raw_name_jp": null,
+      "translated_name_raw": "魯道夫象徵",
+      "nickname_raw": "皇帝之路",
+      "page_title": "【皇帝之路】魯道夫象徵",
+      "page_title_aliases": [
+        "【皇帝之路】魯道夫象徵",
+        "魯道夫象徵",
+        "皇帝之路"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月13日",
+      "height_raw": "165㎝",
+      "weight_desc_raw": "相當理想",
+      "bust_raw": "86",
+      "waist_raw": "59",
+      "hip_raw": "85",
+      "cv_raw": "田所あずさ",
+      "introduction_raw": "君臨天下的「皇帝」絕不動搖的權威！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/8oxqo9sxp1dpxdxz2poccn7it6y6aac.png/100px-Chr_icon_1017_101702_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%9A%87%E5%B8%9D%E4%B9%8B%E8%B7%AF%E3%80%91%E9%AD%AF%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%B5",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "鲁道夫象征",
+      "raw_name_jp": "シンボリルドルフ",
+      "cv_raw": "田所梓",
+      "birthday_raw": "3月13日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "十分理想",
+      "bust_raw": "86",
+      "waist_raw": "59",
+      "hip_raw": "85",
+      "quote_raw": "“百骏多幸。创造吧，所有赛马娘都能幸福生活的世界。”",
+      "intro_paragraphs": [
+        "别名“皇帝”，担任特雷森学园的学生会长，在比赛中的实力、政治力量、人格都十分出众。",
+        "并非是利己主义者，而是时刻意识到自己是正确的规范。",
+        "是一位以创造每个赛马娘都能幸福的时代为目标的理想主义者。",
+        "受到东海帝王的仰慕。"
+      ],
+      "introduction": "别名“皇帝”，担任特雷森学园的学生会长，在比赛中的实力、政治力量、人格都十分出众。\n并非是利己主义者，而是时刻意识到自己是正确的规范。\n是一位以创造每个赛马娘都能幸福的时代为目标的理想主义者。\n受到东海帝王的仰慕。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a1/UPDCH_SymboliRudolf_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051835",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a1/UPDCH_SymboliRudolf_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051835"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81",
+      "canonical_name_zh": "鲁道夫象征",
+      "aliases": [
+        "鲁道夫象征"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81",
+      "raw_name_zh": "鲁道夫象征",
+      "page_title": "鲁道夫象征",
+      "raw_name_jp": "シンボリルドルフ",
+      "raw_name_en": null,
+      "aliases": [
+        "皇帝",
+        "会长",
+        "露娜（ルナ）[1]",
+        "卤豆腐",
+        "鲁道夫象征"
+      ],
+      "birthday_raw": "3月13日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "十分理想",
+      "bust_raw": "85",
+      "waist_raw": "59",
+      "hip_raw": "85",
+      "cv_raw": "田所梓",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c8/Pid89915350.jpg!/fw/280?v=20211016170618",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c8/Pid89915350.jpg!/fw/280?v=20211016170618",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a1/UPDCH_SymboliRudolf_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051835"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%B2%81%E9%81%93%E5%A4%AB%E8%B1%A1%E5%BE%81"
+    }
+  }
+}

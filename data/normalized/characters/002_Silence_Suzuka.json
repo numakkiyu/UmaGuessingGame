@@ -1,0 +1,324 @@
+{
+  "id": "sairensusuzuka",
+  "order": 2,
+  "file_name": "002_Silence_Suzuka.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "无声铃鹿",
+    "zh_tw": "無聲純真",
+    "jp": "サイレンススズカ",
+    "en": "Silence Suzuka"
+  },
+  "aliases": [
+    "无声铃鹿",
+    "無聲純真",
+    "サイレンススズカ",
+    "Silence Suzuka",
+    "【無聲純真】無聲鈴鹿",
+    "無聲鈴鹿",
+    "铃鹿（スズカ）",
+    "ススズ",
+    "異次元の逃亡者",
+    "无胸铃鹿",
+    "B70",
+    "鹿没乃子",
+    "识字卡（桑）",
+    "斯滋卡（桑）",
+    "サイレントイノセンス"
+  ],
+  "profile": {
+    "birthday": "05-01",
+    "birthday_raw": "5月1日",
+    "birthday_day_of_year": 122,
+    "height_cm": 161,
+    "height_raw": "161㎝",
+    "cv": "高野麻里佳",
+    "cv_raw": "高野麻里佳",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "D",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "nige": "A",
+      "senko": "C",
+      "sashi": "E",
+      "oikomi": "G"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/35/t4xrx0lg8n14lpkzha3vfqvlg2lhjqr.png/100px-Chr_icon_1002.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/27/3l4heljhkc1a6dix33czzsbndpr6jt2.png/100px-Chr_icon_1002_100202_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e0/UPDCH_SilenceSuzuka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051317",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/7a/P91501905.jpg!/fw/280?v=20211220220853"
+    ],
+    "image_local_path": "/api/assets/sairensusuzuka-thumb",
+    "asset_id": "sairensusuzuka-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%84%A1%E8%81%B2%E7%B4%94%E7%9C%9F%E3%80%91%E7%84%A1%E8%81%B2%E9%88%B4%E9%B9%BF",
+      "https://zh.moegirl.org.cn/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/35/t4xrx0lg8n14lpkzha3vfqvlg2lhjqr.png/100px-Chr_icon_1002.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/27/3l4heljhkc1a6dix33czzsbndpr6jt2.png/100px-Chr_icon_1002_100202_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/27/3l4heljhkc1a6dix33czzsbndpr6jt2.png/100px-Chr_icon_1002_100202_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e0/UPDCH_SilenceSuzuka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051317"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7a/P91501905.jpg!/fw/280?v=20211220220853",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e0/UPDCH_SilenceSuzuka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051317"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "擅长起跑后就来到领先位置，就这样一个人奔跑的“大逃”跑法的天生的天才。 虽然文静到有些清心寡欲，但并不是讨厌别人，只是沉浸在了奔跑之中。 是特别周同寝室的前辈，这份透明感受到很多人的憧憬。",
+    "intro_paragraphs": [
+      "擅长起跑后就来到领先位置，就这样一个人奔跑的“大逃”跑法的天生的天才。",
+      "虽然文静到有些清心寡欲，但并不是讨厌别人，只是沉浸在了奔跑之中。",
+      "是特别周同寝室的前辈，这份透明感受到很多人的憧憬。"
+    ],
+    "quote_raw": "“只是想看到……没有任何人在的最前方的景色。”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "70",
+    "waist_raw": "53",
+    "hip_raw": "79"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "无声铃鹿",
+      "character_id": "1002",
+      "birthday_raw": "5月1日",
+      "height_raw": "161",
+      "bust_raw": "70",
+      "waist_raw": "53",
+      "hip_raw": "79",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "17",
+      "body_type_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/35/t4xrx0lg8n14lpkzha3vfqvlg2lhjqr.png/100px-Chr_icon_1002.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/35/t4xrx0lg8n14lpkzha3vfqvlg2lhjqr.png/100px-Chr_icon_1002.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "无声铃鹿",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF",
+      "raw_name_zh": "无声铃鹿",
+      "raw_name_jp": "サイレンススズカ",
+      "nickname_raw": "サイレントイノセンス",
+      "star_raw": "3",
+      "birthday_raw": "5月1日",
+      "height_raw": "161㎝",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "70",
+      "waist_raw": "53",
+      "hip_raw": "79",
+      "cv_raw": "高野麻里佳",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "E",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/27/3l4heljhkc1a6dix33czzsbndpr6jt2.png/100px-Chr_icon_1002_100202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%84%A1%E8%81%B2%E7%B4%94%E7%9C%9F%E3%80%91%E7%84%A1%E8%81%B2%E9%88%B4%E9%B9%BF",
+      "raw_name_zh": "无声铃鹿",
+      "raw_name_jp": null,
+      "translated_name_raw": "無聲鈴鹿",
+      "nickname_raw": "無聲純真",
+      "page_title": "【無聲純真】無聲鈴鹿",
+      "page_title_aliases": [
+        "【無聲純真】無聲鈴鹿",
+        "無聲鈴鹿",
+        "無聲純真"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月1日",
+      "height_raw": "161㎝",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "70",
+      "waist_raw": "53",
+      "hip_raw": "79",
+      "cv_raw": "高野麻里佳",
+      "introduction_raw": "寂靜的疾馳者。追求超越音速的境界",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/27/3l4heljhkc1a6dix33czzsbndpr6jt2.png/100px-Chr_icon_1002_100202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%84%A1%E8%81%B2%E7%B4%94%E7%9C%9F%E3%80%91%E7%84%A1%E8%81%B2%E9%88%B4%E9%B9%BF",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "无声铃鹿",
+      "raw_name_jp": "サイレンススズカ",
+      "cv_raw": "高野麻里佳",
+      "birthday_raw": "5月1日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "70",
+      "waist_raw": "53",
+      "hip_raw": "79",
+      "quote_raw": "“只是想看到……没有任何人在的最前方的景色。”",
+      "intro_paragraphs": [
+        "擅长起跑后就来到领先位置，就这样一个人奔跑的“大逃”跑法的天生的天才。",
+        "虽然文静到有些清心寡欲，但并不是讨厌别人，只是沉浸在了奔跑之中。",
+        "是特别周同寝室的前辈，这份透明感受到很多人的憧憬。"
+      ],
+      "introduction": "擅长起跑后就来到领先位置，就这样一个人奔跑的“大逃”跑法的天生的天才。\n虽然文静到有些清心寡欲，但并不是讨厌别人，只是沉浸在了奔跑之中。\n是特别周同寝室的前辈，这份透明感受到很多人的憧憬。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e0/UPDCH_SilenceSuzuka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051317",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e0/UPDCH_SilenceSuzuka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051317"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF",
+      "canonical_name_zh": "无声铃鹿",
+      "aliases": [
+        "无声铃鹿"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF",
+      "raw_name_zh": "无声铃鹿",
+      "page_title": "无声铃鹿",
+      "raw_name_jp": "サイレンススズカ",
+      "raw_name_en": null,
+      "aliases": [
+        "铃鹿（スズカ）",
+        "ススズ",
+        "異次元の逃亡者",
+        "无胸铃鹿",
+        "B70",
+        "鹿没乃子",
+        "识字卡（桑）",
+        "斯滋卡（桑）",
+        "无声铃鹿"
+      ],
+      "birthday_raw": "5月1日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "70",
+      "waist_raw": "53",
+      "hip_raw": "79",
+      "cv_raw": "高野麻里佳",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/7a/P91501905.jpg!/fw/280?v=20211220220853",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7a/P91501905.jpg!/fw/280?v=20211220220853",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e0/UPDCH_SilenceSuzuka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051317"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%97%A0%E5%A3%B0%E9%93%83%E9%B9%BF"
+    }
+  }
+}

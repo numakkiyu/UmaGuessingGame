@@ -1,0 +1,187 @@
+{
+  "id": "samusonbiggu",
+  "name_zh": "大森逊",
+  "name_jp": "サムソンビッグ",
+  "aliases": [
+    "大森逊",
+    "サムソンビッグ"
+  ],
+  "birthday": "04-14",
+  "birthday_day_of_year": 105,
+  "birthday_raw": "4月14日",
+  "height_cm": 143,
+  "height_raw": "143",
+  "grade": null,
+  "grade_raw": null,
+  "dormitory": null,
+  "dorm_raw": null,
+  "star": null,
+  "star_raw": null,
+  "cv": "根本京里",
+  "cv_raw": "根本京里",
+  "quote_raw": "\"梦想成为震撼世界的顶尖赛马娘！\"",
+  "introduction": "——这是一位以非凡毅力追逐梦想的赛马娘。 尽管清醒地认识到宏伟理想与严酷现实之间的鸿沟，她仍秉持\"先挑战了再说！\"的信条，日复一日迎战着接踵而至的困境。 就连同期的成田白仁，也不由自主地对她另眼相看。",
+  "intro_paragraphs": [
+    "——这是一位以非凡毅力追逐梦想的赛马娘。",
+    "尽管清醒地认识到宏伟理想与严酷现实之间的鸿沟，她仍秉持\"先挑战了再说！\"的信条，日复一日迎战着接踵而至的困境。",
+    "就连同期的成田白仁，也不由自主地对她另眼相看。"
+  ],
+  "weight_desc_raw": "无增减（想要变得更重！）",
+  "bust_raw": "72",
+  "waist_raw": "51",
+  "hip_raw": "72",
+  "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/f1/UPDCH_SamsonBig_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231119170529",
+  "image_urls": [
+    "https://storage.moegirl.org.cn/moegirl/commons/f/f1/UPDCH_SamsonBig_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231119170529",
+    "https://storage.moegirl.org.cn/moegirl/commons/6/67/113565559_p0.png!/fw/280?v=20231130165826"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [],
+    "biliwiki_gallery": [],
+    "biliwiki_detail": [],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f1/UPDCH_SamsonBig_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231119170529"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/6/67/113565559_p0.png!/fw/280?v=20231130165826",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f1/UPDCH_SamsonBig_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231119170529"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A3%AE%E9%80%8A",
+    "https://zh.moegirl.org.cn/%E5%A4%A7%E6%A3%AE%E9%80%8A"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": null,
+    "dirt": null,
+    "sprint": null,
+    "mile": null,
+    "medium": null,
+    "long": null,
+    "nige": null,
+    "senko": null,
+    "sashi": null,
+    "oikomi": null
+  },
+  "surface_group": [],
+  "distance_group": [],
+  "running_style_group": [],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "大森逊",
+      "character_id": null,
+      "birthday_raw": "4月14日",
+      "height_raw": "143",
+      "bust_raw": "72",
+      "waist_raw": "51",
+      "hip_raw": "72",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "21",
+      "body_type_raw": "Y",
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A3%AE%E9%80%8A"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A3%AE%E9%80%8A",
+      "raw_name_zh": "大森逊",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A3%AE%E9%80%8A"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "大森逊",
+      "raw_name_jp": "サムソンビッグ",
+      "cv_raw": "根本京里",
+      "birthday_raw": "4月14日",
+      "height_raw": "143cm",
+      "weight_desc_raw": "无增减（想要变得更重！）",
+      "bust_raw": "72",
+      "waist_raw": "51",
+      "hip_raw": "72",
+      "quote_raw": "\"梦想成为震撼世界的顶尖赛马娘！\"",
+      "intro_paragraphs": [
+        "——这是一位以非凡毅力追逐梦想的赛马娘。",
+        "尽管清醒地认识到宏伟理想与严酷现实之间的鸿沟，她仍秉持\"先挑战了再说！\"的信条，日复一日迎战着接踵而至的困境。",
+        "就连同期的成田白仁，也不由自主地对她另眼相看。"
+      ],
+      "introduction": "——这是一位以非凡毅力追逐梦想的赛马娘。\n尽管清醒地认识到宏伟理想与严酷现实之间的鸿沟，她仍秉持\"先挑战了再说！\"的信条，日复一日迎战着接踵而至的困境。\n就连同期的成田白仁，也不由自主地对她另眼相看。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/f1/UPDCH_SamsonBig_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231119170529",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f1/UPDCH_SamsonBig_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231119170529"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E6%A3%AE%E9%80%8A",
+      "canonical_name_zh": "大森逊",
+      "aliases": [
+        "大森逊"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E6%A3%AE%E9%80%8A",
+      "raw_name_zh": "大森逊",
+      "page_title": "大森逊",
+      "raw_name_jp": "サムソンビッグ",
+      "raw_name_en": null,
+      "aliases": [
+        "大森逊"
+      ],
+      "birthday_raw": "4月14日",
+      "height_raw": "143cm",
+      "weight_desc_raw": "无增减（想要变得更重！）",
+      "bust_raw": "72",
+      "waist_raw": "51",
+      "hip_raw": "72",
+      "cv_raw": "根本京里",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/67/113565559_p0.png!/fw/280?v=20231130165826",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/67/113565559_p0.png!/fw/280?v=20231130165826",
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f1/UPDCH_SamsonBig_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231119170529"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E6%A3%AE%E9%80%8A"
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "id": "wandaaakyuuto",
+  "name_zh": "奇锐骏",
+  "name_jp": "ワンダーアキュート",
+  "aliases": [
+    "【Butterfly Sting】奇銳駿",
+    "奇銳駿",
+    "Butterfly Sting",
+    "奶奶",
+    "和田奶奶",
+    "奇锐骏",
+    "ワンダーアキュート"
+  ],
+  "birthday": "03-14",
+  "birthday_day_of_year": 74,
+  "birthday_raw": "3月14日",
+  "height_cm": 159,
+  "height_raw": "159cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "須藤叶希",
+  "cv_raw": "須藤叶希",
+  "quote_raw": "非常稳重且擅长照顾人的马娘。",
+  "introduction": "她身边的人经常评价说「跟她说话总感觉能勾起和自己奶奶的回忆，令人会心一笑」。 然而一旦临近比赛，她却会极度克制，几乎把自己逼上绝路，有一股深藏不露的斗志。",
+  "intro_paragraphs": [
+    "她身边的人经常评价说「跟她说话总感觉能勾起和自己奶奶的回忆，令人会心一笑」。",
+    "然而一旦临近比赛，她却会极度克制，几乎把自己逼上绝路，有一股深藏不露的斗志。"
+  ],
+  "weight_desc_raw": "不穩定",
+  "bust_raw": "75",
+  "waist_raw": "52",
+  "hip_raw": "78",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/6oo19b0lixomddgtk7hn9r1o5cuoqjx.png/100px-Chr_icon_1100.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/7/73/3xvp8stahb6itj8y34yyk2lxwrh9rtv.png/100px-Chr_icon_1100_110002_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/b/b8/UPDCH_WonderAcute_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131714",
+    "https://storage.moegirl.org.cn/moegirl/commons/0/0b/102893759_p0.jpg!/fw/280?v=20221118175655"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/6oo19b0lixomddgtk7hn9r1o5cuoqjx.png/100px-Chr_icon_1100.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/73/3xvp8stahb6itj8y34yyk2lxwrh9rtv.png/100px-Chr_icon_1100_110002_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/b8/UPDCH_WonderAcute_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131714"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0b/102893759_p0.jpg!/fw/280?v=20221118175655",
+      "https://storage.moegirl.org.cn/moegirl/commons/b/b8/UPDCH_WonderAcute_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131714"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%A5%87%E9%94%90%E9%AA%8F",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Butterfly_Sting%E3%80%91%E5%A5%87%E9%8A%B3%E9%A7%BF",
+    "https://zh.moegirl.org.cn/%E5%A5%87%E9%94%90%E9%AA%8F"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "G",
+    "dirt": "A",
+    "sprint": "D",
+    "mile": "A",
+    "medium": "A",
+    "long": "E",
+    "nige": "C",
+    "senko": "A",
+    "sashi": "C",
+    "oikomi": "E"
+  },
+  "surface_group": [
+    "泥地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "奇锐骏",
+      "character_id": "1100",
+      "birthday_raw": "3月14日",
+      "height_raw": "159",
+      "bust_raw": "75",
+      "waist_raw": "52",
+      "hip_raw": "78",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "23",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/6oo19b0lixomddgtk7hn9r1o5cuoqjx.png/100px-Chr_icon_1100.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/6oo19b0lixomddgtk7hn9r1o5cuoqjx.png/100px-Chr_icon_1100.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A5%87%E9%94%90%E9%AA%8F"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "奇锐骏",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A5%87%E9%94%90%E9%AA%8F",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "15%",
+      "wisdom_growth_raw": "15%",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%A5%87%E9%94%90%E9%AA%8F",
+      "raw_name_zh": "奇锐骏",
+      "raw_name_jp": "ワンダーアキュート",
+      "nickname_raw": "Butterfly Sting",
+      "star_raw": "3",
+      "birthday_raw": "3月14日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "不稳定",
+      "bust_raw": "75",
+      "waist_raw": "52",
+      "hip_raw": "78",
+      "cv_raw": "须藤叶希",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/73/3xvp8stahb6itj8y34yyk2lxwrh9rtv.png/100px-Chr_icon_1100_110002_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A5%87%E9%94%90%E9%AA%8F"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Butterfly_Sting%E3%80%91%E5%A5%87%E9%8A%B3%E9%A7%BF",
+      "raw_name_zh": "奇锐骏",
+      "raw_name_jp": null,
+      "translated_name_raw": "奇銳駿",
+      "nickname_raw": "Butterfly Sting",
+      "page_title": "【Butterfly Sting】奇銳駿",
+      "page_title_aliases": [
+        "【Butterfly Sting】奇銳駿",
+        "奇銳駿",
+        "Butterfly Sting"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月14日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "不穩定",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "須藤叶希",
+      "introduction_raw": "不焦急、不躁進也不輕易認輸。充滿骨氣且絕不放棄的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Butterfly_Sting%E3%80%91%E5%A5%87%E9%8A%B3%E9%A7%BF",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "E"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "奇锐骏",
+      "raw_name_jp": "ワンダーアキュート",
+      "cv_raw": "须藤叶希",
+      "birthday_raw": "3月14日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "不稳定",
+      "bust_raw": "75",
+      "waist_raw": "52",
+      "hip_raw": "78",
+      "quote_raw": "非常稳重且擅长照顾人的马娘。",
+      "intro_paragraphs": [
+        "她身边的人经常评价说「跟她说话总感觉能勾起和自己奶奶的回忆，令人会心一笑」。",
+        "然而一旦临近比赛，她却会极度克制，几乎把自己逼上绝路，有一股深藏不露的斗志。"
+      ],
+      "introduction": "她身边的人经常评价说「跟她说话总感觉能勾起和自己奶奶的回忆，令人会心一笑」。\n然而一旦临近比赛，她却会极度克制，几乎把自己逼上绝路，有一股深藏不露的斗志。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/b8/UPDCH_WonderAcute_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131714",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b8/UPDCH_WonderAcute_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131714"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A5%87%E9%94%90%E9%AA%8F",
+      "canonical_name_zh": "奇锐骏",
+      "aliases": [
+        "奇锐骏"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%A5%87%E9%94%90%E9%AA%8F",
+      "raw_name_zh": "奇锐骏",
+      "page_title": "奇锐骏",
+      "raw_name_jp": "ワンダーアキュート",
+      "raw_name_en": null,
+      "aliases": [
+        "奶奶",
+        "和田奶奶",
+        "奇锐骏"
+      ],
+      "birthday_raw": "3月14日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "不稳定",
+      "bust_raw": "75",
+      "waist_raw": "52",
+      "hip_raw": "78",
+      "cv_raw": "须藤叶希",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0b/102893759_p0.jpg!/fw/280?v=20221118175655",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0b/102893759_p0.jpg!/fw/280?v=20221118175655",
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b8/UPDCH_WonderAcute_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131714"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A5%87%E9%94%90%E9%AA%8F"
+    }
+  }
+}

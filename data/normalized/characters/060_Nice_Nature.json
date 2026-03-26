@@ -1,0 +1,329 @@
+{
+  "id": "naisuneicha",
+  "order": 60,
+  "file_name": "060_Nice_Nature.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "优秀素质",
+    "zh_tw": null,
+    "jp": "ナイスネイチャ",
+    "en": "Nice Nature"
+  },
+  "aliases": [
+    "优秀素质",
+    "ナイスネイチャ",
+    "Nice Nature",
+    "【聖誕紅緞帶】優秀素質",
+    "優秀素質",
+    "聖誕紅緞帶",
+    "内恰",
+    "Natie",
+    "素质女士",
+    "好姐姐[1]",
+    "没有素质/素质吊差[2]",
+    "铜牌收藏家",
+    "三着女士",
+    "“三”冠王",
+    "ポインセチア・リボン"
+  ],
+  "profile": {
+    "birthday": "04-16",
+    "birthday_raw": "4月16日",
+    "birthday_day_of_year": 107,
+    "height_cm": 157,
+    "height_raw": "157cm",
+    "cv": "前田佳織里",
+    "cv_raw": "前田佳織里",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 1,
+    "star_raw": "1",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "F",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "D"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/he29nvmuprh728hste91opt5po2s9hp.png/100px-Chr_icon_1060.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/2wf86mq9bwsgf94dm6ur8bnuwdoq6oa.png/100px-Chr_icon_1060_106002_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/qgy211zj1owy48pokp2w4yqboqlrl9r.png/100px-Chr_icon_1060_106003_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_NiceNature_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210404150518",
+      "https://storage.moegirl.org.cn/moegirl/commons/6/67/PID90474492.png!/fw/280?v=20211017010325"
+    ],
+    "image_local_path": "/api/assets/naisuneicha-thumb",
+    "asset_id": "naisuneicha-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E8%81%96%E8%AA%95%E7%B4%85%E7%B7%9E%E5%B8%B6%E3%80%91%E5%84%AA%E7%A7%80%E7%B4%A0%E8%B3%AA",
+      "https://zh.moegirl.org.cn/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/he29nvmuprh728hste91opt5po2s9hp.png/100px-Chr_icon_1060.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/2wf86mq9bwsgf94dm6ur8bnuwdoq6oa.png/100px-Chr_icon_1060_106002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/qgy211zj1owy48pokp2w4yqboqlrl9r.png/100px-Chr_icon_1060_106003_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/2wf86mq9bwsgf94dm6ur8bnuwdoq6oa.png/100px-Chr_icon_1060_106002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/qgy211zj1owy48pokp2w4yqboqlrl9r.png/100px-Chr_icon_1060_106003_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_NiceNature_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210404150518"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/67/PID90474492.png!/fw/280?v=20211017010325",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_NiceNature_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210404150518"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "来自乡下的可爱赛马娘，不喜欢被过分期待，却也始终未停止奔跑。 由于生在乡下，因此女子力爆棚，在闲暇时间里会洗衣做饭。 很受当地老人和阿姨们的喜爱。",
+    "intro_paragraphs": [
+      "来自乡下的可爱赛马娘，不喜欢被过分期待，却也始终未停止奔跑。",
+      "由于生在乡下，因此女子力爆棚，在闲暇时间里会洗衣做饭。",
+      "很受当地老人和阿姨们的喜爱。"
+    ],
+    "quote_raw": "“好啦好啦，因为是普通人，即使第三也很幸福啦～”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "79",
+    "waist_raw": "56",
+    "hip_raw": "80"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "优秀素质",
+      "character_id": "1060",
+      "birthday_raw": "4月16日",
+      "height_raw": "157",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "23",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/he29nvmuprh728hste91opt5po2s9hp.png/100px-Chr_icon_1060.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/ce/he29nvmuprh728hste91opt5po2s9hp.png/100px-Chr_icon_1060.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "优秀素质",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8",
+      "star_raw": "1",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8",
+      "raw_name_zh": "优秀素质",
+      "raw_name_jp": "ナイスネイチャ",
+      "nickname_raw": "ポインセチア・リボン",
+      "star_raw": "1",
+      "birthday_raw": "4月16日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "cv_raw": "前田佳织里",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/2wf86mq9bwsgf94dm6ur8bnuwdoq6oa.png/100px-Chr_icon_1060_106002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/qgy211zj1owy48pokp2w4yqboqlrl9r.png/100px-Chr_icon_1060_106003_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%81%96%E8%AA%95%E7%B4%85%E7%B7%9E%E5%B8%B6%E3%80%91%E5%84%AA%E7%A7%80%E7%B4%A0%E8%B3%AA",
+      "raw_name_zh": "优秀素质",
+      "raw_name_jp": null,
+      "translated_name_raw": "優秀素質",
+      "nickname_raw": "聖誕紅緞帶",
+      "page_title": "【聖誕紅緞帶】優秀素質",
+      "page_title_aliases": [
+        "【聖誕紅緞帶】優秀素質",
+        "優秀素質",
+        "聖誕紅緞帶"
+      ],
+      "star_raw": "1",
+      "birthday_raw": "4月16日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "cv_raw": "前田佳織里",
+      "introduction_raw": "謝絕期待？語中帶刺的女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/2wf86mq9bwsgf94dm6ur8bnuwdoq6oa.png/100px-Chr_icon_1060_106002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/qgy211zj1owy48pokp2w4yqboqlrl9r.png/100px-Chr_icon_1060_106003_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%81%96%E8%AA%95%E7%B4%85%E7%B7%9E%E5%B8%B6%E3%80%91%E5%84%AA%E7%A7%80%E7%B4%A0%E8%B3%AA",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "优秀素质",
+      "raw_name_jp": "ナイスネイチャ",
+      "cv_raw": "前田佳织里",
+      "birthday_raw": "4月16日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "quote_raw": "“好啦好啦，因为是普通人，即使第三也很幸福啦～”",
+      "intro_paragraphs": [
+        "来自乡下的可爱赛马娘，不喜欢被过分期待，却也始终未停止奔跑。",
+        "由于生在乡下，因此女子力爆棚，在闲暇时间里会洗衣做饭。",
+        "很受当地老人和阿姨们的喜爱。"
+      ],
+      "introduction": "来自乡下的可爱赛马娘，不喜欢被过分期待，却也始终未停止奔跑。\n由于生在乡下，因此女子力爆棚，在闲暇时间里会洗衣做饭。\n很受当地老人和阿姨们的喜爱。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_NiceNature_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210404150518",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_NiceNature_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210404150518"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8",
+      "canonical_name_zh": "优秀素质",
+      "aliases": [
+        "优秀素质"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8",
+      "raw_name_zh": "优秀素质",
+      "page_title": "优秀素质",
+      "raw_name_jp": "ナイスネイチャ",
+      "raw_name_en": null,
+      "aliases": [
+        "内恰",
+        "Natie",
+        "素质女士",
+        "好姐姐[1]",
+        "没有素质/素质吊差[2]",
+        "铜牌收藏家",
+        "三着女士",
+        "“三”冠王",
+        "优秀素质"
+      ],
+      "birthday_raw": "4月16日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无变化",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "cv_raw": "前田佳织里",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/67/PID90474492.png!/fw/280?v=20211017010325",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/67/PID90474492.png!/fw/280?v=20211017010325",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_NiceNature_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210404150518"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%BC%98%E7%A7%80%E7%B4%A0%E8%B4%A8"
+    }
+  }
+}

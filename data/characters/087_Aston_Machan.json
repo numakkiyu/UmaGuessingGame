@@ -1,0 +1,284 @@
+{
+  "id": "asutonmaachan",
+  "name_zh": "真弓快车",
+  "name_jp": "アストンマーチャン",
+  "aliases": [
+    "【Flare】奧斯頓真弓",
+    "奧斯頓真弓",
+    "Flare",
+    "麻酱（マーチャン）",
+    "真弓快车",
+    "アストンマーチャン"
+  ],
+  "birthday": "03-05",
+  "birthday_day_of_year": 65,
+  "birthday_raw": "3月5日",
+  "height_cm": 152,
+  "height_raw": "152cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "井上ほの花",
+  "cv_raw": "井上ほの花",
+  "quote_raw": "带着小真玩偶，看到镜头就会靠近。",
+  "introduction": "兴趣是录制语音备忘录的有些奇怪的马娘。 她的梦想是成为走向世界的吉祥物。 在如同云一般轻飘飘的话语中，似乎包含着什么愿望……？",
+  "intro_paragraphs": [
+    "兴趣是录制语音备忘录的有些奇怪的马娘。",
+    "她的梦想是成为走向世界的吉祥物。",
+    "在如同云一般轻飘飘的话语中，似乎包含着什么愿望……？"
+  ],
+  "weight_desc_raw": "〇根胡蘿蔔的重量",
+  "bust_raw": "86",
+  "waist_raw": "55",
+  "hip_raw": "80",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/b/b4/b09oq13aloyi3ljtticclqwja3puewy.png/100px-Chr_icon_1087.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/f2/f7714v1kwwwqbru2mxnlxuc95x22jt7.png/100px-Chr_icon_1087_108702_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/f/fa/UPDCH_AstonMachan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135722",
+    "https://storage.moegirl.org.cn/moegirl/commons/b/ba/AstonMachan_Pixiv97367045.png!/fw/280?v=20220508032555"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b4/b09oq13aloyi3ljtticclqwja3puewy.png/100px-Chr_icon_1087.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f2/f7714v1kwwwqbru2mxnlxuc95x22jt7.png/100px-Chr_icon_1087_108702_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f2/f7714v1kwwwqbru2mxnlxuc95x22jt7.png/100px-Chr_icon_1087_108702_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/f/fa/UPDCH_AstonMachan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135722"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/ba/AstonMachan_Pixiv97367045.png!/fw/280?v=20220508032555",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/fa/UPDCH_AstonMachan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135722"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Flare%E3%80%91%E5%A5%A7%E6%96%AF%E9%A0%93%E7%9C%9F%E5%BC%93",
+    "https://zh.moegirl.org.cn/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "A",
+    "mile": "B",
+    "medium": "G",
+    "long": "G",
+    "nige": "A",
+    "senko": "A",
+    "sashi": "G",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "短"
+  ],
+  "running_style_group": [
+    "逃",
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "真弓快车",
+      "character_id": "1087",
+      "birthday_raw": "3月5日",
+      "height_raw": "152",
+      "bust_raw": "86",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "31",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b4/b09oq13aloyi3ljtticclqwja3puewy.png/100px-Chr_icon_1087.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b4/b09oq13aloyi3ljtticclqwja3puewy.png/100px-Chr_icon_1087.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "真弓快车",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6",
+      "raw_name_zh": "真弓快车",
+      "raw_name_jp": "アストンマーチャン",
+      "nickname_raw": "Flare",
+      "star_raw": "3",
+      "birthday_raw": "3月5日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "○根胡萝卜的重量",
+      "bust_raw": "86",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "井上穗乃花",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "G",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f2/f7714v1kwwwqbru2mxnlxuc95x22jt7.png/100px-Chr_icon_1087_108702_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Flare%E3%80%91%E5%A5%A7%E6%96%AF%E9%A0%93%E7%9C%9F%E5%BC%93",
+      "raw_name_zh": "真弓快车",
+      "raw_name_jp": null,
+      "translated_name_raw": "奧斯頓真弓",
+      "nickname_raw": "Flare",
+      "page_title": "【Flare】奧斯頓真弓",
+      "page_title_aliases": [
+        "【Flare】奧斯頓真弓",
+        "奧斯頓真弓",
+        "Flare"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月5日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "〇根胡蘿蔔的重量",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "井上ほの花",
+      "introduction_raw": "目標是成為吉祥物。有點虛幻的奇妙女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f2/f7714v1kwwwqbru2mxnlxuc95x22jt7.png/100px-Chr_icon_1087_108702_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Flare%E3%80%91%E5%A5%A7%E6%96%AF%E9%A0%93%E7%9C%9F%E5%BC%93",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "真弓快车",
+      "raw_name_jp": "アストンマーチャン",
+      "cv_raw": "井上穗乃花",
+      "birthday_raw": "3月5日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "○根胡萝卜的重量",
+      "bust_raw": "86",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "带着小真玩偶，看到镜头就会靠近。",
+      "intro_paragraphs": [
+        "兴趣是录制语音备忘录的有些奇怪的马娘。",
+        "她的梦想是成为走向世界的吉祥物。",
+        "在如同云一般轻飘飘的话语中，似乎包含着什么愿望……？"
+      ],
+      "introduction": "兴趣是录制语音备忘录的有些奇怪的马娘。\n她的梦想是成为走向世界的吉祥物。\n在如同云一般轻飘飘的话语中，似乎包含着什么愿望……？",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/fa/UPDCH_AstonMachan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135722",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/fa/UPDCH_AstonMachan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135722"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6",
+      "canonical_name_zh": "真弓快车",
+      "aliases": [
+        "真弓快车"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6",
+      "raw_name_zh": "真弓快车",
+      "page_title": "真弓快车",
+      "raw_name_jp": "アストンマーチャン",
+      "raw_name_en": null,
+      "aliases": [
+        "麻酱（マーチャン）",
+        "真弓快车"
+      ],
+      "birthday_raw": "3月5日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "○根胡萝卜的重量",
+      "bust_raw": "86",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "井上穗乃花",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/ba/AstonMachan_Pixiv97367045.png!/fw/280?v=20220508032555",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/ba/AstonMachan_Pixiv97367045.png!/fw/280?v=20220508032555",
+        "https://storage.moegirl.org.cn/moegirl/commons/f/fa/UPDCH_AstonMachan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135722"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9C%9F%E5%BC%93%E5%BF%AB%E8%BD%A6"
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "id": "meishoudotou",
+  "name_zh": "名将怒涛",
+  "name_jp": "メイショウドトウ",
+  "aliases": [
+    "【湛藍/湧濤】名將怒濤",
+    "名將怒濤",
+    "湛藍/湧濤",
+    "豆豆",
+    "名将怒涛",
+    "メイショウドトウ",
+    "ブルー/レイジング"
+  ],
+  "birthday": "03-25",
+  "birthday_day_of_year": 85,
+  "birthday_raw": "3月25日",
+  "height_cm": 164,
+  "height_raw": "164cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "和多田美咲",
+  "cv_raw": "和多田美咲",
+  "quote_raw": "“哈呜呜……我这样的也可以去参加比赛吗……但是……”",
+  "introduction": "对自己完全没有自信，弱气的、垂着耳朵的赛马娘。 是个典型的冒失娘，做什么事都是笨手笨脚的， 就算是这样在一些地方也希望“想改变自己”“不想放弃”，寻找着未来向上的契机。 憧憬着好歌剧那过剩的自信。",
+  "intro_paragraphs": [
+    "对自己完全没有自信，弱气的、垂着耳朵的赛马娘。",
+    "是个典型的冒失娘，做什么事都是笨手笨脚的，",
+    "就算是这样在一些地方也希望“想改变自己”“不想放弃”，寻找着未来向上的契机。",
+    "憧憬着好歌剧那过剩的自信。"
+  ],
+  "weight_desc_raw": "特定部位微增",
+  "bust_raw": "99",
+  "waist_raw": "61",
+  "hip_raw": "89",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/9wtivc4g2mlfjbrgucxidvnesxy5fbu.png/100px-Chr_icon_1058.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/gxdk99ezpc7cv1pf1b4nkfkqfigk8z3.png/100px-Chr_icon_1058_105802_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_MeishoDoto_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044504",
+    "https://storage.moegirl.org.cn/moegirl/commons/b/b7/Pid93044985.jpg!/fw/280?v=20211016170038"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/9wtivc4g2mlfjbrgucxidvnesxy5fbu.png/100px-Chr_icon_1058.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/gxdk99ezpc7cv1pf1b4nkfkqfigk8z3.png/100px-Chr_icon_1058_105802_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/gxdk99ezpc7cv1pf1b4nkfkqfigk8z3.png/100px-Chr_icon_1058_105802_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_MeishoDoto_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044504"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/b7/Pid93044985.jpg!/fw/280?v=20211016170038",
+      "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_MeishoDoto_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044504"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B9%9B%E8%97%8D/%E6%B9%A7%E6%BF%A4%E3%80%91%E5%90%8D%E5%B0%87%E6%80%92%E6%BF%A4",
+    "https://zh.moegirl.org.cn/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "E",
+    "sprint": "G",
+    "mile": "F",
+    "medium": "A",
+    "long": "A",
+    "nige": "F",
+    "senko": "A",
+    "sashi": "B",
+    "oikomi": "E"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "名将怒涛",
+      "character_id": "1058",
+      "birthday_raw": "3月25日",
+      "height_raw": "164",
+      "bust_raw": "99",
+      "waist_raw": "61",
+      "hip_raw": "89",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "38",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/9wtivc4g2mlfjbrgucxidvnesxy5fbu.png/100px-Chr_icon_1058.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/9wtivc4g2mlfjbrgucxidvnesxy5fbu.png/100px-Chr_icon_1058.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "名将怒涛",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B",
+      "raw_name_zh": "名将怒涛",
+      "raw_name_jp": "メイショウドトウ",
+      "nickname_raw": "ブルー/レイジング",
+      "star_raw": "3",
+      "birthday_raw": "3月25日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "局部微增",
+      "bust_raw": "99",
+      "waist_raw": "61",
+      "hip_raw": "89",
+      "cv_raw": "和多田美咲",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/gxdk99ezpc7cv1pf1b4nkfkqfigk8z3.png/100px-Chr_icon_1058_105802_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B9%9B%E8%97%8D/%E6%B9%A7%E6%BF%A4%E3%80%91%E5%90%8D%E5%B0%87%E6%80%92%E6%BF%A4",
+      "raw_name_zh": "名将怒涛",
+      "raw_name_jp": null,
+      "translated_name_raw": "名將怒濤",
+      "nickname_raw": "湛藍/湧濤",
+      "page_title": "【湛藍/湧濤】名將怒濤",
+      "page_title_aliases": [
+        "【湛藍/湧濤】名將怒濤",
+        "名將怒濤",
+        "湛藍/湧濤"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月25日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "特定部位微增",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "和多田美咲",
+      "introduction_raw": "想要變得更積極！負面的努力女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/gxdk99ezpc7cv1pf1b4nkfkqfigk8z3.png/100px-Chr_icon_1058_105802_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%B9%9B%E8%97%8D/%E6%B9%A7%E6%BF%A4%E3%80%91%E5%90%8D%E5%B0%87%E6%80%92%E6%BF%A4",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "E"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "名将怒涛",
+      "raw_name_jp": "メイショウドトウ",
+      "cv_raw": "和多田美咲",
+      "birthday_raw": "3月25日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "部分微增",
+      "bust_raw": "99",
+      "waist_raw": "61",
+      "hip_raw": "89",
+      "quote_raw": "“哈呜呜……我这样的也可以去参加比赛吗……但是……”",
+      "intro_paragraphs": [
+        "对自己完全没有自信，弱气的、垂着耳朵的赛马娘。",
+        "是个典型的冒失娘，做什么事都是笨手笨脚的，",
+        "就算是这样在一些地方也希望“想改变自己”“不想放弃”，寻找着未来向上的契机。",
+        "憧憬着好歌剧那过剩的自信。"
+      ],
+      "introduction": "对自己完全没有自信，弱气的、垂着耳朵的赛马娘。\n是个典型的冒失娘，做什么事都是笨手笨脚的，\n就算是这样在一些地方也希望“想改变自己”“不想放弃”，寻找着未来向上的契机。\n憧憬着好歌剧那过剩的自信。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_MeishoDoto_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044504",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_MeishoDoto_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044504"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B",
+      "canonical_name_zh": "名将怒涛",
+      "aliases": [
+        "名将怒涛"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B",
+      "raw_name_zh": "名将怒涛",
+      "page_title": "名将怒涛",
+      "raw_name_jp": "メイショウドトウ",
+      "raw_name_en": null,
+      "aliases": [
+        "豆豆",
+        "名将怒涛"
+      ],
+      "birthday_raw": "3月25日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "部分微增",
+      "bust_raw": "99",
+      "waist_raw": "61",
+      "hip_raw": "89",
+      "cv_raw": "和多田美咲",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/b7/Pid93044985.jpg!/fw/280?v=20211016170038",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b7/Pid93044985.jpg!/fw/280?v=20211016170038",
+        "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_MeishoDoto_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044504"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%90%8D%E5%B0%86%E6%80%92%E6%B6%9B"
+    }
+  }
+}

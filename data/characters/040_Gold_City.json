@@ -1,0 +1,289 @@
+{
+  "id": "goorudoshichii",
+  "name_zh": "黄金城",
+  "name_jp": "ゴールドシチー",
+  "aliases": [
+    "【純正/1928】黃金城市",
+    "黃金城市",
+    "純正/1928",
+    "黄金城市",
+    "黄金城",
+    "ゴールドシチー",
+    "オーセンティック/1928"
+  ],
+  "birthday": "04-16",
+  "birthday_day_of_year": 107,
+  "birthday_raw": "4月16日",
+  "height_cm": 158,
+  "height_raw": "158cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "香坂さき",
+  "cv_raw": "香坂さき",
+  "quote_raw": "“现在只是个漂亮的人偶……但真正的我……！”",
+  "introduction": "一百年一遇这种等级的美少女辣妹。一直在从事模特工作，扮演着被期待的自己。 但是某一天，意识到了跑步才是自己的本愿。 从那之后，以能够不以容貌而以内在获得评价的那一天为目标，像是沉浸在了跑步里一样。 和表里如一地对待自己的东瀛佐敦关系很好。",
+  "intro_paragraphs": [
+    "一百年一遇这种等级的美少女辣妹。一直在从事模特工作，扮演着被期待的自己。",
+    "但是某一天，意识到了跑步才是自己的本愿。",
+    "从那之后，以能够不以容貌而以内在获得评价的那一天为目标，像是沉浸在了跑步里一样。",
+    "和表里如一地对待自己的东瀛佐敦关系很好。"
+  ],
+  "weight_desc_raw": "沒去測量",
+  "bust_raw": "85",
+  "waist_raw": "58",
+  "hip_raw": "82",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/ec/8xbqx0l95rk1zw5464ndpocmlh75txq.png/100px-Chr_icon_1040.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/91/js8lzrj2ft98xyuyhlxv0lytq12oeoa.png/100px-Chr_icon_1040_104002_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/qrzu3caah3aic2k7x9i40fgqr773cgv.png/100px-Chr_icon_1040_104003_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/d/d1/UPDCH_GoldCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040952",
+    "https://storage.moegirl.org.cn/moegirl/commons/4/42/PID94220916.jpg!/fw/280?v=20211124162058"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ec/8xbqx0l95rk1zw5464ndpocmlh75txq.png/100px-Chr_icon_1040.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/91/js8lzrj2ft98xyuyhlxv0lytq12oeoa.png/100px-Chr_icon_1040_104002_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/qrzu3caah3aic2k7x9i40fgqr773cgv.png/100px-Chr_icon_1040_104003_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/91/js8lzrj2ft98xyuyhlxv0lytq12oeoa.png/100px-Chr_icon_1040_104002_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d1/UPDCH_GoldCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040952"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/4/42/PID94220916.jpg!/fw/280?v=20211124162058",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d1/UPDCH_GoldCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040952"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%9F%8E",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B4%94%E6%AD%A3/1928%E3%80%91%E9%BB%83%E9%87%91%E5%9F%8E%E5%B8%82",
+    "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E5%9F%8E%E5%B8%82"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "D",
+    "sprint": "F",
+    "mile": "A",
+    "medium": "B",
+    "long": "B",
+    "nige": "F",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "F"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "黄金城",
+      "character_id": "1040",
+      "birthday_raw": "4月16日",
+      "height_raw": "158",
+      "bust_raw": "85",
+      "waist_raw": "58",
+      "hip_raw": "82",
+      "whr_raw": "0.71",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ec/8xbqx0l95rk1zw5464ndpocmlh75txq.png/100px-Chr_icon_1040.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ec/8xbqx0l95rk1zw5464ndpocmlh75txq.png/100px-Chr_icon_1040.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%9F%8E"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "黄金城",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%9F%8E",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%9F%8E",
+      "raw_name_zh": "黄金城",
+      "raw_name_jp": "ゴールドシチー",
+      "nickname_raw": "オーセンティック/1928",
+      "star_raw": "3",
+      "birthday_raw": "4月16日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "没有出现在测量地点",
+      "bust_raw": "85",
+      "waist_raw": "58",
+      "hip_raw": "82",
+      "cv_raw": "香坂沙希",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/91/js8lzrj2ft98xyuyhlxv0lytq12oeoa.png/100px-Chr_icon_1040_104002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/qrzu3caah3aic2k7x9i40fgqr773cgv.png/100px-Chr_icon_1040_104003_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%9F%8E"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B4%94%E6%AD%A3/1928%E3%80%91%E9%BB%83%E9%87%91%E5%9F%8E%E5%B8%82",
+      "raw_name_zh": "黄金城",
+      "raw_name_jp": null,
+      "translated_name_raw": "黃金城市",
+      "nickname_raw": "純正/1928",
+      "page_title": "【純正/1928】黃金城市",
+      "page_title_aliases": [
+        "【純正/1928】黃金城市",
+        "黃金城市",
+        "純正/1928"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月16日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "沒去測量",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "香坂さき",
+      "introduction_raw": "說話粗魯的優質辣妹",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/91/js8lzrj2ft98xyuyhlxv0lytq12oeoa.png/100px-Chr_icon_1040_104002_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B4%94%E6%AD%A3/1928%E3%80%91%E9%BB%83%E9%87%91%E5%9F%8E%E5%B8%82",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "黄金城",
+      "raw_name_jp": "ゴールドシチー",
+      "cv_raw": "香坂沙希",
+      "birthday_raw": "4月16日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "不出现在测量地点",
+      "bust_raw": "85",
+      "waist_raw": "58",
+      "hip_raw": "82",
+      "quote_raw": "“现在只是个漂亮的人偶……但真正的我……！”",
+      "intro_paragraphs": [
+        "一百年一遇这种等级的美少女辣妹。一直在从事模特工作，扮演着被期待的自己。",
+        "但是某一天，意识到了跑步才是自己的本愿。",
+        "从那之后，以能够不以容貌而以内在获得评价的那一天为目标，像是沉浸在了跑步里一样。",
+        "和表里如一地对待自己的东瀛佐敦关系很好。"
+      ],
+      "introduction": "一百年一遇这种等级的美少女辣妹。一直在从事模特工作，扮演着被期待的自己。\n但是某一天，意识到了跑步才是自己的本愿。\n从那之后，以能够不以容貌而以内在获得评价的那一天为目标，像是沉浸在了跑步里一样。\n和表里如一地对待自己的东瀛佐敦关系很好。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d1/UPDCH_GoldCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040952",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d1/UPDCH_GoldCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040952"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E5%9F%8E%E5%B8%82",
+      "canonical_name_zh": "黄金城市",
+      "aliases": [
+        "黄金城市"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E5%9F%8E%E5%B8%82",
+      "raw_name_zh": "黄金城",
+      "page_title": "黄金城市",
+      "raw_name_jp": "ゴールドシチー",
+      "raw_name_en": null,
+      "aliases": [
+        "黄金城市"
+      ],
+      "birthday_raw": "4月16日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "不出现在测量地点",
+      "bust_raw": "85",
+      "waist_raw": "58",
+      "hip_raw": "82",
+      "cv_raw": "香坂沙希",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/42/PID94220916.jpg!/fw/280?v=20211124162058",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/42/PID94220916.jpg!/fw/280?v=20211124162058",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d1/UPDCH_GoldCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040952"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E5%9F%8E%E5%B8%82"
+    }
+  }
+}

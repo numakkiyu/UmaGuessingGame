@@ -1,0 +1,312 @@
+{
+  "id": "hokkootarumae",
+  "order": 99,
+  "file_name": "099_Hokko_Tarumae.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "北港火山",
+    "zh_tw": "繁星．光華．船隻",
+    "jp": "ホッコータルマエ",
+    "en": "Hokko Tarumae"
+  },
+  "aliases": [
+    "北港火山",
+    "繁星．光華．船隻",
+    "ホッコータルマエ",
+    "Hokko Tarumae",
+    "【繁星．光華．船隻】北幸樽前",
+    "北幸樽前",
+    "苫小牧之星",
+    "北港大大大大火山",
+    "スター・ライト・シップ"
+  ],
+  "profile": {
+    "birthday": "05-26",
+    "birthday_raw": "5月26日",
+    "birthday_day_of_year": 147,
+    "height_cm": 162,
+    "height_raw": "162cm",
+    "cv": "菊池紗矢香",
+    "cv_raw": "菊池紗矢香",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "G",
+      "dirt": "A",
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "nige": "B",
+      "senko": "A",
+      "sashi": "G",
+      "oikomi": "G"
+    },
+    "g1_bracket": "5+",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e9/7kqa3dvg0m59gkliagbkk7jqgsl1721.png/100px-Chr_icon_1099.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/54/b110pcg38quvuqj02a6sv7oizjgmriy.png/100px-Chr_icon_1099_109902_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_HokkoTarumae_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131736",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f8/103817432_p0.jpg!/fw/280?v=20230119142429"
+    ],
+    "image_local_path": "/api/assets/hokkootarumae-thumb",
+    "asset_id": "hokkootarumae-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B9%81%E6%98%9F%EF%BC%8E%E5%85%89%E8%8F%AF%EF%BC%8E%E8%88%B9%E9%9A%BB%E3%80%91%E5%8C%97%E5%B9%B8%E6%A8%BD%E5%89%8D",
+      "https://zh.moegirl.org.cn/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e9/7kqa3dvg0m59gkliagbkk7jqgsl1721.png/100px-Chr_icon_1099.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/54/b110pcg38quvuqj02a6sv7oizjgmriy.png/100px-Chr_icon_1099_109902_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/54/b110pcg38quvuqj02a6sv7oizjgmriy.png/100px-Chr_icon_1099_109902_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_HokkoTarumae_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131736"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f8/103817432_p0.jpg!/fw/280?v=20230119142429",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_HokkoTarumae_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131736"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "那份对故乡的热爱让当地人所认可，正式地任命她为“苫小牧观光大使”。 为了靠自己的跑姿和Live来更好地PR[1]（宣传）苫小牧，每天都在认真地试错中。 美中不足的是，她有时会因为这份认真而陷入困境。",
+    "intro_paragraphs": [
+      "那份对故乡的热爱让当地人所认可，正式地任命她为“苫小牧观光大使”。",
+      "为了靠自己的跑姿和Live来更好地PR[1]（宣传）苫小牧，每天都在认真地试错中。",
+      "美中不足的是，她有时会因为这份认真而陷入困境。"
+    ],
+    "quote_raw": "从苫小牧而来的地方偶像赛马娘。",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "86",
+    "waist_raw": "56",
+    "hip_raw": "85"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "北港火山",
+      "character_id": "1099",
+      "birthday_raw": "5月26日",
+      "height_raw": "162",
+      "bust_raw": "86",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e9/7kqa3dvg0m59gkliagbkk7jqgsl1721.png/100px-Chr_icon_1099.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e9/7kqa3dvg0m59gkliagbkk7jqgsl1721.png/100px-Chr_icon_1099.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "北港火山",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1",
+      "raw_name_zh": "北港火山",
+      "raw_name_jp": "ホッコータルマエ",
+      "nickname_raw": "スター・ライト・シップ",
+      "star_raw": "3",
+      "birthday_raw": "5月26日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "86",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "cv_raw": "菊池纱矢香",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "G",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/54/b110pcg38quvuqj02a6sv7oizjgmriy.png/100px-Chr_icon_1099_109902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B9%81%E6%98%9F%EF%BC%8E%E5%85%89%E8%8F%AF%EF%BC%8E%E8%88%B9%E9%9A%BB%E3%80%91%E5%8C%97%E5%B9%B8%E6%A8%BD%E5%89%8D",
+      "raw_name_zh": "北港火山",
+      "raw_name_jp": null,
+      "translated_name_raw": "北幸樽前",
+      "nickname_raw": "繁星．光華．船隻",
+      "page_title": "【繁星．光華．船隻】北幸樽前",
+      "page_title_aliases": [
+        "【繁星．光華．船隻】北幸樽前",
+        "北幸樽前",
+        "繁星．光華．船隻"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月26日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "菊池紗矢香",
+      "introduction_raw": "背負著苫小牧未來的務實派地方偶像",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/54/b110pcg38quvuqj02a6sv7oizjgmriy.png/100px-Chr_icon_1099_109902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B9%81%E6%98%9F%EF%BC%8E%E5%85%89%E8%8F%AF%EF%BC%8E%E8%88%B9%E9%9A%BB%E3%80%91%E5%8C%97%E5%B9%B8%E6%A8%BD%E5%89%8D",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "北港火山",
+      "raw_name_jp": "ホッコータルマエ",
+      "cv_raw": "菊池纱矢香",
+      "birthday_raw": "5月26日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "86",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "quote_raw": "从苫小牧而来的地方偶像赛马娘。",
+      "intro_paragraphs": [
+        "那份对故乡的热爱让当地人所认可，正式地任命她为“苫小牧观光大使”。",
+        "为了靠自己的跑姿和Live来更好地PR[1]（宣传）苫小牧，每天都在认真地试错中。",
+        "美中不足的是，她有时会因为这份认真而陷入困境。"
+      ],
+      "introduction": "那份对故乡的热爱让当地人所认可，正式地任命她为“苫小牧观光大使”。\n为了靠自己的跑姿和Live来更好地PR[1]（宣传）苫小牧，每天都在认真地试错中。\n美中不足的是，她有时会因为这份认真而陷入困境。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_HokkoTarumae_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131736",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_HokkoTarumae_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131736"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1",
+      "canonical_name_zh": "北港火山",
+      "aliases": [
+        "北港火山"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1",
+      "raw_name_zh": "北港火山",
+      "page_title": "北港火山",
+      "raw_name_jp": "ホッコータルマエ",
+      "raw_name_en": null,
+      "aliases": [
+        "苫小牧之星",
+        "北港大大大大火山",
+        "北港火山"
+      ],
+      "birthday_raw": "5月26日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "86",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "cv_raw": "菊池纱矢香",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/f8/103817432_p0.jpg!/fw/280?v=20230119142429",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f8/103817432_p0.jpg!/fw/280?v=20230119142429",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_HokkoTarumae_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131736"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%8C%97%E6%B8%AF%E7%81%AB%E5%B1%B1"
+    }
+  }
+}

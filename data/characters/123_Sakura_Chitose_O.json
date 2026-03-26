@@ -1,0 +1,235 @@
+{
+  "id": "sakurachitoseoo",
+  "name_zh": "樱花千岁王",
+  "name_jp": "サクラチトセオー",
+  "aliases": [
+    "樱花千岁王",
+    "サクラチトセオー",
+    "【トレセン学園】サクラチトセオー",
+    "トレセン学園"
+  ],
+  "birthday": "05-11",
+  "birthday_day_of_year": 132,
+  "birthday_raw": "5月11日",
+  "height_cm": 164,
+  "height_raw": "164",
+  "grade": null,
+  "grade_raw": null,
+  "dormitory": null,
+  "dorm_raw": null,
+  "star": null,
+  "star_raw": null,
+  "cv": "明智璃子",
+  "cv_raw": "明智璃子",
+  "quote_raw": "“药食同源”的思想。这是一位希望将这一理念更广泛地传播于世，让众人都变得健康的汉方仙女。",
+  "introduction": "在樱花冠名的赛马娘聚集的“Victory俱乐部”中，她是一个与众不同的存在，性格悠然超然。 她喜欢的数字是1和6。",
+  "intro_paragraphs": [
+    "在樱花冠名的赛马娘聚集的“Victory俱乐部”中，她是一个与众不同的存在，性格悠然超然。",
+    "她喜欢的数字是1和6。"
+  ],
+  "weight_desc_raw": "干净利索",
+  "bust_raw": "84",
+  "waist_raw": "56",
+  "hip_raw": "84",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/764mys22kza354zzsfk8ica8buwtyjm.png/100px-Chr_icon_1126.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/764mys22kza354zzsfk8ica8buwtyjm.png/100px-Chr_icon_1126.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/1/1c/UPDCH_SakuraChitoseO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241202005510"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/764mys22kza354zzsfk8ica8buwtyjm.png/100px-Chr_icon_1126.png"
+    ],
+    "biliwiki_gallery": [],
+    "biliwiki_detail": [],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/1/1c/UPDCH_SakuraChitoseO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241202005510"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/1/1c/UPDCH_SakuraChitoseO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241202005510"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物",
+    "繁中服角色详情页"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E5%B2%81%E7%8E%8B",
+    "https://zh.moegirl.org.cn/index.php?title=%E6%A8%B1%E8%8A%B1%E5%8D%83%E5%B2%81%E7%8E%8B&action=edit&redlink=1",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E3%83%88%E3%83%AC%E3%82%BB%E3%83%B3%E5%AD%A6%E5%9C%92%E3%80%91%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%81%E3%83%88%E3%82%BB%E3%82%AA%E3%83%BC"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "F",
+    "mile": "A",
+    "medium": "A",
+    "long": "D",
+    "nige": "G",
+    "senko": "C",
+    "sashi": "A",
+    "oikomi": "A"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "差",
+    "追"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "樱花千岁王",
+      "character_id": "1126",
+      "birthday_raw": "5月11日",
+      "height_raw": "164",
+      "bust_raw": "84",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "28",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/764mys22kza354zzsfk8ica8buwtyjm.png/100px-Chr_icon_1126.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/764mys22kza354zzsfk8ica8buwtyjm.png/100px-Chr_icon_1126.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E5%B2%81%E7%8E%8B"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E5%B2%81%E7%8E%8B",
+      "raw_name_zh": "樱花千岁王",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E5%B2%81%E7%8E%8B"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E3%83%88%E3%83%AC%E3%82%BB%E3%83%B3%E5%AD%A6%E5%9C%92%E3%80%91%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%81%E3%83%88%E3%82%BB%E3%82%AA%E3%83%BC",
+      "raw_name_zh": "樱花千岁王",
+      "raw_name_jp": null,
+      "translated_name_raw": "樱花千岁王",
+      "nickname_raw": null,
+      "page_title": "【トレセン学園】サクラチトセオー",
+      "page_title_aliases": [
+        "【トレセン学園】サクラチトセオー",
+        "サクラチトセオー",
+        "トレセン学園"
+      ],
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "introduction_raw": null,
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/764mys22kza354zzsfk8ica8buwtyjm.png/100px-Chr_icon_1126.png",
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E3%83%88%E3%83%AC%E3%82%BB%E3%83%B3%E5%AD%A6%E5%9C%92%E3%80%91%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%81%E3%83%88%E3%82%BB%E3%82%AA%E3%83%BC",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "樱花千岁王",
+      "raw_name_jp": "サクラチトセオー",
+      "cv_raw": "明智璃子",
+      "birthday_raw": "5月11日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "干净利索",
+      "bust_raw": "84",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "quote_raw": "“药食同源”的思想。这是一位希望将这一理念更广泛地传播于世，让众人都变得健康的汉方仙女。",
+      "intro_paragraphs": [
+        "在樱花冠名的赛马娘聚集的“Victory俱乐部”中，她是一个与众不同的存在，性格悠然超然。",
+        "她喜欢的数字是1和6。"
+      ],
+      "introduction": "在樱花冠名的赛马娘聚集的“Victory俱乐部”中，她是一个与众不同的存在，性格悠然超然。\n她喜欢的数字是1和6。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/1c/UPDCH_SakuraChitoseO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241202005510",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/1c/UPDCH_SakuraChitoseO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241202005510"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E6%A8%B1%E8%8A%B1%E5%8D%83%E5%B2%81%E7%8E%8B&action=edit&redlink=1",
+      "canonical_name_zh": "樱花千岁王",
+      "aliases": [
+        "樱花千岁王"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E6%A8%B1%E8%8A%B1%E5%8D%83%E5%B2%81%E7%8E%8B&action=edit&redlink=1",
+      "raw_name_zh": "樱花千岁王",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "サクラチトセオー",
+      "raw_name_en": null,
+      "aliases": [
+        "樱花千岁王"
+      ],
+      "birthday_raw": "5月11日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "干净利索",
+      "bust_raw": "84",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "cv_raw": "明智璃子",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/1c/UPDCH_SakuraChitoseO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241202005510",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/1c/UPDCH_SakuraChitoseO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20241202005510"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E6%A8%B1%E8%8A%B1%E5%8D%83%E5%B2%81%E7%8E%8B&action=edit&redlink=1"
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "id": "eashakaaru",
+  "name_zh": "空中神宫",
+  "name_jp": "エアシャカール",
+  "aliases": [
+    "【unsigned】空中神宮",
+    "空中神宮",
+    "unsigned",
+    "空中神宫",
+    "エアシャカール"
+  ],
+  "birthday": "02-26",
+  "birthday_day_of_year": 57,
+  "birthday_raw": "2月26日",
+  "height_cm": 168,
+  "height_raw": "168cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "津田美波",
+  "cv_raw": "津田美波",
+  "quote_raw": "“逻辑上来说的话。比赛就是数字的集合体罢了。”",
+  "introduction": "个性鲜明，十分讨厌被管教，但同时头脑也很厉害的赛马娘。 数据至上主义者。认为比赛结果是数据和逻辑计算的产物，追求靠计算拿下的绝对胜利而非充满不确定性的胜利。 在发现经过无数次计算也只能得出“自己将以7cm之差和三冠失之交臂”的结果之后，陷入了极大的绝望之中…… 即使如此，也依然相信着自己的计算，并持续探索着那一丝的可能性。",
+  "intro_paragraphs": [
+    "个性鲜明，十分讨厌被管教，但同时头脑也很厉害的赛马娘。",
+    "数据至上主义者。认为比赛结果是数据和逻辑计算的产物，追求靠计算拿下的绝对胜利而非充满不确定性的胜利。",
+    "在发现经过无数次计算也只能得出“自己将以7cm之差和三冠失之交臂”的结果之后，陷入了极大的绝望之中……",
+    "即使如此，也依然相信着自己的计算，并持续探索着那一丝的可能性。"
+  ],
+  "weight_desc_raw": "沒辦法測量",
+  "bust_raw": "77",
+  "waist_raw": "56",
+  "hip_raw": "85",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/ae0e93f6g9lorgwipj5k294966y5nqq.png/100px-Chr_icon_1036.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/4c/hsdpt9u6aukc9n3yndw7svpftadbdbp.png/100px-Chr_icon_1036_103602_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_AirShakur_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922143045",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/c1/PID92399853.png!/fw/280?v=20211125164721"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/ae0e93f6g9lorgwipj5k294966y5nqq.png/100px-Chr_icon_1036.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/4c/hsdpt9u6aukc9n3yndw7svpftadbdbp.png/100px-Chr_icon_1036_103602_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/4c/hsdpt9u6aukc9n3yndw7svpftadbdbp.png/100px-Chr_icon_1036_103602_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_AirShakur_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922143045"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c1/PID92399853.png!/fw/280?v=20211125164721",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_AirShakur_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922143045"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB",
+    "https://wiki.biligame.com/umamusume/%E3%80%90unsigned%E3%80%91%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AE",
+    "https://zh.moegirl.org.cn/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "E",
+    "medium": "A",
+    "long": "A",
+    "nige": "G",
+    "senko": "C",
+    "sashi": "A",
+    "oikomi": "A"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "差",
+    "追"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "空中神宫",
+      "character_id": "1036",
+      "birthday_raw": "2月26日",
+      "height_raw": "168",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "21",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/ae0e93f6g9lorgwipj5k294966y5nqq.png/100px-Chr_icon_1036.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/ae0e93f6g9lorgwipj5k294966y5nqq.png/100px-Chr_icon_1036.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "空中神宫",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "30%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB",
+      "raw_name_zh": "空中神宫",
+      "raw_name_jp": "エアシャカール",
+      "nickname_raw": "unsigned",
+      "star_raw": "3",
+      "birthday_raw": "2月26日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "无法测量",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "cv_raw": "津田美波",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/4c/hsdpt9u6aukc9n3yndw7svpftadbdbp.png/100px-Chr_icon_1036_103602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90unsigned%E3%80%91%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AE",
+      "raw_name_zh": "空中神宫",
+      "raw_name_jp": null,
+      "translated_name_raw": "空中神宮",
+      "nickname_raw": "unsigned",
+      "page_title": "【unsigned】空中神宮",
+      "page_title_aliases": [
+        "【unsigned】空中神宮",
+        "空中神宮",
+        "unsigned"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "2月26日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "沒辦法測量",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "cv_raw": "津田美波",
+      "introduction_raw": "照邏輯來吧！脫離常識的天才女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/4c/hsdpt9u6aukc9n3yndw7svpftadbdbp.png/100px-Chr_icon_1036_103602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90unsigned%E3%80%91%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AE",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "空中神宫",
+      "raw_name_jp": "エアシャカール",
+      "cv_raw": "津田美波",
+      "birthday_raw": "2月26日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "无法测量",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "quote_raw": "“逻辑上来说的话。比赛就是数字的集合体罢了。”",
+      "intro_paragraphs": [
+        "个性鲜明，十分讨厌被管教，但同时头脑也很厉害的赛马娘。",
+        "数据至上主义者。认为比赛结果是数据和逻辑计算的产物，追求靠计算拿下的绝对胜利而非充满不确定性的胜利。",
+        "在发现经过无数次计算也只能得出“自己将以7cm之差和三冠失之交臂”的结果之后，陷入了极大的绝望之中……",
+        "即使如此，也依然相信着自己的计算，并持续探索着那一丝的可能性。"
+      ],
+      "introduction": "个性鲜明，十分讨厌被管教，但同时头脑也很厉害的赛马娘。\n数据至上主义者。认为比赛结果是数据和逻辑计算的产物，追求靠计算拿下的绝对胜利而非充满不确定性的胜利。\n在发现经过无数次计算也只能得出“自己将以7cm之差和三冠失之交臂”的结果之后，陷入了极大的绝望之中……\n即使如此，也依然相信着自己的计算，并持续探索着那一丝的可能性。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_AirShakur_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922143045",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_AirShakur_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922143045"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB",
+      "canonical_name_zh": "空中神宫",
+      "aliases": [
+        "空中神宫"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB",
+      "raw_name_zh": "空中神宫",
+      "page_title": "空中神宫",
+      "raw_name_jp": "エアシャカール",
+      "raw_name_en": null,
+      "aliases": [
+        "空中神宫"
+      ],
+      "birthday_raw": "2月26日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "无法测量",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "cv_raw": "津田美波",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c1/PID92399853.png!/fw/280?v=20211125164721",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c1/PID92399853.png!/fw/280?v=20211125164721",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_AirShakur_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922143045"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%A9%BA%E4%B8%AD%E7%A5%9E%E5%AE%AB"
+    }
+  }
+}

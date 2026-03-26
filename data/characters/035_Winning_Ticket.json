@@ -1,0 +1,288 @@
+{
+  "id": "uininguchiketto",
+  "name_zh": "胜利奖券",
+  "name_jp": "ウイニングチケット",
+  "aliases": [
+    "【Go To Winning!】勝利獎券",
+    "勝利獎券",
+    "Go To Winning!",
+    "奖券藏",
+    "胜利奖券",
+    "ウイニングチケット"
+  ],
+  "birthday": "03-21",
+  "birthday_day_of_year": 81,
+  "birthday_raw": "3月21日",
+  "height_cm": 157,
+  "height_raw": "157cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 1,
+  "star_raw": "1",
+  "cv": "渡部優衣",
+  "cv_raw": "渡部優衣",
+  "quote_raw": "“唔哦哦哦哦哦哦！好感动啊啊啊啊啊啊！！！！！！！！”",
+  "introduction": "无论何时都能大声地、在共鸣的状态下热烈呐喊的超直接的赛马娘。 非常喜欢所有的体育运动，认为其中最充满梦想的就是日本德比，无论如何都想参赛并取得胜利。 与成田大进、琵琶晨光有着独一无二的友情。",
+  "intro_paragraphs": [
+    "无论何时都能大声地、在共鸣的状态下热烈呐喊的超直接的赛马娘。",
+    "非常喜欢所有的体育运动，认为其中最充满梦想的就是日本德比，无论如何都想参赛并取得胜利。",
+    "与成田大进、琵琶晨光有着独一无二的友情。"
+  ],
+  "weight_desc_raw": "無增減",
+  "bust_raw": "88",
+  "waist_raw": "57",
+  "hip_raw": "85",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/48a6nntft0xeb4zw1dimnxjjn3w2t0x.png/100px-Chr_icon_1035.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/9f/25jlpir74nf08surdjmfeoe6081shgu.png/100px-Chr_icon_1035_103502_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/ca/r6r8x063o3kbz6qf85cx66ob8nrmgl2.png/100px-Chr_icon_1035_103503_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_WinningTicket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210522145426",
+    "https://storage.moegirl.org.cn/moegirl/commons/7/71/PID92840233.png!/fw/280?v=20211124161306"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/48a6nntft0xeb4zw1dimnxjjn3w2t0x.png/100px-Chr_icon_1035.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9f/25jlpir74nf08surdjmfeoe6081shgu.png/100px-Chr_icon_1035_103502_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/ca/r6r8x063o3kbz6qf85cx66ob8nrmgl2.png/100px-Chr_icon_1035_103503_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9f/25jlpir74nf08surdjmfeoe6081shgu.png/100px-Chr_icon_1035_103502_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/ca/r6r8x063o3kbz6qf85cx66ob8nrmgl2.png/100px-Chr_icon_1035_103503_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_WinningTicket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210522145426"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/7/71/PID92840233.png!/fw/280?v=20211124161306",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_WinningTicket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210522145426"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Go_To_Winning!%E3%80%91%E5%8B%9D%E5%88%A9%E7%8D%8E%E5%88%B8",
+    "https://zh.moegirl.org.cn/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "F",
+    "medium": "A",
+    "long": "B",
+    "nige": "G",
+    "senko": "B",
+    "sashi": "A",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "胜利奖券",
+      "character_id": "1035",
+      "birthday_raw": "3月21日",
+      "height_raw": "157",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "31",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/48a6nntft0xeb4zw1dimnxjjn3w2t0x.png/100px-Chr_icon_1035.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/48a6nntft0xeb4zw1dimnxjjn3w2t0x.png/100px-Chr_icon_1035.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "胜利奖券",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8",
+      "star_raw": "1",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8",
+      "raw_name_zh": "胜利奖券",
+      "raw_name_jp": "ウイニングチケット",
+      "nickname_raw": "Go To Winning!",
+      "star_raw": "1",
+      "birthday_raw": "3月21日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "cv_raw": "渡部优衣",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9f/25jlpir74nf08surdjmfeoe6081shgu.png/100px-Chr_icon_1035_103502_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/ca/r6r8x063o3kbz6qf85cx66ob8nrmgl2.png/100px-Chr_icon_1035_103503_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Go_To_Winning!%E3%80%91%E5%8B%9D%E5%88%A9%E7%8D%8E%E5%88%B8",
+      "raw_name_zh": "胜利奖券",
+      "raw_name_jp": null,
+      "translated_name_raw": "勝利獎券",
+      "nickname_raw": "Go To Winning!",
+      "page_title": "【Go To Winning!】勝利獎券",
+      "page_title_aliases": [
+        "【Go To Winning!】勝利獎券",
+        "勝利獎券",
+        "Go To Winning!"
+      ],
+      "star_raw": "1",
+      "birthday_raw": "3月21日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "cv_raw": "渡部優衣",
+      "introduction_raw": "盡情大笑，盡情痛哭！毫不掩飾情感的坦率女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9f/25jlpir74nf08surdjmfeoe6081shgu.png/100px-Chr_icon_1035_103502_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/ca/r6r8x063o3kbz6qf85cx66ob8nrmgl2.png/100px-Chr_icon_1035_103503_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Go_To_Winning!%E3%80%91%E5%8B%9D%E5%88%A9%E7%8D%8E%E5%88%B8",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "胜利奖券",
+      "raw_name_jp": "ウイニングチケット",
+      "cv_raw": "渡部优衣",
+      "birthday_raw": "3月21日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "quote_raw": "“唔哦哦哦哦哦哦！好感动啊啊啊啊啊啊！！！！！！！！”",
+      "intro_paragraphs": [
+        "无论何时都能大声地、在共鸣的状态下热烈呐喊的超直接的赛马娘。",
+        "非常喜欢所有的体育运动，认为其中最充满梦想的就是日本德比，无论如何都想参赛并取得胜利。",
+        "与成田大进、琵琶晨光有着独一无二的友情。"
+      ],
+      "introduction": "无论何时都能大声地、在共鸣的状态下热烈呐喊的超直接的赛马娘。\n非常喜欢所有的体育运动，认为其中最充满梦想的就是日本德比，无论如何都想参赛并取得胜利。\n与成田大进、琵琶晨光有着独一无二的友情。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_WinningTicket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210522145426",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_WinningTicket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210522145426"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8",
+      "canonical_name_zh": "胜利奖券",
+      "aliases": [
+        "胜利奖券"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8",
+      "raw_name_zh": "胜利奖券",
+      "page_title": "胜利奖券",
+      "raw_name_jp": "ウイニングチケット",
+      "raw_name_en": null,
+      "aliases": [
+        "奖券藏",
+        "胜利奖券"
+      ],
+      "birthday_raw": "3月21日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "cv_raw": "渡部优衣",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/71/PID92840233.png!/fw/280?v=20211124161306",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/71/PID92840233.png!/fw/280?v=20211124161306",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7e/UPDCH_WinningTicket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210522145426"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%83%9C%E5%88%A9%E5%A5%96%E5%88%B8"
+    }
+  }
+}

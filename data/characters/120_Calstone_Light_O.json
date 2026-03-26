@@ -1,0 +1,277 @@
+{
+  "id": "karusutonraitoo",
+  "name_zh": "金镇之光",
+  "name_jp": "カルストンライトオ",
+  "aliases": [
+    "【一心求真】浮岩光王",
+    "浮岩光王",
+    "一心求真",
+    "金镇之光",
+    "カルストンライトオ",
+    "真実一路"
+  ],
+  "birthday": "05-03",
+  "birthday_day_of_year": 124,
+  "birthday_raw": "5月3日",
+  "height_cm": 159,
+  "height_raw": "159cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "望月ゆみこ",
+  "cv_raw": "望月ゆみこ",
+  "quote_raw": "端庄冷静的气质——直线之王！",
+  "introduction": "追求“最高速度”，坚韧不拔地朝着巅峰前进的猪突猛进型赛马娘。 只要是最快的，就比任何人都快。也就是说，这是最高极速！ 因为她非常率直和坦率，所以无论是情感还是行动，她都可以算得上是直率的类型。",
+  "intro_paragraphs": [
+    "追求“最高速度”，坚韧不拔地朝着巅峰前进的猪突猛进型赛马娘。",
+    "只要是最快的，就比任何人都快。也就是说，这是最高极速！",
+    "因为她非常率直和坦率，所以无论是情感还是行动，她都可以算得上是直率的类型。"
+  ],
+  "weight_desc_raw": "以最高速成長中",
+  "bust_raw": "80",
+  "waist_raw": "55",
+  "hip_raw": "80",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/7ayt8h2zsn9hywm9d9xo60odmomazrr.png/100px-Chr_icon_1120.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/5/52/UPDCH_CalstoneLightO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038",
+    "https://storage.moegirl.org.cn/moegirl/commons/b/b5/120673070_p0.jpg!/fw/280?v=20240811102425"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/7ayt8h2zsn9hywm9d9xo60odmomazrr.png/100px-Chr_icon_1120.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/5/52/UPDCH_CalstoneLightO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/b5/120673070_p0.jpg!/fw/280?v=20240811102425",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/52/UPDCH_CalstoneLightO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E4%B8%80%E5%BF%83%E6%B1%82%E7%9C%9F%E3%80%91%E6%B5%AE%E5%B2%A9%E5%85%89%E7%8E%8B",
+    "https://zh.moegirl.org.cn/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "A",
+    "mile": "D",
+    "medium": "G",
+    "long": "G",
+    "nige": "A",
+    "senko": "C",
+    "sashi": "G",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "短"
+  ],
+  "running_style_group": [
+    "逃"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "金镇之光",
+      "character_id": "1120",
+      "birthday_raw": "5月3日",
+      "height_raw": "159",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/7ayt8h2zsn9hywm9d9xo60odmomazrr.png/100px-Chr_icon_1120.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/7ayt8h2zsn9hywm9d9xo60odmomazrr.png/100px-Chr_icon_1120.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "金镇之光",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89",
+      "star_raw": "3",
+      "speed_growth_raw": "15%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "15%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "D",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89",
+      "raw_name_zh": "金镇之光",
+      "raw_name_jp": "カルストンライトオ",
+      "nickname_raw": "真実一路",
+      "star_raw": "3",
+      "birthday_raw": "5月3日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "以最高速成长中",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "望月由美子",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "D",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "G",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%B8%80%E5%BF%83%E6%B1%82%E7%9C%9F%E3%80%91%E6%B5%AE%E5%B2%A9%E5%85%89%E7%8E%8B",
+      "raw_name_zh": "金镇之光",
+      "raw_name_jp": null,
+      "translated_name_raw": "浮岩光王",
+      "nickname_raw": "一心求真",
+      "page_title": "【一心求真】浮岩光王",
+      "page_title_aliases": [
+        "【一心求真】浮岩光王",
+        "浮岩光王",
+        "一心求真"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月3日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "以最高速成長中",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "望月ゆみこ",
+      "introduction_raw": "邁向光的彼方！最快速度衝刺的直線老大",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%B8%80%E5%BF%83%E6%B1%82%E7%9C%9F%E3%80%91%E6%B5%AE%E5%B2%A9%E5%85%89%E7%8E%8B",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "D",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "金镇之光",
+      "raw_name_jp": "カルストンライトオ",
+      "cv_raw": "望月裕美子",
+      "birthday_raw": "5月3日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "以最高速成长中",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "端庄冷静的气质——直线之王！",
+      "intro_paragraphs": [
+        "追求“最高速度”，坚韧不拔地朝着巅峰前进的猪突猛进型赛马娘。",
+        "只要是最快的，就比任何人都快。也就是说，这是最高极速！",
+        "因为她非常率直和坦率，所以无论是情感还是行动，她都可以算得上是直率的类型。"
+      ],
+      "introduction": "追求“最高速度”，坚韧不拔地朝着巅峰前进的猪突猛进型赛马娘。\n只要是最快的，就比任何人都快。也就是说，这是最高极速！\n因为她非常率直和坦率，所以无论是情感还是行动，她都可以算得上是直率的类型。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/52/UPDCH_CalstoneLightO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/52/UPDCH_CalstoneLightO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89",
+      "canonical_name_zh": "金镇之光",
+      "aliases": [
+        "金镇之光"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89",
+      "raw_name_zh": "金镇之光",
+      "page_title": "金镇之光",
+      "raw_name_jp": "カルストンライトオ",
+      "raw_name_en": null,
+      "aliases": [
+        "金镇之光"
+      ],
+      "birthday_raw": "5月3日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "以最高速成长中",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "望月裕美子",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/b5/120673070_p0.jpg!/fw/280?v=20240811102425",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b5/120673070_p0.jpg!/fw/280?v=20240811102425",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/52/UPDCH_CalstoneLightO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%87%91%E9%95%87%E4%B9%8B%E5%85%89"
+    }
+  }
+}

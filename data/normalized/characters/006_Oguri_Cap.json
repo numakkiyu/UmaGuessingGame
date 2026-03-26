@@ -1,0 +1,329 @@
+{
+  "id": "ogurikyappu",
+  "order": 6,
+  "file_name": "006_Oguri_Cap.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "小栗帽",
+    "zh_tw": null,
+    "jp": "オグリキャップ",
+    "en": "Oguri Cap"
+  },
+  "aliases": [
+    "小栗帽",
+    "オグリキャップ",
+    "Oguri Cap",
+    "【星光躍動】小栗帽",
+    "星光躍動",
+    "小栗（オグリ）",
+    "小栗栗（オグリン）",
+    "帽哥",
+    "芦毛的怪物",
+    "芦毛灰姑娘",
+    "泥兔子",
+    "欧古力",
+    "大胃王",
+    "幻神[1]",
+    "スターライトビート"
+  ],
+  "profile": {
+    "birthday": "03-27",
+    "birthday_raw": "3月27日",
+    "birthday_day_of_year": 87,
+    "height_cm": 167,
+    "height_raw": "167㎝",
+    "cv": "高柳知葉",
+    "cv_raw": "高柳知葉",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "nige": "F",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "D"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "7+",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/naeumi4jpyr8horwvqv3yre3uc6urpf.png/100px-Chr_icon_1006.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/18qc5rbch53wvn75t47e1ifnsenueat.png/100px-Chr_icon_1006_100602_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/dy09h13ew09t3hg52iiadrh9tvp46on.png/100px-Chr_icon_1006_100603_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/38/UPDCH_OguriCap_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210824070423",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/9d/89841511_p0.jpg!/fw/280?v=20221212082636"
+    ],
+    "image_local_path": "/api/assets/ogurikyappu-thumb",
+    "asset_id": "ogurikyappu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%B0%8F%E6%A0%97%E5%B8%BD",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E6%98%9F%E5%85%89%E8%BA%8D%E5%8B%95%E3%80%91%E5%B0%8F%E6%A0%97%E5%B8%BD",
+      "https://zh.moegirl.org.cn/%E5%B0%8F%E6%A0%97%E5%B8%BD"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/naeumi4jpyr8horwvqv3yre3uc6urpf.png/100px-Chr_icon_1006.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/18qc5rbch53wvn75t47e1ifnsenueat.png/100px-Chr_icon_1006_100602_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/dy09h13ew09t3hg52iiadrh9tvp46on.png/100px-Chr_icon_1006_100603_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/18qc5rbch53wvn75t47e1ifnsenueat.png/100px-Chr_icon_1006_100602_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/38/UPDCH_OguriCap_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210824070423"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9d/89841511_p0.jpg!/fw/280?v=20221212082636",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/38/UPDCH_OguriCap_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210824070423"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "从地方转学来的有自己的节奏的女孩子。在故乡连战连胜，背负着期待来到了特雷森学园。 虽然背负着故乡的期待，想要更加努力，但平常的言行是天然全开的装傻型。 是特雷森学园食量最大的人，一瞬间就能把米缸和锅一扫而空。",
+    "intro_paragraphs": [
+      "从地方转学来的有自己的节奏的女孩子。在故乡连战连胜，背负着期待来到了特雷森学园。",
+      "虽然背负着故乡的期待，想要更加努力，但平常的言行是天然全开的装傻型。",
+      "是特雷森学园食量最大的人，一瞬间就能把米缸和锅一扫而空。"
+    ],
+    "quote_raw": "“为了故乡的人们……得先填饱肚子才行。”",
+    "weight_desc_raw": "微增（吃太多）",
+    "bust_raw": "82",
+    "waist_raw": "57",
+    "hip_raw": "82"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "小栗帽",
+      "character_id": "1006",
+      "birthday_raw": "3月27日",
+      "height_raw": "167",
+      "bust_raw": "82",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/naeumi4jpyr8horwvqv3yre3uc6urpf.png/100px-Chr_icon_1006.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/naeumi4jpyr8horwvqv3yre3uc6urpf.png/100px-Chr_icon_1006.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B0%8F%E6%A0%97%E5%B8%BD"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "小栗帽",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B0%8F%E6%A0%97%E5%B8%BD",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%B0%8F%E6%A0%97%E5%B8%BD",
+      "raw_name_zh": "小栗帽",
+      "raw_name_jp": "オグリキャップ",
+      "nickname_raw": "スターライトビート",
+      "star_raw": "3",
+      "birthday_raw": "3月27日",
+      "height_raw": "167㎝",
+      "weight_desc_raw": "微增（吃多了）",
+      "bust_raw": "82",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "cv_raw": "高柳知叶",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/18qc5rbch53wvn75t47e1ifnsenueat.png/100px-Chr_icon_1006_100602_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/dy09h13ew09t3hg52iiadrh9tvp46on.png/100px-Chr_icon_1006_100603_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B0%8F%E6%A0%97%E5%B8%BD"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%98%9F%E5%85%89%E8%BA%8D%E5%8B%95%E3%80%91%E5%B0%8F%E6%A0%97%E5%B8%BD",
+      "raw_name_zh": "小栗帽",
+      "raw_name_jp": null,
+      "translated_name_raw": "小栗帽",
+      "nickname_raw": "星光躍動",
+      "page_title": "【星光躍動】小栗帽",
+      "page_title_aliases": [
+        "【星光躍動】小栗帽",
+        "小栗帽",
+        "星光躍動"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月27日",
+      "height_raw": "167㎝",
+      "weight_desc_raw": "微增（吃太多）",
+      "bust_raw": "82",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "cv_raw": "高柳知葉",
+      "introduction_raw": "地方出身，純樸的酷酷夢想家",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/18qc5rbch53wvn75t47e1ifnsenueat.png/100px-Chr_icon_1006_100602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%98%9F%E5%85%89%E8%BA%8D%E5%8B%95%E3%80%91%E5%B0%8F%E6%A0%97%E5%B8%BD",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "小栗帽",
+      "raw_name_jp": "オグリキャップ",
+      "cv_raw": "高柳知叶",
+      "birthday_raw": "3月27日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微增（吃多了）",
+      "bust_raw": "82",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "quote_raw": "“为了故乡的人们……得先填饱肚子才行。”",
+      "intro_paragraphs": [
+        "从地方转学来的有自己的节奏的女孩子。在故乡连战连胜，背负着期待来到了特雷森学园。",
+        "虽然背负着故乡的期待，想要更加努力，但平常的言行是天然全开的装傻型。",
+        "是特雷森学园食量最大的人，一瞬间就能把米缸和锅一扫而空。"
+      ],
+      "introduction": "从地方转学来的有自己的节奏的女孩子。在故乡连战连胜，背负着期待来到了特雷森学园。\n虽然背负着故乡的期待，想要更加努力，但平常的言行是天然全开的装傻型。\n是特雷森学园食量最大的人，一瞬间就能把米缸和锅一扫而空。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/38/UPDCH_OguriCap_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210824070423",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/38/UPDCH_OguriCap_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210824070423"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%B0%8F%E6%A0%97%E5%B8%BD",
+      "canonical_name_zh": "小栗帽",
+      "aliases": [
+        "小栗帽"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%B0%8F%E6%A0%97%E5%B8%BD",
+      "raw_name_zh": "小栗帽",
+      "page_title": "小栗帽",
+      "raw_name_jp": "オグリキャップ",
+      "raw_name_en": null,
+      "aliases": [
+        "小栗（オグリ）",
+        "小栗栗（オグリン）",
+        "帽哥",
+        "芦毛的怪物",
+        "芦毛灰姑娘",
+        "泥兔子",
+        "欧古力",
+        "大胃王",
+        "幻神[1]",
+        "小栗帽"
+      ],
+      "birthday_raw": "3月27日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微增（吃多了）",
+      "bust_raw": "82",
+      "waist_raw": "57",
+      "hip_raw": "82",
+      "cv_raw": "（早期原案）竹达彩奈→高柳知叶",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/9d/89841511_p0.jpg!/fw/280?v=20221212082636",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9d/89841511_p0.jpg!/fw/280?v=20221212082636",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/38/UPDCH_OguriCap_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210824070423"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%B0%8F%E6%A0%97%E5%B8%BD"
+    }
+  }
+}

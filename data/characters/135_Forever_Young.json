@@ -1,0 +1,187 @@
+{
+  "id": "fuooebaayangu",
+  "name_zh": "青春永驻",
+  "name_jp": "フォーエバーヤング",
+  "aliases": [
+    "青春永驻",
+    "フォーエバーヤング"
+  ],
+  "birthday": "02-24",
+  "birthday_day_of_year": 55,
+  "birthday_raw": "2月24日",
+  "height_cm": 167,
+  "height_raw": "167",
+  "grade": null,
+  "grade_raw": null,
+  "dormitory": null,
+  "dorm_raw": null,
+  "star": null,
+  "star_raw": null,
+  "cv": "海弓首里",
+  "cv_raw": "海弓首里",
+  "quote_raw": "自称『要在赛马娘界引起创新』的创新者型赛马娘。",
+  "introduction": "以充满活力的辣妹气质、从小就通过观看世界各地的比赛和商业活动培养出的逻辑思维能力，以及打破常规的创造力为武器，每天都在推进各种项目。 顺便说一下，她的生日和这个世界的某个节日是同一天。",
+  "intro_paragraphs": [
+    "以充满活力的辣妹气质、从小就通过观看世界各地的比赛和商业活动培养出的逻辑思维能力，以及打破常规的创造力为武器，每天都在推进各种项目。",
+    "顺便说一下，她的生日和这个世界的某个节日是同一天。"
+  ],
+  "weight_desc_raw": "意料之外",
+  "bust_raw": "90",
+  "waist_raw": "60",
+  "hip_raw": "89",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9c/tak9b4q7conk72m421yx76m2xyseix1.png/100px-Chr_icon_1138.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/9c/tak9b4q7conk72m421yx76m2xyseix1.png/100px-Chr_icon_1138.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_ForeverYoung_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125743"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9c/tak9b4q7conk72m421yx76m2xyseix1.png/100px-Chr_icon_1138.png"
+    ],
+    "biliwiki_gallery": [],
+    "biliwiki_detail": [],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_ForeverYoung_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125743"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_ForeverYoung_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125743"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E9%9D%92%E6%98%A5%E6%B0%B8%E9%A9%BB",
+    "https://zh.moegirl.org.cn/index.php?title=%E9%9D%92%E6%98%A5%E6%B0%B8%E9%A9%BB&action=edit&redlink=1"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": null,
+    "dirt": null,
+    "sprint": null,
+    "mile": null,
+    "medium": null,
+    "long": null,
+    "nige": null,
+    "senko": null,
+    "sashi": null,
+    "oikomi": null
+  },
+  "surface_group": [],
+  "distance_group": [],
+  "running_style_group": [],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "青春永驻",
+      "character_id": "1138",
+      "birthday_raw": "2月24日",
+      "height_raw": "167",
+      "bust_raw": "90",
+      "waist_raw": "60",
+      "hip_raw": "89",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9c/tak9b4q7conk72m421yx76m2xyseix1.png/100px-Chr_icon_1138.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9c/tak9b4q7conk72m421yx76m2xyseix1.png/100px-Chr_icon_1138.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E6%98%A5%E6%B0%B8%E9%A9%BB"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E6%98%A5%E6%B0%B8%E9%A9%BB",
+      "raw_name_zh": "青春永驻",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E6%98%A5%E6%B0%B8%E9%A9%BB"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "青春永驻",
+      "raw_name_jp": "フォーエバーヤング",
+      "cv_raw": "海弓首里",
+      "birthday_raw": "2月24日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "意料之外",
+      "bust_raw": "90",
+      "waist_raw": "60",
+      "hip_raw": "89",
+      "quote_raw": "自称『要在赛马娘界引起创新』的创新者型赛马娘。",
+      "intro_paragraphs": [
+        "以充满活力的辣妹气质、从小就通过观看世界各地的比赛和商业活动培养出的逻辑思维能力，以及打破常规的创造力为武器，每天都在推进各种项目。",
+        "顺便说一下，她的生日和这个世界的某个节日是同一天。"
+      ],
+      "introduction": "以充满活力的辣妹气质、从小就通过观看世界各地的比赛和商业活动培养出的逻辑思维能力，以及打破常规的创造力为武器，每天都在推进各种项目。\n顺便说一下，她的生日和这个世界的某个节日是同一天。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_ForeverYoung_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125743",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_ForeverYoung_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125743"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E9%9D%92%E6%98%A5%E6%B0%B8%E9%A9%BB&action=edit&redlink=1",
+      "canonical_name_zh": "青春永驻",
+      "aliases": [
+        "青春永驻"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E9%9D%92%E6%98%A5%E6%B0%B8%E9%A9%BB&action=edit&redlink=1",
+      "raw_name_zh": "青春永驻",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "フォーエバーヤング",
+      "raw_name_en": null,
+      "aliases": [
+        "青春永驻"
+      ],
+      "birthday_raw": "2月24日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "意料之外",
+      "bust_raw": "90",
+      "waist_raw": "60",
+      "hip_raw": "89",
+      "cv_raw": "海弓首里",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_ForeverYoung_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125743",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_ForeverYoung_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125743"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E9%9D%92%E6%98%A5%E6%B0%B8%E9%A9%BB&action=edit&redlink=1"
+    }
+  }
+}

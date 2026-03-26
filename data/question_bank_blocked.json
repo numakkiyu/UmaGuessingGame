@@ -1,0 +1,338 @@
+[
+  {
+    "file_name": "075_Daring_Tact.json",
+    "id": "dearingutakuto",
+    "name_zh": "谋勇兼备",
+    "order": 75,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "089_Cheval_Grand.json",
+    "id": "shuvuaruguran",
+    "name_zh": "高尚俊逸",
+    "order": 89,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group"
+    ]
+  },
+  {
+    "file_name": "101_Samson_Big.json",
+    "id": "samusonbiggu",
+    "name_zh": "大森逊",
+    "order": 101,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "103_Royce_and_Royce.json",
+    "id": "roisuandoroisu",
+    "name_zh": "罗罗",
+    "order": 103,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "111_Air_Messiah.json",
+    "id": "eamesaia",
+    "name_zh": "空中救主",
+    "order": 111,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "112_Daring_Heart.json",
+    "id": "dearinguhaato",
+    "name_zh": "勇敢的心",
+    "order": 112,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "113_Fusaichi_Pandora.json",
+    "id": "fusaichipandora",
+    "name_zh": "房一魔盒",
+    "order": 113,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group"
+    ]
+  },
+  {
+    "file_name": "117_Win_Variation.json",
+    "id": "uinbariashion",
+    "name_zh": "凱旋芭蕾",
+    "order": 117,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "118_Admire_Groove.json",
+    "id": "adomaiyaguruuvu",
+    "name_zh": "爱慕律动",
+    "order": 118,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "121_Durandal.json",
+    "id": "deyurandaru",
+    "name_zh": "杜兰达尔",
+    "order": 121,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "123_Sakura_Chitose_O.json",
+    "id": "sakurachitoseoo",
+    "name_zh": "樱花千岁王",
+    "order": 123,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "125_Blast_Onepiece.json",
+    "id": "burasutowanpiisu",
+    "name_zh": "防爆装束",
+    "order": 125,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "127_Lucky_Lilac.json",
+    "id": "rakkiirairakku",
+    "name_zh": "旺紫丁",
+    "order": 127,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "131_Curren_Bouquetdor.json",
+    "id": "karenbuukedooru",
+    "name_zh": "机伶金花",
+    "order": 131,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "133_Red_Desire.json",
+    "id": "reddodeizaia",
+    "name_zh": "红色梦想",
+    "order": 133,
+    "release_status": "released",
+    "reason": "missing_base_fields",
+    "missing_fields": [
+      "star",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "134_Kiseki.json",
+    "id": "kiseki",
+    "name_zh": "神业",
+    "order": 134,
+    "release_status": "unreleased",
+    "reason": "unreleased",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group"
+    ]
+  },
+  {
+    "file_name": "135_Forever_Young.json",
+    "id": "fuooebaayangu",
+    "name_zh": "青春永驻",
+    "order": 135,
+    "release_status": "unreleased",
+    "reason": "unreleased",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "136_Marche_Lorraine.json",
+    "id": "marushuroreenu",
+    "name_zh": "洛林军歌",
+    "order": 136,
+    "release_status": "unreleased",
+    "reason": "unreleased",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "137_Epiphaneia.json",
+    "id": "epifuaneia",
+    "name_zh": "神威启示",
+    "order": 137,
+    "release_status": "unreleased",
+    "reason": "unreleased",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "138_Logotype.json",
+    "id": "rogotaipu",
+    "name_zh": "标志名驹",
+    "order": 138,
+    "release_status": "unreleased",
+    "reason": "unreleased",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "139_Victoire_Pisa.json",
+    "id": "vyikutowaarupisa",
+    "name_zh": "比萨胜驹",
+    "order": 139,
+    "release_status": "unreleased",
+    "reason": "unreleased",
+    "missing_fields": []
+  },
+  {
+    "file_name": "140_Rose_Kingdom.json",
+    "id": "roozukingudamu",
+    "name_zh": "玫瑰帝国",
+    "order": 140,
+    "release_status": "unreleased",
+    "reason": "unreleased",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  },
+  {
+    "file_name": "141_Rulership.json",
+    "id": "ruuraashippu",
+    "name_zh": "统治地位",
+    "order": 141,
+    "release_status": "unreleased",
+    "reason": "unreleased",
+    "missing_fields": [
+      "star",
+      "surface_group",
+      "distance_group",
+      "running_style_group",
+      "school_grade",
+      "dormitory"
+    ]
+  }
+]

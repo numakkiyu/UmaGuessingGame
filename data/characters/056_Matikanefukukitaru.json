@@ -1,0 +1,289 @@
+{
+  "id": "machikanefukukitaru",
+  "name_zh": "待兼福来",
+  "name_jp": "マチカネフクキタル",
+  "aliases": [
+    "【運勢上升☆好運臨門】待兼福來",
+    "待兼福來",
+    "運勢上升☆好運臨門",
+    "笑門来福",
+    "待半仙",
+    "待兼胡来",
+    "待兼福来",
+    "マチカネフクキタル",
+    "運気上昇☆幸福万来"
+  ],
+  "birthday": "05-22",
+  "birthday_day_of_year": 143,
+  "birthday_raw": "5月22日",
+  "height_cm": 158,
+  "height_raw": "158cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 1,
+  "star_raw": "1",
+  "cv": "新田ひより",
+  "cv_raw": "新田ひより",
+  "quote_raw": "“唔呼呼，占卜结果是ー！？今天的运势是大吉ー☆”",
+  "introduction": "依靠占卜和巫术等外力的赛马娘。 不管什么时候只要不占卜就坐立不安，自己自不用说，也很喜欢给别人占卜。 对“只要坚持跑下去道路就会更宽广”的神之教诲深信不疑。招财猫形的背包的名字为“喵桑”。",
+  "intro_paragraphs": [
+    "依靠占卜和巫术等外力的赛马娘。",
+    "不管什么时候只要不占卜就坐立不安，自己自不用说，也很喜欢给别人占卜。",
+    "对“只要坚持跑下去道路就会更宽广”的神之教诲深信不疑。招财猫形的背包的名字为“喵桑”。"
+  ],
+  "weight_desc_raw": "因為今日運勢是「凶」而微減",
+  "bust_raw": "84",
+  "waist_raw": "59",
+  "hip_raw": "83",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/h1hjj8blpvwsnf0ni1wxp4x1to23bx3.png/100px-Chr_icon_1056.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/ef/fj3tnjuvsof4dldainvp4vqnm6ualyf.png/100px-Chr_icon_1056_105602_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/3/33/UPDCH_Matikanefukukitaru_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210620061115",
+    "https://storage.moegirl.org.cn/moegirl/commons/8/8b/PID913487.jpg!/fw/280?v=20211124172407"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/h1hjj8blpvwsnf0ni1wxp4x1to23bx3.png/100px-Chr_icon_1056.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ef/fj3tnjuvsof4dldainvp4vqnm6ualyf.png/100px-Chr_icon_1056_105602_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ef/fj3tnjuvsof4dldainvp4vqnm6ualyf.png/100px-Chr_icon_1056_105602_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/3/33/UPDCH_Matikanefukukitaru_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210620061115"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/8/8b/PID913487.jpg!/fw/280?v=20211124172407",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/33/UPDCH_Matikanefukukitaru_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210620061115"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E9%81%8B%E5%8B%A2%E4%B8%8A%E5%8D%87%E2%98%86%E5%A5%BD%E9%81%8B%E8%87%A8%E9%96%80%E3%80%91%E5%BE%85%E5%85%BC%E7%A6%8F%E4%BE%86",
+    "https://zh.moegirl.org.cn/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "F",
+    "sprint": "F",
+    "mile": "C",
+    "medium": "A",
+    "long": "A",
+    "nige": "G",
+    "senko": "B",
+    "sashi": "A",
+    "oikomi": "F"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "待兼福来",
+      "character_id": "1056",
+      "birthday_raw": "5月22日",
+      "height_raw": "158",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "83",
+      "whr_raw": "0.71",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/h1hjj8blpvwsnf0ni1wxp4x1to23bx3.png/100px-Chr_icon_1056.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/h1hjj8blpvwsnf0ni1wxp4x1to23bx3.png/100px-Chr_icon_1056.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "待兼福来",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5",
+      "star_raw": "1",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5",
+      "raw_name_zh": "待兼福来",
+      "raw_name_jp": "マチカネフクキタル",
+      "nickname_raw": "運気上昇☆幸福万来",
+      "star_raw": "1",
+      "birthday_raw": "5月22日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "今日因「凶」而微减",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "83",
+      "cv_raw": "新田日和",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ef/fj3tnjuvsof4dldainvp4vqnm6ualyf.png/100px-Chr_icon_1056_105602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%81%8B%E5%8B%A2%E4%B8%8A%E5%8D%87%E2%98%86%E5%A5%BD%E9%81%8B%E8%87%A8%E9%96%80%E3%80%91%E5%BE%85%E5%85%BC%E7%A6%8F%E4%BE%86",
+      "raw_name_zh": "待兼福来",
+      "raw_name_jp": null,
+      "translated_name_raw": "待兼福來",
+      "nickname_raw": "運勢上升☆好運臨門",
+      "page_title": "【運勢上升☆好運臨門】待兼福來",
+      "page_title_aliases": [
+        "【運勢上升☆好運臨門】待兼福來",
+        "待兼福來",
+        "運勢上升☆好運臨門"
+      ],
+      "star_raw": "1",
+      "birthday_raw": "5月22日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "因為今日運勢是「凶」而微減",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "83",
+      "cv_raw": "新田ひより",
+      "introduction_raw": "福氣上門吧！最愛占卜的開心祈福女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ef/fj3tnjuvsof4dldainvp4vqnm6ualyf.png/100px-Chr_icon_1056_105602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%81%8B%E5%8B%A2%E4%B8%8A%E5%8D%87%E2%98%86%E5%A5%BD%E9%81%8B%E8%87%A8%E9%96%80%E3%80%91%E5%BE%85%E5%85%BC%E7%A6%8F%E4%BE%86",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "待兼福来",
+      "raw_name_jp": "マチカネフクキタル",
+      "cv_raw": "新田日和",
+      "birthday_raw": "5月22日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "因为今天是“凶”所以微减",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "83",
+      "quote_raw": "“唔呼呼，占卜结果是ー！？今天的运势是大吉ー☆”",
+      "intro_paragraphs": [
+        "依靠占卜和巫术等外力的赛马娘。",
+        "不管什么时候只要不占卜就坐立不安，自己自不用说，也很喜欢给别人占卜。",
+        "对“只要坚持跑下去道路就会更宽广”的神之教诲深信不疑。招财猫形的背包的名字为“喵桑”。"
+      ],
+      "introduction": "依靠占卜和巫术等外力的赛马娘。\n不管什么时候只要不占卜就坐立不安，自己自不用说，也很喜欢给别人占卜。\n对“只要坚持跑下去道路就会更宽广”的神之教诲深信不疑。招财猫形的背包的名字为“喵桑”。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/33/UPDCH_Matikanefukukitaru_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210620061115",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/33/UPDCH_Matikanefukukitaru_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210620061115"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5",
+      "canonical_name_zh": "待兼福来",
+      "aliases": [
+        "待兼福来"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5",
+      "raw_name_zh": "待兼福来",
+      "page_title": "待兼福来",
+      "raw_name_jp": "マチカネフクキタル",
+      "raw_name_en": null,
+      "aliases": [
+        "笑門来福",
+        "待半仙",
+        "待兼胡来",
+        "待兼福来"
+      ],
+      "birthday_raw": "5月22日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "今日也是大吉因而无增减",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "83",
+      "cv_raw": "新田日和",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/8b/PID913487.jpg!/fw/280?v=20211124172407",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/8b/PID913487.jpg!/fw/280?v=20211124172407",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/33/UPDCH_Matikanefukukitaru_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210620061115"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%BE%85%E5%85%BC%E7%A6%8F%E6%9D%A5"
+    }
+  }
+}

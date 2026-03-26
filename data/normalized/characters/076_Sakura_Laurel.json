@@ -1,0 +1,307 @@
+{
+  "id": "sakurarooreru",
+  "order": 76,
+  "file_name": "076_Sakura_Laurel.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "樱花桂冠",
+    "zh_tw": null,
+    "jp": "サクラローレル",
+    "en": "Sakura Laurel"
+  },
+  "aliases": [
+    "樱花桂冠",
+    "サクラローレル",
+    "Sakura Laurel",
+    "【Saisir le rêve】櫻花桂冠",
+    "櫻花桂冠",
+    "Saisir le rêve",
+    "樱花魅魔"
+  ],
+  "profile": {
+    "birthday": "05-08",
+    "birthday_raw": "5月8日",
+    "birthday_day_of_year": 129,
+    "height_cm": 162,
+    "height_raw": "162cm",
+    "cv": "真野美月",
+    "cv_raw": "真野美月",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "B"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/j8nlu0cxmc1ixutm21e0b486haallqt.png/100px-Chr_icon_1076.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3b/hjf1kgafk00vp1o5t22m2vuqedfn99f.png/100px-Chr_icon_1076_107602_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_SakuraLaurel_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135727",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/3b/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0_pid102870188.png!/fw/240?v=20230224033245"
+    ],
+    "image_local_path": "/api/assets/sakurarooreru-thumb",
+    "asset_id": "sakurarooreru-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Saisir_le_r%C3%AAve%E3%80%91%E6%AB%BB%E8%8A%B1%E6%A1%82%E5%86%A0",
+      "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/j8nlu0cxmc1ixutm21e0b486haallqt.png/100px-Chr_icon_1076.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3b/hjf1kgafk00vp1o5t22m2vuqedfn99f.png/100px-Chr_icon_1076_107602_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_SakuraLaurel_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135727"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3b/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0_pid102870188.png!/fw/240?v=20230224033245",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_SakuraLaurel_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135727"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "阳光开朗，对任何事情都不气馁、不屈不挠的积极赛马娘。 天生腿就不够坚韧，一直为伤病所困，但她并没有放弃，无论多少次都站了起来。 对同期的成田白仁有着特别的感情，是总有一天定要击败的目标。",
+    "intro_paragraphs": [
+      "阳光开朗，对任何事情都不气馁、不屈不挠的积极赛马娘。",
+      "天生腿就不够坚韧，一直为伤病所困，但她并没有放弃，无论多少次都站了起来。",
+      "对同期的成田白仁有着特别的感情，是总有一天定要击败的目标。"
+    ],
+    "quote_raw": "“无论被多么严酷的寒冬伤害，终有一日樱花会绽放，一定！”",
+    "weight_desc_raw": "無可挑剔",
+    "bust_raw": "78",
+    "waist_raw": "54",
+    "hip_raw": "80"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "樱花桂冠",
+      "character_id": "1076",
+      "birthday_raw": "5月8日",
+      "height_raw": "162",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "80",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "24",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/j8nlu0cxmc1ixutm21e0b486haallqt.png/100px-Chr_icon_1076.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/j8nlu0cxmc1ixutm21e0b486haallqt.png/100px-Chr_icon_1076.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "樱花桂冠",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0",
+      "raw_name_zh": "樱花桂冠",
+      "raw_name_jp": "サクラローレル",
+      "nickname_raw": "Saisir le rêve",
+      "star_raw": "3",
+      "birthday_raw": "5月8日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "很理想",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "80",
+      "cv_raw": "真野美月",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "B",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3b/hjf1kgafk00vp1o5t22m2vuqedfn99f.png/100px-Chr_icon_1076_107602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Saisir_le_r%C3%AAve%E3%80%91%E6%AB%BB%E8%8A%B1%E6%A1%82%E5%86%A0",
+      "raw_name_zh": "樱花桂冠",
+      "raw_name_jp": null,
+      "translated_name_raw": "櫻花桂冠",
+      "nickname_raw": "Saisir le rêve",
+      "page_title": "【Saisir le rêve】櫻花桂冠",
+      "page_title_aliases": [
+        "【Saisir le rêve】櫻花桂冠",
+        "櫻花桂冠",
+        "Saisir le rêve"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月8日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "無可挑剔",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "真野美月",
+      "introduction_raw": "穩重且絕不屈服，猶如寒冬過後綻放的櫻花",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Saisir_le_r%C3%AAve%E3%80%91%E6%AB%BB%E8%8A%B1%E6%A1%82%E5%86%A0",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "樱花桂冠",
+      "raw_name_jp": "サクラローレル",
+      "cv_raw": "真野美月",
+      "birthday_raw": "5月8日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "很理想",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "80",
+      "quote_raw": "“无论被多么严酷的寒冬伤害，终有一日樱花会绽放，一定！”",
+      "intro_paragraphs": [
+        "阳光开朗，对任何事情都不气馁、不屈不挠的积极赛马娘。",
+        "天生腿就不够坚韧，一直为伤病所困，但她并没有放弃，无论多少次都站了起来。",
+        "对同期的成田白仁有着特别的感情，是总有一天定要击败的目标。"
+      ],
+      "introduction": "阳光开朗，对任何事情都不气馁、不屈不挠的积极赛马娘。\n天生腿就不够坚韧，一直为伤病所困，但她并没有放弃，无论多少次都站了起来。\n对同期的成田白仁有着特别的感情，是总有一天定要击败的目标。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_SakuraLaurel_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135727",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_SakuraLaurel_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135727"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0",
+      "canonical_name_zh": "樱花桂冠",
+      "aliases": [
+        "樱花桂冠"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0",
+      "raw_name_zh": "樱花桂冠",
+      "page_title": "樱花桂冠",
+      "raw_name_jp": "サクラローレル",
+      "raw_name_en": null,
+      "aliases": [
+        "樱花魅魔",
+        "樱花桂冠"
+      ],
+      "birthday_raw": "5月8日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "很理想",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "80",
+      "cv_raw": "真野美月",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/3b/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0_pid102870188.png!/fw/240?v=20230224033245",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3b/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0_pid102870188.png!/fw/240?v=20230224033245",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_SakuraLaurel_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220222135727"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E6%A1%82%E5%86%A0"
+    }
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "id": "erukondorupasaa",
+  "order": 14,
+  "file_name": "014_El_Condor_Pasa.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "神鹰",
+    "zh_tw": null,
+    "jp": "エルコンドルパサー",
+    "en": "El Condor Pasa"
+  },
+  "aliases": [
+    "神鹰",
+    "エルコンドルパサー",
+    "El Condor Pasa",
+    "【神鷹☆Número 1】神鷹",
+    "神鷹",
+    "神鷹☆Número 1",
+    "エル",
+    "怪鸟",
+    "艾露",
+    "エル☆Número 1"
+  ],
+  "profile": {
+    "birthday": "03-17",
+    "birthday_raw": "3月17日",
+    "birthday_day_of_year": 77,
+    "height_cm": 163,
+    "height_raw": "163cm",
+    "cv": "髙橋ミナミ",
+    "cv_raw": "髙橋ミナミ",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 2,
+    "star_raw": "2",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "nige": "E",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "C"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/2mypaxij4ijtdrejij0ptjuojoso5wl.png/100px-Chr_icon_1014.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b0/fkzhw3opf4gyebp9q74qzywkkz89hro.png/100px-Chr_icon_1014_101402_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/41/UPDCH_ElCondorPasa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040544",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/4b/PID88790033.jpg!/fw/280?v=20211124062944"
+    ],
+    "image_local_path": "/api/assets/erukondorupasaa-thumb",
+    "asset_id": "erukondorupasaa-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%A5%9E%E9%B9%B0",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%A5%9E%E9%B7%B9%E2%98%86N%C3%BAmero_1%E3%80%91%E7%A5%9E%E9%B7%B9",
+      "https://zh.moegirl.org.cn/%E7%A5%9E%E9%B9%B0(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/2mypaxij4ijtdrejij0ptjuojoso5wl.png/100px-Chr_icon_1014.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b0/fkzhw3opf4gyebp9q74qzywkkz89hro.png/100px-Chr_icon_1014_101402_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b0/fkzhw3opf4gyebp9q74qzywkkz89hro.png/100px-Chr_icon_1014_101402_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/41/UPDCH_ElCondorPasa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040544"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/PID88790033.jpg!/fw/280?v=20211124062944",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/41/UPDCH_ElCondorPasa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040544"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "戴着面具的、拉丁系的热情赛马娘。相信着自己才是世界最强，为了证明这点而用大嘴巴让自己充满热情。 面具是从身为摔跤手的父亲那里继承来的，如果没了它平常的状态就会…… 与好友草上飞住在一个寝室，经常被她说教。",
+    "intro_paragraphs": [
+      "戴着面具的、拉丁系的热情赛马娘。相信着自己才是世界最强，为了证明这点而用大嘴巴让自己充满热情。",
+      "面具是从身为摔跤手的父亲那里继承来的，如果没了它平常的状态就会……",
+      "与好友草上飞住在一个寝室，经常被她说教。"
+    ],
+    "quote_raw": "“飞翔、大胜、摔跤之魂！神鹰才是世界最强deeesu！”",
+    "weight_desc_raw": "微增（重訓效果）",
+    "bust_raw": "89",
+    "waist_raw": "58",
+    "hip_raw": "86"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "神鹰",
+      "character_id": "1014",
+      "birthday_raw": "3月17日",
+      "height_raw": "163",
+      "bust_raw": "89",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "31",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/2mypaxij4ijtdrejij0ptjuojoso5wl.png/100px-Chr_icon_1014.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/2mypaxij4ijtdrejij0ptjuojoso5wl.png/100px-Chr_icon_1014.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E9%B9%B0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "神鹰",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E9%B9%B0",
+      "star_raw": "2",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E9%B9%B0",
+      "raw_name_zh": "神鹰",
+      "raw_name_jp": "エルコンドルパサー",
+      "nickname_raw": "エル☆Número 1",
+      "star_raw": "2",
+      "birthday_raw": "3月17日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "微增（锻炼肌肉的效果）",
+      "bust_raw": "89",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "cv_raw": "高桥未奈美",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b0/fkzhw3opf4gyebp9q74qzywkkz89hro.png/100px-Chr_icon_1014_101402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E9%B9%B0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%A5%9E%E9%B7%B9%E2%98%86N%C3%BAmero_1%E3%80%91%E7%A5%9E%E9%B7%B9",
+      "raw_name_zh": "神鹰",
+      "raw_name_jp": null,
+      "translated_name_raw": "神鷹",
+      "nickname_raw": "神鷹☆Número 1",
+      "page_title": "【神鷹☆Número 1】神鷹",
+      "page_title_aliases": [
+        "【神鷹☆Número 1】神鷹",
+        "神鷹",
+        "神鷹☆Número 1"
+      ],
+      "star_raw": "2",
+      "birthday_raw": "3月17日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "微增（重訓效果）",
+      "bust_raw": "89",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "cv_raw": "髙橋ミナミ",
+      "introduction_raw": "北美的怪鳥！活潑奇葩的摔角手",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b0/fkzhw3opf4gyebp9q74qzywkkz89hro.png/100px-Chr_icon_1014_101402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%A5%9E%E9%B7%B9%E2%98%86N%C3%BAmero_1%E3%80%91%E7%A5%9E%E9%B7%B9",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "神鹰",
+      "raw_name_jp": "エルコンドルパサー",
+      "cv_raw": "高桥未奈美",
+      "birthday_raw": "3月17日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "微增（锻炼肌肉的效果）",
+      "bust_raw": "89",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "quote_raw": "“飞翔、大胜、摔跤之魂！神鹰才是世界最强deeesu！”",
+      "intro_paragraphs": [
+        "戴着面具的、拉丁系的热情赛马娘。相信着自己才是世界最强，为了证明这点而用大嘴巴让自己充满热情。",
+        "面具是从身为摔跤手的父亲那里继承来的，如果没了它平常的状态就会……",
+        "与好友草上飞住在一个寝室，经常被她说教。"
+      ],
+      "introduction": "戴着面具的、拉丁系的热情赛马娘。相信着自己才是世界最强，为了证明这点而用大嘴巴让自己充满热情。\n面具是从身为摔跤手的父亲那里继承来的，如果没了它平常的状态就会……\n与好友草上飞住在一个寝室，经常被她说教。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/41/UPDCH_ElCondorPasa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040544",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/41/UPDCH_ElCondorPasa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040544"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E9%B9%B0(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)",
+      "canonical_name_zh": "神鹰",
+      "aliases": [
+        "神鹰"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E9%B9%B0(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)",
+      "raw_name_zh": "神鹰",
+      "page_title": "神鹰",
+      "raw_name_jp": "エルコンドルパサー",
+      "raw_name_en": null,
+      "aliases": [
+        "エル",
+        "怪鸟",
+        "艾露",
+        "神鹰"
+      ],
+      "birthday_raw": "3月17日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "微增（锻炼肌肉的效果）",
+      "bust_raw": "89",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "cv_raw": "高桥未奈美",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/4b/PID88790033.jpg!/fw/280?v=20211124062944",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/PID88790033.jpg!/fw/280?v=20211124062944",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/41/UPDCH_ElCondorPasa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207040544"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E9%B9%B0(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)"
+    }
+  }
+}

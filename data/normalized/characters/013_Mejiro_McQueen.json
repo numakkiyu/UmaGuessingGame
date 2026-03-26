@@ -1,0 +1,327 @@
+{
+  "id": "mejiromakkuiin",
+  "order": 13,
+  "file_name": "013_Mejiro_McQueen.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "目白麦昆",
+    "zh_tw": null,
+    "jp": "メジロマックイーン",
+    "en": "Mejiro McQueen"
+  },
+  "aliases": [
+    "目白麦昆",
+    "メジロマックイーン",
+    "Mejiro McQueen",
+    "【優雅線條】目白麥昆",
+    "目白麥昆",
+    "優雅線條",
+    "麦昆（マックイーン）",
+    "草上名伶（ターフの名優）",
+    "目白魔苦院[1]",
+    "年糕",
+    "肥驹",
+    "千斤大小姐",
+    "木板麦昆[2]",
+    "エレガンス・ライン"
+  ],
+  "profile": {
+    "birthday": "04-03",
+    "birthday_raw": "4月3日",
+    "birthday_day_of_year": 94,
+    "height_cm": 159,
+    "height_raw": "159㎝",
+    "cv": "大西沙織",
+    "cv_raw": "大西沙織",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "A",
+      "nige": "B",
+      "senko": "A",
+      "sashi": "D",
+      "oikomi": "F"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/erhirn4rohrfcvy5tvhrsy1c2xs0te0.png/100px-Chr_icon_1013.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/d4paxuz4fncqh7nwjqv9ac58fotg9kq.png/100px-Chr_icon_1013_101302_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a3/j7at2d5pl26c8zsufmf3riycwdq3p2m.png/100px-Chr_icon_1013_101303_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/70/UPDCH_MejiroMcQueen_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210715111126",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a0/PID89079461.jpg!/fw/280?v=20211222123953"
+    ],
+    "image_local_path": "/api/assets/mejiromakkuiin-thumb",
+    "asset_id": "mejiromakkuiin-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%84%AA%E9%9B%85%E7%B7%9A%E6%A2%9D%E3%80%91%E7%9B%AE%E7%99%BD%E9%BA%A5%E6%98%86",
+      "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/erhirn4rohrfcvy5tvhrsy1c2xs0te0.png/100px-Chr_icon_1013.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/d4paxuz4fncqh7nwjqv9ac58fotg9kq.png/100px-Chr_icon_1013_101302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a3/j7at2d5pl26c8zsufmf3riycwdq3p2m.png/100px-Chr_icon_1013_101303_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/d4paxuz4fncqh7nwjqv9ac58fotg9kq.png/100px-Chr_icon_1013_101302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a3/j7at2d5pl26c8zsufmf3riycwdq3p2m.png/100px-Chr_icon_1013_101303_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/70/UPDCH_MejiroMcQueen_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210715111126"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a0/PID89079461.jpg!/fw/280?v=20211222123953",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/70/UPDCH_MejiroMcQueen_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210715111126"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "于名门目白家出生的大小姐，优雅而不妄自尊大的性格和品格，是其他赛马娘们羡慕的对象。 拥有作为长距离跑者的一流才能，以对目白家很特别的比赛“天皇赏”的胜利作为第一目标。 休息日里很享受与家族的各位一起享用下午茶。",
+    "intro_paragraphs": [
+      "于名门目白家出生的大小姐，优雅而不妄自尊大的性格和品格，是其他赛马娘们羡慕的对象。",
+      "拥有作为长距离跑者的一流才能，以对目白家很特别的比赛“天皇赏”的胜利作为第一目标。",
+      "休息日里很享受与家族的各位一起享用下午茶。"
+    ],
+    "quote_raw": "“我必定会把荣耀与名誉献给辉煌的目白家……！”",
+    "weight_desc_raw": "微增（目前拚命調整中！）",
+    "bust_raw": "71",
+    "waist_raw": "54",
+    "hip_raw": "76"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "目白麦昆",
+      "character_id": "1013",
+      "birthday_raw": "4月3日",
+      "height_raw": "159",
+      "bust_raw": "71",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "whr_raw": "0.71",
+      "bust_waist_diff_raw": "17",
+      "body_type_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/erhirn4rohrfcvy5tvhrsy1c2xs0te0.png/100px-Chr_icon_1013.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/erhirn4rohrfcvy5tvhrsy1c2xs0te0.png/100px-Chr_icon_1013.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "目白麦昆",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86",
+      "raw_name_zh": "目白麦昆",
+      "raw_name_jp": "メジロマックイーン",
+      "nickname_raw": "エレガンス・ライン",
+      "star_raw": "3",
+      "birthday_raw": "4月3日",
+      "height_raw": "159㎝",
+      "weight_desc_raw": "微增（现在拼命调整中！）",
+      "bust_raw": "71",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "cv_raw": "大西沙织",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/d4paxuz4fncqh7nwjqv9ac58fotg9kq.png/100px-Chr_icon_1013_101302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a3/j7at2d5pl26c8zsufmf3riycwdq3p2m.png/100px-Chr_icon_1013_101303_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%84%AA%E9%9B%85%E7%B7%9A%E6%A2%9D%E3%80%91%E7%9B%AE%E7%99%BD%E9%BA%A5%E6%98%86",
+      "raw_name_zh": "目白麦昆",
+      "raw_name_jp": null,
+      "translated_name_raw": "目白麥昆",
+      "nickname_raw": "優雅線條",
+      "page_title": "【優雅線條】目白麥昆",
+      "page_title_aliases": [
+        "【優雅線條】目白麥昆",
+        "目白麥昆",
+        "優雅線條"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月3日",
+      "height_raw": "159㎝",
+      "weight_desc_raw": "微增（目前拚命調整中！）",
+      "bust_raw": "71",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "cv_raw": "大西沙織",
+      "introduction_raw": "名門目白家的至寶。優雅又專注的大小姐",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/d4paxuz4fncqh7nwjqv9ac58fotg9kq.png/100px-Chr_icon_1013_101302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a3/j7at2d5pl26c8zsufmf3riycwdq3p2m.png/100px-Chr_icon_1013_101303_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%84%AA%E9%9B%85%E7%B7%9A%E6%A2%9D%E3%80%91%E7%9B%AE%E7%99%BD%E9%BA%A5%E6%98%86",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "目白麦昆",
+      "raw_name_jp": "メジロマックイーン",
+      "cv_raw": "大西沙织",
+      "birthday_raw": "4月3日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "微增（现在拼命调整中！）",
+      "bust_raw": "71",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "quote_raw": "“我必定会把荣耀与名誉献给辉煌的目白家……！”",
+      "intro_paragraphs": [
+        "于名门目白家出生的大小姐，优雅而不妄自尊大的性格和品格，是其他赛马娘们羡慕的对象。",
+        "拥有作为长距离跑者的一流才能，以对目白家很特别的比赛“天皇赏”的胜利作为第一目标。",
+        "休息日里很享受与家族的各位一起享用下午茶。"
+      ],
+      "introduction": "于名门目白家出生的大小姐，优雅而不妄自尊大的性格和品格，是其他赛马娘们羡慕的对象。\n拥有作为长距离跑者的一流才能，以对目白家很特别的比赛“天皇赏”的胜利作为第一目标。\n休息日里很享受与家族的各位一起享用下午茶。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/70/UPDCH_MejiroMcQueen_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210715111126",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/70/UPDCH_MejiroMcQueen_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210715111126"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86",
+      "canonical_name_zh": "目白麦昆",
+      "aliases": [
+        "目白麦昆"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86",
+      "raw_name_zh": "目白麦昆",
+      "page_title": "目白麦昆",
+      "raw_name_jp": "メジロマックイーン",
+      "raw_name_en": null,
+      "aliases": [
+        "麦昆（マックイーン）",
+        "草上名伶（ターフの名優）",
+        "目白魔苦院[1]",
+        "年糕",
+        "肥驹",
+        "千斤大小姐",
+        "木板麦昆[2]",
+        "目白麦昆"
+      ],
+      "birthday_raw": "4月3日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "微增（现在拼命调整中！）",
+      "bust_raw": "71",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "cv_raw": "大西沙织",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a0/PID89079461.jpg!/fw/280?v=20211222123953",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a0/PID89079461.jpg!/fw/280?v=20211222123953",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/70/UPDCH_MejiroMcQueen_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210715111126"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%BA%A6%E6%98%86"
+    }
+  }
+}

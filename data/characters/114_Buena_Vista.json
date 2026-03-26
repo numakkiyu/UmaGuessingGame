@@ -1,0 +1,229 @@
+{
+  "id": "buenabisuta",
+  "name_zh": "迷人景致",
+  "name_jp": "ブエナビスタ",
+  "aliases": [
+    "迷人景致",
+    "ブエナビスタ",
+    "Heroína Inocente"
+  ],
+  "birthday": "03-14",
+  "birthday_day_of_year": 74,
+  "birthday_raw": "3月14日",
+  "height_cm": 159,
+  "height_raw": "159cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "和泉風花",
+  "cv_raw": "和泉風花",
+  "quote_raw": "拥有纯真无垢之心的优等生马娘。",
+  "introduction": "是开朗坦率、亲近他人、对任何人都深情相待、像对自己一样投入感情的类型。 以前，在某个比赛观战中看到的“绝景”到达了那里，为了实现重要的“约定”而奔跑在闪耀之星系列赛中。",
+  "intro_paragraphs": [
+    "是开朗坦率、亲近他人、对任何人都深情相待、像对自己一样投入感情的类型。",
+    "以前，在某个比赛观战中看到的“绝景”到达了那里，为了实现重要的“约定”而奔跑在闪耀之星系列赛中。"
+  ],
+  "weight_desc_raw": "微減（レース前で調整中）",
+  "bust_raw": "81",
+  "waist_raw": "56",
+  "hip_raw": "81",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/rjyag7wubj48xjtkgiuoev1jufdcbzb.png/100px-Chr_icon_1114.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_BuenaVista_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/rjyag7wubj48xjtkgiuoev1jufdcbzb.png/100px-Chr_icon_1114.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_BuenaVista_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_BuenaVista_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4",
+    "https://zh.moegirl.org.cn/index.php?title=%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4&action=edit&redlink=1"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "F",
+    "sprint": "G",
+    "mile": "A",
+    "medium": "A",
+    "long": "C",
+    "nige": "G",
+    "senko": "B",
+    "sashi": "A",
+    "oikomi": "A"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "差",
+    "追"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "迷人景致",
+      "character_id": "1114",
+      "birthday_raw": "3月14日",
+      "height_raw": "159",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "81",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/rjyag7wubj48xjtkgiuoev1jufdcbzb.png/100px-Chr_icon_1114.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/rjyag7wubj48xjtkgiuoev1jufdcbzb.png/100px-Chr_icon_1114.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "迷人景致",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4",
+      "raw_name_zh": "迷人景致",
+      "raw_name_jp": "ブエナビスタ",
+      "nickname_raw": "Heroína Inocente",
+      "star_raw": "3",
+      "birthday_raw": "3月14日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "微減（レース前で調整中）",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "和泉風花",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "迷人景致",
+      "raw_name_jp": "ブエナビスタ",
+      "cv_raw": "和泉风花",
+      "birthday_raw": "3月14日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "微减（赛前调整中）",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "81",
+      "quote_raw": "拥有纯真无垢之心的优等生马娘。",
+      "intro_paragraphs": [
+        "是开朗坦率、亲近他人、对任何人都深情相待、像对自己一样投入感情的类型。",
+        "以前，在某个比赛观战中看到的“绝景”到达了那里，为了实现重要的“约定”而奔跑在闪耀之星系列赛中。"
+      ],
+      "introduction": "是开朗坦率、亲近他人、对任何人都深情相待、像对自己一样投入感情的类型。\n以前，在某个比赛观战中看到的“绝景”到达了那里，为了实现重要的“约定”而奔跑在闪耀之星系列赛中。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_BuenaVista_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_BuenaVista_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4&action=edit&redlink=1",
+      "canonical_name_zh": "迷人景致",
+      "aliases": [
+        "迷人景致"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4&action=edit&redlink=1",
+      "raw_name_zh": "迷人景致",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "ブエナビスタ",
+      "raw_name_en": null,
+      "aliases": [
+        "迷人景致"
+      ],
+      "birthday_raw": "3月14日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "微减（赛前调整中）",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "81",
+      "cv_raw": "和泉风花",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_BuenaVista_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/37/UPDCH_BuenaVista_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E8%BF%B7%E4%BA%BA%E6%99%AF%E8%87%B4&action=edit&redlink=1"
+    }
+  }
+}

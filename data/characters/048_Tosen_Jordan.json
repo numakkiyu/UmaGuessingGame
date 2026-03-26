@@ -1,0 +1,287 @@
+{
+  "id": "toosenjoodan",
+  "name_zh": "东瀛佐敦",
+  "name_jp": "トーセンジョーダン",
+  "aliases": [
+    "【POPS☆JOKER】島川喬登",
+    "島川喬登",
+    "POPS☆JOKER",
+    "东瀛佐敦",
+    "トーセンジョーダン",
+    "ポップス☆ジョーカー"
+  ],
+  "birthday": "02-04",
+  "birthday_day_of_year": 35,
+  "birthday_raw": "2月4日",
+  "height_cm": 157,
+  "height_raw": "157cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "鈴木絵理",
+  "cv_raw": "鈴木絵理",
+  "quote_raw": "“说到指甲啊，它的铁律就是为了要光彩照人才去上色的对吧~对少女来说☆”",
+  "introduction": "喜欢打扮，讨厌意义不明的努力，都市型的时尚的孩子。 因为是笨蛋所以在不懂的时候经常躲开，但绝对不是不认真。 有过因为指甲开裂而陷入低潮的事，在那之后修剪和上色从没落下过。 沟通能力很强，朋友很多。",
+  "intro_paragraphs": [
+    "喜欢打扮，讨厌意义不明的努力，都市型的时尚的孩子。",
+    "因为是笨蛋所以在不懂的时候经常躲开，但绝对不是不认真。",
+    "有过因为指甲开裂而陷入低潮的事，在那之后修剪和上色从没落下过。",
+    "沟通能力很强，朋友很多。"
+  ],
+  "weight_desc_raw": "不予置評",
+  "bust_raw": "82",
+  "waist_raw": "56",
+  "hip_raw": "84",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/jfrleycq02idrf2htufif22z3g1cfnt.png/100px-Chr_icon_1048.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/1cj6qe2zy8pxyxibkv3gz9xpj4f5g1u.png/100px-Chr_icon_1048_104802_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/nkqrib7g4reilrj35f3qo9d2y81gq0l.png/100px-Chr_icon_1048_104803_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/cf/UPDCH_TosenJordan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/cf/PID94135155.jpg!/fw/280?v=20220105062133"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/jfrleycq02idrf2htufif22z3g1cfnt.png/100px-Chr_icon_1048.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/1cj6qe2zy8pxyxibkv3gz9xpj4f5g1u.png/100px-Chr_icon_1048_104802_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/nkqrib7g4reilrj35f3qo9d2y81gq0l.png/100px-Chr_icon_1048_104803_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/1cj6qe2zy8pxyxibkv3gz9xpj4f5g1u.png/100px-Chr_icon_1048_104802_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/cf/UPDCH_TosenJordan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/cf/PID94135155.jpg!/fw/280?v=20220105062133",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/cf/UPDCH_TosenJordan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6",
+    "https://wiki.biligame.com/umamusume/%E3%80%90POPS%E2%98%86JOKER%E3%80%91%E5%B3%B6%E5%B7%9D%E5%96%AC%E7%99%BB",
+    "https://zh.moegirl.org.cn/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "F",
+    "medium": "A",
+    "long": "B",
+    "nige": "C",
+    "senko": "A",
+    "sashi": "B",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "东瀛佐敦",
+      "character_id": "1048",
+      "birthday_raw": "2月4日",
+      "height_raw": "157",
+      "bust_raw": "82",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "26",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/jfrleycq02idrf2htufif22z3g1cfnt.png/100px-Chr_icon_1048.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/jfrleycq02idrf2htufif22z3g1cfnt.png/100px-Chr_icon_1048.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "东瀛佐敦",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6",
+      "raw_name_zh": "东瀛佐敦",
+      "raw_name_jp": "トーセンジョーダン",
+      "nickname_raw": "ポップス☆ジョーカー",
+      "star_raw": "3",
+      "birthday_raw": "2月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无可奉告",
+      "bust_raw": "82",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "cv_raw": "铃木绘理",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/1cj6qe2zy8pxyxibkv3gz9xpj4f5g1u.png/100px-Chr_icon_1048_104802_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/nkqrib7g4reilrj35f3qo9d2y81gq0l.png/100px-Chr_icon_1048_104803_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90POPS%E2%98%86JOKER%E3%80%91%E5%B3%B6%E5%B7%9D%E5%96%AC%E7%99%BB",
+      "raw_name_zh": "东瀛佐敦",
+      "raw_name_jp": null,
+      "translated_name_raw": "島川喬登",
+      "nickname_raw": "POPS☆JOKER",
+      "page_title": "【POPS☆JOKER】島川喬登",
+      "page_title_aliases": [
+        "【POPS☆JOKER】島川喬登",
+        "島川喬登",
+        "POPS☆JOKER"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "2月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "不予置評",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "鈴木絵理",
+      "introduction_raw": "說俗氣是喬登玩笑！時下辣妹☆",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/1cj6qe2zy8pxyxibkv3gz9xpj4f5g1u.png/100px-Chr_icon_1048_104802_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90POPS%E2%98%86JOKER%E3%80%91%E5%B3%B6%E5%B7%9D%E5%96%AC%E7%99%BB",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "东瀛佐敦",
+      "raw_name_jp": "トーセンジョーダン",
+      "cv_raw": "铃木绘理",
+      "birthday_raw": "2月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无可奉告",
+      "bust_raw": "82",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "quote_raw": "“说到指甲啊，它的铁律就是为了要光彩照人才去上色的对吧~对少女来说☆”",
+      "intro_paragraphs": [
+        "喜欢打扮，讨厌意义不明的努力，都市型的时尚的孩子。",
+        "因为是笨蛋所以在不懂的时候经常躲开，但绝对不是不认真。",
+        "有过因为指甲开裂而陷入低潮的事，在那之后修剪和上色从没落下过。",
+        "沟通能力很强，朋友很多。"
+      ],
+      "introduction": "喜欢打扮，讨厌意义不明的努力，都市型的时尚的孩子。\n因为是笨蛋所以在不懂的时候经常躲开，但绝对不是不认真。\n有过因为指甲开裂而陷入低潮的事，在那之后修剪和上色从没落下过。\n沟通能力很强，朋友很多。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/cf/UPDCH_TosenJordan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/cf/UPDCH_TosenJordan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6",
+      "canonical_name_zh": "东瀛佐敦",
+      "aliases": [
+        "东瀛佐敦"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6",
+      "raw_name_zh": "东瀛佐敦",
+      "page_title": "东瀛佐敦",
+      "raw_name_jp": "トーセンジョーダン",
+      "raw_name_en": null,
+      "aliases": [
+        "东瀛佐敦"
+      ],
+      "birthday_raw": "2月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无可奉告",
+      "bust_raw": "82",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "cv_raw": "铃木绘理",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/cf/PID94135155.jpg!/fw/280?v=20220105062133",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/cf/PID94135155.jpg!/fw/280?v=20220105062133",
+        "https://storage.moegirl.org.cn/moegirl/commons/c/cf/UPDCH_TosenJordan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E7%80%9B%E4%BD%90%E6%95%A6"
+    }
+  }
+}

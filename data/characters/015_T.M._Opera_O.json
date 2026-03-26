@@ -1,0 +1,290 @@
+{
+  "id": "teiemuoperaoo",
+  "name_zh": "好歌剧",
+  "name_jp": "テイエムオペラオー",
+  "aliases": [
+    "【你的太陽！】好歌劇",
+    "好歌劇",
+    "你的太陽！",
+    "世纪末霸王",
+    "剧宝",
+    "好歌剧",
+    "テイエムオペラオー",
+    "オー・ソレ・スーオ！"
+  ],
+  "birthday": "03-13",
+  "birthday_day_of_year": 73,
+  "birthday_raw": "3月13日",
+  "height_cm": 156,
+  "height_raw": "156cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "徳井青空",
+  "cv_raw": "徳井青空",
+  "quote_raw": "“哈——哈哈哈！把由我主演的大歌剧送给全世界吧！”",
+  "introduction": "夸张的自我陶醉者，有些有趣的歌剧王。 她的举止总是表现着演技过剩，时而高亢地，时而真真切切地诉说着对自己的爱。 认真地认为那些不理解自己的美丽与强大的人是不幸的，因此每天都在忙于启蒙活动。 被名将怒涛以憧憬的目光注视着。",
+  "intro_paragraphs": [
+    "夸张的自我陶醉者，有些有趣的歌剧王。",
+    "她的举止总是表现着演技过剩，时而高亢地，时而真真切切地诉说着对自己的爱。",
+    "认真地认为那些不理解自己的美丽与强大的人是不幸的，因此每天都在忙于启蒙活动。",
+    "被名将怒涛以憧憬的目光注视着。"
+  ],
+  "weight_desc_raw": "總是完美（自稱）",
+  "bust_raw": "76",
+  "waist_raw": "55",
+  "hip_raw": "80",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/emsa2yazl68rkgu9es6aus7vhmfgjrs.png/100px-Chr_icon_1015.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/5/5c/351k902rorfp8d8poxobgj1ew2mlrkx.png/100px-Chr_icon_1015_101502_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/c7/UPDCH_TMOperaO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051953",
+    "https://storage.moegirl.org.cn/moegirl/commons/4/40/Pid93407956.jpg!/fw/280?v=20211016171441"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/emsa2yazl68rkgu9es6aus7vhmfgjrs.png/100px-Chr_icon_1015.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/5c/351k902rorfp8d8poxobgj1ew2mlrkx.png/100px-Chr_icon_1015_101502_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/5c/351k902rorfp8d8poxobgj1ew2mlrkx.png/100px-Chr_icon_1015_101502_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c7/UPDCH_TMOperaO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051953"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/4/40/Pid93407956.jpg!/fw/280?v=20211016171441",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c7/UPDCH_TMOperaO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051953"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%A5%BD%E6%AD%8C%E5%89%A7",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BD%A0%E7%9A%84%E5%A4%AA%E9%99%BD%EF%BC%81%E3%80%91%E5%A5%BD%E6%AD%8C%E5%8A%87",
+    "https://zh.moegirl.org.cn/%E5%A5%BD%E6%AD%8C%E5%89%A7"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "E",
+    "sprint": "G",
+    "mile": "E",
+    "medium": "A",
+    "long": "A",
+    "nige": "C",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "好歌剧",
+      "character_id": "1015",
+      "birthday_raw": "3月13日",
+      "height_raw": "156",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "21",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/emsa2yazl68rkgu9es6aus7vhmfgjrs.png/100px-Chr_icon_1015.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/emsa2yazl68rkgu9es6aus7vhmfgjrs.png/100px-Chr_icon_1015.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A5%BD%E6%AD%8C%E5%89%A7"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "好歌剧",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A5%BD%E6%AD%8C%E5%89%A7",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%A5%BD%E6%AD%8C%E5%89%A7",
+      "raw_name_zh": "好歌剧",
+      "raw_name_jp": "テイエムオペラオー",
+      "nickname_raw": "オー・ソレ・スーオ！",
+      "star_raw": "3",
+      "birthday_raw": "3月13日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "总是很完美（自称）",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "德井青空",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5c/351k902rorfp8d8poxobgj1ew2mlrkx.png/100px-Chr_icon_1015_101502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A5%BD%E6%AD%8C%E5%89%A7"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BD%A0%E7%9A%84%E5%A4%AA%E9%99%BD%EF%BC%81%E3%80%91%E5%A5%BD%E6%AD%8C%E5%8A%87",
+      "raw_name_zh": "好歌剧",
+      "raw_name_jp": null,
+      "translated_name_raw": "好歌劇",
+      "nickname_raw": "你的太陽！",
+      "page_title": "【你的太陽！】好歌劇",
+      "page_title_aliases": [
+        "【你的太陽！】好歌劇",
+        "好歌劇",
+        "你的太陽！"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月13日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "總是完美（自稱）",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "徳井青空",
+      "introduction_raw": "驕傲自大的歌劇王。大笑聲響徹雲霄！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5c/351k902rorfp8d8poxobgj1ew2mlrkx.png/100px-Chr_icon_1015_101502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BD%A0%E7%9A%84%E5%A4%AA%E9%99%BD%EF%BC%81%E3%80%91%E5%A5%BD%E6%AD%8C%E5%8A%87",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "好歌剧",
+      "raw_name_jp": "テイエムオペラオー",
+      "cv_raw": "德井青空",
+      "birthday_raw": "3月13日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "总是很完美（自称）",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "“哈——哈哈哈！把由我主演的大歌剧送给全世界吧！”",
+      "intro_paragraphs": [
+        "夸张的自我陶醉者，有些有趣的歌剧王。",
+        "她的举止总是表现着演技过剩，时而高亢地，时而真真切切地诉说着对自己的爱。",
+        "认真地认为那些不理解自己的美丽与强大的人是不幸的，因此每天都在忙于启蒙活动。",
+        "被名将怒涛以憧憬的目光注视着。"
+      ],
+      "introduction": "夸张的自我陶醉者，有些有趣的歌剧王。\n她的举止总是表现着演技过剩，时而高亢地，时而真真切切地诉说着对自己的爱。\n认真地认为那些不理解自己的美丽与强大的人是不幸的，因此每天都在忙于启蒙活动。\n被名将怒涛以憧憬的目光注视着。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c7/UPDCH_TMOperaO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051953",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c7/UPDCH_TMOperaO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051953"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A5%BD%E6%AD%8C%E5%89%A7",
+      "canonical_name_zh": "好歌剧",
+      "aliases": [
+        "好歌剧"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%A5%BD%E6%AD%8C%E5%89%A7",
+      "raw_name_zh": "好歌剧",
+      "page_title": "好歌剧",
+      "raw_name_jp": "テイエムオペラオー",
+      "raw_name_en": null,
+      "aliases": [
+        "世纪末霸王",
+        "剧宝",
+        "好歌剧"
+      ],
+      "birthday_raw": "3月13日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "总是很完美（自称）",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "德井青空",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/40/Pid93407956.jpg!/fw/280?v=20211016171441",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/40/Pid93407956.jpg!/fw/280?v=20211016171441",
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c7/UPDCH_TMOperaO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051953"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A5%BD%E6%AD%8C%E5%89%A7"
+    }
+  }
+}

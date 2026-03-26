@@ -1,0 +1,281 @@
+{
+  "id": "toransendo",
+  "name_zh": "创升",
+  "name_jp": "トランセンド",
+  "aliases": [
+    "【興奮不已GIZMO】創升",
+    "創升",
+    "興奮不已GIZMO",
+    "创升",
+    "トランセンド",
+    "ZOKU-ZOKU GIZMO"
+  ],
+  "birthday": "03-09",
+  "birthday_day_of_year": 69,
+  "birthday_raw": "3月9日",
+  "height_cm": 164,
+  "height_raw": "164cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "塚田悠衣",
+  "cv_raw": "塚田悠衣",
+  "quote_raw": "一个喜欢亚文化的消息灵通马娘。",
+  "introduction": "对新事物有独到的眼光，尤其是最新的小玩意。 好奇心旺盛的她每天都在追求令人毛骨悚然的东西和事情。 交流能力很强，在任何圈子里都会突然出现，一边享受对话一边收集信息。",
+  "intro_paragraphs": [
+    "对新事物有独到的眼光，尤其是最新的小玩意。",
+    "好奇心旺盛的她每天都在追求令人毛骨悚然的东西和事情。",
+    "交流能力很强，在任何圈子里都会突然出现，一边享受对话一边收集信息。"
+  ],
+  "weight_desc_raw": "機密事項",
+  "bust_raw": "86",
+  "waist_raw": "57",
+  "hip_raw": "84",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/fohqo1z0gb0qyh7xii8hes9e2zm0stb.png/100px-Chr_icon_1080.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/0omkwp2a7m6q5eq0jwf735uokv8cz1b.png/100px-Chr_icon_1080_108002_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/1/17/UPDCH_Transcend_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744",
+    "https://storage.moegirl.org.cn/moegirl/commons/6/67/Transcend_126364987_p0.png!/fw/280?v=20250521110135"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/fohqo1z0gb0qyh7xii8hes9e2zm0stb.png/100px-Chr_icon_1080.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/0omkwp2a7m6q5eq0jwf735uokv8cz1b.png/100px-Chr_icon_1080_108002_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/1/17/UPDCH_Transcend_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/6/67/Transcend_126364987_p0.png!/fw/280?v=20250521110135",
+      "https://storage.moegirl.org.cn/moegirl/commons/1/17/UPDCH_Transcend_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%88%9B%E5%8D%87",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E8%88%88%E5%A5%AE%E4%B8%8D%E5%B7%B2GIZMO%E3%80%91%E5%89%B5%E5%8D%87",
+    "https://zh.moegirl.org.cn/%E5%88%9B%E5%8D%87"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "F",
+    "dirt": "A",
+    "sprint": "G",
+    "mile": "A",
+    "medium": "A",
+    "long": "G",
+    "nige": "A",
+    "senko": "B",
+    "sashi": "F",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "泥地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "逃"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "创升",
+      "character_id": "1080",
+      "birthday_raw": "3月9日",
+      "height_raw": "164",
+      "bust_raw": "86",
+      "waist_raw": "57",
+      "hip_raw": "84",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "29",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/fohqo1z0gb0qyh7xii8hes9e2zm0stb.png/100px-Chr_icon_1080.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/fohqo1z0gb0qyh7xii8hes9e2zm0stb.png/100px-Chr_icon_1080.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%88%9B%E5%8D%87"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "创升",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%88%9B%E5%8D%87",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "F",
+      "dirt_raw": "A",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%88%9B%E5%8D%87",
+      "raw_name_zh": "创升",
+      "raw_name_jp": "トランセンド",
+      "nickname_raw": "ZOKU-ZOKU GIZMO",
+      "star_raw": "3",
+      "birthday_raw": "3月9日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "机密事项",
+      "bust_raw": "86",
+      "waist_raw": "57",
+      "hip_raw": "84",
+      "cv_raw": "塚田悠衣",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "F",
+      "dirt_raw": "A",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "F",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/0omkwp2a7m6q5eq0jwf735uokv8cz1b.png/100px-Chr_icon_1080_108002_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%88%9B%E5%8D%87"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%88%88%E5%A5%AE%E4%B8%8D%E5%B7%B2GIZMO%E3%80%91%E5%89%B5%E5%8D%87",
+      "raw_name_zh": "创升",
+      "raw_name_jp": null,
+      "translated_name_raw": "創升",
+      "nickname_raw": "興奮不已GIZMO",
+      "page_title": "【興奮不已GIZMO】創升",
+      "page_title_aliases": [
+        "【興奮不已GIZMO】創升",
+        "創升",
+        "興奮不已GIZMO"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月9日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "機密事項",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "塚田悠衣",
+      "introduction_raw": "就想體驗緊張刺激！追求未知事物的情報通！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%88%88%E5%A5%AE%E4%B8%8D%E5%B7%B2GIZMO%E3%80%91%E5%89%B5%E5%8D%87",
+      "turf_raw": "F",
+      "dirt_raw": "A",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "创升",
+      "raw_name_jp": "トランセンド",
+      "cv_raw": "冢田悠衣",
+      "birthday_raw": "3月9日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "机密事项",
+      "bust_raw": "86",
+      "waist_raw": "57",
+      "hip_raw": "84",
+      "quote_raw": "一个喜欢亚文化的消息灵通马娘。",
+      "intro_paragraphs": [
+        "对新事物有独到的眼光，尤其是最新的小玩意。",
+        "好奇心旺盛的她每天都在追求令人毛骨悚然的东西和事情。",
+        "交流能力很强，在任何圈子里都会突然出现，一边享受对话一边收集信息。"
+      ],
+      "introduction": "对新事物有独到的眼光，尤其是最新的小玩意。\n好奇心旺盛的她每天都在追求令人毛骨悚然的东西和事情。\n交流能力很强，在任何圈子里都会突然出现，一边享受对话一边收集信息。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/17/UPDCH_Transcend_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/17/UPDCH_Transcend_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%88%9B%E5%8D%87",
+      "canonical_name_zh": "创升",
+      "aliases": [
+        "创升"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%88%9B%E5%8D%87",
+      "raw_name_zh": "创升",
+      "page_title": "创升",
+      "raw_name_jp": "トランセンド",
+      "raw_name_en": null,
+      "aliases": [
+        "创升"
+      ],
+      "birthday_raw": "3月9日",
+      "height_raw": "164cm",
+      "weight_desc_raw": "机密事项",
+      "bust_raw": "86",
+      "waist_raw": "57",
+      "hip_raw": "84",
+      "cv_raw": "冢田悠衣",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/67/Transcend_126364987_p0.png!/fw/280?v=20250521110135",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/67/Transcend_126364987_p0.png!/fw/280?v=20250521110135",
+        "https://storage.moegirl.org.cn/moegirl/commons/1/17/UPDCH_Transcend_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%88%9B%E5%8D%87"
+    }
+  }
+}

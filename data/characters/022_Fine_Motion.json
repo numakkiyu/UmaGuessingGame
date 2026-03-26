@@ -1,0 +1,288 @@
+{
+  "id": "fuainmooshon",
+  "name_zh": "美妙姿势",
+  "name_jp": "ファインモーション",
+  "aliases": [
+    "【Noble Seamair】美妙姿勢",
+    "美妙姿勢",
+    "Noble Seamair",
+    "殿下",
+    "インモー",
+    "傻狍子",
+    "美妙姿势",
+    "ファインモーション"
+  ],
+  "birthday": "01-27",
+  "birthday_day_of_year": 27,
+  "birthday_raw": "1月27日",
+  "height_cm": 158,
+  "height_raw": "158cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "橋本ちなみ",
+  "cv_raw": "橋本ちなみ",
+  "quote_raw": "“想知道各种各样的事啊！这个国家和比赛的美妙之处 ♪”",
+  "introduction": "来自爱尔兰的留学生。有着出身名门，实际上是王族这样的流言。 也许是因为小时候不怎么出门的缘故，对什么事都很感兴趣。因为什么都想知道，所以有些让人担心。 想在特雷森学园留下很多的回忆。",
+  "intro_paragraphs": [
+    "来自爱尔兰的留学生。有着出身名门，实际上是王族这样的流言。",
+    "也许是因为小时候不怎么出门的缘故，对什么事都很感兴趣。因为什么都想知道，所以有些让人担心。",
+    "想在特雷森学园留下很多的回忆。"
+  ],
+  "weight_desc_raw": "微增（吃太多拉麵？）",
+  "bust_raw": "79",
+  "waist_raw": "56",
+  "hip_raw": "83",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/oj6lnmf90p6pvxosb1g33w7cfjtjtom.png/100px-Chr_icon_1022.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/fsgq45i7hnd0yf5yzce13mk8p7ih7ju.png/100px-Chr_icon_1022_102202_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/e/e8/UPDCH_FineMotion_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922140711",
+    "https://storage.moegirl.org.cn/moegirl/commons/9/9e/PID94825261.jpg!/fw/280?v=20220117152410"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/oj6lnmf90p6pvxosb1g33w7cfjtjtom.png/100px-Chr_icon_1022.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/fsgq45i7hnd0yf5yzce13mk8p7ih7ju.png/100px-Chr_icon_1022_102202_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/fsgq45i7hnd0yf5yzce13mk8p7ih7ju.png/100px-Chr_icon_1022_102202_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e8/UPDCH_FineMotion_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922140711"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/9/9e/PID94825261.jpg!/fw/280?v=20220117152410",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e8/UPDCH_FineMotion_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922140711"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Noble_Seamair%E3%80%91%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8B%A2",
+    "https://zh.moegirl.org.cn/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "F",
+    "mile": "A",
+    "medium": "A",
+    "long": "C",
+    "nige": "D",
+    "senko": "A",
+    "sashi": "E",
+    "oikomi": "C"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "美妙姿势",
+      "character_id": "1022",
+      "birthday_raw": "1月27日",
+      "height_raw": "158",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "83",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "23",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/oj6lnmf90p6pvxosb1g33w7cfjtjtom.png/100px-Chr_icon_1022.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/oj6lnmf90p6pvxosb1g33w7cfjtjtom.png/100px-Chr_icon_1022.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "美妙姿势",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "15%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "15%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF",
+      "raw_name_zh": "美妙姿势",
+      "raw_name_jp": "ファインモーション",
+      "nickname_raw": "Noble Seamair",
+      "star_raw": "3",
+      "birthday_raw": "1月27日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "微增（拉面吃太多了？）",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "83",
+      "cv_raw": "桥本千波",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/fsgq45i7hnd0yf5yzce13mk8p7ih7ju.png/100px-Chr_icon_1022_102202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Noble_Seamair%E3%80%91%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8B%A2",
+      "raw_name_zh": "美妙姿势",
+      "raw_name_jp": null,
+      "translated_name_raw": "美妙姿勢",
+      "nickname_raw": "Noble Seamair",
+      "page_title": "【Noble Seamair】美妙姿勢",
+      "page_title_aliases": [
+        "【Noble Seamair】美妙姿勢",
+        "美妙姿勢",
+        "Noble Seamair"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "1月27日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "微增（吃太多拉麵？）",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "橋本ちなみ",
+      "introduction_raw": "熱愛創造美好回憶深閨長大的美麗淑女",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/fsgq45i7hnd0yf5yzce13mk8p7ih7ju.png/100px-Chr_icon_1022_102202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Noble_Seamair%E3%80%91%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8B%A2",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "美妙姿势",
+      "raw_name_jp": "ファインモーション",
+      "cv_raw": "桥本千波",
+      "birthday_raw": "1月27日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "微增（吃太多拉面了？）",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "83",
+      "quote_raw": "“想知道各种各样的事啊！这个国家和比赛的美妙之处 ♪”",
+      "intro_paragraphs": [
+        "来自爱尔兰的留学生。有着出身名门，实际上是王族这样的流言。",
+        "也许是因为小时候不怎么出门的缘故，对什么事都很感兴趣。因为什么都想知道，所以有些让人担心。",
+        "想在特雷森学园留下很多的回忆。"
+      ],
+      "introduction": "来自爱尔兰的留学生。有着出身名门，实际上是王族这样的流言。\n也许是因为小时候不怎么出门的缘故，对什么事都很感兴趣。因为什么都想知道，所以有些让人担心。\n想在特雷森学园留下很多的回忆。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e8/UPDCH_FineMotion_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922140711",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e8/UPDCH_FineMotion_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922140711"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF",
+      "canonical_name_zh": "美妙姿势",
+      "aliases": [
+        "美妙姿势"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF",
+      "raw_name_zh": "美妙姿势",
+      "page_title": "美妙姿势",
+      "raw_name_jp": "ファインモーション",
+      "raw_name_en": null,
+      "aliases": [
+        "殿下",
+        "インモー",
+        "傻狍子",
+        "美妙姿势"
+      ],
+      "birthday_raw": "1月27日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "微增（拉面稍微吃的太多了点？）",
+      "bust_raw": "79",
+      "waist_raw": "56",
+      "hip_raw": "83",
+      "cv_raw": "桥本千波",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/9e/PID94825261.jpg!/fw/280?v=20220117152410",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9e/PID94825261.jpg!/fw/280?v=20220117152410",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e8/UPDCH_FineMotion_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922140711"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%BE%8E%E5%A6%99%E5%A7%BF%E5%8A%BF"
+    }
+  }
+}

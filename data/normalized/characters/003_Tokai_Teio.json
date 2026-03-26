@@ -1,0 +1,321 @@
+{
+  "id": "toukaiteioo",
+  "order": 3,
+  "file_name": "003_Tokai_Teio.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "东海帝皇",
+    "zh_tw": "東海帝皇",
+    "jp": "トウカイテイオー",
+    "en": "Tokai Teio"
+  },
+  "aliases": [
+    "东海帝皇",
+    "東海帝皇",
+    "トウカイテイオー",
+    "Tokai Teio",
+    "【歡樂巔峰】東海帝皇",
+    "歡樂巔峰",
+    "帝王（テイオー）",
+    "痛快铁奥",
+    "帝宝（地堡）[1]",
+    "东海帝王",
+    "トップ・オブ・ジョイフル"
+  ],
+  "profile": {
+    "birthday": "04-20",
+    "birthday_raw": "4月20日",
+    "birthday_day_of_year": 111,
+    "height_cm": 150,
+    "height_raw": "150㎝",
+    "cv": "Machico",
+    "cv_raw": "Machico",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "E",
+      "medium": "A",
+      "long": "B",
+      "nige": "D",
+      "senko": "A",
+      "sashi": "C",
+      "oikomi": "E"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/r94rr4pddfbnypu5sjnz161fkechpte.png/100px-Chr_icon_1003.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/jy5u90dp8kbafd4nskds7qdzb44pt1d.png/100px-Chr_icon_1003_100302_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/31pknnq1ju5m78oah12pszej3csmj1n.png/100px-Chr_icon_1003_100303_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/71/UPDCH_TokaiTeio_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052016",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0c/92042198_p0.jpg!/fw/280?v=20221218183930"
+    ],
+    "image_local_path": "/api/assets/toukaiteioo-thumb",
+    "asset_id": "toukaiteioo-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%9A%87",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E6%AD%A1%E6%A8%82%E5%B7%94%E5%B3%B0%E3%80%91%E6%9D%B1%E6%B5%B7%E5%B8%9D%E7%9A%87",
+      "https://zh.moegirl.org.cn/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%8E%8B"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/r94rr4pddfbnypu5sjnz161fkechpte.png/100px-Chr_icon_1003.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/jy5u90dp8kbafd4nskds7qdzb44pt1d.png/100px-Chr_icon_1003_100302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/31pknnq1ju5m78oah12pszej3csmj1n.png/100px-Chr_icon_1003_100303_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/jy5u90dp8kbafd4nskds7qdzb44pt1d.png/100px-Chr_icon_1003_100302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/31pknnq1ju5m78oah12pszej3csmj1n.png/100px-Chr_icon_1003_100303_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/71/UPDCH_TokaiTeio_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052016"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0c/92042198_p0.jpg!/fw/280?v=20221218183930",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/71/UPDCH_TokaiTeio_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052016"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "拥有出众的判断力与才能，开朗快活的赛马娘。 憧憬着学生会会长“皇帝”鲁道夫象征，因此从小就立志参加比赛。 从来都不怀疑自己会成为第一名，是个单纯的自信家。这种奔放的性格也受到了大家的喜爱。 独特的柔软步法被称为“帝王舞步”。",
+    "intro_paragraphs": [
+      "拥有出众的判断力与才能，开朗快活的赛马娘。",
+      "憧憬着学生会会长“皇帝”鲁道夫象征，因此从小就立志参加比赛。",
+      "从来都不怀疑自己会成为第一名，是个单纯的自信家。这种奔放的性格也受到了大家的喜爱。",
+      "独特的柔软步法被称为“帝王舞步”。"
+    ],
+    "quote_raw": "“无敌的帝王传说，终于要拉开序幕了哟！”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "77",
+    "waist_raw": "54",
+    "hip_raw": "76"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "东海帝皇",
+      "character_id": "1003",
+      "birthday_raw": "4月20日",
+      "height_raw": "150",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "whr_raw": "0.71",
+      "bust_waist_diff_raw": "23",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/r94rr4pddfbnypu5sjnz161fkechpte.png/100px-Chr_icon_1003.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/r94rr4pddfbnypu5sjnz161fkechpte.png/100px-Chr_icon_1003.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%9A%87"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "东海帝皇",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%9A%87",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%9A%87",
+      "raw_name_zh": "东海帝皇",
+      "raw_name_jp": "トウカイテイオー",
+      "nickname_raw": "トップ・オブ・ジョイフル",
+      "star_raw": "3",
+      "birthday_raw": "4月20日",
+      "height_raw": "150cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "cv_raw": "Machico",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/jy5u90dp8kbafd4nskds7qdzb44pt1d.png/100px-Chr_icon_1003_100302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/31pknnq1ju5m78oah12pszej3csmj1n.png/100px-Chr_icon_1003_100303_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%9A%87"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%AD%A1%E6%A8%82%E5%B7%94%E5%B3%B0%E3%80%91%E6%9D%B1%E6%B5%B7%E5%B8%9D%E7%9A%87",
+      "raw_name_zh": "东海帝皇",
+      "raw_name_jp": null,
+      "translated_name_raw": "東海帝皇",
+      "nickname_raw": "歡樂巔峰",
+      "page_title": "【歡樂巔峰】東海帝皇",
+      "page_title_aliases": [
+        "【歡樂巔峰】東海帝皇",
+        "東海帝皇",
+        "歡樂巔峰"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月20日",
+      "height_raw": "150㎝",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "cv_raw": "Machico",
+      "introduction_raw": "無敵又可愛！天真爛漫的蹦跳少女",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/jy5u90dp8kbafd4nskds7qdzb44pt1d.png/100px-Chr_icon_1003_100302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/31pknnq1ju5m78oah12pszej3csmj1n.png/100px-Chr_icon_1003_100303_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%AD%A1%E6%A8%82%E5%B7%94%E5%B3%B0%E3%80%91%E6%9D%B1%E6%B5%B7%E5%B8%9D%E7%9A%87",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "E"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "东海帝皇",
+      "raw_name_jp": "トウカイテイオー",
+      "cv_raw": "Machico",
+      "birthday_raw": "4月20日",
+      "height_raw": "150cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "quote_raw": "“无敌的帝王传说，终于要拉开序幕了哟！”",
+      "intro_paragraphs": [
+        "拥有出众的判断力与才能，开朗快活的赛马娘。",
+        "憧憬着学生会会长“皇帝”鲁道夫象征，因此从小就立志参加比赛。",
+        "从来都不怀疑自己会成为第一名，是个单纯的自信家。这种奔放的性格也受到了大家的喜爱。",
+        "独特的柔软步法被称为“帝王舞步”。"
+      ],
+      "introduction": "拥有出众的判断力与才能，开朗快活的赛马娘。\n憧憬着学生会会长“皇帝”鲁道夫象征，因此从小就立志参加比赛。\n从来都不怀疑自己会成为第一名，是个单纯的自信家。这种奔放的性格也受到了大家的喜爱。\n独特的柔软步法被称为“帝王舞步”。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/71/UPDCH_TokaiTeio_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052016",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/71/UPDCH_TokaiTeio_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052016"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%8E%8B",
+      "canonical_name_zh": "东海帝王",
+      "aliases": [
+        "东海帝王"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%8E%8B",
+      "raw_name_zh": "东海帝皇",
+      "page_title": "东海帝王",
+      "raw_name_jp": "トウカイテイオー",
+      "raw_name_en": null,
+      "aliases": [
+        "帝王（テイオー）",
+        "痛快铁奥",
+        "帝宝（地堡）[1]",
+        "东海帝王"
+      ],
+      "birthday_raw": "4月20日",
+      "height_raw": "150cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "cv_raw": "（早期原案）伊波杏树→Machico",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0c/92042198_p0.jpg!/fw/280?v=20221218183930",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0c/92042198_p0.jpg!/fw/280?v=20221218183930",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/71/UPDCH_TokaiTeio_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052016"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E6%B5%B7%E5%B8%9D%E7%8E%8B"
+    }
+  }
+}

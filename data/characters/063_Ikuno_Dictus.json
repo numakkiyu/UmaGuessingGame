@@ -1,0 +1,254 @@
+{
+  "id": "ikunodeikutasu",
+  "name_zh": "狄杜斯",
+  "name_jp": "イクノディクタス",
+  "aliases": [
+    "生野狄杜斯",
+    "狄杜斯",
+    "イクノディクタス",
+    "【Mantle of Steel】生野狄杜斯",
+    "Mantle of Steel"
+  ],
+  "birthday": "04-16",
+  "birthday_day_of_year": 107,
+  "birthday_raw": "4月16日",
+  "height_cm": 163,
+  "height_raw": "163",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 2,
+  "star_raw": "2",
+  "cv": "田泽茉纯",
+  "cv_raw": "田泽茉纯",
+  "quote_raw": "“每一件每一件事情都要认真准备。这样可以减少受伤的风险。”",
+  "introduction": "一位严肃且有秘书风范的赛马娘，不过人却意外地很可爱。 始终保持冷静，同时十分擅长管理自己的身体状态，目标是“彻底地管理自己并尽可能地去奔跑”。 这份热情可能来自于过去不能奔跑的记忆。",
+  "intro_paragraphs": [
+    "一位严肃且有秘书风范的赛马娘，不过人却意外地很可爱。",
+    "始终保持冷静，同时十分擅长管理自己的身体状态，目标是“彻底地管理自己并尽可能地去奔跑”。",
+    "这份热情可能来自于过去不能奔跑的记忆。"
+  ],
+  "weight_desc_raw": "完美",
+  "bust_raw": "75",
+  "waist_raw": "53",
+  "hip_raw": "82",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/6kvebqspgqgzlxvicmq7dxfa4icbleb.png/100px-Chr_icon_1063.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/6kvebqspgqgzlxvicmq7dxfa4icbleb.png/100px-Chr_icon_1063.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_IkunoDictus_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407125345",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/0e/rycryss9btp0ji1iebuntr08lxv9za8.png/100px-Chr_icon_1063_106302_01.png"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/6kvebqspgqgzlxvicmq7dxfa4icbleb.png/100px-Chr_icon_1063.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_IkunoDictus_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407125345"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/0e/rycryss9btp0ji1iebuntr08lxv9za8.png/100px-Chr_icon_1063_106302_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_IkunoDictus_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407125345"
+    ],
+    "moegirl_detail": []
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物",
+    "登场人物补种子",
+    "赛马娘图鉴",
+    "繁中服角色详情页"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%8B%84%E6%9D%9C%E6%96%AF",
+    "https://zh.moegirl.org.cn/%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF",
+    "https://wiki.biligame.com/umamusume/%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Mantle_of_Steel%E3%80%91%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "D",
+    "mile": "A",
+    "medium": "A",
+    "long": "D",
+    "nige": "D",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "D"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "狄杜斯",
+      "character_id": "1063",
+      "birthday_raw": "4月16日",
+      "height_raw": "163",
+      "bust_raw": "75",
+      "waist_raw": "53",
+      "hip_raw": "82",
+      "whr_raw": "0.65",
+      "bust_waist_diff_raw": "22",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/6kvebqspgqgzlxvicmq7dxfa4icbleb.png/100px-Chr_icon_1063.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/6kvebqspgqgzlxvicmq7dxfa4icbleb.png/100px-Chr_icon_1063.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%8B%84%E6%9D%9C%E6%96%AF"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "生野狄杜斯",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF",
+      "star_raw": "2",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF",
+      "raw_name_zh": "生野狄杜斯",
+      "raw_name_jp": "イクノディクタス",
+      "nickname_raw": "Mantle of Steel",
+      "star_raw": "2",
+      "birthday_raw": "4月16日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "完美地完成",
+      "bust_raw": "75",
+      "waist_raw": "53",
+      "hip_raw": "82",
+      "cv_raw": "田泽茉纯",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0e/rycryss9btp0ji1iebuntr08lxv9za8.png/100px-Chr_icon_1063_106302_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Mantle_of_Steel%E3%80%91%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF",
+      "raw_name_zh": "生野狄杜斯",
+      "raw_name_jp": null,
+      "translated_name_raw": "生野狄杜斯",
+      "nickname_raw": "Mantle of Steel",
+      "page_title": "【Mantle of Steel】生野狄杜斯",
+      "page_title_aliases": [
+        "【Mantle of Steel】生野狄杜斯",
+        "生野狄杜斯",
+        "Mantle of Steel"
+      ],
+      "star_raw": "2",
+      "birthday_raw": "4月16日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "調整狀態相當完美",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "田澤茉純",
+      "introduction_raw": "徹底管理主義。軟硬兼施的幹練賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/c3aoy55qjby198edxqw15232g43vpea.png/100px-Chr_icon_1063_106301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Mantle_of_Steel%E3%80%91%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "狄杜斯",
+      "raw_name_jp": "イクノディクタス",
+      "cv_raw": "田泽茉纯",
+      "birthday_raw": "4月16日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "完美",
+      "bust_raw": "75",
+      "waist_raw": "53",
+      "hip_raw": "82",
+      "quote_raw": "“每一件每一件事情都要认真准备。这样可以减少受伤的风险。”",
+      "intro_paragraphs": [
+        "一位严肃且有秘书风范的赛马娘，不过人却意外地很可爱。",
+        "始终保持冷静，同时十分擅长管理自己的身体状态，目标是“彻底地管理自己并尽可能地去奔跑”。",
+        "这份热情可能来自于过去不能奔跑的记忆。"
+      ],
+      "introduction": "一位严肃且有秘书风范的赛马娘，不过人却意外地很可爱。\n始终保持冷静，同时十分擅长管理自己的身体状态，目标是“彻底地管理自己并尽可能地去奔跑”。\n这份热情可能来自于过去不能奔跑的记忆。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_IkunoDictus_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407125345",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_IkunoDictus_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407125345"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%94%9F%E9%87%8E%E7%8B%84%E6%9D%9C%E6%96%AF",
+      "canonical_name_zh": "生野狄杜斯",
+      "aliases": [
+        "生野狄杜斯"
+      ]
+    },
+    "moegirl_detail": {}
+  }
+}

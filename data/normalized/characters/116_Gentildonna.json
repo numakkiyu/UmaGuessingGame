@@ -1,0 +1,306 @@
+{
+  "id": "jenteirudonna",
+  "order": 116,
+  "file_name": "116_Gentildonna.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "贵妇人",
+    "zh_tw": null,
+    "jp": "ジェンティルドンナ",
+    "en": "Gentildonna"
+  },
+  "aliases": [
+    "贵妇人",
+    "ジェンティルドンナ",
+    "Gentildonna",
+    "【Regina dei fiori】貴婦人",
+    "貴婦人",
+    "Regina dei fiori",
+    "冬娜",
+    "鬼妇人"
+  ],
+  "profile": {
+    "birthday": "02-20",
+    "birthday_raw": "2月20日",
+    "birthday_day_of_year": 51,
+    "height_cm": 167,
+    "height_raw": "167cm",
+    "cv": "芹澤優",
+    "cv_raw": "芹澤優",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "A",
+      "nige": "E",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "D"
+    },
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/o8o0h3m9uqjxnrqo8i9lgoggoynheg6.png/100px-Chr_icon_1116.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_Gentildonna_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d2/GFR193247.png!/fw/280?v=20240623114127"
+    ],
+    "image_local_path": "/api/assets/jenteirudonna-thumb",
+    "asset_id": "jenteirudonna-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E8%B4%B5%E5%A6%87%E4%BA%BA",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Regina_dei_fiori%E3%80%91%E8%B2%B4%E5%A9%A6%E4%BA%BA",
+      "https://zh.moegirl.org.cn/%E8%B4%B5%E5%A6%87%E4%BA%BA"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/o8o0h3m9uqjxnrqo8i9lgoggoynheg6.png/100px-Chr_icon_1116.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_Gentildonna_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d2/GFR193247.png!/fw/280?v=20240623114127",
+        "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_Gentildonna_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "当然是对自己，对他人也不姑息，甚至给人一种冷静透彻的感觉。 对失败者无话可说——这就是刚毅的贵妇人。",
+    "intro_paragraphs": [
+      "当然是对自己，对他人也不姑息，甚至给人一种冷静透彻的感觉。",
+      "对失败者无话可说——这就是刚毅的贵妇人。"
+    ],
+    "quote_raw": "强大就是正义，实力至上主义的马娘。",
+    "weight_desc_raw": "充滿力量",
+    "bust_raw": "95",
+    "waist_raw": "63",
+    "hip_raw": "87"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "贵妇人",
+      "character_id": "1116",
+      "birthday_raw": "2月20日",
+      "height_raw": "167",
+      "bust_raw": "95",
+      "waist_raw": "63",
+      "hip_raw": "87",
+      "whr_raw": "0.72",
+      "bust_waist_diff_raw": "32",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/o8o0h3m9uqjxnrqo8i9lgoggoynheg6.png/100px-Chr_icon_1116.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/o8o0h3m9uqjxnrqo8i9lgoggoynheg6.png/100px-Chr_icon_1116.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B4%B5%E5%A6%87%E4%BA%BA"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "贵妇人",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B4%B5%E5%A6%87%E4%BA%BA",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%B4%B5%E5%A6%87%E4%BA%BA",
+      "raw_name_zh": "贵妇人",
+      "raw_name_jp": "ジェンティルドンナ",
+      "nickname_raw": "Regina dei fiori",
+      "star_raw": "3",
+      "birthday_raw": "2月20日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "强有力的",
+      "bust_raw": "95",
+      "waist_raw": "63",
+      "hip_raw": "87",
+      "cv_raw": "芹泽优",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B4%B5%E5%A6%87%E4%BA%BA"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Regina_dei_fiori%E3%80%91%E8%B2%B4%E5%A9%A6%E4%BA%BA",
+      "raw_name_zh": "贵妇人",
+      "raw_name_jp": null,
+      "translated_name_raw": "貴婦人",
+      "nickname_raw": "Regina dei fiori",
+      "page_title": "【Regina dei fiori】貴婦人",
+      "page_title_aliases": [
+        "【Regina dei fiori】貴婦人",
+        "貴婦人",
+        "Regina dei fiori"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "2月20日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "充滿力量",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "芹澤優",
+      "introduction_raw": "剛毅的高貴淑女。一心只為強而有力地綻放！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Regina_dei_fiori%E3%80%91%E8%B2%B4%E5%A9%A6%E4%BA%BA",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "贵妇人",
+      "raw_name_jp": "ジェンティルドンナ",
+      "cv_raw": "芹泽优",
+      "birthday_raw": "2月20日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "有力的",
+      "bust_raw": "95",
+      "waist_raw": "63",
+      "hip_raw": "87",
+      "quote_raw": "强大就是正义，实力至上主义的马娘。",
+      "intro_paragraphs": [
+        "当然是对自己，对他人也不姑息，甚至给人一种冷静透彻的感觉。",
+        "对失败者无话可说——这就是刚毅的贵妇人。"
+      ],
+      "introduction": "当然是对自己，对他人也不姑息，甚至给人一种冷静透彻的感觉。\n对失败者无话可说——这就是刚毅的贵妇人。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_Gentildonna_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_Gentildonna_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B4%B5%E5%A6%87%E4%BA%BA",
+      "canonical_name_zh": "贵妇人",
+      "aliases": [
+        "贵妇人"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%B4%B5%E5%A6%87%E4%BA%BA",
+      "raw_name_zh": "贵妇人",
+      "page_title": "贵妇人",
+      "raw_name_jp": "ジェンティルドンナ",
+      "raw_name_en": null,
+      "aliases": [
+        "冬娜",
+        "鬼妇人",
+        "贵妇人"
+      ],
+      "birthday_raw": "2月20日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "强而有力的",
+      "bust_raw": "95",
+      "waist_raw": "63",
+      "hip_raw": "87",
+      "cv_raw": "芹泽优",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d2/GFR193247.png!/fw/280?v=20240623114127",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d2/GFR193247.png!/fw/280?v=20240623114127",
+        "https://storage.moegirl.org.cn/moegirl/commons/1/12/UPDCH_Gentildonna_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B4%B5%E5%A6%87%E4%BA%BA"
+    }
+  }
+}

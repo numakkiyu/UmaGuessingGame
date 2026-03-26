@@ -1,0 +1,53 @@
+{
+  "name": "uma-guessing-game",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "db:push": "drizzle-kit push",
+    "question-bank:build": "tsx scripts/build-question-bank.ts",
+    "search-index:build": "tsx scripts/build-search-index.ts",
+    "racing-profile:scaffold": "tsx scripts/scaffold-racing-profile.ts",
+    "assets:preload": "tsx scripts/preload-assets.ts",
+    "db:seed": "tsx scripts/seed-question-bank.ts",
+    "prepare:data": "npm run question-bank:build && npm run search-index:build",
+    "ci:check": "npm run prepare:data && npm run typecheck && npm run lint && npm test && npm run build"
+  },
+  "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "drizzle-orm": "^0.44.5",
+    "lucide-react": "^0.542.0",
+    "motion": "^12.23.24",
+    "next": "16.2.1",
+    "pg": "^8.16.3",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "redis": "^5.8.2",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/pg": "^8.15.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.4",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.20.5",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  }
+}

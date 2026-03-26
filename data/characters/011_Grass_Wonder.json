@@ -1,0 +1,301 @@
+{
+  "id": "gurasuwandaa",
+  "name_zh": "草上飞",
+  "name_jp": "グラスワンダー",
+  "aliases": [
+    "【穿岩之青】草上飛",
+    "草上飛",
+    "穿岩之青",
+    "小草（グラスちゃん）",
+    "不死鳥",
+    "草女士",
+    "草上肥[2]",
+    "草二爷[3]",
+    "草上牛",
+    "草上飞",
+    "グラスワンダー",
+    "岩穿つ青"
+  ],
+  "birthday": "02-18",
+  "birthday_day_of_year": 49,
+  "birthday_raw": "2月18日",
+  "height_cm": 152,
+  "height_raw": "152㎝",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 2,
+  "star_raw": "2",
+  "cv": "前田玲奈",
+  "cv_raw": "前田玲奈",
+  "quote_raw": "“清爽地，凛然地，向着自己的志向——迈进。”",
+  "introduction": "在美国出生的归国子女。因为与父母一起憧憬着大和文化成长，成长为了地道的大和抚子。 有着温暖柔软的说话方式，但内心坚强，在内心深处拥有无论什么事都不服输的坚定意志。 与好友神鹰是室友。",
+  "intro_paragraphs": [
+    "在美国出生的归国子女。因为与父母一起憧憬着大和文化成长，成长为了地道的大和抚子。",
+    "有着温暖柔软的说话方式，但内心坚强，在内心深处拥有无论什么事都不服输的坚定意志。",
+    "与好友神鹰是室友。"
+  ],
+  "weight_desc_raw": "無增減",
+  "bust_raw": "77",
+  "waist_raw": "53",
+  "hip_raw": "84",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/0qtdv1b2tj5boivcyrud16qzt3wyvzf.png/100px-Chr_icon_1011.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/29w6hgblitwriahe4uwh116j6p9ht7d.png/100px-Chr_icon_1011_101102_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/7/71/l9biuvg1v8ibodbw9uzzdbs0iqejnaz.png/100px-Chr_icon_1011_101103_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/8/8e/UPDCH_GrassWonder_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041100",
+    "https://storage.moegirl.org.cn/moegirl/commons/3/3b/91333938_p0.jpg!/fw/280?v=20220713135404"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/0qtdv1b2tj5boivcyrud16qzt3wyvzf.png/100px-Chr_icon_1011.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/29w6hgblitwriahe4uwh116j6p9ht7d.png/100px-Chr_icon_1011_101102_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/71/l9biuvg1v8ibodbw9uzzdbs0iqejnaz.png/100px-Chr_icon_1011_101103_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/29w6hgblitwriahe4uwh116j6p9ht7d.png/100px-Chr_icon_1011_101102_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/71/l9biuvg1v8ibodbw9uzzdbs0iqejnaz.png/100px-Chr_icon_1011_101103_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/8/8e/UPDCH_GrassWonder_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041100"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/3/3b/91333938_p0.jpg!/fw/280?v=20220713135404",
+      "https://storage.moegirl.org.cn/moegirl/commons/8/8e/UPDCH_GrassWonder_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041100"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%8D%89%E4%B8%8A%E9%A3%9E",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E7%A9%BF%E5%B2%A9%E4%B9%8B%E9%9D%92%E3%80%91%E8%8D%89%E4%B8%8A%E9%A3%9B",
+    "https://zh.moegirl.org.cn/%E8%8D%89%E4%B8%8A%E9%A3%9E"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "A",
+    "medium": "B",
+    "long": "A",
+    "nige": "F",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "F"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "长"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "草上飞",
+      "character_id": "1011",
+      "birthday_raw": "2月18日",
+      "height_raw": "152",
+      "bust_raw": "77",
+      "waist_raw": "53",
+      "hip_raw": "84",
+      "whr_raw": "0.63",
+      "bust_waist_diff_raw": "24",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/0qtdv1b2tj5boivcyrud16qzt3wyvzf.png/100px-Chr_icon_1011.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/0qtdv1b2tj5boivcyrud16qzt3wyvzf.png/100px-Chr_icon_1011.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8D%89%E4%B8%8A%E9%A3%9E"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "草上飞",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8D%89%E4%B8%8A%E9%A3%9E",
+      "star_raw": "2",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%8D%89%E4%B8%8A%E9%A3%9E",
+      "raw_name_zh": "草上飞",
+      "raw_name_jp": "グラスワンダー",
+      "nickname_raw": "岩穿つ青",
+      "star_raw": "2",
+      "birthday_raw": "2月18日",
+      "height_raw": "152㎝",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "78",
+      "waist_raw": "53",
+      "hip_raw": "84",
+      "cv_raw": "前田玲奈",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/29w6hgblitwriahe4uwh116j6p9ht7d.png/100px-Chr_icon_1011_101102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/71/l9biuvg1v8ibodbw9uzzdbs0iqejnaz.png/100px-Chr_icon_1011_101103_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8D%89%E4%B8%8A%E9%A3%9E"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%A9%BF%E5%B2%A9%E4%B9%8B%E9%9D%92%E3%80%91%E8%8D%89%E4%B8%8A%E9%A3%9B",
+      "raw_name_zh": "草上飞",
+      "raw_name_jp": null,
+      "translated_name_raw": "草上飛",
+      "nickname_raw": "穿岩之青",
+      "page_title": "【穿岩之青】草上飛",
+      "page_title_aliases": [
+        "【穿岩之青】草上飛",
+        "草上飛",
+        "穿岩之青"
+      ],
+      "star_raw": "2",
+      "birthday_raw": "2月18日",
+      "height_raw": "152㎝",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "77",
+      "waist_raw": "53",
+      "hip_raw": "84",
+      "cv_raw": "前田玲奈",
+      "introduction_raw": "清秀可人。自美國歸來的大和撫子",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/29w6hgblitwriahe4uwh116j6p9ht7d.png/100px-Chr_icon_1011_101102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/71/l9biuvg1v8ibodbw9uzzdbs0iqejnaz.png/100px-Chr_icon_1011_101103_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%A9%BF%E5%B2%A9%E4%B9%8B%E9%9D%92%E3%80%91%E8%8D%89%E4%B8%8A%E9%A3%9B",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "草上飞",
+      "raw_name_jp": "グラスワンダー",
+      "cv_raw": "前田玲奈",
+      "birthday_raw": "2月18日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "53",
+      "hip_raw": "84",
+      "quote_raw": "“清爽地，凛然地，向着自己的志向——迈进。”",
+      "intro_paragraphs": [
+        "在美国出生的归国子女。因为与父母一起憧憬着大和文化成长，成长为了地道的大和抚子。",
+        "有着温暖柔软的说话方式，但内心坚强，在内心深处拥有无论什么事都不服输的坚定意志。",
+        "与好友神鹰是室友。"
+      ],
+      "introduction": "在美国出生的归国子女。因为与父母一起憧憬着大和文化成长，成长为了地道的大和抚子。\n有着温暖柔软的说话方式，但内心坚强，在内心深处拥有无论什么事都不服输的坚定意志。\n与好友神鹰是室友。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/8e/UPDCH_GrassWonder_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041100",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/8e/UPDCH_GrassWonder_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041100"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8D%89%E4%B8%8A%E9%A3%9E",
+      "canonical_name_zh": "草上飞",
+      "aliases": [
+        "草上飞"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%8D%89%E4%B8%8A%E9%A3%9E",
+      "raw_name_zh": "草上飞",
+      "page_title": "草上飞",
+      "raw_name_jp": "グラスワンダー",
+      "raw_name_en": null,
+      "aliases": [
+        "小草（グラスちゃん）",
+        "不死鳥",
+        "草女士",
+        "草上肥[2]",
+        "草二爷[3]",
+        "草上牛",
+        "草上飞"
+      ],
+      "birthday_raw": "2月18日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "53",
+      "hip_raw": "84",
+      "cv_raw": "前田玲奈",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/3b/91333938_p0.jpg!/fw/280?v=20220713135404",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3b/91333938_p0.jpg!/fw/280?v=20220713135404",
+        "https://storage.moegirl.org.cn/moegirl/commons/8/8e/UPDCH_GrassWonder_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041100"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8D%89%E4%B8%8A%E9%A3%9E"
+    }
+  }
+}

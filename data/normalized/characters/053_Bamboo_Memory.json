@@ -1,0 +1,309 @@
+{
+  "id": "banbuumemorii",
+  "order": 53,
+  "file_name": "053_Bamboo_Memory.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "青竹回忆",
+    "zh_tw": null,
+    "jp": "バンブーメモリー",
+    "en": "Bamboo Memory"
+  },
+  "aliases": [
+    "青竹回忆",
+    "バンブーメモリー",
+    "Bamboo Memory",
+    "【黑鐵大志】青竹回憶",
+    "青竹回憶",
+    "黑鐵大志",
+    "风纪委员长",
+    "黒鉄の大志"
+  ],
+  "profile": {
+    "birthday": "05-14",
+    "birthday_raw": "5月14日",
+    "birthday_day_of_year": 135,
+    "height_cm": 157,
+    "height_raw": "157cm",
+    "cv": "藍原ことみ",
+    "cv_raw": "藍原ことみ",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "D",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "C",
+      "long": "G",
+      "nige": "G",
+      "senko": "E",
+      "sashi": "A",
+      "oikomi": "C"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/ooqio23oq6whfo95z0nsd0q8tad5qjx.png/100px-Chr_icon_1053.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/1y67rf81083gpscfe0s876bx8vhpckt.png/100px-Chr_icon_1053_105302_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_BambooMemory_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163638",
+      "https://storage.moegirl.org.cn/moegirl/commons/8/86/%E3%83%90%E3%83%B3%E3%83%96%E3%83%BC%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC.jpg!/fw/280?v=20211203034552"
+    ],
+    "image_local_path": "/api/assets/banbuumemorii-thumb",
+    "asset_id": "banbuumemorii-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%91%E9%90%B5%E5%A4%A7%E5%BF%97%E3%80%91%E9%9D%92%E7%AB%B9%E5%9B%9E%E6%86%B6",
+      "https://zh.moegirl.org.cn/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/ooqio23oq6whfo95z0nsd0q8tad5qjx.png/100px-Chr_icon_1053.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/1y67rf81083gpscfe0s876bx8vhpckt.png/100px-Chr_icon_1053_105302_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/1y67rf81083gpscfe0s876bx8vhpckt.png/100px-Chr_icon_1053_105302_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_BambooMemory_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163638"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/86/%E3%83%90%E3%83%B3%E3%83%96%E3%83%BC%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC.jpg!/fw/280?v=20211203034552",
+        "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_BambooMemory_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163638"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "满腔热情勇往直前的热血型。 被父亲与宿敌激烈交锋的英勇事迹所感动，自己也因想与这样的对手相遇而热血沸腾。 被父亲与宿敌激烈交锋的英勇事迹所感动，自己也因想与这样的对手相遇而热血沸腾。",
+    "intro_paragraphs": [
+      "满腔热情勇往直前的热血型。",
+      "被父亲与宿敌激烈交锋的英勇事迹所感动，自己也因想与这样的对手相遇而热血沸腾。"
+    ],
+    "quote_raw": "“好想做彻底的、特训啊！因为想要赢过对手！！”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "77",
+    "waist_raw": "57",
+    "hip_raw": "81"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "青竹回忆",
+      "character_id": "1053",
+      "birthday_raw": "5月14日",
+      "height_raw": "157",
+      "bust_raw": "77",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "20",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/ooqio23oq6whfo95z0nsd0q8tad5qjx.png/100px-Chr_icon_1053.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/ooqio23oq6whfo95z0nsd0q8tad5qjx.png/100px-Chr_icon_1053.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "青竹回忆",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "E",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86",
+      "raw_name_zh": "青竹回忆",
+      "raw_name_jp": "バンブーメモリー",
+      "nickname_raw": "黒鉄の大志",
+      "star_raw": "3",
+      "birthday_raw": "5月14日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "cv_raw": "蓝原琴美",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "E",
+      "sashi_raw": "A",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/1y67rf81083gpscfe0s876bx8vhpckt.png/100px-Chr_icon_1053_105302_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%91%E9%90%B5%E5%A4%A7%E5%BF%97%E3%80%91%E9%9D%92%E7%AB%B9%E5%9B%9E%E6%86%B6",
+      "raw_name_zh": "青竹回忆",
+      "raw_name_jp": null,
+      "translated_name_raw": "青竹回憶",
+      "nickname_raw": "黑鐵大志",
+      "page_title": "【黑鐵大志】青竹回憶",
+      "page_title_aliases": [
+        "【黑鐵大志】青竹回憶",
+        "青竹回憶",
+        "黑鐵大志"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月14日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "藍原ことみ",
+      "introduction_raw": "尋求認真對決！熱血糾察隊長！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/1y67rf81083gpscfe0s876bx8vhpckt.png/100px-Chr_icon_1053_105302_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%91%E9%90%B5%E5%A4%A7%E5%BF%97%E3%80%91%E9%9D%92%E7%AB%B9%E5%9B%9E%E6%86%B6",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "E",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "青竹回忆",
+      "raw_name_jp": "バンブーメモリー",
+      "cv_raw": "蓝原琴美",
+      "birthday_raw": "5月14日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "quote_raw": "“好想做彻底的、特训啊！因为想要赢过对手！！”",
+      "intro_paragraphs": [
+        "满腔热情勇往直前的热血型。",
+        "被父亲与宿敌激烈交锋的英勇事迹所感动，自己也因想与这样的对手相遇而热血沸腾。",
+        "被父亲与宿敌激烈交锋的英勇事迹所感动，自己也因想与这样的对手相遇而热血沸腾。"
+      ],
+      "introduction": "满腔热情勇往直前的热血型。\n被父亲与宿敌激烈交锋的英勇事迹所感动，自己也因想与这样的对手相遇而热血沸腾。\n被父亲与宿敌激烈交锋的英勇事迹所感动，自己也因想与这样的对手相遇而热血沸腾。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_BambooMemory_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163638",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_BambooMemory_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163638"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86",
+      "canonical_name_zh": "青竹回忆",
+      "aliases": [
+        "青竹回忆"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86",
+      "raw_name_zh": "青竹回忆",
+      "page_title": "青竹回忆",
+      "raw_name_jp": "バンブーメモリー",
+      "raw_name_en": null,
+      "aliases": [
+        "风纪委员长",
+        "青竹回忆"
+      ],
+      "birthday_raw": "5月14日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "77",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "cv_raw": "蓝原琴美",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/86/%E3%83%90%E3%83%B3%E3%83%96%E3%83%BC%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC.jpg!/fw/280?v=20211203034552",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/86/%E3%83%90%E3%83%B3%E3%83%96%E3%83%BC%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC.jpg!/fw/280?v=20211203034552",
+        "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_BambooMemory_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163638"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%9D%92%E7%AB%B9%E5%9B%9E%E5%BF%86"
+    }
+  }
+}

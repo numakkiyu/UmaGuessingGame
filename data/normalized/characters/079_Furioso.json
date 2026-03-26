@@ -1,0 +1,299 @@
+{
+  "id": "furiooso",
+  "order": 79,
+  "file_name": "079_Furioso.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "狂怒乐章",
+    "zh_tw": null,
+    "jp": "フリオーソ",
+    "en": "Furioso"
+  },
+  "aliases": [
+    "狂怒乐章",
+    "フリオーソ",
+    "Furioso",
+    "【衣錦還鄉的瑞星】狂熱激昂",
+    "狂熱激昂",
+    "衣錦還鄉的瑞星",
+    "衣錦還郷の瑞星"
+  ],
+  "profile": {
+    "birthday": "05-01",
+    "birthday_raw": "5月1日",
+    "birthday_day_of_year": 122,
+    "height_cm": 161,
+    "height_raw": "161cm",
+    "cv": "西連寺亜希",
+    "cv_raw": "西連寺亜希",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "独居",
+    "dorm_raw": "一人暮らし",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "G",
+      "dirt": "A",
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "F",
+      "nige": "A",
+      "senko": "A",
+      "sashi": "E",
+      "oikomi": "G"
+    },
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/59/dan2n9llnij30vga7572b0dlwx8u781.png/100px-Chr_icon_1079.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_Furioso_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+    ],
+    "image_local_path": "/api/assets/furiooso-thumb",
+    "asset_id": "furiooso-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E8%A1%A3%E9%8C%A6%E9%82%84%E9%84%89%E7%9A%84%E7%91%9E%E6%98%9F%E3%80%91%E7%8B%82%E7%86%B1%E6%BF%80%E6%98%82",
+      "https://zh.moegirl.org.cn/index.php?title=%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0&action=edit&redlink=1"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/59/dan2n9llnij30vga7572b0dlwx8u781.png/100px-Chr_icon_1079.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_Furioso_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_Furioso_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "她是一位真诚而文静的马娘，但内心深处却对船桥有一种比任何人都火辣的爱。 为了证明船桥的强大，她有一个强大的目标——打倒URA中央。",
+    "intro_paragraphs": [
+      "她是一位真诚而文静的马娘，但内心深处却对船桥有一种比任何人都火辣的爱。",
+      "为了证明船桥的强大，她有一个强大的目标——打倒URA中央。"
+    ],
+    "quote_raw": "从船桥来到特雷森学院的特殊留学生。",
+    "weight_desc_raw": "毫無偏差",
+    "bust_raw": "81",
+    "waist_raw": "53",
+    "hip_raw": "78"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "狂怒乐章",
+      "character_id": "1079",
+      "birthday_raw": "5月1日",
+      "height_raw": "161",
+      "bust_raw": "81",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "28",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/59/dan2n9llnij30vga7572b0dlwx8u781.png/100px-Chr_icon_1079.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/59/dan2n9llnij30vga7572b0dlwx8u781.png/100px-Chr_icon_1079.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "狂怒乐章",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0",
+      "raw_name_zh": "狂怒乐章",
+      "raw_name_jp": "フリオーソ",
+      "nickname_raw": "衣錦還郷の瑞星",
+      "star_raw": "3",
+      "birthday_raw": "5月1日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "きっちり",
+      "bust_raw": "81",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "cv_raw": "西連寺亜希",
+      "grade_raw": "高等部",
+      "dorm_raw": "一人暮らし",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%A1%A3%E9%8C%A6%E9%82%84%E9%84%89%E7%9A%84%E7%91%9E%E6%98%9F%E3%80%91%E7%8B%82%E7%86%B1%E6%BF%80%E6%98%82",
+      "raw_name_zh": "狂怒乐章",
+      "raw_name_jp": null,
+      "translated_name_raw": "狂熱激昂",
+      "nickname_raw": "衣錦還鄉的瑞星",
+      "page_title": "【衣錦還鄉的瑞星】狂熱激昂",
+      "page_title_aliases": [
+        "【衣錦還鄉的瑞星】狂熱激昂",
+        "狂熱激昂",
+        "衣錦還鄉的瑞星"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月1日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "毫無偏差",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "西連寺亜希",
+      "introduction_raw": "對船橋的愛無可動搖。來自地方的文靜留學生",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%A1%A3%E9%8C%A6%E9%82%84%E9%84%89%E7%9A%84%E7%91%9E%E6%98%9F%E3%80%91%E7%8B%82%E7%86%B1%E6%BF%80%E6%98%82",
+      "turf_raw": "G",
+      "dirt_raw": "A",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "狂怒乐章",
+      "raw_name_jp": "フリオーソ",
+      "cv_raw": "西连寺亚希",
+      "birthday_raw": "5月1日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "看起来很轻",
+      "bust_raw": "81",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "quote_raw": "从船桥来到特雷森学院的特殊留学生。",
+      "intro_paragraphs": [
+        "她是一位真诚而文静的马娘，但内心深处却对船桥有一种比任何人都火辣的爱。",
+        "为了证明船桥的强大，她有一个强大的目标——打倒URA中央。"
+      ],
+      "introduction": "她是一位真诚而文静的马娘，但内心深处却对船桥有一种比任何人都火辣的爱。\n为了证明船桥的强大，她有一个强大的目标——打倒URA中央。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_Furioso_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_Furioso_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0&action=edit&redlink=1",
+      "canonical_name_zh": "狂怒乐章",
+      "aliases": [
+        "狂怒乐章"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0&action=edit&redlink=1",
+      "raw_name_zh": "狂怒乐章",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "フリオーソ",
+      "raw_name_en": null,
+      "aliases": [
+        "狂怒乐章"
+      ],
+      "birthday_raw": "5月1日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "看起来很轻",
+      "bust_raw": "81",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "cv_raw": "西连寺亚希",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_Furioso_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_Furioso_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E7%8B%82%E6%80%92%E4%B9%90%E7%AB%A0&action=edit&redlink=1"
+    }
+  }
+}

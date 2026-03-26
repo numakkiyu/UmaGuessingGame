@@ -1,0 +1,313 @@
+{
+  "id": "suiiputoushou",
+  "order": 44,
+  "file_name": "044_Sweep_Tosho.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "东商变革",
+    "zh_tw": "東商變革",
+    "jp": "スイープトウショウ",
+    "en": "Sweep Tosho"
+  },
+  "aliases": [
+    "东商变革",
+    "東商變革",
+    "スイープトウショウ",
+    "Sweep Tosho",
+    "【懸鈴木魔女】東商變革",
+    "懸鈴木魔女",
+    "小魔女",
+    "巫马牧师妹",
+    "プラタナス・ウィッチ"
+  ],
+  "profile": {
+    "birthday": "05-09",
+    "birthday_raw": "5月9日",
+    "birthday_day_of_year": 130,
+    "height_cm": 139,
+    "height_raw": "139cm",
+    "cv": "杉浦しおり",
+    "cv_raw": "杉浦しおり",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "D",
+      "nige": "G",
+      "senko": "G",
+      "sashi": "A",
+      "oikomi": "A"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/0xbqu2g1f0etq6j0xgpvedohx6bgyr5.png/100px-Chr_icon_1044.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/pme3vi6awqf5pckwaqk5o91n0ew998q.png/100px-Chr_icon_1044_104402_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f5/UPDCH_SweepTosho_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d5/P97516062.jpg!/fw/280?v=20220508105740"
+    ],
+    "image_local_path": "/api/assets/suiiputoushou-thumb",
+    "asset_id": "suiiputoushou-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E6%87%B8%E9%88%B4%E6%9C%A8%E9%AD%94%E5%A5%B3%E3%80%91%E6%9D%B1%E5%95%86%E8%AE%8A%E9%9D%A9",
+      "https://zh.moegirl.org.cn/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/0xbqu2g1f0etq6j0xgpvedohx6bgyr5.png/100px-Chr_icon_1044.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/pme3vi6awqf5pckwaqk5o91n0ew998q.png/100px-Chr_icon_1044_104402_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/pme3vi6awqf5pckwaqk5o91n0ew998q.png/100px-Chr_icon_1044_104402_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f5/UPDCH_SweepTosho_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d5/P97516062.jpg!/fw/280?v=20220508105740",
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f5/UPDCH_SweepTosho_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "傲娇任性的魔法少女。由自称魔女的祖母抚养长大，受其影响立志成为魔法使。 相信只要在比赛里获胜就能习得魔法。由于现在还是见习，不能如意的事情就从物理上解决。 性情任性，一哭起来就哭个不停。",
+    "intro_paragraphs": [
+      "傲娇任性的魔法少女。由自称魔女的祖母抚养长大，受其影响立志成为魔法使。",
+      "相信只要在比赛里获胜就能习得魔法。由于现在还是见习，不能如意的事情就从物理上解决。",
+      "性情任性，一哭起来就哭个不停。"
+    ],
+    "quote_raw": "“我能够使用魔法哦。因为我是魔法少女Sweepy！”",
+    "weight_desc_raw": "堅決拒絕測量",
+    "bust_raw": "72",
+    "waist_raw": "53",
+    "hip_raw": "73"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "东商变革",
+      "character_id": "1044",
+      "birthday_raw": "5月9日",
+      "height_raw": "139",
+      "bust_raw": "72",
+      "waist_raw": "53",
+      "hip_raw": "73",
+      "whr_raw": "0.73",
+      "bust_waist_diff_raw": "19",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/0xbqu2g1f0etq6j0xgpvedohx6bgyr5.png/100px-Chr_icon_1044.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/0xbqu2g1f0etq6j0xgpvedohx6bgyr5.png/100px-Chr_icon_1044.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "东商变革",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9",
+      "raw_name_zh": "东商变革",
+      "raw_name_jp": "スイープトウショウ",
+      "nickname_raw": "プラタナス・ウィッチ",
+      "star_raw": "3",
+      "birthday_raw": "5月9日",
+      "height_raw": "139cm",
+      "weight_desc_raw": "坚决拒绝测量",
+      "bust_raw": "72",
+      "waist_raw": "53",
+      "hip_raw": "73",
+      "cv_raw": "杉浦栞",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/pme3vi6awqf5pckwaqk5o91n0ew998q.png/100px-Chr_icon_1044_104402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%87%B8%E9%88%B4%E6%9C%A8%E9%AD%94%E5%A5%B3%E3%80%91%E6%9D%B1%E5%95%86%E8%AE%8A%E9%9D%A9",
+      "raw_name_zh": "东商变革",
+      "raw_name_jp": null,
+      "translated_name_raw": "東商變革",
+      "nickname_raw": "懸鈴木魔女",
+      "page_title": "【懸鈴木魔女】東商變革",
+      "page_title_aliases": [
+        "【懸鈴木魔女】東商變革",
+        "東商變革",
+        "懸鈴木魔女"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月9日",
+      "height_raw": "139cm",
+      "weight_desc_raw": "堅決拒絕測量",
+      "bust_raw": "72",
+      "waist_raw": "53",
+      "hip_raw": "73",
+      "cv_raw": "杉浦しおり",
+      "introduction_raw": "純真的耍任性女孩！絕對要成為魔女！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/pme3vi6awqf5pckwaqk5o91n0ew998q.png/100px-Chr_icon_1044_104402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%87%B8%E9%88%B4%E6%9C%A8%E9%AD%94%E5%A5%B3%E3%80%91%E6%9D%B1%E5%95%86%E8%AE%8A%E9%9D%A9",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "东商变革",
+      "raw_name_jp": "スイープトウショウ",
+      "cv_raw": "杉浦栞",
+      "birthday_raw": "5月9日",
+      "height_raw": "139cm",
+      "weight_desc_raw": "断然拒绝测量",
+      "bust_raw": "72",
+      "waist_raw": "53",
+      "hip_raw": "73",
+      "quote_raw": "“我能够使用魔法哦。因为我是魔法少女Sweepy！”",
+      "intro_paragraphs": [
+        "傲娇任性的魔法少女。由自称魔女的祖母抚养长大，受其影响立志成为魔法使。",
+        "相信只要在比赛里获胜就能习得魔法。由于现在还是见习，不能如意的事情就从物理上解决。",
+        "性情任性，一哭起来就哭个不停。"
+      ],
+      "introduction": "傲娇任性的魔法少女。由自称魔女的祖母抚养长大，受其影响立志成为魔法使。\n相信只要在比赛里获胜就能习得魔法。由于现在还是见习，不能如意的事情就从物理上解决。\n性情任性，一哭起来就哭个不停。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/f5/UPDCH_SweepTosho_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f5/UPDCH_SweepTosho_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9",
+      "canonical_name_zh": "东商变革",
+      "aliases": [
+        "东商变革"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9",
+      "raw_name_zh": "东商变革",
+      "page_title": "东商变革",
+      "raw_name_jp": "スイープトウショウ",
+      "raw_name_en": null,
+      "aliases": [
+        "小魔女",
+        "巫马牧师妹",
+        "东商变革"
+      ],
+      "birthday_raw": "5月9日",
+      "height_raw": "139cm",
+      "weight_desc_raw": "坚决拒绝测量",
+      "bust_raw": "72",
+      "waist_raw": "53",
+      "hip_raw": "73",
+      "cv_raw": "杉浦栞",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d5/P97516062.jpg!/fw/280?v=20220508105740",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d5/P97516062.jpg!/fw/280?v=20220508105740",
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f5/UPDCH_SweepTosho_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%9C%E5%95%86%E5%8F%98%E9%9D%A9"
+    }
+  }
+}

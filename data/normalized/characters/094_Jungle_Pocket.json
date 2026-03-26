@@ -1,0 +1,302 @@
+{
+  "id": "jangurupoketto",
+  "order": 94,
+  "file_name": "094_Jungle_Pocket.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "森林宝穴",
+    "zh_tw": null,
+    "jp": "ジャングルポケット",
+    "en": "Jungle Pocket"
+  },
+  "aliases": [
+    "森林宝穴",
+    "ジャングルポケット",
+    "Jungle Pocket",
+    "【王者的吶喊】叢林口袋",
+    "叢林口袋",
+    "王者的吶喊",
+    "密林の王者",
+    "王者の喊声"
+  ],
+  "profile": {
+    "birthday": "05-07",
+    "birthday_raw": "5月7日",
+    "birthday_day_of_year": 128,
+    "height_cm": 158,
+    "height_raw": "158cm",
+    "cv": "藤本侑里",
+    "cv_raw": "藤本侑里",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "B",
+      "nige": "G",
+      "senko": "D",
+      "sashi": "A",
+      "oikomi": "B"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/ff/eap7jjigp1dqruqxad8g70gdmxc501d.png/100px-Chr_icon_1094.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c2/UPDCH_JunglePocket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/fc/JunglePocket_Intro.jpg!/fw/280?v=20240324102332"
+    ],
+    "image_local_path": "/api/assets/jangurupoketto-thumb",
+    "asset_id": "jangurupoketto-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%8E%8B%E8%80%85%E7%9A%84%E5%90%B6%E5%96%8A%E3%80%91%E5%8F%A2%E6%9E%97%E5%8F%A3%E8%A2%8B",
+      "https://zh.moegirl.org.cn/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/ff/eap7jjigp1dqruqxad8g70gdmxc501d.png/100px-Chr_icon_1094.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c2/UPDCH_JunglePocket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/fc/JunglePocket_Intro.jpg!/fw/280?v=20240324102332",
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c2/UPDCH_JunglePocket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "原本她是在自由赛事（类似现实赛马障碍赛的一种赛制，善信大厅语音有提到过，暂且使用原文直译）的世界里能够束缚住那帮赛马娘的队长，但在受到了富士奇石的奔跑的冲击后，就此踏入了官方赛事的世界之中。 接受着来自马仔们热情的声援，今天的她也是大胜而归。",
+    "intro_paragraphs": [
+      "原本她是在自由赛事（类似现实赛马障碍赛的一种赛制，善信大厅语音有提到过，暂且使用原文直译）的世界里能够束缚住那帮赛马娘的队长，但在受到了富士奇石的奔跑的冲击后，就此踏入了官方赛事的世界之中。",
+      "接受着来自马仔们热情的声援，今天的她也是大胜而归。"
+    ],
+    "quote_raw": "立下“要成为最强”的豪言壮语的任性赛马娘。",
+    "weight_desc_raw": "誰管它",
+    "bust_raw": "77",
+    "waist_raw": "56",
+    "hip_raw": "80"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "森林宝穴",
+      "character_id": "1094",
+      "birthday_raw": "5月7日",
+      "height_raw": "158",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "21",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/ff/eap7jjigp1dqruqxad8g70gdmxc501d.png/100px-Chr_icon_1094.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/ff/eap7jjigp1dqruqxad8g70gdmxc501d.png/100px-Chr_icon_1094.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "森林宝穴",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4",
+      "raw_name_zh": "森林宝穴",
+      "raw_name_jp": "ジャングルポケット",
+      "nickname_raw": "王者の喊声",
+      "star_raw": "3",
+      "birthday_raw": "5月7日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "不知道",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "cv_raw": "藤本侑里",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "B",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%8E%8B%E8%80%85%E7%9A%84%E5%90%B6%E5%96%8A%E3%80%91%E5%8F%A2%E6%9E%97%E5%8F%A3%E8%A2%8B",
+      "raw_name_zh": "森林宝穴",
+      "raw_name_jp": null,
+      "translated_name_raw": "叢林口袋",
+      "nickname_raw": "王者的吶喊",
+      "page_title": "【王者的吶喊】叢林口袋",
+      "page_title_aliases": [
+        "【王者的吶喊】叢林口袋",
+        "叢林口袋",
+        "王者的吶喊"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月7日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "誰管它",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "藤本侑里",
+      "introduction_raw": "以最強為目標，闖蕩競賽之路！天衣無縫的不良領袖",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%8E%8B%E8%80%85%E7%9A%84%E5%90%B6%E5%96%8A%E3%80%91%E5%8F%A2%E6%9E%97%E5%8F%A3%E8%A2%8B",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "森林宝穴",
+      "raw_name_jp": "ジャングルポケット",
+      "cv_raw": "藤本侑里",
+      "birthday_raw": "5月7日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "不知道",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "quote_raw": "立下“要成为最强”的豪言壮语的任性赛马娘。",
+      "intro_paragraphs": [
+        "原本她是在自由赛事（类似现实赛马障碍赛的一种赛制，善信大厅语音有提到过，暂且使用原文直译）的世界里能够束缚住那帮赛马娘的队长，但在受到了富士奇石的奔跑的冲击后，就此踏入了官方赛事的世界之中。",
+        "接受着来自马仔们热情的声援，今天的她也是大胜而归。"
+      ],
+      "introduction": "原本她是在自由赛事（类似现实赛马障碍赛的一种赛制，善信大厅语音有提到过，暂且使用原文直译）的世界里能够束缚住那帮赛马娘的队长，但在受到了富士奇石的奔跑的冲击后，就此踏入了官方赛事的世界之中。\n接受着来自马仔们热情的声援，今天的她也是大胜而归。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c2/UPDCH_JunglePocket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c2/UPDCH_JunglePocket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4",
+      "canonical_name_zh": "森林宝穴",
+      "aliases": [
+        "森林宝穴"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4",
+      "raw_name_zh": "森林宝穴",
+      "page_title": "森林宝穴",
+      "raw_name_jp": "ジャングルポケット",
+      "raw_name_en": null,
+      "aliases": [
+        "密林の王者",
+        "森林宝穴"
+      ],
+      "birthday_raw": "5月7日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "不知道",
+      "bust_raw": "77",
+      "waist_raw": "56",
+      "hip_raw": "80",
+      "cv_raw": "藤本侑里",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/fc/JunglePocket_Intro.jpg!/fw/280?v=20240324102332",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/fc/JunglePocket_Intro.jpg!/fw/280?v=20240324102332",
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c2/UPDCH_JunglePocket_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A3%AE%E6%9E%97%E5%AE%9D%E7%A9%B4"
+    }
+  }
+}

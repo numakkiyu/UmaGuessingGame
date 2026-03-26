@@ -1,0 +1,32 @@
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
+import { ZodError } from "zod";
+import { parseEnv } from "../src/config/schema";
+
+describe("config schema", () => {
+  it("parses defaults and required values", () => {
+    const env = parseEnv({
+      NODE_ENV: "test",
+      DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/umaguessinggame",
+      REDIS_URL: "redis://localhost:6379",
+    } as NodeJS.ProcessEnv);
+    assert.equal(env.MAX_GUESSES, 8);
+    assert.equal(env.TURNSTILE_ENABLED, false);
+  });
+
+  it("requires both turnstile keys when turnstile is enabled", () => {
+    assert.throws(
+      () =>
+        parseEnv({
+          NODE_ENV: "test",
+          DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/umaguessinggame",
+          REDIS_URL: "redis://localhost:6379",
+          TURNSTILE_ENABLED: "true",
+        } as NodeJS.ProcessEnv),
+      (error) =>
+        error instanceof ZodError &&
+        error.issues.some((issue) => issue.message.includes("TURNSTILE_SITE_KEY")) &&
+        error.issues.some((issue) => issue.message.includes("TURNSTILE_SECRET_KEY")),
+    );
+  });
+});

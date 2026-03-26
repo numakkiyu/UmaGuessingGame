@@ -1,0 +1,192 @@
+{
+  "id": "marushuroreenu",
+  "name_zh": "洛林军歌",
+  "name_jp": "マルシュロレーヌ",
+  "aliases": [
+    "マルちゃん",
+    "洛林军歌",
+    "マルシュロレーヌ"
+  ],
+  "birthday": "02-04",
+  "birthday_day_of_year": 35,
+  "birthday_raw": "2月4日",
+  "height_cm": 157,
+  "height_raw": "157",
+  "grade": null,
+  "grade_raw": null,
+  "dormitory": null,
+  "dorm_raw": null,
+  "star": null,
+  "star_raw": null,
+  "cv": "近贞月乃",
+  "cv_raw": "近贞月乃",
+  "quote_raw": "极度内向，除非通过自己制作的玩偶，否则几乎无法与周围人进行对话。",
+  "introduction": "另一方面，通过玩偶的言行非常开朗和擅长社交。 擅长创意类技能，通过提供插画和设计来支持青梅竹马的直播活动。",
+  "intro_paragraphs": [
+    "另一方面，通过玩偶的言行非常开朗和擅长社交。",
+    "擅长创意类技能，通过提供插画和设计来支持青梅竹马的直播活动。"
+  ],
+  "weight_desc_raw": "保密",
+  "bust_raw": "90",
+  "waist_raw": "59",
+  "hip_raw": "89",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/lgko86f589mvmzrcl1wmg5ubfnhp1fy.png/100px-Chr_icon_1140.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/lgko86f589mvmzrcl1wmg5ubfnhp1fy.png/100px-Chr_icon_1140.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125956",
+    "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/280?v=20260222125956"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/lgko86f589mvmzrcl1wmg5ubfnhp1fy.png/100px-Chr_icon_1140.png"
+    ],
+    "biliwiki_gallery": [],
+    "biliwiki_detail": [],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125956"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/280?v=20260222125956",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125956"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E6%B4%9B%E6%9E%97%E5%86%9B%E6%AD%8C",
+    "https://zh.moegirl.org.cn/%E6%B4%9B%E6%9E%97%E5%86%9B%E6%AD%8C"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": null,
+    "dirt": null,
+    "sprint": null,
+    "mile": null,
+    "medium": null,
+    "long": null,
+    "nige": null,
+    "senko": null,
+    "sashi": null,
+    "oikomi": null
+  },
+  "surface_group": [],
+  "distance_group": [],
+  "running_style_group": [],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "洛林军歌",
+      "character_id": "1140",
+      "birthday_raw": "2月4日",
+      "height_raw": "157",
+      "bust_raw": "90",
+      "waist_raw": "59",
+      "hip_raw": "89",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "31",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/lgko86f589mvmzrcl1wmg5ubfnhp1fy.png/100px-Chr_icon_1140.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/lgko86f589mvmzrcl1wmg5ubfnhp1fy.png/100px-Chr_icon_1140.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%B4%9B%E6%9E%97%E5%86%9B%E6%AD%8C"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%B4%9B%E6%9E%97%E5%86%9B%E6%AD%8C",
+      "raw_name_zh": "洛林军歌",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%B4%9B%E6%9E%97%E5%86%9B%E6%AD%8C"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "洛林军歌",
+      "raw_name_jp": "マルシュロレーヌ",
+      "cv_raw": "近贞月乃",
+      "birthday_raw": "2月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "保密",
+      "bust_raw": "90",
+      "waist_raw": "59",
+      "hip_raw": "89",
+      "quote_raw": "极度内向，除非通过自己制作的玩偶，否则几乎无法与周围人进行对话。",
+      "intro_paragraphs": [
+        "另一方面，通过玩偶的言行非常开朗和擅长社交。",
+        "擅长创意类技能，通过提供插画和设计来支持青梅竹马的直播活动。"
+      ],
+      "introduction": "另一方面，通过玩偶的言行非常开朗和擅长社交。\n擅长创意类技能，通过提供插画和设计来支持青梅竹马的直播活动。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125956",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125956"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%B4%9B%E6%9E%97%E5%86%9B%E6%AD%8C",
+      "canonical_name_zh": "洛林军歌",
+      "aliases": [
+        "洛林军歌"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%B4%9B%E6%9E%97%E5%86%9B%E6%AD%8C",
+      "raw_name_zh": "洛林军歌",
+      "page_title": "洛林军歌",
+      "raw_name_jp": "マルシュロレーヌ",
+      "raw_name_en": null,
+      "aliases": [
+        "マルちゃん",
+        "洛林军歌"
+      ],
+      "birthday_raw": "2月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "保密",
+      "bust_raw": "90",
+      "waist_raw": "59",
+      "hip_raw": "89",
+      "cv_raw": "近贞月乃",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/280?v=20260222125956",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/280?v=20260222125956",
+        "https://storage.moegirl.org.cn/moegirl/commons/9/96/UPDCH_MarcheLorraine_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222125956"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%B4%9B%E6%9E%97%E5%86%9B%E6%AD%8C"
+    }
+  }
+}

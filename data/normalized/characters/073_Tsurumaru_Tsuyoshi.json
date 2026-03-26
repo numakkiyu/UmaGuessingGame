@@ -1,0 +1,305 @@
+{
+  "id": "tsurumarutsuyoshi",
+  "order": 73,
+  "file_name": "073_Tsurumaru_Tsuyoshi.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "鹤丸刚志",
+    "zh_tw": null,
+    "jp": "ツルマルツヨシ",
+    "en": "Tsurumaru Tsuyoshi"
+  },
+  "aliases": [
+    "鹤丸刚志",
+    "ツルマルツヨシ",
+    "Tsurumaru Tsuyoshi",
+    "【志向、遠大、堅強！】鶴丸強志",
+    "鶴丸強志",
+    "志向、遠大、堅強！",
+    "志、高し、強し！"
+  ],
+  "profile": {
+    "birthday": "04-06",
+    "birthday_raw": "4月6日",
+    "birthday_day_of_year": 97,
+    "height_cm": 160,
+    "height_raw": "160cm",
+    "cv": "青山吉能",
+    "cv_raw": "青山吉能",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 2,
+    "star_raw": "2",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "F",
+      "mile": "D",
+      "medium": "A",
+      "long": "C",
+      "nige": "G",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "E"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/fley9qycz02acmllare05ouegiw8q91.png/100px-Chr_icon_1073.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/40/UPDCH_TsurumaruTsuyoshi_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220318063531",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/7a/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97_pid103304155.jpg!/fw/280?v=20230225101558"
+    ],
+    "image_local_path": "/api/assets/tsurumarutsuyoshi-thumb",
+    "asset_id": "tsurumarutsuyoshi-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%BF%97%E5%90%91%E3%80%81%E9%81%A0%E5%A4%A7%E3%80%81%E5%A0%85%E5%BC%B7%EF%BC%81%E3%80%91%E9%B6%B4%E4%B8%B8%E5%BC%B7%E5%BF%97",
+      "https://zh.moegirl.org.cn/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/fley9qycz02acmllare05ouegiw8q91.png/100px-Chr_icon_1073.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/40/UPDCH_TsurumaruTsuyoshi_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220318063531"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7a/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97_pid103304155.jpg!/fw/280?v=20230225101558",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/40/UPDCH_TsurumaruTsuyoshi_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220318063531"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "元气满满、积极乐观，不论何事都拼尽全力的赛马娘。 然而和性格相对，身体状况却始终跟不上来。 虽拥有着不仅限于奔跑的极高潜力，却无奈于全力挑战但总是倒下、无果而终。 但即便如此，今天也仍然向着梦中“三冠马娘”的目标，全力以赴地奔跑着——这就是“刚志”之心！",
+    "intro_paragraphs": [
+      "元气满满、积极乐观，不论何事都拼尽全力的赛马娘。",
+      "然而和性格相对，身体状况却始终跟不上来。",
+      "虽拥有着不仅限于奔跑的极高潜力，却无奈于全力挑战但总是倒下、无果而终。",
+      "但即便如此，今天也仍然向着梦中“三冠马娘”的目标，全力以赴地奔跑着——这就是“刚志”之心！"
+    ],
+    "quote_raw": "“一次又一次，一直拼尽全力地奔跑！好了，加油吧——！……啊，呛到啦！”",
+    "weight_desc_raw": "增重中",
+    "bust_raw": "85",
+    "waist_raw": "58",
+    "hip_raw": "86"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "鹤丸刚志",
+      "character_id": "1073",
+      "birthday_raw": "4月6日",
+      "height_raw": "160",
+      "bust_raw": "85",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/fley9qycz02acmllare05ouegiw8q91.png/100px-Chr_icon_1073.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/fley9qycz02acmllare05ouegiw8q91.png/100px-Chr_icon_1073.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "鹤丸刚志",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97",
+      "star_raw": "2",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97",
+      "raw_name_zh": "鹤丸刚志",
+      "raw_name_jp": "ツルマルツヨシ",
+      "nickname_raw": "志、高し、強し！",
+      "star_raw": "2",
+      "birthday_raw": "4月6日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "増量中",
+      "bust_raw": "85",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "cv_raw": "青山吉能",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%BF%97%E5%90%91%E3%80%81%E9%81%A0%E5%A4%A7%E3%80%81%E5%A0%85%E5%BC%B7%EF%BC%81%E3%80%91%E9%B6%B4%E4%B8%B8%E5%BC%B7%E5%BF%97",
+      "raw_name_zh": "鹤丸刚志",
+      "raw_name_jp": null,
+      "translated_name_raw": "鶴丸強志",
+      "nickname_raw": "志向、遠大、堅強！",
+      "page_title": "【志向、遠大、堅強！】鶴丸強志",
+      "page_title_aliases": [
+        "【志向、遠大、堅強！】鶴丸強志",
+        "鶴丸強志",
+        "志向、遠大、堅強！"
+      ],
+      "star_raw": "2",
+      "birthday_raw": "4月6日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "增重中",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "青山吉能",
+      "introduction_raw": "夢想獲得三冠！！總是全力以赴！！經常超越極限！？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%BF%97%E5%90%91%E3%80%81%E9%81%A0%E5%A4%A7%E3%80%81%E5%A0%85%E5%BC%B7%EF%BC%81%E3%80%91%E9%B6%B4%E4%B8%B8%E5%BC%B7%E5%BF%97",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "鹤丸刚志",
+      "raw_name_jp": "ツルマルツヨシ",
+      "cv_raw": "青山吉能",
+      "birthday_raw": "4月6日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "增量中",
+      "bust_raw": "85",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "quote_raw": "“一次又一次，一直拼尽全力地奔跑！好了，加油吧——！……啊，呛到啦！”",
+      "intro_paragraphs": [
+        "元气满满、积极乐观，不论何事都拼尽全力的赛马娘。",
+        "然而和性格相对，身体状况却始终跟不上来。",
+        "虽拥有着不仅限于奔跑的极高潜力，却无奈于全力挑战但总是倒下、无果而终。",
+        "但即便如此，今天也仍然向着梦中“三冠马娘”的目标，全力以赴地奔跑着——这就是“刚志”之心！"
+      ],
+      "introduction": "元气满满、积极乐观，不论何事都拼尽全力的赛马娘。\n然而和性格相对，身体状况却始终跟不上来。\n虽拥有着不仅限于奔跑的极高潜力，却无奈于全力挑战但总是倒下、无果而终。\n但即便如此，今天也仍然向着梦中“三冠马娘”的目标，全力以赴地奔跑着——这就是“刚志”之心！",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/40/UPDCH_TsurumaruTsuyoshi_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220318063531",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/40/UPDCH_TsurumaruTsuyoshi_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220318063531"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97",
+      "canonical_name_zh": "鹤丸刚志",
+      "aliases": [
+        "鹤丸刚志"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97",
+      "raw_name_zh": "鹤丸刚志",
+      "page_title": "鹤丸刚志",
+      "raw_name_jp": "ツルマルツヨシ",
+      "raw_name_en": null,
+      "aliases": [
+        "鹤丸刚志"
+      ],
+      "birthday_raw": "4月6日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "增量中",
+      "bust_raw": "85",
+      "waist_raw": "58",
+      "hip_raw": "86",
+      "cv_raw": "青山吉能",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/7a/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97_pid103304155.jpg!/fw/280?v=20230225101558",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7a/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97_pid103304155.jpg!/fw/280?v=20230225101558",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/40/UPDCH_TsurumaruTsuyoshi_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220318063531"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%B9%A4%E4%B8%B8%E5%88%9A%E5%BF%97"
+    }
+  }
+}

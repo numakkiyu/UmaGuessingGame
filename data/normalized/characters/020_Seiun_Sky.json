@@ -1,0 +1,312 @@
+{
+  "id": "seiunsukai",
+  "order": 20,
+  "file_name": "020_Seiun_Sky.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "青云天空",
+    "zh_tw": null,
+    "jp": "セイウンスカイ",
+    "en": "Seiun Sky"
+  },
+  "aliases": [
+    "青云天空",
+    "セイウンスカイ",
+    "Seiun Sky",
+    "【青雲釣術】青雲天空",
+    "青雲天空",
+    "青雲釣術",
+    "Trickster[1]",
+    "あおぐもサミング"
+  ],
+  "profile": {
+    "birthday": "04-26",
+    "birthday_raw": "4月26日",
+    "birthday_day_of_year": 117,
+    "height_cm": 155,
+    "height_raw": "155cm",
+    "cv": "鬼頭明里",
+    "cv_raw": "鬼頭明里",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "A",
+      "senko": "B",
+      "sashi": "D",
+      "oikomi": "E"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/s4x81bg2u53foiomvcpuu24usp8azkh.png/100px-Chr_icon_1020.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/1e/py8tiyvozrevnuuvv01x4b44p6rr51l.png/100px-Chr_icon_1020_102002_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a0/UPDCH_SeiunSky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051123",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/5f/PID94144548.jpg!/fw/280?v=20211121075225"
+    ],
+    "image_local_path": "/api/assets/seiunsukai-thumb",
+    "asset_id": "seiunsukai-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E9%9D%92%E9%9B%B2%E9%87%A3%E8%A1%93%E3%80%91%E9%9D%92%E9%9B%B2%E5%A4%A9%E7%A9%BA",
+      "https://zh.moegirl.org.cn/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/s4x81bg2u53foiomvcpuu24usp8azkh.png/100px-Chr_icon_1020.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1e/py8tiyvozrevnuuvv01x4b44p6rr51l.png/100px-Chr_icon_1020_102002_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1e/py8tiyvozrevnuuvv01x4b44p6rr51l.png/100px-Chr_icon_1020_102002_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a0/UPDCH_SeiunSky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051123"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/5f/PID94144548.jpg!/fw/280?v=20211121075225",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a0/UPDCH_SeiunSky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051123"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "一直轻飘飘的，总是提不起干劲的悠哉的女孩子。 但是是个相当了得的策士，懒惰只是为了让别人放松警惕而摆出来的姿态，又或者真的只是懒而已。 兴趣是白天睡觉和钓鱼。也很喜欢猫，经常在野地上与猫一起团成一团。 与特别周她们是同期。",
+    "intro_paragraphs": [
+      "一直轻飘飘的，总是提不起干劲的悠哉的女孩子。",
+      "但是是个相当了得的策士，懒惰只是为了让别人放松警惕而摆出来的姿态，又或者真的只是懒而已。",
+      "兴趣是白天睡觉和钓鱼。也很喜欢猫，经常在野地上与猫一起团成一团。",
+      "与特别周她们是同期。"
+    ],
+    "quote_raw": "“好啦好啦，不要着急轻松点。那样的话就会顺利的~”",
+    "weight_desc_raw": "沒有申報",
+    "bust_raw": "77",
+    "waist_raw": "55",
+    "hip_raw": "80"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "青云天空",
+      "character_id": "1020",
+      "birthday_raw": "4月26日",
+      "height_raw": "155",
+      "bust_raw": "77",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "22",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/s4x81bg2u53foiomvcpuu24usp8azkh.png/100px-Chr_icon_1020.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/s4x81bg2u53foiomvcpuu24usp8azkh.png/100px-Chr_icon_1020.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "青云天空",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "20%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "D",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA",
+      "raw_name_zh": "青云天空",
+      "raw_name_jp": "セイウンスカイ",
+      "nickname_raw": "あおぐもサミング",
+      "star_raw": "3",
+      "birthday_raw": "4月26日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "漏报",
+      "bust_raw": "77",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "鬼头明里",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "D",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1e/py8tiyvozrevnuuvv01x4b44p6rr51l.png/100px-Chr_icon_1020_102002_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%9D%92%E9%9B%B2%E9%87%A3%E8%A1%93%E3%80%91%E9%9D%92%E9%9B%B2%E5%A4%A9%E7%A9%BA",
+      "raw_name_zh": "青云天空",
+      "raw_name_jp": null,
+      "translated_name_raw": "青雲天空",
+      "nickname_raw": "青雲釣術",
+      "page_title": "【青雲釣術】青雲天空",
+      "page_title_aliases": [
+        "【青雲釣術】青雲天空",
+        "青雲天空",
+        "青雲釣術"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月26日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "沒有申報",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "鬼頭明里",
+      "introduction_raw": "我的人生就是要我行我素。漂泊如浮雲……",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1e/py8tiyvozrevnuuvv01x4b44p6rr51l.png/100px-Chr_icon_1020_102002_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%9D%92%E9%9B%B2%E9%87%A3%E8%A1%93%E3%80%91%E9%9D%92%E9%9B%B2%E5%A4%A9%E7%A9%BA",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "D",
+      "oikomi_raw": "E"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "青云天空",
+      "raw_name_jp": "セイウンスカイ",
+      "cv_raw": "鬼头明里",
+      "birthday_raw": "4月26日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "忘记申报",
+      "bust_raw": "77",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "“好啦好啦，不要着急轻松点。那样的话就会顺利的~”",
+      "intro_paragraphs": [
+        "一直轻飘飘的，总是提不起干劲的悠哉的女孩子。",
+        "但是是个相当了得的策士，懒惰只是为了让别人放松警惕而摆出来的姿态，又或者真的只是懒而已。",
+        "兴趣是白天睡觉和钓鱼。也很喜欢猫，经常在野地上与猫一起团成一团。",
+        "与特别周她们是同期。"
+      ],
+      "introduction": "一直轻飘飘的，总是提不起干劲的悠哉的女孩子。\n但是是个相当了得的策士，懒惰只是为了让别人放松警惕而摆出来的姿态，又或者真的只是懒而已。\n兴趣是白天睡觉和钓鱼。也很喜欢猫，经常在野地上与猫一起团成一团。\n与特别周她们是同期。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a0/UPDCH_SeiunSky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051123",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a0/UPDCH_SeiunSky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051123"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA",
+      "canonical_name_zh": "青云天空",
+      "aliases": [
+        "青云天空"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA",
+      "raw_name_zh": "青云天空",
+      "page_title": "青云天空",
+      "raw_name_jp": "セイウンスカイ",
+      "raw_name_en": null,
+      "aliases": [
+        "Trickster[1]",
+        "青云天空"
+      ],
+      "birthday_raw": "4月26日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "忘记申报",
+      "bust_raw": "77",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "鬼头明里",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/5f/PID94144548.jpg!/fw/280?v=20211121075225",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/5f/PID94144548.jpg!/fw/280?v=20211121075225",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a0/UPDCH_SeiunSky_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051123"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%9D%92%E4%BA%91%E5%A4%A9%E7%A9%BA"
+    }
+  }
+}

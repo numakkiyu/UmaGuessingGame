@@ -1,0 +1,229 @@
+{
+  "id": "biriivu",
+  "name_zh": "信念",
+  "name_jp": "ビリーヴ",
+  "aliases": [
+    "信念",
+    "ビリーヴ",
+    "精粋"
+  ],
+  "birthday": "04-26",
+  "birthday_day_of_year": 117,
+  "birthday_raw": "4月26日",
+  "height_cm": 156,
+  "height_raw": "156cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "秋山実咲",
+  "cv_raw": "秋山実咲",
+  "quote_raw": "有着坚定信念、匠人气质。",
+  "introduction": "是一个默默地不断努力，认真且完美地完成工作的忍耐力、持续力的马娘。 她对速度很讲究，在\"坚持就是速度\"的信念下，向着短距离赛程迈进着。 其实，他是个相当成熟的孩子。",
+  "intro_paragraphs": [
+    "是一个默默地不断努力，认真且完美地完成工作的忍耐力、持续力的马娘。",
+    "她对速度很讲究，在\"坚持就是速度\"的信念下，向着短距离赛程迈进着。",
+    "其实，他是个相当成熟的孩子。"
+  ],
+  "weight_desc_raw": "堅実な仕上がり",
+  "bust_raw": "72",
+  "waist_raw": "54",
+  "hip_raw": "77",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/pojjxsuhuraogaaglcc5ixddmf35uyp.png/100px-Chr_icon_1095.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/4/4f/UPDCH_Believe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/pojjxsuhuraogaaglcc5ixddmf35uyp.png/100px-Chr_icon_1095.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/4/4f/UPDCH_Believe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/4/4f/UPDCH_Believe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E4%BF%A1%E5%BF%B5",
+    "https://zh.moegirl.org.cn/index.php?title=%E4%BF%A1%E5%BF%B5&action=edit&redlink=1"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "A",
+    "mile": "D",
+    "medium": "G",
+    "long": "G",
+    "nige": "D",
+    "senko": "A",
+    "sashi": "D",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "短"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "信念",
+      "character_id": "1095",
+      "birthday_raw": "4月26日",
+      "height_raw": "156",
+      "bust_raw": "72",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "18",
+      "body_type_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/pojjxsuhuraogaaglcc5ixddmf35uyp.png/100px-Chr_icon_1095.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/pojjxsuhuraogaaglcc5ixddmf35uyp.png/100px-Chr_icon_1095.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BF%A1%E5%BF%B5"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "信念",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BF%A1%E5%BF%B5",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "D",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E4%BF%A1%E5%BF%B5",
+      "raw_name_zh": "信念",
+      "raw_name_jp": "ビリーヴ",
+      "nickname_raw": "精粋",
+      "star_raw": "3",
+      "birthday_raw": "4月26日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "堅実な仕上がり",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "秋山実咲",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "D",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BF%A1%E5%BF%B5"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "信念",
+      "raw_name_jp": "ビリーヴ",
+      "cv_raw": "秋山实咲",
+      "birthday_raw": "4月26日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "坚实的成果",
+      "bust_raw": "72",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "quote_raw": "有着坚定信念、匠人气质。",
+      "intro_paragraphs": [
+        "是一个默默地不断努力，认真且完美地完成工作的忍耐力、持续力的马娘。",
+        "她对速度很讲究，在\"坚持就是速度\"的信念下，向着短距离赛程迈进着。",
+        "其实，他是个相当成熟的孩子。"
+      ],
+      "introduction": "是一个默默地不断努力，认真且完美地完成工作的忍耐力、持续力的马娘。\n她对速度很讲究，在\"坚持就是速度\"的信念下，向着短距离赛程迈进着。\n其实，他是个相当成熟的孩子。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/4f/UPDCH_Believe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4f/UPDCH_Believe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E4%BF%A1%E5%BF%B5&action=edit&redlink=1",
+      "canonical_name_zh": "信念",
+      "aliases": [
+        "信念"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E4%BF%A1%E5%BF%B5&action=edit&redlink=1",
+      "raw_name_zh": "信念",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "ビリーヴ",
+      "raw_name_en": null,
+      "aliases": [
+        "信念"
+      ],
+      "birthday_raw": "4月26日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "坚实的成果",
+      "bust_raw": "72",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "cv_raw": "秋山实咲",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/4f/UPDCH_Believe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4f/UPDCH_Believe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135033"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E4%BF%A1%E5%BF%B5&action=edit&redlink=1"
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "id": "yaenomuteki",
+  "order": 72,
+  "file_name": "072_Yaeno_Muteki.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "八重无敌",
+    "zh_tw": null,
+    "jp": "ヤエノムテキ",
+    "en": "Yaeno Muteki"
+  },
+  "aliases": [
+    "八重无敌",
+    "ヤエノムテキ",
+    "Yaeno Muteki",
+    "【四白流星襲擊】八重無敵",
+    "八重無敵",
+    "四白流星襲擊",
+    "八重母铁鸡",
+    "四白流星の襲"
+  ],
+  "profile": {
+    "birthday": "04-11",
+    "birthday_raw": "4月11日",
+    "birthday_day_of_year": 102,
+    "height_cm": 159,
+    "height_raw": "159cm",
+    "cv": "日原あゆみ",
+    "cv_raw": "日原あゆみ",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "E",
+      "nige": "F",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "G"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/93/r11at7crzm2twonzh6u4zhmvdna2udf.png/100px-Chr_icon_1072.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/7isrcdqh8e8gs6yqghzmkydq01io3o3.png/100px-Chr_icon_1072_107202_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_YaenoMuteki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/46/Pid93851815.jpg!/fw/280?v=20211124063506"
+    ],
+    "image_local_path": "/api/assets/yaenomuteki-thumb",
+    "asset_id": "yaenomuteki-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%9B%9B%E7%99%BD%E6%B5%81%E6%98%9F%E8%A5%B2%E6%93%8A%E3%80%91%E5%85%AB%E9%87%8D%E7%84%A1%E6%95%B5",
+      "https://zh.moegirl.org.cn/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/93/r11at7crzm2twonzh6u4zhmvdna2udf.png/100px-Chr_icon_1072.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/7isrcdqh8e8gs6yqghzmkydq01io3o3.png/100px-Chr_icon_1072_107202_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/7isrcdqh8e8gs6yqghzmkydq01io3o3.png/100px-Chr_icon_1072_107202_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_YaenoMuteki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/46/Pid93851815.jpg!/fw/280?v=20211124063506",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_YaenoMuteki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "每天都在打磨着自己拳打狂风、脚踢大地、决不伤人的武术——不对，是比赛的赛马娘。 看上去是非常注重礼节的顽固的马娘，但偶尔也能窥视到小孩子般的血气方刚的本质一面。 思念祖父母的心情更甚于别人，她的梦想是，将自家的流派更加地千锤百炼。",
+    "intro_paragraphs": [
+      "每天都在打磨着自己拳打狂风、脚踢大地、决不伤人的武术——不对，是比赛的赛马娘。",
+      "看上去是非常注重礼节的顽固的马娘，但偶尔也能窥视到小孩子般的血气方刚的本质一面。",
+      "思念祖父母的心情更甚于别人，她的梦想是，将自家的流派更加地千锤百炼。"
+    ],
+    "quote_raw": "“金刚八重垣流的繁荣，这是我对爷爷……不，对祖父母能做的唯一报答。”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "78",
+    "waist_raw": "54",
+    "hip_raw": "81"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "八重无敌",
+      "character_id": "1072",
+      "birthday_raw": "4月11日",
+      "height_raw": "159",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "81",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "24",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/93/r11at7crzm2twonzh6u4zhmvdna2udf.png/100px-Chr_icon_1072.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/93/r11at7crzm2twonzh6u4zhmvdna2udf.png/100px-Chr_icon_1072.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "八重无敌",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C",
+      "raw_name_zh": "八重无敌",
+      "raw_name_jp": "ヤエノムテキ",
+      "nickname_raw": "四白流星の襲",
+      "star_raw": "3",
+      "birthday_raw": "4月11日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "81",
+      "cv_raw": "日原步美",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/7isrcdqh8e8gs6yqghzmkydq01io3o3.png/100px-Chr_icon_1072_107202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%9B%9B%E7%99%BD%E6%B5%81%E6%98%9F%E8%A5%B2%E6%93%8A%E3%80%91%E5%85%AB%E9%87%8D%E7%84%A1%E6%95%B5",
+      "raw_name_zh": "八重无敌",
+      "raw_name_jp": null,
+      "translated_name_raw": "八重無敵",
+      "nickname_raw": "四白流星襲擊",
+      "page_title": "【四白流星襲擊】八重無敵",
+      "page_title_aliases": [
+        "【四白流星襲擊】八重無敵",
+        "八重無敵",
+        "四白流星襲擊"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月11日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "81",
+      "cv_raw": "日原あゆみ",
+      "introduction_raw": "以武術展現禮儀並奔馳。個性粗曠的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/7isrcdqh8e8gs6yqghzmkydq01io3o3.png/100px-Chr_icon_1072_107202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%9B%9B%E7%99%BD%E6%B5%81%E6%98%9F%E8%A5%B2%E6%93%8A%E3%80%91%E5%85%AB%E9%87%8D%E7%84%A1%E6%95%B5",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "八重无敌",
+      "raw_name_jp": "ヤエノムテキ",
+      "cv_raw": "日原步美",
+      "birthday_raw": "4月11日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "81",
+      "quote_raw": "“金刚八重垣流的繁荣，这是我对爷爷……不，对祖父母能做的唯一报答。”",
+      "intro_paragraphs": [
+        "每天都在打磨着自己拳打狂风、脚踢大地、决不伤人的武术——不对，是比赛的赛马娘。",
+        "看上去是非常注重礼节的顽固的马娘，但偶尔也能窥视到小孩子般的血气方刚的本质一面。",
+        "思念祖父母的心情更甚于别人，她的梦想是，将自家的流派更加地千锤百炼。"
+      ],
+      "introduction": "每天都在打磨着自己拳打狂风、脚踢大地、决不伤人的武术——不对，是比赛的赛马娘。\n看上去是非常注重礼节的顽固的马娘，但偶尔也能窥视到小孩子般的血气方刚的本质一面。\n思念祖父母的心情更甚于别人，她的梦想是，将自家的流派更加地千锤百炼。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_YaenoMuteki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_YaenoMuteki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C",
+      "canonical_name_zh": "八重无敌",
+      "aliases": [
+        "八重无敌"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C",
+      "raw_name_zh": "八重无敌",
+      "page_title": "八重无敌",
+      "raw_name_jp": "ヤエノムテキ",
+      "raw_name_en": null,
+      "aliases": [
+        "八重母铁鸡",
+        "八重无敌"
+      ],
+      "birthday_raw": "4月11日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "78",
+      "waist_raw": "54",
+      "hip_raw": "81",
+      "cv_raw": "日原步美",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/46/Pid93851815.jpg!/fw/280?v=20211124063506",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/46/Pid93851815.jpg!/fw/280?v=20211124063506",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_YaenoMuteki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%85%AB%E9%87%8D%E6%97%A0%E6%95%8C"
+    }
+  }
+}

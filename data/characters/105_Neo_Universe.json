@@ -1,0 +1,281 @@
+{
+  "id": "neoyunivuaasu",
+  "name_zh": "新宇宙",
+  "name_jp": "ネオユニヴァース",
+  "aliases": [
+    "【Universe-Naut】新宇宙",
+    "新宇宙",
+    "Universe-Naut",
+    "ネオユニヴァース"
+  ],
+  "birthday": "05-21",
+  "birthday_day_of_year": 142,
+  "birthday_raw": "5月21日",
+  "height_cm": 160,
+  "height_raw": "160cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "白石晴香",
+  "cv_raw": "白石晴香",
+  "quote_raw": "头脑十分聪明，成绩优异的赛马娘。",
+  "introduction": "唯一的缺点是“不会正常说话”。 恐怕是因为头脑太好，常常会做出让人难以理解的独特发言或行动而引人注目。 因此周遭有评价说“简直就是个外星人”……？",
+  "intro_paragraphs": [
+    "唯一的缺点是“不会正常说话”。",
+    "恐怕是因为头脑太好，常常会做出让人难以理解的独特发言或行动而引人注目。",
+    "因此周遭有评价说“简直就是个外星人”……？"
+  ],
+  "weight_desc_raw": "如同宇宙般神祕",
+  "bust_raw": "79",
+  "waist_raw": "52",
+  "hip_raw": "77",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/1esnztvbg44wm7cpny7datgo07r4pq3.png/100px-Chr_icon_1105.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/klv5q3ywq6sxvd6sz3t4wtd9wc8gh2v.png/100px-Chr_icon_1105_110502_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_NeoUniverse_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537",
+    "https://storage.moegirl.org.cn/moegirl/commons/e/e5/105672831_p1.png!/fw/280?v=20230325132450"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/1esnztvbg44wm7cpny7datgo07r4pq3.png/100px-Chr_icon_1105.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/klv5q3ywq6sxvd6sz3t4wtd9wc8gh2v.png/100px-Chr_icon_1105_110502_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/klv5q3ywq6sxvd6sz3t4wtd9wc8gh2v.png/100px-Chr_icon_1105_110502_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_NeoUniverse_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e5/105672831_p1.png!/fw/280?v=20230325132450",
+      "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_NeoUniverse_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%AE%87%E5%AE%99",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Universe-Naut%E3%80%91%E6%96%B0%E5%AE%87%E5%AE%99",
+    "https://zh.moegirl.org.cn/%E6%96%B0%E5%AE%87%E5%AE%99(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "F",
+    "mile": "B",
+    "medium": "A",
+    "long": "B",
+    "nige": "F",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "C"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "新宇宙",
+      "character_id": "1105",
+      "birthday_raw": "5月21日",
+      "height_raw": "160",
+      "bust_raw": "79",
+      "waist_raw": "52",
+      "hip_raw": "77",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/1esnztvbg44wm7cpny7datgo07r4pq3.png/100px-Chr_icon_1105.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/1esnztvbg44wm7cpny7datgo07r4pq3.png/100px-Chr_icon_1105.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%AE%87%E5%AE%99"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "新宇宙",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%AE%87%E5%AE%99",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "30%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%AE%87%E5%AE%99",
+      "raw_name_zh": "新宇宙",
+      "raw_name_jp": "ネオユニヴァース",
+      "nickname_raw": "Universe-Naut",
+      "star_raw": "3",
+      "birthday_raw": "5月21日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "如宇宙般神秘",
+      "bust_raw": "79",
+      "waist_raw": "52",
+      "hip_raw": "77",
+      "cv_raw": "白石晴香",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/klv5q3ywq6sxvd6sz3t4wtd9wc8gh2v.png/100px-Chr_icon_1105_110502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%96%B0%E5%AE%87%E5%AE%99"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Universe-Naut%E3%80%91%E6%96%B0%E5%AE%87%E5%AE%99",
+      "raw_name_zh": "新宇宙",
+      "raw_name_jp": null,
+      "translated_name_raw": "新宇宙",
+      "nickname_raw": "Universe-Naut",
+      "page_title": "【Universe-Naut】新宇宙",
+      "page_title_aliases": [
+        "【Universe-Naut】新宇宙",
+        "新宇宙",
+        "Universe-Naut"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月21日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "如同宇宙般神祕",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "白石晴香",
+      "introduction_raw": "有點不可思議？非常不可思議？散發宇宙神祕感的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/klv5q3ywq6sxvd6sz3t4wtd9wc8gh2v.png/100px-Chr_icon_1105_110502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Universe-Naut%E3%80%91%E6%96%B0%E5%AE%87%E5%AE%99",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "新宇宙",
+      "raw_name_jp": "ネオユニヴァース",
+      "cv_raw": "白石晴香",
+      "birthday_raw": "5月21日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "如宇宙般神秘",
+      "bust_raw": "79",
+      "waist_raw": "52",
+      "hip_raw": "77",
+      "quote_raw": "头脑十分聪明，成绩优异的赛马娘。",
+      "intro_paragraphs": [
+        "唯一的缺点是“不会正常说话”。",
+        "恐怕是因为头脑太好，常常会做出让人难以理解的独特发言或行动而引人注目。",
+        "因此周遭有评价说“简直就是个外星人”……？"
+      ],
+      "introduction": "唯一的缺点是“不会正常说话”。\n恐怕是因为头脑太好，常常会做出让人难以理解的独特发言或行动而引人注目。\n因此周遭有评价说“简直就是个外星人”……？",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_NeoUniverse_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_NeoUniverse_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%96%B0%E5%AE%87%E5%AE%99(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)",
+      "canonical_name_zh": "新宇宙",
+      "aliases": [
+        "新宇宙"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%96%B0%E5%AE%87%E5%AE%99(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)",
+      "raw_name_zh": "新宇宙",
+      "page_title": "新宇宙",
+      "raw_name_jp": "ネオユニヴァース",
+      "raw_name_en": null,
+      "aliases": [
+        "新宇宙"
+      ],
+      "birthday_raw": "5月21日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "如宇宙般神秘",
+      "bust_raw": "79",
+      "waist_raw": "52",
+      "hip_raw": "77",
+      "cv_raw": "白石晴香",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e5/105672831_p1.png!/fw/280?v=20230325132450",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e5/105672831_p1.png!/fw/280?v=20230325132450",
+        "https://storage.moegirl.org.cn/moegirl/commons/b/bf/UPDCH_NeoUniverse_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%96%B0%E5%AE%87%E5%AE%99(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)"
+    }
+  }
+}

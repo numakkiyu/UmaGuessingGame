@@ -1,0 +1,309 @@
+{
+  "id": "doriimujaanii",
+  "order": 119,
+  "file_name": "119_Dream_Journey.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "梦之旅",
+    "zh_tw": null,
+    "jp": "ドリームジャーニー",
+    "en": "Dream Journey"
+  },
+  "aliases": [
+    "梦之旅",
+    "ドリームジャーニー",
+    "Dream Journey",
+    "【夢之所歸】夢之旅",
+    "夢之旅",
+    "夢之所歸",
+    "梦旅",
+    "老大哥",
+    "夢路のよすが"
+  ],
+  "profile": {
+    "birthday": "02-24",
+    "birthday_raw": "2月24日",
+    "birthday_day_of_year": 55,
+    "height_cm": 144,
+    "height_raw": "144cm",
+    "cv": "吉岡茉祐",
+    "cv_raw": "吉岡茉祐",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "G",
+      "sashi": "A",
+      "oikomi": "A"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": true
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/rrpgodkrxkzb5ubq53ie0jr1f6tlngt.png/100px-Chr_icon_1119.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/18/715y89omarrx40kk5h2a5umdagw3b2m.png/100px-Chr_icon_1119_111902_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/280?v=20240624135038"
+    ],
+    "image_local_path": "/api/assets/doriimujaanii-thumb",
+    "asset_id": "doriimujaanii-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%A2%A6%E4%B9%8B%E6%97%85",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A4%A2%E4%B9%8B%E6%89%80%E6%AD%B8%E3%80%91%E5%A4%A2%E4%B9%8B%E6%97%85",
+      "https://zh.moegirl.org.cn/%E6%A2%A6%E4%B9%8B%E6%97%85"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/rrpgodkrxkzb5ubq53ie0jr1f6tlngt.png/100px-Chr_icon_1119.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/18/715y89omarrx40kk5h2a5umdagw3b2m.png/100px-Chr_icon_1119_111902_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/280?v=20240624135038",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "受到在年幼时遇见的“姐姐”强烈影响，为了看到她所说的“旅途的终点”而参加比赛。 对谁都会礼貌地对待以那个柔和的微笑，看起来像是充满了关心……？",
+    "intro_paragraphs": [
+      "受到在年幼时遇见的“姐姐”强烈影响，为了看到她所说的“旅途的终点”而参加比赛。",
+      "对谁都会礼貌地对待以那个柔和的微笑，看起来像是充满了关心……？"
+    ],
+    "quote_raw": "举止温和的优等生，是黄金巨匠的姐姐。",
+    "weight_desc_raw": "不明",
+    "bust_raw": "66",
+    "waist_raw": "48",
+    "hip_raw": "69"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "梦之旅",
+      "character_id": "1119",
+      "birthday_raw": "2月24日",
+      "height_raw": "144",
+      "bust_raw": "66",
+      "waist_raw": "48",
+      "hip_raw": "69",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "18",
+      "body_type_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/rrpgodkrxkzb5ubq53ie0jr1f6tlngt.png/100px-Chr_icon_1119.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/rrpgodkrxkzb5ubq53ie0jr1f6tlngt.png/100px-Chr_icon_1119.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A2%A6%E4%B9%8B%E6%97%85"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "梦之旅",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A2%A6%E4%B9%8B%E6%97%85",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%A2%A6%E4%B9%8B%E6%97%85",
+      "raw_name_zh": "梦之旅",
+      "raw_name_jp": "ドリームジャーニー",
+      "nickname_raw": "夢路のよすが",
+      "star_raw": "3",
+      "birthday_raw": "2月24日",
+      "height_raw": "144cm",
+      "weight_desc_raw": "不明",
+      "bust_raw": "66",
+      "waist_raw": "48",
+      "hip_raw": "69",
+      "cv_raw": "吉岡茉祐",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/18/715y89omarrx40kk5h2a5umdagw3b2m.png/100px-Chr_icon_1119_111902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A2%A6%E4%B9%8B%E6%97%85"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A4%A2%E4%B9%8B%E6%89%80%E6%AD%B8%E3%80%91%E5%A4%A2%E4%B9%8B%E6%97%85",
+      "raw_name_zh": "梦之旅",
+      "raw_name_jp": null,
+      "translated_name_raw": "夢之旅",
+      "nickname_raw": "夢之所歸",
+      "page_title": "【夢之所歸】夢之旅",
+      "page_title_aliases": [
+        "【夢之所歸】夢之旅",
+        "夢之旅",
+        "夢之所歸"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "2月24日",
+      "height_raw": "144cm",
+      "weight_desc_raw": "不明",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "吉岡茉祐",
+      "introduction_raw": "漾著微笑踏上通往夢想的旅程。眼眸深處不容窺探",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A4%A2%E4%B9%8B%E6%89%80%E6%AD%B8%E3%80%91%E5%A4%A2%E4%B9%8B%E6%97%85",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "G",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "梦之旅",
+      "raw_name_jp": "ドリームジャーニー",
+      "cv_raw": "吉冈茉祐",
+      "birthday_raw": "2月24日",
+      "height_raw": "144cm",
+      "weight_desc_raw": "不明",
+      "bust_raw": "66",
+      "waist_raw": "48",
+      "hip_raw": "69",
+      "quote_raw": "举止温和的优等生，是黄金巨匠的姐姐。",
+      "intro_paragraphs": [
+        "受到在年幼时遇见的“姐姐”强烈影响，为了看到她所说的“旅途的终点”而参加比赛。",
+        "对谁都会礼貌地对待以那个柔和的微笑，看起来像是充满了关心……？"
+      ],
+      "introduction": "受到在年幼时遇见的“姐姐”强烈影响，为了看到她所说的“旅途的终点”而参加比赛。\n对谁都会礼貌地对待以那个柔和的微笑，看起来像是充满了关心……？",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A2%A6%E4%B9%8B%E6%97%85",
+      "canonical_name_zh": "梦之旅",
+      "aliases": [
+        "梦之旅"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%A2%A6%E4%B9%8B%E6%97%85",
+      "raw_name_zh": "梦之旅",
+      "page_title": "梦之旅",
+      "raw_name_jp": "ドリームジャーニー",
+      "raw_name_en": null,
+      "aliases": [
+        "梦旅",
+        "老大哥",
+        "梦之旅"
+      ],
+      "birthday_raw": "2月24日",
+      "height_raw": "144cm",
+      "weight_desc_raw": "不明",
+      "bust_raw": "66",
+      "waist_raw": "48",
+      "hip_raw": "69",
+      "cv_raw": "吉冈茉祐",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/280?v=20240624135038",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/280?v=20240624135038",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/51/UPDCH_DreamJourney_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240624135038"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A2%A6%E4%B9%8B%E6%97%85"
+    }
+  }
+}

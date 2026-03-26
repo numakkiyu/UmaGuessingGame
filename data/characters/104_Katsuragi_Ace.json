@@ -1,0 +1,281 @@
+{
+  "id": "katsuragieesu",
+  "name_zh": "葛城王牌",
+  "name_jp": "カツラギエース",
+  "aliases": [
+    "【登龍之頂】葛城榮主",
+    "葛城榮主",
+    "登龍之頂",
+    "葛城王牌",
+    "カツラギエース",
+    "登竜之頂"
+  ],
+  "birthday": "04-24",
+  "birthday_day_of_year": 115,
+  "birthday_raw": "4月24日",
+  "height_cm": 165,
+  "height_raw": "165cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "藤原夏海",
+  "cv_raw": "藤原夏海",
+  "quote_raw": "从乡野田间飞奔而来，开朗快乐的马娘。",
+  "introduction": "讨厌无聊的固有观念和闭塞的空气，以打破它们、成为马娘界的王牌为目标。 憧憬着千明代表，并强烈渴望着超越她。",
+  "intro_paragraphs": [
+    "讨厌无聊的固有观念和闭塞的空气，以打破它们、成为马娘界的王牌为目标。",
+    "憧憬着千明代表，并强烈渴望着超越她。"
+  ],
+  "weight_desc_raw": "王牌選手級",
+  "bust_raw": "81",
+  "waist_raw": "54",
+  "hip_raw": "77",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/4bdqwlnmxpetzuifwjoj6mp9jqzcf6s.png/100px-Chr_icon_1104.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/fc/rrnjqt6i0q1799zd0ik2my0x9zi759m.png/100px-Chr_icon_1104_110402_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/3/3b/UPDCH_KatsuragiAce_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528",
+    "https://storage.moegirl.org.cn/moegirl/commons/6/65/111381904_p0.jpg!/fw/280?v=20231210142909"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/4bdqwlnmxpetzuifwjoj6mp9jqzcf6s.png/100px-Chr_icon_1104.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fc/rrnjqt6i0q1799zd0ik2my0x9zi759m.png/100px-Chr_icon_1104_110402_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fc/rrnjqt6i0q1799zd0ik2my0x9zi759m.png/100px-Chr_icon_1104_110402_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/3/3b/UPDCH_KatsuragiAce_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/6/65/111381904_p0.jpg!/fw/280?v=20231210142909",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/3b/UPDCH_KatsuragiAce_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E7%99%BB%E9%BE%8D%E4%B9%8B%E9%A0%82%E3%80%91%E8%91%9B%E5%9F%8E%E6%A6%AE%E4%B8%BB",
+    "https://zh.moegirl.org.cn/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "E",
+    "mile": "B",
+    "medium": "A",
+    "long": "B",
+    "nige": "A",
+    "senko": "A",
+    "sashi": "E",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "逃",
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "葛城王牌",
+      "character_id": "1104",
+      "birthday_raw": "4月24日",
+      "height_raw": "165",
+      "bust_raw": "81",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/4bdqwlnmxpetzuifwjoj6mp9jqzcf6s.png/100px-Chr_icon_1104.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/4bdqwlnmxpetzuifwjoj6mp9jqzcf6s.png/100px-Chr_icon_1104.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "葛城王牌",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C",
+      "raw_name_zh": "葛城王牌",
+      "raw_name_jp": "カツラギエース",
+      "nickname_raw": "登竜之頂",
+      "star_raw": "3",
+      "birthday_raw": "4月24日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "王牌级",
+      "bust_raw": "81",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "cv_raw": "藤原夏海",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fc/rrnjqt6i0q1799zd0ik2my0x9zi759m.png/100px-Chr_icon_1104_110402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%99%BB%E9%BE%8D%E4%B9%8B%E9%A0%82%E3%80%91%E8%91%9B%E5%9F%8E%E6%A6%AE%E4%B8%BB",
+      "raw_name_zh": "葛城王牌",
+      "raw_name_jp": null,
+      "translated_name_raw": "葛城榮主",
+      "nickname_raw": "登龍之頂",
+      "page_title": "【登龍之頂】葛城榮主",
+      "page_title_aliases": [
+        "【登龍之頂】葛城榮主",
+        "葛城榮主",
+        "登龍之頂"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月24日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "王牌選手級",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "藤原夏海",
+      "introduction_raw": "目標是賽馬娘界的王牌！胸懷大志、勇往直前的朝氣女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fc/rrnjqt6i0q1799zd0ik2my0x9zi759m.png/100px-Chr_icon_1104_110402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%99%BB%E9%BE%8D%E4%B9%8B%E9%A0%82%E3%80%91%E8%91%9B%E5%9F%8E%E6%A6%AE%E4%B8%BB",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "葛城王牌",
+      "raw_name_jp": "カツラギエース",
+      "cv_raw": "藤原夏海",
+      "birthday_raw": "4月24日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "王牌级的",
+      "bust_raw": "81",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "quote_raw": "从乡野田间飞奔而来，开朗快乐的马娘。",
+      "intro_paragraphs": [
+        "讨厌无聊的固有观念和闭塞的空气，以打破它们、成为马娘界的王牌为目标。",
+        "憧憬着千明代表，并强烈渴望着超越她。"
+      ],
+      "introduction": "讨厌无聊的固有观念和闭塞的空气，以打破它们、成为马娘界的王牌为目标。\n憧憬着千明代表，并强烈渴望着超越她。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/3b/UPDCH_KatsuragiAce_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3b/UPDCH_KatsuragiAce_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C",
+      "canonical_name_zh": "葛城王牌",
+      "aliases": [
+        "葛城王牌"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C",
+      "raw_name_zh": "葛城王牌",
+      "page_title": "葛城王牌",
+      "raw_name_jp": "カツラギエース",
+      "raw_name_en": null,
+      "aliases": [
+        "葛城王牌"
+      ],
+      "birthday_raw": "4月24日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "王牌级别",
+      "bust_raw": "81",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "cv_raw": "藤原夏海",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/65/111381904_p0.jpg!/fw/280?v=20231210142909",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/65/111381904_p0.jpg!/fw/280?v=20231210142909",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3b/UPDCH_KatsuragiAce_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%91%9B%E5%9F%8E%E7%8E%8B%E7%89%8C"
+    }
+  }
+}

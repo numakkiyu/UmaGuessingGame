@@ -1,0 +1,308 @@
+{
+  "id": "mejiroburaito",
+  "order": 74,
+  "file_name": "074_Mejiro_Bright.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "目白光明",
+    "zh_tw": null,
+    "jp": "メジロブライト",
+    "en": "Mejiro Bright"
+  },
+  "aliases": [
+    "目白光明",
+    "メジロブライト",
+    "Mejiro Bright",
+    "【Vernissage Line】目白光明",
+    "Vernissage Line",
+    "ブリュニサージュ・ライン"
+  ],
+  "profile": {
+    "birthday": "04-19",
+    "birthday_raw": "4月19日",
+    "birthday_day_of_year": 110,
+    "height_cm": 157,
+    "height_raw": "157cm",
+    "cv": "大西綺華",
+    "cv_raw": "大西綺華",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "D",
+      "sashi": "A",
+      "oikomi": "A"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d4/j2rriew8ypfywnjsiyunlhuz3wuhaed.png/100px-Chr_icon_1074.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/6g56wnn13iacmox97y4kfnnw8oauxud.png/100px-Chr_icon_1074_107402_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_MejiroBright_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211119152757",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/2f/PID94394621.png!/fw/280?v=20211214144453"
+    ],
+    "image_local_path": "/api/assets/mejiroburaito-thumb",
+    "asset_id": "mejiroburaito-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Vernissage_Line%E3%80%91%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E",
+      "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d4/j2rriew8ypfywnjsiyunlhuz3wuhaed.png/100px-Chr_icon_1074.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/6g56wnn13iacmox97y4kfnnw8oauxud.png/100px-Chr_icon_1074_107402_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/6g56wnn13iacmox97y4kfnnw8oauxud.png/100px-Chr_icon_1074_107402_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_MejiroBright_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211119152757"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2f/PID94394621.png!/fw/280?v=20211214144453",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_MejiroBright_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211119152757"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "落落大方、我行我素的目白家大小姐。 这样的性格中也有帮忙时笨手笨脚的一面，作为目白家的马娘却并不被周围抱有太高的期待。 然而，也有传闻说她能始终保持着节奏、贯彻自己的信条，或许实际上是目白家中的一号大人物。",
+    "intro_paragraphs": [
+      "落落大方、我行我素的目白家大小姐。",
+      "这样的性格中也有帮忙时笨手笨脚的一面，作为目白家的马娘却并不被周围抱有太高的期待。",
+      "然而，也有传闻说她能始终保持着节奏、贯彻自己的信条，或许实际上是目白家中的一号大人物。"
+    ],
+    "quote_raw": "“哎呀，轮到我出场了吗？那么，现在就开始准备吧~”",
+    "weight_desc_raw": "微增（哎呀，吃太多了～）",
+    "bust_raw": "84",
+    "waist_raw": "59",
+    "hip_raw": "81"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "目白光明",
+      "character_id": "1074",
+      "birthday_raw": "4月19日",
+      "height_raw": "157",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "81",
+      "whr_raw": "0.73",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d4/j2rriew8ypfywnjsiyunlhuz3wuhaed.png/100px-Chr_icon_1074.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d4/j2rriew8ypfywnjsiyunlhuz3wuhaed.png/100px-Chr_icon_1074.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "目白光明",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "14%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "8%",
+      "wisdom_growth_raw": "8%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E",
+      "raw_name_zh": "目白光明",
+      "raw_name_jp": "メジロブライト",
+      "nickname_raw": "ブリュニサージュ・ライン",
+      "star_raw": "3",
+      "birthday_raw": "4月19日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "微增（嘛，吃多了~）",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "81",
+      "cv_raw": "大西绮华",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/6g56wnn13iacmox97y4kfnnw8oauxud.png/100px-Chr_icon_1074_107402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Vernissage_Line%E3%80%91%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E",
+      "raw_name_zh": "目白光明",
+      "raw_name_jp": null,
+      "translated_name_raw": "目白光明",
+      "nickname_raw": "Vernissage Line",
+      "page_title": "【Vernissage Line】目白光明",
+      "page_title_aliases": [
+        "【Vernissage Line】目白光明",
+        "目白光明",
+        "Vernissage Line"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月19日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "微增（哎呀，吃太多了～）",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "81",
+      "cv_raw": "大西綺華",
+      "introduction_raw": "意志堅定節奏緩慢！悠閒的大小姐",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a0/6g56wnn13iacmox97y4kfnnw8oauxud.png/100px-Chr_icon_1074_107402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Vernissage_Line%E3%80%91%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "目白光明",
+      "raw_name_jp": "メジロブライト",
+      "cv_raw": "大西绮华",
+      "birthday_raw": "4月19日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "微增（嘛~吃多了）",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "81",
+      "quote_raw": "“哎呀，轮到我出场了吗？那么，现在就开始准备吧~”",
+      "intro_paragraphs": [
+        "落落大方、我行我素的目白家大小姐。",
+        "这样的性格中也有帮忙时笨手笨脚的一面，作为目白家的马娘却并不被周围抱有太高的期待。",
+        "然而，也有传闻说她能始终保持着节奏、贯彻自己的信条，或许实际上是目白家中的一号大人物。"
+      ],
+      "introduction": "落落大方、我行我素的目白家大小姐。\n这样的性格中也有帮忙时笨手笨脚的一面，作为目白家的马娘却并不被周围抱有太高的期待。\n然而，也有传闻说她能始终保持着节奏、贯彻自己的信条，或许实际上是目白家中的一号大人物。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_MejiroBright_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211119152757",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_MejiroBright_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211119152757"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E",
+      "canonical_name_zh": "目白光明",
+      "aliases": [
+        "目白光明"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E",
+      "raw_name_zh": "目白光明",
+      "page_title": "目白光明",
+      "raw_name_jp": "メジロブライト",
+      "raw_name_en": null,
+      "aliases": [
+        "目白光明"
+      ],
+      "birthday_raw": "4月19日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "微增（嘛，吃多了~）",
+      "bust_raw": "84",
+      "waist_raw": "59",
+      "hip_raw": "81",
+      "cv_raw": "大西绮华",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/2f/PID94394621.png!/fw/280?v=20211214144453",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2f/PID94394621.png!/fw/280?v=20211214144453",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/50/UPDCH_MejiroBright_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211119152757"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E5%85%89%E6%98%8E"
+    }
+  }
+}

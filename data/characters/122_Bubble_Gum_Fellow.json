@@ -1,0 +1,277 @@
+{
+  "id": "baburugamufyeroo",
+  "name_zh": "吹波糖",
+  "name_jp": "バブルガムフェロー",
+  "aliases": [
+    "【POPPING!】泡泡糖小子",
+    "泡泡糖小子",
+    "POPPING!",
+    "吹波糖",
+    "バブルガムフェロー"
+  ],
+  "birthday": "04-11",
+  "birthday_day_of_year": 102,
+  "birthday_raw": "4月11日",
+  "height_cm": 166,
+  "height_raw": "166cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "神谷早矢佳",
+  "cv_raw": "神谷早矢佳",
+  "quote_raw": "爆发潜能",
+  "introduction": "勇猛果敢的突击队长。 拥有强大的精神力和极快的领悟力，一旦立下目标就必定达成的天才赛马娘。 在父亲麾下的俱乐部被誉为\"四天王\"之一，与同样获此殊荣的赛马娘们立下赛场盟约——日复一日为追逐梦想而砥砺前行。",
+  "intro_paragraphs": [
+    "勇猛果敢的突击队长。",
+    "拥有强大的精神力和极快的领悟力，一旦立下目标就必定达成的天才赛马娘。",
+    "在父亲麾下的俱乐部被誉为\"四天王\"之一，与同样获此殊荣的赛马娘们立下赛场盟约——日复一日为追逐梦想而砥砺前行。"
+  ],
+  "weight_desc_raw": "如宣言般的完美狀態",
+  "bust_raw": "82",
+  "waist_raw": "58",
+  "hip_raw": "84",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/3/37/8hk8536k0em32k1nw5tw1p153nru8vw.png/100px-Chr_icon_1124.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/j7c3sj2jd118ob90m9it70j61nr7saa.png/100px-Chr_icon_1124_112402_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/b/ba/UPDCH_BubbleGumFellow_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240823165043"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/37/8hk8536k0em32k1nw5tw1p153nru8vw.png/100px-Chr_icon_1124.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/j7c3sj2jd118ob90m9it70j61nr7saa.png/100px-Chr_icon_1124_112402_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/ba/UPDCH_BubbleGumFellow_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240823165043"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/b/ba/UPDCH_BubbleGumFellow_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240823165043"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%90%B9%E6%B3%A2%E7%B3%96",
+    "https://wiki.biligame.com/umamusume/%E3%80%90POPPING!%E3%80%91%E6%B3%A1%E6%B3%A1%E7%B3%96%E5%B0%8F%E5%AD%90",
+    "https://zh.moegirl.org.cn/index.php?title=%E5%90%B9%E6%B3%A2%E7%B3%96&action=edit&redlink=1"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "A",
+    "medium": "A",
+    "long": "G",
+    "nige": "E",
+    "senko": "A",
+    "sashi": "B",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "吹波糖",
+      "character_id": "1124",
+      "birthday_raw": "4月11日",
+      "height_raw": "166",
+      "bust_raw": "82",
+      "waist_raw": "58",
+      "hip_raw": "84",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "24",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/37/8hk8536k0em32k1nw5tw1p153nru8vw.png/100px-Chr_icon_1124.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/37/8hk8536k0em32k1nw5tw1p153nru8vw.png/100px-Chr_icon_1124.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%B9%E6%B3%A2%E7%B3%96"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "吹波糖",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%B9%E6%B3%A2%E7%B3%96",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%90%B9%E6%B3%A2%E7%B3%96",
+      "raw_name_zh": "吹波糖",
+      "raw_name_jp": "バブルガムフェロー",
+      "nickname_raw": "POPPING!",
+      "star_raw": "3",
+      "birthday_raw": "4月11日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "符合宣言的状态",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "神谷早矢佳",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/j7c3sj2jd118ob90m9it70j61nr7saa.png/100px-Chr_icon_1124_112402_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%90%B9%E6%B3%A2%E7%B3%96"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90POPPING!%E3%80%91%E6%B3%A1%E6%B3%A1%E7%B3%96%E5%B0%8F%E5%AD%90",
+      "raw_name_zh": "吹波糖",
+      "raw_name_jp": null,
+      "translated_name_raw": "泡泡糖小子",
+      "nickname_raw": "POPPING!",
+      "page_title": "【POPPING!】泡泡糖小子",
+      "page_title_aliases": [
+        "【POPPING!】泡泡糖小子",
+        "泡泡糖小子",
+        "POPPING!"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月11日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "如宣言般的完美狀態",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "神谷早矢佳",
+      "introduction_raw": "膨脹的夢想，迸發鬥志的先鋒隊長！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90POPPING!%E3%80%91%E6%B3%A1%E6%B3%A1%E7%B3%96%E5%B0%8F%E5%AD%90",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "吹波糖",
+      "raw_name_jp": "バブルガムフェロー",
+      "cv_raw": "神谷早矢佳",
+      "birthday_raw": "4月11日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "已达到宣言的目标",
+      "bust_raw": "82",
+      "waist_raw": "58",
+      "hip_raw": "84",
+      "quote_raw": "爆发潜能",
+      "intro_paragraphs": [
+        "勇猛果敢的突击队长。",
+        "拥有强大的精神力和极快的领悟力，一旦立下目标就必定达成的天才赛马娘。",
+        "在父亲麾下的俱乐部被誉为\"四天王\"之一，与同样获此殊荣的赛马娘们立下赛场盟约——日复一日为追逐梦想而砥砺前行。"
+      ],
+      "introduction": "勇猛果敢的突击队长。\n拥有强大的精神力和极快的领悟力，一旦立下目标就必定达成的天才赛马娘。\n在父亲麾下的俱乐部被誉为\"四天王\"之一，与同样获此殊荣的赛马娘们立下赛场盟约——日复一日为追逐梦想而砥砺前行。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/ba/UPDCH_BubbleGumFellow_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240823165043",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/ba/UPDCH_BubbleGumFellow_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240823165043"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E5%90%B9%E6%B3%A2%E7%B3%96&action=edit&redlink=1",
+      "canonical_name_zh": "吹波糖",
+      "aliases": [
+        "吹波糖"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E5%90%B9%E6%B3%A2%E7%B3%96&action=edit&redlink=1",
+      "raw_name_zh": "吹波糖",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "バブルガムフェロー",
+      "raw_name_en": null,
+      "aliases": [
+        "吹波糖"
+      ],
+      "birthday_raw": "4月11日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "已达到宣言的目标",
+      "bust_raw": "82",
+      "waist_raw": "58",
+      "hip_raw": "84",
+      "cv_raw": "神谷早矢佳",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/ba/UPDCH_BubbleGumFellow_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240823165043",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/ba/UPDCH_BubbleGumFellow_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240823165043"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E5%90%B9%E6%B3%A2%E7%B3%96&action=edit&redlink=1"
+    }
+  }
+}

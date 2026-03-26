@@ -1,0 +1,335 @@
+{
+  "id": "sumaatofuarukon",
+  "order": 46,
+  "file_name": "046_Smart_Falcon.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "醒目飞鹰",
+    "zh_tw": null,
+    "jp": "スマートファルコン",
+    "en": "Smart Falcon"
+  },
+  "aliases": [
+    "醒目飞鹰",
+    "スマートファルコン",
+    "Smart Falcon",
+    "【絕對純粹☆LOVE】醒目飛鷹",
+    "醒目飛鷹",
+    "絕對純粹☆LOVE",
+    "飞鹰子",
+    "飞飞（ファル子）",
+    "沙尘猎隼",
+    "（砂塵の隼",
+    "砂のハヤブサ）",
+    "泥地的赤鬼",
+    "法老控[1]",
+    "寄寄子",
+    "锹形虫",
+    "泥地铃鹿",
+    "スマファル",
+    "あぶそりゅーと☆LOVE"
+  ],
+  "profile": {
+    "birthday": "04-04",
+    "birthday_raw": "4月4日",
+    "birthday_day_of_year": 95,
+    "height_cm": 156,
+    "height_raw": "156cm",
+    "cv": "大和田仁美",
+    "cv_raw": "大和田仁美",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "aptitudes": {
+      "turf": "E",
+      "dirt": "A",
+      "sprint": "B",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "nige": "A",
+      "senko": "D",
+      "sashi": "G",
+      "oikomi": "G"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/rxi9e8edfw7f698069zd3oksf7fm46t.png/100px-Chr_icon_1046.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/qnia8z2ih4i9ue19yka4fxpnjgogs1h.png/100px-Chr_icon_1046_104602_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/97sb423bwt6916s415v9an5i1nm9ikj.png/100px-Chr_icon_1046_104603_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/9b/UPDCH_SmartFalcon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051551",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/20/%E3%83%95%E3%82%A1%E3%83%AB%E5%AD%90_93485017.png!/fw/280?v=20211123060947"
+    ],
+    "image_local_path": "/api/assets/sumaatofuarukon-thumb",
+    "asset_id": "sumaatofuarukon-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B5%95%E5%B0%8D%E7%B4%94%E7%B2%B9%E2%98%86LOVE%E3%80%91%E9%86%92%E7%9B%AE%E9%A3%9B%E9%B7%B9",
+      "https://zh.moegirl.org.cn/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/rxi9e8edfw7f698069zd3oksf7fm46t.png/100px-Chr_icon_1046.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/qnia8z2ih4i9ue19yka4fxpnjgogs1h.png/100px-Chr_icon_1046_104602_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/97sb423bwt6916s415v9an5i1nm9ikj.png/100px-Chr_icon_1046_104603_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/qnia8z2ih4i9ue19yka4fxpnjgogs1h.png/100px-Chr_icon_1046_104602_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9b/UPDCH_SmartFalcon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051551"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/20/%E3%83%95%E3%82%A1%E3%83%AB%E5%AD%90_93485017.png!/fw/280?v=20211123060947",
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9b/UPDCH_SmartFalcon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051551"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "马娘的偶像，简称马娘偶像的女孩子。 所谓马娘偶像就是把胜利live放在一个重要的位置，可爱地赢下比赛，以在C位唱跳为目标的存在。 与粉丝们的交流，宣传之类的大众性活动也保持着专注。 虽然很擅长泥地比赛，但对自己土气的印象还是有些在意。",
+    "intro_paragraphs": [
+      "马娘的偶像，简称马娘偶像的女孩子。",
+      "所谓马娘偶像就是把胜利live放在一个重要的位置，可爱地赢下比赛，以在C位唱跳为目标的存在。",
+      "与粉丝们的交流，宣传之类的大众性活动也保持着专注。",
+      "虽然很擅长泥地比赛，但对自己土气的印象还是有些在意。"
+    ],
+    "quote_raw": "“小飞鹰，目标是顶级马娘偶像☆”",
+    "weight_desc_raw": "微減（生活有點辛苦）",
+    "bust_raw": "78",
+    "waist_raw": "55",
+    "hip_raw": "80"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "醒目飞鹰",
+      "character_id": "1046",
+      "birthday_raw": "4月4日",
+      "height_raw": "156",
+      "bust_raw": "78",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "23",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/rxi9e8edfw7f698069zd3oksf7fm46t.png/100px-Chr_icon_1046.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/rxi9e8edfw7f698069zd3oksf7fm46t.png/100px-Chr_icon_1046.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "醒目飞鹰",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "E",
+      "dirt_raw": "A",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "D",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0",
+      "raw_name_zh": "醒目飞鹰",
+      "raw_name_jp": "スマートファルコン",
+      "nickname_raw": "あぶそりゅーと☆LOVE",
+      "star_raw": "3",
+      "birthday_raw": "4月4日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "微减（生活稍微有点拮据）",
+      "bust_raw": "78",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "大和田仁美",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "E",
+      "dirt_raw": "A",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "D",
+      "sashi_raw": "G",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/qnia8z2ih4i9ue19yka4fxpnjgogs1h.png/100px-Chr_icon_1046_104602_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/49/97sb423bwt6916s415v9an5i1nm9ikj.png/100px-Chr_icon_1046_104603_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B5%95%E5%B0%8D%E7%B4%94%E7%B2%B9%E2%98%86LOVE%E3%80%91%E9%86%92%E7%9B%AE%E9%A3%9B%E9%B7%B9",
+      "raw_name_zh": "醒目飞鹰",
+      "raw_name_jp": null,
+      "translated_name_raw": "醒目飛鷹",
+      "nickname_raw": "絕對純粹☆LOVE",
+      "page_title": "【絕對純粹☆LOVE】醒目飛鷹",
+      "page_title_aliases": [
+        "【絕對純粹☆LOVE】醒目飛鷹",
+        "醒目飛鷹",
+        "絕對純粹☆LOVE"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月4日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "微減（生活有點辛苦）",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "大和田仁美",
+      "introduction_raw": "粉絲服務就交給我！未來的頂尖賽馬娘偶像",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/qnia8z2ih4i9ue19yka4fxpnjgogs1h.png/100px-Chr_icon_1046_104602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B5%95%E5%B0%8D%E7%B4%94%E7%B2%B9%E2%98%86LOVE%E3%80%91%E9%86%92%E7%9B%AE%E9%A3%9B%E9%B7%B9",
+      "turf_raw": "E",
+      "dirt_raw": "A",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "D",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "醒目飞鹰",
+      "raw_name_jp": "スマートファルコン",
+      "cv_raw": "大和田仁美",
+      "birthday_raw": "4月4日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "微减（生活稍微有点艰苦）",
+      "bust_raw": "78",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "“小飞鹰，目标是顶级马娘偶像☆”",
+      "intro_paragraphs": [
+        "马娘的偶像，简称马娘偶像的女孩子。",
+        "所谓马娘偶像就是把胜利live放在一个重要的位置，可爱地赢下比赛，以在C位唱跳为目标的存在。",
+        "与粉丝们的交流，宣传之类的大众性活动也保持着专注。",
+        "虽然很擅长泥地比赛，但对自己土气的印象还是有些在意。"
+      ],
+      "introduction": "马娘的偶像，简称马娘偶像的女孩子。\n所谓马娘偶像就是把胜利live放在一个重要的位置，可爱地赢下比赛，以在C位唱跳为目标的存在。\n与粉丝们的交流，宣传之类的大众性活动也保持着专注。\n虽然很擅长泥地比赛，但对自己土气的印象还是有些在意。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/9b/UPDCH_SmartFalcon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051551",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9b/UPDCH_SmartFalcon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051551"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0",
+      "canonical_name_zh": "醒目飞鹰",
+      "aliases": [
+        "醒目飞鹰"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0",
+      "raw_name_zh": "醒目飞鹰",
+      "page_title": "醒目飞鹰",
+      "raw_name_jp": "スマートファルコン",
+      "raw_name_en": null,
+      "aliases": [
+        "飞鹰子",
+        "飞飞（ファル子）",
+        "沙尘猎隼",
+        "（砂塵の隼",
+        "砂のハヤブサ）",
+        "泥地的赤鬼",
+        "法老控[1]",
+        "寄寄子",
+        "锹形虫",
+        "泥地铃鹿",
+        "スマファル",
+        "醒目飞鹰"
+      ],
+      "birthday_raw": "4月4日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "微减（生活稍微有点拮据）",
+      "bust_raw": "78",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "大和田仁美",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/20/%E3%83%95%E3%82%A1%E3%83%AB%E5%AD%90_93485017.png!/fw/280?v=20211123060947",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/20/%E3%83%95%E3%82%A1%E3%83%AB%E5%AD%90_93485017.png!/fw/280?v=20211123060947",
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9b/UPDCH_SmartFalcon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051551"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%86%92%E7%9B%AE%E9%A3%9E%E9%B9%B0"
+    }
+  }
+}

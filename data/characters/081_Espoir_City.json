@@ -1,0 +1,229 @@
+{
+  "id": "esupowaarushichii",
+  "name_zh": "希望之城",
+  "name_jp": "エスポワールシチー",
+  "aliases": [
+    "希望之城",
+    "エスポワールシチー",
+    "Red Devil Gear"
+  ],
+  "birthday": "04-22",
+  "birthday_day_of_year": 113,
+  "birthday_raw": "4月22日",
+  "height_cm": 153,
+  "height_raw": "153cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "亜咲花",
+  "cv_raw": "亜咲花",
+  "quote_raw": "总是傲娇的，反抗力全开的辣妹。",
+  "introduction": "特别是对“指导者”抱有逆反心理，为了显示自己的强大，不顾一切地奔跑着。 在表现得自信的时候，却总是容易出现倒霉的烦恼。",
+  "intro_paragraphs": [
+    "特别是对“指导者”抱有逆反心理，为了显示自己的强大，不顾一切地奔跑着。",
+    "在表现得自信的时候，却总是容易出现倒霉的烦恼。"
+  ],
+  "weight_desc_raw": "言わねえしっ！",
+  "bust_raw": "79",
+  "waist_raw": "55",
+  "hip_raw": "79",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/5/5f/cajo6z115mxbrwpm9gmutg91rnljr6i.png/100px-Chr_icon_1081.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_EspoirCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/5f/cajo6z115mxbrwpm9gmutg91rnljr6i.png/100px-Chr_icon_1081.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_EspoirCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_EspoirCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E",
+    "https://zh.moegirl.org.cn/index.php?title=%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E&action=edit&redlink=1"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "E",
+    "dirt": "A",
+    "sprint": "A",
+    "mile": "A",
+    "medium": "B",
+    "long": "G",
+    "nige": "A",
+    "senko": "A",
+    "sashi": "F",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "泥地"
+  ],
+  "distance_group": [
+    "短",
+    "英"
+  ],
+  "running_style_group": [
+    "逃",
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "希望之城",
+      "character_id": "1081",
+      "birthday_raw": "4月22日",
+      "height_raw": "153",
+      "bust_raw": "79",
+      "waist_raw": "55",
+      "hip_raw": "79",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "24",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5f/cajo6z115mxbrwpm9gmutg91rnljr6i.png/100px-Chr_icon_1081.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/5f/cajo6z115mxbrwpm9gmutg91rnljr6i.png/100px-Chr_icon_1081.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "希望之城",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "E",
+      "dirt_raw": "A",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E",
+      "raw_name_zh": "希望之城",
+      "raw_name_jp": "エスポワールシチー",
+      "nickname_raw": "Red Devil Gear",
+      "star_raw": "3",
+      "birthday_raw": "4月22日",
+      "height_raw": "153cm",
+      "weight_desc_raw": "言わねえしっ！",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "亜咲花",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "E",
+      "dirt_raw": "A",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "希望之城",
+      "raw_name_jp": "エスポワールシチー",
+      "cv_raw": "亚咲花",
+      "birthday_raw": "4月22日",
+      "height_raw": "153cm",
+      "weight_desc_raw": "不跟你说！",
+      "bust_raw": "79",
+      "waist_raw": "55",
+      "hip_raw": "79",
+      "quote_raw": "总是傲娇的，反抗力全开的辣妹。",
+      "intro_paragraphs": [
+        "特别是对“指导者”抱有逆反心理，为了显示自己的强大，不顾一切地奔跑着。",
+        "在表现得自信的时候，却总是容易出现倒霉的烦恼。"
+      ],
+      "introduction": "特别是对“指导者”抱有逆反心理，为了显示自己的强大，不顾一切地奔跑着。\n在表现得自信的时候，却总是容易出现倒霉的烦恼。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_EspoirCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_EspoirCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E&action=edit&redlink=1",
+      "canonical_name_zh": "希望之城",
+      "aliases": [
+        "希望之城"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E&action=edit&redlink=1",
+      "raw_name_zh": "希望之城",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "エスポワールシチー",
+      "raw_name_en": null,
+      "aliases": [
+        "希望之城"
+      ],
+      "birthday_raw": "4月22日",
+      "height_raw": "153cm",
+      "weight_desc_raw": "不跟你说！",
+      "bust_raw": "79",
+      "waist_raw": "55",
+      "hip_raw": "79",
+      "cv_raw": "亚咲花",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_EspoirCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_EspoirCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153744"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E5%B8%8C%E6%9C%9B%E4%B9%8B%E5%9F%8E&action=edit&redlink=1"
+    }
+  }
+}

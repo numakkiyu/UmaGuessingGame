@@ -1,0 +1,232 @@
+{
+  "id": "suteiruinrabu",
+  "name_zh": "爱如往昔",
+  "name_jp": "スティルインラブ",
+  "aliases": [
+    "爱如往昔",
+    "スティルインラブ",
+    "緋想の誓衣"
+  ],
+  "birthday": "05-02",
+  "birthday_day_of_year": 123,
+  "birthday_raw": "5月2日",
+  "height_cm": 153,
+  "height_raw": "153cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "宮下早紀",
+  "cv_raw": "宮下早紀",
+  "quote_raw": "乍一看是很淑女的，只有喜欢吃甜点算是特征的，存在感稀薄的赛马娘。",
+  "introduction": "但是，一旦投入与强者的比赛之中，便会显露出以吞噬对手为乐的狰狞面孔。 平常会以理性压制这种本能，克制冲动时的困惑模样有种谜之色气。",
+  "intro_paragraphs": [
+    "但是，一旦投入与强者的比赛之中，便会显露出以吞噬对手为乐的狰狞面孔。",
+    "平常会以理性压制这种本能，克制冲动时的困惑模样有种谜之色气。"
+  ],
+  "weight_desc_raw": "魅惑的",
+  "bust_raw": "72",
+  "waist_raw": "50",
+  "hip_raw": "76",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c7/2w0k8y1t0fp3pxi06mpbeci68uz2ua0.png/100px-Chr_icon_1097.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_StillinLove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752",
+    "https://storage.moegirl.org.cn/moegirl/commons/8/86/StillinLove_intro.jpg!/fw/280?v=20240404170958"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c7/2w0k8y1t0fp3pxi06mpbeci68uz2ua0.png/100px-Chr_icon_1097.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_StillinLove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/8/86/StillinLove_intro.jpg!/fw/280?v=20240404170958",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_StillinLove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94",
+    "https://zh.moegirl.org.cn/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "C",
+    "mile": "A",
+    "medium": "A",
+    "long": "G",
+    "nige": "G",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "F"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "爱如往昔",
+      "character_id": "1097",
+      "birthday_raw": "5月2日",
+      "height_raw": "153",
+      "bust_raw": "72",
+      "waist_raw": "50",
+      "hip_raw": "76",
+      "whr_raw": "0.65",
+      "bust_waist_diff_raw": "22",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c7/2w0k8y1t0fp3pxi06mpbeci68uz2ua0.png/100px-Chr_icon_1097.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c7/2w0k8y1t0fp3pxi06mpbeci68uz2ua0.png/100px-Chr_icon_1097.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "爱如往昔",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "C",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94",
+      "raw_name_zh": "爱如往昔",
+      "raw_name_jp": "スティルインラブ",
+      "nickname_raw": "緋想の誓衣",
+      "star_raw": "3",
+      "birthday_raw": "5月2日",
+      "height_raw": "153cm",
+      "weight_desc_raw": "魅惑的",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "宮下早紀",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "C",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "爱如往昔",
+      "raw_name_jp": "スティルインラブ",
+      "cv_raw": "宫下早纪",
+      "birthday_raw": "5月2日",
+      "height_raw": "153cm",
+      "weight_desc_raw": "魅惑的",
+      "bust_raw": "72",
+      "waist_raw": "50",
+      "hip_raw": "76",
+      "quote_raw": "乍一看是很淑女的，只有喜欢吃甜点算是特征的，存在感稀薄的赛马娘。",
+      "intro_paragraphs": [
+        "但是，一旦投入与强者的比赛之中，便会显露出以吞噬对手为乐的狰狞面孔。",
+        "平常会以理性压制这种本能，克制冲动时的困惑模样有种谜之色气。"
+      ],
+      "introduction": "但是，一旦投入与强者的比赛之中，便会显露出以吞噬对手为乐的狰狞面孔。\n平常会以理性压制这种本能，克制冲动时的困惑模样有种谜之色气。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_StillinLove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_StillinLove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94",
+      "canonical_name_zh": "爱如往昔",
+      "aliases": [
+        "爱如往昔"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94",
+      "raw_name_zh": "爱如往昔",
+      "page_title": "爱如往昔",
+      "raw_name_jp": "スティルインラブ",
+      "raw_name_en": null,
+      "aliases": [
+        "爱如往昔"
+      ],
+      "birthday_raw": "5月2日",
+      "height_raw": "153cm",
+      "weight_desc_raw": "魅惑的",
+      "bust_raw": "72",
+      "waist_raw": "50",
+      "hip_raw": "76",
+      "cv_raw": "宫下早纪",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/86/StillinLove_intro.jpg!/fw/280?v=20240404170958",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/86/StillinLove_intro.jpg!/fw/280?v=20240404170958",
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_StillinLove_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153752"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%88%B1%E5%A6%82%E5%BE%80%E6%98%94"
+    }
+  }
+}

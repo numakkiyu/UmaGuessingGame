@@ -1,0 +1,317 @@
+{
+  "id": "biwahayahide",
+  "order": 23,
+  "file_name": "023_Biwa_Hayahide.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "琵琶晨光",
+    "zh_tw": null,
+    "jp": "ビワハヤヒデ",
+    "en": "Biwa Hayahide"
+  },
+  "aliases": [
+    "琵琶晨光",
+    "ビワハヤヒデ",
+    "Biwa Hayahide",
+    "【pf.Victory formula...】琵琶晨光",
+    "pf.Victory formula...",
+    "晨光",
+    "大头",
+    "倒行圣诞老人（背走サンタ）"
+  ],
+  "profile": {
+    "birthday": "03-10",
+    "birthday_raw": "3月10日",
+    "birthday_day_of_year": 70,
+    "height_cm": 171,
+    "height_raw": "171cm",
+    "cv": "近藤唯",
+    "cv_raw": "近藤唯",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "E",
+      "senko": "A",
+      "sashi": "B",
+      "oikomi": "E"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/aa/7t5bsjucynpfjywjhbi964gdxiu2chn.png/100px-Chr_icon_1023.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rbxeu278ccawjlt64k08475kgknaav8.png/100px-Chr_icon_1023_102302_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/57/62a78lqj8yl4yyj4z5io6ujikozp919.png/100px-Chr_icon_1023_102303_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/b/b5/UPDCH_BiwaHayahide_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207035521",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/ab/PID93580368.png!/fw/280?v=20211124064643"
+    ],
+    "image_local_path": "/api/assets/biwahayahide-thumb",
+    "asset_id": "biwahayahide-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89",
+      "https://wiki.biligame.com/umamusume/%E3%80%90pf.Victory_formula...%E3%80%91%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89",
+      "https://zh.moegirl.org.cn/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/aa/7t5bsjucynpfjywjhbi964gdxiu2chn.png/100px-Chr_icon_1023.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rbxeu278ccawjlt64k08475kgknaav8.png/100px-Chr_icon_1023_102302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/57/62a78lqj8yl4yyj4z5io6ujikozp919.png/100px-Chr_icon_1023_102303_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rbxeu278ccawjlt64k08475kgknaav8.png/100px-Chr_icon_1023_102302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/57/62a78lqj8yl4yyj4z5io6ujikozp919.png/100px-Chr_icon_1023_102303_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b5/UPDCH_BiwaHayahide_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207035521"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/ab/PID93580368.png!/fw/280?v=20211124064643",
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b5/UPDCH_BiwaHayahide_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207035521"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "是有计划地打破任何问题的理论派，虽然头很大，但重视实验实践，不会流于纸上谈兵。 能力全部是为了对抗亲妹妹成田白仁的压倒性才能而磨练出来的。 与成田大进、胜利奖券是同期的好友。",
+    "intro_paragraphs": [
+      "是有计划地打破任何问题的理论派，虽然头很大，但重视实验实践，不会流于纸上谈兵。",
+      "能力全部是为了对抗亲妹妹成田白仁的压倒性才能而磨练出来的。",
+      "与成田大进、胜利奖券是同期的好友。"
+    ],
+    "quote_raw": "“看好了！这就是我的‘胜利方程式’。”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "93",
+    "waist_raw": "61",
+    "hip_raw": "88"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "琵琶晨光",
+      "character_id": "1023",
+      "birthday_raw": "3月10日",
+      "height_raw": "171",
+      "bust_raw": "93",
+      "waist_raw": "61",
+      "hip_raw": "88",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "32",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/aa/7t5bsjucynpfjywjhbi964gdxiu2chn.png/100px-Chr_icon_1023.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/aa/7t5bsjucynpfjywjhbi964gdxiu2chn.png/100px-Chr_icon_1023.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "琵琶晨光",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "20%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89",
+      "raw_name_zh": "琵琶晨光",
+      "raw_name_jp": "ビワハヤヒデ",
+      "nickname_raw": "pf.Victory formula...",
+      "star_raw": "3",
+      "birthday_raw": "3月10日",
+      "height_raw": "171cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "93",
+      "waist_raw": "61",
+      "hip_raw": "88",
+      "cv_raw": "近藤唯",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rbxeu278ccawjlt64k08475kgknaav8.png/100px-Chr_icon_1023_102302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/57/62a78lqj8yl4yyj4z5io6ujikozp919.png/100px-Chr_icon_1023_102303_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90pf.Victory_formula...%E3%80%91%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89",
+      "raw_name_zh": "琵琶晨光",
+      "raw_name_jp": null,
+      "translated_name_raw": "琵琶晨光",
+      "nickname_raw": "pf.Victory formula...",
+      "page_title": "【pf.Victory formula...】琵琶晨光",
+      "page_title_aliases": [
+        "【pf.Victory formula...】琵琶晨光",
+        "琵琶晨光",
+        "pf.Victory formula..."
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月10日",
+      "height_raw": "171cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "93",
+      "waist_raw": "61",
+      "hip_raw": "88",
+      "cv_raw": "近藤唯",
+      "introduction_raw": "充滿熱情的知性派。將理論化為武器，起身對抗吧！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rbxeu278ccawjlt64k08475kgknaav8.png/100px-Chr_icon_1023_102302_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/57/62a78lqj8yl4yyj4z5io6ujikozp919.png/100px-Chr_icon_1023_102303_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90pf.Victory_formula...%E3%80%91%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "E"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "琵琶晨光",
+      "raw_name_jp": "ビワハヤヒデ",
+      "cv_raw": "近藤唯",
+      "birthday_raw": "3月10日",
+      "height_raw": "171cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "93",
+      "waist_raw": "61",
+      "hip_raw": "88",
+      "quote_raw": "“看好了！这就是我的‘胜利方程式’。”",
+      "intro_paragraphs": [
+        "是有计划地打破任何问题的理论派，虽然头很大，但重视实验实践，不会流于纸上谈兵。",
+        "能力全部是为了对抗亲妹妹成田白仁的压倒性才能而磨练出来的。",
+        "与成田大进、胜利奖券是同期的好友。"
+      ],
+      "introduction": "是有计划地打破任何问题的理论派，虽然头很大，但重视实验实践，不会流于纸上谈兵。\n能力全部是为了对抗亲妹妹成田白仁的压倒性才能而磨练出来的。\n与成田大进、胜利奖券是同期的好友。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/b/b5/UPDCH_BiwaHayahide_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207035521",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b5/UPDCH_BiwaHayahide_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207035521"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89",
+      "canonical_name_zh": "琵琶晨光",
+      "aliases": [
+        "琵琶晨光"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89",
+      "raw_name_zh": "琵琶晨光",
+      "page_title": "琵琶晨光",
+      "raw_name_jp": "ビワハヤヒデ",
+      "raw_name_en": null,
+      "aliases": [
+        "晨光",
+        "大头",
+        "倒行圣诞老人（背走サンタ）",
+        "琵琶晨光"
+      ],
+      "birthday_raw": "3月10日",
+      "height_raw": "171cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "93",
+      "waist_raw": "61",
+      "hip_raw": "88",
+      "cv_raw": "近藤唯",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/ab/PID93580368.png!/fw/280?v=20211124064643",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/ab/PID93580368.png!/fw/280?v=20211124064643",
+        "https://storage.moegirl.org.cn/moegirl/commons/b/b5/UPDCH_BiwaHayahide_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207035521"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%90%B5%E7%90%B6%E6%99%A8%E5%85%89"
+    }
+  }
+}

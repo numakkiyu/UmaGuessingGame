@@ -1,0 +1,2155 @@
+[
+  {
+    "id": "supesharuuiiku",
+    "name_zh": "特别周",
+    "name_tw": "特別週",
+    "name_jp": "スペシャルウィーク",
+    "name_en": "Special Week",
+    "aliases": [
+      "特别周",
+      "特別週",
+      "スペシャルウィーク",
+      "Special Week",
+      "【特別夢想家】特別週",
+      "特別夢想家",
+      "小特",
+      "斯佩酱（スペちゃん）",
+      "萝卜特",
+      "日本总大将（日本の総大将）",
+      "特别◯",
+      "スペシャルドリーマー"
+    ],
+    "image_local_path": "/api/assets/supesharuuiiku-thumb"
+  },
+  {
+    "id": "sairensusuzuka",
+    "name_zh": "无声铃鹿",
+    "name_tw": "無聲純真",
+    "name_jp": "サイレンススズカ",
+    "name_en": "Silence Suzuka",
+    "aliases": [
+      "无声铃鹿",
+      "無聲純真",
+      "サイレンススズカ",
+      "Silence Suzuka",
+      "【無聲純真】無聲鈴鹿",
+      "無聲鈴鹿",
+      "铃鹿（スズカ）",
+      "ススズ",
+      "異次元の逃亡者",
+      "无胸铃鹿",
+      "B70",
+      "鹿没乃子",
+      "识字卡（桑）",
+      "斯滋卡（桑）",
+      "サイレントイノセンス"
+    ],
+    "image_local_path": "/api/assets/sairensusuzuka-thumb"
+  },
+  {
+    "id": "toukaiteioo",
+    "name_zh": "东海帝皇",
+    "name_tw": "東海帝皇",
+    "name_jp": "トウカイテイオー",
+    "name_en": "Tokai Teio",
+    "aliases": [
+      "东海帝皇",
+      "東海帝皇",
+      "トウカイテイオー",
+      "Tokai Teio",
+      "【歡樂巔峰】東海帝皇",
+      "歡樂巔峰",
+      "帝王（テイオー）",
+      "痛快铁奥",
+      "帝宝（地堡）[1]",
+      "东海帝王",
+      "トップ・オブ・ジョイフル"
+    ],
+    "image_local_path": "/api/assets/toukaiteioo-thumb"
+  },
+  {
+    "id": "maruzensukii",
+    "name_zh": "丸善斯基",
+    "name_tw": null,
+    "name_jp": "マルゼンスキー",
+    "name_en": "Maruzensky",
+    "aliases": [
+      "丸善斯基",
+      "マルゼンスキー",
+      "Maruzensky",
+      "【嫣紅方程式】丸善斯基",
+      "嫣紅方程式",
+      "姥爷",
+      "（老）司机",
+      "超级跑车（スーパーカー）",
+      "假面骑士Drive",
+      "昭和JK",
+      "フォーミュラオブルージュ"
+    ],
+    "image_local_path": "/api/assets/maruzensukii-thumb"
+  },
+  {
+    "id": "fujikiseki",
+    "name_zh": "富士奇迹",
+    "name_tw": null,
+    "name_jp": "フジキセキ",
+    "name_en": "Fuji Kiseki",
+    "aliases": [
+      "富士奇迹",
+      "フジキセキ",
+      "Fuji Kiseki",
+      "【流星歌舞劇】富士奇石",
+      "富士奇石",
+      "流星歌舞劇",
+      "シューティンスタァ・ルヴュ"
+    ],
+    "image_local_path": "/api/assets/fujikiseki-thumb"
+  },
+  {
+    "id": "ogurikyappu",
+    "name_zh": "小栗帽",
+    "name_tw": null,
+    "name_jp": "オグリキャップ",
+    "name_en": "Oguri Cap",
+    "aliases": [
+      "小栗帽",
+      "オグリキャップ",
+      "Oguri Cap",
+      "【星光躍動】小栗帽",
+      "星光躍動",
+      "小栗（オグリ）",
+      "小栗栗（オグリン）",
+      "帽哥",
+      "芦毛的怪物",
+      "芦毛灰姑娘",
+      "泥兔子",
+      "欧古力",
+      "大胃王",
+      "幻神[1]",
+      "スターライトビート"
+    ],
+    "image_local_path": "/api/assets/ogurikyappu-thumb"
+  },
+  {
+    "id": "goorudoshippu",
+    "name_zh": "黄金船",
+    "name_tw": "火紅鬥爭",
+    "name_jp": "ゴールドシップ",
+    "name_en": "Gold Ship",
+    "aliases": [
+      "黄金船",
+      "火紅鬥爭",
+      "ゴールドシップ",
+      "Gold Ship",
+      "【火紅鬥爭】黃金船",
+      "黃金船",
+      "ゴールド",
+      "白色怪物（白い怪物）",
+      "芦毛の暴れん坊",
+      "不沉舰",
+      "皮皮船",
+      "皮划艇",
+      "阿船/小金船/苟露西（ゴルシ（564））",
+      "白色狮子",
+      "草莓大福",
+      "外星怪马",
+      "好兄弟",
+      "レッドストライフ"
+    ],
+    "image_local_path": "/api/assets/goorudoshippu-thumb"
+  },
+  {
+    "id": "uokka",
+    "name_zh": "伏特加",
+    "name_tw": null,
+    "name_jp": "ウオッカ",
+    "name_en": "Vodka",
+    "aliases": [
+      "伏特加",
+      "ウオッカ",
+      "Vodka",
+      "【狂野極速】伏特加",
+      "狂野極速",
+      "ワイルドトップギア"
+    ],
+    "image_local_path": "/api/assets/uokka-thumb"
+  },
+  {
+    "id": "daiwasukaaretto",
+    "name_zh": "大和赤骥",
+    "name_tw": null,
+    "name_jp": "ダイワスカーレット",
+    "name_en": "Daiwa Scarlet",
+    "aliases": [
+      "大和赤骥",
+      "ダイワスカーレット",
+      "Daiwa Scarlet",
+      "【蒼藍巔峰】大和赤驥",
+      "大和赤驥",
+      "蒼藍巔峰",
+      "完美小姐（ミスパーフェクト）",
+      "特雷森校花",
+      "爱丽崽子",
+      "十一个孩子的母亲",
+      "红糖年糕",
+      "红糖麻薯[1]",
+      "トップ・オブ・ブルー"
+    ],
+    "image_local_path": "/api/assets/daiwasukaaretto-thumb"
+  },
+  {
+    "id": "taikishatoru",
+    "name_zh": "大树快车",
+    "name_tw": null,
+    "name_jp": "タイキシャトル",
+    "name_en": "Taiki Shuttle",
+    "aliases": [
+      "大树快车",
+      "タイキシャトル",
+      "Taiki Shuttle",
+      "【野性邊境】大樹快車",
+      "大樹快車",
+      "野性邊境",
+      "タイキ",
+      "homo快车[1]",
+      "ワイルド・フロンティア"
+    ],
+    "image_local_path": "/api/assets/taikishatoru-thumb"
+  },
+  {
+    "id": "gurasuwandaa",
+    "name_zh": "草上飞",
+    "name_tw": null,
+    "name_jp": "グラスワンダー",
+    "name_en": "Grass Wonder",
+    "aliases": [
+      "草上飞",
+      "グラスワンダー",
+      "Grass Wonder",
+      "【穿岩之青】草上飛",
+      "草上飛",
+      "穿岩之青",
+      "小草（グラスちゃん）",
+      "不死鳥",
+      "草女士",
+      "草上肥[2]",
+      "草二爷[3]",
+      "草上牛",
+      "岩穿つ青"
+    ],
+    "image_local_path": "/api/assets/gurasuwandaa-thumb"
+  },
+  {
+    "id": "hishiamazon",
+    "name_zh": "菱亚马逊",
+    "name_tw": null,
+    "name_jp": "ヒシアマゾン",
+    "name_en": "Hishi Amazon",
+    "aliases": [
+      "菱亚马逊",
+      "ヒシアマゾン",
+      "Hishi Amazon",
+      "【亞馬遜青金石】菱亞馬遜",
+      "菱亞馬遜",
+      "亞馬遜青金石",
+      "亚马逊（アマゾン）",
+      "女杰",
+      "大姐头（ウマアネゴ）",
+      "假面骑士亚马逊",
+      "アマゾネス・ラピス"
+    ],
+    "image_local_path": "/api/assets/hishiamazon-thumb"
+  },
+  {
+    "id": "mejiromakkuiin",
+    "name_zh": "目白麦昆",
+    "name_tw": null,
+    "name_jp": "メジロマックイーン",
+    "name_en": "Mejiro McQueen",
+    "aliases": [
+      "目白麦昆",
+      "メジロマックイーン",
+      "Mejiro McQueen",
+      "【優雅線條】目白麥昆",
+      "目白麥昆",
+      "優雅線條",
+      "麦昆（マックイーン）",
+      "草上名伶（ターフの名優）",
+      "目白魔苦院[1]",
+      "年糕",
+      "肥驹",
+      "千斤大小姐",
+      "木板麦昆[2]",
+      "エレガンス・ライン"
+    ],
+    "image_local_path": "/api/assets/mejiromakkuiin-thumb"
+  },
+  {
+    "id": "erukondorupasaa",
+    "name_zh": "神鹰",
+    "name_tw": null,
+    "name_jp": "エルコンドルパサー",
+    "name_en": "El Condor Pasa",
+    "aliases": [
+      "神鹰",
+      "エルコンドルパサー",
+      "El Condor Pasa",
+      "【神鷹☆Número 1】神鷹",
+      "神鷹",
+      "神鷹☆Número 1",
+      "エル",
+      "怪鸟",
+      "艾露",
+      "エル☆Número 1"
+    ],
+    "image_local_path": "/api/assets/erukondorupasaa-thumb"
+  },
+  {
+    "id": "teiemuoperaoo",
+    "name_zh": "好歌剧",
+    "name_tw": null,
+    "name_jp": "テイエムオペラオー",
+    "name_en": "T.M. Opera O",
+    "aliases": [
+      "好歌剧",
+      "テイエムオペラオー",
+      "T.M. Opera O",
+      "【你的太陽！】好歌劇",
+      "好歌劇",
+      "你的太陽！",
+      "世纪末霸王",
+      "剧宝",
+      "オー・ソレ・スーオ！"
+    ],
+    "image_local_path": "/api/assets/teiemuoperaoo-thumb"
+  },
+  {
+    "id": "naritaburaian",
+    "name_zh": "成田白仁",
+    "name_tw": null,
+    "name_jp": "ナリタブライアン",
+    "name_en": "Narita Brian",
+    "aliases": [
+      "成田白仁",
+      "ナリタブライアン",
+      "Narita Brian",
+      "【Maverick】成田白仁",
+      "Maverick",
+      "白仁",
+      "三里冢"
+    ],
+    "image_local_path": "/api/assets/naritaburaian-thumb"
+  },
+  {
+    "id": "shinborirudorufu",
+    "name_zh": "鲁道夫象征",
+    "name_tw": null,
+    "name_jp": "シンボリルドルフ",
+    "name_en": "Symboli Rudolf",
+    "aliases": [
+      "鲁道夫象征",
+      "シンボリルドルフ",
+      "Symboli Rudolf",
+      "【皇帝之路】魯道夫象徵",
+      "魯道夫象徵",
+      "皇帝之路",
+      "皇帝",
+      "会长",
+      "露娜（ルナ）[1]",
+      "卤豆腐",
+      "ロード・オブ・エンペラー"
+    ],
+    "image_local_path": "/api/assets/shinborirudorufu-thumb"
+  },
+  {
+    "id": "eaguruuvu",
+    "name_zh": "气槽",
+    "name_tw": null,
+    "name_jp": "エアグルーヴ",
+    "name_en": "Air Groove",
+    "aliases": [
+      "气槽",
+      "エアグルーヴ",
+      "Air Groove",
+      "【女帝之路】氣槽",
+      "氣槽",
+      "女帝之路",
+      "女帝",
+      "エンプレスロード"
+    ],
+    "image_local_path": "/api/assets/eaguruuvu-thumb"
+  },
+  {
+    "id": "agunesudejitaru",
+    "name_zh": "爱丽数码",
+    "name_tw": null,
+    "name_jp": "アグネスデジタル",
+    "name_en": "Agnes Digital",
+    "aliases": [
+      "爱丽数码",
+      "アグネスデジタル",
+      "Agnes Digital",
+      "【超特急！全彩特殊膜】愛麗數碼",
+      "愛麗數碼",
+      "超特急！全彩特殊膜",
+      "数码碳（デジたん）",
+      "变态",
+      "DD头子",
+      "超特急！フルカラー特殊PP"
+    ],
+    "image_local_path": "/api/assets/agunesudejitaru-thumb"
+  },
+  {
+    "id": "seiunsukai",
+    "name_zh": "青云天空",
+    "name_tw": null,
+    "name_jp": "セイウンスカイ",
+    "name_en": "Seiun Sky",
+    "aliases": [
+      "青云天空",
+      "セイウンスカイ",
+      "Seiun Sky",
+      "【青雲釣術】青雲天空",
+      "青雲天空",
+      "青雲釣術",
+      "Trickster[1]",
+      "あおぐもサミング"
+    ],
+    "image_local_path": "/api/assets/seiunsukai-thumb"
+  },
+  {
+    "id": "tamamokurosu",
+    "name_zh": "玉藻十字",
+    "name_tw": null,
+    "name_jp": "タマモクロス",
+    "name_en": "Tamamo Cross",
+    "aliases": [
+      "玉藻十字",
+      "タマモクロス",
+      "Tamamo Cross",
+      "【疾風迅雷】玉藻十字",
+      "疾風迅雷",
+      "白色闪电（白い稲妻）",
+      "小玉（タマちゃん）",
+      "tama"
+    ],
+    "image_local_path": "/api/assets/tamamokurosu-thumb"
+  },
+  {
+    "id": "fuainmooshon",
+    "name_zh": "美妙姿势",
+    "name_tw": null,
+    "name_jp": "ファインモーション",
+    "name_en": "Fine Motion",
+    "aliases": [
+      "美妙姿势",
+      "ファインモーション",
+      "Fine Motion",
+      "【Noble Seamair】美妙姿勢",
+      "美妙姿勢",
+      "Noble Seamair",
+      "殿下",
+      "インモー",
+      "傻狍子"
+    ],
+    "image_local_path": "/api/assets/fuainmooshon-thumb"
+  },
+  {
+    "id": "biwahayahide",
+    "name_zh": "琵琶晨光",
+    "name_tw": null,
+    "name_jp": "ビワハヤヒデ",
+    "name_en": "Biwa Hayahide",
+    "aliases": [
+      "琵琶晨光",
+      "ビワハヤヒデ",
+      "Biwa Hayahide",
+      "【pf.Victory formula...】琵琶晨光",
+      "pf.Victory formula...",
+      "晨光",
+      "大头",
+      "倒行圣诞老人（背走サンタ）"
+    ],
+    "image_local_path": "/api/assets/biwahayahide-thumb"
+  },
+  {
+    "id": "mayanotoppugan",
+    "name_zh": "摩耶重炮",
+    "name_tw": null,
+    "name_jp": "マヤノトップガン",
+    "name_en": "Mayano Top Gun",
+    "aliases": [
+      "摩耶重炮",
+      "マヤノトップガン",
+      "Mayano Top Gun",
+      "【急飛☆區域】重砲",
+      "重砲",
+      "急飛☆區域",
+      "重宝",
+      "小祖宗",
+      "玛雅诺冲锋枪[3]",
+      "すくらんぶる☆ゾーン"
+    ],
+    "image_local_path": "/api/assets/mayanotoppugan-thumb"
+  },
+  {
+    "id": "manhattankafye",
+    "name_zh": "曼城茶座",
+    "name_tw": null,
+    "name_jp": "マンハッタンカフェ",
+    "name_en": "Manhattan Cafe",
+    "aliases": [
+      "曼城茶座",
+      "マンハッタンカフェ",
+      "Manhattan Cafe",
+      "【Creeping Black】曼哈頓咖啡",
+      "曼哈頓咖啡",
+      "Creeping Black",
+      "漆黒の摩天楼",
+      "暗黑xcw",
+      "曼城插座[1]"
+    ],
+    "image_local_path": "/api/assets/manhattankafye-thumb"
+  },
+  {
+    "id": "mihonoburubon",
+    "name_zh": "美浦波旁",
+    "name_tw": null,
+    "name_jp": "ミホノブルボン",
+    "name_en": "Mihono Bourbon",
+    "aliases": [
+      "美浦波旁",
+      "ミホノブルボン",
+      "Mihono Bourbon",
+      "【MB-19890425】美浦波旁",
+      "MB-19890425",
+      "波旁",
+      "坂路の申し子",
+      "栗毛の超特急",
+      "赛博马",
+      "高达[1]"
+    ],
+    "image_local_path": "/api/assets/mihonoburubon-thumb"
+  },
+  {
+    "id": "mejiroraian",
+    "name_zh": "目白赖恩",
+    "name_tw": null,
+    "name_jp": "メジロライアン",
+    "name_en": "Mejiro Ryan",
+    "aliases": [
+      "目白赖恩",
+      "メジロライアン",
+      "Mejiro Ryan",
+      "【勇往直前】目白雷恩",
+      "目白雷恩",
+      "勇往直前",
+      "ストレート・ライン"
+    ],
+    "image_local_path": "/api/assets/mejiroraian-thumb"
+  },
+  {
+    "id": "hishiakebono",
+    "name_zh": "菱曙",
+    "name_tw": null,
+    "name_jp": "ヒシアケボノ",
+    "name_en": "Hishi Akebono",
+    "aliases": [
+      "菱曙",
+      "ヒシアケボノ",
+      "Hishi Akebono",
+      "【Buono☆時尚】菱曙",
+      "Buono☆時尚",
+      "ボーノ☆アラモーダ"
+    ],
+    "image_local_path": "/api/assets/hishiakebono-thumb"
+  },
+  {
+    "id": "yukinobijin",
+    "name_zh": "雪之美人",
+    "name_tw": null,
+    "name_jp": "ユキノビジン",
+    "name_en": "Yukino Bijin",
+    "aliases": [
+      "雪之美人",
+      "ユキノビジン",
+      "Yukino Bijin",
+      "雪中美人",
+      "【好口愛好口愛的銀粟】雪之美人",
+      "好口愛好口愛的銀粟",
+      "めんこいめんこいむつのはな"
+    ],
+    "image_local_path": "/api/assets/yukinobijin-thumb"
+  },
+  {
+    "id": "raisushawaa",
+    "name_zh": "米浴",
+    "name_tw": null,
+    "name_jp": "ライスシャワー",
+    "name_en": "Rice Shower",
+    "aliases": [
+      "米浴",
+      "ライスシャワー",
+      "Rice Shower",
+      "【薔薇之夢】米浴",
+      "薔薇之夢",
+      "关东的刺客",
+      "黑い刺客",
+      "Rice",
+      "米宝",
+      "大米洗澡",
+      "大米淋浴",
+      "大米祝福",
+      "ローゼスドリーム"
+    ],
+    "image_local_path": "/api/assets/raisushawaa-thumb"
+  },
+  {
+    "id": "ainesufuujin",
+    "name_zh": "艾尼斯风神",
+    "name_tw": null,
+    "name_jp": "アイネスフウジン",
+    "name_en": "Ines Fujin",
+    "aliases": [
+      "艾尼斯风神",
+      "アイネスフウジン",
+      "Ines Fujin",
+      "【全天候狂熱】艾尼風神",
+      "艾尼風神",
+      "全天候狂熱",
+      "乐购鹰[2]",
+      "オールタイム・フィーバー"
+    ],
+    "image_local_path": "/api/assets/ainesufuujin-thumb"
+  },
+  {
+    "id": "agunesutakion",
+    "name_zh": "爱丽速子",
+    "name_tw": null,
+    "name_jp": "アグネスタキオン",
+    "name_en": "Agnes Tachyon",
+    "aliases": [
+      "爱丽速子",
+      "アグネスタキオン",
+      "Agnes Tachyon",
+      "【tach-nology】愛麗速子",
+      "愛麗速子",
+      "tach-nology",
+      "疯狂科学家",
+      "老父亲",
+      "十一个孩子的外公[2]"
+    ],
+    "image_local_path": "/api/assets/agunesutakion-thumb"
+  },
+  {
+    "id": "adomaiyabega",
+    "name_zh": "爱慕织姬",
+    "name_tw": null,
+    "name_jp": "アドマイヤベガ",
+    "name_en": "Admire Vega",
+    "aliases": [
+      "爱慕织姬",
+      "アドマイヤベガ",
+      "Admire Vega",
+      "【Starry Nocturne】愛慕織姬",
+      "愛慕織姬",
+      "Starry Nocturne",
+      "织姬",
+      "アヤべ（ayabe）",
+      "アドベ（adobe)",
+      "AV[1]"
+    ],
+    "image_local_path": "/api/assets/adomaiyabega-thumb"
+  },
+  {
+    "id": "inariwan",
+    "name_zh": "稻荷一",
+    "name_tw": null,
+    "name_jp": "イナリワン",
+    "name_en": "Inari One",
+    "aliases": [
+      "稻荷一",
+      "イナリワン",
+      "Inari One",
+      "【稻荷因緣江戶紫】稻荷一",
+      "稻荷因緣江戶紫",
+      "稲荷所縁江戸紫"
+    ],
+    "image_local_path": "/api/assets/inariwan-thumb"
+  },
+  {
+    "id": "uininguchiketto",
+    "name_zh": "胜利奖券",
+    "name_tw": null,
+    "name_jp": "ウイニングチケット",
+    "name_en": "Winning Ticket",
+    "aliases": [
+      "胜利奖券",
+      "ウイニングチケット",
+      "Winning Ticket",
+      "【Go To Winning!】勝利獎券",
+      "勝利獎券",
+      "Go To Winning!",
+      "奖券藏"
+    ],
+    "image_local_path": "/api/assets/uininguchiketto-thumb"
+  },
+  {
+    "id": "eashakaaru",
+    "name_zh": "空中神宫",
+    "name_tw": null,
+    "name_jp": "エアシャカール",
+    "name_en": "Air Shakur",
+    "aliases": [
+      "空中神宫",
+      "エアシャカール",
+      "Air Shakur",
+      "【unsigned】空中神宮",
+      "空中神宮",
+      "unsigned"
+    ],
+    "image_local_path": "/api/assets/eashakaaru-thumb"
+  },
+  {
+    "id": "eishinfurasshu",
+    "name_zh": "荣进闪耀",
+    "name_tw": null,
+    "name_jp": "エイシンフラッシュ",
+    "name_en": "Eishin Flash",
+    "aliases": [
+      "荣进闪耀",
+      "エイシンフラッシュ",
+      "Eishin Flash",
+      "【Meisterschaft】榮進閃耀",
+      "榮進閃耀",
+      "Meisterschaft",
+      "德国女仆"
+    ],
+    "image_local_path": "/api/assets/eishinfurasshu-thumb"
+  },
+  {
+    "id": "karenchan",
+    "name_zh": "真机伶",
+    "name_tw": null,
+    "name_jp": "カレンチャン",
+    "name_en": "Curren Chan",
+    "aliases": [
+      "真机伶",
+      "カレンチャン",
+      "Curren Chan",
+      "【閃光少女】真機伶",
+      "真機伶",
+      "閃光少女",
+      "卡莲酱[1]",
+      "フィーユ・エクレール"
+    ],
+    "image_local_path": "/api/assets/karenchan-thumb"
+  },
+  {
+    "id": "kawakamipurinsesu",
+    "name_zh": "川上公主",
+    "name_tw": null,
+    "name_jp": "カワカミプリンセス",
+    "name_en": "Kawakami Princess",
+    "aliases": [
+      "川上公主",
+      "カワカミプリンセス",
+      "Kawakami Princess",
+      "【Princess of pink】川上公主",
+      "Princess of pink",
+      "プリンセス・オブ・ピンク"
+    ],
+    "image_local_path": "/api/assets/kawakamipurinsesu-thumb"
+  },
+  {
+    "id": "goorudoshichii",
+    "name_zh": "黄金城",
+    "name_tw": null,
+    "name_jp": "ゴールドシチー",
+    "name_en": "Gold City",
+    "aliases": [
+      "黄金城",
+      "ゴールドシチー",
+      "Gold City",
+      "【純正/1928】黃金城市",
+      "黃金城市",
+      "純正/1928",
+      "黄金城市",
+      "オーセンティック/1928"
+    ],
+    "image_local_path": "/api/assets/goorudoshichii-thumb"
+  },
+  {
+    "id": "sakurabakushinoo",
+    "name_zh": "樱花进王",
+    "name_tw": null,
+    "name_jp": "サクラバクシンオー",
+    "name_en": "Sakura Bakushin O",
+    "aliases": [
+      "樱花进王",
+      "サクラバクシンオー",
+      "Sakura Bakushin O",
+      "【前進吧！櫻花】櫻花驀進王",
+      "櫻花驀進王",
+      "前進吧！櫻花",
+      "进王",
+      "樱花笨进",
+      "班长",
+      "马克沁[1]",
+      "サクラ、すすめ！"
+    ],
+    "image_local_path": "/api/assets/sakurabakushinoo-thumb"
+  },
+  {
+    "id": "shiikinguzapaaru",
+    "name_zh": "采珠",
+    "name_tw": null,
+    "name_jp": "シーキングザパール",
+    "name_en": "Seeking the Pearl",
+    "aliases": [
+      "采珠",
+      "シーキングザパール",
+      "Seeking the Pearl",
+      "【Rocket☆Star】採珠",
+      "採珠",
+      "Rocket☆Star"
+    ],
+    "image_local_path": "/api/assets/shiikinguzapaaru-thumb"
+  },
+  {
+    "id": "shinkouuindei",
+    "name_zh": "新光风",
+    "name_tw": null,
+    "name_jp": "シンコウウインディ",
+    "name_en": "Shinko Windy",
+    "aliases": [
+      "新光风",
+      "シンコウウインディ",
+      "Shinko Windy",
+      "【Wicked Punk】新光風",
+      "新光風",
+      "Wicked Punk"
+    ],
+    "image_local_path": "/api/assets/shinkouuindei-thumb"
+  },
+  {
+    "id": "suiiputoushou",
+    "name_zh": "东商变革",
+    "name_tw": "東商變革",
+    "name_jp": "スイープトウショウ",
+    "name_en": "Sweep Tosho",
+    "aliases": [
+      "东商变革",
+      "東商變革",
+      "スイープトウショウ",
+      "Sweep Tosho",
+      "【懸鈴木魔女】東商變革",
+      "懸鈴木魔女",
+      "小魔女",
+      "巫马牧师妹",
+      "プラタナス・ウィッチ"
+    ],
+    "image_local_path": "/api/assets/suiiputoushou-thumb"
+  },
+  {
+    "id": "suupaakuriiku",
+    "name_zh": "超级小海湾",
+    "name_tw": null,
+    "name_jp": "スーパークリーク",
+    "name_en": "Super Creek",
+    "aliases": [
+      "超级小海湾",
+      "スーパークリーク",
+      "Super Creek",
+      "【低語溪流】超級小溪",
+      "超級小溪",
+      "低語溪流",
+      "超级大海湾[2]",
+      "超级溪流",
+      "マーマリングストリーム"
+    ],
+    "image_local_path": "/api/assets/suupaakuriiku-thumb"
+  },
+  {
+    "id": "sumaatofuarukon",
+    "name_zh": "醒目飞鹰",
+    "name_tw": null,
+    "name_jp": "スマートファルコン",
+    "name_en": "Smart Falcon",
+    "aliases": [
+      "醒目飞鹰",
+      "スマートファルコン",
+      "Smart Falcon",
+      "【絕對純粹☆LOVE】醒目飛鷹",
+      "醒目飛鷹",
+      "絕對純粹☆LOVE",
+      "飞鹰子",
+      "飞飞（ファル子）",
+      "沙尘猎隼",
+      "（砂塵の隼",
+      "砂のハヤブサ）",
+      "泥地的赤鬼",
+      "法老控[1]",
+      "寄寄子",
+      "锹形虫",
+      "泥地铃鹿",
+      "スマファル",
+      "あぶそりゅーと☆LOVE"
+    ],
+    "image_local_path": "/api/assets/sumaatofuarukon-thumb"
+  },
+  {
+    "id": "zennoroburoi",
+    "name_zh": "荒漠英雄",
+    "name_tw": null,
+    "name_jp": "ゼンノロブロイ",
+    "name_en": "Zenno Rob Roy",
+    "aliases": [
+      "荒漠英雄",
+      "ゼンノロブロイ",
+      "Zenno Rob Roy",
+      "【Heroic Author】荒漠英雄",
+      "Heroic Author"
+    ],
+    "image_local_path": "/api/assets/zennoroburoi-thumb"
+  },
+  {
+    "id": "toosenjoodan",
+    "name_zh": "东瀛佐敦",
+    "name_tw": null,
+    "name_jp": "トーセンジョーダン",
+    "name_en": "Tosen Jordan",
+    "aliases": [
+      "东瀛佐敦",
+      "トーセンジョーダン",
+      "Tosen Jordan",
+      "【POPS☆JOKER】島川喬登",
+      "島川喬登",
+      "POPS☆JOKER",
+      "ポップス☆ジョーカー"
+    ],
+    "image_local_path": "/api/assets/toosenjoodan-thumb"
+  },
+  {
+    "id": "nakayamafyesuta",
+    "name_zh": "中山庆典",
+    "name_tw": null,
+    "name_jp": "ナカヤマフェスタ",
+    "name_en": "Nakayama Festa",
+    "aliases": [
+      "中山庆典",
+      "ナカヤマフェスタ",
+      "Nakayama Festa",
+      "【死中求活】中山慶典",
+      "中山慶典",
+      "死中求活",
+      "典子哥"
+    ],
+    "image_local_path": "/api/assets/nakayamafyesuta-thumb"
+  },
+  {
+    "id": "naritataishin",
+    "name_zh": "成田大进",
+    "name_tw": null,
+    "name_jp": "ナリタタイシン",
+    "name_en": "Narita Taishin",
+    "aliases": [
+      "成田大进",
+      "ナリタタイシン",
+      "Narita Taishin",
+      "【Nevertheless】成田大進",
+      "成田大進",
+      "Nevertheless",
+      "大进",
+      "成田小进[1]"
+    ],
+    "image_local_path": "/api/assets/naritataishin-thumb"
+  },
+  {
+    "id": "nishinofurawaa",
+    "name_zh": "西野花",
+    "name_tw": null,
+    "name_jp": "ニシノフラワー",
+    "name_en": "Nishino Flower",
+    "aliases": [
+      "西野花",
+      "ニシノフラワー",
+      "Nishino Flower",
+      "【重瓣花朵】西野花",
+      "重瓣花朵",
+      "韦驮天少女",
+      "哈曼·卡恩",
+      "夏亚的母亲",
+      "ティアード・ペタル"
+    ],
+    "image_local_path": "/api/assets/nishinofurawaa-thumb"
+  },
+  {
+    "id": "haruurara",
+    "name_zh": "春乌拉拉",
+    "name_tw": null,
+    "name_jp": "ハルウララ",
+    "name_en": "Haru Urara",
+    "aliases": [
+      "春乌拉拉",
+      "ハルウララ",
+      "Haru Urara",
+      "【烏菈菈得第一♪】春烏菈菈",
+      "春烏菈菈",
+      "烏菈菈得第一♪",
+      "乌拉拉（うらら）",
+      "不胜战神",
+      "灰流丽[1]",
+      "坏乌拉拉[2]",
+      "春丽",
+      "うららん一等賞♪"
+    ],
+    "image_local_path": "/api/assets/haruurara-thumb"
+  },
+  {
+    "id": "banbuumemorii",
+    "name_zh": "青竹回忆",
+    "name_tw": null,
+    "name_jp": "バンブーメモリー",
+    "name_en": "Bamboo Memory",
+    "aliases": [
+      "青竹回忆",
+      "バンブーメモリー",
+      "Bamboo Memory",
+      "【黑鐵大志】青竹回憶",
+      "青竹回憶",
+      "黑鐵大志",
+      "风纪委员长",
+      "黒鉄の大志"
+    ],
+    "image_local_path": "/api/assets/banbuumemorii-thumb"
+  },
+  {
+    "id": "bikoopegasasu",
+    "name_zh": "微光飞驹",
+    "name_tw": null,
+    "name_jp": "ビコーペガサス",
+    "name_en": "Biko Pegasus",
+    "aliases": [
+      "微光飞驹",
+      "ビコーペガサス",
+      "Biko Pegasus",
+      "【疾風飛駒．零式】微光飛駒",
+      "微光飛駒",
+      "疾風飛駒．零式",
+      "假面骑士",
+      "疾風ペガサス・零式"
+    ],
+    "image_local_path": "/api/assets/bikoopegasasu-thumb"
+  },
+  {
+    "id": "maaberasusandee",
+    "name_zh": "美丽周日",
+    "name_tw": "美麗週日",
+    "name_jp": "マーベラスサンデー",
+    "name_en": "Marvelous Sunday",
+    "aliases": [
+      "美丽周日",
+      "美麗週日",
+      "マーベラスサンデー",
+      "Marvelous Sunday",
+      "【☆閃耀★怦然☆雀躍∞美麗∞】美麗週日",
+      "☆閃耀★怦然☆雀躍∞美麗∞",
+      "☆キラ★ドキ☆ワク∞マベ∞"
+    ],
+    "image_local_path": "/api/assets/maaberasusandee-thumb"
+  },
+  {
+    "id": "machikanefukukitaru",
+    "name_zh": "待兼福来",
+    "name_tw": null,
+    "name_jp": "マチカネフクキタル",
+    "name_en": "Matikanefukukitaru",
+    "aliases": [
+      "待兼福来",
+      "マチカネフクキタル",
+      "Matikanefukukitaru",
+      "【運勢上升☆好運臨門】待兼福來",
+      "待兼福來",
+      "運勢上升☆好運臨門",
+      "笑門来福",
+      "待半仙",
+      "待兼胡来",
+      "運気上昇☆幸福万来"
+    ],
+    "image_local_path": "/api/assets/machikanefukukitaru-thumb"
+  },
+  {
+    "id": "misutaashiibii",
+    "name_zh": "千明代表",
+    "name_tw": null,
+    "name_jp": "ミスターシービー",
+    "name_en": "Mr. C.B.",
+    "aliases": [
+      "千明代表",
+      "ミスターシービー",
+      "Mr. C.B.",
+      "【Clear Bliss】千明代表",
+      "Clear Bliss",
+      "C.B",
+      "西皮先生[1]"
+    ],
+    "image_local_path": "/api/assets/misutaashiibii-thumb"
+  },
+  {
+    "id": "meishoudotou",
+    "name_zh": "名将怒涛",
+    "name_tw": "名將怒濤",
+    "name_jp": "メイショウドトウ",
+    "name_en": "Meisho Doto",
+    "aliases": [
+      "名将怒涛",
+      "名將怒濤",
+      "メイショウドトウ",
+      "Meisho Doto",
+      "【湛藍/湧濤】名將怒濤",
+      "湛藍/湧濤",
+      "豆豆",
+      "ブルー/レイジング"
+    ],
+    "image_local_path": "/api/assets/meishoudotou-thumb"
+  },
+  {
+    "id": "mejirodooberu",
+    "name_zh": "目白多伯",
+    "name_tw": null,
+    "name_jp": "メジロドーベル",
+    "name_en": "Mejiro Dober",
+    "aliases": [
+      "目白多伯",
+      "メジロドーベル",
+      "Mejiro Dober",
+      "【Twisted Line】目白多伯",
+      "Twisted Line",
+      "どぼめじろう[1]",
+      "ツイステッド・ライン"
+    ],
+    "image_local_path": "/api/assets/mejirodooberu-thumb"
+  },
+  {
+    "id": "naisuneicha",
+    "name_zh": "优秀素质",
+    "name_tw": null,
+    "name_jp": "ナイスネイチャ",
+    "name_en": "Nice Nature",
+    "aliases": [
+      "优秀素质",
+      "ナイスネイチャ",
+      "Nice Nature",
+      "【聖誕紅緞帶】優秀素質",
+      "優秀素質",
+      "聖誕紅緞帶",
+      "内恰",
+      "Natie",
+      "素质女士",
+      "好姐姐[1]",
+      "没有素质/素质吊差[2]",
+      "铜牌收藏家",
+      "三着女士",
+      "“三”冠王",
+      "ポインセチア・リボン"
+    ],
+    "image_local_path": "/api/assets/naisuneicha-thumb"
+  },
+  {
+    "id": "kinguheiroo",
+    "name_zh": "帝王光辉",
+    "name_tw": null,
+    "name_jp": "キングヘイロー",
+    "name_en": "King Halo",
+    "aliases": [
+      "帝王光辉",
+      "キングヘイロー",
+      "King Halo",
+      "【綠寶石之王】帝王光輝",
+      "帝王光輝",
+      "綠寶石之王",
+      "圣王",
+      "陪跑光环",
+      "王环环",
+      "王黑楼",
+      "圣王光环",
+      "キング・オブ・エメラルド"
+    ],
+    "image_local_path": "/api/assets/kinguheiroo-thumb"
+  },
+  {
+    "id": "machikanetanhoiza",
+    "name_zh": "诗歌剧",
+    "name_tw": null,
+    "name_jp": "マチカネタンホイザ",
+    "name_en": "Matikanetannhauser",
+    "aliases": [
+      "诗歌剧",
+      "マチカネタンホイザ",
+      "Matikanetannhauser",
+      "待兼诗歌剧",
+      "ぱんぱかティルトット"
+    ],
+    "image_local_path": "/api/assets/machikanetanhoiza-thumb"
+  },
+  {
+    "id": "ikunodeikutasu",
+    "name_zh": "狄杜斯",
+    "name_tw": null,
+    "name_jp": "イクノディクタス",
+    "name_en": "Ikuno Dictus",
+    "aliases": [
+      "狄杜斯",
+      "イクノディクタス",
+      "Ikuno Dictus",
+      "生野狄杜斯",
+      "【Mantle of Steel】生野狄杜斯",
+      "Mantle of Steel"
+    ],
+    "image_local_path": "/api/assets/ikunodeikutasu-thumb"
+  },
+  {
+    "id": "mejiropaamaa",
+    "name_zh": "目白善信",
+    "name_tw": null,
+    "name_jp": "メジロパーマー",
+    "name_en": "Mejiro Palmer",
+    "aliases": [
+      "目白善信",
+      "メジロパーマー",
+      "Mejiro Palmer",
+      "【Line Breakthrough】目白善信",
+      "Line Breakthrough",
+      "pama"
+    ],
+    "image_local_path": "/api/assets/mejiropaamaa-thumb"
+  },
+  {
+    "id": "daitakuheriosu",
+    "name_zh": "大拓太阳神",
+    "name_tw": null,
+    "name_jp": "ダイタクヘリオス",
+    "name_en": "Daitaku Helios",
+    "aliases": [
+      "大拓太阳神",
+      "ダイタクヘリオス",
+      "Daitaku Helios",
+      "【Fun☆Fun☆派對夜】大德太陽",
+      "大德太陽",
+      "Fun☆Fun☆派對夜",
+      "太阳神",
+      "看报纸的马",
+      "笑马",
+      "Fun☆Fun☆ぱりない"
+    ],
+    "image_local_path": "/api/assets/daitakuheriosu-thumb"
+  },
+  {
+    "id": "tsuintaabo",
+    "name_zh": "双涡轮",
+    "name_tw": null,
+    "name_jp": "ツインターボ",
+    "name_en": "Twin Turbo",
+    "aliases": [
+      "双涡轮",
+      "ツインターボ",
+      "Twin Turbo",
+      "【暴衝！渦輪引擎】雙渦輪",
+      "雙渦輪",
+      "暴衝！渦輪引擎",
+      "师匠",
+      "两涡轮（Double Turbo）",
+      "两喷射（Double Jet）[1]",
+      "爆走！ターボエンジン"
+    ],
+    "image_local_path": "/api/assets/tsuintaabo-thumb"
+  },
+  {
+    "id": "satonodaiyamondo",
+    "name_zh": "里见光钻",
+    "name_tw": null,
+    "name_jp": "サトノダイヤモンド",
+    "name_en": "Satono Diamond",
+    "aliases": [
+      "里见光钻",
+      "サトノダイヤモンド",
+      "Satono Diamond",
+      "【Natural Brilliance】里見光鑽",
+      "里見光鑽",
+      "Natural Brilliance",
+      "小光(钻)",
+      "钻哥/妹（ダイヤ）",
+      "芋头（サトイモ）"
+    ],
+    "image_local_path": "/api/assets/satonodaiyamondo-thumb"
+  },
+  {
+    "id": "kitasanburakku",
+    "name_zh": "北部玄驹",
+    "name_tw": null,
+    "name_jp": "キタサンブラック",
+    "name_en": "Kitasan Black",
+    "aliases": [
+      "北部玄驹",
+      "キタサンブラック",
+      "Kitasan Black",
+      "【錦上．大判御輿】北部玄駒",
+      "北部玄駒",
+      "錦上．大判御輿",
+      "小北",
+      "北黑",
+      "悸动战士",
+      "錦上・大判御輿"
+    ],
+    "image_local_path": "/api/assets/kitasanburakku-thumb"
+  },
+  {
+    "id": "sakurachiyonooo",
+    "name_zh": "樱花千代王",
+    "name_tw": null,
+    "name_jp": "サクラチヨノオー",
+    "name_en": "Sakura Chiyono O",
+    "aliases": [
+      "樱花千代王",
+      "サクラチヨノオー",
+      "Sakura Chiyono O",
+      "【天下第一花滿天】櫻花千代王",
+      "櫻花千代王",
+      "天下第一花滿天",
+      "樱花千代汪",
+      "牛牛",
+      "狗狗",
+      "日下開山・花あかり"
+    ],
+    "image_local_path": "/api/assets/sakurachiyonooo-thumb"
+  },
+  {
+    "id": "shiriusushinbori",
+    "name_zh": "天狼星象征",
+    "name_tw": null,
+    "name_jp": "シリウスシンボリ",
+    "name_en": "Sirius Symboli",
+    "aliases": [
+      "天狼星象征",
+      "シリウスシンボリ",
+      "Sirius Symboli",
+      "【Féroce】天狼星象徵",
+      "天狼星象徵",
+      "Féroce",
+      "天狼星"
+    ],
+    "image_local_path": "/api/assets/shiriusushinbori-thumb"
+  },
+  {
+    "id": "mejiroarudan",
+    "name_zh": "目白阿尔丹",
+    "name_tw": null,
+    "name_jp": "メジロアルダン",
+    "name_en": "Mejiro Ardan",
+    "aliases": [
+      "目白阿尔丹",
+      "メジロアルダン",
+      "Mejiro Ardan",
+      "目白雅丹",
+      "【Clinochlore Line】目白阿爾丹",
+      "目白阿爾丹",
+      "Clinochlore Line",
+      "クリノクロア・ライン"
+    ],
+    "image_local_path": "/api/assets/mejiroarudan-thumb"
+  },
+  {
+    "id": "yaenomuteki",
+    "name_zh": "八重无敌",
+    "name_tw": null,
+    "name_jp": "ヤエノムテキ",
+    "name_en": "Yaeno Muteki",
+    "aliases": [
+      "八重无敌",
+      "ヤエノムテキ",
+      "Yaeno Muteki",
+      "【四白流星襲擊】八重無敵",
+      "八重無敵",
+      "四白流星襲擊",
+      "八重母铁鸡",
+      "四白流星の襲"
+    ],
+    "image_local_path": "/api/assets/yaenomuteki-thumb"
+  },
+  {
+    "id": "tsurumarutsuyoshi",
+    "name_zh": "鹤丸刚志",
+    "name_tw": null,
+    "name_jp": "ツルマルツヨシ",
+    "name_en": "Tsurumaru Tsuyoshi",
+    "aliases": [
+      "鹤丸刚志",
+      "ツルマルツヨシ",
+      "Tsurumaru Tsuyoshi",
+      "【志向、遠大、堅強！】鶴丸強志",
+      "鶴丸強志",
+      "志向、遠大、堅強！",
+      "志、高し、強し！"
+    ],
+    "image_local_path": "/api/assets/tsurumarutsuyoshi-thumb"
+  },
+  {
+    "id": "mejiroburaito",
+    "name_zh": "目白光明",
+    "name_tw": null,
+    "name_jp": "メジロブライト",
+    "name_en": "Mejiro Bright",
+    "aliases": [
+      "目白光明",
+      "メジロブライト",
+      "Mejiro Bright",
+      "【Vernissage Line】目白光明",
+      "Vernissage Line",
+      "ブリュニサージュ・ライン"
+    ],
+    "image_local_path": "/api/assets/mejiroburaito-thumb"
+  },
+  {
+    "id": "sakurarooreru",
+    "name_zh": "樱花桂冠",
+    "name_tw": null,
+    "name_jp": "サクラローレル",
+    "name_en": "Sakura Laurel",
+    "aliases": [
+      "樱花桂冠",
+      "サクラローレル",
+      "Sakura Laurel",
+      "【Saisir le rêve】櫻花桂冠",
+      "櫻花桂冠",
+      "Saisir le rêve",
+      "樱花魅魔"
+    ],
+    "image_local_path": "/api/assets/sakurarooreru-thumb"
+  },
+  {
+    "id": "naritatoppuroodo",
+    "name_zh": "成田路",
+    "name_tw": null,
+    "name_jp": "ナリタトップロード",
+    "name_en": "Narita Top Road",
+    "aliases": [
+      "成田路",
+      "ナリタトップロード",
+      "Narita Top Road",
+      "【The Proud Road】成田路",
+      "The Proud Road",
+      "NTR[1]",
+      "阿路",
+      "路哥",
+      "トプロ",
+      "トップロード"
+    ],
+    "image_local_path": "/api/assets/naritatoppuroodo-thumb"
+  },
+  {
+    "id": "yamaninzefuaa",
+    "name_zh": "也文摄辉",
+    "name_tw": null,
+    "name_jp": "ヤマニンゼファー",
+    "name_en": "Yamanin Zephyr",
+    "aliases": [
+      "也文摄辉",
+      "ヤマニンゼファー",
+      "Yamanin Zephyr",
+      "【Fluttertail Spirit】山人西風",
+      "山人西風",
+      "Fluttertail Spirit"
+    ],
+    "image_local_path": "/api/assets/yamaninzefuaa-thumb"
+  },
+  {
+    "id": "furiooso",
+    "name_zh": "狂怒乐章",
+    "name_tw": null,
+    "name_jp": "フリオーソ",
+    "name_en": "Furioso",
+    "aliases": [
+      "狂怒乐章",
+      "フリオーソ",
+      "Furioso",
+      "【衣錦還鄉的瑞星】狂熱激昂",
+      "狂熱激昂",
+      "衣錦還鄉的瑞星",
+      "衣錦還郷の瑞星"
+    ],
+    "image_local_path": "/api/assets/furiooso-thumb"
+  },
+  {
+    "id": "toransendo",
+    "name_zh": "创升",
+    "name_tw": null,
+    "name_jp": "トランセンド",
+    "name_en": "Transcend",
+    "aliases": [
+      "创升",
+      "トランセンド",
+      "Transcend",
+      "【興奮不已GIZMO】創升",
+      "創升",
+      "興奮不已GIZMO",
+      "ZOKU-ZOKU GIZMO"
+    ],
+    "image_local_path": "/api/assets/toransendo-thumb"
+  },
+  {
+    "id": "esupowaarushichii",
+    "name_zh": "希望之城",
+    "name_tw": null,
+    "name_jp": "エスポワールシチー",
+    "name_en": "Espoir City",
+    "aliases": [
+      "希望之城",
+      "エスポワールシチー",
+      "Espoir City",
+      "Red Devil Gear"
+    ],
+    "image_local_path": "/api/assets/esupowaarushichii-thumb"
+  },
+  {
+    "id": "noosufuraito",
+    "name_zh": "北方飞翔",
+    "name_tw": null,
+    "name_jp": "ノースフライト",
+    "name_en": "North Flight",
+    "aliases": [
+      "北方飞翔",
+      "ノースフライト",
+      "North Flight",
+      "【Looking Fly!】北方飛翔",
+      "北方飛翔",
+      "Looking Fly!",
+      "英里的女王（マイルの女王）"
+    ],
+    "image_local_path": "/api/assets/noosufuraito-thumb"
+  },
+  {
+    "id": "shinborikurisuesu",
+    "name_zh": "吉兆",
+    "name_tw": null,
+    "name_jp": "シンボリクリスエス",
+    "name_en": "Symboli Kris S",
+    "aliases": [
+      "吉兆",
+      "シンボリクリスエス",
+      "Symboli Kris S",
+      "【Onyx Soldier】克莉斯耶絲象徵",
+      "克莉斯耶絲象徵",
+      "Onyx Soldier",
+      "关二爷",
+      "特雷森王牌狙击手"
+    ],
+    "image_local_path": "/api/assets/shinborikurisuesu-thumb"
+  },
+  {
+    "id": "taninogimuretto",
+    "name_zh": "谷水琴蕾",
+    "name_tw": null,
+    "name_jp": "タニノギムレット",
+    "name_en": "Tanino Gimlet",
+    "aliases": [
+      "谷水琴蕾",
+      "タニノギムレット",
+      "Tanino Gimlet",
+      "【雷光纏身】谷水琴蕾",
+      "雷光纏身",
+      "谷水老爹",
+      "栏杆破坏神",
+      "👁[1]",
+      "谷野美酒",
+      "身に纏うケラヴノス"
+    ],
+    "image_local_path": "/api/assets/taninogimuretto-thumb"
+  },
+  {
+    "id": "daiichirubii",
+    "name_zh": "第一红宝石",
+    "name_tw": "華麗紅玉",
+    "name_jp": "ダイイチルビー",
+    "name_en": "Daiichi Ruby",
+    "aliases": [
+      "第一红宝石",
+      "華麗紅玉",
+      "ダイイチルビー",
+      "Daiichi Ruby",
+      "【華麗紅玉】第一紅寶",
+      "第一紅寶",
+      "露比",
+      "大日如来[1]",
+      "華麗なる紅玉"
+    ],
+    "image_local_path": "/api/assets/daiichirubii-thumb"
+  },
+  {
+    "id": "mejiroramoonu",
+    "name_zh": "目白高峰",
+    "name_tw": null,
+    "name_jp": "メジロラモーヌ",
+    "name_en": "Mejiro Ramonu",
+    "aliases": [
+      "目白高峰",
+      "メジロラモーヌ",
+      "Mejiro Ramonu",
+      "【Onyx Line】目白拉茉奴",
+      "目白拉茉奴",
+      "Onyx Line",
+      "オニキス・ライン"
+    ],
+    "image_local_path": "/api/assets/mejiroramoonu-thumb"
+  },
+  {
+    "id": "asutonmaachan",
+    "name_zh": "真弓快车",
+    "name_tw": "奧斯頓真弓",
+    "name_jp": "アストンマーチャン",
+    "name_en": "Aston Machan",
+    "aliases": [
+      "真弓快车",
+      "奧斯頓真弓",
+      "アストンマーチャン",
+      "Aston Machan",
+      "【Flare】奧斯頓真弓",
+      "Flare",
+      "麻酱（マーチャン）"
+    ],
+    "image_local_path": "/api/assets/asutonmaachan-thumb"
+  },
+  {
+    "id": "satonokuraun",
+    "name_zh": "里见皇冠",
+    "name_tw": null,
+    "name_jp": "サトノクラウン",
+    "name_en": "Satono Crown",
+    "aliases": [
+      "里见皇冠",
+      "サトノクラウン",
+      "Satono Crown",
+      "【黑翠千里行】里見皇冠",
+      "里見皇冠",
+      "黑翠千里行",
+      "クラちゃん",
+      "黒翠千里行"
+    ],
+    "image_local_path": "/api/assets/satonokuraun-thumb"
+  },
+  {
+    "id": "vyirushiina",
+    "name_zh": "极峰",
+    "name_tw": null,
+    "name_jp": "ヴィルシーナ",
+    "name_en": "Verxina",
+    "aliases": [
+      "极峰",
+      "ヴィルシーナ",
+      "Verxina",
+      "牝马怒涛",
+      "Le beau sommet"
+    ],
+    "image_local_path": "/api/assets/vyirushiina-thumb"
+  },
+  {
+    "id": "vyiburosu",
+    "name_zh": "强击",
+    "name_tw": null,
+    "name_jp": "ヴィブロス",
+    "name_en": "Vivlos",
+    "aliases": [
+      "强击",
+      "ヴィブロス",
+      "Vivlos",
+      "【Voyage étincelant】比布魯斯",
+      "比布魯斯",
+      "Voyage étincelant"
+    ],
+    "image_local_path": "/api/assets/vyiburosu-thumb"
+  },
+  {
+    "id": "keiesumirakuru",
+    "name_zh": "凯斯奇迹",
+    "name_tw": null,
+    "name_jp": "ケイエスミラクル",
+    "name_en": "K.S.Miracle",
+    "aliases": [
+      "凯斯奇迹",
+      "ケイエスミラクル",
+      "K.S.Miracle",
+      "【Prism】喜嘉奇蹟",
+      "喜嘉奇蹟",
+      "Prism"
+    ],
+    "image_local_path": "/api/assets/keiesumirakuru-thumb"
+  },
+  {
+    "id": "dantsufureemu",
+    "name_zh": "烈焰快驹",
+    "name_tw": null,
+    "name_jp": "ダンツフレーム",
+    "name_en": "Dantsu Flame",
+    "aliases": [
+      "烈焰快驹",
+      "ダンツフレーム",
+      "Dantsu Flame",
+      "まんなか◎スポットライト"
+    ],
+    "image_local_path": "/api/assets/dantsufureemu-thumb"
+  },
+  {
+    "id": "jangurupoketto",
+    "name_zh": "森林宝穴",
+    "name_tw": null,
+    "name_jp": "ジャングルポケット",
+    "name_en": "Jungle Pocket",
+    "aliases": [
+      "森林宝穴",
+      "ジャングルポケット",
+      "Jungle Pocket",
+      "【王者的吶喊】叢林口袋",
+      "叢林口袋",
+      "王者的吶喊",
+      "密林の王者",
+      "王者の喊声"
+    ],
+    "image_local_path": "/api/assets/jangurupoketto-thumb"
+  },
+  {
+    "id": "biriivu",
+    "name_zh": "信念",
+    "name_tw": null,
+    "name_jp": "ビリーヴ",
+    "name_en": "Believe",
+    "aliases": [
+      "信念",
+      "ビリーヴ",
+      "Believe",
+      "精粋"
+    ],
+    "image_local_path": "/api/assets/biriivu-thumb"
+  },
+  {
+    "id": "nooriizun",
+    "name_zh": "莫名其妙",
+    "name_tw": null,
+    "name_jp": "ノーリーズン",
+    "name_en": "No Reason",
+    "aliases": [
+      "莫名其妙",
+      "ノーリーズン",
+      "No Reason",
+      "紅色塗早駆具足"
+    ],
+    "image_local_path": "/api/assets/nooriizun-thumb"
+  },
+  {
+    "id": "suteiruinrabu",
+    "name_zh": "爱如往昔",
+    "name_tw": null,
+    "name_jp": "スティルインラブ",
+    "name_en": "Still in Love",
+    "aliases": [
+      "爱如往昔",
+      "スティルインラブ",
+      "Still in Love",
+      "緋想の誓衣"
+    ],
+    "image_local_path": "/api/assets/suteiruinrabu-thumb"
+  },
+  {
+    "id": "kopanorikkii",
+    "name_zh": "小林历奇",
+    "name_tw": null,
+    "name_jp": "コパノリッキー",
+    "name_en": "Copano Rickey",
+    "aliases": [
+      "小林历奇",
+      "コパノリッキー",
+      "Copano Rickey",
+      "【陰陽八卦☆開運衣】小林歷奇",
+      "小林歷奇",
+      "陰陽八卦☆開運衣",
+      "小林正英",
+      "小林檎"
+    ],
+    "image_local_path": "/api/assets/kopanorikkii-thumb"
+  },
+  {
+    "id": "hokkootarumae",
+    "name_zh": "北港火山",
+    "name_tw": "繁星．光華．船隻",
+    "name_jp": "ホッコータルマエ",
+    "name_en": "Hokko Tarumae",
+    "aliases": [
+      "北港火山",
+      "繁星．光華．船隻",
+      "ホッコータルマエ",
+      "Hokko Tarumae",
+      "【繁星．光華．船隻】北幸樽前",
+      "北幸樽前",
+      "苫小牧之星",
+      "北港大大大大火山",
+      "スター・ライト・シップ"
+    ],
+    "image_local_path": "/api/assets/hokkootarumae-thumb"
+  },
+  {
+    "id": "wandaaakyuuto",
+    "name_zh": "奇锐骏",
+    "name_tw": null,
+    "name_jp": "ワンダーアキュート",
+    "name_en": "Wonder Acute",
+    "aliases": [
+      "奇锐骏",
+      "ワンダーアキュート",
+      "Wonder Acute",
+      "【Butterfly Sting】奇銳駿",
+      "奇銳駿",
+      "Butterfly Sting",
+      "奶奶",
+      "和田奶奶"
+    ],
+    "image_local_path": "/api/assets/wandaaakyuuto-thumb"
+  },
+  {
+    "id": "saunzuobuaasu",
+    "name_zh": "万籁争鸣",
+    "name_tw": null,
+    "name_jp": "サウンズオブアース",
+    "name_en": "Sounds of Earth",
+    "aliases": [
+      "万籁争鸣",
+      "サウンズオブアース",
+      "Sounds of Earth",
+      "【地球的節奏】萬籟爭鳴",
+      "萬籟爭鳴",
+      "地球的節奏",
+      "リトモ・デッラ・テッラ"
+    ],
+    "image_local_path": "/api/assets/saunzuobuaasu-thumb"
+  },
+  {
+    "id": "katsuragieesu",
+    "name_zh": "葛城王牌",
+    "name_tw": null,
+    "name_jp": "カツラギエース",
+    "name_en": "Katsuragi Ace",
+    "aliases": [
+      "葛城王牌",
+      "カツラギエース",
+      "Katsuragi Ace",
+      "【登龍之頂】葛城榮主",
+      "葛城榮主",
+      "登龍之頂",
+      "登竜之頂"
+    ],
+    "image_local_path": "/api/assets/katsuragieesu-thumb"
+  },
+  {
+    "id": "neoyunivuaasu",
+    "name_zh": "新宇宙",
+    "name_tw": null,
+    "name_jp": "ネオユニヴァース",
+    "name_en": "Neo Universe",
+    "aliases": [
+      "新宇宙",
+      "ネオユニヴァース",
+      "Neo Universe",
+      "【Universe-Naut】新宇宙",
+      "Universe-Naut"
+    ],
+    "image_local_path": "/api/assets/neoyunivuaasu-thumb"
+  },
+  {
+    "id": "hishimirakuru",
+    "name_zh": "菱钻奇宝",
+    "name_tw": null,
+    "name_jp": "ヒシミラクル",
+    "name_en": "Hishi Miracle",
+    "aliases": [
+      "菱钻奇宝",
+      "ヒシミラクル",
+      "Hishi Miracle",
+      "【點綴奇蹟！】菱奇蹟",
+      "菱奇蹟",
+      "點綴奇蹟！",
+      "ミラ子",
+      "胖奇迹",
+      "みらくるめーくあっぷ！"
+    ],
+    "image_local_path": "/api/assets/hishimirakuru-thumb"
+  },
+  {
+    "id": "tappudansushichii",
+    "name_zh": "跳舞城",
+    "name_tw": null,
+    "name_jp": "タップダンスシチー",
+    "name_en": "Tap Dance City",
+    "aliases": [
+      "跳舞城",
+      "タップダンスシチー",
+      "Tap Dance City",
+      "【GLITTER!】踢踏城市",
+      "踢踏城市",
+      "GLITTER!"
+    ],
+    "image_local_path": "/api/assets/tappudansushichii-thumb"
+  },
+  {
+    "id": "douramente",
+    "name_zh": "大鸣大放",
+    "name_tw": null,
+    "name_jp": "ドゥラメンテ",
+    "name_en": "Duramente",
+    "aliases": [
+      "大鸣大放",
+      "ドゥラメンテ",
+      "Duramente",
+      "【Red in Black】大鳴大放",
+      "大鳴大放",
+      "Red in Black",
+      "大锤"
+    ],
+    "image_local_path": "/api/assets/douramente-thumb"
+  },
+  {
+    "id": "rainkurafuto",
+    "name_zh": "莱茵力量",
+    "name_tw": null,
+    "name_jp": "ラインクラフト",
+    "name_en": "Rhein Kraft",
+    "aliases": [
+      "莱茵力量",
+      "ラインクラフト",
+      "Rhein Kraft",
+      "【Dream Successor】萊茵實力",
+      "萊茵實力",
+      "Dream Successor"
+    ],
+    "image_local_path": "/api/assets/rainkurafuto-thumb"
+  },
+  {
+    "id": "shiizario",
+    "name_zh": "西沙里奥",
+    "name_tw": "西薩里奧",
+    "name_jp": "シーザリオ",
+    "name_en": "Cesario",
+    "aliases": [
+      "西沙里奥",
+      "西薩里奧",
+      "シーザリオ",
+      "Cesario",
+      "【Future Weaver】西薩里奧",
+      "Future Weaver",
+      "日本的Super Star",
+      "西沙",
+      "特别周空中型",
+      "水属性特别周",
+      "西沙里on/off"
+    ],
+    "image_local_path": "/api/assets/shiizario-thumb"
+  },
+  {
+    "id": "buenabisuta",
+    "name_zh": "迷人景致",
+    "name_tw": null,
+    "name_jp": "ブエナビスタ",
+    "name_en": "Buena Vista",
+    "aliases": [
+      "迷人景致",
+      "ブエナビスタ",
+      "Buena Vista",
+      "Heroína Inocente"
+    ],
+    "image_local_path": "/api/assets/buenabisuta-thumb"
+  },
+  {
+    "id": "orufyeevuru",
+    "name_zh": "黄金巨匠",
+    "name_tw": null,
+    "name_jp": "オルフェーヴル",
+    "name_en": "Orfevre",
+    "aliases": [
+      "黄金巨匠",
+      "オルフェーヴル",
+      "Orfevre",
+      "【總攬】黃金巨匠",
+      "黃金巨匠",
+      "總攬",
+      "総攬"
+    ],
+    "image_local_path": "/api/assets/orufyeevuru-thumb"
+  },
+  {
+    "id": "jenteirudonna",
+    "name_zh": "贵妇人",
+    "name_tw": null,
+    "name_jp": "ジェンティルドンナ",
+    "name_en": "Gentildonna",
+    "aliases": [
+      "贵妇人",
+      "ジェンティルドンナ",
+      "Gentildonna",
+      "【Regina dei fiori】貴婦人",
+      "貴婦人",
+      "Regina dei fiori",
+      "冬娜",
+      "鬼妇人"
+    ],
+    "image_local_path": "/api/assets/jenteirudonna-thumb"
+  },
+  {
+    "id": "doriimujaanii",
+    "name_zh": "梦之旅",
+    "name_tw": null,
+    "name_jp": "ドリームジャーニー",
+    "name_en": "Dream Journey",
+    "aliases": [
+      "梦之旅",
+      "ドリームジャーニー",
+      "Dream Journey",
+      "【夢之所歸】夢之旅",
+      "夢之旅",
+      "夢之所歸",
+      "梦旅",
+      "老大哥",
+      "夢路のよすが"
+    ],
+    "image_local_path": "/api/assets/doriimujaanii-thumb"
+  },
+  {
+    "id": "karusutonraitoo",
+    "name_zh": "金镇之光",
+    "name_tw": null,
+    "name_jp": "カルストンライトオ",
+    "name_en": "Calstone Light O",
+    "aliases": [
+      "金镇之光",
+      "カルストンライトオ",
+      "Calstone Light O",
+      "【一心求真】浮岩光王",
+      "浮岩光王",
+      "一心求真",
+      "真実一路"
+    ],
+    "image_local_path": "/api/assets/karusutonraitoo-thumb"
+  },
+  {
+    "id": "baburugamufyeroo",
+    "name_zh": "吹波糖",
+    "name_tw": null,
+    "name_jp": "バブルガムフェロー",
+    "name_en": "Bubble Gum Fellow",
+    "aliases": [
+      "吹波糖",
+      "バブルガムフェロー",
+      "Bubble Gum Fellow",
+      "【POPPING!】泡泡糖小子",
+      "泡泡糖小子",
+      "POPPING!"
+    ],
+    "image_local_path": "/api/assets/baburugamufyeroo-thumb"
+  },
+  {
+    "id": "fyenoomeno",
+    "name_zh": "超常骏骥",
+    "name_tw": null,
+    "name_jp": "フェノーメノ",
+    "name_en": "Fenomeno",
+    "aliases": [
+      "超常骏骥",
+      "フェノーメノ",
+      "Fenomeno",
+      "黑豆",
+      "承太郎",
+      "義心の黒焔"
+    ],
+    "image_local_path": "/api/assets/fyenoomeno-thumb"
+  },
+  {
+    "id": "aamondoai",
+    "name_zh": "杏目",
+    "name_tw": null,
+    "name_jp": "アーモンドアイ",
+    "name_en": "Almond Eye",
+    "aliases": [
+      "杏目",
+      "アーモンドアイ",
+      "Almond Eye",
+      "俺们的爱",
+      "特雷森卷王",
+      "黄瓜[1]",
+      "The Changer"
+    ],
+    "image_local_path": "/api/assets/aamondoai-thumb"
+  },
+  {
+    "id": "guranareguria",
+    "name_zh": "放声欢呼",
+    "name_tw": "放聲歡呼",
+    "name_jp": "グランアレグリア",
+    "name_en": "Gran Alegria",
+    "aliases": [
+      "放声欢呼",
+      "放聲歡呼",
+      "グランアレグリア",
+      "Gran Alegria",
+      "【微笑哩有我的路！】放聲歡呼",
+      "微笑哩有我的路！",
+      "すまいる・まい・うぇい！"
+    ],
+    "image_local_path": "/api/assets/guranareguria-thumb"
+  },
+  {
+    "id": "ravuzuonriiyuu",
+    "name_zh": "唯独爱你",
+    "name_tw": null,
+    "name_jp": "ラヴズオンリーユー",
+    "name_en": "Loves Only You",
+    "aliases": [
+      "唯独爱你",
+      "ラヴズオンリーユー",
+      "Loves Only You",
+      "9927 Wishes"
+    ],
+    "image_local_path": "/api/assets/ravuzuonriiyuu-thumb"
+  },
+  {
+    "id": "kuronojeneshisu",
+    "name_zh": "创世驹",
+    "name_tw": null,
+    "name_jp": "クロノジェネシス",
+    "name_en": "Chrono Genesis",
+    "aliases": [
+      "创世驹",
+      "クロノジェネシス",
+      "Chrono Genesis",
+      "阿创",
+      "创姐姐",
+      "小创",
+      "笔者C[1]",
+      "陸離の編纂者"
+    ],
+    "image_local_path": "/api/assets/kuronojeneshisu-thumb"
+  },
+  {
+    "id": "suteigoorudo",
+    "name_zh": "黄金旅程",
+    "name_tw": null,
+    "name_jp": "ステイゴールド",
+    "name_en": "Stay Gold",
+    "aliases": [
+      "黄金旅程",
+      "ステイゴールド",
+      "Stay Gold",
+      "ステゴ",
+      "老黄金",
+      "黄金爹",
+      "旅程子",
+      "Sunlit Outsider"
+    ],
+    "image_local_path": "/api/assets/suteigoorudo-thumb"
+  }
+]

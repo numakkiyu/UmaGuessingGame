@@ -1,0 +1,307 @@
+{
+  "id": "mejiroramoonu",
+  "order": 86,
+  "file_name": "086_Mejiro_Ramonu.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "目白高峰",
+    "zh_tw": null,
+    "jp": "メジロラモーヌ",
+    "en": "Mejiro Ramonu"
+  },
+  "aliases": [
+    "目白高峰",
+    "メジロラモーヌ",
+    "Mejiro Ramonu",
+    "【Onyx Line】目白拉茉奴",
+    "目白拉茉奴",
+    "Onyx Line",
+    "オニキス・ライン"
+  ],
+  "profile": {
+    "birthday": "04-09",
+    "birthday_raw": "4月9日",
+    "birthday_day_of_year": 100,
+    "height_cm": 165,
+    "height_raw": "165cm",
+    "cv": "東山奈央",
+    "cv_raw": "東山奈央",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "B",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "nige": "G",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "F"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/26/0e2f517gvmvmi545w98w6ltfd77baf4.png/100px-Chr_icon_1086.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/bs6uwveuehsmeje6gx94sbeyg7t8bo7.png/100px-Chr_icon_1086_108602_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_MejiroRamonu_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755",
+      "https://storage.moegirl.org.cn/moegirl/commons/6/60/Mejiro_Ramonu1.png!/fw/280?v=20230322114202"
+    ],
+    "image_local_path": "/api/assets/mejiroramoonu-thumb",
+    "asset_id": "mejiroramoonu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Onyx_Line%E3%80%91%E7%9B%AE%E7%99%BD%E6%8B%89%E8%8C%89%E5%A5%B4",
+      "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/26/0e2f517gvmvmi545w98w6ltfd77baf4.png/100px-Chr_icon_1086.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/bs6uwveuehsmeje6gx94sbeyg7t8bo7.png/100px-Chr_icon_1086_108602_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_MejiroRamonu_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/60/Mejiro_Ramonu1.png!/fw/280?v=20230322114202",
+        "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_MejiroRamonu_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "令人畏惧的美貌和妖艳的举止，简直就是魔性。 俘获了无数人的她，为之奉献一切、将爱贯彻到底的只有比赛。 谁都没有干涉的余地。",
+    "intro_paragraphs": [
+      "令人畏惧的美貌和妖艳的举止，简直就是魔性。",
+      "俘获了无数人的她，为之奉献一切、将爱贯彻到底的只有比赛。",
+      "谁都没有干涉的余地。"
+    ],
+    "quote_raw": "即使在名门目白家也大放异彩的，才貌双全的赛马娘。",
+    "weight_desc_raw": "符合理想到令人忌妒",
+    "bust_raw": "87",
+    "waist_raw": "57",
+    "hip_raw": "90"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "目白高峰",
+      "character_id": "1086",
+      "birthday_raw": "4月9日",
+      "height_raw": "165",
+      "bust_raw": "87",
+      "waist_raw": "57",
+      "hip_raw": "90",
+      "whr_raw": "0.63",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/26/0e2f517gvmvmi545w98w6ltfd77baf4.png/100px-Chr_icon_1086.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/26/0e2f517gvmvmi545w98w6ltfd77baf4.png/100px-Chr_icon_1086.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "目白高峰",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0",
+      "star_raw": "3",
+      "speed_growth_raw": "15%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "15%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0",
+      "raw_name_zh": "目白高峰",
+      "raw_name_jp": "メジロラモーヌ",
+      "nickname_raw": "オニキス・ライン",
+      "star_raw": "3",
+      "birthday_raw": "4月9日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "理想得令人嫉妒",
+      "bust_raw": "87",
+      "waist_raw": "57",
+      "hip_raw": "90",
+      "cv_raw": "东山奈央",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/bs6uwveuehsmeje6gx94sbeyg7t8bo7.png/100px-Chr_icon_1086_108602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Onyx_Line%E3%80%91%E7%9B%AE%E7%99%BD%E6%8B%89%E8%8C%89%E5%A5%B4",
+      "raw_name_zh": "目白高峰",
+      "raw_name_jp": null,
+      "translated_name_raw": "目白拉茉奴",
+      "nickname_raw": "Onyx Line",
+      "page_title": "【Onyx Line】目白拉茉奴",
+      "page_title_aliases": [
+        "【Onyx Line】目白拉茉奴",
+        "目白拉茉奴",
+        "Onyx Line"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月9日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "符合理想到令人忌妒",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "東山奈央",
+      "introduction_raw": "將至高無上的愛獻給競賽……絕世獨立，綻放於頂點的魔性之花",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Onyx_Line%E3%80%91%E7%9B%AE%E7%99%BD%E6%8B%89%E8%8C%89%E5%A5%B4",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "B",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "目白高峰",
+      "raw_name_jp": "メジロラモーヌ",
+      "cv_raw": "东山奈央",
+      "birthday_raw": "4月9日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "理想到令人嫉妒",
+      "bust_raw": "87",
+      "waist_raw": "57",
+      "hip_raw": "90",
+      "quote_raw": "即使在名门目白家也大放异彩的，才貌双全的赛马娘。",
+      "intro_paragraphs": [
+        "令人畏惧的美貌和妖艳的举止，简直就是魔性。",
+        "俘获了无数人的她，为之奉献一切、将爱贯彻到底的只有比赛。",
+        "谁都没有干涉的余地。"
+      ],
+      "introduction": "令人畏惧的美貌和妖艳的举止，简直就是魔性。\n俘获了无数人的她，为之奉献一切、将爱贯彻到底的只有比赛。\n谁都没有干涉的余地。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_MejiroRamonu_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_MejiroRamonu_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0",
+      "canonical_name_zh": "目白高峰",
+      "aliases": [
+        "目白高峰"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0",
+      "raw_name_zh": "目白高峰",
+      "page_title": "目白高峰",
+      "raw_name_jp": "メジロラモーヌ",
+      "raw_name_en": null,
+      "aliases": [
+        "目白高峰"
+      ],
+      "birthday_raw": "4月9日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "理想得令人嫉妒",
+      "bust_raw": "87",
+      "waist_raw": "57",
+      "hip_raw": "90",
+      "cv_raw": "东山奈央",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/60/Mejiro_Ramonu1.png!/fw/280?v=20230322114202",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/60/Mejiro_Ramonu1.png!/fw/280?v=20230322114202",
+        "https://storage.moegirl.org.cn/moegirl/commons/8/89/UPDCH_MejiroRamonu_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%AB%98%E5%B3%B0"
+    }
+  }
+}

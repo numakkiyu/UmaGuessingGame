@@ -1,0 +1,310 @@
+{
+  "id": "goorudoshippu",
+  "name_zh": "黄金船",
+  "name_jp": "ゴールドシップ",
+  "aliases": [
+    "【火紅鬥爭】黃金船",
+    "黃金船",
+    "火紅鬥爭",
+    "ゴールド",
+    "白色怪物（白い怪物）",
+    "芦毛の暴れん坊",
+    "不沉舰",
+    "皮皮船",
+    "皮划艇",
+    "阿船/小金船/苟露西（ゴルシ（564））",
+    "白色狮子",
+    "草莓大福",
+    "外星怪马",
+    "好兄弟",
+    "黄金船",
+    "ゴールドシップ",
+    "レッドストライフ"
+  ],
+  "birthday": "03-06",
+  "birthday_day_of_year": 66,
+  "birthday_raw": "3月6日",
+  "height_cm": 170,
+  "height_raw": "170㎝",
+  "grade": "？？？",
+  "grade_raw": "？？？",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 2,
+  "star_raw": "2",
+  "cv": "上田瞳",
+  "cv_raw": "上田瞳",
+  "quote_raw": "“只要有趣就好了吧！一点都不好！所以是哪边呢，啊？！”",
+  "introduction": "随心所欲地行动，有趣又滑稽地生活着的自由人。一有空就会装傻又吐槽，热情起来又很快冷下来。 会为了黄金船剧场更加的盛大而与万人不分彼此地联系在一起，没法确定感受到了怎样的友情和羁绊。 是特雷森学园第一的诈欺之星（trickstar）。",
+  "intro_paragraphs": [
+    "随心所欲地行动，有趣又滑稽地生活着的自由人。一有空就会装傻又吐槽，热情起来又很快冷下来。",
+    "会为了黄金船剧场更加的盛大而与万人不分彼此地联系在一起，没法确定感受到了怎样的友情和羁绊。",
+    "是特雷森学园第一的诈欺之星（trickstar）。"
+  ],
+  "weight_desc_raw": "無法測定",
+  "bust_raw": "88",
+  "waist_raw": "55",
+  "hip_raw": "88",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/jcw8fo4mur54wf3okq01zv6cw8sb16d.png/100px-Chr_icon_1007.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/a/ad/8imjljucq13em5csnofulv0fmvqb39a.png/100px-Chr_icon_1007_100702_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/jgddk82tybgvdlrru0dhcsck4tg25pw.png/100px-Chr_icon_1007_100703_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_GoldShip_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041023",
+    "https://storage.moegirl.org.cn/moegirl/commons/8/8e/PID89578737.jpg!/fw/280?v=20211023021814"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/jcw8fo4mur54wf3okq01zv6cw8sb16d.png/100px-Chr_icon_1007.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/ad/8imjljucq13em5csnofulv0fmvqb39a.png/100px-Chr_icon_1007_100702_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/jgddk82tybgvdlrru0dhcsck4tg25pw.png/100px-Chr_icon_1007_100703_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/ad/8imjljucq13em5csnofulv0fmvqb39a.png/100px-Chr_icon_1007_100702_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/jgddk82tybgvdlrru0dhcsck4tg25pw.png/100px-Chr_icon_1007_100703_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_GoldShip_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041023"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/8/8e/PID89578737.jpg!/fw/280?v=20211023021814",
+      "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_GoldShip_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041023"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E8%88%B9",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E7%81%AB%E7%B4%85%E9%AC%A5%E7%88%AD%E3%80%91%E9%BB%83%E9%87%91%E8%88%B9",
+    "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E8%88%B9"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "C",
+    "medium": "A",
+    "long": "A",
+    "nige": "G",
+    "senko": "B",
+    "sashi": "B",
+    "oikomi": "A"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "追"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "黄金船",
+      "character_id": "1007",
+      "birthday_raw": "3月6日",
+      "height_raw": "170",
+      "bust_raw": "88",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "whr_raw": "0.63",
+      "bust_waist_diff_raw": "33",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/jcw8fo4mur54wf3okq01zv6cw8sb16d.png/100px-Chr_icon_1007.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/jcw8fo4mur54wf3okq01zv6cw8sb16d.png/100px-Chr_icon_1007.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E8%88%B9"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "黄金船",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E8%88%B9",
+      "star_raw": "2",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "B",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E8%88%B9",
+      "raw_name_zh": "黄金船",
+      "raw_name_jp": "ゴールドシップ",
+      "nickname_raw": "レッドストライフ",
+      "star_raw": "2",
+      "birthday_raw": "3月6日",
+      "height_raw": "170㎝",
+      "weight_desc_raw": "无法测定",
+      "bust_raw": "88",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "cv_raw": "上田瞳",
+      "grade_raw": "？？？",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "B",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ad/8imjljucq13em5csnofulv0fmvqb39a.png/100px-Chr_icon_1007_100702_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/jgddk82tybgvdlrru0dhcsck4tg25pw.png/100px-Chr_icon_1007_100703_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E8%88%B9"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%81%AB%E7%B4%85%E9%AC%A5%E7%88%AD%E3%80%91%E9%BB%83%E9%87%91%E8%88%B9",
+      "raw_name_zh": "黄金船",
+      "raw_name_jp": null,
+      "translated_name_raw": "黃金船",
+      "nickname_raw": "火紅鬥爭",
+      "page_title": "【火紅鬥爭】黃金船",
+      "page_title_aliases": [
+        "【火紅鬥爭】黃金船",
+        "黃金船",
+        "火紅鬥爭"
+      ],
+      "star_raw": "2",
+      "birthday_raw": "3月6日",
+      "height_raw": "170㎝",
+      "weight_desc_raw": "無法測定",
+      "bust_raw": "88",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "cv_raw": "上田瞳",
+      "introduction_raw": "粗暴、奔放！情緒萬變的黃金電波女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ad/8imjljucq13em5csnofulv0fmvqb39a.png/100px-Chr_icon_1007_100702_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d9/jgddk82tybgvdlrru0dhcsck4tg25pw.png/100px-Chr_icon_1007_100703_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%81%AB%E7%B4%85%E9%AC%A5%E7%88%AD%E3%80%91%E9%BB%83%E9%87%91%E8%88%B9",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "B",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "黄金船",
+      "raw_name_jp": "ゴールドシップ",
+      "cv_raw": "上田瞳",
+      "birthday_raw": "3月6日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "无法测定",
+      "bust_raw": "88",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "quote_raw": "“只要有趣就好了吧！一点都不好！所以是哪边呢，啊？！”",
+      "intro_paragraphs": [
+        "随心所欲地行动，有趣又滑稽地生活着的自由人。一有空就会装傻又吐槽，热情起来又很快冷下来。",
+        "会为了黄金船剧场更加的盛大而与万人不分彼此地联系在一起，没法确定感受到了怎样的友情和羁绊。",
+        "是特雷森学园第一的诈欺之星（trickstar）。"
+      ],
+      "introduction": "随心所欲地行动，有趣又滑稽地生活着的自由人。一有空就会装傻又吐槽，热情起来又很快冷下来。\n会为了黄金船剧场更加的盛大而与万人不分彼此地联系在一起，没法确定感受到了怎样的友情和羁绊。\n是特雷森学园第一的诈欺之星（trickstar）。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_GoldShip_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041023",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_GoldShip_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041023"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E8%88%B9",
+      "canonical_name_zh": "黄金船",
+      "aliases": [
+        "黄金船"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E8%88%B9",
+      "raw_name_zh": "黄金船",
+      "page_title": "黄金船",
+      "raw_name_jp": "ゴールドシップ",
+      "raw_name_en": null,
+      "aliases": [
+        "ゴールド",
+        "白色怪物（白い怪物）",
+        "芦毛の暴れん坊",
+        "不沉舰",
+        "皮皮船",
+        "皮划艇",
+        "阿船/小金船/苟露西（ゴルシ（564））",
+        "白色狮子",
+        "草莓大福",
+        "外星怪马",
+        "好兄弟",
+        "黄金船"
+      ],
+      "birthday_raw": "3月6日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "无法测量",
+      "bust_raw": "88",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "cv_raw": "上田瞳",
+      "grade_raw": "？？？",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/8e/PID89578737.jpg!/fw/280?v=20211023021814",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/8e/PID89578737.jpg!/fw/280?v=20211023021814",
+        "https://storage.moegirl.org.cn/moegirl/commons/1/1a/UPDCH_GoldShip_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041023"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E8%88%B9"
+    }
+  }
+}

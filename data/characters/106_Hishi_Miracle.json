@@ -1,0 +1,283 @@
+{
+  "id": "hishimirakuru",
+  "name_zh": "菱钻奇宝",
+  "name_jp": "ヒシミラクル",
+  "aliases": [
+    "【點綴奇蹟！】菱奇蹟",
+    "菱奇蹟",
+    "點綴奇蹟！",
+    "ミラ子",
+    "胖奇迹",
+    "菱钻奇宝",
+    "ヒシミラクル",
+    "みらくるめーくあっぷ！"
+  ],
+  "birthday": "03-31",
+  "birthday_day_of_year": 91,
+  "birthday_raw": "3月31日",
+  "height_cm": 156,
+  "height_raw": "156cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "春日さくら",
+  "cv_raw": "春日さくら",
+  "quote_raw": "只在力所能及的范围内普通～地努力，总觉得只要过得开心就好了啊～……的赛马娘。",
+  "introduction": "虽然也想着全力回应对自己的期待，但也普通～地有着想要偷懒的时候。 正因如此，所以“奇迹”也终有一日会发生在这样的她的身上吧……大概？",
+  "intro_paragraphs": [
+    "虽然也想着全力回应对自己的期待，但也普通～地有着想要偷懒的时候。",
+    "正因如此，所以“奇迹”也终有一日会发生在这样的她的身上吧……大概？"
+  ],
+  "weight_desc_raw": "普通",
+  "bust_raw": "85",
+  "waist_raw": "62",
+  "hip_raw": "88",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/75vxbwh6lbiubrfb6d9emqs4svoo8up.png/100px-Chr_icon_1106.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/seh7iaudn4aa0ctim18nqy9v8jg9msl.png/100px-Chr_icon_1106_110602_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/4/42/UPDCH_HishiMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528",
+    "https://storage.moegirl.org.cn/moegirl/commons/0/0c/107362346_p0.jpg!/fw/280?v=20230510124841"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/75vxbwh6lbiubrfb6d9emqs4svoo8up.png/100px-Chr_icon_1106.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/seh7iaudn4aa0ctim18nqy9v8jg9msl.png/100px-Chr_icon_1106_110602_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/4/42/UPDCH_HishiMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0c/107362346_p0.jpg!/fw/280?v=20230510124841",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/42/UPDCH_HishiMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%9E%E7%B6%B4%E5%A5%87%E8%B9%9F%EF%BC%81%E3%80%91%E8%8F%B1%E5%A5%87%E8%B9%9F",
+    "https://zh.moegirl.org.cn/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "G",
+    "medium": "A",
+    "long": "A",
+    "nige": "G",
+    "senko": "C",
+    "sashi": "A",
+    "oikomi": "B"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "菱钻奇宝",
+      "character_id": "1106",
+      "birthday_raw": "3月31日",
+      "height_raw": "156",
+      "bust_raw": "85",
+      "waist_raw": "62",
+      "hip_raw": "88",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "23",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/75vxbwh6lbiubrfb6d9emqs4svoo8up.png/100px-Chr_icon_1106.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/04/75vxbwh6lbiubrfb6d9emqs4svoo8up.png/100px-Chr_icon_1106.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "菱钻奇宝",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D",
+      "star_raw": "3",
+      "speed_growth_raw": "7%",
+      "stamina_growth_raw": "8%",
+      "power_growth_raw": "7%",
+      "grit_growth_raw": "8%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D",
+      "raw_name_zh": "菱钻奇宝",
+      "raw_name_jp": "ヒシミラクル",
+      "nickname_raw": "みらくるめーくあっぷ！",
+      "star_raw": "3",
+      "birthday_raw": "3月31日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "普通",
+      "bust_raw": "85",
+      "waist_raw": "62",
+      "hip_raw": "88",
+      "cv_raw": "春日樱",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "B",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/seh7iaudn4aa0ctim18nqy9v8jg9msl.png/100px-Chr_icon_1106_110602_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%9E%E7%B6%B4%E5%A5%87%E8%B9%9F%EF%BC%81%E3%80%91%E8%8F%B1%E5%A5%87%E8%B9%9F",
+      "raw_name_zh": "菱钻奇宝",
+      "raw_name_jp": null,
+      "translated_name_raw": "菱奇蹟",
+      "nickname_raw": "點綴奇蹟！",
+      "page_title": "【點綴奇蹟！】菱奇蹟",
+      "page_title_aliases": [
+        "【點綴奇蹟！】菱奇蹟",
+        "菱奇蹟",
+        "點綴奇蹟！"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月31日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "普通",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "春日さくら",
+      "introduction_raw": "慢條斯理的賽馬娘。今天也非常普通～地正常發揮",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%9E%E7%B6%B4%E5%A5%87%E8%B9%9F%EF%BC%81%E3%80%91%E8%8F%B1%E5%A5%87%E8%B9%9F",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "菱钻奇宝",
+      "raw_name_jp": "ヒシミラクル",
+      "cv_raw": "春日樱",
+      "birthday_raw": "3月31日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "普通",
+      "bust_raw": "85",
+      "waist_raw": "62",
+      "hip_raw": "88",
+      "quote_raw": "只在力所能及的范围内普通～地努力，总觉得只要过得开心就好了啊～……的赛马娘。",
+      "intro_paragraphs": [
+        "虽然也想着全力回应对自己的期待，但也普通～地有着想要偷懒的时候。",
+        "正因如此，所以“奇迹”也终有一日会发生在这样的她的身上吧……大概？"
+      ],
+      "introduction": "虽然也想着全力回应对自己的期待，但也普通～地有着想要偷懒的时候。\n正因如此，所以“奇迹”也终有一日会发生在这样的她的身上吧……大概？",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/42/UPDCH_HishiMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/42/UPDCH_HishiMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D",
+      "canonical_name_zh": "菱钻奇宝",
+      "aliases": [
+        "菱钻奇宝"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D",
+      "raw_name_zh": "菱钻奇宝",
+      "page_title": "菱钻奇宝",
+      "raw_name_jp": "ヒシミラクル",
+      "raw_name_en": null,
+      "aliases": [
+        "ミラ子",
+        "胖奇迹",
+        "菱钻奇宝"
+      ],
+      "birthday_raw": "3月31日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "普通",
+      "bust_raw": "85",
+      "waist_raw": "62",
+      "hip_raw": "88",
+      "cv_raw": "春日樱",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0c/107362346_p0.jpg!/fw/280?v=20230510124841",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0c/107362346_p0.jpg!/fw/280?v=20230510124841",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/42/UPDCH_HishiMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142528"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8F%B1%E9%92%BB%E5%A5%87%E5%AE%9D"
+    }
+  }
+}

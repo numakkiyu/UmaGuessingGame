@@ -1,0 +1,301 @@
+{
+  "id": "raisushawaa",
+  "name_zh": "米浴",
+  "name_jp": "ライスシャワー",
+  "aliases": [
+    "【薔薇之夢】米浴",
+    "米浴",
+    "薔薇之夢",
+    "关东的刺客",
+    "黑い刺客",
+    "Rice",
+    "米宝",
+    "大米洗澡",
+    "大米淋浴",
+    "大米祝福",
+    "ライスシャワー",
+    "ローゼスドリーム"
+  ],
+  "birthday": "03-05",
+  "birthday_day_of_year": 65,
+  "birthday_raw": "3月5日",
+  "height_cm": 145,
+  "height_raw": "145㎝",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "石見舞菜香",
+  "cv_raw": "石見舞菜香",
+  "quote_raw": "“米浴会让大家陷入不幸……。想要……改变它……！”",
+  "introduction": "认为周围发生的不幸都是自己的错，胆小又弱气的赛马娘。 实际上只是单纯的运气不好，但似乎已经完全被人当成厄运的征兆，本人也在想办法摆脱这种观念。 兴趣是读绘本，最喜欢的一本书是《幸福的蓝蔷薇》。",
+  "intro_paragraphs": [
+    "认为周围发生的不幸都是自己的错，胆小又弱气的赛马娘。",
+    "实际上只是单纯的运气不好，但似乎已经完全被人当成厄运的征兆，本人也在想办法摆脱这种观念。",
+    "兴趣是读绘本，最喜欢的一本书是《幸福的蓝蔷薇》。"
+  ],
+  "weight_desc_raw": "無增減",
+  "bust_raw": "75",
+  "waist_raw": "51",
+  "hip_raw": "76",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/98/qu3nm9ndwcttfzo34bcctxfk6irzelc.png/100px-Chr_icon_1030.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/46/4shyrsmzi8qga6kqvp8rwads0vrjba6.png/100px-Chr_icon_1030_103002_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/ctsbo9a1p71705wq2cvj4571hhjgkib.png/100px-Chr_icon_1030_103003_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/9/9d/UPDCH_RiceShower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207050551",
+    "https://storage.moegirl.org.cn/moegirl/commons/7/71/Riceshower_Title.jpg!/fw/280?v=20210902024447"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/98/qu3nm9ndwcttfzo34bcctxfk6irzelc.png/100px-Chr_icon_1030.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/46/4shyrsmzi8qga6kqvp8rwads0vrjba6.png/100px-Chr_icon_1030_103002_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/ctsbo9a1p71705wq2cvj4571hhjgkib.png/100px-Chr_icon_1030_103003_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/46/4shyrsmzi8qga6kqvp8rwads0vrjba6.png/100px-Chr_icon_1030_103002_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/ctsbo9a1p71705wq2cvj4571hhjgkib.png/100px-Chr_icon_1030_103003_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/9/9d/UPDCH_RiceShower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207050551"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/7/71/Riceshower_Title.jpg!/fw/280?v=20210902024447",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/9d/UPDCH_RiceShower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207050551"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%B1%B3%E6%B5%B4",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E8%96%94%E8%96%87%E4%B9%8B%E5%A4%A2%E3%80%91%E7%B1%B3%E6%B5%B4",
+    "https://zh.moegirl.org.cn/%E7%B1%B3%E6%B5%B4"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "E",
+    "mile": "C",
+    "medium": "A",
+    "long": "A",
+    "nige": "B",
+    "senko": "A",
+    "sashi": "C",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "米浴",
+      "character_id": "1030",
+      "birthday_raw": "3月5日",
+      "height_raw": "145",
+      "bust_raw": "75",
+      "waist_raw": "51",
+      "hip_raw": "76",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "24",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/98/qu3nm9ndwcttfzo34bcctxfk6irzelc.png/100px-Chr_icon_1030.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/98/qu3nm9ndwcttfzo34bcctxfk6irzelc.png/100px-Chr_icon_1030.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%B1%B3%E6%B5%B4"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "米浴",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%B1%B3%E6%B5%B4",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%B1%B3%E6%B5%B4",
+      "raw_name_zh": "米浴",
+      "raw_name_jp": "ライスシャワー",
+      "nickname_raw": "ローゼスドリーム",
+      "star_raw": "3",
+      "birthday_raw": "3月5日",
+      "height_raw": "145㎝",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "75",
+      "waist_raw": "51",
+      "hip_raw": "76",
+      "cv_raw": "石见舞菜香",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/46/4shyrsmzi8qga6kqvp8rwads0vrjba6.png/100px-Chr_icon_1030_103002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/ctsbo9a1p71705wq2cvj4571hhjgkib.png/100px-Chr_icon_1030_103003_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%B1%B3%E6%B5%B4"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%96%94%E8%96%87%E4%B9%8B%E5%A4%A2%E3%80%91%E7%B1%B3%E6%B5%B4",
+      "raw_name_zh": "米浴",
+      "raw_name_jp": null,
+      "translated_name_raw": "米浴",
+      "nickname_raw": "薔薇之夢",
+      "page_title": "【薔薇之夢】米浴",
+      "page_title_aliases": [
+        "【薔薇之夢】米浴",
+        "米浴",
+        "薔薇之夢"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月5日",
+      "height_raw": "145㎝",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "75",
+      "waist_raw": "51",
+      "hip_raw": "76",
+      "cv_raw": "石見舞菜香",
+      "introduction_raw": "不幸體質？堅強活下去的不幸少女",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/46/4shyrsmzi8qga6kqvp8rwads0vrjba6.png/100px-Chr_icon_1030_103002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/ctsbo9a1p71705wq2cvj4571hhjgkib.png/100px-Chr_icon_1030_103003_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%96%94%E8%96%87%E4%B9%8B%E5%A4%A2%E3%80%91%E7%B1%B3%E6%B5%B4",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "米浴",
+      "raw_name_jp": "ライスシャワー",
+      "cv_raw": "石见舞菜香",
+      "birthday_raw": "3月5日",
+      "height_raw": "145cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "75",
+      "waist_raw": "51",
+      "hip_raw": "76",
+      "quote_raw": "“米浴会让大家陷入不幸……。想要……改变它……！”",
+      "intro_paragraphs": [
+        "认为周围发生的不幸都是自己的错，胆小又弱气的赛马娘。",
+        "实际上只是单纯的运气不好，但似乎已经完全被人当成厄运的征兆，本人也在想办法摆脱这种观念。",
+        "兴趣是读绘本，最喜欢的一本书是《幸福的蓝蔷薇》。"
+      ],
+      "introduction": "认为周围发生的不幸都是自己的错，胆小又弱气的赛马娘。\n实际上只是单纯的运气不好，但似乎已经完全被人当成厄运的征兆，本人也在想办法摆脱这种观念。\n兴趣是读绘本，最喜欢的一本书是《幸福的蓝蔷薇》。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/9d/UPDCH_RiceShower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207050551",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9d/UPDCH_RiceShower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207050551"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%B1%B3%E6%B5%B4",
+      "canonical_name_zh": "米浴",
+      "aliases": [
+        "米浴"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%B1%B3%E6%B5%B4",
+      "raw_name_zh": "米浴",
+      "page_title": "米浴",
+      "raw_name_jp": "ライスシャワー",
+      "raw_name_en": null,
+      "aliases": [
+        "关东的刺客",
+        "黑い刺客",
+        "Rice",
+        "米宝",
+        "大米洗澡",
+        "大米淋浴",
+        "大米祝福",
+        "米浴"
+      ],
+      "birthday_raw": "3月5日",
+      "height_raw": "145cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "75",
+      "waist_raw": "51",
+      "hip_raw": "76",
+      "cv_raw": "石见舞菜香",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/71/Riceshower_Title.jpg!/fw/280?v=20210902024447",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/71/Riceshower_Title.jpg!/fw/280?v=20210902024447",
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9d/UPDCH_RiceShower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207050551"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%B1%B3%E6%B5%B4"
+    }
+  }
+}

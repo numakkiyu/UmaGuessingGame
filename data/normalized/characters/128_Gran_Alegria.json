@@ -1,0 +1,299 @@
+{
+  "id": "guranareguria",
+  "order": 128,
+  "file_name": "128_Gran_Alegria.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "放声欢呼",
+    "zh_tw": "放聲歡呼",
+    "jp": "グランアレグリア",
+    "en": "Gran Alegria"
+  },
+  "aliases": [
+    "放声欢呼",
+    "放聲歡呼",
+    "グランアレグリア",
+    "Gran Alegria",
+    "【微笑哩有我的路！】放聲歡呼",
+    "微笑哩有我的路！",
+    "すまいる・まい・うぇい！"
+  ],
+  "profile": {
+    "birthday": "01-24",
+    "birthday_raw": "1月24日",
+    "birthday_day_of_year": 24,
+    "height_cm": 160,
+    "height_raw": "160cm",
+    "cv": "夏目妃菜",
+    "cv_raw": "夏目妃菜",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "C",
+      "long": "G",
+      "nige": "F",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "B"
+    },
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/dlehszogknadagpvkq97goaugaulb2f.png/100px-Chr_icon_1131.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/1/16/UPDCH_GranAlegria_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+    ],
+    "image_local_path": "/api/assets/guranareguria-thumb",
+    "asset_id": "guranareguria-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%BE%AE%E7%AC%91%E5%93%A9%E6%9C%89%E6%88%91%E7%9A%84%E8%B7%AF%EF%BC%81%E3%80%91%E6%94%BE%E8%81%B2%E6%AD%A1%E5%91%BC",
+      "https://zh.moegirl.org.cn/index.php?title=%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC&action=edit&redlink=1"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/dlehszogknadagpvkq97goaugaulb2f.png/100px-Chr_icon_1131.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/16/UPDCH_GranAlegria_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/16/UPDCH_GranAlegria_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "她以独创的标准建立生活方式，依照包括「通过收听国会实况转播来度过放松时刻」在内的诸多奇特日常惯例 ——她将其统称为「我的法则」生活。",
+    "intro_paragraphs": [
+      "她以独创的标准建立生活方式，依照包括「通过收听国会实况转播来度过放松时刻」在内的诸多奇特日常惯例",
+      "——她将其统称为「我的法则」生活。"
+    ],
+    "quote_raw": "这是一位兼具天真烂漫性格、超强自信力与惊人运动神经的天才赛马娘。",
+    "weight_desc_raw": "10哩左右成長中！",
+    "bust_raw": "84",
+    "waist_raw": "55",
+    "hip_raw": "85"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "放声欢呼",
+      "character_id": "1131",
+      "birthday_raw": "1月24日",
+      "height_raw": "160",
+      "bust_raw": "84",
+      "waist_raw": "55",
+      "hip_raw": "85",
+      "whr_raw": "0.64",
+      "bust_waist_diff_raw": "29",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/dlehszogknadagpvkq97goaugaulb2f.png/100px-Chr_icon_1131.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/dlehszogknadagpvkq97goaugaulb2f.png/100px-Chr_icon_1131.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "放声欢呼",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC",
+      "raw_name_zh": "放声欢呼",
+      "raw_name_jp": "グランアレグリア",
+      "nickname_raw": "すまいる・まい・うぇい！",
+      "star_raw": "3",
+      "birthday_raw": "1月24日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "10マイルくらい成長中！",
+      "bust_raw": "84",
+      "waist_raw": "55",
+      "hip_raw": "85",
+      "cv_raw": "夏目妃菜",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "B",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%BE%AE%E7%AC%91%E5%93%A9%E6%9C%89%E6%88%91%E7%9A%84%E8%B7%AF%EF%BC%81%E3%80%91%E6%94%BE%E8%81%B2%E6%AD%A1%E5%91%BC",
+      "raw_name_zh": "放声欢呼",
+      "raw_name_jp": null,
+      "translated_name_raw": "放聲歡呼",
+      "nickname_raw": "微笑哩有我的路！",
+      "page_title": "【微笑哩有我的路！】放聲歡呼",
+      "page_title_aliases": [
+        "【微笑哩有我的路！】放聲歡呼",
+        "放聲歡呼",
+        "微笑哩有我的路！"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "1月24日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "10哩左右成長中！",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "夏目妃菜",
+      "introduction_raw": "可能性無限多哩！最強一哩賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%BE%AE%E7%AC%91%E5%93%A9%E6%9C%89%E6%88%91%E7%9A%84%E8%B7%AF%EF%BC%81%E3%80%91%E6%94%BE%E8%81%B2%E6%AD%A1%E5%91%BC",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "B"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "放声欢呼",
+      "raw_name_jp": "グランアレグリア",
+      "cv_raw": "夏目妃菜",
+      "birthday_raw": "1月24日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "增长了大约10英里！",
+      "bust_raw": "84",
+      "waist_raw": "55",
+      "hip_raw": "85",
+      "quote_raw": "这是一位兼具天真烂漫性格、超强自信力与惊人运动神经的天才赛马娘。",
+      "intro_paragraphs": [
+        "她以独创的标准建立生活方式，依照包括「通过收听国会实况转播来度过放松时刻」在内的诸多奇特日常惯例",
+        "——她将其统称为「我的法则」生活。"
+      ],
+      "introduction": "她以独创的标准建立生活方式，依照包括「通过收听国会实况转播来度过放松时刻」在内的诸多奇特日常惯例\n——她将其统称为「我的法则」生活。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/16/UPDCH_GranAlegria_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/16/UPDCH_GranAlegria_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC&action=edit&redlink=1",
+      "canonical_name_zh": "放声欢呼",
+      "aliases": [
+        "放声欢呼"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC&action=edit&redlink=1",
+      "raw_name_zh": "放声欢呼",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "グランアレグリア",
+      "raw_name_en": null,
+      "aliases": [
+        "放声欢呼"
+      ],
+      "birthday_raw": "1月24日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "增长了大约10英里！",
+      "bust_raw": "84",
+      "waist_raw": "55",
+      "hip_raw": "85",
+      "cv_raw": "夏目妃菜",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/16/UPDCH_GranAlegria_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/16/UPDCH_GranAlegria_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E6%94%BE%E5%A3%B0%E6%AC%A2%E5%91%BC&action=edit&redlink=1"
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "id": "sakurachiyonooo",
+  "order": 69,
+  "file_name": "069_Sakura_Chiyono_O.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "樱花千代王",
+    "zh_tw": null,
+    "jp": "サクラチヨノオー",
+    "en": "Sakura Chiyono O"
+  },
+  "aliases": [
+    "樱花千代王",
+    "サクラチヨノオー",
+    "Sakura Chiyono O",
+    "【天下第一花滿天】櫻花千代王",
+    "櫻花千代王",
+    "天下第一花滿天",
+    "樱花千代汪",
+    "牛牛",
+    "狗狗",
+    "日下開山・花あかり"
+  ],
+  "profile": {
+    "birthday": "02-19",
+    "birthday_raw": "2月19日",
+    "birthday_day_of_year": 50,
+    "height_cm": 156,
+    "height_raw": "156cm",
+    "cv": "野口瑠璃子",
+    "cv_raw": "野口瑠璃子",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "nige": "B",
+      "senko": "A",
+      "sashi": "F",
+      "oikomi": "G"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/65/bdjyyjhv2lu1q4vixs518sjy883b6gg.png/100px-Chr_icon_1069.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/c77szuscnoany23c130hibmvxxr2kfa.png/100px-Chr_icon_1069_106902_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e2/UPDCH_SakuraChiyonoO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/00/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8Bt.jpg!/fw/280?v=20211119062351"
+    ],
+    "image_local_path": "/api/assets/sakurachiyonooo-thumb",
+    "asset_id": "sakurachiyonooo-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E8%8A%B1%E6%BB%BF%E5%A4%A9%E3%80%91%E6%AB%BB%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B",
+      "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/65/bdjyyjhv2lu1q4vixs518sjy883b6gg.png/100px-Chr_icon_1069.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/c77szuscnoany23c130hibmvxxr2kfa.png/100px-Chr_icon_1069_106902_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/c77szuscnoany23c130hibmvxxr2kfa.png/100px-Chr_icon_1069_106902_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e2/UPDCH_SakuraChiyonoO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/00/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8Bt.jpg!/fw/280?v=20211119062351",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e2/UPDCH_SakuraChiyonoO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "坦率的好孩子，普通的赛马娘。 憧憬着丸善斯基，为了成为能向她挑战的自己，一心一意地不断努力着。 把每天注意到的事作为格言记录下来是每天必做的功课。 那本记录了这些注意到的事的，通称为·千代笔记里，列举了很多无法绝妙表达的例子。",
+    "intro_paragraphs": [
+      "坦率的好孩子，普通的赛马娘。",
+      "憧憬着丸善斯基，为了成为能向她挑战的自己，一心一意地不断努力着。",
+      "把每天注意到的事作为格言记录下来是每天必做的功课。",
+      "那本记录了这些注意到的事的，通称为·千代笔记里，列举了很多无法绝妙表达的例子。"
+    ],
+    "quote_raw": "“只有不断精进——也就是说，‘樱花的花蕾因为是在春天所以才开放’这样！”",
+    "weight_desc_raw": "微減",
+    "bust_raw": "80",
+    "waist_raw": "55",
+    "hip_raw": "83"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "樱花千代王",
+      "character_id": "1069",
+      "birthday_raw": "2月19日",
+      "height_raw": "156",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/65/bdjyyjhv2lu1q4vixs518sjy883b6gg.png/100px-Chr_icon_1069.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/65/bdjyyjhv2lu1q4vixs518sjy883b6gg.png/100px-Chr_icon_1069.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "樱花千代王",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B",
+      "raw_name_zh": "樱花千代王",
+      "raw_name_jp": "サクラチヨノオー",
+      "nickname_raw": "日下開山・花あかり",
+      "star_raw": "3",
+      "birthday_raw": "2月19日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "微减",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "cv_raw": "野口瑠璃子",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/c77szuscnoany23c130hibmvxxr2kfa.png/100px-Chr_icon_1069_106902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E8%8A%B1%E6%BB%BF%E5%A4%A9%E3%80%91%E6%AB%BB%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B",
+      "raw_name_zh": "樱花千代王",
+      "raw_name_jp": null,
+      "translated_name_raw": "櫻花千代王",
+      "nickname_raw": "天下第一花滿天",
+      "page_title": "【天下第一花滿天】櫻花千代王",
+      "page_title_aliases": [
+        "【天下第一花滿天】櫻花千代王",
+        "櫻花千代王",
+        "天下第一花滿天"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "2月19日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "微減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "野口瑠璃子",
+      "introduction_raw": "追求憧憬！率真且奮發圖強的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a6/c77szuscnoany23c130hibmvxxr2kfa.png/100px-Chr_icon_1069_106902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E8%8A%B1%E6%BB%BF%E5%A4%A9%E3%80%91%E6%AB%BB%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "B",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "樱花千代王",
+      "raw_name_jp": "サクラチヨノオー",
+      "cv_raw": "野口瑠璃子",
+      "birthday_raw": "2月19日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "微减",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "quote_raw": "“只有不断精进——也就是说，‘樱花的花蕾因为是在春天所以才开放’这样！”",
+      "intro_paragraphs": [
+        "坦率的好孩子，普通的赛马娘。",
+        "憧憬着丸善斯基，为了成为能向她挑战的自己，一心一意地不断努力着。",
+        "把每天注意到的事作为格言记录下来是每天必做的功课。",
+        "那本记录了这些注意到的事的，通称为·千代笔记里，列举了很多无法绝妙表达的例子。"
+      ],
+      "introduction": "坦率的好孩子，普通的赛马娘。\n憧憬着丸善斯基，为了成为能向她挑战的自己，一心一意地不断努力着。\n把每天注意到的事作为格言记录下来是每天必做的功课。\n那本记录了这些注意到的事的，通称为·千代笔记里，列举了很多无法绝妙表达的例子。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e2/UPDCH_SakuraChiyonoO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e2/UPDCH_SakuraChiyonoO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B",
+      "canonical_name_zh": "樱花千代王",
+      "aliases": [
+        "樱花千代王"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B",
+      "raw_name_zh": "樱花千代王",
+      "page_title": "樱花千代王",
+      "raw_name_jp": "サクラチヨノオー",
+      "raw_name_en": null,
+      "aliases": [
+        "樱花千代汪",
+        "牛牛",
+        "狗狗",
+        "樱花千代王"
+      ],
+      "birthday_raw": "2月19日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "微减",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "cv_raw": "野口瑠璃子",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/00/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8Bt.jpg!/fw/280?v=20211119062351",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/00/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8Bt.jpg!/fw/280?v=20211119062351",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e2/UPDCH_SakuraChiyonoO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163646"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E5%8D%83%E4%BB%A3%E7%8E%8B"
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "id": "suupaakuriiku",
+  "name_zh": "超级小海湾",
+  "name_jp": "スーパークリーク",
+  "aliases": [
+    "【低語溪流】超級小溪",
+    "超級小溪",
+    "低語溪流",
+    "超级大海湾[2]",
+    "超级溪流",
+    "超级小海湾",
+    "スーパークリーク",
+    "マーマリングストリーム"
+  ],
+  "birthday": "05-27",
+  "birthday_day_of_year": 148,
+  "birthday_raw": "5月27日",
+  "height_cm": 168,
+  "height_raw": "168cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 2,
+  "star_raw": "2",
+  "cv": "優木かな",
+  "cv_raw": "優木かな",
+  "quote_raw": "“请尽情地撒娇吧~。呼呼，真乖~真乖~♪”",
+  "introduction": "善于将全身心都用于理解、包容、安慰、娇惯他人的赛马娘。 有时候会因此把人宠坏，自己也会跟着一起变得不行，由此可见这份母性力量的恐怖。 是个比起自己的成长，更会为了搭档能够独当一面而高兴的类型。 是小栗帽和玉藻十字的有力对手。",
+  "intro_paragraphs": [
+    "善于将全身心都用于理解、包容、安慰、娇惯他人的赛马娘。",
+    "有时候会因此把人宠坏，自己也会跟着一起变得不行，由此可见这份母性力量的恐怖。",
+    "是个比起自己的成长，更会为了搭档能够独当一面而高兴的类型。",
+    "是小栗帽和玉藻十字的有力对手。"
+  ],
+  "weight_desc_raw": "微增（理由保密）",
+  "bust_raw": "97",
+  "waist_raw": "61",
+  "hip_raw": "91",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/6/67/2hzrnox7qhhiogtkaohu6glgj365v69.png/100px-Chr_icon_1045.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/k7fviw2onzw853hyyvlmjgfccigln30.png/100px-Chr_icon_1045_104502_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/a992nd4cw4lwryieg6fhm9lngek2c6a.png/100px-Chr_icon_1045_104503_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_SuperCreek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051649",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/c1/PID93125066.jpg!/fw/280?v=20211017070138"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/67/2hzrnox7qhhiogtkaohu6glgj365v69.png/100px-Chr_icon_1045.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/k7fviw2onzw853hyyvlmjgfccigln30.png/100px-Chr_icon_1045_104502_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/a992nd4cw4lwryieg6fhm9lngek2c6a.png/100px-Chr_icon_1045_104503_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/k7fviw2onzw853hyyvlmjgfccigln30.png/100px-Chr_icon_1045_104502_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/a992nd4cw4lwryieg6fhm9lngek2c6a.png/100px-Chr_icon_1045_104503_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_SuperCreek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051649"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c1/PID93125066.jpg!/fw/280?v=20211017070138",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_SuperCreek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051649"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%B6%85%E7%BA%A7%E5%B0%8F%E6%B5%B7%E6%B9%BE",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BD%8E%E8%AA%9E%E6%BA%AA%E6%B5%81%E3%80%91%E8%B6%85%E7%B4%9A%E5%B0%8F%E6%BA%AA",
+    "https://zh.moegirl.org.cn/%E8%B6%85%E7%BA%A7%E6%BA%AA%E6%B5%81"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "G",
+    "medium": "A",
+    "long": "A",
+    "nige": "D",
+    "senko": "A",
+    "sashi": "B",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "超级小海湾",
+      "character_id": "1045",
+      "birthday_raw": "5月27日",
+      "height_raw": "168",
+      "bust_raw": "97",
+      "waist_raw": "61",
+      "hip_raw": "91",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "36",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/67/2hzrnox7qhhiogtkaohu6glgj365v69.png/100px-Chr_icon_1045.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/67/2hzrnox7qhhiogtkaohu6glgj365v69.png/100px-Chr_icon_1045.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B6%85%E7%BA%A7%E5%B0%8F%E6%B5%B7%E6%B9%BE"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "超级小海湾",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B6%85%E7%BA%A7%E5%B0%8F%E6%B5%B7%E6%B9%BE",
+      "star_raw": "2",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "20%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%B6%85%E7%BA%A7%E5%B0%8F%E6%B5%B7%E6%B9%BE",
+      "raw_name_zh": "超级小海湾",
+      "raw_name_jp": "スーパークリーク",
+      "nickname_raw": "マーマリングストリーム",
+      "star_raw": "2",
+      "birthday_raw": "5月27日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "微增（理由是秘密的呦）",
+      "bust_raw": "97",
+      "waist_raw": "61",
+      "hip_raw": "91",
+      "cv_raw": "优木加奈",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/k7fviw2onzw853hyyvlmjgfccigln30.png/100px-Chr_icon_1045_104502_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/a992nd4cw4lwryieg6fhm9lngek2c6a.png/100px-Chr_icon_1045_104503_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B6%85%E7%BA%A7%E5%B0%8F%E6%B5%B7%E6%B9%BE"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BD%8E%E8%AA%9E%E6%BA%AA%E6%B5%81%E3%80%91%E8%B6%85%E7%B4%9A%E5%B0%8F%E6%BA%AA",
+      "raw_name_zh": "超级小海湾",
+      "raw_name_jp": null,
+      "translated_name_raw": "超級小溪",
+      "nickname_raw": "低語溪流",
+      "page_title": "【低語溪流】超級小溪",
+      "page_title_aliases": [
+        "【低語溪流】超級小溪",
+        "超級小溪",
+        "低語溪流"
+      ],
+      "star_raw": "2",
+      "birthday_raw": "5月27日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "微增（理由保密）",
+      "bust_raw": "97",
+      "waist_raw": "61",
+      "hip_raw": "91",
+      "cv_raw": "優木かな",
+      "introduction_raw": "用溫和母性療癒人心的溫柔大姐姐",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/k7fviw2onzw853hyyvlmjgfccigln30.png/100px-Chr_icon_1045_104502_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/a992nd4cw4lwryieg6fhm9lngek2c6a.png/100px-Chr_icon_1045_104503_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BD%8E%E8%AA%9E%E6%BA%AA%E6%B5%81%E3%80%91%E8%B6%85%E7%B4%9A%E5%B0%8F%E6%BA%AA",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "超级小海湾",
+      "raw_name_jp": "スーパークリーク",
+      "cv_raw": "优木加奈",
+      "birthday_raw": "5月27日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "微增（理由是秘密）",
+      "bust_raw": "97",
+      "waist_raw": "61",
+      "hip_raw": "91",
+      "quote_raw": "“请尽情地撒娇吧~。呼呼，真乖~真乖~♪”",
+      "intro_paragraphs": [
+        "善于将全身心都用于理解、包容、安慰、娇惯他人的赛马娘。",
+        "有时候会因此把人宠坏，自己也会跟着一起变得不行，由此可见这份母性力量的恐怖。",
+        "是个比起自己的成长，更会为了搭档能够独当一面而高兴的类型。",
+        "是小栗帽和玉藻十字的有力对手。"
+      ],
+      "introduction": "善于将全身心都用于理解、包容、安慰、娇惯他人的赛马娘。\n有时候会因此把人宠坏，自己也会跟着一起变得不行，由此可见这份母性力量的恐怖。\n是个比起自己的成长，更会为了搭档能够独当一面而高兴的类型。\n是小栗帽和玉藻十字的有力对手。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_SuperCreek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051649",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_SuperCreek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051649"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B6%85%E7%BA%A7%E6%BA%AA%E6%B5%81",
+      "canonical_name_zh": "超级溪流",
+      "aliases": [
+        "超级溪流"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%B6%85%E7%BA%A7%E6%BA%AA%E6%B5%81",
+      "raw_name_zh": "超级小海湾",
+      "page_title": "超级溪流",
+      "raw_name_jp": "スーパークリーク",
+      "raw_name_en": null,
+      "aliases": [
+        "超级大海湾[2]",
+        "超级溪流"
+      ],
+      "birthday_raw": "5月27日",
+      "height_raw": "168cm",
+      "weight_desc_raw": "微增（理由秘密）",
+      "bust_raw": "97",
+      "waist_raw": "61",
+      "hip_raw": "91",
+      "cv_raw": "优木加奈",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c1/PID93125066.jpg!/fw/280?v=20211017070138",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c1/PID93125066.jpg!/fw/280?v=20211017070138",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_SuperCreek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051649"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B6%85%E7%BA%A7%E6%BA%AA%E6%B5%81"
+    }
+  }
+}

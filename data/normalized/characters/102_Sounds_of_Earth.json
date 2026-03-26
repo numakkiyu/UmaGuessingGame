@@ -1,0 +1,306 @@
+{
+  "id": "saunzuobuaasu",
+  "order": 102,
+  "file_name": "102_Sounds_of_Earth.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "万籁争鸣",
+    "zh_tw": null,
+    "jp": "サウンズオブアース",
+    "en": "Sounds of Earth"
+  },
+  "aliases": [
+    "万籁争鸣",
+    "サウンズオブアース",
+    "Sounds of Earth",
+    "【地球的節奏】萬籟爭鳴",
+    "萬籟爭鳴",
+    "地球的節奏",
+    "リトモ・デッラ・テッラ"
+  ],
+  "profile": {
+    "birthday": "04-12",
+    "birthday_raw": "4月12日",
+    "birthday_day_of_year": 103,
+    "height_cm": 161,
+    "height_raw": "161cm",
+    "cv": "MAKIKO",
+    "cv_raw": "MAKIKO",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "E"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/1n01y17gt7h4bmrap89r9uxvzljsa5f.png/100px-Chr_icon_1102.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/2gr3efsi31qlbf4g2viny4dxyemvz5c.png/100px-Chr_icon_1102_110202_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_SoundsOfEarth_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230823072154",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/2f/112877757_p0.jpg!/fw/280?v=20231210143044"
+    ],
+    "image_local_path": "/api/assets/saunzuobuaasu-thumb",
+    "asset_id": "saunzuobuaasu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%9C%B0%E7%90%83%E7%9A%84%E7%AF%80%E5%A5%8F%E3%80%91%E8%90%AC%E7%B1%9F%E7%88%AD%E9%B3%B4",
+      "https://zh.moegirl.org.cn/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/1n01y17gt7h4bmrap89r9uxvzljsa5f.png/100px-Chr_icon_1102.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/2gr3efsi31qlbf4g2viny4dxyemvz5c.png/100px-Chr_icon_1102_110202_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_SoundsOfEarth_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230823072154"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2f/112877757_p0.jpg!/fw/280?v=20231210143044",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_SoundsOfEarth_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230823072154"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "毫无顾忌地宣称着自己的夙愿是“在比赛上演奏出最棒的音乐”，是爱音乐胜过一切的艺术家。 有着热情的性格，会对承认的对手报以热烈的劝言。 特技是小提琴的演奏，喜欢的花是大花四照花。",
+    "intro_paragraphs": [
+      "毫无顾忌地宣称着自己的夙愿是“在比赛上演奏出最棒的音乐”，是爱音乐胜过一切的艺术家。",
+      "有着热情的性格，会对承认的对手报以热烈的劝言。",
+      "特技是小提琴的演奏，喜欢的花是大花四照花。"
+    ],
+    "quote_raw": "比赛是地球的合奏，出赛的马娘们是演奏的对手。",
+    "weight_desc_raw": "Benissimo!",
+    "bust_raw": "80",
+    "waist_raw": "52",
+    "hip_raw": "81"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "万籁争鸣",
+      "character_id": "1102",
+      "birthday_raw": "4月12日",
+      "height_raw": "161",
+      "bust_raw": "80",
+      "waist_raw": "52",
+      "hip_raw": "81",
+      "whr_raw": "0.64",
+      "bust_waist_diff_raw": "28",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/1n01y17gt7h4bmrap89r9uxvzljsa5f.png/100px-Chr_icon_1102.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/1n01y17gt7h4bmrap89r9uxvzljsa5f.png/100px-Chr_icon_1102.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "万籁争鸣",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3",
+      "raw_name_zh": "万籁争鸣",
+      "raw_name_jp": "サウンズオブアース",
+      "nickname_raw": "リトモ・デッラ・テッラ",
+      "star_raw": "3",
+      "birthday_raw": "4月12日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "完美！",
+      "bust_raw": "80",
+      "waist_raw": "52",
+      "hip_raw": "81",
+      "cv_raw": "MAKIKO",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/2gr3efsi31qlbf4g2viny4dxyemvz5c.png/100px-Chr_icon_1102_110202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%9C%B0%E7%90%83%E7%9A%84%E7%AF%80%E5%A5%8F%E3%80%91%E8%90%AC%E7%B1%9F%E7%88%AD%E9%B3%B4",
+      "raw_name_zh": "万籁争鸣",
+      "raw_name_jp": null,
+      "translated_name_raw": "萬籟爭鳴",
+      "nickname_raw": "地球的節奏",
+      "page_title": "【地球的節奏】萬籟爭鳴",
+      "page_title_aliases": [
+        "【地球的節奏】萬籟爭鳴",
+        "萬籟爭鳴",
+        "地球的節奏"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月12日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "Benissimo!",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "MAKIKO",
+      "introduction_raw": "競賽就是一場合奏！深愛音樂的藝術家賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%9C%B0%E7%90%83%E7%9A%84%E7%AF%80%E5%A5%8F%E3%80%91%E8%90%AC%E7%B1%9F%E7%88%AD%E9%B3%B4",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "E"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "万籁争鸣",
+      "raw_name_jp": "サウンズオブアース",
+      "cv_raw": "MAKIKO",
+      "birthday_raw": "4月12日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "完美！",
+      "bust_raw": "80",
+      "waist_raw": "52",
+      "hip_raw": "81",
+      "quote_raw": "比赛是地球的合奏，出赛的马娘们是演奏的对手。",
+      "intro_paragraphs": [
+        "毫无顾忌地宣称着自己的夙愿是“在比赛上演奏出最棒的音乐”，是爱音乐胜过一切的艺术家。",
+        "有着热情的性格，会对承认的对手报以热烈的劝言。",
+        "特技是小提琴的演奏，喜欢的花是大花四照花。"
+      ],
+      "introduction": "毫无顾忌地宣称着自己的夙愿是“在比赛上演奏出最棒的音乐”，是爱音乐胜过一切的艺术家。\n有着热情的性格，会对承认的对手报以热烈的劝言。\n特技是小提琴的演奏，喜欢的花是大花四照花。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_SoundsOfEarth_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230823072154",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_SoundsOfEarth_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230823072154"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3",
+      "canonical_name_zh": "万籁争鸣",
+      "aliases": [
+        "万籁争鸣"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3",
+      "raw_name_zh": "万籁争鸣",
+      "page_title": "万籁争鸣",
+      "raw_name_jp": "サウンズオブアース",
+      "raw_name_en": null,
+      "aliases": [
+        "万籁争鸣"
+      ],
+      "birthday_raw": "4月12日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "完美！[3]",
+      "bust_raw": "80",
+      "waist_raw": "52",
+      "hip_raw": "81",
+      "cv_raw": "MAKIKO",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/2f/112877757_p0.jpg!/fw/280?v=20231210143044",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2f/112877757_p0.jpg!/fw/280?v=20231210143044",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_SoundsOfEarth_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230823072154"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%B8%87%E7%B1%81%E4%BA%89%E9%B8%A3"
+    }
+  }
+}

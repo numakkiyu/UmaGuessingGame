@@ -1,0 +1,315 @@
+{
+  "id": "taikishatoru",
+  "order": 10,
+  "file_name": "010_Taiki_Shuttle.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "大树快车",
+    "zh_tw": null,
+    "jp": "タイキシャトル",
+    "en": "Taiki Shuttle"
+  },
+  "aliases": [
+    "大树快车",
+    "タイキシャトル",
+    "Taiki Shuttle",
+    "【野性邊境】大樹快車",
+    "大樹快車",
+    "野性邊境",
+    "タイキ",
+    "homo快车[1]",
+    "ワイルド・フロンティア"
+  ],
+  "profile": {
+    "birthday": "03-23",
+    "birthday_raw": "3月23日",
+    "birthday_day_of_year": 83,
+    "height_cm": 172,
+    "height_raw": "172㎝",
+    "cv": "大坪由佳",
+    "cv_raw": "大坪由佳",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "E",
+      "long": "G",
+      "nige": "C",
+      "senko": "A",
+      "sashi": "E",
+      "oikomi": "G"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/da/ar78rcttaanns104wsn2jkhapf5fh8x.png/100px-Chr_icon_1010.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/a9/gc0y9qjub4ga27tv35r7516plp2l82z.png/100px-Chr_icon_1010_101002_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/lnqjkmpejfp4b959e0u78lw1us30sg6.png/100px-Chr_icon_1010_101003_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/4e/UPDCH_TaikiShuttle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051904",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/ce/Pid90043581.jpg!/fw/280?v=20211016171100"
+    ],
+    "image_local_path": "/api/assets/taikishatoru-thumb",
+    "asset_id": "taikishatoru-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E9%87%8E%E6%80%A7%E9%82%8A%E5%A2%83%E3%80%91%E5%A4%A7%E6%A8%B9%E5%BF%AB%E8%BB%8A",
+      "https://zh.moegirl.org.cn/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/da/ar78rcttaanns104wsn2jkhapf5fh8x.png/100px-Chr_icon_1010.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a9/gc0y9qjub4ga27tv35r7516plp2l82z.png/100px-Chr_icon_1010_101002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/lnqjkmpejfp4b959e0u78lw1us30sg6.png/100px-Chr_icon_1010_101003_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a9/gc0y9qjub4ga27tv35r7516plp2l82z.png/100px-Chr_icon_1010_101002_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4e/UPDCH_TaikiShuttle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051904"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/ce/Pid90043581.jpg!/fw/280?v=20211016171100",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4e/UPDCH_TaikiShuttle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051904"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "活力十足、自来熟的牛仔女孩。因为是想跟谁都搞好关系的性格，会单方面去缩短距离，抱上去。 也是个非常容易感到寂寞的人，也是因为这个原因经常自己开派对。 擅长短距离，这份冲刺力连关系亲密的无声铃鹿都自认不如。",
+    "intro_paragraphs": [
+      "活力十足、自来熟的牛仔女孩。因为是想跟谁都搞好关系的性格，会单方面去缩短距离，抱上去。",
+      "也是个非常容易感到寂寞的人，也是因为这个原因经常自己开派对。",
+      "擅长短距离，这份冲刺力连关系亲密的无声铃鹿都自认不如。"
+    ],
+    "quote_raw": "“BANG✩爽朗又愉快的瞄准射击desu！！”",
+    "weight_desc_raw": "微增（「不過no problem！」）",
+    "bust_raw": "94",
+    "waist_raw": "59",
+    "hip_raw": "90"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "大树快车",
+      "character_id": "1010",
+      "birthday_raw": "3月23日",
+      "height_raw": "172",
+      "bust_raw": "94",
+      "waist_raw": "59",
+      "hip_raw": "90",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "35",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/da/ar78rcttaanns104wsn2jkhapf5fh8x.png/100px-Chr_icon_1010.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/da/ar78rcttaanns104wsn2jkhapf5fh8x.png/100px-Chr_icon_1010.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "大树快车",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6",
+      "raw_name_zh": "大树快车",
+      "raw_name_jp": "タイキシャトル",
+      "nickname_raw": "ワイルド・フロンティア",
+      "star_raw": "3",
+      "birthday_raw": "3月23日",
+      "height_raw": "172㎝",
+      "weight_desc_raw": "微增（「但是No problem！」）",
+      "bust_raw": "94",
+      "waist_raw": "59",
+      "hip_raw": "90",
+      "cv_raw": "大坪由佳",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a9/gc0y9qjub4ga27tv35r7516plp2l82z.png/100px-Chr_icon_1010_101002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6b/lnqjkmpejfp4b959e0u78lw1us30sg6.png/100px-Chr_icon_1010_101003_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%87%8E%E6%80%A7%E9%82%8A%E5%A2%83%E3%80%91%E5%A4%A7%E6%A8%B9%E5%BF%AB%E8%BB%8A",
+      "raw_name_zh": "大树快车",
+      "raw_name_jp": null,
+      "translated_name_raw": "大樹快車",
+      "nickname_raw": "野性邊境",
+      "page_title": "【野性邊境】大樹快車",
+      "page_title_aliases": [
+        "【野性邊境】大樹快車",
+        "大樹快車",
+        "野性邊境"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月23日",
+      "height_raw": "172㎝",
+      "weight_desc_raw": "微增（「不過no problem！」）",
+      "bust_raw": "94",
+      "waist_raw": "59",
+      "hip_raw": "90",
+      "cv_raw": "大坪由佳",
+      "introduction_raw": "出生於美國的友善少女",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/a9/gc0y9qjub4ga27tv35r7516plp2l82z.png/100px-Chr_icon_1010_101002_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%87%8E%E6%80%A7%E9%82%8A%E5%A2%83%E3%80%91%E5%A4%A7%E6%A8%B9%E5%BF%AB%E8%BB%8A",
+      "turf_raw": "A",
+      "dirt_raw": "B",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "大树快车",
+      "raw_name_jp": "タイキシャトル",
+      "cv_raw": "大坪由佳",
+      "birthday_raw": "3月23日",
+      "height_raw": "172cm",
+      "weight_desc_raw": "微增（“但是No problem！”）",
+      "bust_raw": "94",
+      "waist_raw": "59",
+      "hip_raw": "90",
+      "quote_raw": "“BANG✩爽朗又愉快的瞄准射击desu！！”",
+      "intro_paragraphs": [
+        "活力十足、自来熟的牛仔女孩。因为是想跟谁都搞好关系的性格，会单方面去缩短距离，抱上去。",
+        "也是个非常容易感到寂寞的人，也是因为这个原因经常自己开派对。",
+        "擅长短距离，这份冲刺力连关系亲密的无声铃鹿都自认不如。"
+      ],
+      "introduction": "活力十足、自来熟的牛仔女孩。因为是想跟谁都搞好关系的性格，会单方面去缩短距离，抱上去。\n也是个非常容易感到寂寞的人，也是因为这个原因经常自己开派对。\n擅长短距离，这份冲刺力连关系亲密的无声铃鹿都自认不如。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/4e/UPDCH_TaikiShuttle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051904",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4e/UPDCH_TaikiShuttle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051904"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6",
+      "canonical_name_zh": "大树快车",
+      "aliases": [
+        "大树快车"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6",
+      "raw_name_zh": "大树快车",
+      "page_title": "大树快车",
+      "raw_name_jp": "タイキシャトル",
+      "raw_name_en": null,
+      "aliases": [
+        "タイキ",
+        "homo快车[1]",
+        "大树快车"
+      ],
+      "birthday_raw": "3月23日",
+      "height_raw": "172cm",
+      "weight_desc_raw": "微增（“但是no problem!”）",
+      "bust_raw": "94",
+      "waist_raw": "59",
+      "hip_raw": "90",
+      "cv_raw": "大坪由佳",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/ce/Pid90043581.jpg!/fw/280?v=20211016171100",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/ce/Pid90043581.jpg!/fw/280?v=20211016171100",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4e/UPDCH_TaikiShuttle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051904"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E6%A0%91%E5%BF%AB%E8%BD%A6"
+    }
+  }
+}

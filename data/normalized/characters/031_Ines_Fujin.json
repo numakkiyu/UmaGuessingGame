@@ -1,0 +1,313 @@
+{
+  "id": "ainesufuujin",
+  "order": 31,
+  "file_name": "031_Ines_Fujin.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "艾尼斯风神",
+    "zh_tw": null,
+    "jp": "アイネスフウジン",
+    "en": "Ines Fujin"
+  },
+  "aliases": [
+    "艾尼斯风神",
+    "アイネスフウジン",
+    "Ines Fujin",
+    "【全天候狂熱】艾尼風神",
+    "艾尼風神",
+    "全天候狂熱",
+    "乐购鹰[2]",
+    "オールタイム・フィーバー"
+  ],
+  "profile": {
+    "birthday": "04-10",
+    "birthday_raw": "4月10日",
+    "birthday_day_of_year": 101,
+    "height_cm": 167,
+    "height_raw": "167cm",
+    "cv": "長江里加",
+    "cv_raw": "長江里加",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "C",
+      "nige": "A",
+      "senko": "C",
+      "sashi": "G",
+      "oikomi": "G"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/b30rs3kdo7ilj94g0w7z8hkdjluz7dk.png/100px-Chr_icon_1031.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/9um9hp2dz22u3g485myyfbswhcfjtwn.png/100px-Chr_icon_1031_103102_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c7/08nxagr6pskwvt3u7d0xijh96tt8yuv.png/100px-Chr_icon_1031_103103_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_InesFujin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922033520",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a6/98960106_p0.png!/fw/280?v=20221212201217"
+    ],
+    "image_local_path": "/api/assets/ainesufuujin-thumb",
+    "asset_id": "ainesufuujin-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%85%A8%E5%A4%A9%E5%80%99%E7%8B%82%E7%86%B1%E3%80%91%E8%89%BE%E5%B0%BC%E9%A2%A8%E7%A5%9E",
+      "https://zh.moegirl.org.cn/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/b30rs3kdo7ilj94g0w7z8hkdjluz7dk.png/100px-Chr_icon_1031.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/9um9hp2dz22u3g485myyfbswhcfjtwn.png/100px-Chr_icon_1031_103102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c7/08nxagr6pskwvt3u7d0xijh96tt8yuv.png/100px-Chr_icon_1031_103103_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/9um9hp2dz22u3g485myyfbswhcfjtwn.png/100px-Chr_icon_1031_103102_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_InesFujin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922033520"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/98960106_p0.png!/fw/280?v=20221212201217",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_InesFujin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922033520"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "直爽的长女气质的赛马娘。冲出去的速度是世所公认的，责任感很强。 因为有2个妹妹（双胞胎），为了贴补家计而打工，但本人似乎并不觉得有负担。 全力享受母亲给的在特雷森学园的机会，想做出些成绩。",
+    "intro_paragraphs": [
+      "直爽的长女气质的赛马娘。冲出去的速度是世所公认的，责任感很强。",
+      "因为有2个妹妹（双胞胎），为了贴补家计而打工，但本人似乎并不觉得有负担。",
+      "全力享受母亲给的在特雷森学园的机会，想做出些成绩。"
+    ],
+    "quote_raw": "“Hello Hello~向着梦想，向着第一起飞吧！”",
+    "weight_desc_raw": "微增（似乎吃太多了？）",
+    "bust_raw": "88",
+    "waist_raw": "58",
+    "hip_raw": "84"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "艾尼斯风神",
+      "character_id": "1031",
+      "birthday_raw": "4月10日",
+      "height_raw": "167",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "84",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/b30rs3kdo7ilj94g0w7z8hkdjluz7dk.png/100px-Chr_icon_1031.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/b30rs3kdo7ilj94g0w7z8hkdjluz7dk.png/100px-Chr_icon_1031.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "艾尼斯风神",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E",
+      "star_raw": "3",
+      "speed_growth_raw": "15%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "15%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E",
+      "raw_name_zh": "艾尼斯风神",
+      "raw_name_jp": "アイネスフウジン",
+      "nickname_raw": "オールタイム・フィーバー",
+      "star_raw": "3",
+      "birthday_raw": "4月10日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微增（稍微吃多了点？）",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "84",
+      "cv_raw": "岭内知美[1]→长江里加",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "G",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/9um9hp2dz22u3g485myyfbswhcfjtwn.png/100px-Chr_icon_1031_103102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c7/08nxagr6pskwvt3u7d0xijh96tt8yuv.png/100px-Chr_icon_1031_103103_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%85%A8%E5%A4%A9%E5%80%99%E7%8B%82%E7%86%B1%E3%80%91%E8%89%BE%E5%B0%BC%E9%A2%A8%E7%A5%9E",
+      "raw_name_zh": "艾尼斯风神",
+      "raw_name_jp": null,
+      "translated_name_raw": "艾尼風神",
+      "nickname_raw": "全天候狂熱",
+      "page_title": "【全天候狂熱】艾尼風神",
+      "page_title_aliases": [
+        "【全天候狂熱】艾尼風神",
+        "艾尼風神",
+        "全天候狂熱"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月10日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微增（似乎吃太多了？）",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "84",
+      "cv_raw": "長江里加",
+      "introduction_raw": "充滿活力！愛家的勤勞女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/10/9um9hp2dz22u3g485myyfbswhcfjtwn.png/100px-Chr_icon_1031_103102_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%85%A8%E5%A4%A9%E5%80%99%E7%8B%82%E7%86%B1%E3%80%91%E8%89%BE%E5%B0%BC%E9%A2%A8%E7%A5%9E",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "A",
+      "senko_raw": "C",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "艾尼斯风神",
+      "raw_name_jp": "アイネスフウジン",
+      "cv_raw": "长江里加",
+      "birthday_raw": "4月10日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微增（稍微吃得有点多了？）",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "84",
+      "quote_raw": "“Hello Hello~向着梦想，向着第一起飞吧！”",
+      "intro_paragraphs": [
+        "直爽的长女气质的赛马娘。冲出去的速度是世所公认的，责任感很强。",
+        "因为有2个妹妹（双胞胎），为了贴补家计而打工，但本人似乎并不觉得有负担。",
+        "全力享受母亲给的在特雷森学园的机会，想做出些成绩。"
+      ],
+      "introduction": "直爽的长女气质的赛马娘。冲出去的速度是世所公认的，责任感很强。\n因为有2个妹妹（双胞胎），为了贴补家计而打工，但本人似乎并不觉得有负担。\n全力享受母亲给的在特雷森学园的机会，想做出些成绩。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_InesFujin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922033520",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_InesFujin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922033520"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E",
+      "canonical_name_zh": "艾尼斯风神",
+      "aliases": [
+        "艾尼斯风神"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E",
+      "raw_name_zh": "艾尼斯风神",
+      "page_title": "艾尼斯风神",
+      "raw_name_jp": "アイネスフウジン",
+      "raw_name_en": null,
+      "aliases": [
+        "乐购鹰[2]",
+        "艾尼斯风神"
+      ],
+      "birthday_raw": "4月10日",
+      "height_raw": "167cm",
+      "weight_desc_raw": "微增（稍微吃的太多了点？）",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "84",
+      "cv_raw": "（2023年1月10日起）岭内知美→长江里加",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a6/98960106_p0.png!/fw/280?v=20221212201217",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/98960106_p0.png!/fw/280?v=20221212201217",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_InesFujin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922033520"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%89%BE%E5%B0%BC%E6%96%AF%E9%A3%8E%E7%A5%9E"
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "id": "douramente",
+  "name_zh": "大鸣大放",
+  "name_jp": "ドゥラメンテ",
+  "aliases": [
+    "【Red in Black】大鳴大放",
+    "大鳴大放",
+    "Red in Black",
+    "大锤",
+    "大鸣大放",
+    "ドゥラメンテ"
+  ],
+  "birthday": "03-22",
+  "birthday_day_of_year": 82,
+  "birthday_raw": "3月22日",
+  "height_cm": 166,
+  "height_raw": "166cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "秋奈",
+  "cv_raw": "秋奈",
+  "quote_raw": "作为来自优秀马娘与运动员辈出的名门望族所培育出的宝贵结晶，未来备受瞩目的精英赛马娘。",
+  "introduction": "虽然平时性格认真克己，但一到比赛就会流露出斗志昂扬的激烈一面。 与气槽自幼便结成深交。",
+  "intro_paragraphs": [
+    "虽然平时性格认真克己，但一到比赛就会流露出斗志昂扬的激烈一面。",
+    "与气槽自幼便结成深交。"
+  ],
+  "weight_desc_raw": "調整狀態極佳",
+  "bust_raw": "89",
+  "waist_raw": "57",
+  "hip_raw": "85",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/a/ab/k246qfjwrxndwr5v0e0pabsyn3b7zik.png/100px-Chr_icon_1108.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/9/99/UPDCH_Duramente_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231004155848",
+    "https://storage.moegirl.org.cn/moegirl/commons/2/24/Duramente.jpg!/fw/280?v=20231019101041"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/ab/k246qfjwrxndwr5v0e0pabsyn3b7zik.png/100px-Chr_icon_1108.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/9/99/UPDCH_Duramente_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231004155848"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/2/24/Duramente.jpg!/fw/280?v=20231019101041",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/99/UPDCH_Duramente_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231004155848"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Red_in_Black%E3%80%91%E5%A4%A7%E9%B3%B4%E5%A4%A7%E6%94%BE",
+    "https://zh.moegirl.org.cn/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "A",
+    "medium": "A",
+    "long": "C",
+    "nige": "G",
+    "senko": "C",
+    "sashi": "A",
+    "oikomi": "A"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "差",
+    "追"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "大鸣大放",
+      "character_id": "1108",
+      "birthday_raw": "3月22日",
+      "height_raw": "166",
+      "bust_raw": "89",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "32",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/ab/k246qfjwrxndwr5v0e0pabsyn3b7zik.png/100px-Chr_icon_1108.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ab/k246qfjwrxndwr5v0e0pabsyn3b7zik.png/100px-Chr_icon_1108.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "大鸣大放",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE",
+      "raw_name_zh": "大鸣大放",
+      "raw_name_jp": "ドゥラメンテ",
+      "nickname_raw": "Red in Black",
+      "star_raw": "3",
+      "birthday_raw": "3月22日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "调整得很完美",
+      "bust_raw": "89",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "cv_raw": "秋奈",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Red_in_Black%E3%80%91%E5%A4%A7%E9%B3%B4%E5%A4%A7%E6%94%BE",
+      "raw_name_zh": "大鸣大放",
+      "raw_name_jp": null,
+      "translated_name_raw": "大鳴大放",
+      "nickname_raw": "Red in Black",
+      "page_title": "【Red in Black】大鳴大放",
+      "page_title_aliases": [
+        "【Red in Black】大鳴大放",
+        "大鳴大放",
+        "Red in Black"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月22日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "調整狀態極佳",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "秋奈",
+      "introduction_raw": "最強血統的所有者，名門一族的結晶",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Red_in_Black%E3%80%91%E5%A4%A7%E9%B3%B4%E5%A4%A7%E6%94%BE",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "大鸣大放",
+      "raw_name_jp": "ドゥラメンテ",
+      "cv_raw": "秋奈",
+      "birthday_raw": "3月22日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "调整得很好",
+      "bust_raw": "89",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "quote_raw": "作为来自优秀马娘与运动员辈出的名门望族所培育出的宝贵结晶，未来备受瞩目的精英赛马娘。",
+      "intro_paragraphs": [
+        "虽然平时性格认真克己，但一到比赛就会流露出斗志昂扬的激烈一面。",
+        "与气槽自幼便结成深交。"
+      ],
+      "introduction": "虽然平时性格认真克己，但一到比赛就会流露出斗志昂扬的激烈一面。\n与气槽自幼便结成深交。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/99/UPDCH_Duramente_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231004155848",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/99/UPDCH_Duramente_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231004155848"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE",
+      "canonical_name_zh": "大鸣大放",
+      "aliases": [
+        "大鸣大放"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE",
+      "raw_name_zh": "大鸣大放",
+      "page_title": "大鸣大放",
+      "raw_name_jp": "ドゥラメンテ",
+      "raw_name_en": null,
+      "aliases": [
+        "大锤",
+        "大鸣大放"
+      ],
+      "birthday_raw": "3月22日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "调整得很好",
+      "bust_raw": "89",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "cv_raw": "秋奈",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/24/Duramente.jpg!/fw/280?v=20231019101041",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/24/Duramente.jpg!/fw/280?v=20231019101041",
+        "https://storage.moegirl.org.cn/moegirl/commons/9/99/UPDCH_Duramente_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231004155848"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%A4%A7%E9%B8%A3%E5%A4%A7%E6%94%BE"
+    }
+  }
+}

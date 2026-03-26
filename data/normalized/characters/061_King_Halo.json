@@ -1,0 +1,321 @@
+{
+  "id": "kinguheiroo",
+  "order": 61,
+  "file_name": "061_King_Halo.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "帝王光辉",
+    "zh_tw": null,
+    "jp": "キングヘイロー",
+    "en": "King Halo"
+  },
+  "aliases": [
+    "帝王光辉",
+    "キングヘイロー",
+    "King Halo",
+    "【綠寶石之王】帝王光輝",
+    "帝王光輝",
+    "綠寶石之王",
+    "圣王",
+    "陪跑光环",
+    "王环环",
+    "王黑楼",
+    "圣王光环",
+    "キング・オブ・エメラルド"
+  ],
+  "profile": {
+    "birthday": "04-28",
+    "birthday_raw": "4月28日",
+    "birthday_day_of_year": 119,
+    "height_cm": 159,
+    "height_raw": "159cm",
+    "cv": "佐伯伊織",
+    "cv_raw": "佐伯伊織",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 1,
+    "star_raw": "1",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "A",
+      "mile": "B",
+      "medium": "B",
+      "long": "C",
+      "nige": "G",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "D"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqfvtm5nfhok5toagc66zyw3zr39p5e.png/100px-Chr_icon_1061.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/77/6fpzxzbvb6p0389vb4fvx1o22nuoygw.png/100px-Chr_icon_1061_106102_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/rpg215rzi22iqjib0lcr8423cbya16z.png/100px-Chr_icon_1061_106103_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_KingHalo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210616102320",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/7e/PID89025328.jpg!/fw/280?v=20211215105103"
+    ],
+    "image_local_path": "/api/assets/kinguheiroo-thumb",
+    "asset_id": "kinguheiroo-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%B8%9D%E7%8E%8B%E5%85%89%E8%BE%89",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B6%A0%E5%AF%B6%E7%9F%B3%E4%B9%8B%E7%8E%8B%E3%80%91%E5%B8%9D%E7%8E%8B%E5%85%89%E8%BC%9D",
+      "https://zh.moegirl.org.cn/%E5%9C%A3%E7%8E%8B%E5%85%89%E7%8E%AF"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqfvtm5nfhok5toagc66zyw3zr39p5e.png/100px-Chr_icon_1061.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/77/6fpzxzbvb6p0389vb4fvx1o22nuoygw.png/100px-Chr_icon_1061_106102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/rpg215rzi22iqjib0lcr8423cbya16z.png/100px-Chr_icon_1061_106103_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/77/6fpzxzbvb6p0389vb4fvx1o22nuoygw.png/100px-Chr_icon_1061_106102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/rpg215rzi22iqjib0lcr8423cbya16z.png/100px-Chr_icon_1061_106103_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_KingHalo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210616102320"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7e/PID89025328.jpg!/fw/280?v=20211215105103",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_KingHalo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210616102320"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "以被万人认可为“一流”为目标，自尊心很强的大小姐。 有一位作为赛马娘，作为设计师都是一流的母亲，抱着总有一天要争一口气的爱恨交织的反抗心。 身边总是有捧场的马娘们，周围充满了对她的打call声。",
+    "intro_paragraphs": [
+      "以被万人认可为“一流”为目标，自尊心很强的大小姐。",
+      "有一位作为赛马娘，作为设计师都是一流的母亲，抱着总有一天要争一口气的爱恨交织的反抗心。",
+      "身边总是有捧场的马娘们，周围充满了对她的打call声。"
+    ],
+    "quote_raw": "“总有一天会让他们承认，我才是‘一流’的！”",
+    "weight_desc_raw": "完美",
+    "bust_raw": "85",
+    "waist_raw": "60",
+    "hip_raw": "85"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "帝王光辉",
+      "character_id": "1061",
+      "birthday_raw": "4月28日",
+      "height_raw": "159",
+      "bust_raw": "85",
+      "waist_raw": "60",
+      "hip_raw": "85",
+      "whr_raw": "0.71",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqfvtm5nfhok5toagc66zyw3zr39p5e.png/100px-Chr_icon_1061.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqfvtm5nfhok5toagc66zyw3zr39p5e.png/100px-Chr_icon_1061.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B8%9D%E7%8E%8B%E5%85%89%E8%BE%89"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "帝王光辉",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B8%9D%E7%8E%8B%E5%85%89%E8%BE%89",
+      "star_raw": "1",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "B",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%B8%9D%E7%8E%8B%E5%85%89%E8%BE%89",
+      "raw_name_zh": "帝王光辉",
+      "raw_name_jp": "キングヘイロー",
+      "nickname_raw": "キング・オブ・エメラルド",
+      "star_raw": "1",
+      "birthday_raw": "4月28日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "完美",
+      "bust_raw": "85",
+      "waist_raw": "60",
+      "hip_raw": "85",
+      "cv_raw": "佐伯伊织",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "B",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/77/6fpzxzbvb6p0389vb4fvx1o22nuoygw.png/100px-Chr_icon_1061_106102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/rpg215rzi22iqjib0lcr8423cbya16z.png/100px-Chr_icon_1061_106103_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B8%9D%E7%8E%8B%E5%85%89%E8%BE%89"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B6%A0%E5%AF%B6%E7%9F%B3%E4%B9%8B%E7%8E%8B%E3%80%91%E5%B8%9D%E7%8E%8B%E5%85%89%E8%BC%9D",
+      "raw_name_zh": "帝王光辉",
+      "raw_name_jp": null,
+      "translated_name_raw": "帝王光輝",
+      "nickname_raw": "綠寶石之王",
+      "page_title": "【綠寶石之王】帝王光輝",
+      "page_title_aliases": [
+        "【綠寶石之王】帝王光輝",
+        "帝王光輝",
+        "綠寶石之王"
+      ],
+      "star_raw": "1",
+      "birthday_raw": "4月28日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "完美",
+      "bust_raw": "85",
+      "waist_raw": "60",
+      "hip_raw": "85",
+      "cv_raw": "佐伯伊織",
+      "introduction_raw": "趾高氣昂的大小姐。自尊心直上雲霄！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/77/6fpzxzbvb6p0389vb4fvx1o22nuoygw.png/100px-Chr_icon_1061_106102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/rpg215rzi22iqjib0lcr8423cbya16z.png/100px-Chr_icon_1061_106103_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B6%A0%E5%AF%B6%E7%9F%B3%E4%B9%8B%E7%8E%8B%E3%80%91%E5%B8%9D%E7%8E%8B%E5%85%89%E8%BC%9D",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "B",
+      "long_raw": "C",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "帝王光辉",
+      "raw_name_jp": "キングヘイロー",
+      "cv_raw": "佐伯伊织",
+      "birthday_raw": "4月28日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "完美",
+      "bust_raw": "85",
+      "waist_raw": "60",
+      "hip_raw": "85",
+      "quote_raw": "“总有一天会让他们承认，我才是‘一流’的！”",
+      "intro_paragraphs": [
+        "以被万人认可为“一流”为目标，自尊心很强的大小姐。",
+        "有一位作为赛马娘，作为设计师都是一流的母亲，抱着总有一天要争一口气的爱恨交织的反抗心。",
+        "身边总是有捧场的马娘们，周围充满了对她的打call声。"
+      ],
+      "introduction": "以被万人认可为“一流”为目标，自尊心很强的大小姐。\n有一位作为赛马娘，作为设计师都是一流的母亲，抱着总有一天要争一口气的爱恨交织的反抗心。\n身边总是有捧场的马娘们，周围充满了对她的打call声。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_KingHalo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210616102320",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_KingHalo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210616102320"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%9C%A3%E7%8E%8B%E5%85%89%E7%8E%AF",
+      "canonical_name_zh": "圣王光环",
+      "aliases": [
+        "圣王光环"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%9C%A3%E7%8E%8B%E5%85%89%E7%8E%AF",
+      "raw_name_zh": "帝王光辉",
+      "page_title": "圣王光环",
+      "raw_name_jp": "キングヘイロー",
+      "raw_name_en": null,
+      "aliases": [
+        "圣王",
+        "陪跑光环",
+        "王环环",
+        "王黑楼",
+        "圣王光环"
+      ],
+      "birthday_raw": "4月28日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "完美",
+      "bust_raw": "85",
+      "waist_raw": "60",
+      "hip_raw": "85",
+      "cv_raw": "佐伯伊织",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/7e/PID89025328.jpg!/fw/280?v=20211215105103",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/7e/PID89025328.jpg!/fw/280?v=20211215105103",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/25/UPDCH_KingHalo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210616102320"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%9C%A3%E7%8E%8B%E5%85%89%E7%8E%AF"
+    }
+  }
+}

@@ -1,0 +1,5002 @@
+[
+  {
+    "id": "supesharuuiiku",
+    "name_zh": "特别周",
+    "name_tw": "特別週",
+    "name_jp": "スペシャルウィーク",
+    "name_en": "Special Week",
+    "aliases": [
+      "特别周",
+      "特別週",
+      "スペシャルウィーク",
+      "Special Week",
+      "【特別夢想家】特別週",
+      "特別夢想家",
+      "小特",
+      "斯佩酱（スペちゃん）",
+      "萝卜特",
+      "日本总大将（日本の総大将）",
+      "特别◯",
+      "スペシャルドリーマー"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+    "image_local_path": "/api/assets/supesharuuiiku-thumb",
+    "asset_id": "supesharuuiiku-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "sairensusuzuka",
+    "name_zh": "无声铃鹿",
+    "name_tw": "無聲純真",
+    "name_jp": "サイレンススズカ",
+    "name_en": "Silence Suzuka",
+    "aliases": [
+      "无声铃鹿",
+      "無聲純真",
+      "サイレンススズカ",
+      "Silence Suzuka",
+      "【無聲純真】無聲鈴鹿",
+      "無聲鈴鹿",
+      "铃鹿（スズカ）",
+      "ススズ",
+      "異次元の逃亡者",
+      "无胸铃鹿",
+      "B70",
+      "鹿没乃子",
+      "识字卡（桑）",
+      "斯滋卡（桑）",
+      "サイレントイノセンス"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/13btkb976rxbih850vgfptuq721tfg0.png/100px-Chr_icon_1002_100201_01.png",
+    "image_local_path": "/api/assets/sairensusuzuka-thumb",
+    "asset_id": "sairensusuzuka-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "toukaiteioo",
+    "name_zh": "东海帝皇",
+    "name_tw": "東海帝皇",
+    "name_jp": "トウカイテイオー",
+    "name_en": "Tokai Teio",
+    "aliases": [
+      "东海帝皇",
+      "東海帝皇",
+      "トウカイテイオー",
+      "Tokai Teio",
+      "【歡樂巔峰】東海帝皇",
+      "歡樂巔峰",
+      "帝王（テイオー）",
+      "痛快铁奥",
+      "帝宝（地堡）[1]",
+      "东海帝王",
+      "トップ・オブ・ジョイフル"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/j31sncm1p7k4fq4hvafnbk0k6gx3omg.png/100px-Chr_icon_1003_100301_01.png",
+    "image_local_path": "/api/assets/toukaiteioo-thumb",
+    "asset_id": "toukaiteioo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "maruzensukii",
+    "name_zh": "丸善斯基",
+    "name_tw": null,
+    "name_jp": "マルゼンスキー",
+    "name_en": "Maruzensky",
+    "aliases": [
+      "丸善斯基",
+      "マルゼンスキー",
+      "Maruzensky",
+      "【嫣紅方程式】丸善斯基",
+      "嫣紅方程式",
+      "姥爷",
+      "（老）司机",
+      "超级跑车（スーパーカー）",
+      "假面骑士Drive",
+      "昭和JK",
+      "フォーミュラオブルージュ"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "独居",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f0/53g7dkqgaum6wcij02pme4qvqz6ists.png/100px-Chr_icon_1004_100401_01.png",
+    "image_local_path": "/api/assets/maruzensukii-thumb",
+    "asset_id": "maruzensukii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "fujikiseki",
+    "name_zh": "富士奇迹",
+    "name_tw": null,
+    "name_jp": "フジキセキ",
+    "name_en": "Fuji Kiseki",
+    "aliases": [
+      "富士奇迹",
+      "フジキセキ",
+      "Fuji Kiseki",
+      "【流星歌舞劇】富士奇石",
+      "富士奇石",
+      "流星歌舞劇",
+      "シューティンスタァ・ルヴュ"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/401ez4dqmogz7qbiyouqyr4ytjxgcdl.png/100px-Chr_icon_1005_100501_01.png",
+    "image_local_path": "/api/assets/fujikiseki-thumb",
+    "asset_id": "fujikiseki-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "ogurikyappu",
+    "name_zh": "小栗帽",
+    "name_tw": null,
+    "name_jp": "オグリキャップ",
+    "name_en": "Oguri Cap",
+    "aliases": [
+      "小栗帽",
+      "オグリキャップ",
+      "Oguri Cap",
+      "【星光躍動】小栗帽",
+      "星光躍動",
+      "小栗（オグリ）",
+      "小栗栗（オグリン）",
+      "帽哥",
+      "芦毛的怪物",
+      "芦毛灰姑娘",
+      "泥兔子",
+      "欧古力",
+      "大胃王",
+      "幻神[1]",
+      "スターライトビート"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "7+",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/bsuemdprsucf8ichj8tis2r5vrnoz0m.png/100px-Chr_icon_1006_100601_01.png",
+    "image_local_path": "/api/assets/ogurikyappu-thumb",
+    "asset_id": "ogurikyappu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "goorudoshippu",
+    "name_zh": "黄金船",
+    "name_tw": "火紅鬥爭",
+    "name_jp": "ゴールドシップ",
+    "name_en": "Gold Ship",
+    "aliases": [
+      "黄金船",
+      "火紅鬥爭",
+      "ゴールドシップ",
+      "Gold Ship",
+      "【火紅鬥爭】黃金船",
+      "黃金船",
+      "ゴールド",
+      "白色怪物（白い怪物）",
+      "芦毛の暴れん坊",
+      "不沉舰",
+      "皮皮船",
+      "皮划艇",
+      "阿船/小金船/苟露西（ゴルシ（564））",
+      "白色狮子",
+      "草莓大福",
+      "外星怪马",
+      "好兄弟",
+      "レッドストライフ"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7a/tbd5pfhsruxk07vhx771x1xiukdcnif.png/100px-Chr_icon_1007_100701_01.png",
+    "image_local_path": "/api/assets/goorudoshippu-thumb",
+    "asset_id": "goorudoshippu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "uokka",
+    "name_zh": "伏特加",
+    "name_tw": null,
+    "name_jp": "ウオッカ",
+    "name_en": "Vodka",
+    "aliases": [
+      "伏特加",
+      "ウオッカ",
+      "Vodka",
+      "【狂野極速】伏特加",
+      "狂野極速",
+      "ワイルドトップギア"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+    "image_local_path": "/api/assets/uokka-thumb",
+    "asset_id": "uokka-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "daiwasukaaretto",
+    "name_zh": "大和赤骥",
+    "name_tw": null,
+    "name_jp": "ダイワスカーレット",
+    "name_en": "Daiwa Scarlet",
+    "aliases": [
+      "大和赤骥",
+      "ダイワスカーレット",
+      "Daiwa Scarlet",
+      "【蒼藍巔峰】大和赤驥",
+      "大和赤驥",
+      "蒼藍巔峰",
+      "完美小姐（ミスパーフェクト）",
+      "特雷森校花",
+      "爱丽崽子",
+      "十一个孩子的母亲",
+      "红糖年糕",
+      "红糖麻薯[1]",
+      "トップ・オブ・ブルー"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/ggqhn7h7b0r5skkgq6ziuahtu71bybs.png/100px-Chr_icon_1009_100901_01.png",
+    "image_local_path": "/api/assets/daiwasukaaretto-thumb",
+    "asset_id": "daiwasukaaretto-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "taikishatoru",
+    "name_zh": "大树快车",
+    "name_tw": null,
+    "name_jp": "タイキシャトル",
+    "name_en": "Taiki Shuttle",
+    "aliases": [
+      "大树快车",
+      "タイキシャトル",
+      "Taiki Shuttle",
+      "【野性邊境】大樹快車",
+      "大樹快車",
+      "野性邊境",
+      "タイキ",
+      "homo快车[1]",
+      "ワイルド・フロンティア"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/72/nr52qx8dhij8cvtn796laltguikz45x.png/100px-Chr_icon_1010_101001_01.png",
+    "image_local_path": "/api/assets/taikishatoru-thumb",
+    "asset_id": "taikishatoru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "gurasuwandaa",
+    "name_zh": "草上飞",
+    "name_tw": null,
+    "name_jp": "グラスワンダー",
+    "name_en": "Grass Wonder",
+    "aliases": [
+      "草上飞",
+      "グラスワンダー",
+      "Grass Wonder",
+      "【穿岩之青】草上飛",
+      "草上飛",
+      "穿岩之青",
+      "小草（グラスちゃん）",
+      "不死鳥",
+      "草女士",
+      "草上肥[2]",
+      "草二爷[3]",
+      "草上牛",
+      "岩穿つ青"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/2inx6mxlk1nazcqd0ebscww6zus2mh9.png/100px-Chr_icon_1011_101101_01.png",
+    "image_local_path": "/api/assets/gurasuwandaa-thumb",
+    "asset_id": "gurasuwandaa-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "hishiamazon",
+    "name_zh": "菱亚马逊",
+    "name_tw": null,
+    "name_jp": "ヒシアマゾン",
+    "name_en": "Hishi Amazon",
+    "aliases": [
+      "菱亚马逊",
+      "ヒシアマゾン",
+      "Hishi Amazon",
+      "【亞馬遜青金石】菱亞馬遜",
+      "菱亞馬遜",
+      "亞馬遜青金石",
+      "亚马逊（アマゾン）",
+      "女杰",
+      "大姐头（ウマアネゴ）",
+      "假面骑士亚马逊",
+      "アマゾネス・ラピス"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "追"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "7+",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+    "image_local_path": "/api/assets/hishiamazon-thumb",
+    "asset_id": "hishiamazon-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mejiromakkuiin",
+    "name_zh": "目白麦昆",
+    "name_tw": null,
+    "name_jp": "メジロマックイーン",
+    "name_en": "Mejiro McQueen",
+    "aliases": [
+      "目白麦昆",
+      "メジロマックイーン",
+      "Mejiro McQueen",
+      "【優雅線條】目白麥昆",
+      "目白麥昆",
+      "優雅線條",
+      "麦昆（マックイーン）",
+      "草上名伶（ターフの名優）",
+      "目白魔苦院[1]",
+      "年糕",
+      "肥驹",
+      "千斤大小姐",
+      "木板麦昆[2]",
+      "エレガンス・ライン"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/6ych9zrm8w3gloe7fbnoerfgtgwfd9r.png/100px-Chr_icon_1013_101301_01.png",
+    "image_local_path": "/api/assets/mejiromakkuiin-thumb",
+    "asset_id": "mejiromakkuiin-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "erukondorupasaa",
+    "name_zh": "神鹰",
+    "name_tw": null,
+    "name_jp": "エルコンドルパサー",
+    "name_en": "El Condor Pasa",
+    "aliases": [
+      "神鹰",
+      "エルコンドルパサー",
+      "El Condor Pasa",
+      "【神鷹☆Número 1】神鷹",
+      "神鷹",
+      "神鷹☆Número 1",
+      "エル",
+      "怪鸟",
+      "艾露",
+      "エル☆Número 1"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/17/bqnr4h48tm894trf0x84hz92oi2t6ha.png/100px-Chr_icon_1014_101401_01.png",
+    "image_local_path": "/api/assets/erukondorupasaa-thumb",
+    "asset_id": "erukondorupasaa-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "teiemuoperaoo",
+    "name_zh": "好歌剧",
+    "name_tw": null,
+    "name_jp": "テイエムオペラオー",
+    "name_en": "T.M. Opera O",
+    "aliases": [
+      "好歌剧",
+      "テイエムオペラオー",
+      "T.M. Opera O",
+      "【你的太陽！】好歌劇",
+      "好歌劇",
+      "你的太陽！",
+      "世纪末霸王",
+      "剧宝",
+      "オー・ソレ・スーオ！"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/i4ydfkexm7ztxqc5jr2wdtxvyxb7loo.png/100px-Chr_icon_1015_101501_01.png",
+    "image_local_path": "/api/assets/teiemuoperaoo-thumb",
+    "asset_id": "teiemuoperaoo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "naritaburaian",
+    "name_zh": "成田白仁",
+    "name_tw": null,
+    "name_jp": "ナリタブライアン",
+    "name_en": "Narita Brian",
+    "aliases": [
+      "成田白仁",
+      "ナリタブライアン",
+      "Narita Brian",
+      "【Maverick】成田白仁",
+      "Maverick",
+      "白仁",
+      "三里冢"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/bue89r5a3yqfl7bnq4dcfnyj2au9jm1.png/100px-Chr_icon_1016_101601_01.png",
+    "image_local_path": "/api/assets/naritaburaian-thumb",
+    "asset_id": "naritaburaian-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "shinborirudorufu",
+    "name_zh": "鲁道夫象征",
+    "name_tw": null,
+    "name_jp": "シンボリルドルフ",
+    "name_en": "Symboli Rudolf",
+    "aliases": [
+      "鲁道夫象征",
+      "シンボリルドルフ",
+      "Symboli Rudolf",
+      "【皇帝之路】魯道夫象徵",
+      "魯道夫象徵",
+      "皇帝之路",
+      "皇帝",
+      "会长",
+      "露娜（ルナ）[1]",
+      "卤豆腐",
+      "ロード・オブ・エンペラー"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/69/0pnn1xr57ihug69i8xpn2a8dcxw48qk.png/100px-Chr_icon_1017_101701_01.png",
+    "image_local_path": "/api/assets/shinborirudorufu-thumb",
+    "asset_id": "shinborirudorufu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "eaguruuvu",
+    "name_zh": "气槽",
+    "name_tw": null,
+    "name_jp": "エアグルーヴ",
+    "name_en": "Air Groove",
+    "aliases": [
+      "气槽",
+      "エアグルーヴ",
+      "Air Groove",
+      "【女帝之路】氣槽",
+      "氣槽",
+      "女帝之路",
+      "女帝",
+      "エンプレスロード"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ef/201e08salbfb5hjb2f3stglhdtmdtb7.png/100px-Chr_icon_1018_101801_01.png",
+    "image_local_path": "/api/assets/eaguruuvu-thumb",
+    "asset_id": "eaguruuvu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "agunesudejitaru",
+    "name_zh": "爱丽数码",
+    "name_tw": null,
+    "name_jp": "アグネスデジタル",
+    "name_en": "Agnes Digital",
+    "aliases": [
+      "爱丽数码",
+      "アグネスデジタル",
+      "Agnes Digital",
+      "【超特急！全彩特殊膜】愛麗數碼",
+      "愛麗數碼",
+      "超特急！全彩特殊膜",
+      "数码碳（デジたん）",
+      "变态",
+      "DD头子",
+      "超特急！フルカラー特殊PP"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地",
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/62/qqv1s8ycmat3ftde786ph8ny5jxbc76.png/100px-Chr_icon_1019_101901_01.png",
+    "image_local_path": "/api/assets/agunesudejitaru-thumb",
+    "asset_id": "agunesudejitaru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "seiunsukai",
+    "name_zh": "青云天空",
+    "name_tw": null,
+    "name_jp": "セイウンスカイ",
+    "name_en": "Seiun Sky",
+    "aliases": [
+      "青云天空",
+      "セイウンスカイ",
+      "Seiun Sky",
+      "【青雲釣術】青雲天空",
+      "青雲天空",
+      "青雲釣術",
+      "Trickster[1]",
+      "あおぐもサミング"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/05/hszyi47dk7e6siuuowg1g2qu2sa0eni.png/100px-Chr_icon_1020_102001_01.png",
+    "image_local_path": "/api/assets/seiunsukai-thumb",
+    "asset_id": "seiunsukai-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "tamamokurosu",
+    "name_zh": "玉藻十字",
+    "name_tw": null,
+    "name_jp": "タマモクロス",
+    "name_en": "Tamamo Cross",
+    "aliases": [
+      "玉藻十字",
+      "タマモクロス",
+      "Tamamo Cross",
+      "【疾風迅雷】玉藻十字",
+      "疾風迅雷",
+      "白色闪电（白い稲妻）",
+      "小玉（タマちゃん）",
+      "tama"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差",
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/47/b7u73dv56mbizwu1ckp2tj73i166xxm.png/100px-Chr_icon_1021_102101_01.png",
+    "image_local_path": "/api/assets/tamamokurosu-thumb",
+    "asset_id": "tamamokurosu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "fuainmooshon",
+    "name_zh": "美妙姿势",
+    "name_tw": null,
+    "name_jp": "ファインモーション",
+    "name_en": "Fine Motion",
+    "aliases": [
+      "美妙姿势",
+      "ファインモーション",
+      "Fine Motion",
+      "【Noble Seamair】美妙姿勢",
+      "美妙姿勢",
+      "Noble Seamair",
+      "殿下",
+      "インモー",
+      "傻狍子"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/41/8txgqk9a2589qcw98rpb1d1un2woc4k.png/100px-Chr_icon_1022_102201_01.png",
+    "image_local_path": "/api/assets/fuainmooshon-thumb",
+    "asset_id": "fuainmooshon-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "biwahayahide",
+    "name_zh": "琵琶晨光",
+    "name_tw": null,
+    "name_jp": "ビワハヤヒデ",
+    "name_en": "Biwa Hayahide",
+    "aliases": [
+      "琵琶晨光",
+      "ビワハヤヒデ",
+      "Biwa Hayahide",
+      "【pf.Victory formula...】琵琶晨光",
+      "pf.Victory formula...",
+      "晨光",
+      "大头",
+      "倒行圣诞老人（背走サンタ）"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/96/ifcsfqhks547wcv21tfb1hmpxxfq3k9.png/100px-Chr_icon_1023_102301_01.png",
+    "image_local_path": "/api/assets/biwahayahide-thumb",
+    "asset_id": "biwahayahide-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mayanotoppugan",
+    "name_zh": "摩耶重炮",
+    "name_tw": null,
+    "name_jp": "マヤノトップガン",
+    "name_en": "Mayano Top Gun",
+    "aliases": [
+      "摩耶重炮",
+      "マヤノトップガン",
+      "Mayano Top Gun",
+      "【急飛☆區域】重砲",
+      "重砲",
+      "急飛☆區域",
+      "重宝",
+      "小祖宗",
+      "玛雅诺冲锋枪[3]",
+      "すくらんぶる☆ゾーン"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/91/badq9lg7b8omkw3si7yc9udxeel83xu.png/100px-Chr_icon_1024_102401_01.png",
+    "image_local_path": "/api/assets/mayanotoppugan-thumb",
+    "asset_id": "mayanotoppugan-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "manhattankafye",
+    "name_zh": "曼城茶座",
+    "name_tw": null,
+    "name_jp": "マンハッタンカフェ",
+    "name_en": "Manhattan Cafe",
+    "aliases": [
+      "曼城茶座",
+      "マンハッタンカフェ",
+      "Manhattan Cafe",
+      "【Creeping Black】曼哈頓咖啡",
+      "曼哈頓咖啡",
+      "Creeping Black",
+      "漆黒の摩天楼",
+      "暗黑xcw",
+      "曼城插座[1]"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+    "image_local_path": "/api/assets/manhattankafye-thumb",
+    "asset_id": "manhattankafye-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mihonoburubon",
+    "name_zh": "美浦波旁",
+    "name_tw": null,
+    "name_jp": "ミホノブルボン",
+    "name_en": "Mihono Bourbon",
+    "aliases": [
+      "美浦波旁",
+      "ミホノブルボン",
+      "Mihono Bourbon",
+      "【MB-19890425】美浦波旁",
+      "MB-19890425",
+      "波旁",
+      "坂路の申し子",
+      "栗毛の超特急",
+      "赛博马",
+      "高达[1]"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b8/dsltkw93lxhfu30gmlqdfk0293ragml.png/100px-Chr_icon_1026_102601_01.png",
+    "image_local_path": "/api/assets/mihonoburubon-thumb",
+    "asset_id": "mihonoburubon-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mejiroraian",
+    "name_zh": "目白赖恩",
+    "name_tw": null,
+    "name_jp": "メジロライアン",
+    "name_en": "Mejiro Ryan",
+    "aliases": [
+      "目白赖恩",
+      "メジロライアン",
+      "Mejiro Ryan",
+      "【勇往直前】目白雷恩",
+      "目白雷恩",
+      "勇往直前",
+      "ストレート・ライン"
+    ],
+    "star": 1,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d1/bvniaq0nwo565lwr8ctiaexapxjk0xr.png/100px-Chr_icon_1027_102701_01.png",
+    "image_local_path": "/api/assets/mejiroraian-thumb",
+    "asset_id": "mejiroraian-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "hishiakebono",
+    "name_zh": "菱曙",
+    "name_tw": null,
+    "name_jp": "ヒシアケボノ",
+    "name_en": "Hishi Akebono",
+    "aliases": [
+      "菱曙",
+      "ヒシアケボノ",
+      "Hishi Akebono",
+      "【Buono☆時尚】菱曙",
+      "Buono☆時尚",
+      "ボーノ☆アラモーダ"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/37/0bfib4tg0sf2ua7zcrryzwq5f840u1i.png/100px-Chr_icon_1028_102801_01.png",
+    "image_local_path": "/api/assets/hishiakebono-thumb",
+    "asset_id": "hishiakebono-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "yukinobijin",
+    "name_zh": "雪之美人",
+    "name_tw": null,
+    "name_jp": "ユキノビジン",
+    "name_en": "Yukino Bijin",
+    "aliases": [
+      "雪之美人",
+      "ユキノビジン",
+      "Yukino Bijin",
+      "雪中美人",
+      "【好口愛好口愛的銀粟】雪之美人",
+      "好口愛好口愛的銀粟",
+      "めんこいめんこいむつのはな"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kz1efd2fq0wyvrnek9howwe77ko7tuy.png/100px-Chr_icon_1029.png",
+    "image_local_path": "/api/assets/yukinobijin-thumb",
+    "asset_id": "yukinobijin-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "raisushawaa",
+    "name_zh": "米浴",
+    "name_tw": null,
+    "name_jp": "ライスシャワー",
+    "name_en": "Rice Shower",
+    "aliases": [
+      "米浴",
+      "ライスシャワー",
+      "Rice Shower",
+      "【薔薇之夢】米浴",
+      "薔薇之夢",
+      "关东的刺客",
+      "黑い刺客",
+      "Rice",
+      "米宝",
+      "大米洗澡",
+      "大米淋浴",
+      "大米祝福",
+      "ローゼスドリーム"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/89/c6heaf8m1rm5k1r0rsdaerf4r9vwjn6.png/100px-Chr_icon_1030_103001_01.png",
+    "image_local_path": "/api/assets/raisushawaa-thumb",
+    "asset_id": "raisushawaa-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "ainesufuujin",
+    "name_zh": "艾尼斯风神",
+    "name_tw": null,
+    "name_jp": "アイネスフウジン",
+    "name_en": "Ines Fujin",
+    "aliases": [
+      "艾尼斯风神",
+      "アイネスフウジン",
+      "Ines Fujin",
+      "【全天候狂熱】艾尼風神",
+      "艾尼風神",
+      "全天候狂熱",
+      "乐购鹰[2]",
+      "オールタイム・フィーバー"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d6/grr55i21i3k7x4zepgpxd5sx038o8is.png/100px-Chr_icon_1031_103101_01.png",
+    "image_local_path": "/api/assets/ainesufuujin-thumb",
+    "asset_id": "ainesufuujin-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "agunesutakion",
+    "name_zh": "爱丽速子",
+    "name_tw": null,
+    "name_jp": "アグネスタキオン",
+    "name_en": "Agnes Tachyon",
+    "aliases": [
+      "爱丽速子",
+      "アグネスタキオン",
+      "Agnes Tachyon",
+      "【tach-nology】愛麗速子",
+      "愛麗速子",
+      "tach-nology",
+      "疯狂科学家",
+      "老父亲",
+      "十一个孩子的外公[2]"
+    ],
+    "star": 1,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+    "image_local_path": "/api/assets/agunesutakion-thumb",
+    "asset_id": "agunesutakion-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "adomaiyabega",
+    "name_zh": "爱慕织姬",
+    "name_tw": null,
+    "name_jp": "アドマイヤベガ",
+    "name_en": "Admire Vega",
+    "aliases": [
+      "爱慕织姬",
+      "アドマイヤベガ",
+      "Admire Vega",
+      "【Starry Nocturne】愛慕織姬",
+      "愛慕織姬",
+      "Starry Nocturne",
+      "织姬",
+      "アヤべ（ayabe）",
+      "アドベ（adobe)",
+      "AV[1]"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/dd/qbqowwstr3s6tq9q4v1xky6vqtpwvwf.png/100px-Chr_icon_1033_103301_01.png",
+    "image_local_path": "/api/assets/adomaiyabega-thumb",
+    "asset_id": "adomaiyabega-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "inariwan",
+    "name_zh": "稻荷一",
+    "name_tw": null,
+    "name_jp": "イナリワン",
+    "name_en": "Inari One",
+    "aliases": [
+      "稻荷一",
+      "イナリワン",
+      "Inari One",
+      "【稻荷因緣江戶紫】稻荷一",
+      "稻荷因緣江戶紫",
+      "稲荷所縁江戸紫"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地",
+      "泥地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3f/916h3hbymr2wfwpd3dvhtfv0y7lwimh.png/100px-Chr_icon_1034_103401_01.png",
+    "image_local_path": "/api/assets/inariwan-thumb",
+    "asset_id": "inariwan-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "uininguchiketto",
+    "name_zh": "胜利奖券",
+    "name_tw": null,
+    "name_jp": "ウイニングチケット",
+    "name_en": "Winning Ticket",
+    "aliases": [
+      "胜利奖券",
+      "ウイニングチケット",
+      "Winning Ticket",
+      "【Go To Winning!】勝利獎券",
+      "勝利獎券",
+      "Go To Winning!",
+      "奖券藏"
+    ],
+    "star": 1,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/15/3ylq1he3l76mm595xsf5oozg3zb7gpu.png/100px-Chr_icon_1035_103501_01.png",
+    "image_local_path": "/api/assets/uininguchiketto-thumb",
+    "asset_id": "uininguchiketto-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "eashakaaru",
+    "name_zh": "空中神宫",
+    "name_tw": null,
+    "name_jp": "エアシャカール",
+    "name_en": "Air Shakur",
+    "aliases": [
+      "空中神宫",
+      "エアシャカール",
+      "Air Shakur",
+      "【unsigned】空中神宮",
+      "空中神宮",
+      "unsigned"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/afd1z7hknmbwkl4iz3vhkzyv2cbe7gi.png/100px-Chr_icon_1036_103601_01.png",
+    "image_local_path": "/api/assets/eashakaaru-thumb",
+    "asset_id": "eashakaaru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "eishinfurasshu",
+    "name_zh": "荣进闪耀",
+    "name_tw": null,
+    "name_jp": "エイシンフラッシュ",
+    "name_en": "Eishin Flash",
+    "aliases": [
+      "荣进闪耀",
+      "エイシンフラッシュ",
+      "Eishin Flash",
+      "【Meisterschaft】榮進閃耀",
+      "榮進閃耀",
+      "Meisterschaft",
+      "德国女仆"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/4f/982fg1lydco9xvb7grszxpz20qzsusw.png/100px-Chr_icon_1037_103701_01.png",
+    "image_local_path": "/api/assets/eishinfurasshu-thumb",
+    "asset_id": "eishinfurasshu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "karenchan",
+    "name_zh": "真机伶",
+    "name_tw": null,
+    "name_jp": "カレンチャン",
+    "name_en": "Curren Chan",
+    "aliases": [
+      "真机伶",
+      "カレンチャン",
+      "Curren Chan",
+      "【閃光少女】真機伶",
+      "真機伶",
+      "閃光少女",
+      "卡莲酱[1]",
+      "フィーユ・エクレール"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/lnb5w1ae8uacozj5wlqz4moobej1qt3.png/100px-Chr_icon_1038_103801_01.png",
+    "image_local_path": "/api/assets/karenchan-thumb",
+    "asset_id": "karenchan-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "kawakamipurinsesu",
+    "name_zh": "川上公主",
+    "name_tw": null,
+    "name_jp": "カワカミプリンセス",
+    "name_en": "Kawakami Princess",
+    "aliases": [
+      "川上公主",
+      "カワカミプリンセス",
+      "Kawakami Princess",
+      "【Princess of pink】川上公主",
+      "Princess of pink",
+      "プリンセス・オブ・ピンク"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+    "image_local_path": "/api/assets/kawakamipurinsesu-thumb",
+    "asset_id": "kawakamipurinsesu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "goorudoshichii",
+    "name_zh": "黄金城",
+    "name_tw": null,
+    "name_jp": "ゴールドシチー",
+    "name_en": "Gold City",
+    "aliases": [
+      "黄金城",
+      "ゴールドシチー",
+      "Gold City",
+      "【純正/1928】黃金城市",
+      "黃金城市",
+      "純正/1928",
+      "黄金城市",
+      "オーセンティック/1928"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/pxlndiv4bbdjqppe904ly0sirb9xxal.png/100px-Chr_icon_1040_104001_01.png",
+    "image_local_path": "/api/assets/goorudoshichii-thumb",
+    "asset_id": "goorudoshichii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "sakurabakushinoo",
+    "name_zh": "樱花进王",
+    "name_tw": null,
+    "name_jp": "サクラバクシンオー",
+    "name_en": "Sakura Bakushin O",
+    "aliases": [
+      "樱花进王",
+      "サクラバクシンオー",
+      "Sakura Bakushin O",
+      "【前進吧！櫻花】櫻花驀進王",
+      "櫻花驀進王",
+      "前進吧！櫻花",
+      "进王",
+      "樱花笨进",
+      "班长",
+      "马克沁[1]",
+      "サクラ、すすめ！"
+    ],
+    "star": 1,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+    "image_local_path": "/api/assets/sakurabakushinoo-thumb",
+    "asset_id": "sakurabakushinoo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "shiikinguzapaaru",
+    "name_zh": "采珠",
+    "name_tw": null,
+    "name_jp": "シーキングザパール",
+    "name_en": "Seeking the Pearl",
+    "aliases": [
+      "采珠",
+      "シーキングザパール",
+      "Seeking the Pearl",
+      "【Rocket☆Star】採珠",
+      "採珠",
+      "Rocket☆Star"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/nhu57vnlwk3yy8y6pk2w3as5kfn7xo2.png/100px-Chr_icon_1042_104201_01.png",
+    "image_local_path": "/api/assets/shiikinguzapaaru-thumb",
+    "asset_id": "shiikinguzapaaru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "shinkouuindei",
+    "name_zh": "新光风",
+    "name_tw": null,
+    "name_jp": "シンコウウインディ",
+    "name_en": "Shinko Windy",
+    "aliases": [
+      "新光风",
+      "シンコウウインディ",
+      "Shinko Windy",
+      "【Wicked Punk】新光風",
+      "新光風",
+      "Wicked Punk"
+    ],
+    "star": 3,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cd/h7z4tkdt3zjcmup9ltv569y7t29mr7b.png/100px-Chr_icon_1043_104301_01.png",
+    "image_local_path": "/api/assets/shinkouuindei-thumb",
+    "asset_id": "shinkouuindei-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "suiiputoushou",
+    "name_zh": "东商变革",
+    "name_tw": "東商變革",
+    "name_jp": "スイープトウショウ",
+    "name_en": "Sweep Tosho",
+    "aliases": [
+      "东商变革",
+      "東商變革",
+      "スイープトウショウ",
+      "Sweep Tosho",
+      "【懸鈴木魔女】東商變革",
+      "懸鈴木魔女",
+      "小魔女",
+      "巫马牧师妹",
+      "プラタナス・ウィッチ"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/9hxqri25y9qihyim1ipxi0ap1qksqaa.png/100px-Chr_icon_1044_104401_01.png",
+    "image_local_path": "/api/assets/suiiputoushou-thumb",
+    "asset_id": "suiiputoushou-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "suupaakuriiku",
+    "name_zh": "超级小海湾",
+    "name_tw": null,
+    "name_jp": "スーパークリーク",
+    "name_en": "Super Creek",
+    "aliases": [
+      "超级小海湾",
+      "スーパークリーク",
+      "Super Creek",
+      "【低語溪流】超級小溪",
+      "超級小溪",
+      "低語溪流",
+      "超级大海湾[2]",
+      "超级溪流",
+      "マーマリングストリーム"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/okodnpzzr8tqbjl5tqi1bkz6az7ps63.png/100px-Chr_icon_1045_104501_01.png",
+    "image_local_path": "/api/assets/suupaakuriiku-thumb",
+    "asset_id": "suupaakuriiku-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "sumaatofuarukon",
+    "name_zh": "醒目飞鹰",
+    "name_tw": null,
+    "name_jp": "スマートファルコン",
+    "name_en": "Smart Falcon",
+    "aliases": [
+      "醒目飞鹰",
+      "スマートファルコン",
+      "Smart Falcon",
+      "【絕對純粹☆LOVE】醒目飛鷹",
+      "醒目飛鷹",
+      "絕對純粹☆LOVE",
+      "飞鹰子",
+      "飞飞（ファル子）",
+      "沙尘猎隼",
+      "（砂塵の隼",
+      "砂のハヤブサ）",
+      "泥地的赤鬼",
+      "法老控[1]",
+      "寄寄子",
+      "锹形虫",
+      "泥地铃鹿",
+      "スマファル",
+      "あぶそりゅーと☆LOVE"
+    ],
+    "star": 3,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c5/6fg7ibrzmxi3azpweibt8zjp8hi91tr.png/100px-Chr_icon_1046_104601_01.png",
+    "image_local_path": "/api/assets/sumaatofuarukon-thumb",
+    "asset_id": "sumaatofuarukon-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "zennoroburoi",
+    "name_zh": "荒漠英雄",
+    "name_tw": null,
+    "name_jp": "ゼンノロブロイ",
+    "name_en": "Zenno Rob Roy",
+    "aliases": [
+      "荒漠英雄",
+      "ゼンノロブロイ",
+      "Zenno Rob Roy",
+      "【Heroic Author】荒漠英雄",
+      "Heroic Author"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+    "image_local_path": "/api/assets/zennoroburoi-thumb",
+    "asset_id": "zennoroburoi-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "toosenjoodan",
+    "name_zh": "东瀛佐敦",
+    "name_tw": null,
+    "name_jp": "トーセンジョーダン",
+    "name_en": "Tosen Jordan",
+    "aliases": [
+      "东瀛佐敦",
+      "トーセンジョーダン",
+      "Tosen Jordan",
+      "【POPS☆JOKER】島川喬登",
+      "島川喬登",
+      "POPS☆JOKER",
+      "ポップス☆ジョーカー"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/l658v1e2t6ypndexheiru5m0gtiybgk.png/100px-Chr_icon_1048_104801_01.png",
+    "image_local_path": "/api/assets/toosenjoodan-thumb",
+    "asset_id": "toosenjoodan-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "nakayamafyesuta",
+    "name_zh": "中山庆典",
+    "name_tw": null,
+    "name_jp": "ナカヤマフェスタ",
+    "name_en": "Nakayama Festa",
+    "aliases": [
+      "中山庆典",
+      "ナカヤマフェスタ",
+      "Nakayama Festa",
+      "【死中求活】中山慶典",
+      "中山慶典",
+      "死中求活",
+      "典子哥"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": true,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b2/o57sanmajgfk3jrexmjhh9cz22iuql8.png/100px-Chr_icon_1049_104901_01.png",
+    "image_local_path": "/api/assets/nakayamafyesuta-thumb",
+    "asset_id": "nakayamafyesuta-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "naritataishin",
+    "name_zh": "成田大进",
+    "name_tw": null,
+    "name_jp": "ナリタタイシン",
+    "name_en": "Narita Taishin",
+    "aliases": [
+      "成田大进",
+      "ナリタタイシン",
+      "Narita Taishin",
+      "【Nevertheless】成田大進",
+      "成田大進",
+      "Nevertheless",
+      "大进",
+      "成田小进[1]"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+    "image_local_path": "/api/assets/naritataishin-thumb",
+    "asset_id": "naritataishin-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "nishinofurawaa",
+    "name_zh": "西野花",
+    "name_tw": null,
+    "name_jp": "ニシノフラワー",
+    "name_en": "Nishino Flower",
+    "aliases": [
+      "西野花",
+      "ニシノフラワー",
+      "Nishino Flower",
+      "【重瓣花朵】西野花",
+      "重瓣花朵",
+      "韦驮天少女",
+      "哈曼·卡恩",
+      "夏亚的母亲",
+      "ティアード・ペタル"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+    "image_local_path": "/api/assets/nishinofurawaa-thumb",
+    "asset_id": "nishinofurawaa-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "haruurara",
+    "name_zh": "春乌拉拉",
+    "name_tw": null,
+    "name_jp": "ハルウララ",
+    "name_en": "Haru Urara",
+    "aliases": [
+      "春乌拉拉",
+      "ハルウララ",
+      "Haru Urara",
+      "【烏菈菈得第一♪】春烏菈菈",
+      "春烏菈菈",
+      "烏菈菈得第一♪",
+      "乌拉拉（うらら）",
+      "不胜战神",
+      "灰流丽[1]",
+      "坏乌拉拉[2]",
+      "春丽",
+      "うららん一等賞♪"
+    ],
+    "star": 1,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/90/dy0adbddbeplz74mqo2p9fn9qcv9x98.png/100px-Chr_icon_1052_105201_01.png",
+    "image_local_path": "/api/assets/haruurara-thumb",
+    "asset_id": "haruurara-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "banbuumemorii",
+    "name_zh": "青竹回忆",
+    "name_tw": null,
+    "name_jp": "バンブーメモリー",
+    "name_en": "Bamboo Memory",
+    "aliases": [
+      "青竹回忆",
+      "バンブーメモリー",
+      "Bamboo Memory",
+      "【黑鐵大志】青竹回憶",
+      "青竹回憶",
+      "黑鐵大志",
+      "风纪委员长",
+      "黒鉄の大志"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/11/q703pn0y576wn4cywt06c2o82qwrez1.png/100px-Chr_icon_1053_105301_01.png",
+    "image_local_path": "/api/assets/banbuumemorii-thumb",
+    "asset_id": "banbuumemorii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "bikoopegasasu",
+    "name_zh": "微光飞驹",
+    "name_tw": null,
+    "name_jp": "ビコーペガサス",
+    "name_en": "Biko Pegasus",
+    "aliases": [
+      "微光飞驹",
+      "ビコーペガサス",
+      "Biko Pegasus",
+      "【疾風飛駒．零式】微光飛駒",
+      "微光飛駒",
+      "疾風飛駒．零式",
+      "假面骑士",
+      "疾風ペガサス・零式"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/33/8xx1btmqzxvj26m0d5j1va3jlsz16jf.png/100px-Chr_icon_1054_105401_01.png",
+    "image_local_path": "/api/assets/bikoopegasasu-thumb",
+    "asset_id": "bikoopegasasu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "maaberasusandee",
+    "name_zh": "美丽周日",
+    "name_tw": "美麗週日",
+    "name_jp": "マーベラスサンデー",
+    "name_en": "Marvelous Sunday",
+    "aliases": [
+      "美丽周日",
+      "美麗週日",
+      "マーベラスサンデー",
+      "Marvelous Sunday",
+      "【☆閃耀★怦然☆雀躍∞美麗∞】美麗週日",
+      "☆閃耀★怦然☆雀躍∞美麗∞",
+      "☆キラ★ドキ☆ワク∞マベ∞"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9b/o5vrmt0knjrpnxu5zy9semkx1nmnxkq.png/100px-Chr_icon_1055_105501_01.png",
+    "image_local_path": "/api/assets/maaberasusandee-thumb",
+    "asset_id": "maaberasusandee-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "machikanefukukitaru",
+    "name_zh": "待兼福来",
+    "name_tw": null,
+    "name_jp": "マチカネフクキタル",
+    "name_en": "Matikanefukukitaru",
+    "aliases": [
+      "待兼福来",
+      "マチカネフクキタル",
+      "Matikanefukukitaru",
+      "【運勢上升☆好運臨門】待兼福來",
+      "待兼福來",
+      "運勢上升☆好運臨門",
+      "笑門来福",
+      "待半仙",
+      "待兼胡来",
+      "運気上昇☆幸福万来"
+    ],
+    "star": 1,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/61/q3xabiyieplbbtiqm0xm0ezsr0mfcm2.png/100px-Chr_icon_1056_105601_01.png",
+    "image_local_path": "/api/assets/machikanefukukitaru-thumb",
+    "asset_id": "machikanefukukitaru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "misutaashiibii",
+    "name_zh": "千明代表",
+    "name_tw": null,
+    "name_jp": "ミスターシービー",
+    "name_en": "Mr. C.B.",
+    "aliases": [
+      "千明代表",
+      "ミスターシービー",
+      "Mr. C.B.",
+      "【Clear Bliss】千明代表",
+      "Clear Bliss",
+      "C.B",
+      "西皮先生[1]"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "独居",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/6ckqexbqwx0g4q2wl8r0kje6s3vqr5y.png/100px-Chr_icon_1057_105701_01.png",
+    "image_local_path": "/api/assets/misutaashiibii-thumb",
+    "asset_id": "misutaashiibii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "meishoudotou",
+    "name_zh": "名将怒涛",
+    "name_tw": "名將怒濤",
+    "name_jp": "メイショウドトウ",
+    "name_en": "Meisho Doto",
+    "aliases": [
+      "名将怒涛",
+      "名將怒濤",
+      "メイショウドトウ",
+      "Meisho Doto",
+      "【湛藍/湧濤】名將怒濤",
+      "湛藍/湧濤",
+      "豆豆",
+      "ブルー/レイジング"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/fnpk915lxul0o6at3wvk2asm2o5ft42.png/100px-Chr_icon_1058_105801_01.png",
+    "image_local_path": "/api/assets/meishoudotou-thumb",
+    "asset_id": "meishoudotou-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mejirodooberu",
+    "name_zh": "目白多伯",
+    "name_tw": null,
+    "name_jp": "メジロドーベル",
+    "name_en": "Mejiro Dober",
+    "aliases": [
+      "目白多伯",
+      "メジロドーベル",
+      "Mejiro Dober",
+      "【Twisted Line】目白多伯",
+      "Twisted Line",
+      "どぼめじろう[1]",
+      "ツイステッド・ライン"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+    "image_local_path": "/api/assets/mejirodooberu-thumb",
+    "asset_id": "mejirodooberu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "naisuneicha",
+    "name_zh": "优秀素质",
+    "name_tw": null,
+    "name_jp": "ナイスネイチャ",
+    "name_en": "Nice Nature",
+    "aliases": [
+      "优秀素质",
+      "ナイスネイチャ",
+      "Nice Nature",
+      "【聖誕紅緞帶】優秀素質",
+      "優秀素質",
+      "聖誕紅緞帶",
+      "内恰",
+      "Natie",
+      "素质女士",
+      "好姐姐[1]",
+      "没有素质/素质吊差[2]",
+      "铜牌收藏家",
+      "三着女士",
+      "“三”冠王",
+      "ポインセチア・リボン"
+    ],
+    "star": 1,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/75/1y2kxy3in8ohtwp74ryrawv48tdlyf0.png/100px-Chr_icon_1060_106001_01.png",
+    "image_local_path": "/api/assets/naisuneicha-thumb",
+    "asset_id": "naisuneicha-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "kinguheiroo",
+    "name_zh": "帝王光辉",
+    "name_tw": null,
+    "name_jp": "キングヘイロー",
+    "name_en": "King Halo",
+    "aliases": [
+      "帝王光辉",
+      "キングヘイロー",
+      "King Halo",
+      "【綠寶石之王】帝王光輝",
+      "帝王光輝",
+      "綠寶石之王",
+      "圣王",
+      "陪跑光环",
+      "王环环",
+      "王黑楼",
+      "圣王光环",
+      "キング・オブ・エメラルド"
+    ],
+    "star": 1,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/jv77cwr30vbiwkuudui4f5097ievpep.png/100px-Chr_icon_1061_106101_01.png",
+    "image_local_path": "/api/assets/kinguheiroo-thumb",
+    "asset_id": "kinguheiroo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "machikanetanhoiza",
+    "name_zh": "诗歌剧",
+    "name_tw": null,
+    "name_jp": "マチカネタンホイザ",
+    "name_en": "Matikanetannhauser",
+    "aliases": [
+      "诗歌剧",
+      "マチカネタンホイザ",
+      "Matikanetannhauser",
+      "待兼诗歌剧",
+      "ぱんぱかティルトット"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/4v01d4tq01phv0h907zd4zip8dhx7dx.png/100px-Chr_icon_1062.png",
+    "image_local_path": "/api/assets/machikanetanhoiza-thumb",
+    "asset_id": "machikanetanhoiza-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "ikunodeikutasu",
+    "name_zh": "狄杜斯",
+    "name_tw": null,
+    "name_jp": "イクノディクタス",
+    "name_en": "Ikuno Dictus",
+    "aliases": [
+      "狄杜斯",
+      "イクノディクタス",
+      "Ikuno Dictus",
+      "生野狄杜斯",
+      "【Mantle of Steel】生野狄杜斯",
+      "Mantle of Steel"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "0",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/6kvebqspgqgzlxvicmq7dxfa4icbleb.png/100px-Chr_icon_1063.png",
+    "image_local_path": "/api/assets/ikunodeikutasu-thumb",
+    "asset_id": "ikunodeikutasu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mejiropaamaa",
+    "name_zh": "目白善信",
+    "name_tw": null,
+    "name_jp": "メジロパーマー",
+    "name_en": "Mejiro Palmer",
+    "aliases": [
+      "目白善信",
+      "メジロパーマー",
+      "Mejiro Palmer",
+      "【Line Breakthrough】目白善信",
+      "Line Breakthrough",
+      "pama"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/lel1cnsmadb3et3y95b07j4xyiyosls.png/100px-Chr_icon_1064_106401_01.png",
+    "image_local_path": "/api/assets/mejiropaamaa-thumb",
+    "asset_id": "mejiropaamaa-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "daitakuheriosu",
+    "name_zh": "大拓太阳神",
+    "name_tw": null,
+    "name_jp": "ダイタクヘリオス",
+    "name_en": "Daitaku Helios",
+    "aliases": [
+      "大拓太阳神",
+      "ダイタクヘリオス",
+      "Daitaku Helios",
+      "【Fun☆Fun☆派對夜】大德太陽",
+      "大德太陽",
+      "Fun☆Fun☆派對夜",
+      "太阳神",
+      "看报纸的马",
+      "笑马",
+      "Fun☆Fun☆ぱりない"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/tlicih76lx147birzj6nhsfbb2musg9.png/100px-Chr_icon_1065_106501_01.png",
+    "image_local_path": "/api/assets/daitakuheriosu-thumb",
+    "asset_id": "daitakuheriosu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "tsuintaabo",
+    "name_zh": "双涡轮",
+    "name_tw": null,
+    "name_jp": "ツインターボ",
+    "name_en": "Twin Turbo",
+    "aliases": [
+      "双涡轮",
+      "ツインターボ",
+      "Twin Turbo",
+      "【暴衝！渦輪引擎】雙渦輪",
+      "雙渦輪",
+      "暴衝！渦輪引擎",
+      "师匠",
+      "两涡轮（Double Turbo）",
+      "两喷射（Double Jet）[1]",
+      "爆走！ターボエンジン"
+    ],
+    "star": 1,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png",
+    "image_local_path": "/api/assets/tsuintaabo-thumb",
+    "asset_id": "tsuintaabo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "satonodaiyamondo",
+    "name_zh": "里见光钻",
+    "name_tw": null,
+    "name_jp": "サトノダイヤモンド",
+    "name_en": "Satono Diamond",
+    "aliases": [
+      "里见光钻",
+      "サトノダイヤモンド",
+      "Satono Diamond",
+      "【Natural Brilliance】里見光鑽",
+      "里見光鑽",
+      "Natural Brilliance",
+      "小光(钻)",
+      "钻哥/妹（ダイヤ）",
+      "芋头（サトイモ）"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+    "image_local_path": "/api/assets/satonodaiyamondo-thumb",
+    "asset_id": "satonodaiyamondo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "kitasanburakku",
+    "name_zh": "北部玄驹",
+    "name_tw": null,
+    "name_jp": "キタサンブラック",
+    "name_en": "Kitasan Black",
+    "aliases": [
+      "北部玄驹",
+      "キタサンブラック",
+      "Kitasan Black",
+      "【錦上．大判御輿】北部玄駒",
+      "北部玄駒",
+      "錦上．大判御輿",
+      "小北",
+      "北黑",
+      "悸动战士",
+      "錦上・大判御輿"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/ab/au2pzmlspa8gdfq9xqwqi1is73glrcg.png/100px-Chr_icon_1068_106801_01.png",
+    "image_local_path": "/api/assets/kitasanburakku-thumb",
+    "asset_id": "kitasanburakku-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "sakurachiyonooo",
+    "name_zh": "樱花千代王",
+    "name_tw": null,
+    "name_jp": "サクラチヨノオー",
+    "name_en": "Sakura Chiyono O",
+    "aliases": [
+      "樱花千代王",
+      "サクラチヨノオー",
+      "Sakura Chiyono O",
+      "【天下第一花滿天】櫻花千代王",
+      "櫻花千代王",
+      "天下第一花滿天",
+      "樱花千代汪",
+      "牛牛",
+      "狗狗",
+      "日下開山・花あかり"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/me6eusmfnphdlc051uq60fxuss75gqi.png/100px-Chr_icon_1069_106901_01.png",
+    "image_local_path": "/api/assets/sakurachiyonooo-thumb",
+    "asset_id": "sakurachiyonooo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "shiriusushinbori",
+    "name_zh": "天狼星象征",
+    "name_tw": null,
+    "name_jp": "シリウスシンボリ",
+    "name_en": "Sirius Symboli",
+    "aliases": [
+      "天狼星象征",
+      "シリウスシンボリ",
+      "Sirius Symboli",
+      "【Féroce】天狼星象徵",
+      "天狼星象徵",
+      "Féroce",
+      "天狼星"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f7/rb7ig38nr5qdrrlr86z0ahdi3i6y7i6.png/100px-Chr_icon_1070_107001_01.png",
+    "image_local_path": "/api/assets/shiriusushinbori-thumb",
+    "asset_id": "shiriusushinbori-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mejiroarudan",
+    "name_zh": "目白阿尔丹",
+    "name_tw": null,
+    "name_jp": "メジロアルダン",
+    "name_en": "Mejiro Ardan",
+    "aliases": [
+      "目白阿尔丹",
+      "メジロアルダン",
+      "Mejiro Ardan",
+      "目白雅丹",
+      "【Clinochlore Line】目白阿爾丹",
+      "目白阿爾丹",
+      "Clinochlore Line",
+      "クリノクロア・ライン"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/dk095jodl57uei9fyuuwzq07s2f1zp7.png/100px-Chr_icon_1071.png",
+    "image_local_path": "/api/assets/mejiroarudan-thumb",
+    "asset_id": "mejiroarudan-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "yaenomuteki",
+    "name_zh": "八重无敌",
+    "name_tw": null,
+    "name_jp": "ヤエノムテキ",
+    "name_en": "Yaeno Muteki",
+    "aliases": [
+      "八重无敌",
+      "ヤエノムテキ",
+      "Yaeno Muteki",
+      "【四白流星襲擊】八重無敵",
+      "八重無敵",
+      "四白流星襲擊",
+      "八重母铁鸡",
+      "四白流星の襲"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/5b/q5din7qegraqkzpeqok6n1ftxg4tuqs.png/100px-Chr_icon_1072_107201_01.png",
+    "image_local_path": "/api/assets/yaenomuteki-thumb",
+    "asset_id": "yaenomuteki-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "tsurumarutsuyoshi",
+    "name_zh": "鹤丸刚志",
+    "name_tw": null,
+    "name_jp": "ツルマルツヨシ",
+    "name_en": "Tsurumaru Tsuyoshi",
+    "aliases": [
+      "鹤丸刚志",
+      "ツルマルツヨシ",
+      "Tsurumaru Tsuyoshi",
+      "【志向、遠大、堅強！】鶴丸強志",
+      "鶴丸強志",
+      "志向、遠大、堅強！",
+      "志、高し、強し！"
+    ],
+    "star": 2,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/865v9jxrrk2mxw4yhoqx6rj5kw4ct80.png/100px-Chr_icon_1073_107301_01.png",
+    "image_local_path": "/api/assets/tsurumarutsuyoshi-thumb",
+    "asset_id": "tsurumarutsuyoshi-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mejiroburaito",
+    "name_zh": "目白光明",
+    "name_tw": null,
+    "name_jp": "メジロブライト",
+    "name_en": "Mejiro Bright",
+    "aliases": [
+      "目白光明",
+      "メジロブライト",
+      "Mejiro Bright",
+      "【Vernissage Line】目白光明",
+      "Vernissage Line",
+      "ブリュニサージュ・ライン"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3d/s983wgl7q0cclfuqhbmrtnou8y9ckye.png/100px-Chr_icon_1074_107401_01.png",
+    "image_local_path": "/api/assets/mejiroburaito-thumb",
+    "asset_id": "mejiroburaito-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "sakurarooreru",
+    "name_zh": "樱花桂冠",
+    "name_tw": null,
+    "name_jp": "サクラローレル",
+    "name_en": "Sakura Laurel",
+    "aliases": [
+      "樱花桂冠",
+      "サクラローレル",
+      "Sakura Laurel",
+      "【Saisir le rêve】櫻花桂冠",
+      "櫻花桂冠",
+      "Saisir le rêve",
+      "樱花魅魔"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/1n0v2xgds56s8241vncpub97lybcaj6.png/100px-Chr_icon_1076_107601_01.png",
+    "image_local_path": "/api/assets/sakurarooreru-thumb",
+    "asset_id": "sakurarooreru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "naritatoppuroodo",
+    "name_zh": "成田路",
+    "name_tw": null,
+    "name_jp": "ナリタトップロード",
+    "name_en": "Narita Top Road",
+    "aliases": [
+      "成田路",
+      "ナリタトップロード",
+      "Narita Top Road",
+      "【The Proud Road】成田路",
+      "The Proud Road",
+      "NTR[1]",
+      "阿路",
+      "路哥",
+      "トプロ",
+      "トップロード"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2d/jyiroeard8g68o5wyk4kooamnghylwp.png/100px-Chr_icon_1077_107701_01.png",
+    "image_local_path": "/api/assets/naritatoppuroodo-thumb",
+    "asset_id": "naritatoppuroodo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "yamaninzefuaa",
+    "name_zh": "也文摄辉",
+    "name_tw": null,
+    "name_jp": "ヤマニンゼファー",
+    "name_en": "Yamanin Zephyr",
+    "aliases": [
+      "也文摄辉",
+      "ヤマニンゼファー",
+      "Yamanin Zephyr",
+      "【Fluttertail Spirit】山人西風",
+      "山人西風",
+      "Fluttertail Spirit"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/r4oe6dz6w03wwey738ocgr376vnq3uw.png/100px-Chr_icon_1078_107801_01.png",
+    "image_local_path": "/api/assets/yamaninzefuaa-thumb",
+    "asset_id": "yamaninzefuaa-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "furiooso",
+    "name_zh": "狂怒乐章",
+    "name_tw": null,
+    "name_jp": "フリオーソ",
+    "name_en": "Furioso",
+    "aliases": [
+      "狂怒乐章",
+      "フリオーソ",
+      "Furioso",
+      "【衣錦還鄉的瑞星】狂熱激昂",
+      "狂熱激昂",
+      "衣錦還鄉的瑞星",
+      "衣錦還郷の瑞星"
+    ],
+    "star": 3,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true,
+    "school_grade": "高等部",
+    "dormitory": "独居",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e6/9831o3hy7w5ykhul407ksetktxfn92c.png/100px-Chr_icon_1079_107901_01.png",
+    "image_local_path": "/api/assets/furiooso-thumb",
+    "asset_id": "furiooso-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "toransendo",
+    "name_zh": "创升",
+    "name_tw": null,
+    "name_jp": "トランセンド",
+    "name_en": "Transcend",
+    "aliases": [
+      "创升",
+      "トランセンド",
+      "Transcend",
+      "【興奮不已GIZMO】創升",
+      "創升",
+      "興奮不已GIZMO",
+      "ZOKU-ZOKU GIZMO"
+    ],
+    "star": 3,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8e/r40ujyf20ediri7o5yxqk9bmz0j6sk9.png/100px-Chr_icon_1080_108001_01.png",
+    "image_local_path": "/api/assets/toransendo-thumb",
+    "asset_id": "toransendo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "esupowaarushichii",
+    "name_zh": "希望之城",
+    "name_tw": null,
+    "name_jp": "エスポワールシチー",
+    "name_en": "Espoir City",
+    "aliases": [
+      "希望之城",
+      "エスポワールシチー",
+      "Espoir City",
+      "Red Devil Gear"
+    ],
+    "star": 3,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a1/rg9bxiz96t1c2i7fwjpl3ckj79ln7qx.png/100px-Chr_icon_1081_108101_01.png",
+    "image_local_path": "/api/assets/esupowaarushichii-thumb",
+    "asset_id": "esupowaarushichii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "noosufuraito",
+    "name_zh": "北方飞翔",
+    "name_tw": null,
+    "name_jp": "ノースフライト",
+    "name_en": "North Flight",
+    "aliases": [
+      "北方飞翔",
+      "ノースフライト",
+      "North Flight",
+      "【Looking Fly!】北方飛翔",
+      "北方飛翔",
+      "Looking Fly!",
+      "英里的女王（マイルの女王）"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png",
+    "image_local_path": "/api/assets/noosufuraito-thumb",
+    "asset_id": "noosufuraito-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "shinborikurisuesu",
+    "name_zh": "吉兆",
+    "name_tw": null,
+    "name_jp": "シンボリクリスエス",
+    "name_en": "Symboli Kris S",
+    "aliases": [
+      "吉兆",
+      "シンボリクリスエス",
+      "Symboli Kris S",
+      "【Onyx Soldier】克莉斯耶絲象徵",
+      "克莉斯耶絲象徵",
+      "Onyx Soldier",
+      "关二爷",
+      "特雷森王牌狙击手"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/4xm4ww9jk385x0qtjhzpm7fh6iyyphl.png/100px-Chr_icon_1083_108301_01.png",
+    "image_local_path": "/api/assets/shinborikurisuesu-thumb",
+    "asset_id": "shinborikurisuesu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "taninogimuretto",
+    "name_zh": "谷水琴蕾",
+    "name_tw": null,
+    "name_jp": "タニノギムレット",
+    "name_en": "Tanino Gimlet",
+    "aliases": [
+      "谷水琴蕾",
+      "タニノギムレット",
+      "Tanino Gimlet",
+      "【雷光纏身】谷水琴蕾",
+      "雷光纏身",
+      "谷水老爹",
+      "栏杆破坏神",
+      "👁[1]",
+      "谷野美酒",
+      "身に纏うケラヴノス"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b0/8dj1skmxiu5i8hj87k2wix2s4c2pgf5.png/100px-Chr_icon_1084_108401_01.png",
+    "image_local_path": "/api/assets/taninogimuretto-thumb",
+    "asset_id": "taninogimuretto-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "daiichirubii",
+    "name_zh": "第一红宝石",
+    "name_tw": "華麗紅玉",
+    "name_jp": "ダイイチルビー",
+    "name_en": "Daiichi Ruby",
+    "aliases": [
+      "第一红宝石",
+      "華麗紅玉",
+      "ダイイチルビー",
+      "Daiichi Ruby",
+      "【華麗紅玉】第一紅寶",
+      "第一紅寶",
+      "露比",
+      "大日如来[1]",
+      "華麗なる紅玉"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+    "image_local_path": "/api/assets/daiichirubii-thumb",
+    "asset_id": "daiichirubii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "mejiroramoonu",
+    "name_zh": "目白高峰",
+    "name_tw": null,
+    "name_jp": "メジロラモーヌ",
+    "name_en": "Mejiro Ramonu",
+    "aliases": [
+      "目白高峰",
+      "メジロラモーヌ",
+      "Mejiro Ramonu",
+      "【Onyx Line】目白拉茉奴",
+      "目白拉茉奴",
+      "Onyx Line",
+      "オニキス・ライン"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/01/mmaqsy4snloy1vx9664r0g99wswmhdq.png/100px-Chr_icon_1086_108601_01.png",
+    "image_local_path": "/api/assets/mejiroramoonu-thumb",
+    "asset_id": "mejiroramoonu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "asutonmaachan",
+    "name_zh": "真弓快车",
+    "name_tw": "奧斯頓真弓",
+    "name_jp": "アストンマーチャン",
+    "name_en": "Aston Machan",
+    "aliases": [
+      "真弓快车",
+      "奧斯頓真弓",
+      "アストンマーチャン",
+      "Aston Machan",
+      "【Flare】奧斯頓真弓",
+      "Flare",
+      "麻酱（マーチャン）"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/7tcezf5gjotfmw2hw92bc0dtvyw6vou.png/100px-Chr_icon_1087_108701_01.png",
+    "image_local_path": "/api/assets/asutonmaachan-thumb",
+    "asset_id": "asutonmaachan-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "satonokuraun",
+    "name_zh": "里见皇冠",
+    "name_tw": null,
+    "name_jp": "サトノクラウン",
+    "name_en": "Satono Crown",
+    "aliases": [
+      "里见皇冠",
+      "サトノクラウン",
+      "Satono Crown",
+      "【黑翠千里行】里見皇冠",
+      "里見皇冠",
+      "黑翠千里行",
+      "クラちゃん",
+      "黒翠千里行"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png",
+    "image_local_path": "/api/assets/satonokuraun-thumb",
+    "asset_id": "satonokuraun-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "vyirushiina",
+    "name_zh": "极峰",
+    "name_tw": null,
+    "name_jp": "ヴィルシーナ",
+    "name_en": "Verxina",
+    "aliases": [
+      "极峰",
+      "ヴィルシーナ",
+      "Verxina",
+      "牝马怒涛",
+      "Le beau sommet"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png",
+    "image_local_path": "/api/assets/vyirushiina-thumb",
+    "asset_id": "vyirushiina-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "vyiburosu",
+    "name_zh": "强击",
+    "name_tw": null,
+    "name_jp": "ヴィブロス",
+    "name_en": "Vivlos",
+    "aliases": [
+      "强击",
+      "ヴィブロス",
+      "Vivlos",
+      "【Voyage étincelant】比布魯斯",
+      "比布魯斯",
+      "Voyage étincelant"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f1/lqgrfcu20ezh7mfum619k94dfww10r0.png/100px-Chr_icon_1091_109101_01.png",
+    "image_local_path": "/api/assets/vyiburosu-thumb",
+    "asset_id": "vyiburosu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "keiesumirakuru",
+    "name_zh": "凯斯奇迹",
+    "name_tw": null,
+    "name_jp": "ケイエスミラクル",
+    "name_en": "K.S.Miracle",
+    "aliases": [
+      "凯斯奇迹",
+      "ケイエスミラクル",
+      "K.S.Miracle",
+      "【Prism】喜嘉奇蹟",
+      "喜嘉奇蹟",
+      "Prism"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png",
+    "image_local_path": "/api/assets/keiesumirakuru-thumb",
+    "asset_id": "keiesumirakuru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "dantsufureemu",
+    "name_zh": "烈焰快驹",
+    "name_tw": null,
+    "name_jp": "ダンツフレーム",
+    "name_en": "Dantsu Flame",
+    "aliases": [
+      "烈焰快驹",
+      "ダンツフレーム",
+      "Dantsu Flame",
+      "まんなか◎スポットライト"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/ba/ahteox5bj8o28ylytmqeedhotkkjqni.png/100px-Chr_icon_1092_109201_01.png",
+    "image_local_path": "/api/assets/dantsufureemu-thumb",
+    "asset_id": "dantsufureemu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "jangurupoketto",
+    "name_zh": "森林宝穴",
+    "name_tw": null,
+    "name_jp": "ジャングルポケット",
+    "name_en": "Jungle Pocket",
+    "aliases": [
+      "森林宝穴",
+      "ジャングルポケット",
+      "Jungle Pocket",
+      "【王者的吶喊】叢林口袋",
+      "叢林口袋",
+      "王者的吶喊",
+      "密林の王者",
+      "王者の喊声"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/2k7mwmnalcfyvvadrz2c4555da690t3.png/100px-Chr_icon_1094_109401_01.png",
+    "image_local_path": "/api/assets/jangurupoketto-thumb",
+    "asset_id": "jangurupoketto-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "biriivu",
+    "name_zh": "信念",
+    "name_tw": null,
+    "name_jp": "ビリーヴ",
+    "name_en": "Believe",
+    "aliases": [
+      "信念",
+      "ビリーヴ",
+      "Believe",
+      "精粋"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/56/mot35n0ym6vvn21ee7eiyubws0fsgoh.png/100px-Chr_icon_1095_109501_01.png",
+    "image_local_path": "/api/assets/biriivu-thumb",
+    "asset_id": "biriivu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "nooriizun",
+    "name_zh": "莫名其妙",
+    "name_tw": null,
+    "name_jp": "ノーリーズン",
+    "name_en": "No Reason",
+    "aliases": [
+      "莫名其妙",
+      "ノーリーズン",
+      "No Reason",
+      "紅色塗早駆具足"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b7/3dzgwfpbg30xwawtcwt47bn3vg5anj5.png/100px-Chr_icon_1096_109601_01.png",
+    "image_local_path": "/api/assets/nooriizun-thumb",
+    "asset_id": "nooriizun-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "suteiruinrabu",
+    "name_zh": "爱如往昔",
+    "name_tw": null,
+    "name_jp": "スティルインラブ",
+    "name_en": "Still in Love",
+    "aliases": [
+      "爱如往昔",
+      "スティルインラブ",
+      "Still in Love",
+      "緋想の誓衣"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "3-4",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9d/4m7blstbt74syz5zm79bmiqe4objbqi.png/100px-Chr_icon_1097_109701_01.png",
+    "image_local_path": "/api/assets/suteiruinrabu-thumb",
+    "asset_id": "suteiruinrabu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "kopanorikkii",
+    "name_zh": "小林历奇",
+    "name_tw": null,
+    "name_jp": "コパノリッキー",
+    "name_en": "Copano Rickey",
+    "aliases": [
+      "小林历奇",
+      "コパノリッキー",
+      "Copano Rickey",
+      "【陰陽八卦☆開運衣】小林歷奇",
+      "小林歷奇",
+      "陰陽八卦☆開運衣",
+      "小林正英",
+      "小林檎"
+    ],
+    "star": 3,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c1/cubqidbgc4hml4tfob74vibwdrirmtl.png/100px-Chr_icon_1098_109801_01.png",
+    "image_local_path": "/api/assets/kopanorikkii-thumb",
+    "asset_id": "kopanorikkii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "hokkootarumae",
+    "name_zh": "北港火山",
+    "name_tw": "繁星．光華．船隻",
+    "name_jp": "ホッコータルマエ",
+    "name_en": "Hokko Tarumae",
+    "aliases": [
+      "北港火山",
+      "繁星．光華．船隻",
+      "ホッコータルマエ",
+      "Hokko Tarumae",
+      "【繁星．光華．船隻】北幸樽前",
+      "北幸樽前",
+      "苫小牧之星",
+      "北港大大大大火山",
+      "スター・ライト・シップ"
+    ],
+    "star": 3,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bb/99cqj8522z6pxeuuyqykdrozgnmocsp.png/100px-Chr_icon_1099_109901_01.png",
+    "image_local_path": "/api/assets/hokkootarumae-thumb",
+    "asset_id": "hokkootarumae-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "wandaaakyuuto",
+    "name_zh": "奇锐骏",
+    "name_tw": null,
+    "name_jp": "ワンダーアキュート",
+    "name_en": "Wonder Acute",
+    "aliases": [
+      "奇锐骏",
+      "ワンダーアキュート",
+      "Wonder Acute",
+      "【Butterfly Sting】奇銳駿",
+      "奇銳駿",
+      "Butterfly Sting",
+      "奶奶",
+      "和田奶奶"
+    ],
+    "star": 3,
+    "surface_group": [
+      "泥地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/12/6kkenjdmgix43noamdz1vzcmkdcyf85.png/100px-Chr_icon_1100_110001_01.png",
+    "image_local_path": "/api/assets/wandaaakyuuto-thumb",
+    "asset_id": "wandaaakyuuto-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "saunzuobuaasu",
+    "name_zh": "万籁争鸣",
+    "name_tw": null,
+    "name_jp": "サウンズオブアース",
+    "name_en": "Sounds of Earth",
+    "aliases": [
+      "万籁争鸣",
+      "サウンズオブアース",
+      "Sounds of Earth",
+      "【地球的節奏】萬籟爭鳴",
+      "萬籟爭鳴",
+      "地球的節奏",
+      "リトモ・デッラ・テッラ"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "0",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/70/sfnc8294bsdwdp3pvf9acg9zi6w9t0g.png/100px-Chr_icon_1102_110201_01.png",
+    "image_local_path": "/api/assets/saunzuobuaasu-thumb",
+    "asset_id": "saunzuobuaasu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "katsuragieesu",
+    "name_zh": "葛城王牌",
+    "name_tw": null,
+    "name_jp": "カツラギエース",
+    "name_en": "Katsuragi Ace",
+    "aliases": [
+      "葛城王牌",
+      "カツラギエース",
+      "Katsuragi Ace",
+      "【登龍之頂】葛城榮主",
+      "葛城榮主",
+      "登龍之頂",
+      "登竜之頂"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bc/autnhh344jxbx6ss61ws0ed3svcikyc.png/100px-Chr_icon_1104_110401_01.png",
+    "image_local_path": "/api/assets/katsuragieesu-thumb",
+    "asset_id": "katsuragieesu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "neoyunivuaasu",
+    "name_zh": "新宇宙",
+    "name_tw": null,
+    "name_jp": "ネオユニヴァース",
+    "name_en": "Neo Universe",
+    "aliases": [
+      "新宇宙",
+      "ネオユニヴァース",
+      "Neo Universe",
+      "【Universe-Naut】新宇宙",
+      "Universe-Naut"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e8/906duo40f95i0awsj2dt3g497a9afft.png/100px-Chr_icon_1105_110501_01.png",
+    "image_local_path": "/api/assets/neoyunivuaasu-thumb",
+    "asset_id": "neoyunivuaasu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "hishimirakuru",
+    "name_zh": "菱钻奇宝",
+    "name_tw": null,
+    "name_jp": "ヒシミラクル",
+    "name_en": "Hishi Miracle",
+    "aliases": [
+      "菱钻奇宝",
+      "ヒシミラクル",
+      "Hishi Miracle",
+      "【點綴奇蹟！】菱奇蹟",
+      "菱奇蹟",
+      "點綴奇蹟！",
+      "ミラ子",
+      "胖奇迹",
+      "みらくるめーくあっぷ！"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/be/nl0bo9ahk4o0x8mfzyhqjayeiga4wv8.png/100px-Chr_icon_1106_110601_01.png",
+    "image_local_path": "/api/assets/hishimirakuru-thumb",
+    "asset_id": "hishimirakuru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "tappudansushichii",
+    "name_zh": "跳舞城",
+    "name_tw": null,
+    "name_jp": "タップダンスシチー",
+    "name_en": "Tap Dance City",
+    "aliases": [
+      "跳舞城",
+      "タップダンスシチー",
+      "Tap Dance City",
+      "【GLITTER!】踢踏城市",
+      "踢踏城市",
+      "GLITTER!"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png",
+    "image_local_path": "/api/assets/tappudansushichii-thumb",
+    "asset_id": "tappudansushichii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "douramente",
+    "name_zh": "大鸣大放",
+    "name_tw": null,
+    "name_jp": "ドゥラメンテ",
+    "name_en": "Duramente",
+    "aliases": [
+      "大鸣大放",
+      "ドゥラメンテ",
+      "Duramente",
+      "【Red in Black】大鳴大放",
+      "大鳴大放",
+      "Red in Black",
+      "大锤"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2c/o9f0lo9o0a0sia02znnop52t3e81sa7.png/100px-Chr_icon_1108_110801_01.png",
+    "image_local_path": "/api/assets/douramente-thumb",
+    "asset_id": "douramente-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "rainkurafuto",
+    "name_zh": "莱茵力量",
+    "name_tw": null,
+    "name_jp": "ラインクラフト",
+    "name_en": "Rhein Kraft",
+    "aliases": [
+      "莱茵力量",
+      "ラインクラフト",
+      "Rhein Kraft",
+      "【Dream Successor】萊茵實力",
+      "萊茵實力",
+      "Dream Successor"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png",
+    "image_local_path": "/api/assets/rainkurafuto-thumb",
+    "asset_id": "rainkurafuto-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "shiizario",
+    "name_zh": "西沙里奥",
+    "name_tw": "西薩里奧",
+    "name_jp": "シーザリオ",
+    "name_en": "Cesario",
+    "aliases": [
+      "西沙里奥",
+      "西薩里奧",
+      "シーザリオ",
+      "Cesario",
+      "【Future Weaver】西薩里奧",
+      "Future Weaver",
+      "日本的Super Star",
+      "西沙",
+      "特别周空中型",
+      "水属性特别周",
+      "西沙里on/off"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/19/7fztctailu964ku6e6h3gu939cz0uye.png/100px-Chr_icon_1110_111001_01.png",
+    "image_local_path": "/api/assets/shiizario-thumb",
+    "asset_id": "shiizario-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "buenabisuta",
+    "name_zh": "迷人景致",
+    "name_tw": null,
+    "name_jp": "ブエナビスタ",
+    "name_en": "Buena Vista",
+    "aliases": [
+      "迷人景致",
+      "ブエナビスタ",
+      "Buena Vista",
+      "Heroína Inocente"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/t1gu5zqilp4m0khytlsgg4xg5a0gedh.png/100px-Chr_icon_1114_111401_01.png",
+    "image_local_path": "/api/assets/buenabisuta-thumb",
+    "asset_id": "buenabisuta-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "orufyeevuru",
+    "name_zh": "黄金巨匠",
+    "name_tw": null,
+    "name_jp": "オルフェーヴル",
+    "name_en": "Orfevre",
+    "aliases": [
+      "黄金巨匠",
+      "オルフェーヴル",
+      "Orfevre",
+      "【總攬】黃金巨匠",
+      "黃金巨匠",
+      "總攬",
+      "総攬"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "5+",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png",
+    "image_local_path": "/api/assets/orufyeevuru-thumb",
+    "asset_id": "orufyeevuru-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "jenteirudonna",
+    "name_zh": "贵妇人",
+    "name_tw": null,
+    "name_jp": "ジェンティルドンナ",
+    "name_en": "Gentildonna",
+    "aliases": [
+      "贵妇人",
+      "ジェンティルドンナ",
+      "Gentildonna",
+      "【Regina dei fiori】貴婦人",
+      "貴婦人",
+      "Regina dei fiori",
+      "冬娜",
+      "鬼妇人"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/eoiwfwqduvakap66kqr5vampejutuwq.png/100px-Chr_icon_1116_111601_01.png",
+    "image_local_path": "/api/assets/jenteirudonna-thumb",
+    "asset_id": "jenteirudonna-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "doriimujaanii",
+    "name_zh": "梦之旅",
+    "name_tw": null,
+    "name_jp": "ドリームジャーニー",
+    "name_en": "Dream Journey",
+    "aliases": [
+      "梦之旅",
+      "ドリームジャーニー",
+      "Dream Journey",
+      "【夢之所歸】夢之旅",
+      "夢之旅",
+      "夢之所歸",
+      "梦旅",
+      "老大哥",
+      "夢路のよすが"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": true,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/31/f9w8jn4edx00c43oq87yl4r3m7tv51d.png/100px-Chr_icon_1119_111901_01.png",
+    "image_local_path": "/api/assets/doriimujaanii-thumb",
+    "asset_id": "doriimujaanii-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "karusutonraitoo",
+    "name_zh": "金镇之光",
+    "name_tw": null,
+    "name_jp": "カルストンライトオ",
+    "name_en": "Calstone Light O",
+    "aliases": [
+      "金镇之光",
+      "カルストンライトオ",
+      "Calstone Light O",
+      "【一心求真】浮岩光王",
+      "浮岩光王",
+      "一心求真",
+      "真実一路"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "逃"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/a2/18xyv70l1dm0jkw2jep8wf5puycmt62.png/100px-Chr_icon_1120_112001_01.png",
+    "image_local_path": "/api/assets/karusutonraitoo-thumb",
+    "asset_id": "karusutonraitoo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "baburugamufyeroo",
+    "name_zh": "吹波糖",
+    "name_tw": null,
+    "name_jp": "バブルガムフェロー",
+    "name_en": "Bubble Gum Fellow",
+    "aliases": [
+      "吹波糖",
+      "バブルガムフェロー",
+      "Bubble Gum Fellow",
+      "【POPPING!】泡泡糖小子",
+      "泡泡糖小子",
+      "POPPING!"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/02/t9i0kce42jyzxivxokkaij2jzox23hp.png/100px-Chr_icon_1124_112401_01.png",
+    "image_local_path": "/api/assets/baburugamufyeroo-thumb",
+    "asset_id": "baburugamufyeroo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "fyenoomeno",
+    "name_zh": "超常骏骥",
+    "name_tw": null,
+    "name_jp": "フェノーメノ",
+    "name_en": "Fenomeno",
+    "aliases": [
+      "超常骏骥",
+      "フェノーメノ",
+      "Fenomeno",
+      "黑豆",
+      "承太郎",
+      "義心の黒焔"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png",
+    "image_local_path": "/api/assets/fyenoomeno-thumb",
+    "asset_id": "fyenoomeno-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "aamondoai",
+    "name_zh": "杏目",
+    "name_tw": null,
+    "name_jp": "アーモンドアイ",
+    "name_en": "Almond Eye",
+    "aliases": [
+      "杏目",
+      "アーモンドアイ",
+      "Almond Eye",
+      "俺们的爱",
+      "特雷森卷王",
+      "黄瓜[1]",
+      "The Changer"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "5+",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png",
+    "image_local_path": "/api/assets/aamondoai-thumb",
+    "asset_id": "aamondoai-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "guranareguria",
+    "name_zh": "放声欢呼",
+    "name_tw": "放聲歡呼",
+    "name_jp": "グランアレグリア",
+    "name_en": "Gran Alegria",
+    "aliases": [
+      "放声欢呼",
+      "放聲歡呼",
+      "グランアレグリア",
+      "Gran Alegria",
+      "【微笑哩有我的路！】放聲歡呼",
+      "微笑哩有我的路！",
+      "すまいる・まい・うぇい！"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "美浦宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c8/5szputfgq475b3ezswwvvinceqm1o9m.png/100px-Chr_icon_1131_113101_01.png",
+    "image_local_path": "/api/assets/guranareguria-thumb",
+    "asset_id": "guranareguria-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "ravuzuonriiyuu",
+    "name_zh": "唯独爱你",
+    "name_tw": null,
+    "name_jp": "ラヴズオンリーユー",
+    "name_en": "Loves Only You",
+    "aliases": [
+      "唯独爱你",
+      "ラヴズオンリーユー",
+      "Loves Only You",
+      "9927 Wishes"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png",
+    "image_local_path": "/api/assets/ravuzuonriiyuu-thumb",
+    "asset_id": "ravuzuonriiyuu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "kuronojeneshisu",
+    "name_zh": "创世驹",
+    "name_tw": null,
+    "name_jp": "クロノジェネシス",
+    "name_en": "Chrono Genesis",
+    "aliases": [
+      "创世驹",
+      "クロノジェネシス",
+      "Chrono Genesis",
+      "阿创",
+      "创姐姐",
+      "小创",
+      "笔者C[1]",
+      "陸離の編纂者"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "sex_type": "牝",
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "中等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png",
+    "image_local_path": "/api/assets/kuronojeneshisu-thumb",
+    "asset_id": "kuronojeneshisu-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  },
+  {
+    "id": "suteigoorudo",
+    "name_zh": "黄金旅程",
+    "name_tw": null,
+    "name_jp": "ステイゴールド",
+    "name_en": "Stay Gold",
+    "aliases": [
+      "黄金旅程",
+      "ステイゴールド",
+      "Stay Gold",
+      "ステゴ",
+      "老黄金",
+      "黄金爹",
+      "旅程子",
+      "Sunlit Outsider"
+    ],
+    "star": 3,
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "sex_type": "牡",
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false,
+    "school_grade": "高等部",
+    "dormitory": "栗东宿舍",
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png",
+    "image_local_path": "/api/assets/suteigoorudo-thumb",
+    "asset_id": "suteigoorudo-thumb",
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ]
+  }
+]

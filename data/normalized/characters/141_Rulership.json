@@ -1,0 +1,212 @@
+{
+  "id": "ruuraashippu",
+  "order": 141,
+  "file_name": "141_Rulership.json",
+  "release_status": "unreleased",
+  "names": {
+    "zh_cn": "统治地位",
+    "zh_tw": null,
+    "jp": "ルーラーシップ",
+    "en": "Rulership"
+  },
+  "aliases": [
+    "统治地位",
+    "ルーラーシップ",
+    "Rulership"
+  ],
+  "profile": {
+    "birthday": "05-15",
+    "birthday_raw": "5月15日",
+    "birthday_day_of_year": 136,
+    "height_cm": 160,
+    "height_raw": "160",
+    "cv": "海野水玉",
+    "cv_raw": "海野水玉",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": null,
+    "distance_group": null,
+    "running_style_group": null,
+    "aptitudes": {
+      "turf": null,
+      "dirt": null,
+      "sprint": null,
+      "mile": null,
+      "medium": null,
+      "long": null,
+      "nige": null,
+      "senko": null,
+      "sashi": null,
+      "oikomi": null
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/muoeexxeh4sav3pguyocqd14hqvy4uu.png/100px-Chr_icon_1145.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/muoeexxeh4sav3pguyocqd14hqvy4uu.png/100px-Chr_icon_1145.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_Rulership_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222142206"
+    ],
+    "image_local_path": "/api/assets/ruuraashippu-thumb",
+    "asset_id": "ruuraashippu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%BB%9F%E6%B2%BB%E5%9C%B0%E4%BD%8D",
+      "https://zh.moegirl.org.cn/index.php?title=%E7%BB%9F%E6%B2%BB%E5%9C%B0%E4%BD%8D&action=edit&redlink=1"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/muoeexxeh4sav3pguyocqd14hqvy4uu.png/100px-Chr_icon_1145.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_Rulership_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222142206"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_Rulership_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222142206"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "擅长运用策略控制棋盘局面，是头脑派选手。 在比赛中也以智谋为武器，但心理素质非常脆弱，一旦策略失误就会立刻沮丧，躲进房间里不出来。",
+    "intro_paragraphs": [
+      "擅长运用策略控制棋盘局面，是头脑派选手。",
+      "在比赛中也以智谋为武器，但心理素质非常脆弱，一旦策略失误就会立刻沮丧，躲进房间里不出来。"
+    ],
+    "quote_raw": "热爱从古典到现代各种桌游的重度桌游爱好者。",
+    "weight_desc_raw": "不出现在测量地点",
+    "bust_raw": "90",
+    "waist_raw": "57",
+    "hip_raw": "86"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "统治地位",
+      "character_id": "1145",
+      "birthday_raw": "5月15日",
+      "height_raw": "160",
+      "bust_raw": "90",
+      "waist_raw": "57",
+      "hip_raw": "86",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "33",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/muoeexxeh4sav3pguyocqd14hqvy4uu.png/100px-Chr_icon_1145.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/dc/muoeexxeh4sav3pguyocqd14hqvy4uu.png/100px-Chr_icon_1145.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%BB%9F%E6%B2%BB%E5%9C%B0%E4%BD%8D"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%BB%9F%E6%B2%BB%E5%9C%B0%E4%BD%8D",
+      "raw_name_zh": "统治地位",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%BB%9F%E6%B2%BB%E5%9C%B0%E4%BD%8D"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "统治地位",
+      "raw_name_jp": "ルーラーシップ",
+      "cv_raw": "海野水玉",
+      "birthday_raw": "5月15日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "不出现在测量地点",
+      "bust_raw": "90",
+      "waist_raw": "57",
+      "hip_raw": "86",
+      "quote_raw": "热爱从古典到现代各种桌游的重度桌游爱好者。",
+      "intro_paragraphs": [
+        "擅长运用策略控制棋盘局面，是头脑派选手。",
+        "在比赛中也以智谋为武器，但心理素质非常脆弱，一旦策略失误就会立刻沮丧，躲进房间里不出来。"
+      ],
+      "introduction": "擅长运用策略控制棋盘局面，是头脑派选手。\n在比赛中也以智谋为武器，但心理素质非常脆弱，一旦策略失误就会立刻沮丧，躲进房间里不出来。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_Rulership_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222142206",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_Rulership_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222142206"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E7%BB%9F%E6%B2%BB%E5%9C%B0%E4%BD%8D&action=edit&redlink=1",
+      "canonical_name_zh": "统治地位",
+      "aliases": [
+        "统治地位"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E7%BB%9F%E6%B2%BB%E5%9C%B0%E4%BD%8D&action=edit&redlink=1",
+      "raw_name_zh": "统治地位",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "ルーラーシップ",
+      "raw_name_en": null,
+      "aliases": [
+        "统治地位"
+      ],
+      "birthday_raw": "5月15日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "不出现在测量地点",
+      "bust_raw": "90",
+      "waist_raw": "57",
+      "hip_raw": "86",
+      "cv_raw": "海野水玉",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_Rulership_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222142206",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_Rulership_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222142206"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E7%BB%9F%E6%B2%BB%E5%9C%B0%E4%BD%8D&action=edit&redlink=1"
+    }
+  }
+}

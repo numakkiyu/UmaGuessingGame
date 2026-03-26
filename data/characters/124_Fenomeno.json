@@ -1,0 +1,235 @@
+{
+  "id": "fyenoomeno",
+  "name_zh": "超常骏骥",
+  "name_jp": "フェノーメノ",
+  "aliases": [
+    "黑豆",
+    "承太郎",
+    "超常骏骥",
+    "フェノーメノ",
+    "義心の黒焔"
+  ],
+  "birthday": "04-20",
+  "birthday_day_of_year": 111,
+  "birthday_raw": "4月20日",
+  "height_cm": 171,
+  "height_raw": "171cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "日比優理香",
+  "cv_raw": "日比優理香",
+  "quote_raw": "这是一位隶属于风纪委员会、正义感极强的赛马娘。",
+  "introduction": "她每天致力于的巡逻志愿活动，按理说，她那可靠而温柔的身影应该是大家心目中的巡逻警官…… 然而，或许是因为她那过于锐利的眼神，据说附近的小孩子们都非常害怕她。",
+  "intro_paragraphs": [
+    "她每天致力于的巡逻志愿活动，按理说，她那可靠而温柔的身影应该是大家心目中的巡逻警官……",
+    "然而，或许是因为她那过于锐利的眼神，据说附近的小孩子们都非常害怕她。"
+  ],
+  "weight_desc_raw": "怪物的",
+  "bust_raw": "81",
+  "waist_raw": "59",
+  "hip_raw": "82",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/b/b4/lk003m7ylwatr9spf7w3u1lxze3fn1w.png/100px-Chr_icon_1127.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018",
+    "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/280?v=20250222172018"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b4/lk003m7ylwatr9spf7w3u1lxze3fn1w.png/100px-Chr_icon_1127.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/280?v=20250222172018",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5",
+    "https://zh.moegirl.org.cn/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "G",
+    "medium": "A",
+    "long": "A",
+    "nige": "C",
+    "senko": "A",
+    "sashi": "E",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "超常骏骥",
+      "character_id": "1127",
+      "birthday_raw": "4月20日",
+      "height_raw": "171",
+      "bust_raw": "81",
+      "waist_raw": "59",
+      "hip_raw": "82",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "22",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b4/lk003m7ylwatr9spf7w3u1lxze3fn1w.png/100px-Chr_icon_1127.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b4/lk003m7ylwatr9spf7w3u1lxze3fn1w.png/100px-Chr_icon_1127.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "超常骏骥",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5",
+      "raw_name_zh": "超常骏骥",
+      "raw_name_jp": "フェノーメノ",
+      "nickname_raw": "義心の黒焔",
+      "star_raw": "3",
+      "birthday_raw": "4月20日",
+      "height_raw": "171cm",
+      "weight_desc_raw": "怪物的",
+      "bust_raw": "81",
+      "waist_raw": "59",
+      "hip_raw": "82",
+      "cv_raw": "日比優理香",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d0/au27xqao2g9h8plkno7l16xfjhtsdo5.png/100px-Chr_icon_1127_112701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "超常骏骥",
+      "raw_name_jp": "フェノーメノ",
+      "cv_raw": "日比优理香",
+      "birthday_raw": "4月20日",
+      "height_raw": "171cm",
+      "weight_desc_raw": "怪物般的",
+      "bust_raw": "81",
+      "waist_raw": "59",
+      "hip_raw": "82",
+      "quote_raw": "这是一位隶属于风纪委员会、正义感极强的赛马娘。",
+      "intro_paragraphs": [
+        "她每天致力于的巡逻志愿活动，按理说，她那可靠而温柔的身影应该是大家心目中的巡逻警官……",
+        "然而，或许是因为她那过于锐利的眼神，据说附近的小孩子们都非常害怕她。"
+      ],
+      "introduction": "她每天致力于的巡逻志愿活动，按理说，她那可靠而温柔的身影应该是大家心目中的巡逻警官……\n然而，或许是因为她那过于锐利的眼神，据说附近的小孩子们都非常害怕她。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5",
+      "canonical_name_zh": "超常骏骥",
+      "aliases": [
+        "超常骏骥"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5",
+      "raw_name_zh": "超常骏骥",
+      "page_title": "超常骏骥",
+      "raw_name_jp": "フェノーメノ",
+      "raw_name_en": null,
+      "aliases": [
+        "黑豆",
+        "承太郎",
+        "超常骏骥"
+      ],
+      "birthday_raw": "4月20日",
+      "height_raw": "171cm",
+      "weight_desc_raw": "怪物的",
+      "bust_raw": "81",
+      "waist_raw": "59",
+      "hip_raw": "82",
+      "cv_raw": "日比优理香",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/280?v=20250222172018",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/280?v=20250222172018",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/2e/UPDCH_Fenomeno_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B6%85%E5%B8%B8%E9%AA%8F%E9%AA%A5"
+    }
+  }
+}

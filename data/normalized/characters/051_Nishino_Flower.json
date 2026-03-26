@@ -1,0 +1,316 @@
+{
+  "id": "nishinofurawaa",
+  "order": 51,
+  "file_name": "051_Nishino_Flower.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "西野花",
+    "zh_tw": null,
+    "jp": "ニシノフラワー",
+    "en": "Nishino Flower"
+  },
+  "aliases": [
+    "西野花",
+    "ニシノフラワー",
+    "Nishino Flower",
+    "【重瓣花朵】西野花",
+    "重瓣花朵",
+    "韦驮天少女",
+    "哈曼·卡恩",
+    "夏亚的母亲",
+    "ティアード・ペタル"
+  ],
+  "profile": {
+    "birthday": "04-19",
+    "birthday_raw": "4月19日",
+    "birthday_day_of_year": 110,
+    "height_cm": 135,
+    "height_raw": "135cm",
+    "cv": "河井晴菜",
+    "cv_raw": "河井晴菜",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "E",
+      "long": "G",
+      "nige": "F",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "G"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f7/twdzc1nhpfqwyieaayyjd2x8yi885vk.png/100px-Chr_icon_1051.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/db/6jq3y20r65f3bvtiomcokgsta0vvfv8.png/100px-Chr_icon_1051_105102_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e9/UPDCH_NishinoFlower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/95/PID91378749.png!/fw/280?v=20211124165136"
+    ],
+    "image_local_path": "/api/assets/nishinofurawaa-thumb",
+    "asset_id": "nishinofurawaa-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E8%A5%BF%E9%87%8E%E8%8A%B1",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E9%87%8D%E7%93%A3%E8%8A%B1%E6%9C%B5%E3%80%91%E8%A5%BF%E9%87%8E%E8%8A%B1",
+      "https://zh.moegirl.org.cn/%E8%A5%BF%E9%87%8E%E8%8A%B1"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f7/twdzc1nhpfqwyieaayyjd2x8yi885vk.png/100px-Chr_icon_1051.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/db/6jq3y20r65f3bvtiomcokgsta0vvfv8.png/100px-Chr_icon_1051_105102_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/db/6jq3y20r65f3bvtiomcokgsta0vvfv8.png/100px-Chr_icon_1051_105102_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e9/UPDCH_NishinoFlower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/95/PID91378749.png!/fw/280?v=20211124165136",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e9/UPDCH_NishinoFlower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "诚实而可爱、纯真无邪的少女。 作为初开的花儿并没有什么自信，正在为了成为独当一面的马娘而努力做准备。 聪明伶俐，怀有着即使自己十分忙碌也不会忘记关怀周围的人的善良。 为了成为那盛放的璀璨花儿而努力着。",
+    "intro_paragraphs": [
+      "诚实而可爱、纯真无邪的少女。",
+      "作为初开的花儿并没有什么自信，正在为了成为独当一面的马娘而努力做准备。",
+      "聪明伶俐，怀有着即使自己十分忙碌也不会忘记关怀周围的人的善良。",
+      "为了成为那盛放的璀璨花儿而努力着。"
+    ],
+    "quote_raw": "“只想默默地在你身边，即使我还仅是一朵小花。”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "67",
+    "waist_raw": "48",
+    "hip_raw": "70"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "西野花",
+      "character_id": "1051",
+      "birthday_raw": "4月19日",
+      "height_raw": "135",
+      "bust_raw": "67",
+      "waist_raw": "48",
+      "hip_raw": "70",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "19",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f7/twdzc1nhpfqwyieaayyjd2x8yi885vk.png/100px-Chr_icon_1051.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f7/twdzc1nhpfqwyieaayyjd2x8yi885vk.png/100px-Chr_icon_1051.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%A5%BF%E9%87%8E%E8%8A%B1"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "西野花",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%A5%BF%E9%87%8E%E8%8A%B1",
+      "star_raw": "3",
+      "speed_growth_raw": "15%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "15%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%A5%BF%E9%87%8E%E8%8A%B1",
+      "raw_name_zh": "西野花",
+      "raw_name_jp": "ニシノフラワー",
+      "nickname_raw": "ティアード・ペタル",
+      "star_raw": "3",
+      "birthday_raw": "4月19日",
+      "height_raw": "135cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "67",
+      "waist_raw": "48",
+      "hip_raw": "70",
+      "cv_raw": "河井晴菜",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/db/6jq3y20r65f3bvtiomcokgsta0vvfv8.png/100px-Chr_icon_1051_105102_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%A5%BF%E9%87%8E%E8%8A%B1"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%87%8D%E7%93%A3%E8%8A%B1%E6%9C%B5%E3%80%91%E8%A5%BF%E9%87%8E%E8%8A%B1",
+      "raw_name_zh": "西野花",
+      "raw_name_jp": null,
+      "translated_name_raw": "西野花",
+      "nickname_raw": "重瓣花朵",
+      "page_title": "【重瓣花朵】西野花",
+      "page_title_aliases": [
+        "【重瓣花朵】西野花",
+        "西野花",
+        "重瓣花朵"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月19日",
+      "height_raw": "135cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "67",
+      "waist_raw": "48",
+      "hip_raw": "70",
+      "cv_raw": "河井晴菜",
+      "introduction_raw": "如花盛開的笑容♪體貼入微的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7c/7zipbyvsopzlsbeazfka5pk06rr6m66.png/100px-Chr_icon_1051_105101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/db/6jq3y20r65f3bvtiomcokgsta0vvfv8.png/100px-Chr_icon_1051_105102_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%87%8D%E7%93%A3%E8%8A%B1%E6%9C%B5%E3%80%91%E8%A5%BF%E9%87%8E%E8%8A%B1",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "E",
+      "long_raw": "G",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "西野花",
+      "raw_name_jp": "ニシノフラワー",
+      "cv_raw": "河井晴菜",
+      "birthday_raw": "4月19日",
+      "height_raw": "135cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "67",
+      "waist_raw": "48",
+      "hip_raw": "70",
+      "quote_raw": "“只想默默地在你身边，即使我还仅是一朵小花。”",
+      "intro_paragraphs": [
+        "诚实而可爱、纯真无邪的少女。",
+        "作为初开的花儿并没有什么自信，正在为了成为独当一面的马娘而努力做准备。",
+        "聪明伶俐，怀有着即使自己十分忙碌也不会忘记关怀周围的人的善良。",
+        "为了成为那盛放的璀璨花儿而努力着。"
+      ],
+      "introduction": "诚实而可爱、纯真无邪的少女。\n作为初开的花儿并没有什么自信，正在为了成为独当一面的马娘而努力做准备。\n聪明伶俐，怀有着即使自己十分忙碌也不会忘记关怀周围的人的善良。\n为了成为那盛放的璀璨花儿而努力着。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e9/UPDCH_NishinoFlower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e9/UPDCH_NishinoFlower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%A5%BF%E9%87%8E%E8%8A%B1",
+      "canonical_name_zh": "西野花",
+      "aliases": [
+        "西野花"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%A5%BF%E9%87%8E%E8%8A%B1",
+      "raw_name_zh": "西野花",
+      "page_title": "西野花",
+      "raw_name_jp": "ニシノフラワー",
+      "raw_name_en": null,
+      "aliases": [
+        "韦驮天少女",
+        "哈曼·卡恩",
+        "夏亚的母亲",
+        "西野花"
+      ],
+      "birthday_raw": "4月19日",
+      "height_raw": "135cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "67",
+      "waist_raw": "48",
+      "hip_raw": "70",
+      "cv_raw": "河井晴菜",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/95/PID91378749.png!/fw/280?v=20211124165136",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/95/PID91378749.png!/fw/280?v=20211124165136",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e9/UPDCH_NishinoFlower_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163635"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%A5%BF%E9%87%8E%E8%8A%B1"
+    }
+  }
+}

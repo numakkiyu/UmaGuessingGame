@@ -1,0 +1,211 @@
+{
+  "id": "machikanetanhoiza",
+  "name_zh": "诗歌剧",
+  "name_jp": "マチカネタンホイザ",
+  "aliases": [
+    "待兼诗歌剧",
+    "诗歌剧",
+    "マチカネタンホイザ",
+    "ぱんぱかティルトット"
+  ],
+  "birthday": "05-07",
+  "birthday_day_of_year": 128,
+  "birthday_raw": "5月7日",
+  "height_cm": 155,
+  "height_raw": "155",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 2,
+  "star_raw": "2",
+  "cv": "远野光",
+  "cv_raw": "远野光",
+  "quote_raw": "“总有预感，这次一定会非常顺利！”",
+  "introduction": "性格十分认真正面、总是全力前进的高材生型马娘。 然而竞赛成绩不振，也总是会在重要的地方出糗，有着天然的一面。 本人对自己的评价是普通的孩子，因此总是对个性强烈的马娘抱有憧憬。",
+  "intro_paragraphs": [
+    "性格十分认真正面、总是全力前进的高材生型马娘。",
+    "然而竞赛成绩不振，也总是会在重要的地方出糗，有着天然的一面。",
+    "本人对自己的评价是普通的孩子，因此总是对个性强烈的马娘抱有憧憬。"
+  ],
+  "weight_desc_raw": "微增（吃得太多了）",
+  "bust_raw": "80",
+  "waist_raw": "55",
+  "hip_raw": "80",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/4v01d4tq01phv0h907zd4zip8dhx7dx.png/100px-Chr_icon_1062.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/4v01d4tq01phv0h907zd4zip8dhx7dx.png/100px-Chr_icon_1062.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/6/63/UPDCH_Matikanetannhauser_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210501031802",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/iu42g0zutj88ag33biseori7ojpy24b.png/100px-Chr_icon_1062_106201_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/dksnlbskkfdaqcfauo30qyjpadrj4rk.png/100px-Chr_icon_1062_106202_01.png"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/4v01d4tq01phv0h907zd4zip8dhx7dx.png/100px-Chr_icon_1062.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/6/63/UPDCH_Matikanetannhauser_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210501031802"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/iu42g0zutj88ag33biseori7ojpy24b.png/100px-Chr_icon_1062_106201_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/iu42g0zutj88ag33biseori7ojpy24b.png/100px-Chr_icon_1062_106201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/dksnlbskkfdaqcfauo30qyjpadrj4rk.png/100px-Chr_icon_1062_106202_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/6/63/UPDCH_Matikanetannhauser_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210501031802"
+    ],
+    "moegirl_detail": []
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物",
+    "登场人物补种子",
+    "赛马娘图鉴"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%AF%97%E6%AD%8C%E5%89%A7",
+    "https://zh.moegirl.org.cn/%E5%BE%85%E5%85%BC%E8%AF%97%E6%AD%8C%E5%89%A7",
+    "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E8%AF%97%E6%AD%8C%E5%89%A7"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "D",
+    "medium": "A",
+    "long": "A",
+    "nige": "F",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "E"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "诗歌剧",
+      "character_id": "1062",
+      "birthday_raw": "5月7日",
+      "height_raw": "155",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/4v01d4tq01phv0h907zd4zip8dhx7dx.png/100px-Chr_icon_1062.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/42/4v01d4tq01phv0h907zd4zip8dhx7dx.png/100px-Chr_icon_1062.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%AF%97%E6%AD%8C%E5%89%A7"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "待兼诗歌剧",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/iu42g0zutj88ag33biseori7ojpy24b.png/100px-Chr_icon_1062_106201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/iu42g0zutj88ag33biseori7ojpy24b.png/100px-Chr_icon_1062_106201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E8%AF%97%E6%AD%8C%E5%89%A7",
+      "star_raw": "2",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E8%AF%97%E6%AD%8C%E5%89%A7",
+      "raw_name_zh": "待兼诗歌剧",
+      "raw_name_jp": "マチカネタンホイザ",
+      "nickname_raw": "ぱんぱかティルトット",
+      "star_raw": "2",
+      "birthday_raw": "5月7日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "微增（吃多了）",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "远野光",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "F",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/iu42g0zutj88ag33biseori7ojpy24b.png/100px-Chr_icon_1062_106201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/14/iu42g0zutj88ag33biseori7ojpy24b.png/100px-Chr_icon_1062_106201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/dksnlbskkfdaqcfauo30qyjpadrj4rk.png/100px-Chr_icon_1062_106202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%BE%85%E5%85%BC%E8%AF%97%E6%AD%8C%E5%89%A7"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "诗歌剧",
+      "raw_name_jp": "マチカネタンホイザ",
+      "cv_raw": "远野光",
+      "birthday_raw": "5月7日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "微增（吃得太多了）",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "“总有预感，这次一定会非常顺利！”",
+      "intro_paragraphs": [
+        "性格十分认真正面、总是全力前进的高材生型马娘。",
+        "然而竞赛成绩不振，也总是会在重要的地方出糗，有着天然的一面。",
+        "本人对自己的评价是普通的孩子，因此总是对个性强烈的马娘抱有憧憬。"
+      ],
+      "introduction": "性格十分认真正面、总是全力前进的高材生型马娘。\n然而竞赛成绩不振，也总是会在重要的地方出糗，有着天然的一面。\n本人对自己的评价是普通的孩子，因此总是对个性强烈的马娘抱有憧憬。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/63/UPDCH_Matikanetannhauser_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210501031802",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/63/UPDCH_Matikanetannhauser_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210501031802"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%BE%85%E5%85%BC%E8%AF%97%E6%AD%8C%E5%89%A7",
+      "canonical_name_zh": "待兼诗歌剧",
+      "aliases": [
+        "待兼诗歌剧"
+      ]
+    },
+    "moegirl_detail": {}
+  }
+}

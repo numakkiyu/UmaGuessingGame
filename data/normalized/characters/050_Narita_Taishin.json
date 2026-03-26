@@ -1,0 +1,318 @@
+{
+  "id": "naritataishin",
+  "order": 50,
+  "file_name": "050_Narita_Taishin.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "成田大进",
+    "zh_tw": null,
+    "jp": "ナリタタイシン",
+    "en": "Narita Taishin"
+  },
+  "aliases": [
+    "成田大进",
+    "ナリタタイシン",
+    "Narita Taishin",
+    "【Nevertheless】成田大進",
+    "成田大進",
+    "Nevertheless",
+    "大进",
+    "成田小进[1]"
+  ],
+  "profile": {
+    "birthday": "06-10",
+    "birthday_raw": "6月10日",
+    "birthday_day_of_year": 162,
+    "height_cm": 145,
+    "height_raw": "145cm",
+    "cv": "渡部恵子",
+    "cv_raw": "渡部恵子",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "追"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "D",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "F",
+      "sashi": "B",
+      "oikomi": "A"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/cwy9bpa8659wdmugzl2i2ze53kc5vdx.png/100px-Chr_icon_1050.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/hke9udzvm2c7rr5jg7s8jry9nxm93ob.png/100px-Chr_icon_1050_105002_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f5/q75005t5jznykqui9yga84fa13q4apc.png/100px-Chr_icon_1050_105003_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/3c/UPDCH_NaritaTaishin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207045708",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/48/PID90087382.jpg!/fw/280?v=20211124164746"
+    ],
+    "image_local_path": "/api/assets/naritataishin-thumb",
+    "asset_id": "naritataishin-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Nevertheless%E3%80%91%E6%88%90%E7%94%B0%E5%A4%A7%E9%80%B2",
+      "https://zh.moegirl.org.cn/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/cwy9bpa8659wdmugzl2i2ze53kc5vdx.png/100px-Chr_icon_1050.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/hke9udzvm2c7rr5jg7s8jry9nxm93ob.png/100px-Chr_icon_1050_105002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f5/q75005t5jznykqui9yga84fa13q4apc.png/100px-Chr_icon_1050_105003_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/hke9udzvm2c7rr5jg7s8jry9nxm93ob.png/100px-Chr_icon_1050_105002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f5/q75005t5jznykqui9yga84fa13q4apc.png/100px-Chr_icon_1050_105003_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3c/UPDCH_NaritaTaishin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207045708"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/48/PID90087382.jpg!/fw/280?v=20211124164746",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3c/UPDCH_NaritaTaishin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207045708"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "像剃刀一般锐利、叛逆的马娘。 因为经常被取笑体型纤细所以投身于比赛的世界打算以速度还以颜色。 尖锐反抗的性格也是为了不被别人小觑的武装。 与胜利奖券、琵琶晨光是同窗好友。",
+    "intro_paragraphs": [
+      "像剃刀一般锐利、叛逆的马娘。",
+      "因为经常被取笑体型纤细所以投身于比赛的世界打算以速度还以颜色。",
+      "尖锐反抗的性格也是为了不被别人小觑的武装。",
+      "与胜利奖券、琵琶晨光是同窗好友。"
+    ],
+    "quote_raw": "“我要争这口气……！哪怕是我……也能赢。”",
+    "weight_desc_raw": "拒絕測量",
+    "bust_raw": "69",
+    "waist_raw": "50",
+    "hip_raw": "73"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "成田大进",
+      "character_id": "1050",
+      "birthday_raw": "6月10日",
+      "height_raw": "145",
+      "bust_raw": "69",
+      "waist_raw": "50",
+      "hip_raw": "73",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "19",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/cwy9bpa8659wdmugzl2i2ze53kc5vdx.png/100px-Chr_icon_1050.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/cwy9bpa8659wdmugzl2i2ze53kc5vdx.png/100px-Chr_icon_1050.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "成田大进",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "F",
+      "sashi_raw": "B",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B",
+      "raw_name_zh": "成田大进",
+      "raw_name_jp": "ナリタタイシン",
+      "nickname_raw": "Nevertheless",
+      "star_raw": "3",
+      "birthday_raw": "6月10日",
+      "height_raw": "145cm",
+      "weight_desc_raw": "拒绝测量",
+      "bust_raw": "69",
+      "waist_raw": "50",
+      "hip_raw": "73",
+      "cv_raw": "渡部惠子",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "F",
+      "sashi_raw": "B",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/hke9udzvm2c7rr5jg7s8jry9nxm93ob.png/100px-Chr_icon_1050_105002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f5/q75005t5jznykqui9yga84fa13q4apc.png/100px-Chr_icon_1050_105003_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Nevertheless%E3%80%91%E6%88%90%E7%94%B0%E5%A4%A7%E9%80%B2",
+      "raw_name_zh": "成田大进",
+      "raw_name_jp": null,
+      "translated_name_raw": "成田大進",
+      "nickname_raw": "Nevertheless",
+      "page_title": "【Nevertheless】成田大進",
+      "page_title_aliases": [
+        "【Nevertheless】成田大進",
+        "成田大進",
+        "Nevertheless"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "6月10日",
+      "height_raw": "145cm",
+      "weight_desc_raw": "拒絕測量",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "渡部恵子",
+      "introduction_raw": "又酷又冷漠！靠嬌小個頭奪取勝利",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/ge52o4hxomi8vb02nm9whqjhiyo33s7.png/100px-Chr_icon_1050_105001_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/hke9udzvm2c7rr5jg7s8jry9nxm93ob.png/100px-Chr_icon_1050_105002_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f5/q75005t5jznykqui9yga84fa13q4apc.png/100px-Chr_icon_1050_105003_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Nevertheless%E3%80%91%E6%88%90%E7%94%B0%E5%A4%A7%E9%80%B2",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "F",
+      "sashi_raw": "B",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "成田大进",
+      "raw_name_jp": "ナリタタイシン",
+      "cv_raw": "渡部惠子",
+      "birthday_raw": "6月10日",
+      "height_raw": "145cm",
+      "weight_desc_raw": "拒绝测量",
+      "bust_raw": "69",
+      "waist_raw": "50",
+      "hip_raw": "73",
+      "quote_raw": "“我要争这口气……！哪怕是我……也能赢。”",
+      "intro_paragraphs": [
+        "像剃刀一般锐利、叛逆的马娘。",
+        "因为经常被取笑体型纤细所以投身于比赛的世界打算以速度还以颜色。",
+        "尖锐反抗的性格也是为了不被别人小觑的武装。",
+        "与胜利奖券、琵琶晨光是同窗好友。"
+      ],
+      "introduction": "像剃刀一般锐利、叛逆的马娘。\n因为经常被取笑体型纤细所以投身于比赛的世界打算以速度还以颜色。\n尖锐反抗的性格也是为了不被别人小觑的武装。\n与胜利奖券、琵琶晨光是同窗好友。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/3c/UPDCH_NaritaTaishin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207045708",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3c/UPDCH_NaritaTaishin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207045708"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B",
+      "canonical_name_zh": "成田大进",
+      "aliases": [
+        "成田大进"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B",
+      "raw_name_zh": "成田大进",
+      "page_title": "成田大进",
+      "raw_name_jp": "ナリタタイシン",
+      "raw_name_en": null,
+      "aliases": [
+        "大进",
+        "成田小进[1]",
+        "成田大进"
+      ],
+      "birthday_raw": "6月10日",
+      "height_raw": "145cm",
+      "weight_desc_raw": "拒绝测量",
+      "bust_raw": "69",
+      "waist_raw": "50",
+      "hip_raw": "73",
+      "cv_raw": "渡部惠子",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/48/PID90087382.jpg!/fw/280?v=20211124164746",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/48/PID90087382.jpg!/fw/280?v=20211124164746",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/3c/UPDCH_NaritaTaishin_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207045708"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%88%90%E7%94%B0%E5%A4%A7%E8%BF%9B"
+    }
+  }
+}

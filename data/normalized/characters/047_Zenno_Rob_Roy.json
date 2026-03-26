@@ -1,0 +1,309 @@
+{
+  "id": "zennoroburoi",
+  "order": 47,
+  "file_name": "047_Zenno_Rob_Roy.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "荒漠英雄",
+    "zh_tw": null,
+    "jp": "ゼンノロブロイ",
+    "en": "Zenno Rob Roy"
+  },
+  "aliases": [
+    "荒漠英雄",
+    "ゼンノロブロイ",
+    "Zenno Rob Roy",
+    "【Heroic Author】荒漠英雄",
+    "Heroic Author"
+  ],
+  "profile": {
+    "birthday": "03-27",
+    "birthday_raw": "3月27日",
+    "birthday_day_of_year": 87,
+    "height_cm": 140,
+    "height_raw": "140cm",
+    "cv": "照井春佳",
+    "cv_raw": "照井春佳",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "E"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/jjpuqyj7qju01g5y32j181ta3y4lqut.png/100px-Chr_icon_1047.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/7vsznkrjztnz9shpdqspisf3cg5zxl7.png/100px-Chr_icon_1047_104702_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/27/UPDCH_ZennoRobRoy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/55/PID92882791.jpg!/fw/280?v=20211124163917"
+    ],
+    "image_local_path": "/api/assets/zennoroburoi-thumb",
+    "asset_id": "zennoroburoi-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Heroic_Author%E3%80%91%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84",
+      "https://zh.moegirl.org.cn/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/jjpuqyj7qju01g5y32j181ta3y4lqut.png/100px-Chr_icon_1047.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/7vsznkrjztnz9shpdqspisf3cg5zxl7.png/100px-Chr_icon_1047_104702_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/7vsznkrjztnz9shpdqspisf3cg5zxl7.png/100px-Chr_icon_1047_104702_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/27/UPDCH_ZennoRobRoy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/55/PID92882791.jpg!/fw/280?v=20211124163917",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/27/UPDCH_ZennoRobRoy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "担任特雷森学园图书委员的爱书家。 外表文静，心中却藏着成为英雄传说主角的热血梦想。 虽然是处理万事精巧干练而不起眼，但当在私下的模拟赛中胜利的时候， 心里却有“成为罗布·罗伊那样的英雄”的小小梦想在悄悄萌发。",
+    "intro_paragraphs": [
+      "担任特雷森学园图书委员的爱书家。",
+      "外表文静，心中却藏着成为英雄传说主角的热血梦想。",
+      "虽然是处理万事精巧干练而不起眼，但当在私下的模拟赛中胜利的时候，",
+      "心里却有“成为罗布·罗伊那样的英雄”的小小梦想在悄悄萌发。"
+    ],
+    "quote_raw": "“想成为故事的主人公……只要是爱书的人都会这样憧憬吧。”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "89",
+    "waist_raw": "56",
+    "hip_raw": "78"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "荒漠英雄",
+      "character_id": "1047",
+      "birthday_raw": "3月27日",
+      "height_raw": "140",
+      "bust_raw": "89",
+      "waist_raw": "56",
+      "hip_raw": "78",
+      "whr_raw": "0.72",
+      "bust_waist_diff_raw": "33",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/jjpuqyj7qju01g5y32j181ta3y4lqut.png/100px-Chr_icon_1047.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/48/jjpuqyj7qju01g5y32j181ta3y4lqut.png/100px-Chr_icon_1047.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "荒漠英雄",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "20%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84",
+      "raw_name_zh": "荒漠英雄",
+      "raw_name_jp": "ゼンノロブロイ",
+      "nickname_raw": "Heroic Author",
+      "star_raw": "3",
+      "birthday_raw": "3月27日",
+      "height_raw": "140cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "89",
+      "waist_raw": "56",
+      "hip_raw": "78",
+      "cv_raw": "照井春佳",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/7vsznkrjztnz9shpdqspisf3cg5zxl7.png/100px-Chr_icon_1047_104702_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Heroic_Author%E3%80%91%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84",
+      "raw_name_zh": "荒漠英雄",
+      "raw_name_jp": null,
+      "translated_name_raw": "荒漠英雄",
+      "nickname_raw": "Heroic Author",
+      "page_title": "【Heroic Author】荒漠英雄",
+      "page_title_aliases": [
+        "【Heroic Author】荒漠英雄",
+        "荒漠英雄",
+        "Heroic Author"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月27日",
+      "height_raw": "140cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "照井春佳",
+      "introduction_raw": "總有一天要達成英雄傳說。想像力豐富的愛書人",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1f/exdyiv3wlj61d5lsv0p6ni9buxr41km.png/100px-Chr_icon_1047_104701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/99/7vsznkrjztnz9shpdqspisf3cg5zxl7.png/100px-Chr_icon_1047_104702_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Heroic_Author%E3%80%91%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "荒漠英雄",
+      "raw_name_jp": "ゼンノロブロイ",
+      "cv_raw": "照井春佳",
+      "birthday_raw": "3月27日",
+      "height_raw": "140cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "89",
+      "waist_raw": "56",
+      "hip_raw": "78",
+      "quote_raw": "“想成为故事的主人公……只要是爱书的人都会这样憧憬吧。”",
+      "intro_paragraphs": [
+        "担任特雷森学园图书委员的爱书家。",
+        "外表文静，心中却藏着成为英雄传说主角的热血梦想。",
+        "虽然是处理万事精巧干练而不起眼，但当在私下的模拟赛中胜利的时候，",
+        "心里却有“成为罗布·罗伊那样的英雄”的小小梦想在悄悄萌发。"
+      ],
+      "introduction": "担任特雷森学园图书委员的爱书家。\n外表文静，心中却藏着成为英雄传说主角的热血梦想。\n虽然是处理万事精巧干练而不起眼，但当在私下的模拟赛中胜利的时候，\n心里却有“成为罗布·罗伊那样的英雄”的小小梦想在悄悄萌发。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/27/UPDCH_ZennoRobRoy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/27/UPDCH_ZennoRobRoy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84",
+      "canonical_name_zh": "荒漠英雄",
+      "aliases": [
+        "荒漠英雄"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84",
+      "raw_name_zh": "荒漠英雄",
+      "page_title": "荒漠英雄",
+      "raw_name_jp": "ゼンノロブロイ",
+      "raw_name_en": null,
+      "aliases": [
+        "荒漠英雄"
+      ],
+      "birthday_raw": "3月27日",
+      "height_raw": "140cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "89",
+      "waist_raw": "56",
+      "hip_raw": "78",
+      "cv_raw": "照井春佳",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/55/PID92882791.jpg!/fw/280?v=20211124163917",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/55/PID92882791.jpg!/fw/280?v=20211124163917",
+        "https://storage.moegirl.org.cn/moegirl/commons/2/27/UPDCH_ZennoRobRoy_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210922163632"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8D%92%E6%BC%A0%E8%8B%B1%E9%9B%84"
+    }
+  }
+}

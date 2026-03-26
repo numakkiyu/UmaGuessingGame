@@ -1,0 +1,283 @@
+{
+  "id": "kawakamipurinsesu",
+  "name_zh": "川上公主",
+  "name_jp": "カワカミプリンセス",
+  "aliases": [
+    "【Princess of pink】川上公主",
+    "川上公主",
+    "Princess of pink",
+    "カワカミプリンセス",
+    "プリンセス・オブ・ピンク"
+  ],
+  "birthday": "06-05",
+  "birthday_day_of_year": 157,
+  "birthday_raw": "6月5日",
+  "height_cm": 154,
+  "height_raw": "154cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "高橋花林",
+  "cv_raw": "高橋花林",
+  "quote_raw": "“不屈不挠，品行高洁，意志坚强！这才是‘作为公主的人’！”",
+  "introduction": "从平民出发以公主为目标的活泼少女。 虽然是个有着过剩元气的女孩，但从某部动画中得到了“和王子携手战斗的公主”这样积极向上的未来前景。 从那以后，一边朝着公主的道路迈进，一边梦想着与自己心目中的王子相遇的那一天。 将圣王光环作为自己的导师敬仰着。",
+  "intro_paragraphs": [
+    "从平民出发以公主为目标的活泼少女。",
+    "虽然是个有着过剩元气的女孩，但从某部动画中得到了“和王子携手战斗的公主”这样积极向上的未来前景。",
+    "从那以后，一边朝着公主的道路迈进，一边梦想着与自己心目中的王子相遇的那一天。",
+    "将圣王光环作为自己的导师敬仰着。"
+  ],
+  "weight_desc_raw": "無增減（這還用說嗎！）",
+  "bust_raw": "91",
+  "waist_raw": "57",
+  "hip_raw": "87",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/s4jcwbmtqllj0bukjbsdmmwrugzbmr3.png/100px-Chr_icon_1039.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ka9h3wphhiz9rzixozlnub24rcyue0q.png/100px-Chr_icon_1039_103902_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/5/5c/UPDCH_KawakamiPrincess_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210820090228",
+    "https://storage.moegirl.org.cn/moegirl/commons/4/4a/PID93435655.png!/fw/280?v=20211215103556"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/s4jcwbmtqllj0bukjbsdmmwrugzbmr3.png/100px-Chr_icon_1039.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ka9h3wphhiz9rzixozlnub24rcyue0q.png/100px-Chr_icon_1039_103902_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ka9h3wphhiz9rzixozlnub24rcyue0q.png/100px-Chr_icon_1039_103902_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/5/5c/UPDCH_KawakamiPrincess_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210820090228"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/4/4a/PID93435655.png!/fw/280?v=20211215103556",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/5c/UPDCH_KawakamiPrincess_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210820090228"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Princess_of_pink%E3%80%91%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB",
+    "https://zh.moegirl.org.cn/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "D",
+    "mile": "B",
+    "medium": "A",
+    "long": "F",
+    "nige": "G",
+    "senko": "C",
+    "sashi": "A",
+    "oikomi": "D"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "川上公主",
+      "character_id": "1039",
+      "birthday_raw": "6月5日",
+      "height_raw": "154",
+      "bust_raw": "91",
+      "waist_raw": "57",
+      "hip_raw": "87",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "34",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/s4jcwbmtqllj0bukjbsdmmwrugzbmr3.png/100px-Chr_icon_1039.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/7f/s4jcwbmtqllj0bukjbsdmmwrugzbmr3.png/100px-Chr_icon_1039.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "川上公主",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB",
+      "raw_name_zh": "川上公主",
+      "raw_name_jp": "カワカミプリンセス",
+      "nickname_raw": "プリンセス・オブ・ピンク",
+      "star_raw": "3",
+      "birthday_raw": "6月5日",
+      "height_raw": "154cm",
+      "weight_desc_raw": "无增减（一定是这样！）",
+      "bust_raw": "91",
+      "waist_raw": "57",
+      "hip_raw": "87",
+      "cv_raw": "高桥花林",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ka9h3wphhiz9rzixozlnub24rcyue0q.png/100px-Chr_icon_1039_103902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Princess_of_pink%E3%80%91%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB",
+      "raw_name_zh": "川上公主",
+      "raw_name_jp": null,
+      "translated_name_raw": "川上公主",
+      "nickname_raw": "Princess of pink",
+      "page_title": "【Princess of pink】川上公主",
+      "page_title_aliases": [
+        "【Princess of pink】川上公主",
+        "川上公主",
+        "Princess of pink"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "6月5日",
+      "height_raw": "154cm",
+      "weight_desc_raw": "無增減（這還用說嗎！）",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "高橋花林",
+      "introduction_raw": "目標成為公主！豪邁的活潑賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d7/t1sm6ccg76f4z1t9w3imii46tmvqd0g.png/100px-Chr_icon_1039_103901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2a/ka9h3wphhiz9rzixozlnub24rcyue0q.png/100px-Chr_icon_1039_103902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Princess_of_pink%E3%80%91%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "川上公主",
+      "raw_name_jp": "カワカミプリンセス",
+      "cv_raw": "高桥花林",
+      "birthday_raw": "6月5日",
+      "height_raw": "154cm",
+      "weight_desc_raw": "无增减（这是当然的吧！）",
+      "bust_raw": "91",
+      "waist_raw": "57",
+      "hip_raw": "87",
+      "quote_raw": "“不屈不挠，品行高洁，意志坚强！这才是‘作为公主的人’！”",
+      "intro_paragraphs": [
+        "从平民出发以公主为目标的活泼少女。",
+        "虽然是个有着过剩元气的女孩，但从某部动画中得到了“和王子携手战斗的公主”这样积极向上的未来前景。",
+        "从那以后，一边朝着公主的道路迈进，一边梦想着与自己心目中的王子相遇的那一天。",
+        "将圣王光环作为自己的导师敬仰着。"
+      ],
+      "introduction": "从平民出发以公主为目标的活泼少女。\n虽然是个有着过剩元气的女孩，但从某部动画中得到了“和王子携手战斗的公主”这样积极向上的未来前景。\n从那以后，一边朝着公主的道路迈进，一边梦想着与自己心目中的王子相遇的那一天。\n将圣王光环作为自己的导师敬仰着。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/5c/UPDCH_KawakamiPrincess_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210820090228",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/5c/UPDCH_KawakamiPrincess_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210820090228"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB",
+      "canonical_name_zh": "川上公主",
+      "aliases": [
+        "川上公主"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB",
+      "raw_name_zh": "川上公主",
+      "page_title": "川上公主",
+      "raw_name_jp": "カワカミプリンセス",
+      "raw_name_en": null,
+      "aliases": [
+        "川上公主"
+      ],
+      "birthday_raw": "6月5日",
+      "height_raw": "154cm",
+      "weight_desc_raw": "无增减（这不是当然的吗！）",
+      "bust_raw": "91",
+      "waist_raw": "57",
+      "hip_raw": "87",
+      "cv_raw": "高桥花林",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/4a/PID93435655.png!/fw/280?v=20211215103556",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4a/PID93435655.png!/fw/280?v=20211215103556",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/5c/UPDCH_KawakamiPrincess_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210820090228"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%B7%9D%E4%B8%8A%E5%85%AC%E4%B8%BB"
+    }
+  }
+}

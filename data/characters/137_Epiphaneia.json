@@ -1,0 +1,192 @@
+{
+  "id": "epifuaneia",
+  "name_zh": "神威启示",
+  "name_jp": "エピファネイア",
+  "aliases": [
+    "虾（エピ）",
+    "神威启示",
+    "エピファネイア"
+  ],
+  "birthday": "02-11",
+  "birthday_day_of_year": 42,
+  "birthday_raw": "2月11日",
+  "height_cm": 159,
+  "height_raw": "159",
+  "grade": null,
+  "grade_raw": null,
+  "dormitory": null,
+  "dorm_raw": null,
+  "star": null,
+  "star_raw": null,
+  "cv": "千贺光莉",
+  "cv_raw": "千贺光莉",
+  "quote_raw": "总是能听到一个神奇的声音在推动自己朝着正确的方向前进，据说那就是『命运之声』……的样子。",
+  "introduction": "她相信『引导大家的就是我的天命！』，以压倒性的推动力带领大家前进，是个充满活力的赛马娘。 因为过于有气势，常常会变成把大家拉向错误方向的大暴走，这也是她可爱的地方。",
+  "intro_paragraphs": [
+    "她相信『引导大家的就是我的天命！』，以压倒性的推动力带领大家前进，是个充满活力的赛马娘。",
+    "因为过于有气势，常常会变成把大家拉向错误方向的大暴走，这也是她可爱的地方。"
+  ],
+  "weight_desc_raw": "命运般的",
+  "bust_raw": "81",
+  "waist_raw": "56",
+  "hip_raw": "83",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/o86dlehhbyi45byj0cpgqdxnpvifxle.png/100px-Chr_icon_1141.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/o86dlehhbyi45byj0cpgqdxnpvifxle.png/100px-Chr_icon_1141.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140450",
+    "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/280?v=20260222140450"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/o86dlehhbyi45byj0cpgqdxnpvifxle.png/100px-Chr_icon_1141.png"
+    ],
+    "biliwiki_gallery": [],
+    "biliwiki_detail": [],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140450"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/280?v=20260222140450",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140450"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%A5%9E%E5%A8%81%E5%90%AF%E7%A4%BA",
+    "https://zh.moegirl.org.cn/%E7%A5%9E%E5%A8%81%E5%90%AF%E7%A4%BA"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": null,
+    "dirt": null,
+    "sprint": null,
+    "mile": null,
+    "medium": null,
+    "long": null,
+    "nige": null,
+    "senko": null,
+    "sashi": null,
+    "oikomi": null
+  },
+  "surface_group": [],
+  "distance_group": [],
+  "running_style_group": [],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "神威启示",
+      "character_id": "1141",
+      "birthday_raw": "2月11日",
+      "height_raw": "159",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "83",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/o86dlehhbyi45byj0cpgqdxnpvifxle.png/100px-Chr_icon_1141.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/eb/o86dlehhbyi45byj0cpgqdxnpvifxle.png/100px-Chr_icon_1141.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E5%A8%81%E5%90%AF%E7%A4%BA"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E5%A8%81%E5%90%AF%E7%A4%BA",
+      "raw_name_zh": "神威启示",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E5%A8%81%E5%90%AF%E7%A4%BA"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "神威启示",
+      "raw_name_jp": "エピファネイア",
+      "cv_raw": "千贺光莉",
+      "birthday_raw": "2月11日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "命运般的",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "83",
+      "quote_raw": "总是能听到一个神奇的声音在推动自己朝着正确的方向前进，据说那就是『命运之声』……的样子。",
+      "intro_paragraphs": [
+        "她相信『引导大家的就是我的天命！』，以压倒性的推动力带领大家前进，是个充满活力的赛马娘。",
+        "因为过于有气势，常常会变成把大家拉向错误方向的大暴走，这也是她可爱的地方。"
+      ],
+      "introduction": "她相信『引导大家的就是我的天命！』，以压倒性的推动力带领大家前进，是个充满活力的赛马娘。\n因为过于有气势，常常会变成把大家拉向错误方向的大暴走，这也是她可爱的地方。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140450",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140450"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E5%A8%81%E5%90%AF%E7%A4%BA",
+      "canonical_name_zh": "神威启示",
+      "aliases": [
+        "神威启示"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E5%A8%81%E5%90%AF%E7%A4%BA",
+      "raw_name_zh": "神威启示",
+      "page_title": "神威启示",
+      "raw_name_jp": "エピファネイア",
+      "raw_name_en": null,
+      "aliases": [
+        "虾（エピ）",
+        "神威启示"
+      ],
+      "birthday_raw": "2月11日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "命运般的",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "83",
+      "cv_raw": "千贺光莉",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/280?v=20260222140450",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/280?v=20260222140450",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e5/UPDCH_Epiphaneia_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140450"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E5%A8%81%E5%90%AF%E7%A4%BA"
+    }
+  }
+}

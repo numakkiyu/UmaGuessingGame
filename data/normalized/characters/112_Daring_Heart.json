@@ -1,0 +1,215 @@
+{
+  "id": "dearinguhaato",
+  "order": 112,
+  "file_name": "112_Daring_Heart.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "勇敢的心",
+    "zh_tw": null,
+    "jp": "デアリングハート",
+    "en": "Daring Heart"
+  },
+  "aliases": [
+    "勇敢的心",
+    "デアリングハート",
+    "Daring Heart",
+    "勇敢之心"
+  ],
+  "profile": {
+    "birthday": "03-09",
+    "birthday_raw": "3月9日",
+    "birthday_day_of_year": 69,
+    "height_cm": 165,
+    "height_raw": "165",
+    "cv": "希水汐",
+    "cv_raw": "希水汐",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": null,
+    "distance_group": null,
+    "running_style_group": null,
+    "aptitudes": {
+      "turf": null,
+      "dirt": null,
+      "sprint": null,
+      "mile": null,
+      "medium": null,
+      "long": null,
+      "nige": null,
+      "senko": null,
+      "sashi": null,
+      "oikomi": null
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e5/pjc30udaipokbwdmgviwqyutqso014c.png/100px-Chr_icon_1112.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e5/pjc30udaipokbwdmgviwqyutqso014c.png/100px-Chr_icon_1112.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/07/UPDCH_DaringHeart_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+    ],
+    "image_local_path": "/api/assets/dearinguhaato-thumb",
+    "asset_id": "dearinguhaato-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%8B%87%E6%95%A2%E7%9A%84%E5%BF%83",
+      "https://zh.moegirl.org.cn/index.php?title=%E5%8B%87%E6%95%A2%E4%B9%8B%E5%BF%83&action=edit&redlink=1"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e5/pjc30udaipokbwdmgviwqyutqso014c.png/100px-Chr_icon_1112.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/07/UPDCH_DaringHeart_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/07/UPDCH_DaringHeart_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "喜欢引人注目，总是被人包围着。 对自己有坚定的自信，因为自尊心很强，所以不想让别人看到自己的弱点。 以强大的心为武器，目标是三冠王。",
+    "intro_paragraphs": [
+      "喜欢引人注目，总是被人包围着。",
+      "对自己有坚定的自信，因为自尊心很强，所以不想让别人看到自己的弱点。",
+      "以强大的心为武器，目标是三冠王。"
+    ],
+    "quote_raw": "在美国长大的具有领袖气质的马娘。",
+    "weight_desc_raw": "大胆",
+    "bust_raw": "82",
+    "waist_raw": "52",
+    "hip_raw": "84"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "勇敢的心",
+      "character_id": "1112",
+      "birthday_raw": "3月9日",
+      "height_raw": "165",
+      "bust_raw": "82",
+      "waist_raw": "52",
+      "hip_raw": "84",
+      "whr_raw": "0.62",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e5/pjc30udaipokbwdmgviwqyutqso014c.png/100px-Chr_icon_1112.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e5/pjc30udaipokbwdmgviwqyutqso014c.png/100px-Chr_icon_1112.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8B%87%E6%95%A2%E7%9A%84%E5%BF%83"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%8B%87%E6%95%A2%E7%9A%84%E5%BF%83",
+      "raw_name_zh": "勇敢的心",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8B%87%E6%95%A2%E7%9A%84%E5%BF%83"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "勇敢的心",
+      "raw_name_jp": "デアリングハート",
+      "cv_raw": "希水汐",
+      "birthday_raw": "3月9日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "大胆",
+      "bust_raw": "82",
+      "waist_raw": "52",
+      "hip_raw": "84",
+      "quote_raw": "在美国长大的具有领袖气质的马娘。",
+      "intro_paragraphs": [
+        "喜欢引人注目，总是被人包围着。",
+        "对自己有坚定的自信，因为自尊心很强，所以不想让别人看到自己的弱点。",
+        "以强大的心为武器，目标是三冠王。"
+      ],
+      "introduction": "喜欢引人注目，总是被人包围着。\n对自己有坚定的自信，因为自尊心很强，所以不想让别人看到自己的弱点。\n以强大的心为武器，目标是三冠王。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/07/UPDCH_DaringHeart_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/07/UPDCH_DaringHeart_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E5%8B%87%E6%95%A2%E4%B9%8B%E5%BF%83&action=edit&redlink=1",
+      "canonical_name_zh": "勇敢之心",
+      "aliases": [
+        "勇敢之心"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E5%8B%87%E6%95%A2%E4%B9%8B%E5%BF%83&action=edit&redlink=1",
+      "raw_name_zh": "勇敢的心",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "デアリングハート",
+      "raw_name_en": null,
+      "aliases": [
+        "勇敢之心"
+      ],
+      "birthday_raw": "3月9日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "大胆",
+      "bust_raw": "82",
+      "waist_raw": "52",
+      "hip_raw": "84",
+      "cv_raw": "希水汐",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/07/UPDCH_DaringHeart_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/07/UPDCH_DaringHeart_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E5%8B%87%E6%95%A2%E4%B9%8B%E5%BF%83&action=edit&redlink=1"
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "id": "agunesutakion",
+  "name_zh": "爱丽速子",
+  "name_jp": "アグネスタキオン",
+  "aliases": [
+    "【tach-nology】愛麗速子",
+    "愛麗速子",
+    "tach-nology",
+    "疯狂科学家",
+    "老父亲",
+    "十一个孩子的外公[2]",
+    "爱丽速子",
+    "アグネスタキオン"
+  ],
+  "birthday": "04-13",
+  "birthday_day_of_year": 104,
+  "birthday_raw": "4月13日",
+  "height_cm": 159,
+  "height_raw": "159cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 1,
+  "star_raw": "1",
+  "cv": "上坂すみれ",
+  "cv_raw": "上坂すみれ",
+  "quote_raw": "“全都是实验材料哦，豚鼠君。你也是，赛马娘们也是，我自己也是！”",
+  "introduction": "运用科学的力量，追求速度极限的有着研究者气质的赛马娘。 为了达到目的不惜进行荒谬的活体实验，在采取危险的行动时也不会取得任何人的许可。但这都是纯粹地追求速度的结果。 因为一心一意地搞研究，如果没有人支持，日常生活就会崩溃。",
+  "intro_paragraphs": [
+    "运用科学的力量，追求速度极限的有着研究者气质的赛马娘。",
+    "为了达到目的不惜进行荒谬的活体实验，在采取危险的行动时也不会取得任何人的许可。但这都是纯粹地追求速度的结果。",
+    "因为一心一意地搞研究，如果没有人支持，日常生活就会崩溃。"
+  ],
+  "weight_desc_raw": "拒絕測量",
+  "bust_raw": "83",
+  "waist_raw": "55",
+  "hip_raw": "81",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/4/44/nze7tfx2csa0ow5i4tei3thqf2hmi4e.png/100px-Chr_icon_1032.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/6/6a/o5ab8v294zknryej3bowpmuzahdpp04.png/100px-Chr_icon_1032_103202_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/07/egm8c5rn0m4b09vlq76i4j9nocnqpvu.png/100px-Chr_icon_1032_103203_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/4/44/UPDCH_AgnesTachyon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207033714",
+    "https://storage.moegirl.org.cn/moegirl/commons/a/a8/90527843_p0.jpg!/fw/280?v=20221212083935"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/44/nze7tfx2csa0ow5i4tei3thqf2hmi4e.png/100px-Chr_icon_1032.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/6a/o5ab8v294zknryej3bowpmuzahdpp04.png/100px-Chr_icon_1032_103202_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/07/egm8c5rn0m4b09vlq76i4j9nocnqpvu.png/100px-Chr_icon_1032_103203_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/6a/o5ab8v294zknryej3bowpmuzahdpp04.png/100px-Chr_icon_1032_103202_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/07/egm8c5rn0m4b09vlq76i4j9nocnqpvu.png/100px-Chr_icon_1032_103203_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/4/44/UPDCH_AgnesTachyon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207033714"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a8/90527843_p0.jpg!/fw/280?v=20221212083935",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/44/UPDCH_AgnesTachyon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207033714"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90",
+    "https://wiki.biligame.com/umamusume/%E3%80%90tach-nology%E3%80%91%E6%84%9B%E9%BA%97%E9%80%9F%E5%AD%90",
+    "https://zh.moegirl.org.cn/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "D",
+    "medium": "A",
+    "long": "B",
+    "nige": "E",
+    "senko": "A",
+    "sashi": "B",
+    "oikomi": "F"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "爱丽速子",
+      "character_id": "1032",
+      "birthday_raw": "4月13日",
+      "height_raw": "159",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "81",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "28",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/44/nze7tfx2csa0ow5i4tei3thqf2hmi4e.png/100px-Chr_icon_1032.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/44/nze7tfx2csa0ow5i4tei3thqf2hmi4e.png/100px-Chr_icon_1032.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "爱丽速子",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90",
+      "star_raw": "1",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90",
+      "raw_name_zh": "爱丽速子",
+      "raw_name_jp": "アグネスタキオン",
+      "nickname_raw": "tach-nology",
+      "star_raw": "1",
+      "birthday_raw": "4月13日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "拒绝测量",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "81",
+      "cv_raw": "上坂堇",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6a/o5ab8v294zknryej3bowpmuzahdpp04.png/100px-Chr_icon_1032_103202_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/07/egm8c5rn0m4b09vlq76i4j9nocnqpvu.png/100px-Chr_icon_1032_103203_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90tach-nology%E3%80%91%E6%84%9B%E9%BA%97%E9%80%9F%E5%AD%90",
+      "raw_name_zh": "爱丽速子",
+      "raw_name_jp": null,
+      "translated_name_raw": "愛麗速子",
+      "nickname_raw": "tach-nology",
+      "page_title": "【tach-nology】愛麗速子",
+      "page_title_aliases": [
+        "【tach-nology】愛麗速子",
+        "愛麗速子",
+        "tach-nology"
+      ],
+      "star_raw": "1",
+      "birthday_raw": "4月13日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "拒絕測量",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "81",
+      "cv_raw": "上坂すみれ",
+      "introduction_raw": "禁忌的瘋狂科學家。肉體研究才是一切！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/abf6v7frvljsrokp9vto07wkgbrti4a.png/100px-Chr_icon_1032_103201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6a/o5ab8v294zknryej3bowpmuzahdpp04.png/100px-Chr_icon_1032_103202_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/07/egm8c5rn0m4b09vlq76i4j9nocnqpvu.png/100px-Chr_icon_1032_103203_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90tach-nology%E3%80%91%E6%84%9B%E9%BA%97%E9%80%9F%E5%AD%90",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "D",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "爱丽速子",
+      "raw_name_jp": "アグネスタキオン",
+      "cv_raw": "上坂堇",
+      "birthday_raw": "4月13日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "拒绝测量",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "81",
+      "quote_raw": "“全都是实验材料哦，豚鼠君。你也是，赛马娘们也是，我自己也是！”",
+      "intro_paragraphs": [
+        "运用科学的力量，追求速度极限的有着研究者气质的赛马娘。",
+        "为了达到目的不惜进行荒谬的活体实验，在采取危险的行动时也不会取得任何人的许可。但这都是纯粹地追求速度的结果。",
+        "因为一心一意地搞研究，如果没有人支持，日常生活就会崩溃。"
+      ],
+      "introduction": "运用科学的力量，追求速度极限的有着研究者气质的赛马娘。\n为了达到目的不惜进行荒谬的活体实验，在采取危险的行动时也不会取得任何人的许可。但这都是纯粹地追求速度的结果。\n因为一心一意地搞研究，如果没有人支持，日常生活就会崩溃。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/44/UPDCH_AgnesTachyon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207033714",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/44/UPDCH_AgnesTachyon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207033714"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90",
+      "canonical_name_zh": "爱丽速子",
+      "aliases": [
+        "爱丽速子"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90",
+      "raw_name_zh": "爱丽速子",
+      "page_title": "爱丽速子",
+      "raw_name_jp": "アグネスタキオン",
+      "raw_name_en": null,
+      "aliases": [
+        "疯狂科学家",
+        "老父亲",
+        "十一个孩子的外公[2]",
+        "爱丽速子"
+      ],
+      "birthday_raw": "4月13日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "拒绝测量",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "81",
+      "cv_raw": "上坂堇",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a8/90527843_p0.jpg!/fw/280?v=20221212083935",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a8/90527843_p0.jpg!/fw/280?v=20221212083935",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/44/UPDCH_AgnesTachyon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207033714"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%88%B1%E4%B8%BD%E9%80%9F%E5%AD%90"
+    }
+  }
+}

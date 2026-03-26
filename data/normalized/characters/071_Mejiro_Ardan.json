@@ -1,0 +1,281 @@
+{
+  "id": "mejiroarudan",
+  "order": 71,
+  "file_name": "071_Mejiro_Ardan.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "目白阿尔丹",
+    "zh_tw": null,
+    "jp": "メジロアルダン",
+    "en": "Mejiro Ardan"
+  },
+  "aliases": [
+    "目白阿尔丹",
+    "メジロアルダン",
+    "Mejiro Ardan",
+    "目白雅丹",
+    "【Clinochlore Line】目白阿爾丹",
+    "目白阿爾丹",
+    "Clinochlore Line",
+    "クリノクロア・ライン"
+  ],
+  "profile": {
+    "birthday": "03-28",
+    "birthday_raw": "3月28日",
+    "birthday_day_of_year": 88,
+    "height_cm": 162,
+    "height_raw": "162",
+    "cv": "会泽纱弥",
+    "cv_raw": "会泽纱弥",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "E",
+      "mile": "B",
+      "medium": "A",
+      "long": "D",
+      "nige": "C",
+      "senko": "A",
+      "sashi": "D",
+      "oikomi": "G"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/dk095jodl57uei9fyuuwzq07s2f1zp7.png/100px-Chr_icon_1071.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/dk095jodl57uei9fyuuwzq07s2f1zp7.png/100px-Chr_icon_1071.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/6/60/UPDCH_MejiroArdan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210701041930",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/76/jsqweqp5e2ypvxzq75pq5h30henbv3g.png/100px-Chr_icon_1071_107102_01.png"
+    ],
+    "image_local_path": "/api/assets/mejiroarudan-thumb",
+    "asset_id": "mejiroarudan-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物",
+      "登场人物补种子",
+      "赛马娘图鉴",
+      "繁中服角色详情页"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%9B%85%E4%B8%B9",
+      "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%98%BF%E5%B0%94%E4%B8%B9",
+      "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%98%BF%E5%B0%94%E4%B8%B9",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Clinochlore_Line%E3%80%91%E7%9B%AE%E7%99%BD%E9%98%BF%E7%88%BE%E4%B8%B9"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/dk095jodl57uei9fyuuwzq07s2f1zp7.png/100px-Chr_icon_1071.png",
+        "https://storage.moegirl.org.cn/moegirl/commons/6/60/UPDCH_MejiroArdan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210701041930"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/76/jsqweqp5e2ypvxzq75pq5h30henbv3g.png/100px-Chr_icon_1071_107102_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/76/jsqweqp5e2ypvxzq75pq5h30henbv3g.png/100px-Chr_icon_1071_107102_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/60/UPDCH_MejiroArdan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210701041930"
+      ],
+      "moegirl_detail": []
+    }
+  },
+  "extra": {
+    "introduction": "无常的、温柔的、想得很深的，高贵的深闺大小姐。 虽然出生时就有着“如同玻璃般纤细的脚”这种不利于比赛的体质，但并没有因此而悲观。 从小身体就很弱，不适应出去玩，对放学后的聊天内容感到非常新鲜。",
+    "intro_paragraphs": [
+      "无常的、温柔的、想得很深的，高贵的深闺大小姐。",
+      "虽然出生时就有着“如同玻璃般纤细的脚”这种不利于比赛的体质，但并没有因此而悲观。",
+      "从小身体就很弱，不适应出去玩，对放学后的聊天内容感到非常新鲜。"
+    ],
+    "quote_raw": "“所谓历史，就是随后来人喜欢来评述的东西——但是只有现在这个瞬间，是属于我的人生。”",
+    "weight_desc_raw": "秘密♪",
+    "bust_raw": "87",
+    "waist_raw": "56",
+    "hip_raw": "85"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "目白雅丹",
+      "character_id": "1071",
+      "birthday_raw": "3月28日",
+      "height_raw": "162",
+      "bust_raw": "87",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "31",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/dk095jodl57uei9fyuuwzq07s2f1zp7.png/100px-Chr_icon_1071.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0d/dk095jodl57uei9fyuuwzq07s2f1zp7.png/100px-Chr_icon_1071.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%9B%85%E4%B8%B9"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "目白阿尔丹",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%98%BF%E5%B0%94%E4%B8%B9",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "20%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "E",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%98%BF%E5%B0%94%E4%B8%B9",
+      "raw_name_zh": "目白阿尔丹",
+      "raw_name_jp": "メジロアルダン",
+      "nickname_raw": "クリノクロア・ライン",
+      "star_raw": "3",
+      "birthday_raw": "3月28日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "秘密♪",
+      "bust_raw": "87",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "cv_raw": "会泽纱弥",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦寮",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "E",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/76/jsqweqp5e2ypvxzq75pq5h30henbv3g.png/100px-Chr_icon_1071_107102_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E9%98%BF%E5%B0%94%E4%B8%B9"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Clinochlore_Line%E3%80%91%E7%9B%AE%E7%99%BD%E9%98%BF%E7%88%BE%E4%B8%B9",
+      "raw_name_zh": "目白阿尔丹",
+      "raw_name_jp": null,
+      "translated_name_raw": "目白阿爾丹",
+      "nickname_raw": "Clinochlore Line",
+      "page_title": "【Clinochlore Line】目白阿爾丹",
+      "page_title_aliases": [
+        "【Clinochlore Line】目白阿爾丹",
+        "目白阿爾丹",
+        "Clinochlore Line"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月28日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "祕密♪",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "会沢紗弥",
+      "introduction_raw": "虛幻卻閃亮耀眼。擁有玻璃細腳的千金",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/ac/7h6g69j2vtm5iokx5kuheatyykwdq69.png/100px-Chr_icon_1071_107101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/76/jsqweqp5e2ypvxzq75pq5h30henbv3g.png/100px-Chr_icon_1071_107102_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Clinochlore_Line%E3%80%91%E7%9B%AE%E7%99%BD%E9%98%BF%E7%88%BE%E4%B8%B9",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "E",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "D",
+      "nige_raw": "C",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "目白雅丹",
+      "raw_name_jp": "メジロアルダン",
+      "cv_raw": "会泽纱弥",
+      "birthday_raw": "3月28日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "秘密♪",
+      "bust_raw": "87",
+      "waist_raw": "56",
+      "hip_raw": "85",
+      "quote_raw": "“所谓历史，就是随后来人喜欢来评述的东西——但是只有现在这个瞬间，是属于我的人生。”",
+      "intro_paragraphs": [
+        "无常的、温柔的、想得很深的，高贵的深闺大小姐。",
+        "虽然出生时就有着“如同玻璃般纤细的脚”这种不利于比赛的体质，但并没有因此而悲观。",
+        "从小身体就很弱，不适应出去玩，对放学后的聊天内容感到非常新鲜。"
+      ],
+      "introduction": "无常的、温柔的、想得很深的，高贵的深闺大小姐。\n虽然出生时就有着“如同玻璃般纤细的脚”这种不利于比赛的体质，但并没有因此而悲观。\n从小身体就很弱，不适应出去玩，对放学后的聊天内容感到非常新鲜。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/60/UPDCH_MejiroArdan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210701041930",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/60/UPDCH_MejiroArdan_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210701041930"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E9%98%BF%E5%B0%94%E4%B8%B9",
+      "canonical_name_zh": "目白阿尔丹",
+      "aliases": [
+        "目白阿尔丹"
+      ]
+    },
+    "moegirl_detail": {}
+  }
+}

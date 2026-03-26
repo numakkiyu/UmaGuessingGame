@@ -1,0 +1,284 @@
+{
+  "id": "tsuintaabo",
+  "name_zh": "双涡轮",
+  "name_jp": "ツインターボ",
+  "aliases": [
+    "【暴衝！渦輪引擎】雙渦輪",
+    "雙渦輪",
+    "暴衝！渦輪引擎",
+    "师匠",
+    "两涡轮（Double Turbo）",
+    "两喷射（Double Jet）[1]",
+    "双涡轮",
+    "ツインターボ",
+    "爆走！ターボエンジン"
+  ],
+  "birthday": "04-13",
+  "birthday_day_of_year": 104,
+  "birthday_raw": "4月13日",
+  "height_cm": 146,
+  "height_raw": "146cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 1,
+  "star_raw": "1",
+  "cv": "花井美春",
+  "cv_raw": "花井美春",
+  "quote_raw": "“涡轮是最快的！来比赛吧！…来嘛？！”",
+  "introduction": "一直在全力奔跑的元气赛马娘，不断地挑战着自己的极限，并且享受着处于极限状态下的自我。 与同时代相比有着天真的性格，毫不羞于向别人传递自己的感情。 说的好听点是坦率，说的不好听是任性，但也是让人讨厌不起来的，捉摸不定的赛马娘。",
+  "intro_paragraphs": [
+    "一直在全力奔跑的元气赛马娘，不断地挑战着自己的极限，并且享受着处于极限状态下的自我。",
+    "与同时代相比有着天真的性格，毫不羞于向别人传递自己的感情。",
+    "说的好听点是坦率，说的不好听是任性，但也是让人讨厌不起来的，捉摸不定的赛马娘。"
+  ],
+  "weight_desc_raw": "無法測量",
+  "bust_raw": "72",
+  "waist_raw": "51",
+  "hip_raw": "74",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/nii27qlyu76oeeibdbw8aenu0u057ke.png/100px-Chr_icon_1066.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_TwinTurbo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407123053",
+    "https://storage.moegirl.org.cn/moegirl/commons/9/9a/PID91732227.jpg!/fw/280?v=20211124171949"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/nii27qlyu76oeeibdbw8aenu0u057ke.png/100px-Chr_icon_1066.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_TwinTurbo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407123053"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/9/9a/PID91732227.jpg!/fw/280?v=20211124171949",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_TwinTurbo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407123053"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%8F%8C%E6%B6%A1%E8%BD%AE",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E6%9A%B4%E8%A1%9D%EF%BC%81%E6%B8%A6%E8%BC%AA%E5%BC%95%E6%93%8E%E3%80%91%E9%9B%99%E6%B8%A6%E8%BC%AA",
+    "https://zh.moegirl.org.cn/%E5%8F%8C%E6%B6%A1%E8%BD%AE"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "F",
+    "sprint": "G",
+    "mile": "A",
+    "medium": "A",
+    "long": "E",
+    "nige": "A",
+    "senko": "G",
+    "sashi": "G",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "逃"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "双涡轮",
+      "character_id": "1066",
+      "birthday_raw": "4月13日",
+      "height_raw": "146",
+      "bust_raw": "72",
+      "waist_raw": "51",
+      "hip_raw": "74",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "21",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/nii27qlyu76oeeibdbw8aenu0u057ke.png/100px-Chr_icon_1066.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f3/nii27qlyu76oeeibdbw8aenu0u057ke.png/100px-Chr_icon_1066.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8F%8C%E6%B6%A1%E8%BD%AE"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "双涡轮",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8F%8C%E6%B6%A1%E8%BD%AE",
+      "star_raw": "1",
+      "speed_growth_raw": "30%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "G",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%8F%8C%E6%B6%A1%E8%BD%AE",
+      "raw_name_zh": "双涡轮",
+      "raw_name_jp": "ツインターボ",
+      "nickname_raw": "爆走！ターボエンジン",
+      "star_raw": "1",
+      "birthday_raw": "4月13日",
+      "height_raw": "146cm",
+      "weight_desc_raw": "无法测量",
+      "bust_raw": "72",
+      "waist_raw": "51",
+      "hip_raw": "74",
+      "cv_raw": "花井美春",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "G",
+      "sashi_raw": "G",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8F%8C%E6%B6%A1%E8%BD%AE"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%9A%B4%E8%A1%9D%EF%BC%81%E6%B8%A6%E8%BC%AA%E5%BC%95%E6%93%8E%E3%80%91%E9%9B%99%E6%B8%A6%E8%BC%AA",
+      "raw_name_zh": "双涡轮",
+      "raw_name_jp": null,
+      "translated_name_raw": "雙渦輪",
+      "nickname_raw": "暴衝！渦輪引擎",
+      "page_title": "【暴衝！渦輪引擎】雙渦輪",
+      "page_title_aliases": [
+        "【暴衝！渦輪引擎】雙渦輪",
+        "雙渦輪",
+        "暴衝！渦輪引擎"
+      ],
+      "star_raw": "1",
+      "birthday_raw": "4月13日",
+      "height_raw": "146cm",
+      "weight_desc_raw": "無法測量",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "花井美春",
+      "introduction_raw": "渦輪全開！沒有極限的暴衝賽馬娘！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/82/ikyhej9vn8dnv4ma9lpmgh1myp8av56.png/100px-Chr_icon_1066_106601_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%9A%B4%E8%A1%9D%EF%BC%81%E6%B8%A6%E8%BC%AA%E5%BC%95%E6%93%8E%E3%80%91%E9%9B%99%E6%B8%A6%E8%BC%AA",
+      "turf_raw": "A",
+      "dirt_raw": "F",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "A",
+      "senko_raw": "G",
+      "sashi_raw": "G",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "双涡轮",
+      "raw_name_jp": "ツインターボ",
+      "cv_raw": "花井美春",
+      "birthday_raw": "4月13日",
+      "height_raw": "146cm",
+      "weight_desc_raw": "无法测量",
+      "bust_raw": "72",
+      "waist_raw": "51",
+      "hip_raw": "74",
+      "quote_raw": "“涡轮是最快的！来比赛吧！…来嘛？！”",
+      "intro_paragraphs": [
+        "一直在全力奔跑的元气赛马娘，不断地挑战着自己的极限，并且享受着处于极限状态下的自我。",
+        "与同时代相比有着天真的性格，毫不羞于向别人传递自己的感情。",
+        "说的好听点是坦率，说的不好听是任性，但也是让人讨厌不起来的，捉摸不定的赛马娘。"
+      ],
+      "introduction": "一直在全力奔跑的元气赛马娘，不断地挑战着自己的极限，并且享受着处于极限状态下的自我。\n与同时代相比有着天真的性格，毫不羞于向别人传递自己的感情。\n说的好听点是坦率，说的不好听是任性，但也是让人讨厌不起来的，捉摸不定的赛马娘。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_TwinTurbo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407123053",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_TwinTurbo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407123053"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%8F%8C%E6%B6%A1%E8%BD%AE",
+      "canonical_name_zh": "双涡轮",
+      "aliases": [
+        "双涡轮"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%8F%8C%E6%B6%A1%E8%BD%AE",
+      "raw_name_zh": "双涡轮",
+      "page_title": "双涡轮",
+      "raw_name_jp": "ツインターボ",
+      "raw_name_en": null,
+      "aliases": [
+        "师匠",
+        "两涡轮（Double Turbo）",
+        "两喷射（Double Jet）[1]",
+        "双涡轮"
+      ],
+      "birthday_raw": "4月13日",
+      "height_raw": "146cm",
+      "weight_desc_raw": "无法测量",
+      "bust_raw": "72",
+      "waist_raw": "51",
+      "hip_raw": "74",
+      "cv_raw": "花井美春",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/9a/PID91732227.jpg!/fw/280?v=20211124171949",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9a/PID91732227.jpg!/fw/280?v=20211124171949",
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_TwinTurbo_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210407123053"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%8F%8C%E6%B6%A1%E8%BD%AE"
+    }
+  }
+}

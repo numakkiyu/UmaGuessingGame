@@ -1,0 +1,318 @@
+{
+  "id": "satonodaiyamondo",
+  "order": 67,
+  "file_name": "067_Satono_Diamond.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "里见光钻",
+    "zh_tw": null,
+    "jp": "サトノダイヤモンド",
+    "en": "Satono Diamond"
+  },
+  "aliases": [
+    "里见光钻",
+    "サトノダイヤモンド",
+    "Satono Diamond",
+    "【Natural Brilliance】里見光鑽",
+    "里見光鑽",
+    "Natural Brilliance",
+    "小光(钻)",
+    "钻哥/妹（ダイヤ）",
+    "芋头（サトイモ）"
+  ],
+  "profile": {
+    "birthday": "01-30",
+    "birthday_raw": "1月30日",
+    "birthday_day_of_year": 30,
+    "height_cm": 158,
+    "height_raw": "158cm",
+    "cv": "立花日菜",
+    "cv_raw": "立花日菜",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "D"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d3/qr1pj3d7yjfc9y807aaf8zmtvtlqokn.png/100px-Chr_icon_1067.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/kwlz268i2nz354jqi13crmv33l0pekg.png/100px-Chr_icon_1067_106702_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rxhi1kiixy7qlhy8j9zml6yhzzu284w.png/100px-Chr_icon_1067_106703_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_SatonoDiamond_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210807234026",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0c/SatonoDiamond_Pixiv94049911.jpg!/fw/280?v=20220508114436"
+    ],
+    "image_local_path": "/api/assets/satonodaiyamondo-thumb",
+    "asset_id": "satonodaiyamondo-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Natural_Brilliance%E3%80%91%E9%87%8C%E8%A6%8B%E5%85%89%E9%91%BD",
+      "https://zh.moegirl.org.cn/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d3/qr1pj3d7yjfc9y807aaf8zmtvtlqokn.png/100px-Chr_icon_1067.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/kwlz268i2nz354jqi13crmv33l0pekg.png/100px-Chr_icon_1067_106702_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rxhi1kiixy7qlhy8j9zml6yhzzu284w.png/100px-Chr_icon_1067_106703_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/kwlz268i2nz354jqi13crmv33l0pekg.png/100px-Chr_icon_1067_106702_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rxhi1kiixy7qlhy8j9zml6yhzzu284w.png/100px-Chr_icon_1067_106703_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_SatonoDiamond_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210807234026"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0c/SatonoDiamond_Pixiv94049911.jpg!/fw/280?v=20220508114436",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_SatonoDiamond_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210807234026"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "于某资产家里出生，在满满的宠爱下长大的掌上明珠赛马娘。 也因此有着不谙世事的一面。 在坦率，落落大方的大小姐外表下，隐藏着钻石级别的坚强的意志。为了打破厄运，实现家族的梦想，今天的她也在挑战着。",
+    "intro_paragraphs": [
+      "于某资产家里出生，在满满的宠爱下长大的掌上明珠赛马娘。",
+      "也因此有着不谙世事的一面。",
+      "在坦率，落落大方的大小姐外表下，隐藏着钻石级别的坚强的意志。为了打破厄运，实现家族的梦想，今天的她也在挑战着。"
+    ],
+    "quote_raw": "“正因为大家都相信着我的胜利，所以钻石才会如此闪耀动人！ ”",
+    "weight_desc_raw": "沒有增減吧？",
+    "bust_raw": "87",
+    "waist_raw": "54",
+    "hip_raw": "84"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "里见光钻",
+      "character_id": "1067",
+      "birthday_raw": "1月30日",
+      "height_raw": "158",
+      "bust_raw": "87",
+      "waist_raw": "54",
+      "hip_raw": "84",
+      "whr_raw": "0.64",
+      "bust_waist_diff_raw": "33",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d3/qr1pj3d7yjfc9y807aaf8zmtvtlqokn.png/100px-Chr_icon_1067.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d3/qr1pj3d7yjfc9y807aaf8zmtvtlqokn.png/100px-Chr_icon_1067.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "里见光钻",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "15%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "15%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB",
+      "raw_name_zh": "里见光钻",
+      "raw_name_jp": "サトノダイヤモンド",
+      "nickname_raw": "Natural Brilliance",
+      "star_raw": "3",
+      "birthday_raw": "1月30日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "没有增减呦？",
+      "bust_raw": "87",
+      "waist_raw": "54",
+      "hip_raw": "84",
+      "cv_raw": "立花日菜",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/kwlz268i2nz354jqi13crmv33l0pekg.png/100px-Chr_icon_1067_106702_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rxhi1kiixy7qlhy8j9zml6yhzzu284w.png/100px-Chr_icon_1067_106703_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Natural_Brilliance%E3%80%91%E9%87%8C%E8%A6%8B%E5%85%89%E9%91%BD",
+      "raw_name_zh": "里见光钻",
+      "raw_name_jp": null,
+      "translated_name_raw": "里見光鑽",
+      "nickname_raw": "Natural Brilliance",
+      "page_title": "【Natural Brilliance】里見光鑽",
+      "page_title_aliases": [
+        "【Natural Brilliance】里見光鑽",
+        "里見光鑽",
+        "Natural Brilliance"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "1月30日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "沒有增減吧？",
+      "bust_raw": "87",
+      "waist_raw": "54",
+      "hip_raw": "84",
+      "cv_raw": "立花日菜",
+      "introduction_raw": "內心的強度是鑽石等級！挑戰魔咒的大小姐",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f4/cqx7dfpkzks9zxgdwvrfo3y2vyfghbo.png/100px-Chr_icon_1067_106701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/36/kwlz268i2nz354jqi13crmv33l0pekg.png/100px-Chr_icon_1067_106702_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8f/rxhi1kiixy7qlhy8j9zml6yhzzu284w.png/100px-Chr_icon_1067_106703_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Natural_Brilliance%E3%80%91%E9%87%8C%E8%A6%8B%E5%85%89%E9%91%BD",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "里见光钻",
+      "raw_name_jp": "サトノダイヤモンド",
+      "cv_raw": "立花日菜",
+      "birthday_raw": "1月30日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "无增减哟？",
+      "bust_raw": "87",
+      "waist_raw": "54",
+      "hip_raw": "84",
+      "quote_raw": "“正因为大家都相信着我的胜利，所以钻石才会如此闪耀动人！ ”",
+      "intro_paragraphs": [
+        "于某资产家里出生，在满满的宠爱下长大的掌上明珠赛马娘。",
+        "也因此有着不谙世事的一面。",
+        "在坦率，落落大方的大小姐外表下，隐藏着钻石级别的坚强的意志。为了打破厄运，实现家族的梦想，今天的她也在挑战着。"
+      ],
+      "introduction": "于某资产家里出生，在满满的宠爱下长大的掌上明珠赛马娘。\n也因此有着不谙世事的一面。\n在坦率，落落大方的大小姐外表下，隐藏着钻石级别的坚强的意志。为了打破厄运，实现家族的梦想，今天的她也在挑战着。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_SatonoDiamond_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210807234026",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_SatonoDiamond_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210807234026"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB",
+      "canonical_name_zh": "里见光钻",
+      "aliases": [
+        "里见光钻"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB",
+      "raw_name_zh": "里见光钻",
+      "page_title": "里见光钻",
+      "raw_name_jp": "サトノダイヤモンド",
+      "raw_name_en": null,
+      "aliases": [
+        "小光(钻)",
+        "钻哥/妹（ダイヤ）",
+        "芋头（サトイモ）",
+        "里见光钻"
+      ],
+      "birthday_raw": "1月30日",
+      "height_raw": "158cm（动画第二季）135cm",
+      "weight_desc_raw": "无增减哟！（确信脸.jpg）",
+      "bust_raw": "87",
+      "waist_raw": "54",
+      "hip_raw": "84",
+      "cv_raw": "立花日菜",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0c/SatonoDiamond_Pixiv94049911.jpg!/fw/280?v=20220508114436",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0c/SatonoDiamond_Pixiv94049911.jpg!/fw/280?v=20220508114436",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/dc/UPDCH_SatonoDiamond_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210807234026"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%87%8C%E8%A7%81%E5%85%89%E9%92%BB"
+    }
+  }
+}

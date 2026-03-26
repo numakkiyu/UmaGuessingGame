@@ -1,0 +1,259 @@
+{
+  "id": "vyirushiina",
+  "order": 90,
+  "file_name": "090_Verxina.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "极峰",
+    "zh_tw": null,
+    "jp": "ヴィルシーナ",
+    "en": "Verxina"
+  },
+  "aliases": [
+    "极峰",
+    "ヴィルシーナ",
+    "Verxina",
+    "牝马怒涛",
+    "Le beau sommet"
+  ],
+  "profile": {
+    "birthday": "03-05",
+    "birthday_raw": "3月5日",
+    "birthday_day_of_year": 65,
+    "height_cm": 158,
+    "height_raw": "158cm",
+    "cv": "奥野香耶",
+    "cv_raw": "奥野香耶",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "D",
+      "mile": "A",
+      "medium": "A",
+      "long": "G",
+      "nige": "A",
+      "senko": "A",
+      "sashi": "E",
+      "oikomi": "G"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/ac8r7x340hfx8ogiosa3wraz9zzfqzz.png/100px-Chr_icon_1090.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/3/32/UPDCH_Verxina_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231115154735",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/4b/113646596_p0.png!/fw/280?v=20231222114053"
+    ],
+    "image_local_path": "/api/assets/vyirushiina-thumb",
+    "asset_id": "vyirushiina-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%9E%81%E5%B3%B0",
+      "https://zh.moegirl.org.cn/%E6%9E%81%E5%B3%B0"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/ac8r7x340hfx8ogiosa3wraz9zzfqzz.png/100px-Chr_icon_1090.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png"
+      ],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/32/UPDCH_Verxina_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231115154735"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/113646596_p0.png!/fw/280?v=20231222114053",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/32/UPDCH_Verxina_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231115154735"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "也是三姐妹中的大姐，努力成为妹妹们的好榜样。 在富裕家庭接受了高水平的教育，有着优秀的才能，但也是被「2」这个数字诅咒而无法战胜的苦劳人。",
+    "intro_paragraphs": [
+      "也是三姐妹中的大姐，努力成为妹妹们的好榜样。",
+      "在富裕家庭接受了高水平的教育，有着优秀的才能，但也是被「2」这个数字诅咒而无法战胜的苦劳人。"
+    ],
+    "quote_raw": "认为顶点的女王宝座才配得上自己的自负，拥有如此好胜心的大小姐。",
+    "weight_desc_raw": "精密",
+    "bust_raw": "83",
+    "waist_raw": "53",
+    "hip_raw": "78"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "极峰",
+      "character_id": "1090",
+      "birthday_raw": "3月5日",
+      "height_raw": "158",
+      "bust_raw": "83",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/ac8r7x340hfx8ogiosa3wraz9zzfqzz.png/100px-Chr_icon_1090.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/23/ac8r7x340hfx8ogiosa3wraz9zzfqzz.png/100px-Chr_icon_1090.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9E%81%E5%B3%B0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "极峰",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9E%81%E5%B3%B0",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "15%",
+      "grit_growth_raw": "15%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%9E%81%E5%B3%B0",
+      "raw_name_zh": "极峰",
+      "raw_name_jp": "ヴィルシーナ",
+      "nickname_raw": "Le beau sommet",
+      "star_raw": "3",
+      "birthday_raw": "3月5日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "精密",
+      "bust_raw": "83",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "cv_raw": "奥野香耶",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "E",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/1s9psxcfzv2lywbsf3pjypd7ij5hbk2.png/100px-Chr_icon_1090_109001_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9E%81%E5%B3%B0"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "极峰",
+      "raw_name_jp": "ヴィルシーナ",
+      "cv_raw": "奥野香耶",
+      "birthday_raw": "3月5日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "精密",
+      "bust_raw": "83",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "quote_raw": "认为顶点的女王宝座才配得上自己的自负，拥有如此好胜心的大小姐。",
+      "intro_paragraphs": [
+        "也是三姐妹中的大姐，努力成为妹妹们的好榜样。",
+        "在富裕家庭接受了高水平的教育，有着优秀的才能，但也是被「2」这个数字诅咒而无法战胜的苦劳人。"
+      ],
+      "introduction": "也是三姐妹中的大姐，努力成为妹妹们的好榜样。\n在富裕家庭接受了高水平的教育，有着优秀的才能，但也是被「2」这个数字诅咒而无法战胜的苦劳人。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/3/32/UPDCH_Verxina_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231115154735",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/3/32/UPDCH_Verxina_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231115154735"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%9E%81%E5%B3%B0",
+      "canonical_name_zh": "极峰",
+      "aliases": [
+        "极峰"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%9E%81%E5%B3%B0",
+      "raw_name_zh": "极峰",
+      "page_title": "极峰",
+      "raw_name_jp": "ヴィルシーナ",
+      "raw_name_en": null,
+      "aliases": [
+        "牝马怒涛",
+        "极峰"
+      ],
+      "birthday_raw": "3月5日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "精密",
+      "bust_raw": "83",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "cv_raw": "奥野香耶",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/4b/113646596_p0.png!/fw/280?v=20231222114053",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/4b/113646596_p0.png!/fw/280?v=20231222114053",
+        "https://storage.moegirl.org.cn/moegirl/commons/3/32/UPDCH_Verxina_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20231115154735"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%9E%81%E5%B3%B0"
+    }
+  }
+}

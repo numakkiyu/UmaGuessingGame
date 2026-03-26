@@ -1,0 +1,314 @@
+{
+  "id": "manhattankafye",
+  "order": 25,
+  "file_name": "025_Manhattan_Cafe.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "曼城茶座",
+    "zh_tw": null,
+    "jp": "マンハッタンカフェ",
+    "en": "Manhattan Cafe"
+  },
+  "aliases": [
+    "曼城茶座",
+    "マンハッタンカフェ",
+    "Manhattan Cafe",
+    "【Creeping Black】曼哈頓咖啡",
+    "曼哈頓咖啡",
+    "Creeping Black",
+    "漆黒の摩天楼",
+    "暗黑xcw",
+    "曼城插座[1]"
+  ],
+  "profile": {
+    "birthday": "03-05",
+    "birthday_raw": "3月5日",
+    "birthday_day_of_year": 65,
+    "height_cm": 155,
+    "height_raw": "155cm",
+    "cv": "小倉唯",
+    "cv_raw": "小倉唯",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "F",
+      "medium": "B",
+      "long": "A",
+      "nige": "G",
+      "senko": "C",
+      "sashi": "A",
+      "oikomi": "C"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/6e/iej4q9fn4se43bztvn9pqwx2r2pulwq.png/100px-Chr_icon_1025.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/p1s6ng0zblqp7too8tfksx5fdfpzmsx.png/100px-Chr_icon_1025_102502_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_ManhattanCafe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210723012744",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e8/DanbooruID_4873491.jpg!/fw/280?v=20211214095451"
+    ],
+    "image_local_path": "/api/assets/manhattankafye-thumb",
+    "asset_id": "manhattankafye-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Creeping_Black%E3%80%91%E6%9B%BC%E5%93%88%E9%A0%93%E5%92%96%E5%95%A1",
+      "https://zh.moegirl.org.cn/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6e/iej4q9fn4se43bztvn9pqwx2r2pulwq.png/100px-Chr_icon_1025.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/p1s6ng0zblqp7too8tfksx5fdfpzmsx.png/100px-Chr_icon_1025_102502_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/p1s6ng0zblqp7too8tfksx5fdfpzmsx.png/100px-Chr_icon_1025_102502_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_ManhattanCafe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210723012744"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e8/DanbooruID_4873491.jpg!/fw/280?v=20211214095451",
+        "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_ManhattanCafe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210723012744"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "存在感薄弱的神秘少女。 能看见常人看不见的事物，会用指尖描绘出奇妙的图案，总是孤身一人待在墙边。 但实际上她并不是一个人……似乎有“朋友”会一直和她在一起。 喜欢喝咖啡，不过一次喝太多会肚子痛，所以只能慢慢喝。",
+    "intro_paragraphs": [
+      "存在感薄弱的神秘少女。",
+      "能看见常人看不见的事物，会用指尖描绘出奇妙的图案，总是孤身一人待在墙边。",
+      "但实际上她并不是一个人……似乎有“朋友”会一直和她在一起。",
+      "喜欢喝咖啡，不过一次喝太多会肚子痛，所以只能慢慢喝。"
+    ],
+    "quote_raw": "“我……在这里。和你看不见的某人一起。”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "73",
+    "waist_raw": "54",
+    "hip_raw": "78"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "曼城茶座",
+      "character_id": "1025",
+      "birthday_raw": "3月5日",
+      "height_raw": "155",
+      "bust_raw": "73",
+      "waist_raw": "54",
+      "hip_raw": "78",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "19",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/6e/iej4q9fn4se43bztvn9pqwx2r2pulwq.png/100px-Chr_icon_1025.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/6e/iej4q9fn4se43bztvn9pqwx2r2pulwq.png/100px-Chr_icon_1025.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "曼城茶座",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "30%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "B",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7",
+      "raw_name_zh": "曼城茶座",
+      "raw_name_jp": "マンハッタンカフェ",
+      "nickname_raw": "Creeping Black",
+      "star_raw": "3",
+      "birthday_raw": "3月5日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "73",
+      "waist_raw": "54",
+      "hip_raw": "78",
+      "cv_raw": "小仓唯",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "B",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/p1s6ng0zblqp7too8tfksx5fdfpzmsx.png/100px-Chr_icon_1025_102502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Creeping_Black%E3%80%91%E6%9B%BC%E5%93%88%E9%A0%93%E5%92%96%E5%95%A1",
+      "raw_name_zh": "曼城茶座",
+      "raw_name_jp": null,
+      "translated_name_raw": "曼哈頓咖啡",
+      "nickname_raw": "Creeping Black",
+      "page_title": "【Creeping Black】曼哈頓咖啡",
+      "page_title_aliases": [
+        "【Creeping Black】曼哈頓咖啡",
+        "曼哈頓咖啡",
+        "Creeping Black"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月5日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "小倉唯",
+      "introduction_raw": "追逐著看不見的身影而奔跑的神秘少女",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/qfqhxw60oxmp0mgzewb19awwpwumv13.png/100px-Chr_icon_1025_102501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0b/p1s6ng0zblqp7too8tfksx5fdfpzmsx.png/100px-Chr_icon_1025_102502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Creeping_Black%E3%80%91%E6%9B%BC%E5%93%88%E9%A0%93%E5%92%96%E5%95%A1",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "F",
+      "medium_raw": "B",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "C",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "曼城茶座",
+      "raw_name_jp": "マンハッタンカフェ",
+      "cv_raw": "小仓唯",
+      "birthday_raw": "3月5日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "73",
+      "waist_raw": "54",
+      "hip_raw": "78",
+      "quote_raw": "“我……在这里。和你看不见的某人一起。”",
+      "intro_paragraphs": [
+        "存在感薄弱的神秘少女。",
+        "能看见常人看不见的事物，会用指尖描绘出奇妙的图案，总是孤身一人待在墙边。",
+        "但实际上她并不是一个人……似乎有“朋友”会一直和她在一起。",
+        "喜欢喝咖啡，不过一次喝太多会肚子痛，所以只能慢慢喝。"
+      ],
+      "introduction": "存在感薄弱的神秘少女。\n能看见常人看不见的事物，会用指尖描绘出奇妙的图案，总是孤身一人待在墙边。\n但实际上她并不是一个人……似乎有“朋友”会一直和她在一起。\n喜欢喝咖啡，不过一次喝太多会肚子痛，所以只能慢慢喝。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_ManhattanCafe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210723012744",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_ManhattanCafe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210723012744"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7",
+      "canonical_name_zh": "曼城茶座",
+      "aliases": [
+        "曼城茶座"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7",
+      "raw_name_zh": "曼城茶座",
+      "page_title": "曼城茶座",
+      "raw_name_jp": "マンハッタンカフェ",
+      "raw_name_en": null,
+      "aliases": [
+        "漆黒の摩天楼",
+        "暗黑xcw",
+        "曼城插座[1]",
+        "曼城茶座"
+      ],
+      "birthday_raw": "3月5日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "73",
+      "waist_raw": "54",
+      "hip_raw": "78",
+      "cv_raw": "小仓唯",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e8/DanbooruID_4873491.jpg!/fw/280?v=20211214095451",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e8/DanbooruID_4873491.jpg!/fw/280?v=20211214095451",
+        "https://storage.moegirl.org.cn/moegirl/commons/9/90/UPDCH_ManhattanCafe_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210723012744"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%9B%BC%E5%9F%8E%E8%8C%B6%E5%BA%A7"
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "id": "rainkurafuto",
+  "name_zh": "莱茵力量",
+  "name_jp": "ラインクラフト",
+  "aliases": [
+    "【Dream Successor】萊茵實力",
+    "萊茵實力",
+    "Dream Successor",
+    "莱茵力量",
+    "ラインクラフト"
+  ],
+  "birthday": "04-04",
+  "birthday_day_of_year": 95,
+  "birthday_raw": "4月4日",
+  "height_cm": 157,
+  "height_raw": "157cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "小島菜々恵",
+  "cv_raw": "小島菜々恵",
+  "quote_raw": "她是一个爱晒太阳、开朗愉快的赛马娘。",
+  "introduction": "对于三冠王冠军有着非凡的憧憬和热情，她努力工作，希望自己也能成为那条道路上的继承者。 虽然固执和行动力也很强，但平时她温和悠闲，让周围的人感到温暖舒适。",
+  "intro_paragraphs": [
+    "对于三冠王冠军有着非凡的憧憬和热情，她努力工作，希望自己也能成为那条道路上的继承者。",
+    "虽然固执和行动力也很强，但平时她温和悠闲，让周围的人感到温暖舒适。"
+  ],
+  "weight_desc_raw": "溫柔暖心",
+  "bust_raw": "85",
+  "waist_raw": "55",
+  "hip_raw": "83",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/frt47osxu96nxijm51ca74zplnr6vh6.png/100px-Chr_icon_1109.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/9z3bwyccbo0u5r47c947chhc3n97tno.png/100px-Chr_icon_1109_110902_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/d/d7/UPDCH_RheinKraft_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019",
+    "https://storage.moegirl.org.cn/moegirl/commons/f/f0/117173289_p0.jpg!/fw/280?v=20240324041907"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/frt47osxu96nxijm51ca74zplnr6vh6.png/100px-Chr_icon_1109.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/9z3bwyccbo0u5r47c947chhc3n97tno.png/100px-Chr_icon_1109_110902_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d7/UPDCH_RheinKraft_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f0/117173289_p0.jpg!/fw/280?v=20240324041907",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d7/UPDCH_RheinKraft_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Dream_Successor%E3%80%91%E8%90%8A%E8%8C%B5%E5%AF%A6%E5%8A%9B",
+    "https://zh.moegirl.org.cn/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "A",
+    "mile": "A",
+    "medium": "B",
+    "long": "G",
+    "nige": "E",
+    "senko": "A",
+    "sashi": "C",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "短",
+    "英"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "莱茵力量",
+      "character_id": "1109",
+      "birthday_raw": "4月4日",
+      "height_raw": "157",
+      "bust_raw": "85",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/frt47osxu96nxijm51ca74zplnr6vh6.png/100px-Chr_icon_1109.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/frt47osxu96nxijm51ca74zplnr6vh6.png/100px-Chr_icon_1109.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "莱茵力量",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "15%",
+      "grit_growth_raw": "15%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F",
+      "raw_name_zh": "莱茵力量",
+      "raw_name_jp": "ラインクラフト",
+      "nickname_raw": "Dream Successor",
+      "star_raw": "3",
+      "birthday_raw": "4月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "放松的",
+      "bust_raw": "85",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "cv_raw": "小岛菜菜惠",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fa/9z3bwyccbo0u5r47c947chhc3n97tno.png/100px-Chr_icon_1109_110902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Dream_Successor%E3%80%91%E8%90%8A%E8%8C%B5%E5%AF%A6%E5%8A%9B",
+      "raw_name_zh": "莱茵力量",
+      "raw_name_jp": null,
+      "translated_name_raw": "萊茵實力",
+      "nickname_raw": "Dream Successor",
+      "page_title": "【Dream Successor】萊茵實力",
+      "page_title_aliases": [
+        "【Dream Successor】萊茵實力",
+        "萊茵實力",
+        "Dream Successor"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "溫柔暖心",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "小島菜々恵",
+      "introduction_raw": "奔向光明的未來！將后冠視為夢想的陽光賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/83q4gk6uw2f80if4rea7mcmf98eb8dl.png/100px-Chr_icon_1109_110901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Dream_Successor%E3%80%91%E8%90%8A%E8%8C%B5%E5%AF%A6%E5%8A%9B",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "莱茵力量",
+      "raw_name_jp": "ラインクラフト",
+      "cv_raw": "小岛菜菜惠",
+      "birthday_raw": "4月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "放松的",
+      "bust_raw": "85",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "quote_raw": "她是一个爱晒太阳、开朗愉快的赛马娘。",
+      "intro_paragraphs": [
+        "对于三冠王冠军有着非凡的憧憬和热情，她努力工作，希望自己也能成为那条道路上的继承者。",
+        "虽然固执和行动力也很强，但平时她温和悠闲，让周围的人感到温暖舒适。"
+      ],
+      "introduction": "对于三冠王冠军有着非凡的憧憬和热情，她努力工作，希望自己也能成为那条道路上的继承者。\n虽然固执和行动力也很强，但平时她温和悠闲，让周围的人感到温暖舒适。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d7/UPDCH_RheinKraft_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d7/UPDCH_RheinKraft_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F",
+      "canonical_name_zh": "莱茵力量",
+      "aliases": [
+        "莱茵力量"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F",
+      "raw_name_zh": "莱茵力量",
+      "page_title": "莱茵力量",
+      "raw_name_jp": "ラインクラフト",
+      "raw_name_en": null,
+      "aliases": [
+        "莱茵力量"
+      ],
+      "birthday_raw": "4月4日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "放松的",
+      "bust_raw": "85",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "cv_raw": "小岛菜菜惠",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/f0/117173289_p0.jpg!/fw/280?v=20240324041907",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f0/117173289_p0.jpg!/fw/280?v=20240324041907",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d7/UPDCH_RheinKraft_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240204180019"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8E%B1%E8%8C%B5%E5%8A%9B%E9%87%8F"
+    }
+  }
+}

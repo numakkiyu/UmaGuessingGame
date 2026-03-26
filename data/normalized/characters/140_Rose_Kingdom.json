@@ -1,0 +1,215 @@
+{
+  "id": "roozukingudamu",
+  "order": 140,
+  "file_name": "140_Rose_Kingdom.json",
+  "release_status": "unreleased",
+  "names": {
+    "zh_cn": "玫瑰帝国",
+    "zh_tw": null,
+    "jp": "ローズキングダム",
+    "en": "Rose Kingdom"
+  },
+  "aliases": [
+    "玫瑰帝国",
+    "ローズキングダム",
+    "Rose Kingdom"
+  ],
+  "profile": {
+    "birthday": "05-10",
+    "birthday_raw": "5月10日",
+    "birthday_day_of_year": 131,
+    "height_cm": 155,
+    "height_raw": "155",
+    "cv": "菊池友莉菜",
+    "cv_raw": "菊池友莉菜",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": null,
+    "distance_group": null,
+    "running_style_group": null,
+    "aptitudes": {
+      "turf": null,
+      "dirt": null,
+      "sprint": null,
+      "mile": null,
+      "medium": null,
+      "long": null,
+      "nige": null,
+      "senko": null,
+      "sashi": null,
+      "oikomi": null
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/4oftlvbmphioe23ywcnigmw937b84ut.png/100px-Chr_icon_1144.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/4oftlvbmphioe23ywcnigmw937b84ut.png/100px-Chr_icon_1144.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141820",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/280?v=20260222141820"
+    ],
+    "image_local_path": "/api/assets/roozukingudamu-thumb",
+    "asset_id": "roozukingudamu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%8E%AB%E7%91%B0%E5%B8%9D%E5%9B%BD",
+      "https://zh.moegirl.org.cn/%E7%8E%AB%E7%91%B0%E5%B8%9D%E5%9B%BD"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/4oftlvbmphioe23ywcnigmw937b84ut.png/100px-Chr_icon_1144.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141820"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/280?v=20260222141820",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141820"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "她以自己的奔跑，引导一族在赛界的地位超越单纯的名门，成为率领一族的『王』——这是她所背负的使命。 因为过于高贵，对世俗之事略显疏离。",
+    "intro_paragraphs": [
+      "她以自己的奔跑，引导一族在赛界的地位超越单纯的名门，成为率领一族的『王』——这是她所背负的使命。",
+      "因为过于高贵，对世俗之事略显疏离。"
+    ],
+    "quote_raw": "出生于名门『蔷薇一族』，接受了与该地位相称的英才教育的高贵赛马娘。",
+    "weight_desc_raw": "高贵的完美状态",
+    "bust_raw": "74",
+    "waist_raw": "54",
+    "hip_raw": "77"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "玫瑰帝国",
+      "character_id": "1144",
+      "birthday_raw": "5月10日",
+      "height_raw": "155",
+      "bust_raw": "74",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "20",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/4oftlvbmphioe23ywcnigmw937b84ut.png/100px-Chr_icon_1144.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c2/4oftlvbmphioe23ywcnigmw937b84ut.png/100px-Chr_icon_1144.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%8E%AB%E7%91%B0%E5%B8%9D%E5%9B%BD"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%8E%AB%E7%91%B0%E5%B8%9D%E5%9B%BD",
+      "raw_name_zh": "玫瑰帝国",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%8E%AB%E7%91%B0%E5%B8%9D%E5%9B%BD"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "玫瑰帝国",
+      "raw_name_jp": "ローズキングダム",
+      "cv_raw": "菊池友莉菜",
+      "birthday_raw": "5月10日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "高贵的完美状态",
+      "bust_raw": "74",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "quote_raw": "出生于名门『蔷薇一族』，接受了与该地位相称的英才教育的高贵赛马娘。",
+      "intro_paragraphs": [
+        "她以自己的奔跑，引导一族在赛界的地位超越单纯的名门，成为率领一族的『王』——这是她所背负的使命。",
+        "因为过于高贵，对世俗之事略显疏离。"
+      ],
+      "introduction": "她以自己的奔跑，引导一族在赛界的地位超越单纯的名门，成为率领一族的『王』——这是她所背负的使命。\n因为过于高贵，对世俗之事略显疏离。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141820",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141820"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%8E%AB%E7%91%B0%E5%B8%9D%E5%9B%BD",
+      "canonical_name_zh": "玫瑰帝国",
+      "aliases": [
+        "玫瑰帝国"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%8E%AB%E7%91%B0%E5%B8%9D%E5%9B%BD",
+      "raw_name_zh": "玫瑰帝国",
+      "page_title": "玫瑰帝国",
+      "raw_name_jp": "ローズキングダム",
+      "raw_name_en": null,
+      "aliases": [
+        "玫瑰帝国"
+      ],
+      "birthday_raw": "5月10日",
+      "height_raw": "155cm",
+      "weight_desc_raw": "高贵的完美状态",
+      "bust_raw": "74",
+      "waist_raw": "54",
+      "hip_raw": "77",
+      "cv_raw": "菊池友莉菜",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/280?v=20260222141820",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/280?v=20260222141820",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/ad/UPDCH_RoseKingdom_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141820"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%8E%AB%E7%91%B0%E5%B8%9D%E5%9B%BD"
+    }
+  }
+}

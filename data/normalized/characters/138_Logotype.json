@@ -1,0 +1,212 @@
+{
+  "id": "rogotaipu",
+  "order": 138,
+  "file_name": "138_Logotype.json",
+  "release_status": "unreleased",
+  "names": {
+    "zh_cn": "标志名驹",
+    "zh_tw": null,
+    "jp": "ロゴタイプ",
+    "en": "Logotype"
+  },
+  "aliases": [
+    "标志名驹",
+    "ロゴタイプ",
+    "Logotype"
+  ],
+  "profile": {
+    "birthday": "03-10",
+    "birthday_raw": "3月10日",
+    "birthday_day_of_year": 70,
+    "height_cm": 160,
+    "height_raw": "160",
+    "cv": "高桥美空",
+    "cv_raw": "高桥美空",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": null,
+    "distance_group": null,
+    "running_style_group": null,
+    "aptitudes": {
+      "turf": null,
+      "dirt": null,
+      "sprint": null,
+      "mile": null,
+      "medium": null,
+      "long": null,
+      "nige": null,
+      "senko": null,
+      "sashi": null,
+      "oikomi": null
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/lkorwcl9npp15vxug7udobk9cvnki2g.png/100px-Chr_icon_1142.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/lkorwcl9npp15vxug7udobk9cvnki2g.png/100px-Chr_icon_1142.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/2/21/UPDCH_Logotype_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140807"
+    ],
+    "image_local_path": "/api/assets/rogotaipu-thumb",
+    "asset_id": "rogotaipu-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%A0%87%E5%BF%97%E5%90%8D%E9%A9%B9",
+      "https://zh.moegirl.org.cn/index.php?title=%E6%A0%87%E5%BF%97%E5%90%8D%E9%A9%B9&action=edit&redlink=1"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/lkorwcl9npp15vxug7udobk9cvnki2g.png/100px-Chr_icon_1142.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/21/UPDCH_Logotype_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140807"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/21/UPDCH_Logotype_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140807"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "深爱着家业以及各种『古旧之物』，每天都在努力保护它们。 开始参加比赛的契机，是她觉得如果自己作为『看板娘』获得世人的关注，就能让店铺平安无事。",
+    "intro_paragraphs": [
+      "深爱着家业以及各种『古旧之物』，每天都在努力保护它们。",
+      "开始参加比赛的契机，是她觉得如果自己作为『看板娘』获得世人的关注，就能让店铺平安无事。"
+    ],
+    "quote_raw": "性格温和而稳重，是继承了老店手绘招牌屋的赛马娘。",
+    "weight_desc_raw": "坚韧不拔的推进",
+    "bust_raw": "83",
+    "waist_raw": "56",
+    "hip_raw": "84"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "标志名驹",
+      "character_id": "1142",
+      "birthday_raw": "3月10日",
+      "height_raw": "160",
+      "bust_raw": "83",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/lkorwcl9npp15vxug7udobk9cvnki2g.png/100px-Chr_icon_1142.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fb/lkorwcl9npp15vxug7udobk9cvnki2g.png/100px-Chr_icon_1142.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A0%87%E5%BF%97%E5%90%8D%E9%A9%B9"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%A0%87%E5%BF%97%E5%90%8D%E9%A9%B9",
+      "raw_name_zh": "标志名驹",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A0%87%E5%BF%97%E5%90%8D%E9%A9%B9"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "标志名驹",
+      "raw_name_jp": "ロゴタイプ",
+      "cv_raw": "高桥美空",
+      "birthday_raw": "3月10日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "坚韧不拔的推进",
+      "bust_raw": "83",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "quote_raw": "性格温和而稳重，是继承了老店手绘招牌屋的赛马娘。",
+      "intro_paragraphs": [
+        "深爱着家业以及各种『古旧之物』，每天都在努力保护它们。",
+        "开始参加比赛的契机，是她觉得如果自己作为『看板娘』获得世人的关注，就能让店铺平安无事。"
+      ],
+      "introduction": "深爱着家业以及各种『古旧之物』，每天都在努力保护它们。\n开始参加比赛的契机，是她觉得如果自己作为『看板娘』获得世人的关注，就能让店铺平安无事。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/21/UPDCH_Logotype_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140807",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/21/UPDCH_Logotype_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140807"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E6%A0%87%E5%BF%97%E5%90%8D%E9%A9%B9&action=edit&redlink=1",
+      "canonical_name_zh": "标志名驹",
+      "aliases": [
+        "标志名驹"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/index.php?title=%E6%A0%87%E5%BF%97%E5%90%8D%E9%A9%B9&action=edit&redlink=1",
+      "raw_name_zh": "标志名驹",
+      "page_title": "萌娘认证系统",
+      "raw_name_jp": "ロゴタイプ",
+      "raw_name_en": null,
+      "aliases": [
+        "标志名驹"
+      ],
+      "birthday_raw": "3月10日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "坚韧不拔的推进",
+      "bust_raw": "83",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "cv_raw": "高桥美空",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/2/21/UPDCH_Logotype_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140807",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/2/21/UPDCH_Logotype_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222140807"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/index.php?title=%E6%A0%87%E5%BF%97%E5%90%8D%E9%A9%B9&action=edit&redlink=1"
+    }
+  }
+}

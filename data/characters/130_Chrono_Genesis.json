@@ -1,0 +1,239 @@
+{
+  "id": "kuronojeneshisu",
+  "name_zh": "创世驹",
+  "name_jp": "クロノジェネシス",
+  "aliases": [
+    "阿创",
+    "创姐姐",
+    "小创",
+    "笔者C[1]",
+    "创世驹",
+    "クロノジェネシス",
+    "陸離の編纂者"
+  ],
+  "birthday": "03-06",
+  "birthday_day_of_year": 66,
+  "birthday_raw": "3月6日",
+  "height_cm": 152,
+  "height_raw": "152cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "真名瀬日和",
+  "cv_raw": "真名瀬日和",
+  "quote_raw": "性格内向的、喜爱历史的赛马娘。",
+  "introduction": "在历史中尤其钟爱『赛马史』——那些由众多赛马娘与训练师们的『梦想』交织而成的热血传奇。 因太过热爱，她每次都会认真预测比赛结果，甚至每周扛着巨大的相机前往赛马场。",
+  "intro_paragraphs": [
+    "在历史中尤其钟爱『赛马史』——那些由众多赛马娘与训练师们的『梦想』交织而成的热血传奇。",
+    "因太过热爱，她每次都会认真预测比赛结果，甚至每周扛着巨大的相机前往赛马场。"
+  ],
+  "weight_desc_raw": "歴史的",
+  "bust_raw": "77",
+  "waist_raw": "54",
+  "hip_raw": "76",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/1kyw3y8z1nrf6m0gcqgqrlr4l683j0s.png/100px-Chr_icon_1133.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/c6/UPDCH_ChronoGenesis_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/c2/ChronoGenesis.png!/fw/280?v=20250612103243"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/1kyw3y8z1nrf6m0gcqgqrlr4l683j0s.png/100px-Chr_icon_1133.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c6/UPDCH_ChronoGenesis_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c2/ChronoGenesis.png!/fw/280?v=20250612103243",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c6/UPDCH_ChronoGenesis_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%88%9B%E4%B8%96%E9%A9%B9",
+    "https://zh.moegirl.org.cn/%E5%88%9B%E4%B8%96%E9%A9%B9"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "B",
+    "medium": "A",
+    "long": "A",
+    "nige": "G",
+    "senko": "A",
+    "sashi": "C",
+    "oikomi": "E"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "先"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "创世驹",
+      "character_id": "1133",
+      "birthday_raw": "3月6日",
+      "height_raw": "152",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "whr_raw": "0.71",
+      "bust_waist_diff_raw": "23",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/1kyw3y8z1nrf6m0gcqgqrlr4l683j0s.png/100px-Chr_icon_1133.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ea/1kyw3y8z1nrf6m0gcqgqrlr4l683j0s.png/100px-Chr_icon_1133.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%88%9B%E4%B8%96%E9%A9%B9"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "创世驹",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%88%9B%E4%B8%96%E9%A9%B9",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%88%9B%E4%B8%96%E9%A9%B9",
+      "raw_name_zh": "创世驹",
+      "raw_name_jp": "クロノジェネシス",
+      "nickname_raw": "陸離の編纂者",
+      "star_raw": "3",
+      "birthday_raw": "3月6日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "歴史的",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "cv_raw": "真名瀬日和",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "C",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/qgu5laxrz29lfrf9u6zygo0k4g142ov.png/100px-Chr_icon_1133_113301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%88%9B%E4%B8%96%E9%A9%B9"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "创世驹",
+      "raw_name_jp": "クロノジェネシス",
+      "cv_raw": "真名濑日和",
+      "birthday_raw": "3月6日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "从历史中可得",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "quote_raw": "性格内向的、喜爱历史的赛马娘。",
+      "intro_paragraphs": [
+        "在历史中尤其钟爱『赛马史』——那些由众多赛马娘与训练师们的『梦想』交织而成的热血传奇。",
+        "因太过热爱，她每次都会认真预测比赛结果，甚至每周扛着巨大的相机前往赛马场。"
+      ],
+      "introduction": "在历史中尤其钟爱『赛马史』——那些由众多赛马娘与训练师们的『梦想』交织而成的热血传奇。\n因太过热爱，她每次都会认真预测比赛结果，甚至每周扛着巨大的相机前往赛马场。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c6/UPDCH_ChronoGenesis_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c6/UPDCH_ChronoGenesis_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%88%9B%E4%B8%96%E9%A9%B9",
+      "canonical_name_zh": "创世驹",
+      "aliases": [
+        "创世驹"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%88%9B%E4%B8%96%E9%A9%B9",
+      "raw_name_zh": "创世驹",
+      "page_title": "创世驹",
+      "raw_name_jp": "クロノジェネシス",
+      "raw_name_en": null,
+      "aliases": [
+        "阿创",
+        "创姐姐",
+        "小创",
+        "笔者C[1]",
+        "创世驹"
+      ],
+      "birthday_raw": "3月6日",
+      "height_raw": "152cm",
+      "weight_desc_raw": "历史的",
+      "bust_raw": "77",
+      "waist_raw": "54",
+      "hip_raw": "76",
+      "cv_raw": "真名濑日和",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c2/ChronoGenesis.png!/fw/280?v=20250612103243",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c2/ChronoGenesis.png!/fw/280?v=20250612103243",
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c6/UPDCH_ChronoGenesis_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%88%9B%E4%B8%96%E9%A9%B9"
+    }
+  }
+}

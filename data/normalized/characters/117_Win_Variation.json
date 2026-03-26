@@ -1,0 +1,241 @@
+{
+  "id": "uinbariashion",
+  "order": 117,
+  "file_name": "117_Win_Variation.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "凱旋芭蕾",
+    "zh_tw": null,
+    "jp": "ウインバリアシオン",
+    "en": "Win Variation"
+  },
+  "aliases": [
+    "凱旋芭蕾",
+    "ウインバリアシオン",
+    "Win Variation",
+    "凯旋芭蕾",
+    "【戲夢芭蕾裙】凱旋芭蕾",
+    "戲夢芭蕾裙"
+  ],
+  "profile": {
+    "birthday": "04-10",
+    "birthday_raw": "4月10日",
+    "birthday_day_of_year": 101,
+    "height_cm": 159,
+    "height_raw": "159",
+    "cv": "月城日花",
+    "cv_raw": "月城日花",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "E",
+      "sashi": "A",
+      "oikomi": "A"
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/5v14wg41kpgq6vo1yla1mfr1gbxbld4.png/100px-Chr_icon_1117.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/5v14wg41kpgq6vo1yla1mfr1gbxbld4.png/100px-Chr_icon_1117.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/5e/UPDCH_WinVariation_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d4/0smdzkoa2w627zust8z0jjh3mjmm44q.png/100px-Chr_icon_1117_111701_01.png"
+    ],
+    "image_local_path": "/api/assets/uinbariashion-thumb",
+    "asset_id": "uinbariashion-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物",
+      "繁中服角色详情页"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%87%B1%E6%97%8B%E8%8A%AD%E8%95%BE",
+      "https://zh.moegirl.org.cn/%E5%87%AF%E6%97%8B%E8%8A%AD%E8%95%BE",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E6%88%B2%E5%A4%A2%E8%8A%AD%E8%95%BE%E8%A3%99%E3%80%91%E5%87%B1%E6%97%8B%E8%8A%AD%E8%95%BE"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/5v14wg41kpgq6vo1yla1mfr1gbxbld4.png/100px-Chr_icon_1117.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d4/0smdzkoa2w627zust8z0jjh3mjmm44q.png/100px-Chr_icon_1117_111701_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/5e/UPDCH_WinVariation_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+      ],
+      "moegirl_detail": []
+    }
+  },
+  "extra": {
+    "introduction": "虽然有想要获得胜利的强烈心情，但如果失败的话，也会像普通人一样失落。 但是，即使遇到挫折也一定会站起来的。 让故事闪耀的主角……以中央C位为目标，每天都在不懈努力。",
+    "intro_paragraphs": [
+      "虽然有想要获得胜利的强烈心情，但如果失败的话，也会像普通人一样失落。",
+      "但是，即使遇到挫折也一定会站起来的。",
+      "让故事闪耀的主角……以中央C位为目标，每天都在不懈努力。"
+    ],
+    "quote_raw": "健康而一心一意的毅力赛马娘。",
+    "weight_desc_raw": "增量中",
+    "bust_raw": "76",
+    "waist_raw": "55",
+    "hip_raw": "80"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "凱旋芭蕾",
+      "character_id": "1117",
+      "birthday_raw": "4月10日",
+      "height_raw": "159",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "21",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/5v14wg41kpgq6vo1yla1mfr1gbxbld4.png/100px-Chr_icon_1117.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/5v14wg41kpgq6vo1yla1mfr1gbxbld4.png/100px-Chr_icon_1117.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%87%B1%E6%97%8B%E8%8A%AD%E8%95%BE"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%87%B1%E6%97%8B%E8%8A%AD%E8%95%BE",
+      "raw_name_zh": "凱旋芭蕾",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%87%B1%E6%97%8B%E8%8A%AD%E8%95%BE"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%88%B2%E5%A4%A2%E8%8A%AD%E8%95%BE%E8%A3%99%E3%80%91%E5%87%B1%E6%97%8B%E8%8A%AD%E8%95%BE",
+      "raw_name_zh": "凱旋芭蕾",
+      "raw_name_jp": null,
+      "translated_name_raw": "凱旋芭蕾",
+      "nickname_raw": "戲夢芭蕾裙",
+      "page_title": "【戲夢芭蕾裙】凱旋芭蕾",
+      "page_title_aliases": [
+        "【戲夢芭蕾裙】凱旋芭蕾",
+        "凱旋芭蕾",
+        "戲夢芭蕾裙"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月10日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "增重中",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "月城日花",
+      "introduction_raw": "百折不撓，無論落敗幾次內心都絕不屈服！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/39/5v14wg41kpgq6vo1yla1mfr1gbxbld4.png/100px-Chr_icon_1117.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d4/0smdzkoa2w627zust8z0jjh3mjmm44q.png/100px-Chr_icon_1117_111701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E6%88%B2%E5%A4%A2%E8%8A%AD%E8%95%BE%E8%A3%99%E3%80%91%E5%87%B1%E6%97%8B%E8%8A%AD%E8%95%BE",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "E",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "凱旋芭蕾",
+      "raw_name_jp": "ウインバリアシオン",
+      "cv_raw": "月城日花",
+      "birthday_raw": "4月10日",
+      "height_raw": "159cm",
+      "weight_desc_raw": "增量中",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "健康而一心一意的毅力赛马娘。",
+      "intro_paragraphs": [
+        "虽然有想要获得胜利的强烈心情，但如果失败的话，也会像普通人一样失落。",
+        "但是，即使遇到挫折也一定会站起来的。",
+        "让故事闪耀的主角……以中央C位为目标，每天都在不懈努力。"
+      ],
+      "introduction": "虽然有想要获得胜利的强烈心情，但如果失败的话，也会像普通人一样失落。\n但是，即使遇到挫折也一定会站起来的。\n让故事闪耀的主角……以中央C位为目标，每天都在不懈努力。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/5e/UPDCH_WinVariation_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/5e/UPDCH_WinVariation_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%87%AF%E6%97%8B%E8%8A%AD%E8%95%BE",
+      "canonical_name_zh": "凯旋芭蕾",
+      "aliases": [
+        "凯旋芭蕾"
+      ]
+    },
+    "moegirl_detail": {}
+  }
+}

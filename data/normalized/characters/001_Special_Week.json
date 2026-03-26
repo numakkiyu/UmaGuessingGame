@@ -1,0 +1,326 @@
+{
+  "id": "supesharuuiiku",
+  "order": 1,
+  "file_name": "001_Special_Week.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "特别周",
+    "zh_tw": "特別週",
+    "jp": "スペシャルウィーク",
+    "en": "Special Week"
+  },
+  "aliases": [
+    "特别周",
+    "特別週",
+    "スペシャルウィーク",
+    "Special Week",
+    "【特別夢想家】特別週",
+    "特別夢想家",
+    "小特",
+    "斯佩酱（スペちゃん）",
+    "萝卜特",
+    "日本总大将（日本の総大将）",
+    "特别◯",
+    "スペシャルドリーマー"
+  ],
+  "profile": {
+    "birthday": "05-02",
+    "birthday_raw": "5月2日",
+    "birthday_day_of_year": 123,
+    "height_cm": 158,
+    "height_raw": "158㎝",
+    "cv": "和氣あず未",
+    "cv_raw": "和氣あず未",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "C"
+    },
+    "g1_bracket": "3-4",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/4zp3sgf37zkkkguq2fcvu5r012edxaz.png/100px-Chr_icon_1001.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/43/nvacdylxdyc7napxc2rxgtk2mp9x1q7.png/100px-Chr_icon_1001_100102_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/1p3i4r1cmy5f2f6u66jfva4424400wo.png/100px-Chr_icon_1001_100103_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_SpecialWeek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051622",
+      "https://storage.moegirl.org.cn/moegirl/commons/1/19/PID91574236.jpg!/fw/280?v=20211217152851"
+    ],
+    "image_local_path": "/api/assets/supesharuuiiku-thumb",
+    "asset_id": "supesharuuiiku-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%89%B9%E5%88%AB%E5%91%A8",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%89%B9%E5%88%A5%E5%A4%A2%E6%83%B3%E5%AE%B6%E3%80%91%E7%89%B9%E5%88%A5%E9%80%B1",
+      "https://zh.moegirl.org.cn/%E7%89%B9%E5%88%AB%E5%91%A8"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/4zp3sgf37zkkkguq2fcvu5r012edxaz.png/100px-Chr_icon_1001.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/43/nvacdylxdyc7napxc2rxgtk2mp9x1q7.png/100px-Chr_icon_1001_100102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/1p3i4r1cmy5f2f6u66jfva4424400wo.png/100px-Chr_icon_1001_100103_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/43/nvacdylxdyc7napxc2rxgtk2mp9x1q7.png/100px-Chr_icon_1001_100102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/1p3i4r1cmy5f2f6u66jfva4424400wo.png/100px-Chr_icon_1001_100103_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_SpecialWeek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051622"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/19/PID91574236.jpg!/fw/280?v=20211217152851",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_SpecialWeek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051622"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "在北海道出生的，率直的阳光的努力家。 生母在她出生后不久便去世，将她托付给了作为朋友的人类女性。 “成为日本第一的赛马娘”是与两位母亲发过誓的约定。 虽然会在憧憬和消沉中反复，但会用天生的毅力向着梦想奔跑。",
+    "intro_paragraphs": [
+      "在北海道出生的，率直的阳光的努力家。",
+      "生母在她出生后不久便去世，将她托付给了作为朋友的人类女性。",
+      "“成为日本第一的赛马娘”是与两位母亲发过誓的约定。",
+      "虽然会在憧憬和消沉中反复，但会用天生的毅力向着梦想奔跑。"
+    ],
+    "quote_raw": "“妈妈们，你们看好了！我会成为日本第一的赛马娘！”",
+    "weight_desc_raw": "微減（競賽前略顯緊張）",
+    "bust_raw": "81",
+    "waist_raw": "56",
+    "hip_raw": "81"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "特别周",
+      "character_id": "1001",
+      "birthday_raw": "5月2日",
+      "height_raw": "158",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "81",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/4zp3sgf37zkkkguq2fcvu5r012edxaz.png/100px-Chr_icon_1001.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/4zp3sgf37zkkkguq2fcvu5r012edxaz.png/100px-Chr_icon_1001.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%89%B9%E5%88%AB%E5%91%A8"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "特别周",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%89%B9%E5%88%AB%E5%91%A8",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "20%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%89%B9%E5%88%AB%E5%91%A8",
+      "raw_name_zh": "特别周",
+      "raw_name_jp": "スペシャルウィーク",
+      "nickname_raw": "スペシャルドリーマー",
+      "star_raw": "3",
+      "birthday_raw": "5月2日",
+      "height_raw": "158㎝",
+      "weight_desc_raw": "微减（比赛前有点紧张）",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "81",
+      "cv_raw": "和气杏未",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/43/nvacdylxdyc7napxc2rxgtk2mp9x1q7.png/100px-Chr_icon_1001_100102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/1p3i4r1cmy5f2f6u66jfva4424400wo.png/100px-Chr_icon_1001_100103_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%89%B9%E5%88%AB%E5%91%A8"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%89%B9%E5%88%A5%E5%A4%A2%E6%83%B3%E5%AE%B6%E3%80%91%E7%89%B9%E5%88%A5%E9%80%B1",
+      "raw_name_zh": "特别周",
+      "raw_name_jp": null,
+      "translated_name_raw": "特別週",
+      "nickname_raw": "特別夢想家",
+      "page_title": "【特別夢想家】特別週",
+      "page_title_aliases": [
+        "【特別夢想家】特別週",
+        "特別週",
+        "特別夢想家"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月2日",
+      "height_raw": "158㎝",
+      "weight_desc_raw": "微減（競賽前略顯緊張）",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "81",
+      "cv_raw": "和氣あず未",
+      "introduction_raw": "好好加油唄～！朝夢想一路猛衝的單純北海道女孩",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/38/48av6cwfvk6b2c3anpnxlh29410sel3.png/100px-Chr_icon_1001_100101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/43/nvacdylxdyc7napxc2rxgtk2mp9x1q7.png/100px-Chr_icon_1001_100102_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/52/1p3i4r1cmy5f2f6u66jfva4424400wo.png/100px-Chr_icon_1001_100103_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%89%B9%E5%88%A5%E5%A4%A2%E6%83%B3%E5%AE%B6%E3%80%91%E7%89%B9%E5%88%A5%E9%80%B1",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "特别周",
+      "raw_name_jp": "スペシャルウィーク",
+      "cv_raw": "和气杏未",
+      "birthday_raw": "5月2日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "微减（比赛前容易紧张）",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "81",
+      "quote_raw": "“妈妈们，你们看好了！我会成为日本第一的赛马娘！”",
+      "intro_paragraphs": [
+        "在北海道出生的，率直的阳光的努力家。",
+        "生母在她出生后不久便去世，将她托付给了作为朋友的人类女性。",
+        "“成为日本第一的赛马娘”是与两位母亲发过誓的约定。",
+        "虽然会在憧憬和消沉中反复，但会用天生的毅力向着梦想奔跑。"
+      ],
+      "introduction": "在北海道出生的，率直的阳光的努力家。\n生母在她出生后不久便去世，将她托付给了作为朋友的人类女性。\n“成为日本第一的赛马娘”是与两位母亲发过誓的约定。\n虽然会在憧憬和消沉中反复，但会用天生的毅力向着梦想奔跑。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_SpecialWeek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051622",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_SpecialWeek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051622"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%89%B9%E5%88%AB%E5%91%A8",
+      "canonical_name_zh": "特别周",
+      "aliases": [
+        "特别周"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%89%B9%E5%88%AB%E5%91%A8",
+      "raw_name_zh": "特别周",
+      "page_title": "特别周",
+      "raw_name_jp": "スペシャルウィーク",
+      "raw_name_en": null,
+      "aliases": [
+        "小特",
+        "斯佩酱（スペちゃん）",
+        "萝卜特",
+        "日本总大将（日本の総大将）",
+        "特别◯",
+        "特别周"
+      ],
+      "birthday_raw": "5月2日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "微减（比赛前容易紧张）",
+      "bust_raw": "81",
+      "waist_raw": "56",
+      "hip_raw": "81",
+      "cv_raw": "和气杏未",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/19/PID91574236.jpg!/fw/280?v=20211217152851",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/19/PID91574236.jpg!/fw/280?v=20211217152851",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d0/UPDCH_SpecialWeek_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207051622"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%89%B9%E5%88%AB%E5%91%A8"
+    }
+  }
+}

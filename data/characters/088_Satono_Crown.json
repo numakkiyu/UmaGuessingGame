@@ -1,0 +1,282 @@
+{
+  "id": "satonokuraun",
+  "name_zh": "里见皇冠",
+  "name_jp": "サトノクラウン",
+  "aliases": [
+    "【黑翠千里行】里見皇冠",
+    "里見皇冠",
+    "黑翠千里行",
+    "クラちゃん",
+    "里见皇冠",
+    "サトノクラウン",
+    "黒翠千里行"
+  ],
+  "birthday": "03-10",
+  "birthday_day_of_year": 70,
+  "birthday_raw": "3月10日",
+  "height_cm": 163,
+  "height_raw": "163cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "鈴代紗弓",
+  "cv_raw": "鈴代紗弓",
+  "quote_raw": "同时在香港和日本活动着的，开朗好胜的姐姐系赛马娘。",
+  "introduction": "她也是背负着里见家期待的实力者之一。 有着越是陷入困境斗志就会越熊熊燃烧的气质，有时也会像变魔术一般以及其巧妙的方式解决事情。 爱称是“皇冠酱”。",
+  "intro_paragraphs": [
+    "她也是背负着里见家期待的实力者之一。",
+    "有着越是陷入困境斗志就会越熊熊燃烧的气质，有时也会像变魔术一般以及其巧妙的方式解决事情。",
+    "爱称是“皇冠酱”。"
+  ],
+  "weight_desc_raw": "這是祕密喔",
+  "bust_raw": "82",
+  "waist_raw": "53",
+  "hip_raw": "81",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/m01nwnlursczwdwxesdjyoxnn4o7nrc.png/100px-Chr_icon_1088.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/6/68/dzqmmw58gazskpssgvrb24uv47lh3ux.png/100px-Chr_icon_1088_108802_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/1/14/UPDCH_SatonoCrown_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755",
+    "https://storage.moegirl.org.cn/moegirl/commons/a/a9/107025199_p0.png!/fw/280?v=20230913162817"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/m01nwnlursczwdwxesdjyoxnn4o7nrc.png/100px-Chr_icon_1088.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/68/dzqmmw58gazskpssgvrb24uv47lh3ux.png/100px-Chr_icon_1088_108802_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/1/14/UPDCH_SatonoCrown_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a9/107025199_p0.png!/fw/280?v=20230913162817",
+      "https://storage.moegirl.org.cn/moegirl/commons/1/14/UPDCH_SatonoCrown_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%91%E7%BF%A0%E5%8D%83%E9%87%8C%E8%A1%8C%E3%80%91%E9%87%8C%E8%A6%8B%E7%9A%87%E5%86%A0",
+    "https://zh.moegirl.org.cn/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "B",
+    "medium": "A",
+    "long": "E",
+    "nige": "G",
+    "senko": "B",
+    "sashi": "A",
+    "oikomi": "D"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "里见皇冠",
+      "character_id": "1088",
+      "birthday_raw": "3月10日",
+      "height_raw": "163",
+      "bust_raw": "82",
+      "waist_raw": "53",
+      "hip_raw": "81",
+      "whr_raw": "0.65",
+      "bust_waist_diff_raw": "29",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/m01nwnlursczwdwxesdjyoxnn4o7nrc.png/100px-Chr_icon_1088.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/cf/m01nwnlursczwdwxesdjyoxnn4o7nrc.png/100px-Chr_icon_1088.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "里见皇冠",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "15%",
+      "grit_growth_raw": "15%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0",
+      "raw_name_zh": "里见皇冠",
+      "raw_name_jp": "サトノクラウン",
+      "nickname_raw": "黒翠千里行",
+      "star_raw": "3",
+      "birthday_raw": "3月10日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "秘密",
+      "bust_raw": "82",
+      "waist_raw": "53",
+      "hip_raw": "81",
+      "cv_raw": "铃代纱弓",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/68/dzqmmw58gazskpssgvrb24uv47lh3ux.png/100px-Chr_icon_1088_108802_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%91%E7%BF%A0%E5%8D%83%E9%87%8C%E8%A1%8C%E3%80%91%E9%87%8C%E8%A6%8B%E7%9A%87%E5%86%A0",
+      "raw_name_zh": "里见皇冠",
+      "raw_name_jp": null,
+      "translated_name_raw": "里見皇冠",
+      "nickname_raw": "黑翠千里行",
+      "page_title": "【黑翠千里行】里見皇冠",
+      "page_title_aliases": [
+        "【黑翠千里行】里見皇冠",
+        "里見皇冠",
+        "黑翠千里行"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月10日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "這是祕密喔",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "鈴代紗弓",
+      "introduction_raw": "草地奇術師！可靠的菁英大姐姐",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/f6/nhjfux683q7i29l113tmhjy42n60hqo.png/100px-Chr_icon_1088_108801_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E9%BB%91%E7%BF%A0%E5%8D%83%E9%87%8C%E8%A1%8C%E3%80%91%E9%87%8C%E8%A6%8B%E7%9A%87%E5%86%A0",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "E",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "里见皇冠",
+      "raw_name_jp": "サトノクラウン",
+      "cv_raw": "铃代纱弓",
+      "birthday_raw": "3月10日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "秘密",
+      "bust_raw": "82",
+      "waist_raw": "53",
+      "hip_raw": "81",
+      "quote_raw": "同时在香港和日本活动着的，开朗好胜的姐姐系赛马娘。",
+      "intro_paragraphs": [
+        "她也是背负着里见家期待的实力者之一。",
+        "有着越是陷入困境斗志就会越熊熊燃烧的气质，有时也会像变魔术一般以及其巧妙的方式解决事情。",
+        "爱称是“皇冠酱”。"
+      ],
+      "introduction": "她也是背负着里见家期待的实力者之一。\n有着越是陷入困境斗志就会越熊熊燃烧的气质，有时也会像变魔术一般以及其巧妙的方式解决事情。\n爱称是“皇冠酱”。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/1/14/UPDCH_SatonoCrown_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/1/14/UPDCH_SatonoCrown_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0",
+      "canonical_name_zh": "里见皇冠",
+      "aliases": [
+        "里见皇冠"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0",
+      "raw_name_zh": "里见皇冠",
+      "page_title": "里见皇冠",
+      "raw_name_jp": "サトノクラウン",
+      "raw_name_en": null,
+      "aliases": [
+        "クラちゃん",
+        "里见皇冠"
+      ],
+      "birthday_raw": "3月10日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "秘密",
+      "bust_raw": "82",
+      "waist_raw": "53",
+      "hip_raw": "81",
+      "cv_raw": "铃代纱弓",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a9/107025199_p0.png!/fw/280?v=20230913162817",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a9/107025199_p0.png!/fw/280?v=20230913162817",
+        "https://storage.moegirl.org.cn/moegirl/commons/1/14/UPDCH_SatonoCrown_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20221106142755"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%87%8C%E8%A7%81%E7%9A%87%E5%86%A0"
+    }
+  }
+}

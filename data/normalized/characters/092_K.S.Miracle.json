@@ -1,0 +1,302 @@
+{
+  "id": "keiesumirakuru",
+  "order": 92,
+  "file_name": "092_K.S.Miracle.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "凯斯奇迹",
+    "zh_tw": null,
+    "jp": "ケイエスミラクル",
+    "en": "K.S.Miracle"
+  },
+  "aliases": [
+    "凯斯奇迹",
+    "ケイエスミラクル",
+    "K.S.Miracle",
+    "【Prism】喜嘉奇蹟",
+    "喜嘉奇蹟",
+    "Prism"
+  ],
+  "profile": {
+    "birthday": "03-16",
+    "birthday_raw": "3月16日",
+    "birthday_day_of_year": 76,
+    "height_cm": 156,
+    "height_raw": "156cm",
+    "cv": "佐藤日向",
+    "cv_raw": "佐藤日向",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "A",
+      "mile": "B",
+      "medium": "G",
+      "long": "G",
+      "nige": "E",
+      "senko": "A",
+      "sashi": "B",
+      "oikomi": "C"
+    },
+    "g1_bracket": "0",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/86/qswfsoqqklv0wt6tr8e7f513gd2te5r.png/100px-Chr_icon_1093.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/n5yep8ybk25esf3i4g32pq37u3nr9mn.png/100px-Chr_icon_1093_109302_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_KSMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133823",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d9/101455712_p0.jpg!/fw/280?v=20230130193745"
+    ],
+    "image_local_path": "/api/assets/keiesumirakuru-thumb",
+    "asset_id": "keiesumirakuru-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Prism%E3%80%91%E5%96%9C%E5%98%89%E5%A5%87%E8%B9%9F",
+      "https://zh.moegirl.org.cn/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/86/qswfsoqqklv0wt6tr8e7f513gd2te5r.png/100px-Chr_icon_1093.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/n5yep8ybk25esf3i4g32pq37u3nr9mn.png/100px-Chr_icon_1093_109302_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_KSMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133823"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d9/101455712_p0.jpg!/fw/280?v=20230130193745",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_KSMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133823"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "或许是曾二度徘徊于生死线却“奇迹般”地保住性命的缘故，“想报答帮助过自己的人”的信念十分强烈。 正因如此，她每天都抱着字面意义上的“赌上自己的全部”的觉悟而奔跑着。",
+    "intro_paragraphs": [
+      "或许是曾二度徘徊于生死线却“奇迹般”地保住性命的缘故，“想报答帮助过自己的人”的信念十分强烈。",
+      "正因如此，她每天都抱着字面意义上的“赌上自己的全部”的觉悟而奔跑着。"
+    ],
+    "quote_raw": "给人一种温和爽朗气质的温柔赛马娘。",
+    "weight_desc_raw": "苗條",
+    "bust_raw": "79",
+    "waist_raw": "51",
+    "hip_raw": "77"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "凯斯奇迹",
+      "character_id": "1093",
+      "birthday_raw": "3月16日",
+      "height_raw": "156",
+      "bust_raw": "79",
+      "waist_raw": "51",
+      "hip_raw": "77",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "28",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/86/qswfsoqqklv0wt6tr8e7f513gd2te5r.png/100px-Chr_icon_1093.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/86/qswfsoqqklv0wt6tr8e7f513gd2te5r.png/100px-Chr_icon_1093.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "凯斯奇迹",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9",
+      "star_raw": "3",
+      "speed_growth_raw": "15%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "15%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9",
+      "raw_name_zh": "凯斯奇迹",
+      "raw_name_jp": "ケイエスミラクル",
+      "nickname_raw": "Prism",
+      "star_raw": "3",
+      "birthday_raw": "3月16日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "苗条",
+      "bust_raw": "79",
+      "waist_raw": "51",
+      "hip_raw": "77",
+      "cv_raw": "佐藤日向",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/21/n5yep8ybk25esf3i4g32pq37u3nr9mn.png/100px-Chr_icon_1093_109302_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Prism%E3%80%91%E5%96%9C%E5%98%89%E5%A5%87%E8%B9%9F",
+      "raw_name_zh": "凯斯奇迹",
+      "raw_name_jp": null,
+      "translated_name_raw": "喜嘉奇蹟",
+      "nickname_raw": "Prism",
+      "page_title": "【Prism】喜嘉奇蹟",
+      "page_title_aliases": [
+        "【Prism】喜嘉奇蹟",
+        "喜嘉奇蹟",
+        "Prism"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月16日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "苗條",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "佐藤日向",
+      "introduction_raw": "為表感謝而獻上奇蹟。溫柔又穩重的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/88/1ssa5cwaua1hubjj9rpiusr2u9z2h95.png/100px-Chr_icon_1093_109301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Prism%E3%80%91%E5%96%9C%E5%98%89%E5%A5%87%E8%B9%9F",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "A",
+      "sashi_raw": "B",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "凯斯奇迹",
+      "raw_name_jp": "ケイエスミラクル",
+      "cv_raw": "佐藤日向",
+      "birthday_raw": "3月16日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "轻",
+      "bust_raw": "79",
+      "waist_raw": "51",
+      "hip_raw": "77",
+      "quote_raw": "给人一种温和爽朗气质的温柔赛马娘。",
+      "intro_paragraphs": [
+        "或许是曾二度徘徊于生死线却“奇迹般”地保住性命的缘故，“想报答帮助过自己的人”的信念十分强烈。",
+        "正因如此，她每天都抱着字面意义上的“赌上自己的全部”的觉悟而奔跑着。"
+      ],
+      "introduction": "或许是曾二度徘徊于生死线却“奇迹般”地保住性命的缘故，“想报答帮助过自己的人”的信念十分强烈。\n正因如此，她每天都抱着字面意义上的“赌上自己的全部”的觉悟而奔跑着。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_KSMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133823",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_KSMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133823"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9",
+      "canonical_name_zh": "凯斯奇迹",
+      "aliases": [
+        "凯斯奇迹"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9",
+      "raw_name_zh": "凯斯奇迹",
+      "page_title": "凯斯奇迹",
+      "raw_name_jp": "ケイエスミラクル",
+      "raw_name_en": null,
+      "aliases": [
+        "凯斯奇迹"
+      ],
+      "birthday_raw": "3月16日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "轻",
+      "bust_raw": "79",
+      "waist_raw": "51",
+      "hip_raw": "77",
+      "cv_raw": "佐藤日向",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d9/101455712_p0.jpg!/fw/280?v=20230130193745",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d9/101455712_p0.jpg!/fw/280?v=20230130193745",
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/UPDCH_KSMiracle_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133823"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%87%AF%E6%96%AF%E5%A5%87%E8%BF%B9"
+    }
+  }
+}

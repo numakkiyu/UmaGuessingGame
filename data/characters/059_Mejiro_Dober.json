@@ -1,0 +1,286 @@
+{
+  "id": "mejirodooberu",
+  "name_zh": "目白多伯",
+  "name_jp": "メジロドーベル",
+  "aliases": [
+    "【Twisted Line】目白多伯",
+    "目白多伯",
+    "Twisted Line",
+    "どぼめじろう[1]",
+    "メジロドーベル",
+    "ツイステッド・ライン"
+  ],
+  "birthday": "05-06",
+  "birthday_day_of_year": 127,
+  "birthday_raw": "5月6日",
+  "height_cm": 157,
+  "height_raw": "157cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "久保田ひかり",
+  "cv_raw": "久保田ひかり",
+  "quote_raw": "“你可以不用介意我。只是……我不太习惯这样。”",
+  "introduction": "感到不自信的酷美人。 不擅长应对他人的目光，尤其是在男性面前会感到十分紧张。 生在社交技能为必备品的目白家，居室却在宅内相当靠里的位置上，是个离群的大小姐。 有传言说，似乎对于熟悉的人态度上不会像看起来那样冷酷。",
+  "intro_paragraphs": [
+    "感到不自信的酷美人。",
+    "不擅长应对他人的目光，尤其是在男性面前会感到十分紧张。",
+    "生在社交技能为必备品的目白家，居室却在宅内相当靠里的位置上，是个离群的大小姐。",
+    "有传言说，似乎对于熟悉的人态度上不会像看起来那样冷酷。"
+  ],
+  "weight_desc_raw": "無增減",
+  "bust_raw": "83",
+  "waist_raw": "57",
+  "hip_raw": "81",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/3l9sdfoxm0javblmgy5oduz3o13obt4.png/100px-Chr_icon_1059.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/3/3b/2y7pxahbv3imoo5pgpt0zczo8mdh5gi.png/100px-Chr_icon_1059_105902_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_MejiroDober_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044749",
+    "https://storage.moegirl.org.cn/moegirl/commons/f/f8/PID94235999.jpg!/fw/280?v=20211121135015"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/3l9sdfoxm0javblmgy5oduz3o13obt4.png/100px-Chr_icon_1059.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3b/2y7pxahbv3imoo5pgpt0zczo8mdh5gi.png/100px-Chr_icon_1059_105902_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3b/2y7pxahbv3imoo5pgpt0zczo8mdh5gi.png/100px-Chr_icon_1059_105902_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_MejiroDober_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044749"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f8/PID94235999.jpg!/fw/280?v=20211121135015",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_MejiroDober_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044749"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF",
+    "https://wiki.biligame.com/umamusume/%E3%80%90Twisted_Line%E3%80%91%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF",
+    "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "E",
+    "mile": "A",
+    "medium": "A",
+    "long": "F",
+    "nige": "C",
+    "senko": "B",
+    "sashi": "A",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "目白多伯",
+      "character_id": "1059",
+      "birthday_raw": "5月6日",
+      "height_raw": "157",
+      "bust_raw": "83",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "26",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/3l9sdfoxm0javblmgy5oduz3o13obt4.png/100px-Chr_icon_1059.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/58/3l9sdfoxm0javblmgy5oduz3o13obt4.png/100px-Chr_icon_1059.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "目白多伯",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "20%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "C",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF",
+      "raw_name_zh": "目白多伯",
+      "raw_name_jp": "メジロドーベル",
+      "nickname_raw": "ツイステッド・ライン",
+      "star_raw": "3",
+      "birthday_raw": "5月6日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "83",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "cv_raw": "久保田光",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "C",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3b/2y7pxahbv3imoo5pgpt0zczo8mdh5gi.png/100px-Chr_icon_1059_105902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Twisted_Line%E3%80%91%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF",
+      "raw_name_zh": "目白多伯",
+      "raw_name_jp": null,
+      "translated_name_raw": "目白多伯",
+      "nickname_raw": "Twisted Line",
+      "page_title": "【Twisted Line】目白多伯",
+      "page_title_aliases": [
+        "【Twisted Line】目白多伯",
+        "目白多伯",
+        "Twisted Line"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月6日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "久保田ひかり",
+      "introduction_raw": "想要改變！背負過去傷口奔跑的大小姐",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d5/99ni3yb0tiro2hflxez8jb017tmtv8b.png/100px-Chr_icon_1059_105901_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3b/2y7pxahbv3imoo5pgpt0zczo8mdh5gi.png/100px-Chr_icon_1059_105902_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Twisted_Line%E3%80%91%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "E",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "C",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "目白多伯",
+      "raw_name_jp": "メジロドーベル",
+      "cv_raw": "久保田光",
+      "birthday_raw": "5月6日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "83",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "quote_raw": "“你可以不用介意我。只是……我不太习惯这样。”",
+      "intro_paragraphs": [
+        "感到不自信的酷美人。",
+        "不擅长应对他人的目光，尤其是在男性面前会感到十分紧张。",
+        "生在社交技能为必备品的目白家，居室却在宅内相当靠里的位置上，是个离群的大小姐。",
+        "有传言说，似乎对于熟悉的人态度上不会像看起来那样冷酷。"
+      ],
+      "introduction": "感到不自信的酷美人。\n不擅长应对他人的目光，尤其是在男性面前会感到十分紧张。\n生在社交技能为必备品的目白家，居室却在宅内相当靠里的位置上，是个离群的大小姐。\n有传言说，似乎对于熟悉的人态度上不会像看起来那样冷酷。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_MejiroDober_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044749",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_MejiroDober_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044749"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF",
+      "canonical_name_zh": "目白多伯",
+      "aliases": [
+        "目白多伯"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF",
+      "raw_name_zh": "目白多伯",
+      "page_title": "目白多伯",
+      "raw_name_jp": "メジロドーベル",
+      "raw_name_en": null,
+      "aliases": [
+        "どぼめじろう[1]",
+        "目白多伯"
+      ],
+      "birthday_raw": "5月6日",
+      "height_raw": "157cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "83",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "cv_raw": "久保田光",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/f8/PID94235999.jpg!/fw/280?v=20211121135015",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f8/PID94235999.jpg!/fw/280?v=20211121135015",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/74/UPDCH_MejiroDober_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207044749"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%9B%AE%E7%99%BD%E5%A4%9A%E4%BC%AF"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.git
+.next
+node_modules
+npm-debug.log
+coverage
+dist
+drizzle
+tmp-umaguessinggame
+public/assets/characters/thumbnails/*
+!public/assets/characters/thumbnails/.gitkeep
+public/assets/characters/portraits/*
+!public/assets/characters/portraits/.gitkeep

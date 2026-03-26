@@ -1,0 +1,217 @@
+{
+  "id": "kiseki",
+  "order": 134,
+  "file_name": "134_Kiseki.json",
+  "release_status": "unreleased",
+  "names": {
+    "zh_cn": "神业",
+    "zh_tw": null,
+    "jp": "キセキ",
+    "en": "Kiseki"
+  },
+  "aliases": [
+    "神业",
+    "キセキ",
+    "Kiseki",
+    "丰也丰"
+  ],
+  "profile": {
+    "birthday": "05-13",
+    "birthday_raw": "5月13日",
+    "birthday_day_of_year": 134,
+    "height_cm": 166,
+    "height_raw": "166",
+    "cv": "星希成奏",
+    "cv_raw": "星希成奏",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": null,
+    "distance_group": null,
+    "running_style_group": null,
+    "aptitudes": {
+      "turf": null,
+      "dirt": null,
+      "sprint": null,
+      "mile": null,
+      "medium": null,
+      "long": null,
+      "nige": null,
+      "senko": null,
+      "sashi": null,
+      "oikomi": null
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/jtuyix87imwruz6rtyj4oozf42u6lxx.png/100px-Chr_icon_1137.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/jtuyix87imwruz6rtyj4oozf42u6lxx.png/100px-Chr_icon_1137.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251225075936",
+      "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/280?v=20251225075936"
+    ],
+    "image_local_path": "/api/assets/kiseki-thumb",
+    "asset_id": "kiseki-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%A5%9E%E4%B8%9A",
+      "https://zh.moegirl.org.cn/%E7%A5%9E%E4%B8%9A"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/jtuyix87imwruz6rtyj4oozf42u6lxx.png/100px-Chr_icon_1137.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251225075936"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/280?v=20251225075936",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251225075936"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "每天在自己的房间里画着新作的草稿，梦想着自己的脚也能像漫画一样创造出令人心跳加速的比赛。 比起一日三餐，更爱好有趣创作的她的目标是——成为“主人公”。",
+    "intro_paragraphs": [
+      "每天在自己的房间里画着新作的草稿，梦想着自己的脚也能像漫画一样创造出令人心跳加速的比赛。",
+      "比起一日三餐，更爱好有趣创作的她的目标是——成为“主人公”。"
+    ],
+    "quote_raw": "热爱阅读和画漫画的，拥有创作者气质的赛马娘。",
+    "weight_desc_raw": "广受好评调整中！",
+    "bust_raw": "86",
+    "waist_raw": "56",
+    "hip_raw": "84"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "神业",
+      "character_id": "1137",
+      "birthday_raw": "5月13日",
+      "height_raw": "166",
+      "bust_raw": "86",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/jtuyix87imwruz6rtyj4oozf42u6lxx.png/100px-Chr_icon_1137.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/2f/jtuyix87imwruz6rtyj4oozf42u6lxx.png/100px-Chr_icon_1137.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E4%B8%9A"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E4%B8%9A",
+      "raw_name_zh": "神业",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%A5%9E%E4%B8%9A"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "神业",
+      "raw_name_jp": "キセキ",
+      "cv_raw": "星希成奏",
+      "birthday_raw": "5月13日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "广受好评调整中！",
+      "bust_raw": "86",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "quote_raw": "热爱阅读和画漫画的，拥有创作者气质的赛马娘。",
+      "intro_paragraphs": [
+        "每天在自己的房间里画着新作的草稿，梦想着自己的脚也能像漫画一样创造出令人心跳加速的比赛。",
+        "比起一日三餐，更爱好有趣创作的她的目标是——成为“主人公”。"
+      ],
+      "introduction": "每天在自己的房间里画着新作的草稿，梦想着自己的脚也能像漫画一样创造出令人心跳加速的比赛。\n比起一日三餐，更爱好有趣创作的她的目标是——成为“主人公”。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251225075936",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251225075936"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E4%B8%9A",
+      "canonical_name_zh": "神业",
+      "aliases": [
+        "神业"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E4%B8%9A",
+      "raw_name_zh": "神业",
+      "page_title": "神业",
+      "raw_name_jp": "キセキ",
+      "raw_name_en": null,
+      "aliases": [
+        "丰也丰",
+        "神业"
+      ],
+      "birthday_raw": "5月13日",
+      "height_raw": "166cm",
+      "weight_desc_raw": "广受好评调整中！",
+      "bust_raw": "86",
+      "waist_raw": "56",
+      "hip_raw": "84",
+      "cv_raw": "星希成奏",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/280?v=20251225075936",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/280?v=20251225075936",
+        "https://storage.moegirl.org.cn/moegirl/commons/7/75/UPDCH_Kiseki_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20251225075936"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%A5%9E%E4%B8%9A"
+    }
+  }
+}

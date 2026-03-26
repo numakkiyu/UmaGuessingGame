@@ -1,0 +1,293 @@
+{
+  "id": "hishiamazon",
+  "name_zh": "菱亚马逊",
+  "name_jp": "ヒシアマゾン",
+  "aliases": [
+    "【亞馬遜青金石】菱亞馬遜",
+    "菱亞馬遜",
+    "亞馬遜青金石",
+    "亚马逊（アマゾン）",
+    "女杰",
+    "大姐头（ウマアネゴ）",
+    "假面骑士亚马逊",
+    "菱亚马逊",
+    "ヒシアマゾン",
+    "アマゾネス・ラピス"
+  ],
+  "birthday": "03-26",
+  "birthday_day_of_year": 86,
+  "birthday_raw": "3月26日",
+  "height_cm": 160,
+  "height_raw": "160cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "美浦宿舍",
+  "dorm_raw": "美浦宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "巽悠衣子",
+  "cv_raw": "巽悠衣子",
+  "quote_raw": "“来单挑吧！让亚马逊姐姐感受到你的热情！”",
+  "introduction": "什么都想靠单挑解决的，热血风的大姐头。 虽然很容易被认为很野蛮，但如果是对方获胜了，也会干脆地称赞对方的强大。 作为美浦寮的舍长时，与血气方刚的一面相反，非常擅长做饭洗衣服扫除。在任何场合都是很可靠的存在。 完全不擅长打雷和幽灵。",
+  "intro_paragraphs": [
+    "什么都想靠单挑解决的，热血风的大姐头。",
+    "虽然很容易被认为很野蛮，但如果是对方获胜了，也会干脆地称赞对方的强大。",
+    "作为美浦寮的舍长时，与血气方刚的一面相反，非常擅长做饭洗衣服扫除。在任何场合都是很可靠的存在。",
+    "完全不擅长打雷和幽灵。"
+  ],
+  "weight_desc_raw": "微增（不予置評）",
+  "bust_raw": "92",
+  "waist_raw": "59",
+  "hip_raw": "89",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/e2/l43mgh9g1t53v1txq9dut8xltv63oy0.png/100px-Chr_icon_1012.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/ry6xq6la17ftldumbe6evr917tzwigc.png/100px-Chr_icon_1012_101202_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/f/f7/UPDCH_HishiAmazon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041737",
+    "https://storage.moegirl.org.cn/moegirl/commons/d/d1/Pid92909881.jpg!/fw/280?v=20211016173338"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e2/l43mgh9g1t53v1txq9dut8xltv63oy0.png/100px-Chr_icon_1012.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/ry6xq6la17ftldumbe6evr917tzwigc.png/100px-Chr_icon_1012_101202_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/ry6xq6la17ftldumbe6evr917tzwigc.png/100px-Chr_icon_1012_101202_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f7/UPDCH_HishiAmazon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041737"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d1/Pid92909881.jpg!/fw/280?v=20211016173338",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/f7/UPDCH_HishiAmazon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041737"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BA%9E%E9%A6%AC%E9%81%9C%E9%9D%92%E9%87%91%E7%9F%B3%E3%80%91%E8%8F%B1%E4%BA%9E%E9%A6%AC%E9%81%9C",
+    "https://zh.moegirl.org.cn/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "E",
+    "sprint": "D",
+    "mile": "A",
+    "medium": "A",
+    "long": "B",
+    "nige": "G",
+    "senko": "B",
+    "sashi": "C",
+    "oikomi": "A"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "英",
+    "中"
+  ],
+  "running_style_group": [
+    "追"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "菱亚马逊",
+      "character_id": "1012",
+      "birthday_raw": "3月26日",
+      "height_raw": "160",
+      "bust_raw": "92",
+      "waist_raw": "59",
+      "hip_raw": "89",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "33",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/e2/l43mgh9g1t53v1txq9dut8xltv63oy0.png/100px-Chr_icon_1012.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e2/l43mgh9g1t53v1txq9dut8xltv63oy0.png/100px-Chr_icon_1012.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "菱亚马逊",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "C",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A",
+      "raw_name_zh": "菱亚马逊",
+      "raw_name_jp": "ヒシアマゾン",
+      "nickname_raw": "アマゾネス・ラピス",
+      "star_raw": "3",
+      "birthday_raw": "3月26日",
+      "height_raw": "160㎝",
+      "weight_desc_raw": "微增（无可奉告）",
+      "bust_raw": "92",
+      "waist_raw": "59",
+      "hip_raw": "89",
+      "cv_raw": "巽悠衣子",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "C",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/ry6xq6la17ftldumbe6evr917tzwigc.png/100px-Chr_icon_1012_101202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BA%9E%E9%A6%AC%E9%81%9C%E9%9D%92%E9%87%91%E7%9F%B3%E3%80%91%E8%8F%B1%E4%BA%9E%E9%A6%AC%E9%81%9C",
+      "raw_name_zh": "菱亚马逊",
+      "raw_name_jp": null,
+      "translated_name_raw": "菱亞馬遜",
+      "nickname_raw": "亞馬遜青金石",
+      "page_title": "【亞馬遜青金石】菱亞馬遜",
+      "page_title_aliases": [
+        "【亞馬遜青金石】菱亞馬遜",
+        "菱亞馬遜",
+        "亞馬遜青金石"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月26日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "微增（不予置評）",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "巽悠衣子",
+      "introduction_raw": "歡迎單挑！大家的可靠大姐頭宿舍長",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/f/fd/oz26wc32ivsu9sc2rr5zzkqtj21kmwk.png/100px-Chr_icon_1012_101201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/ry6xq6la17ftldumbe6evr917tzwigc.png/100px-Chr_icon_1012_101202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E4%BA%9E%E9%A6%AC%E9%81%9C%E9%9D%92%E9%87%91%E7%9F%B3%E3%80%91%E8%8F%B1%E4%BA%9E%E9%A6%AC%E9%81%9C",
+      "turf_raw": "A",
+      "dirt_raw": "E",
+      "sprint_raw": "D",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "C",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "菱亚马逊",
+      "raw_name_jp": "ヒシアマゾン",
+      "cv_raw": "巽悠衣子",
+      "birthday_raw": "3月26日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "微增（无可奉告）",
+      "bust_raw": "92",
+      "waist_raw": "59",
+      "hip_raw": "89",
+      "quote_raw": "“来单挑吧！让亚马逊姐姐感受到你的热情！”",
+      "intro_paragraphs": [
+        "什么都想靠单挑解决的，热血风的大姐头。",
+        "虽然很容易被认为很野蛮，但如果是对方获胜了，也会干脆地称赞对方的强大。",
+        "作为美浦寮的舍长时，与血气方刚的一面相反，非常擅长做饭洗衣服扫除。在任何场合都是很可靠的存在。",
+        "完全不擅长打雷和幽灵。"
+      ],
+      "introduction": "什么都想靠单挑解决的，热血风的大姐头。\n虽然很容易被认为很野蛮，但如果是对方获胜了，也会干脆地称赞对方的强大。\n作为美浦寮的舍长时，与血气方刚的一面相反，非常擅长做饭洗衣服扫除。在任何场合都是很可靠的存在。\n完全不擅长打雷和幽灵。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/f7/UPDCH_HishiAmazon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041737",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f7/UPDCH_HishiAmazon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041737"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A",
+      "canonical_name_zh": "菱亚马逊",
+      "aliases": [
+        "菱亚马逊"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A",
+      "raw_name_zh": "菱亚马逊",
+      "page_title": "菱亚马逊",
+      "raw_name_jp": "ヒシアマゾン",
+      "raw_name_en": null,
+      "aliases": [
+        "亚马逊（アマゾン）",
+        "女杰",
+        "大姐头（ウマアネゴ）",
+        "假面骑士亚马逊",
+        "菱亚马逊"
+      ],
+      "birthday_raw": "3月26日",
+      "height_raw": "160cm",
+      "weight_desc_raw": "微增（无可奉告）",
+      "bust_raw": "92",
+      "waist_raw": "59",
+      "hip_raw": "89",
+      "cv_raw": "巽悠衣子",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d1/Pid92909881.jpg!/fw/280?v=20211016173338",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d1/Pid92909881.jpg!/fw/280?v=20211016173338",
+        "https://storage.moegirl.org.cn/moegirl/commons/f/f7/UPDCH_HishiAmazon_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207041737"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%8F%B1%E4%BA%9A%E9%A9%AC%E9%80%8A"
+    }
+  }
+}

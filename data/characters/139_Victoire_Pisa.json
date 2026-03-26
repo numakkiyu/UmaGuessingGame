@@ -1,0 +1,232 @@
+{
+  "id": "vyikutowaarupisa",
+  "name_zh": "比萨胜驹",
+  "name_jp": "ヴィクトワールピサ",
+  "aliases": [
+    "比萨胜驹",
+    "ヴィクトワールピサ",
+    "Lueur Angélique"
+  ],
+  "birthday": "03-31",
+  "birthday_day_of_year": 91,
+  "birthday_raw": "3月31日",
+  "height_cm": 161,
+  "height_raw": "161cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "嶋野花",
+  "cv_raw": "嶋野花",
+  "quote_raw": "拥有纯洁温暖的心，讨厌『孤单一人』和『孤独』的赛马娘。",
+  "introduction": "一旦发现陷入这种状况的人，她会立刻赶去帮助，直到对方的心连接上『希望』为止。 她的身影常被评价为『宛如天使一般』。兴趣是天体观测和艺术鉴赏。",
+  "intro_paragraphs": [
+    "一旦发现陷入这种状况的人，她会立刻赶去帮助，直到对方的心连接上『希望』为止。",
+    "她的身影常被评价为『宛如天使一般』。兴趣是天体观测和艺术鉴赏。"
+  ],
+  "weight_desc_raw": "微増",
+  "bust_raw": "80",
+  "waist_raw": "53",
+  "hip_raw": "78",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/6beg67ba0u0lkhwzuh4atyma1y635lz.png/100px-Chr_icon_1143_114301_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/b/b1/s6u6yh1zl662x1g8y8cnjiouibnrz37.png/100px-Chr_icon_1143.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/6beg67ba0u0lkhwzuh4atyma1y635lz.png/100px-Chr_icon_1143_114301_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141258",
+    "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/280?v=20260222141258"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b1/s6u6yh1zl662x1g8y8cnjiouibnrz37.png/100px-Chr_icon_1143.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/6beg67ba0u0lkhwzuh4atyma1y635lz.png/100px-Chr_icon_1143_114301_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/6beg67ba0u0lkhwzuh4atyma1y635lz.png/100px-Chr_icon_1143_114301_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141258"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/280?v=20260222141258",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141258"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9",
+    "https://zh.moegirl.org.cn/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "A",
+    "sprint": "G",
+    "mile": "B",
+    "medium": "A",
+    "long": "B",
+    "nige": "G",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "E"
+  },
+  "surface_group": [
+    "草地",
+    "泥地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "比萨胜驹",
+      "character_id": "1143",
+      "birthday_raw": "3月31日",
+      "height_raw": "161",
+      "bust_raw": "80",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "whr_raw": "0.68",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b1/s6u6yh1zl662x1g8y8cnjiouibnrz37.png/100px-Chr_icon_1143.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b1/s6u6yh1zl662x1g8y8cnjiouibnrz37.png/100px-Chr_icon_1143.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "比萨胜驹",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/6beg67ba0u0lkhwzuh4atyma1y635lz.png/100px-Chr_icon_1143_114301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/6beg67ba0u0lkhwzuh4atyma1y635lz.png/100px-Chr_icon_1143_114301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "A",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9",
+      "raw_name_zh": "比萨胜驹",
+      "raw_name_jp": "ヴィクトワールピサ",
+      "nickname_raw": "Lueur Angélique",
+      "star_raw": "3",
+      "birthday_raw": "3月31日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "微増",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "嶋野花",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "A",
+      "sprint_raw": "G",
+      "mile_raw": "B",
+      "medium_raw": "A",
+      "long_raw": "B",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "E",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/6beg67ba0u0lkhwzuh4atyma1y635lz.png/100px-Chr_icon_1143_114301_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/20/6beg67ba0u0lkhwzuh4atyma1y635lz.png/100px-Chr_icon_1143_114301_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "比萨胜驹",
+      "raw_name_jp": "ヴィクトワールピサ",
+      "cv_raw": "岛野花",
+      "birthday_raw": "3月31日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "微增",
+      "bust_raw": "80",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "quote_raw": "拥有纯洁温暖的心，讨厌『孤单一人』和『孤独』的赛马娘。",
+      "intro_paragraphs": [
+        "一旦发现陷入这种状况的人，她会立刻赶去帮助，直到对方的心连接上『希望』为止。",
+        "她的身影常被评价为『宛如天使一般』。兴趣是天体观测和艺术鉴赏。"
+      ],
+      "introduction": "一旦发现陷入这种状况的人，她会立刻赶去帮助，直到对方的心连接上『希望』为止。\n她的身影常被评价为『宛如天使一般』。兴趣是天体观测和艺术鉴赏。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141258",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141258"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9",
+      "canonical_name_zh": "比萨胜驹",
+      "aliases": [
+        "比萨胜驹"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9",
+      "raw_name_zh": "比萨胜驹",
+      "page_title": "比萨胜驹",
+      "raw_name_jp": "ヴィクトワールピサ",
+      "raw_name_en": null,
+      "aliases": [
+        "比萨胜驹"
+      ],
+      "birthday_raw": "3月31日",
+      "height_raw": "161cm",
+      "weight_desc_raw": "微增",
+      "bust_raw": "80",
+      "waist_raw": "53",
+      "hip_raw": "78",
+      "cv_raw": "岛野花",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/280?v=20260222141258",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/280?v=20260222141258",
+        "https://storage.moegirl.org.cn/moegirl/commons/f/ff/UPDCH_VictoirePisa_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20260222141258"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%AF%94%E8%90%A8%E8%83%9C%E9%A9%B9"
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "id": "orufyeevuru",
+  "name_zh": "黄金巨匠",
+  "name_jp": "オルフェーヴル",
+  "aliases": [
+    "【總攬】黃金巨匠",
+    "黃金巨匠",
+    "總攬",
+    "黄金巨匠",
+    "オルフェーヴル",
+    "総攬"
+  ],
+  "birthday": "05-14",
+  "birthday_day_of_year": 135,
+  "birthday_raw": "5月14日",
+  "height_cm": 165,
+  "height_raw": "165cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "日笠陽子",
+  "cv_raw": "日笠陽子",
+  "quote_raw": "天上天下唯我独尊，自称赛跑界之王，是无所顾忌的暴君马娘。",
+  "introduction": "赛道是我的领土，三冠更是属于我——因此，我将亲手夺回它们。 在学园中，被我的无与伦比的实力和魅力所吸引的学生们，常常作为臣下侍奉在我身边……",
+  "intro_paragraphs": [
+    "赛道是我的领土，三冠更是属于我——因此，我将亲手夺回它们。",
+    "在学园中，被我的无与伦比的实力和魅力所吸引的学生们，常常作为臣下侍奉在我身边……"
+  ],
+  "weight_desc_raw": "綻放黃金光輝",
+  "bust_raw": "82",
+  "waist_raw": "55",
+  "hip_raw": "80",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/d/df/k6lfzc4x9ue8o9a6nrmt2b3xoa9k315.png/100px-Chr_icon_1115.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_Orfevre_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/df/k6lfzc4x9ue8o9a6nrmt2b3xoa9k315.png/100px-Chr_icon_1115.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_Orfevre_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_Orfevre_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0",
+    "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B8%BD%E6%94%AC%E3%80%91%E9%BB%83%E9%87%91%E5%B7%A8%E5%8C%A0",
+    "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "D",
+    "sprint": "G",
+    "mile": "C",
+    "medium": "A",
+    "long": "A",
+    "nige": "G",
+    "senko": "F",
+    "sashi": "A",
+    "oikomi": "A"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "差",
+    "追"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "黄金巨匠",
+      "character_id": "1115",
+      "birthday_raw": "5月14日",
+      "height_raw": "165",
+      "bust_raw": "82",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "whr_raw": "0.69",
+      "bust_waist_diff_raw": "27",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/df/k6lfzc4x9ue8o9a6nrmt2b3xoa9k315.png/100px-Chr_icon_1115.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/df/k6lfzc4x9ue8o9a6nrmt2b3xoa9k315.png/100px-Chr_icon_1115.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "黄金巨匠",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "F",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0",
+      "raw_name_zh": "黄金巨匠",
+      "raw_name_jp": "オルフェーヴル",
+      "nickname_raw": "総攬",
+      "star_raw": "3",
+      "birthday_raw": "5月14日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "黄金の輝き",
+      "bust_raw": "82",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "日笠陽子",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "F",
+      "sashi_raw": "A",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B8%BD%E6%94%AC%E3%80%91%E9%BB%83%E9%87%91%E5%B7%A8%E5%8C%A0",
+      "raw_name_zh": "黄金巨匠",
+      "raw_name_jp": null,
+      "translated_name_raw": "黃金巨匠",
+      "nickname_raw": "總攬",
+      "page_title": "【總攬】黃金巨匠",
+      "page_title_aliases": [
+        "【總攬】黃金巨匠",
+        "黃金巨匠",
+        "總攬"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "5月14日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "綻放黃金光輝",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "日笠陽子",
+      "introduction_raw": "天上天下唯我獨尊，自詡為賽場王者的暴君",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/bbr6e8rebtspanl316qar1o0cndr8n1.png/100px-Chr_icon_1115_111501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%B8%BD%E6%94%AC%E3%80%91%E9%BB%83%E9%87%91%E5%B7%A8%E5%8C%A0",
+      "turf_raw": "A",
+      "dirt_raw": "D",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "F",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "黄金巨匠",
+      "raw_name_jp": "オルフェーヴル",
+      "cv_raw": "日笠阳子",
+      "birthday_raw": "5月14日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "如黄金般光辉",
+      "bust_raw": "82",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "quote_raw": "天上天下唯我独尊，自称赛跑界之王，是无所顾忌的暴君马娘。",
+      "intro_paragraphs": [
+        "赛道是我的领土，三冠更是属于我——因此，我将亲手夺回它们。",
+        "在学园中，被我的无与伦比的实力和魅力所吸引的学生们，常常作为臣下侍奉在我身边……"
+      ],
+      "introduction": "赛道是我的领土，三冠更是属于我——因此，我将亲手夺回它们。\n在学园中，被我的无与伦比的实力和魅力所吸引的学生们，常常作为臣下侍奉在我身边……",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_Orfevre_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_Orfevre_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0",
+      "canonical_name_zh": "黄金巨匠",
+      "aliases": [
+        "黄金巨匠"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0",
+      "raw_name_zh": "黄金巨匠",
+      "page_title": "黄金巨匠",
+      "raw_name_jp": "オルフェーヴル",
+      "raw_name_en": null,
+      "aliases": [
+        "黄金巨匠"
+      ],
+      "birthday_raw": "5月14日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "如黄金般光辉",
+      "bust_raw": "82",
+      "waist_raw": "55",
+      "hip_raw": "80",
+      "cv_raw": "日笠阳子",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_Orfevre_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c4/UPDCH_Orfevre_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20240222153801"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E5%B7%A8%E5%8C%A0"
+    }
+  }
+}

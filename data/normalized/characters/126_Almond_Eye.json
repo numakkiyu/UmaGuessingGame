@@ -1,0 +1,263 @@
+{
+  "id": "aamondoai",
+  "order": 126,
+  "file_name": "126_Almond_Eye.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "杏目",
+    "zh_tw": null,
+    "jp": "アーモンドアイ",
+    "en": "Almond Eye"
+  },
+  "aliases": [
+    "杏目",
+    "アーモンドアイ",
+    "Almond Eye",
+    "俺们的爱",
+    "特雷森卷王",
+    "黄瓜[1]",
+    "The Changer"
+  ],
+  "profile": {
+    "birthday": "03-10",
+    "birthday_raw": "3月10日",
+    "birthday_day_of_year": 70,
+    "height_cm": 163,
+    "height_raw": "163cm",
+    "cv": "石原夏织",
+    "cv_raw": "石原夏织",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "先",
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "F",
+      "nige": "G",
+      "senko": "A",
+      "sashi": "A",
+      "oikomi": "D"
+    },
+    "g1_bracket": "5+",
+    "g23_bracket": "0",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/a/af/0pqshenqg3eruz2sb61v37ll6vnxxin.png/100px-Chr_icon_1129.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e1/UPDCH_AlmondEye_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010",
+      "https://storage.moegirl.org.cn/moegirl/commons/f/fb/127618035_p0.png!/fw/280?v=20250303162457"
+    ],
+    "image_local_path": "/api/assets/aamondoai-thumb",
+    "asset_id": "aamondoai-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%9D%8F%E7%9B%AE",
+      "https://zh.moegirl.org.cn/%E6%9D%8F%E7%9B%AE"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/af/0pqshenqg3eruz2sb61v37ll6vnxxin.png/100px-Chr_icon_1129.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png"
+      ],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e1/UPDCH_AlmondEye_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/fb/127618035_p0.png!/fw/280?v=20250303162457",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e1/UPDCH_AlmondEye_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "这份完美，正是源于她那堪称九个『超』字叠加级别的究极『好胜心』。 但正是这份过强的好胜心，让她有时显得过于追求完美，甚至不惜做出超出自己体力的冒险举动，这成为了她唯一的小缺憾。",
+    "intro_paragraphs": [
+      "这份完美，正是源于她那堪称九个『超』字叠加级别的究极『好胜心』。",
+      "但正是这份过强的好胜心，让她有时显得过于追求完美，甚至不惜做出超出自己体力的冒险举动，这成为了她唯一的小缺憾。"
+    ],
+    "quote_raw": "文武双全且兼具明星气质，在各方面都完美无缺的顶尖优等生。",
+    "weight_desc_raw": "完美，呦",
+    "bust_raw": "86",
+    "waist_raw": "57",
+    "hip_raw": "81"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "杏目",
+      "character_id": "1129",
+      "birthday_raw": "3月10日",
+      "height_raw": "163",
+      "bust_raw": "86",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "whr_raw": "0.7",
+      "bust_waist_diff_raw": "29",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/a/af/0pqshenqg3eruz2sb61v37ll6vnxxin.png/100px-Chr_icon_1129.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/a/af/0pqshenqg3eruz2sb61v37ll6vnxxin.png/100px-Chr_icon_1129.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9D%8F%E7%9B%AE"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "杏目",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9D%8F%E7%9B%AE",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%9D%8F%E7%9B%AE",
+      "raw_name_zh": "杏目",
+      "raw_name_jp": "アーモンドアイ",
+      "nickname_raw": "The Changer",
+      "star_raw": "3",
+      "birthday_raw": "3月10日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "完美，呦",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "石原夏织",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "D",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/4/40/m148vhxzeiojftpl3ih7epn4iclbwbt.png/100px-Chr_icon_1129_112901_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%9D%8F%E7%9B%AE"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "杏目",
+      "raw_name_jp": "アーモンドアイ",
+      "cv_raw": "石原夏织",
+      "birthday_raw": "3月10日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "完美的，哟",
+      "bust_raw": "86",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "quote_raw": "文武双全且兼具明星气质，在各方面都完美无缺的顶尖优等生。",
+      "intro_paragraphs": [
+        "这份完美，正是源于她那堪称九个『超』字叠加级别的究极『好胜心』。",
+        "但正是这份过强的好胜心，让她有时显得过于追求完美，甚至不惜做出超出自己体力的冒险举动，这成为了她唯一的小缺憾。"
+      ],
+      "introduction": "这份完美，正是源于她那堪称九个『超』字叠加级别的究极『好胜心』。\n但正是这份过强的好胜心，让她有时显得过于追求完美，甚至不惜做出超出自己体力的冒险举动，这成为了她唯一的小缺憾。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e1/UPDCH_AlmondEye_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e1/UPDCH_AlmondEye_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%9D%8F%E7%9B%AE",
+      "canonical_name_zh": "杏目",
+      "aliases": [
+        "杏目"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%9D%8F%E7%9B%AE",
+      "raw_name_zh": "杏目",
+      "page_title": "杏目",
+      "raw_name_jp": "アーモンドアイ",
+      "raw_name_en": null,
+      "aliases": [
+        "俺们的爱",
+        "特雷森卷王",
+        "黄瓜[1]",
+        "杏目"
+      ],
+      "birthday_raw": "3月10日",
+      "height_raw": "163cm",
+      "weight_desc_raw": "完美的，哟",
+      "bust_raw": "86",
+      "waist_raw": "57",
+      "hip_raw": "81",
+      "cv_raw": "石原夏织",
+      "grade_raw": "中等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/f/fb/127618035_p0.png!/fw/280?v=20250303162457",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/f/fb/127618035_p0.png!/fw/280?v=20250303162457",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e1/UPDCH_AlmondEye_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172010"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%9D%8F%E7%9B%AE"
+    }
+  }
+}

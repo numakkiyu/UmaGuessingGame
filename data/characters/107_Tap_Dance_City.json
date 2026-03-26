@@ -1,0 +1,278 @@
+{
+  "id": "tappudansushichii",
+  "name_zh": "跳舞城",
+  "name_jp": "タップダンスシチー",
+  "aliases": [
+    "【GLITTER!】踢踏城市",
+    "踢踏城市",
+    "GLITTER!",
+    "跳舞城",
+    "タップダンスシチー"
+  ],
+  "birthday": "03-16",
+  "birthday_day_of_year": 76,
+  "birthday_raw": "3月16日",
+  "height_cm": 170,
+  "height_raw": "170cm",
+  "grade": "高等部",
+  "grade_raw": "高等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "篠田みなみ",
+  "cv_raw": "篠田みなみ",
+  "quote_raw": "在观看了某位日本赛马娘的比赛直播后，当天立刻就从土生土长的美国来到日本特雷森学园的超·行动派赛马娘。",
+  "introduction": "虽然她直言不讳地说着“为了赚大钱和赢得名誉而奔跑”这类豪言壮语。 但这都是为了自己无论如何都想要实现的“浪漫”所必需做到的事。",
+  "intro_paragraphs": [
+    "虽然她直言不讳地说着“为了赚大钱和赢得名誉而奔跑”这类豪言壮语。",
+    "但这都是为了自己无论如何都想要实现的“浪漫”所必需做到的事。"
+  ],
+  "weight_desc_raw": "沒去在意呢",
+  "bust_raw": "89",
+  "waist_raw": "55",
+  "hip_raw": "88",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/stk4kxpynh7t07hnpjx9mhffaj2pcj2.png/100px-Chr_icon_1107.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/0/0a/7ih7xhc10294beiqt0mpuergif7vmps.png/100px-Chr_icon_1107_110702_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_TapDanceCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537",
+    "https://storage.moegirl.org.cn/moegirl/commons/5/5c/108977170_p0.png!/fw/280?v=20230929143313"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/stk4kxpynh7t07hnpjx9mhffaj2pcj2.png/100px-Chr_icon_1107.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/0a/7ih7xhc10294beiqt0mpuergif7vmps.png/100px-Chr_icon_1107_110702_01.png"
+    ],
+    "biliwiki_tw_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png"
+    ],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_TapDanceCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/5/5c/108977170_p0.png!/fw/280?v=20230929143313",
+      "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_TapDanceCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "繁中服角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E8%B7%B3%E8%88%9E%E5%9F%8E",
+    "https://wiki.biligame.com/umamusume/%E3%80%90GLITTER!%E3%80%91%E8%B8%A2%E8%B8%8F%E5%9F%8E%E5%B8%82",
+    "https://zh.moegirl.org.cn/%E8%B7%B3%E8%88%9E%E5%9F%8E"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "E",
+    "medium": "A",
+    "long": "A",
+    "nige": "A",
+    "senko": "B",
+    "sashi": "F",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中",
+    "长"
+  ],
+  "running_style_group": [
+    "逃"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "跳舞城",
+      "character_id": "1107",
+      "birthday_raw": "3月16日",
+      "height_raw": "170",
+      "bust_raw": "89",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "whr_raw": "0.63",
+      "bust_waist_diff_raw": "34",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/stk4kxpynh7t07hnpjx9mhffaj2pcj2.png/100px-Chr_icon_1107.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/83/stk4kxpynh7t07hnpjx9mhffaj2pcj2.png/100px-Chr_icon_1107.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B7%B3%E8%88%9E%E5%9F%8E"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "跳舞城",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B7%B3%E8%88%9E%E5%9F%8E",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "10%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%B7%B3%E8%88%9E%E5%9F%8E",
+      "raw_name_zh": "跳舞城",
+      "raw_name_jp": "タップダンスシチー",
+      "nickname_raw": "GLITTER!",
+      "star_raw": "3",
+      "birthday_raw": "3月16日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "根本不在乎",
+      "bust_raw": "89",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "cv_raw": "篠田南",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "F",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/0a/7ih7xhc10294beiqt0mpuergif7vmps.png/100px-Chr_icon_1107_110702_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B7%B3%E8%88%9E%E5%9F%8E"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90GLITTER!%E3%80%91%E8%B8%A2%E8%B8%8F%E5%9F%8E%E5%B8%82",
+      "raw_name_zh": "跳舞城",
+      "raw_name_jp": null,
+      "translated_name_raw": "踢踏城市",
+      "nickname_raw": "GLITTER!",
+      "page_title": "【GLITTER!】踢踏城市",
+      "page_title_aliases": [
+        "【GLITTER!】踢踏城市",
+        "踢踏城市",
+        "GLITTER!"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "3月16日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "沒去在意呢",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "篠田みなみ",
+      "introduction_raw": "將同伴、夢想及財富盡收囊中！浪漫度日的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/b6/l4ojntluwuh3rtcsq8lxsokcwbnok26.png/100px-Chr_icon_1107_110701_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90GLITTER!%E3%80%91%E8%B8%A2%E8%B8%8F%E5%9F%8E%E5%B8%82",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "E",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "A",
+      "senko_raw": "B",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "跳舞城",
+      "raw_name_jp": "タップダンスシチー",
+      "cv_raw": "篠田南",
+      "birthday_raw": "3月21日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "不在乎",
+      "bust_raw": "89",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "quote_raw": "在观看了某位日本赛马娘的比赛直播后，当天立刻就从土生土长的美国来到日本特雷森学园的超·行动派赛马娘。",
+      "intro_paragraphs": [
+        "虽然她直言不讳地说着“为了赚大钱和赢得名誉而奔跑”这类豪言壮语。",
+        "但这都是为了自己无论如何都想要实现的“浪漫”所必需做到的事。"
+      ],
+      "introduction": "虽然她直言不讳地说着“为了赚大钱和赢得名誉而奔跑”这类豪言壮语。\n但这都是为了自己无论如何都想要实现的“浪漫”所必需做到的事。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_TapDanceCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_TapDanceCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B7%B3%E8%88%9E%E5%9F%8E",
+      "canonical_name_zh": "跳舞城",
+      "aliases": [
+        "跳舞城"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%B7%B3%E8%88%9E%E5%9F%8E",
+      "raw_name_zh": "跳舞城",
+      "page_title": "跳舞城",
+      "raw_name_jp": "タップダンスシチー",
+      "raw_name_en": null,
+      "aliases": [
+        "跳舞城"
+      ],
+      "birthday_raw": "3月16日",
+      "height_raw": "170cm",
+      "weight_desc_raw": "不在乎",
+      "bust_raw": "89",
+      "waist_raw": "55",
+      "hip_raw": "88",
+      "cv_raw": "篠田南",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/5/5c/108977170_p0.png!/fw/280?v=20230929143313",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/5/5c/108977170_p0.png!/fw/280?v=20230929143313",
+        "https://storage.moegirl.org.cn/moegirl/commons/5/54/UPDCH_TapDanceCity_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230222142537"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B7%B3%E8%88%9E%E5%9F%8E"
+    }
+  }
+}

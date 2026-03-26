@@ -1,0 +1,194 @@
+{
+  "id": "rakkiirairakku",
+  "name_zh": "旺紫丁",
+  "name_jp": "ラッキーライラック",
+  "aliases": [
+    "肥香",
+    "拉拉（ララ）",
+    "旺紫丁",
+    "ラッキーライラック"
+  ],
+  "birthday": "04-03",
+  "birthday_day_of_year": 94,
+  "birthday_raw": "4月3日",
+  "height_cm": 162,
+  "height_raw": "162",
+  "grade": null,
+  "grade_raw": null,
+  "dormitory": null,
+  "dorm_raw": null,
+  "star": null,
+  "star_raw": null,
+  "cv": "中岛由贵",
+  "cv_raw": "中岛由贵",
+  "quote_raw": "这是一位以温柔的关西腔为特征的马娘。",
+  "introduction": "她以成为像令人憧憬的前辈黄金巨匠那样，气质满满、比赛中引人注目的存在为目标，每天都在努力提升自己。 因此，她总是注重保持优雅的举止，并努力克制自己内心与之相反的声音。",
+  "intro_paragraphs": [
+    "她以成为像令人憧憬的前辈黄金巨匠那样，气质满满、比赛中引人注目的存在为目标，每天都在努力提升自己。",
+    "因此，她总是注重保持优雅的举止，并努力克制自己内心与之相反的声音。"
+  ],
+  "weight_desc_raw": "平稳的过渡",
+  "bust_raw": "88",
+  "waist_raw": "57",
+  "hip_raw": "85",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/fb55z1uhjnl1n63es9e26c6qbzy7186.png/100px-Chr_icon_1130.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/fb55z1uhjnl1n63es9e26c6qbzy7186.png/100px-Chr_icon_1130.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/9/9e/UPDCH_LuckyLilac_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172025",
+    "https://storage.moegirl.org.cn/moegirl/commons/d/db/127856808_p0.jpg!/fw/280?v=20250321144857"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/fb55z1uhjnl1n63es9e26c6qbzy7186.png/100px-Chr_icon_1130.png"
+    ],
+    "biliwiki_gallery": [],
+    "biliwiki_detail": [],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/9/9e/UPDCH_LuckyLilac_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172025"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/d/db/127856808_p0.jpg!/fw/280?v=20250321144857",
+      "https://storage.moegirl.org.cn/moegirl/commons/9/9e/UPDCH_LuckyLilac_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172025"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E6%97%BA%E7%B4%AB%E4%B8%81",
+    "https://zh.moegirl.org.cn/%E6%97%BA%E7%B4%AB%E4%B8%81"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": null,
+    "dirt": null,
+    "sprint": null,
+    "mile": null,
+    "medium": null,
+    "long": null,
+    "nige": null,
+    "senko": null,
+    "sashi": null,
+    "oikomi": null
+  },
+  "surface_group": [],
+  "distance_group": [],
+  "running_style_group": [],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "旺紫丁",
+      "character_id": "1130",
+      "birthday_raw": "4月3日",
+      "height_raw": "162",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "31",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/fb55z1uhjnl1n63es9e26c6qbzy7186.png/100px-Chr_icon_1130.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ee/fb55z1uhjnl1n63es9e26c6qbzy7186.png/100px-Chr_icon_1130.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%97%BA%E7%B4%AB%E4%B8%81"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%97%BA%E7%B4%AB%E4%B8%81",
+      "raw_name_zh": "旺紫丁",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%97%BA%E7%B4%AB%E4%B8%81"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "旺紫丁",
+      "raw_name_jp": "ラッキーライラック",
+      "cv_raw": "中岛由贵",
+      "birthday_raw": "4月3日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "平稳的过渡",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "quote_raw": "这是一位以温柔的关西腔为特征的马娘。",
+      "intro_paragraphs": [
+        "她以成为像令人憧憬的前辈黄金巨匠那样，气质满满、比赛中引人注目的存在为目标，每天都在努力提升自己。",
+        "因此，她总是注重保持优雅的举止，并努力克制自己内心与之相反的声音。"
+      ],
+      "introduction": "她以成为像令人憧憬的前辈黄金巨匠那样，气质满满、比赛中引人注目的存在为目标，每天都在努力提升自己。\n因此，她总是注重保持优雅的举止，并努力克制自己内心与之相反的声音。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/9/9e/UPDCH_LuckyLilac_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172025",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9e/UPDCH_LuckyLilac_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172025"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%97%BA%E7%B4%AB%E4%B8%81",
+      "canonical_name_zh": "旺紫丁",
+      "aliases": [
+        "旺紫丁"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%97%BA%E7%B4%AB%E4%B8%81",
+      "raw_name_zh": "旺紫丁",
+      "page_title": "旺紫丁",
+      "raw_name_jp": "ラッキーライラック",
+      "raw_name_en": null,
+      "aliases": [
+        "肥香",
+        "拉拉（ララ）",
+        "旺紫丁"
+      ],
+      "birthday_raw": "4月3日",
+      "height_raw": "162cm",
+      "weight_desc_raw": "平稳的推移",
+      "bust_raw": "88",
+      "waist_raw": "57",
+      "hip_raw": "85",
+      "cv_raw": "中岛由贵",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/db/127856808_p0.jpg!/fw/280?v=20250321144857",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/db/127856808_p0.jpg!/fw/280?v=20250321144857",
+        "https://storage.moegirl.org.cn/moegirl/commons/9/9e/UPDCH_LuckyLilac_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172025"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%97%BA%E7%B4%AB%E4%B8%81"
+    }
+  }
+}

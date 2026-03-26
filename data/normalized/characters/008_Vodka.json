@@ -1,0 +1,309 @@
+{
+  "id": "uokka",
+  "order": 8,
+  "file_name": "008_Vodka.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "伏特加",
+    "zh_tw": null,
+    "jp": "ウオッカ",
+    "en": "Vodka"
+  },
+  "aliases": [
+    "伏特加",
+    "ウオッカ",
+    "Vodka",
+    "【狂野極速】伏特加",
+    "狂野極速",
+    "ワイルドトップギア"
+  ],
+  "profile": {
+    "birthday": "04-04",
+    "birthday_raw": "4月4日",
+    "birthday_day_of_year": 95,
+    "height_cm": 165,
+    "height_raw": "165cm",
+    "cv": "大橋彩香",
+    "cv_raw": "大橋彩香",
+    "school_grade": "中等部",
+    "grade_raw": "中等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 2,
+    "star_raw": "2",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "F",
+      "nige": "C",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "F"
+    },
+    "g1_bracket": "5+",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": true,
+    "g23_has_jpn": true
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c6/7x4nq4r8r4mi1mzbdnoc5h4yb90ik0b.png/100px-Chr_icon_1008.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/ed/4bvoel9kj19lwvhuiuz9uiqohdzptw7.png/100px-Chr_icon_1008_100802_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_Vodka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052345",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0d/P96442950.jpg!/fw/280?v=20220508104522"
+    ],
+    "image_local_path": "/api/assets/uokka-thumb",
+    "asset_id": "uokka-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E4%BC%8F%E7%89%B9%E5%8A%A0",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%8B%82%E9%87%8E%E6%A5%B5%E9%80%9F%E3%80%91%E4%BC%8F%E7%89%B9%E5%8A%A0",
+      "https://zh.moegirl.org.cn/%E4%BC%8F%E7%89%B9%E5%8A%A0(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c6/7x4nq4r8r4mi1mzbdnoc5h4yb90ik0b.png/100px-Chr_icon_1008.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ed/4bvoel9kj19lwvhuiuz9uiqohdzptw7.png/100px-Chr_icon_1008_100802_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ed/4bvoel9kj19lwvhuiuz9uiqohdzptw7.png/100px-Chr_icon_1008_100802_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_Vodka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052345"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0d/P96442950.jpg!/fw/280?v=20220508104522",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_Vodka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052345"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "提出帅气地生活是第一重要的，摆出一副不良姿态的赛马娘。 受喜欢摩托车的父亲的影响，爱好和原则都与父亲完全一致。 一直非常努力地表现自己，无论怎样无谋的挑战都会毫不畏惧地前进，是个地道的挑战者。 与同寝室的大和赤骥是犬猿之仲（死对头）的关系。",
+    "intro_paragraphs": [
+      "提出帅气地生活是第一重要的，摆出一副不良姿态的赛马娘。",
+      "受喜欢摩托车的父亲的影响，爱好和原则都与父亲完全一致。",
+      "一直非常努力地表现自己，无论怎样无谋的挑战都会毫不畏惧地前进，是个地道的挑战者。",
+      "与同寝室的大和赤骥是犬猿之仲（死对头）的关系。"
+    ],
+    "quote_raw": "“目标，只有成为帅气的赛马娘！”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "76",
+    "waist_raw": "55",
+    "hip_raw": "78"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "伏特加",
+      "character_id": "1008",
+      "birthday_raw": "4月4日",
+      "height_raw": "165",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "78",
+      "whr_raw": "0.71",
+      "bust_waist_diff_raw": "21",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c6/7x4nq4r8r4mi1mzbdnoc5h4yb90ik0b.png/100px-Chr_icon_1008.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c6/7x4nq4r8r4mi1mzbdnoc5h4yb90ik0b.png/100px-Chr_icon_1008.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BC%8F%E7%89%B9%E5%8A%A0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "伏特加",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BC%8F%E7%89%B9%E5%8A%A0",
+      "star_raw": "2",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "C",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E4%BC%8F%E7%89%B9%E5%8A%A0",
+      "raw_name_zh": "伏特加",
+      "raw_name_jp": "ウオッカ",
+      "nickname_raw": "ワイルドトップギア",
+      "star_raw": "2",
+      "birthday_raw": "4月4日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "78",
+      "cv_raw": "大桥彩香",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "C",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "F",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ed/4bvoel9kj19lwvhuiuz9uiqohdzptw7.png/100px-Chr_icon_1008_100802_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E4%BC%8F%E7%89%B9%E5%8A%A0"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%8B%82%E9%87%8E%E6%A5%B5%E9%80%9F%E3%80%91%E4%BC%8F%E7%89%B9%E5%8A%A0",
+      "raw_name_zh": "伏特加",
+      "raw_name_jp": null,
+      "translated_name_raw": "伏特加",
+      "nickname_raw": "狂野極速",
+      "page_title": "【狂野極速】伏特加",
+      "page_title_aliases": [
+        "【狂野極速】伏特加",
+        "伏特加",
+        "狂野極速"
+      ],
+      "star_raw": "2",
+      "birthday_raw": "4月4日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "78",
+      "cv_raw": "大橋彩香",
+      "introduction_raw": "狂奔青春！純情不良的公路明星",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/b/bd/iu317chs3yh8e1jw76sotm9s2dwcfw6.png/100px-Chr_icon_1008_100801_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/ed/4bvoel9kj19lwvhuiuz9uiqohdzptw7.png/100px-Chr_icon_1008_100802_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%8B%82%E9%87%8E%E6%A5%B5%E9%80%9F%E3%80%91%E4%BC%8F%E7%89%B9%E5%8A%A0",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "C",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "伏特加",
+      "raw_name_jp": "ウオッカ",
+      "cv_raw": "大桥彩香",
+      "birthday_raw": "4月4日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "78",
+      "quote_raw": "“目标，只有成为帅气的赛马娘！”",
+      "intro_paragraphs": [
+        "提出帅气地生活是第一重要的，摆出一副不良姿态的赛马娘。",
+        "受喜欢摩托车的父亲的影响，爱好和原则都与父亲完全一致。",
+        "一直非常努力地表现自己，无论怎样无谋的挑战都会毫不畏惧地前进，是个地道的挑战者。",
+        "与同寝室的大和赤骥是犬猿之仲（死对头）的关系。"
+      ],
+      "introduction": "提出帅气地生活是第一重要的，摆出一副不良姿态的赛马娘。\n受喜欢摩托车的父亲的影响，爱好和原则都与父亲完全一致。\n一直非常努力地表现自己，无论怎样无谋的挑战都会毫不畏惧地前进，是个地道的挑战者。\n与同寝室的大和赤骥是犬猿之仲（死对头）的关系。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_Vodka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052345",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_Vodka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052345"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%BC%8F%E7%89%B9%E5%8A%A0(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)",
+      "canonical_name_zh": "伏特加",
+      "aliases": [
+        "伏特加"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E4%BC%8F%E7%89%B9%E5%8A%A0(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)",
+      "raw_name_zh": "伏特加",
+      "page_title": "伏特加",
+      "raw_name_jp": "ウオッカ",
+      "raw_name_en": null,
+      "aliases": [
+        "伏特加"
+      ],
+      "birthday_raw": "4月4日",
+      "height_raw": "165cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "76",
+      "waist_raw": "55",
+      "hip_raw": "78",
+      "cv_raw": "大桥彩香",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0d/P96442950.jpg!/fw/280?v=20220508104522",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0d/P96442950.jpg!/fw/280?v=20220508104522",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_Vodka_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20211207052345"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E4%BC%8F%E7%89%B9%E5%8A%A0(%E8%B5%9B%E9%A9%AC%E5%A8%98_Pretty_Derby)"
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "id": "daiichirubii",
+  "order": 85,
+  "file_name": "085_Daiichi_Ruby.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "第一红宝石",
+    "zh_tw": "華麗紅玉",
+    "jp": "ダイイチルビー",
+    "en": "Daiichi Ruby"
+  },
+  "aliases": [
+    "第一红宝石",
+    "華麗紅玉",
+    "ダイイチルビー",
+    "Daiichi Ruby",
+    "【華麗紅玉】第一紅寶",
+    "第一紅寶",
+    "露比",
+    "大日如来[1]",
+    "華麗なる紅玉"
+  ],
+  "profile": {
+    "birthday": "04-15",
+    "birthday_raw": "4月15日",
+    "birthday_day_of_year": 106,
+    "height_cm": 141,
+    "height_raw": "141cm",
+    "cv": "礒部花凜",
+    "cv_raw": "礒部花凜",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短",
+      "英"
+    ],
+    "running_style_group": [
+      "差",
+      "追"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "C",
+      "long": "G",
+      "nige": "E",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "A"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/l6ypi0sacb9evcvdafwgkcxdvlrb3ov.png/100px-Chr_icon_1085.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/3kzlebtemjx3iwo5v177du1g9elwr8b.png/100px-Chr_icon_1085_108502_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/6/61/UPDCH_DaiichiRuby_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133416",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c5/101268986_p0.jpg!/fw/280?v=20220922105433"
+    ],
+    "image_local_path": "/api/assets/daiichirubii-thumb",
+    "asset_id": "daiichirubii-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E8%8F%AF%E9%BA%97%E7%B4%85%E7%8E%89%E3%80%91%E7%AC%AC%E4%B8%80%E7%B4%85%E5%AF%B6",
+      "https://zh.moegirl.org.cn/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/l6ypi0sacb9evcvdafwgkcxdvlrb3ov.png/100px-Chr_icon_1085.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/3kzlebtemjx3iwo5v177du1g9elwr8b.png/100px-Chr_icon_1085_108502_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/3kzlebtemjx3iwo5v177du1g9elwr8b.png/100px-Chr_icon_1085_108502_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/61/UPDCH_DaiichiRuby_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133416"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c5/101268986_p0.jpg!/fw/280?v=20220922105433",
+        "https://storage.moegirl.org.cn/moegirl/commons/6/61/UPDCH_DaiichiRuby_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133416"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "出身于以“华丽一族”的称号闻名于世的家族的大小姐马娘。 她时常保持着与家族名称相符的高贵举止，而这份俨然的言行也给周围的人留下了难以接近的印象。",
+    "intro_paragraphs": [
+      "出身于以“华丽一族”的称号闻名于世的家族的大小姐马娘。",
+      "她时常保持着与家族名称相符的高贵举止，而这份俨然的言行也给周围的人留下了难以接近的印象。"
+    ],
+    "quote_raw": "“「华丽无比，至高无上，始终闪耀着最耀眼的光芒。」这便是我家族的信条。”",
+    "weight_desc_raw": "華麗地變動",
+    "bust_raw": "77",
+    "waist_raw": "53",
+    "hip_raw": "76"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "第一红宝石",
+      "character_id": "1085",
+      "birthday_raw": "4月15日",
+      "height_raw": "141",
+      "bust_raw": "77",
+      "waist_raw": "53",
+      "hip_raw": "76",
+      "whr_raw": "0.70",
+      "bust_waist_diff_raw": "24",
+      "body_type_raw": "Y",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/l6ypi0sacb9evcvdafwgkcxdvlrb3ov.png/100px-Chr_icon_1085.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/0/08/l6ypi0sacb9evcvdafwgkcxdvlrb3ov.png/100px-Chr_icon_1085.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "第一红宝石",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "20%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3",
+      "raw_name_zh": "第一红宝石",
+      "raw_name_jp": "ダイイチルビー",
+      "nickname_raw": "華麗なる紅玉",
+      "star_raw": "3",
+      "birthday_raw": "4月15日",
+      "height_raw": "141cm",
+      "weight_desc_raw": "华丽地维持着",
+      "bust_raw": "77",
+      "waist_raw": "53",
+      "hip_raw": "76",
+      "cv_raw": "礒部花凛",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/3kzlebtemjx3iwo5v177du1g9elwr8b.png/100px-Chr_icon_1085_108502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%8F%AF%E9%BA%97%E7%B4%85%E7%8E%89%E3%80%91%E7%AC%AC%E4%B8%80%E7%B4%85%E5%AF%B6",
+      "raw_name_zh": "第一红宝石",
+      "raw_name_jp": null,
+      "translated_name_raw": "第一紅寶",
+      "nickname_raw": "華麗紅玉",
+      "page_title": "【華麗紅玉】第一紅寶",
+      "page_title_aliases": [
+        "【華麗紅玉】第一紅寶",
+        "第一紅寶",
+        "華麗紅玉"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月15日",
+      "height_raw": "141cm",
+      "weight_desc_raw": "華麗地變動",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "礒部花凜",
+      "introduction_raw": "勝利是必然的結果。出身於華麗一族的賽馬娘",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/2/25/2yu11t47hkyi7mbwb0tsof6qzq2y6yp.png/100px-Chr_icon_1085_108501_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3a/3kzlebtemjx3iwo5v177du1g9elwr8b.png/100px-Chr_icon_1085_108502_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E8%8F%AF%E9%BA%97%E7%B4%85%E7%8E%89%E3%80%91%E7%AC%AC%E4%B8%80%E7%B4%85%E5%AF%B6",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "A",
+      "medium_raw": "C",
+      "long_raw": "G",
+      "nige_raw": "E",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "A"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "第一红宝石",
+      "raw_name_jp": "ダイイチルビー",
+      "cv_raw": "𥐟部花凛",
+      "birthday_raw": "4月15日",
+      "height_raw": "141cm",
+      "weight_desc_raw": "华丽地维持着",
+      "bust_raw": "77",
+      "waist_raw": "53",
+      "hip_raw": "76",
+      "quote_raw": "“「华丽无比，至高无上，始终闪耀着最耀眼的光芒。」这便是我家族的信条。”",
+      "intro_paragraphs": [
+        "出身于以“华丽一族”的称号闻名于世的家族的大小姐马娘。",
+        "她时常保持着与家族名称相符的高贵举止，而这份俨然的言行也给周围的人留下了难以接近的印象。"
+      ],
+      "introduction": "出身于以“华丽一族”的称号闻名于世的家族的大小姐马娘。\n她时常保持着与家族名称相符的高贵举止，而这份俨然的言行也给周围的人留下了难以接近的印象。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/61/UPDCH_DaiichiRuby_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133416",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/61/UPDCH_DaiichiRuby_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133416"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3",
+      "canonical_name_zh": "第一红宝石",
+      "aliases": [
+        "第一红宝石"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3",
+      "raw_name_zh": "第一红宝石",
+      "page_title": "第一红宝石",
+      "raw_name_jp": "ダイイチルビー",
+      "raw_name_en": null,
+      "aliases": [
+        "露比",
+        "大日如来[1]",
+        "第一红宝石"
+      ],
+      "birthday_raw": "4月15日",
+      "height_raw": "141cm",
+      "weight_desc_raw": "华丽地维持着",
+      "bust_raw": "77",
+      "waist_raw": "53",
+      "hip_raw": "76",
+      "cv_raw": "𥐟部花凛",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c5/101268986_p0.jpg!/fw/280?v=20220922105433",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c5/101268986_p0.jpg!/fw/280?v=20220922105433",
+        "https://storage.moegirl.org.cn/moegirl/commons/6/61/UPDCH_DaiichiRuby_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220919133416"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E7%AC%AC%E4%B8%80%E7%BA%A2%E5%AE%9D%E7%9F%B3"
+    }
+  }
+}

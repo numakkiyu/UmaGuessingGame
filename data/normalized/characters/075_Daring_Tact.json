@@ -1,0 +1,266 @@
+{
+  "id": "dearingutakuto",
+  "order": 75,
+  "file_name": "075_Daring_Tact.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "谋勇兼备",
+    "zh_tw": null,
+    "jp": "デアリングタクト",
+    "en": "Daring Tact"
+  },
+  "aliases": [
+    "谋勇兼备",
+    "デアリングタクト",
+    "Daring Tact",
+    "特雷森贝爷",
+    "高松灯",
+    "【無垢の白妙】デアリングタクト",
+    "無垢の白妙"
+  ],
+  "profile": {
+    "birthday": "04-15",
+    "birthday_raw": "4月15日",
+    "birthday_day_of_year": 106,
+    "height_cm": 158,
+    "height_raw": "158",
+    "cv": "羊宫妃那",
+    "cv_raw": "羊宫妃那",
+    "school_grade": null,
+    "grade_raw": null,
+    "dormitory": null,
+    "dorm_raw": null,
+    "star": null,
+    "star_raw": null,
+    "sex_type": null
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英",
+      "中"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "F",
+      "nige": "G",
+      "senko": "D",
+      "sashi": "A",
+      "oikomi": "F"
+    },
+    "g1_bracket": null,
+    "g23_bracket": null,
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/r0h3z15y4kyayng1azdw9kmarqwqeww.png/100px-Chr_icon_1075.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/r0h3z15y4kyayng1azdw9kmarqwqeww.png/100px-Chr_icon_1075.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_DaringTact_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131340",
+      "https://storage.moegirl.org.cn/moegirl/commons/8/8d/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87_PID101595833.jpg!/fw/280?v=20230224030848"
+    ],
+    "image_local_path": "/api/assets/dearingutakuto-thumb",
+    "asset_id": "dearingutakuto-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "角色详情页",
+      "登场人物",
+      "繁中服角色详情页"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87",
+      "https://zh.moegirl.org.cn/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E7%84%A1%E5%9E%A2%E3%81%AE%E7%99%BD%E5%A6%99%E3%80%91%E3%83%87%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%AF%E3%83%88"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/r0h3z15y4kyayng1azdw9kmarqwqeww.png/100px-Chr_icon_1075.png"
+      ],
+      "biliwiki_gallery": [],
+      "biliwiki_detail": [],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_DaringTact_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131340"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/8d/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87_PID101595833.jpg!/fw/280?v=20230224030848",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_DaringTact_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131340"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "为了证明养育了自己的故乡的伟大，她日夜真挚地修行着。 经常能看到她和勇敢之心前辈一起前往山里修行的身影。",
+    "intro_paragraphs": [
+      "为了证明养育了自己的故乡的伟大，她日夜真挚地修行着。",
+      "经常能看到她和勇敢之心前辈一起前往山里修行的身影。"
+    ],
+    "quote_raw": "在严酷而又美丽的大自然中悠然成长，性格开朗、彬彬有礼且内心坚强的马娘。",
+    "weight_desc_raw": "渐进调整",
+    "bust_raw": "80",
+    "waist_raw": "55",
+    "hip_raw": "82"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "谋勇兼备",
+      "character_id": "1075",
+      "birthday_raw": "4月15日",
+      "height_raw": "158",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "82",
+      "whr_raw": "0.67",
+      "bust_waist_diff_raw": "25",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/r0h3z15y4kyayng1azdw9kmarqwqeww.png/100px-Chr_icon_1075.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/r0h3z15y4kyayng1azdw9kmarqwqeww.png/100px-Chr_icon_1075.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87"
+    },
+    "bili_gallery": {},
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87",
+      "raw_name_zh": "谋勇兼备",
+      "raw_name_jp": null,
+      "nickname_raw": null,
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "grade_raw": null,
+      "dorm_raw": null,
+      "turf_raw": null,
+      "dirt_raw": null,
+      "sprint_raw": null,
+      "mile_raw": null,
+      "medium_raw": null,
+      "long_raw": null,
+      "nige_raw": null,
+      "senko_raw": null,
+      "sashi_raw": null,
+      "oikomi_raw": null,
+      "image_url": null,
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%84%A1%E5%9E%A2%E3%81%AE%E7%99%BD%E5%A6%99%E3%80%91%E3%83%87%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%AF%E3%83%88",
+      "raw_name_zh": "谋勇兼备",
+      "raw_name_jp": null,
+      "translated_name_raw": "谋勇兼备",
+      "nickname_raw": null,
+      "page_title": "【無垢の白妙】デアリングタクト",
+      "page_title_aliases": [
+        "【無垢の白妙】デアリングタクト",
+        "デアリングタクト",
+        "無垢の白妙"
+      ],
+      "star_raw": null,
+      "birthday_raw": null,
+      "height_raw": null,
+      "weight_desc_raw": null,
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": null,
+      "introduction_raw": null,
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/5/53/r0h3z15y4kyayng1azdw9kmarqwqeww.png/100px-Chr_icon_1075.png",
+      "image_urls": [],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E7%84%A1%E5%9E%A2%E3%81%AE%E7%99%BD%E5%A6%99%E3%80%91%E3%83%87%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%AF%E3%83%88",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "F",
+      "mile_raw": "A",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "D",
+      "sashi_raw": "A",
+      "oikomi_raw": "F"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "谋勇兼备",
+      "raw_name_jp": "デアリングタクト",
+      "cv_raw": "羊宫妃那",
+      "birthday_raw": "4月15日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "渐进调整",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "82",
+      "quote_raw": "在严酷而又美丽的大自然中悠然成长，性格开朗、彬彬有礼且内心坚强的马娘。",
+      "intro_paragraphs": [
+        "为了证明养育了自己的故乡的伟大，她日夜真挚地修行着。",
+        "经常能看到她和勇敢之心前辈一起前往山里修行的身影。"
+      ],
+      "introduction": "为了证明养育了自己的故乡的伟大，她日夜真挚地修行着。\n经常能看到她和勇敢之心前辈一起前往山里修行的身影。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_DaringTact_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131340",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_DaringTact_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131340"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87",
+      "canonical_name_zh": "谋勇兼备",
+      "aliases": [
+        "谋勇兼备"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87",
+      "raw_name_zh": "谋勇兼备",
+      "page_title": "谋勇兼备",
+      "raw_name_jp": "デアリングタクト",
+      "raw_name_en": null,
+      "aliases": [
+        "特雷森贝爷",
+        "高松灯",
+        "谋勇兼备"
+      ],
+      "birthday_raw": "4月15日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "随自然而推移",
+      "bust_raw": "80",
+      "waist_raw": "55",
+      "hip_raw": "82",
+      "cv_raw": "羊宫妃那",
+      "grade_raw": null,
+      "dorm_raw": null,
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/8d/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87_PID101595833.jpg!/fw/280?v=20230224030848",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/8d/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87_PID101595833.jpg!/fw/280?v=20230224030848",
+        "https://storage.moegirl.org.cn/moegirl/commons/e/e6/UPDCH_DaringTact_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20220727131340"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E8%B0%8B%E5%8B%87%E5%85%BC%E5%A4%87"
+    }
+  }
+}

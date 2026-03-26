@@ -1,0 +1,266 @@
+{
+  "id": "suteigoorudo",
+  "order": 132,
+  "file_name": "132_Stay_Gold.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "黄金旅程",
+    "zh_tw": null,
+    "jp": "ステイゴールド",
+    "en": "Stay Gold"
+  },
+  "aliases": [
+    "黄金旅程",
+    "ステイゴールド",
+    "Stay Gold",
+    "ステゴ",
+    "老黄金",
+    "黄金爹",
+    "旅程子",
+    "Sunlit Outsider"
+  ],
+  "profile": {
+    "birthday": "03-24",
+    "birthday_raw": "3月24日",
+    "birthday_day_of_year": 84,
+    "height_cm": 142,
+    "height_raw": "142cm",
+    "cv": "松田颯水",
+    "cv_raw": "松田颯水",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "中",
+      "长"
+    ],
+    "running_style_group": [
+      "差"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "G",
+      "medium": "A",
+      "long": "A",
+      "nige": "G",
+      "senko": "B",
+      "sashi": "A",
+      "oikomi": "C"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3f/ssvsxezdw4crp8ylf8h3k15kh5qmn4y.png/100px-Chr_icon_1135.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_StayGold_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250525123557",
+      "https://storage.moegirl.org.cn/moegirl/commons/a/a6/130810973_p0.jpg!/fw/280?v=20250525141425"
+    ],
+    "image_local_path": "/api/assets/suteigoorudo-thumb",
+    "asset_id": "suteigoorudo-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B",
+      "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3f/ssvsxezdw4crp8ylf8h3k15kh5qmn4y.png/100px-Chr_icon_1135.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png"
+      ],
+      "biliwiki_tw_detail": [],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_StayGold_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250525123557"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/130810973_p0.jpg!/fw/280?v=20250525141425",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_StayGold_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250525123557"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "她时常制定些不靠谱的行程，然后随心所欲地四处游荡，常常许久都不回来。 明明总是一副漫不经心的样子，却又总给人一种豁达通透的感觉，因此受到学院内的个性派赛马娘们的仰慕。 据她们所说，『说来也奇怪，但就是会情不自禁地爱上她呢』。",
+    "intro_paragraphs": [
+      "她时常制定些不靠谱的行程，然后随心所欲地四处游荡，常常许久都不回来。",
+      "明明总是一副漫不经心的样子，却又总给人一种豁达通透的感觉，因此受到学院内的个性派赛马娘们的仰慕。",
+      "据她们所说，『说来也奇怪，但就是会情不自禁地爱上她呢』。"
+    ],
+    "quote_raw": "好奇心旺盛，无比钟意旅行。",
+    "weight_desc_raw": "食べても太らない",
+    "bust_raw": "67",
+    "waist_raw": "49",
+    "hip_raw": "68"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "黄金旅程",
+      "character_id": "1135",
+      "birthday_raw": "3月24日",
+      "height_raw": "142",
+      "bust_raw": "67",
+      "waist_raw": "49",
+      "hip_raw": "68",
+      "whr_raw": "0.72",
+      "bust_waist_diff_raw": "18",
+      "body_type_raw": "A",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3f/ssvsxezdw4crp8ylf8h3k15kh5qmn4y.png/100px-Chr_icon_1135.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3f/ssvsxezdw4crp8ylf8h3k15kh5qmn4y.png/100px-Chr_icon_1135.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "黄金旅程",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B",
+      "star_raw": "3",
+      "speed_growth_raw": "0%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "20%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B",
+      "raw_name_zh": "黄金旅程",
+      "raw_name_jp": "ステイゴールド",
+      "nickname_raw": "Sunlit Outsider",
+      "star_raw": "3",
+      "birthday_raw": "3月24日",
+      "height_raw": "142cm",
+      "weight_desc_raw": "食べても太らない",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "松田颯水",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "G",
+      "medium_raw": "A",
+      "long_raw": "A",
+      "nige_raw": "G",
+      "senko_raw": "B",
+      "sashi_raw": "A",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/d/d2/9i256ilfxgb31wpqnxu4xxn6b9dylt9.png/100px-Chr_icon_1135_113501_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "黄金旅程",
+      "raw_name_jp": "ステイゴールド",
+      "cv_raw": "松田飒水",
+      "birthday_raw": "3月24日",
+      "height_raw": "142cm",
+      "weight_desc_raw": "吃都吃不胖",
+      "bust_raw": "67",
+      "waist_raw": "49",
+      "hip_raw": "68",
+      "quote_raw": "好奇心旺盛，无比钟意旅行。",
+      "intro_paragraphs": [
+        "她时常制定些不靠谱的行程，然后随心所欲地四处游荡，常常许久都不回来。",
+        "明明总是一副漫不经心的样子，却又总给人一种豁达通透的感觉，因此受到学院内的个性派赛马娘们的仰慕。",
+        "据她们所说，『说来也奇怪，但就是会情不自禁地爱上她呢』。"
+      ],
+      "introduction": "她时常制定些不靠谱的行程，然后随心所欲地四处游荡，常常许久都不回来。\n明明总是一副漫不经心的样子，却又总给人一种豁达通透的感觉，因此受到学院内的个性派赛马娘们的仰慕。\n据她们所说，『说来也奇怪，但就是会情不自禁地爱上她呢』。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_StayGold_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250525123557",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_StayGold_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250525123557"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B",
+      "canonical_name_zh": "黄金旅程",
+      "aliases": [
+        "黄金旅程"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B",
+      "raw_name_zh": "黄金旅程",
+      "page_title": "黄金旅程",
+      "raw_name_jp": "ステイゴールド",
+      "raw_name_en": null,
+      "aliases": [
+        "ステゴ",
+        "老黄金",
+        "黄金爹",
+        "旅程子",
+        "黄金旅程"
+      ],
+      "birthday_raw": "3月24日",
+      "height_raw": "142cm",
+      "weight_desc_raw": "吃都吃不胖",
+      "bust_raw": "67",
+      "waist_raw": "49",
+      "hip_raw": "68",
+      "cv_raw": "松田飒水",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/a/a6/130810973_p0.jpg!/fw/280?v=20250525141425",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/a/a6/130810973_p0.jpg!/fw/280?v=20250525141425",
+        "https://storage.moegirl.org.cn/moegirl/commons/d/d4/UPDCH_StayGold_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250525123557"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E9%BB%84%E9%87%91%E6%97%85%E7%A8%8B"
+    }
+  }
+}

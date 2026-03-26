@@ -1,0 +1,301 @@
+{
+  "id": "noosufuraito",
+  "order": 82,
+  "file_name": "082_North_Flight.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "北方飞翔",
+    "zh_tw": null,
+    "jp": "ノースフライト",
+    "en": "North Flight"
+  },
+  "aliases": [
+    "北方飞翔",
+    "ノースフライト",
+    "North Flight",
+    "【Looking Fly!】北方飛翔",
+    "北方飛翔",
+    "Looking Fly!",
+    "英里的女王（マイルの女王）"
+  ],
+  "profile": {
+    "birthday": "04-12",
+    "birthday_raw": "4月12日",
+    "birthday_day_of_year": 103,
+    "height_cm": 156,
+    "height_raw": "156cm",
+    "cv": "指出毬亜",
+    "cv_raw": "指出毬亜",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "栗东宿舍",
+    "dorm_raw": "栗东宿舍",
+    "star": 3,
+    "star_raw": "3",
+    "sex_type": "牝"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "英"
+    ],
+    "running_style_group": [
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "C",
+      "mile": "A",
+      "medium": "B",
+      "long": "G",
+      "nige": "D",
+      "senko": "A",
+      "sashi": "D",
+      "oikomi": "C"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "4-6",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/hpuvkaeu08riiumzwjajspe2w5dveb8.png/100px-Chr_icon_1082.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_NorthFlight_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230917142104",
+      "https://storage.moegirl.org.cn/moegirl/commons/8/86/North_Flight_Intro.png!/fw/280?v=20240219062841"
+    ],
+    "image_local_path": "/api/assets/noosufuraito-thumb",
+    "asset_id": "noosufuraito-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94",
+      "https://wiki.biligame.com/umamusume/%E3%80%90Looking_Fly!%E3%80%91%E5%8C%97%E6%96%B9%E9%A3%9B%E7%BF%94",
+      "https://zh.moegirl.org.cn/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/hpuvkaeu08riiumzwjajspe2w5dveb8.png/100px-Chr_icon_1082.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_NorthFlight_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230917142104"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/86/North_Flight_Intro.png!/fw/280?v=20240219062841",
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_NorthFlight_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230917142104"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "出于自身的体质与经验，有着“无论是什么素材都能通过设计和穿搭闪闪发光”的信条。 “芙酱的时装建议”在学园里的马娘间大受欢迎。",
+    "intro_paragraphs": [
+      "出于自身的体质与经验，有着“无论是什么素材都能通过设计和穿搭闪闪发光”的信条。",
+      "“芙酱的时装建议”在学园里的马娘间大受欢迎。"
+    ],
+    "quote_raw": "喜欢在任何时候打扮自己的时髦小姐。",
+    "weight_desc_raw": "成長中",
+    "bust_raw": "82",
+    "waist_raw": "51",
+    "hip_raw": "80"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "北方飞翔",
+      "character_id": "1082",
+      "birthday_raw": "4月12日",
+      "height_raw": "156",
+      "bust_raw": "82",
+      "waist_raw": "51",
+      "hip_raw": "80",
+      "whr_raw": "0.64",
+      "bust_waist_diff_raw": "31",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/hpuvkaeu08riiumzwjajspe2w5dveb8.png/100px-Chr_icon_1082.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/3/3e/hpuvkaeu08riiumzwjajspe2w5dveb8.png/100px-Chr_icon_1082.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "北方飞翔",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94",
+      "star_raw": "3",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "C",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "C"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94",
+      "raw_name_zh": "北方飞翔",
+      "raw_name_jp": "ノースフライト",
+      "nickname_raw": "Looking Fly!",
+      "star_raw": "3",
+      "birthday_raw": "4月12日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "成长中",
+      "bust_raw": "82",
+      "waist_raw": "51",
+      "hip_raw": "80",
+      "cv_raw": "指出毬亚",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "C",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "C",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90Looking_Fly!%E3%80%91%E5%8C%97%E6%96%B9%E9%A3%9B%E7%BF%94",
+      "raw_name_zh": "北方飞翔",
+      "raw_name_jp": null,
+      "translated_name_raw": "北方飛翔",
+      "nickname_raw": "Looking Fly!",
+      "page_title": "【Looking Fly!】北方飛翔",
+      "page_title_aliases": [
+        "【Looking Fly!】北方飛翔",
+        "北方飛翔",
+        "Looking Fly!"
+      ],
+      "star_raw": "3",
+      "birthday_raw": "4月12日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "成長中",
+      "bust_raw": null,
+      "waist_raw": null,
+      "hip_raw": null,
+      "cv_raw": "指出毬亜",
+      "introduction_raw": "經過琢磨才能綻放光芒！閃耀的時尚達人",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/8/8c/tsm252lcnqrqifhrhhwpeywllubktxv.png/100px-Chr_icon_1082_108201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90Looking_Fly!%E3%80%91%E5%8C%97%E6%96%B9%E9%A3%9B%E7%BF%94",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "C",
+      "mile_raw": "A",
+      "medium_raw": "B",
+      "long_raw": "G",
+      "nige_raw": "D",
+      "senko_raw": "A",
+      "sashi_raw": "D",
+      "oikomi_raw": "C"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "北方飞翔",
+      "raw_name_jp": "ノースフライト",
+      "cv_raw": "指出毬亚",
+      "birthday_raw": "4月12日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "成长中",
+      "bust_raw": "82",
+      "waist_raw": "51",
+      "hip_raw": "80",
+      "quote_raw": "喜欢在任何时候打扮自己的时髦小姐。",
+      "intro_paragraphs": [
+        "出于自身的体质与经验，有着“无论是什么素材都能通过设计和穿搭闪闪发光”的信条。",
+        "“芙酱的时装建议”在学园里的马娘间大受欢迎。"
+      ],
+      "introduction": "出于自身的体质与经验，有着“无论是什么素材都能通过设计和穿搭闪闪发光”的信条。\n“芙酱的时装建议”在学园里的马娘间大受欢迎。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_NorthFlight_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230917142104",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_NorthFlight_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230917142104"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94",
+      "canonical_name_zh": "北方飞翔",
+      "aliases": [
+        "北方飞翔"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94",
+      "raw_name_zh": "北方飞翔",
+      "page_title": "北方飞翔",
+      "raw_name_jp": "ノースフライト",
+      "raw_name_en": null,
+      "aliases": [
+        "英里的女王（マイルの女王）",
+        "北方飞翔"
+      ],
+      "birthday_raw": "4月12日",
+      "height_raw": "156cm",
+      "weight_desc_raw": "成长中",
+      "bust_raw": "82",
+      "waist_raw": "51",
+      "hip_raw": "80",
+      "cv_raw": "指出毬亚",
+      "grade_raw": "高等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/8/86/North_Flight_Intro.png!/fw/280?v=20240219062841",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/8/86/North_Flight_Intro.png!/fw/280?v=20240219062841",
+        "https://storage.moegirl.org.cn/moegirl/commons/0/0f/UPDCH_NorthFlight_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20230917142104"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%8C%97%E6%96%B9%E9%A3%9E%E7%BF%94"
+    }
+  }
+}

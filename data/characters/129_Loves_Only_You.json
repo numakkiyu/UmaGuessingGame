@@ -1,0 +1,234 @@
+{
+  "id": "ravuzuonriiyuu",
+  "name_zh": "唯独爱你",
+  "name_jp": "ラヴズオンリーユー",
+  "aliases": [
+    "唯独爱你",
+    "ラヴズオンリーユー",
+    "9927 Wishes"
+  ],
+  "birthday": "03-26",
+  "birthday_day_of_year": 86,
+  "birthday_raw": "3月26日",
+  "height_cm": 158,
+  "height_raw": "158cm",
+  "grade": "中等部",
+  "grade_raw": "中等部",
+  "dormitory": "栗东宿舍",
+  "dorm_raw": "栗东宿舍",
+  "star": 3,
+  "star_raw": "3",
+  "cv": "久保田未梦",
+  "cv_raw": "久保田未梦",
+  "quote_raw": "在网络上运营着自己的粉丝俱乐部，经常为了注册成为会员的粉丝们发布视频。",
+  "introduction": "梦想是与全世界的粉丝分享“爱”♡。 从粉丝们那里得到了名为“应援”的“爱”，而她会以名为“胜利”的“爱”来回馈他们。",
+  "intro_paragraphs": [
+    "梦想是与全世界的粉丝分享“爱”♡。",
+    "从粉丝们那里得到了名为“应援”的“爱”，而她会以名为“胜利”的“爱”来回馈他们。"
+  ],
+  "weight_desc_raw": "仅限特定成员可见",
+  "bust_raw": "88",
+  "waist_raw": "58",
+  "hip_raw": "88",
+  "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png",
+  "image_urls": [
+    "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/o6ut61cwmu9xywkdrffvehn7so2366g.png/100px-Chr_icon_1132.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png",
+    "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kfqeqg88j9i3j386mtvwwesucbe9bbo.png/100px-Chr_icon_1132_113202_01.png",
+    "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018",
+    "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/280?v=20250222172018"
+  ],
+  "image_sources": {
+    "biliwiki_seed": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/o6ut61cwmu9xywkdrffvehn7so2366g.png/100px-Chr_icon_1132.png"
+    ],
+    "biliwiki_gallery": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png"
+    ],
+    "biliwiki_detail": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kfqeqg88j9i3j386mtvwwesucbe9bbo.png/100px-Chr_icon_1132_113202_01.png"
+    ],
+    "biliwiki_tw_detail": [],
+    "moegirl_intro": [
+      "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+    ],
+    "moegirl_detail": [
+      "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/280?v=20250222172018",
+      "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+    ]
+  },
+  "source_pages": [
+    "人设数据表",
+    "赛马娘图鉴",
+    "角色详情页",
+    "登场人物"
+  ],
+  "source_urls": [
+    "https://wiki.biligame.com/umamusume/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0",
+    "https://zh.moegirl.org.cn/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0"
+  ],
+  "source_priority": [
+    "biliwiki",
+    "moegirl"
+  ],
+  "aptitudes": {
+    "turf": "A",
+    "dirt": "G",
+    "sprint": "G",
+    "mile": "C",
+    "medium": "A",
+    "long": "F",
+    "nige": "G",
+    "senko": "A",
+    "sashi": "A",
+    "oikomi": "G"
+  },
+  "surface_group": [
+    "草地"
+  ],
+  "distance_group": [
+    "中"
+  ],
+  "running_style_group": [
+    "先",
+    "差"
+  ],
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "唯独爱你",
+      "character_id": "1132",
+      "birthday_raw": "3月26日",
+      "height_raw": "158",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "whr_raw": "0.65",
+      "bust_waist_diff_raw": "30",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/o6ut61cwmu9xywkdrffvehn7so2366g.png/100px-Chr_icon_1132.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/7/78/o6ut61cwmu9xywkdrffvehn7so2366g.png/100px-Chr_icon_1132.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "唯独爱你",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0",
+      "star_raw": "3",
+      "speed_growth_raw": "10%",
+      "stamina_growth_raw": "10%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "10%",
+      "wisdom_growth_raw": "0%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0",
+      "raw_name_zh": "唯独爱你",
+      "raw_name_jp": "ラヴズオンリーユー",
+      "nickname_raw": "9927 Wishes",
+      "star_raw": "3",
+      "birthday_raw": "3月26日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "仅限特定成员可见",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "cv_raw": "久保田未梦",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗東寮",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "G",
+      "mile_raw": "C",
+      "medium_raw": "A",
+      "long_raw": "F",
+      "nige_raw": "G",
+      "senko_raw": "A",
+      "sashi_raw": "A",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/c/c9/t2ji6hirxmgza4t46wxn539ge50q5y7.png/100px-Chr_icon_1132_113201_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/9/9e/kfqeqg88j9i3j386mtvwwesucbe9bbo.png/100px-Chr_icon_1132_113202_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0"
+    },
+    "bili_tw_detail": {},
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "唯独爱你",
+      "raw_name_jp": "ラヴズオンリーユー",
+      "cv_raw": "久保田未梦",
+      "birthday_raw": "3月26日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "会员专享内容",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "quote_raw": "在网络上运营着自己的粉丝俱乐部，经常为了注册成为会员的粉丝们发布视频。",
+      "intro_paragraphs": [
+        "梦想是与全世界的粉丝分享“爱”♡。",
+        "从粉丝们那里得到了名为“应援”的“爱”，而她会以名为“胜利”的“爱”来回馈他们。"
+      ],
+      "introduction": "梦想是与全世界的粉丝分享“爱”♡。\n从粉丝们那里得到了名为“应援”的“爱”，而她会以名为“胜利”的“爱”来回馈他们。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0",
+      "canonical_name_zh": "唯独爱你",
+      "aliases": [
+        "唯独爱你"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0",
+      "raw_name_zh": "唯独爱你",
+      "page_title": "唯独爱你",
+      "raw_name_jp": "ラヴズオンリーユー",
+      "raw_name_en": null,
+      "aliases": [
+        "唯独爱你"
+      ],
+      "birthday_raw": "3月26日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "会员专享内容",
+      "bust_raw": "88",
+      "waist_raw": "58",
+      "hip_raw": "88",
+      "cv_raw": "久保田未梦",
+      "grade_raw": "中等部",
+      "dorm_raw": "栗东宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/280?v=20250222172018",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/280?v=20250222172018",
+        "https://storage.moegirl.org.cn/moegirl/commons/6/6c/UPDCH_LovesOnlyYou_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20250222172018"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E5%94%AF%E7%8B%AC%E7%88%B1%E4%BD%A0"
+    }
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "id": "sakurabakushinoo",
+  "order": 41,
+  "file_name": "041_Sakura_Bakushin_O.json",
+  "release_status": "released",
+  "names": {
+    "zh_cn": "樱花进王",
+    "zh_tw": null,
+    "jp": "サクラバクシンオー",
+    "en": "Sakura Bakushin O"
+  },
+  "aliases": [
+    "樱花进王",
+    "サクラバクシンオー",
+    "Sakura Bakushin O",
+    "【前進吧！櫻花】櫻花驀進王",
+    "櫻花驀進王",
+    "前進吧！櫻花",
+    "进王",
+    "樱花笨进",
+    "班长",
+    "马克沁[1]",
+    "サクラ、すすめ！"
+  ],
+  "profile": {
+    "birthday": "04-14",
+    "birthday_raw": "4月14日",
+    "birthday_day_of_year": 105,
+    "height_cm": 158,
+    "height_raw": "158cm",
+    "cv": "三澤紗千香",
+    "cv_raw": "三澤紗千香",
+    "school_grade": "高等部",
+    "grade_raw": "高等部",
+    "dormitory": "美浦宿舍",
+    "dorm_raw": "美浦宿舍",
+    "star": 1,
+    "star_raw": "1",
+    "sex_type": "牡"
+  },
+  "racing": {
+    "surface_group": [
+      "草地"
+    ],
+    "distance_group": [
+      "短"
+    ],
+    "running_style_group": [
+      "逃",
+      "先"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "A",
+      "mile": "B",
+      "medium": "G",
+      "long": "G",
+      "nige": "A",
+      "senko": "A",
+      "sashi": "F",
+      "oikomi": "G"
+    },
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "g1_has_jpn": false,
+    "g23_has_jpn": false
+  },
+  "media": {
+    "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+    "image_urls": [
+      "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/1/1a/ff8p9oezlsfo1hbx59dcgjsu6hf1a06.png/100px-Chr_icon_1041.png",
+      "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/czfevdx8ixxs0zr0o01caqr4h2xqlko.png/100px-Chr_icon_1041_104102_01.png",
+      "https://storage.moegirl.org.cn/moegirl/commons/4/45/UPDCH_SakuraBakushinO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210510163134",
+      "https://storage.moegirl.org.cn/moegirl/commons/c/c3/PID94240592.jpg!/fw/280?v=20211124162640"
+    ],
+    "image_local_path": "/api/assets/sakurabakushinoo-thumb",
+    "asset_id": "sakurabakushinoo-thumb"
+  },
+  "sources": {
+    "source_pages": [
+      "人设数据表",
+      "赛马娘图鉴",
+      "角色详情页",
+      "繁中服角色详情页",
+      "登场人物"
+    ],
+    "source_urls": [
+      "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B",
+      "https://wiki.biligame.com/umamusume/%E3%80%90%E5%89%8D%E9%80%B2%E5%90%A7%EF%BC%81%E6%AB%BB%E8%8A%B1%E3%80%91%E6%AB%BB%E8%8A%B1%E9%A9%80%E9%80%B2%E7%8E%8B",
+      "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B"
+    ],
+    "source_priority": [
+      "biliwiki",
+      "moegirl"
+    ],
+    "image_sources": {
+      "biliwiki_seed": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1a/ff8p9oezlsfo1hbx59dcgjsu6hf1a06.png/100px-Chr_icon_1041.png"
+      ],
+      "biliwiki_gallery": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png"
+      ],
+      "biliwiki_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/czfevdx8ixxs0zr0o01caqr4h2xqlko.png/100px-Chr_icon_1041_104102_01.png"
+      ],
+      "biliwiki_tw_detail": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/czfevdx8ixxs0zr0o01caqr4h2xqlko.png/100px-Chr_icon_1041_104102_01.png"
+      ],
+      "moegirl_intro": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/45/UPDCH_SakuraBakushinO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210510163134"
+      ],
+      "moegirl_detail": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c3/PID94240592.jpg!/fw/280?v=20211124162640",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/45/UPDCH_SakuraBakushinO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210510163134"
+      ]
+    }
+  },
+  "extra": {
+    "introduction": "猪突猛进的年级委员长，下定决心后就会笔直地前进。 无论是帮到了周围的人还是给别人添了麻烦，都不会在意地继续爆进。 但并没有自以为是的意思，如果没有人来依赖自己的话就会消沉。 在短距离上拥有压倒性的适性，对自己的无敌速度十分自信，相信无论任何对手都能超过。",
+    "intro_paragraphs": [
+      "猪突猛进的年级委员长，下定决心后就会笔直地前进。",
+      "无论是帮到了周围的人还是给别人添了麻烦，都不会在意地继续爆进。",
+      "但并没有自以为是的意思，如果没有人来依赖自己的话就会消沉。",
+      "在短距离上拥有压倒性的适性，对自己的无敌速度十分自信，相信无论任何对手都能超过。"
+    ],
+    "quote_raw": "“第一爆进！第二爆进！！爆进、爆————进！”",
+    "weight_desc_raw": "無增減",
+    "bust_raw": "83",
+    "waist_raw": "55",
+    "hip_raw": "83"
+  },
+  "raw": {
+    "bili_seed": {
+      "source_site": "biliwiki",
+      "source_page": "人设数据表",
+      "raw_name_zh": "樱花进王",
+      "character_id": "1041",
+      "birthday_raw": "4月14日",
+      "height_raw": "158",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "whr_raw": "0.66",
+      "bust_waist_diff_raw": "28",
+      "body_type_raw": "？",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/1/1a/ff8p9oezlsfo1hbx59dcgjsu6hf1a06.png/100px-Chr_icon_1041.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/1/1a/ff8p9oezlsfo1hbx59dcgjsu6hf1a06.png/100px-Chr_icon_1041.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B"
+    },
+    "bili_gallery": {
+      "source_site": "biliwiki",
+      "source_page": "赛马娘图鉴",
+      "raw_name_zh": "樱花进王",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B",
+      "star_raw": "1",
+      "speed_growth_raw": "20%",
+      "stamina_growth_raw": "0%",
+      "power_growth_raw": "0%",
+      "grit_growth_raw": "0%",
+      "wisdom_growth_raw": "10%",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "bili_detail": {
+      "source_site": "biliwiki",
+      "source_page": "角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B",
+      "raw_name_zh": "樱花进王",
+      "raw_name_jp": "サクラバクシンオー",
+      "nickname_raw": "サクラ、すすめ！",
+      "star_raw": "1",
+      "birthday_raw": "4月14日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "cv_raw": "三泽纱千香",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/czfevdx8ixxs0zr0o01caqr4h2xqlko.png/100px-Chr_icon_1041_104102_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B"
+    },
+    "bili_tw_detail": {
+      "source_site": "biliwiki",
+      "source_page": "繁中服角色详情页",
+      "source_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%89%8D%E9%80%B2%E5%90%A7%EF%BC%81%E6%AB%BB%E8%8A%B1%E3%80%91%E6%AB%BB%E8%8A%B1%E9%A9%80%E9%80%B2%E7%8E%8B",
+      "raw_name_zh": "樱花进王",
+      "raw_name_jp": null,
+      "translated_name_raw": "櫻花驀進王",
+      "nickname_raw": "前進吧！櫻花",
+      "page_title": "【前進吧！櫻花】櫻花驀進王",
+      "page_title_aliases": [
+        "【前進吧！櫻花】櫻花驀進王",
+        "櫻花驀進王",
+        "前進吧！櫻花"
+      ],
+      "star_raw": "1",
+      "birthday_raw": "4月14日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "無增減",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "cv_raw": "三澤紗千香",
+      "introduction_raw": "橫衝直撞的班長。隨時隨地都要驀進！",
+      "image_url": "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+      "image_urls": [
+        "https://patchwiki.biligame.com/images/umamusume/thumb/6/64/eatkvvxofj7u3hiuhg62gv35nc62i0w.png/100px-Chr_icon_1041_104101_01.png",
+        "https://patchwiki.biligame.com/images/umamusume/thumb/e/e7/czfevdx8ixxs0zr0o01caqr4h2xqlko.png/100px-Chr_icon_1041_104102_01.png"
+      ],
+      "character_page_url": "https://wiki.biligame.com/umamusume/%E3%80%90%E5%89%8D%E9%80%B2%E5%90%A7%EF%BC%81%E6%AB%BB%E8%8A%B1%E3%80%91%E6%AB%BB%E8%8A%B1%E9%A9%80%E9%80%B2%E7%8E%8B",
+      "turf_raw": "A",
+      "dirt_raw": "G",
+      "sprint_raw": "A",
+      "mile_raw": "B",
+      "medium_raw": "G",
+      "long_raw": "G",
+      "nige_raw": "A",
+      "senko_raw": "A",
+      "sashi_raw": "F",
+      "oikomi_raw": "G"
+    },
+    "moegirl_intro": {
+      "source_site": "moegirl",
+      "source_page": "登场人物",
+      "raw_name_zh": "樱花进王",
+      "raw_name_jp": "サクラバクシンオー",
+      "cv_raw": "三泽纱千香",
+      "birthday_raw": "4月14日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "quote_raw": "“第一爆进！第二爆进！！爆进、爆————进！”",
+      "intro_paragraphs": [
+        "猪突猛进的年级委员长，下定决心后就会笔直地前进。",
+        "无论是帮到了周围的人还是给别人添了麻烦，都不会在意地继续爆进。",
+        "但并没有自以为是的意思，如果没有人来依赖自己的话就会消沉。",
+        "在短距离上拥有压倒性的适性，对自己的无敌速度十分自信，相信无论任何对手都能超过。"
+      ],
+      "introduction": "猪突猛进的年级委员长，下定决心后就会笔直地前进。\n无论是帮到了周围的人还是给别人添了麻烦，都不会在意地继续爆进。\n但并没有自以为是的意思，如果没有人来依赖自己的话就会消沉。\n在短距离上拥有压倒性的适性，对自己的无敌速度十分自信，相信无论任何对手都能超过。",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/4/45/UPDCH_SakuraBakushinO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210510163134",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/4/45/UPDCH_SakuraBakushinO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210510163134"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B",
+      "canonical_name_zh": "樱花进王",
+      "aliases": [
+        "樱花进王"
+      ]
+    },
+    "moegirl_detail": {
+      "source_site": "moegirl",
+      "source_page": "角色详情页",
+      "source_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B",
+      "raw_name_zh": "樱花进王",
+      "page_title": "樱花进王",
+      "raw_name_jp": "サクラバクシンオー",
+      "raw_name_en": null,
+      "aliases": [
+        "进王",
+        "樱花笨进",
+        "班长",
+        "马克沁[1]",
+        "樱花进王"
+      ],
+      "birthday_raw": "4月14日",
+      "height_raw": "158cm",
+      "weight_desc_raw": "无增减",
+      "bust_raw": "83",
+      "waist_raw": "55",
+      "hip_raw": "83",
+      "cv_raw": "三泽纱千香",
+      "grade_raw": "高等部",
+      "dorm_raw": "美浦宿舍",
+      "image_url": "https://storage.moegirl.org.cn/moegirl/commons/c/c3/PID94240592.jpg!/fw/280?v=20211124162640",
+      "image_urls": [
+        "https://storage.moegirl.org.cn/moegirl/commons/c/c3/PID94240592.jpg!/fw/280?v=20211124162640",
+        "https://storage.moegirl.org.cn/moegirl/commons/4/45/UPDCH_SakuraBakushinO_00.png!/fw/300/watermark/url/L21vZWdpcmwvd2F0ZXJtYXJrLnBuZw==/align/southeast/margin/10x10/opacity/50?v=20210510163134"
+      ],
+      "character_page_url": "https://zh.moegirl.org.cn/%E6%A8%B1%E8%8A%B1%E8%BF%9B%E7%8E%8B"
+    }
+  }
+}
