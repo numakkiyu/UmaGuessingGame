@@ -357,68 +357,74 @@ img {
   display: none;
 }
 
-@media (max-width: 1023px) and (orientation: portrait) {
-  .mobile-rotate-guard {
-    position: fixed;
-    inset: 0;
-    z-index: 60;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background:
-      linear-gradient(180deg, rgba(27, 47, 77, 0.82), rgba(27, 47, 77, 0.9)),
-      linear-gradient(135deg, rgba(63, 136, 247, 0.12), rgba(136, 205, 255, 0));
-    backdrop-filter: blur(8px);
-  }
-
-  .mobile-rotate-card {
-    width: min(100%, 360px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 28px;
-    background: rgba(255, 255, 255, 0.96);
-    padding: 24px 20px;
-    box-shadow: 0 24px 64px rgba(16, 39, 74, 0.32);
-    color: var(--color-ink);
-  }
-
-  .mobile-rotate-card h2 {
-    margin: 8px 0 0;
-    font-family: var(--font-display);
-    font-size: 2rem;
-    line-height: 1;
-  }
-
-  .mobile-rotate-card p {
-    margin: 12px 0 0;
-    color: var(--color-muted);
-    line-height: 1.7;
-  }
-
-  .mobile-rotate-eyebrow {
-    margin: 0;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--color-brand-strong);
-  }
-
-  .mobile-rotate-link {
-    display: inline-flex;
-    min-height: 48px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 18px;
-    padding: 0 18px;
-    border-radius: 999px;
-    background: linear-gradient(180deg, #a8e533, #82cb1a);
-    color: #244117;
-    font-weight: 600;
-  }
-
+@media (max-width: 767px) {
   .mobile-landscape-shell {
-    display: none !important;
+    max-width: none;
+    padding: 10px 10px 18px;
+    gap: 10px;
+  }
+
+  .single-search-sticky::before {
+    content: "";
+    position: absolute;
+    inset: -8px -6px auto;
+    height: calc(100% + 12px);
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(237, 247, 255, 0.96), rgba(237, 247, 255, 0.82));
+    backdrop-filter: blur(8px);
+    z-index: -1;
+  }
+
+  .single-search-sticky .battle-input-card {
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(53, 96, 162, 0.14);
+  }
+
+  .mobile-landscape-shell .battle-top-card {
+    padding: 12px 12px 10px;
+    border-radius: 26px;
+  }
+
+  .mobile-landscape-shell .battle-top-badges {
+    gap: 6px;
+  }
+
+  .mobile-landscape-shell .battle-top-badges .uma-chip,
+  .mobile-landscape-shell .battle-top-badges .uma-ghost-button {
+    min-height: 32px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .mobile-landscape-shell .battle-status-shell {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .mobile-landscape-shell .battle-main-grid {
+    gap: 10px;
+  }
+
+  .mobile-landscape-shell .battle-input-card {
+    padding: 0;
+  }
+
+  .mobile-landscape-shell .guess-table {
+    border-radius: 24px;
+  }
+
+  .mobile-landscape-shell .guess-table-head {
+    padding: 14px 14px 12px;
+  }
+
+  .mobile-landscape-shell .guess-table-head-inner {
+    gap: 10px;
+  }
+
+  .mobile-landscape-shell .battle-footer {
+    margin-top: 2px;
   }
 }
 

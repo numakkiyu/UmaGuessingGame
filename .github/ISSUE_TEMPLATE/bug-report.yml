@@ -1,5 +1,5 @@
-name: Bug Report
-description: 报告会影响游玩、部署或数据构建的问题
+name: Bug report
+description: Report a reproducible problem that affects gameplay, deployment, or data integrity
 title: "[Bug] "
 labels:
   - bug
@@ -7,62 +7,62 @@ body:
   - type: markdown
     attributes:
       value: |
-        感谢反馈。请尽量把复现步骤、环境和报错信息写完整，方便快速定位。
+        Thanks for taking the time to report a problem. Please include a clear reproduction path, environment details, and any error output you have.
 
   - type: dropdown
     id: area
     attributes:
-      label: 影响范围
+      label: Area
       options:
-        - 游戏流程
-        - 题库 / 数据
-        - 图片 / 资源代理
-        - 部署 / Docker
-        - CI / 自动化
-        - 其他
+        - Gameplay
+        - Question bank / data
+        - Assets / image proxy
+        - Deployment / Docker
+        - CI / automation
+        - Other
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: 复现步骤
+      label: Reproduction steps
       placeholder: |
-        1. 进入首页
-        2. 开始新一局
-        3. 输入某位马娘后点击候选
-        4. 出现报错
+        1. Open the homepage
+        2. Start a new round
+        3. Enter a character name and choose a result
+        4. Observe the failure
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: 预期表现
+      label: Expected behavior
     validations:
       required: true
 
   - type: textarea
     id: actual
     attributes:
-      label: 实际表现
+      label: Actual behavior
     validations:
       required: true
 
   - type: textarea
     id: env
     attributes:
-      label: 环境信息
+      label: Environment
       placeholder: |
-        - 系统：
-        - 浏览器：
-        - Node.js：
-        - 部署方式：
-        - 是否开启 Turnstile：
+        - OS:
+        - Browser:
+        - Node.js:
+        - Deployment method:
+        - Turnstile enabled:
     validations:
       required: true
 
   - type: textarea
     id: logs
     attributes:
-      label: 截图、日志或补充信息
+      label: Screenshots, logs, or additional context

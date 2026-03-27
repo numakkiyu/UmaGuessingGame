@@ -28,6 +28,7 @@ const envSchema = z
     RATE_LIMIT_ENABLED: booleanish.default(true),
     MAX_GUESSES: intish(8),
     ENABLE_MULTIPLAYER: booleanish.default(false),
+    ENABLE_FRIEND_BATTLE: booleanish.default(false),
     ENABLE_SHARE: booleanish.default(true),
     ASSET_PROXY_ENABLED: booleanish.default(true),
     ASSET_CACHE_DIR: z.string().default("public/assets"),
@@ -37,6 +38,14 @@ const envSchema = z
     REALTIME_WS_URL: z.string().optional().default(""),
     ROOM_SYNC_POLL_INTERVAL_MS: intish(2500),
     REALTIME_HEARTBEAT_INTERVAL_MS: intish(15000),
+    MATCHMAKING_MAX_WAIT_SECONDS: intish(180),
+    MATCH_ACCEPT_CONFIRM_SECONDS: intish(10),
+    MATCH_BATTLE_IDLE_TIMEOUT_SECONDS: intish(60),
+    MATCH_PAUSE_ENABLED: booleanish.default(true),
+    MATCH_PAUSE_DURATION_SECONDS: intish(50),
+    ROOM_PAUSE_ENABLED: booleanish.default(true),
+    ROOM_PAUSE_DURATION_SECONDS: intish(50),
+    ROOM_REMATCH_CONFIRM_TIMEOUT_SECONDS: intish(20),
   })
   .superRefine((env, ctx) => {
     if (env.TURNSTILE_ENABLED) {

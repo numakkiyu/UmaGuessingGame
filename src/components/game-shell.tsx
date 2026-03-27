@@ -2,15 +2,21 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { CharacterSearchInput } from "@/components/search-input";
 import { GameResultDialog } from "@/components/game-result-dialog";
 import { GameStatusBar } from "@/components/game-status-bar";
 import { GuessTable } from "@/components/guess-table";
 import { SiteBrand } from "@/components/site-brand";
 import { SiteFooter } from "@/components/site-footer";
-import { TurnstileWidget } from "@/components/turnstile-widget";
+import { TurnstileDialog } from "@/components/turnstile-dialog";
 import type { PublicConfig } from "@/config/public";
+import {
+  buildGameViewerHeaders,
+  readGameViewerToken,
+  withGameViewerTokenQuery,
+  writeGameViewerToken,
+} from "@/lib/game/client-auth";
 import { excludeGuessedSearchEntries } from "@/lib/game/search";
 import { useRoomPresence } from "@/lib/realtime/use-room-presence";
 import {
@@ -31,12 +37,15 @@ const ROOM_SYNC_PRESET_KEY = "uma-room-sync-preset";
 
 type Props = {
   canEdit: boolean;
+  initialViewerToken: string | null;
   initialConfig: PublicConfig;
   initialGameState: GameState;
   initialQuestionBank: QuestionBankEntry[];
   initialQuestionBankSize: number;
   initialSearchEntries: SearchIndexEntry[];
 };
+
+type PendingProtectedAction = { type: "new-game" };
 
 async function requestJson<T>(input: RequestInfo | URL, init?: RequestInit): Promise<T> {
   const controller = new AbortController();
@@ -45,6 +54,7 @@ async function requestJson<T>(input: RequestInfo | URL, init?: RequestInit): Pro
   try {
     const response = await fetch(input, {
       ...init,
+      credentials: "same-origin",
       signal: controller.signal,
     });
     const text = await response.text();
@@ -108,6 +118,7 @@ function formatDuration(startedAt?: string, finishedAt?: string | null) {
 
 export function GameShell({
   canEdit,
+  initialViewerToken,
   initialConfig,
   initialGameState,
   initialQuestionBank,
@@ -115,12 +126,18 @@ export function GameShell({
   initialSearchEntries,
 }: Props) {
   const router = useRouter();
+  const [canEditState, setCanEditState] = useState(canEdit);
   const [gameState, setGameState] = useState<GameState>(initialGameState);
   const [error, setError] = useState<string | null>(null);
   const [shareNotice, setShareNotice] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const [turnstileResetSignal, setTurnstileResetSignal] = useState(0);
+  const [turnstileDialogOpen, setTurnstileDialogOpen] = useState(false);
+  const [pendingProtectedAction, setPendingProtectedAction] =
+    useState<PendingProtectedAction | null>(null);
+  const pendingVerifiedActionRef = useRef<((token: string) => Promise<void>) | null>(null);
+  const [viewerToken, setViewerToken] = useState<string | null>(initialViewerToken);
   const [roomSyncPreset, setRoomSyncPreset] =
     useState<RoomSyncPresetId>(defaultRoomSyncPreset);
   const [spectatorCount, setSpectatorCount] = useState(0);
@@ -139,13 +156,23 @@ export function GameShell({
   const answerEntry = gameState.answerCharacterId
     ? questionBankMap.get(gameState.answerCharacterId) ?? null
     : null;
-  const turnstileRequired = canEdit && Boolean(initialConfig.turnstileEnabled);
+  const turnstileRequired = canEditState && Boolean(initialConfig.turnstileEnabled);
   const shareEnabled = Boolean(initialConfig.featureFlags.enableShare);
-  const shouldSyncRoom = !canEdit && gameState.status === "playing";
+  const shouldSyncRoom = !canEditState && gameState.status === "playing";
   const effectivePollIntervalMs = resolveRoomSyncPollInterval(
     initialConfig.realtime.pollIntervalMs,
     roomSyncPreset,
   );
+
+  useEffect(() => {
+    if (initialViewerToken) {
+      writeGameViewerToken(initialGameState.roomCode, initialViewerToken);
+      setViewerToken(initialViewerToken);
+      return;
+    }
+
+    setViewerToken(readGameViewerToken(initialGameState.roomCode));
+  }, [initialGameState.roomCode, initialViewerToken]);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -171,7 +198,7 @@ export function GameShell({
   useRoomSync({
     roomCode: gameState.roomCode,
     enabled: shouldSyncRoom,
-    role: canEdit ? "host" : "spectator",
+    role: canEditState ? "host" : "spectator",
     pollIntervalMs: effectivePollIntervalMs,
     heartbeatIntervalMs: initialConfig.realtime.heartbeatIntervalMs,
     wsUrl: initialConfig.realtime.wsUrl || undefined,
@@ -181,7 +208,7 @@ export function GameShell({
   useRoomPresence({
     roomCode: gameState.roomCode,
     enabled: gameState.status === "playing",
-    role: canEdit ? "host" : "spectator",
+    role: canEditState ? "host" : "spectator",
     heartbeatIntervalMs: initialConfig.realtime.heartbeatIntervalMs,
     onPresence: (summary, nextLatencyMs) => {
       setSpectatorCount(summary.spectatorCount);
@@ -190,34 +217,40 @@ export function GameShell({
     },
   });
 
-  function getTurnstileTokenOrThrow(missingMessage: string) {
+  function recycleTurnstileToken() {
+    setTurnstileToken(null);
+    if (turnstileRequired) {
+      setTurnstileResetSignal((value) => value + 1);
+    }
+  }
+
+  function openTurnstileDialog(
+    action: PendingProtectedAction,
+    onVerified: (token: string) => Promise<void>,
+  ) {
     if (!turnstileRequired) {
-      return undefined;
+      return;
     }
 
     if (!initialConfig.turnstileSiteKey) {
       throw new Error("验证功能暂时不可用，请稍后再试。");
     }
 
-    if (!turnstileToken) {
-      throw new Error(missingMessage);
-    }
-
-    return turnstileToken;
-  }
-
-  function recycleTurnstileToken() {
-    if (!turnstileRequired) {
-      return;
-    }
-
+    setPendingProtectedAction(action);
+    pendingVerifiedActionRef.current = onVerified;
+    setTurnstileDialogOpen(true);
     setTurnstileToken(null);
     setTurnstileResetSignal((value) => value + 1);
   }
 
-  async function startNewGame() {
+  async function startNewGame(verifiedToken?: string) {
     if (initialQuestionBankSize === 0) {
       setError("题库还在整理中，稍后再来试试。");
+      return;
+    }
+
+    if (turnstileRequired && !verifiedToken) {
+      openTurnstileDialog({ type: "new-game" }, (token) => startNewGame(token));
       return;
     }
 
@@ -227,15 +260,23 @@ export function GameShell({
     let usedTurnstileToken = false;
 
     try {
-      const token = getTurnstileTokenOrThrow("请先完成人机验证，再开始新一局。");
-      usedTurnstileToken = Boolean(token);
+      usedTurnstileToken = Boolean(verifiedToken);
       const data = await requestJson<GameState>("/api/game/new", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ turnstileToken: token }),
+        body: JSON.stringify({ turnstileToken: verifiedToken }),
       });
+      if (data.viewerToken) {
+        writeGameViewerToken(data.roomCode, data.viewerToken);
+        setViewerToken(data.viewerToken);
+      }
+      setCanEditState(Boolean(data.canEdit ?? true));
       setGameState(data);
-      router.replace(`/single/${data.roomCode}`);
+      router.replace(
+        data.viewerToken
+          ? `/single/${data.roomCode}?v=${encodeURIComponent(data.viewerToken)}`
+          : `/single/${data.roomCode}`,
+      );
     } catch (nextError) {
       setError(
         nextError instanceof Error
@@ -257,7 +298,9 @@ export function GameShell({
 
     requestJson<GameState>("/api/game/end", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: buildGameViewerHeaders(viewerToken ?? readGameViewerToken(gameState.roomCode), {
+        "Content-Type": "application/json",
+      }),
       body: JSON.stringify({ gameId: gameState.gameId }),
     })
       .then((data) => {
@@ -281,17 +324,26 @@ export function GameShell({
     setSubmitting(true);
     setError(null);
     setShareNotice(null);
-    let usedTurnstileToken = false;
 
     try {
-      const token = getTurnstileTokenOrThrow("请先完成人机验证，再继续猜吧。");
-      usedTurnstileToken = Boolean(token);
       const data = await requestJson<GameState>("/api/game/guess", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ gameId: gameState.gameId, characterId, turnstileToken: token }),
+        headers: buildGameViewerHeaders(viewerToken ?? readGameViewerToken(gameState.roomCode), {
+          "Content-Type": "application/json",
+        }),
+        body: JSON.stringify({
+          gameId: gameState.gameId,
+          characterId,
+        }),
       });
       setGameState(data);
+      if (data.viewerToken) {
+        writeGameViewerToken(data.roomCode, data.viewerToken);
+        setViewerToken(data.viewerToken);
+      }
+      if (typeof data.canEdit === "boolean") {
+        setCanEditState(data.canEdit);
+      }
     } catch (nextError) {
       setError(
         nextError instanceof Error
@@ -299,12 +351,73 @@ export function GameShell({
           : "这一猜没送出去，再试一次吧。",
       );
     } finally {
-      if (usedTurnstileToken) {
-        recycleTurnstileToken();
-      }
       setSubmitting(false);
     }
   }
+
+  useEffect(() => {
+    if (!turnstileDialogOpen || !turnstileToken || !pendingProtectedAction || submitting) {
+      return;
+    }
+
+    const nextAction = pendingVerifiedActionRef.current;
+    if (!nextAction) {
+      return;
+    }
+
+    pendingVerifiedActionRef.current = null;
+    setPendingProtectedAction(null);
+    setTurnstileDialogOpen(false);
+    setTurnstileToken(null);
+    void nextAction(turnstileToken);
+  }, [pendingProtectedAction, submitting, turnstileDialogOpen, turnstileToken]);
+
+  useEffect(() => {
+    if (canEditState || !viewerToken) {
+      return;
+    }
+
+    let cancelled = false;
+
+    async function refreshEditableState() {
+      try {
+        const data = await requestJson<GameState>(
+          withGameViewerTokenQuery(`/api/game/${gameState.roomCode}`, viewerToken),
+        );
+        if (cancelled) {
+          return;
+        }
+
+        if (typeof data.canEdit === "boolean") {
+          setCanEditState(data.canEdit);
+        }
+        if (data.viewerToken) {
+          writeGameViewerToken(data.roomCode, data.viewerToken);
+          setViewerToken(data.viewerToken);
+        }
+        setGameState(data);
+        if (window.location.search.includes("v=")) {
+          window.history.replaceState({}, "", `/single/${gameState.roomCode}`);
+        }
+      } catch {}
+    }
+
+    void refreshEditableState();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [canEditState, gameState.roomCode, viewerToken]);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || !canEditState) {
+      return;
+    }
+
+    if (window.location.search.includes("v=") || window.location.search.includes("viewerToken=")) {
+      window.history.replaceState({}, "", `/single/${gameState.roomCode}`);
+    }
+  }, [canEditState, gameState.roomCode]);
 
   async function shareCurrentGame() {
     const siteName = initialConfig.siteName ?? "赛马娘猜猜乐";
@@ -348,17 +461,6 @@ export function GameShell({
 
   return (
     <>
-      <div className="mobile-rotate-guard">
-        <div className="mobile-rotate-card">
-          <p className="mobile-rotate-eyebrow">单人战局</p>
-          <h2>把手机横过来再开始</h2>
-          <p>这一局横着玩会更舒服。把手机横过来以后，画面会更顺手，猜起来也更连贯。</p>
-          <Link href="/" className="mobile-rotate-link">
-            先回主页
-          </Link>
-        </div>
-      </div>
-
       <main className="mobile-landscape-shell relative mx-auto flex min-h-screen w-full max-w-[1320px] flex-col px-3 py-3 sm:px-6 sm:py-4 lg:px-8">
         <div className="pointer-events-none absolute inset-x-6 top-0 -z-10 h-56 rounded-b-[48px] bg-[linear-gradient(180deg,rgba(151,216,28,0.16),rgba(237,247,255,0))]" />
         <div className="pointer-events-none absolute left-0 right-0 top-16 -z-10 h-px bg-[linear-gradient(90deg,rgba(115,192,22,0),rgba(115,192,22,0.24),rgba(63,136,247,0.24),rgba(115,192,22,0))]" />
@@ -373,7 +475,7 @@ export function GameShell({
                     href="/"
                     className="max-w-[620px]"
                     showTitle={false}
-                    subtitle={!canEdit ? "这是一条观战链接，只能看这一局的进度。" : "房间已就位，直接输入名字开始猜。"}
+                    subtitle={!canEditState ? "这是一条观战链接，只能看这一局的进度。" : "房间已就位，直接输入名字开始猜。"}
                   />
 
                   <Link
@@ -387,10 +489,10 @@ export function GameShell({
                   单人战局
                 </p>
                 <h1 className="mt-1 font-[var(--font-display)] text-[1.9rem] font-bold leading-tight text-[var(--color-ink)] sm:text-[2.6rem]">
-                  {!canEdit ? "看看这一局" : gameState.status === "ended" ? "这一局已结束" : "直接开猜"}
+                  {!canEditState ? "看看这一局" : gameState.status === "ended" ? "这一局已结束" : "直接开猜"}
                 </h1>
                 <p className="battle-top-copy mt-1 max-w-2xl text-sm leading-6 text-[var(--color-muted)]">
-                  {!canEdit
+                  {!canEditState
                     ? gameState.status === "ended"
                       ? "这是一条已经结束的房间链接，现在只能看看这局最后留下的记录。"
                       : "这是一条朋友发来的观战链接。你可以看进度，但不能替他继续往下猜。"
@@ -408,7 +510,7 @@ export function GameShell({
                   <span className="uma-chip uma-chip--blue">
                     房间码 {gameState.roomCode}
                   </span>
-                  {canEdit && shareEnabled && gameState.status !== "ended" ? (
+                  {canEditState && shareEnabled && gameState.status !== "ended" ? (
                     <button
                       type="button"
                       onClick={shareCurrentGame}
@@ -424,13 +526,13 @@ export function GameShell({
             <div className="battle-status-shell uma-panel-soft bg-[rgba(239,247,255,0.68)] px-4 py-4">
               <GameStatusBar
                 gameState={gameState}
-                canEdit={canEdit}
+                canEdit={canEditState}
                 disabled={submitting}
                 onStartNewGame={startNewGame}
                 onEndCurrentGame={endCurrentGame}
                 questionBankSize={initialQuestionBankSize}
                 spectatorCount={spectatorCount}
-                latencyMs={canEdit ? averageSpectatorLatencyMs : latencyMs}
+                latencyMs={canEditState ? averageSpectatorLatencyMs : latencyMs}
               />
             </div>
           </div>
@@ -438,25 +540,13 @@ export function GameShell({
 
         <section className="battle-main-grid mt-3 grid gap-3 lg:mt-4">
           <div className="battle-main-column flex flex-col gap-3">
+            <div className="single-search-sticky sticky top-2 z-30">
             <div className="battle-input-card uma-panel p-4 sm:p-5">
               <div className="space-y-4">
-                {turnstileRequired ? (
-                  <div className="rounded-[24px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] px-4 py-3 shadow-[var(--shadow-soft)]">
-                    <TurnstileWidget
-                      siteKey={initialConfig.turnstileSiteKey}
-                      resetSignal={turnstileResetSignal}
-                      onTokenChange={setTurnstileToken}
-                    />
-                    <p className="mt-2 text-sm text-[var(--color-muted)]">
-                      {turnstileToken ? "验证完成，可以继续了。" : "先完成人机验证，再继续往下猜。"}
-                    </p>
-                  </div>
-                ) : null}
-
                 <CharacterSearchInput
-                  disabled={!canEdit || gameState.status !== "playing" || submitting}
+                  disabled={!canEditState || gameState.status !== "playing" || submitting}
                   disabledHint={
-                    !canEdit
+                    !canEditState
                       ? gameState.status === "ended"
                         ? "这一局已经结束了"
                         : "这是观战链接，不能替别人落猜"
@@ -468,7 +558,7 @@ export function GameShell({
                   onSelect={submitGuess}
                 />
 
-                {!canEdit ? (
+                {!canEditState ? (
                   <div className="space-y-3 rounded-2xl border border-[var(--color-line)] bg-[rgba(239,247,255,0.82)] px-4 py-3 text-sm text-[var(--color-ink)]">
                     <p>
                     {gameState.status === "ended"
@@ -537,6 +627,7 @@ export function GameShell({
                 ) : null}
               </div>
             </div>
+            </div>
 
             <GuessTable rows={gameState.guessRows ?? []} />
           </div>
@@ -547,11 +638,26 @@ export function GameShell({
           maxGuesses={initialConfig.maxGuesses}
           answerEntry={answerEntry}
           summaryText={formatDuration(gameState.startedAt, gameState.finishedAt)}
-          canEdit={canEdit}
+          canEdit={canEditState}
           onRestart={startNewGame}
           onShare={shareCurrentGame}
           shareEnabled={shareEnabled}
           shareNotice={shareNotice}
+        />
+
+        <TurnstileDialog
+          open={turnstileDialogOpen}
+          siteKey={initialConfig.turnstileSiteKey}
+          resetSignal={turnstileResetSignal}
+          message="验证通过后会直接帮你换一局。"
+          statusText={turnstileToken ? "验证完成，正在继续。" : "完成后会自动继续。"}
+          onTokenChange={setTurnstileToken}
+          onClose={() => {
+            pendingVerifiedActionRef.current = null;
+            setTurnstileDialogOpen(false);
+            setPendingProtectedAction(null);
+            recycleTurnstileToken();
+          }}
         />
 
         <SiteFooter className="battle-footer mt-5" />

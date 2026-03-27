@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" fill="none">
+  <rect width="1200" height="560" rx="32" fill="#FFFDF9"/>
+  <rect x="40" y="40" width="1120" height="480" rx="28" fill="#FFFFFF" stroke="#EEDDC8" stroke-width="2"/>
+  <text x="70" y="94" fill="#8A623E" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">部署方式总览</text>
+  <text x="70" y="128" fill="#A17A4E" font-family="Segoe UI, Arial, sans-serif" font-size="18">按平台与运维习惯选择最适合的部署路线</text>
+
+  <rect x="80" y="180" width="220" height="230" rx="24" fill="#FFF2DC" stroke="#E7C38B"/>
+  <text x="110" y="228" fill="#8B5E34" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Windows</text>
+  <text x="110" y="270" fill="#6C4A29" font-family="Segoe UI, Arial, sans-serif" font-size="18">普通部署</text>
+  <text x="110" y="300" fill="#6C4A29" font-family="Segoe UI, Arial, sans-serif" font-size="18">Docker Desktop</text>
+  <text x="110" y="340" fill="#6C4A29" font-family="Segoe UI, Arial, sans-serif" font-size="18">适合本地试玩</text>
+
+  <rect x="340" y="180" width="220" height="230" rx="24" fill="#FFECEF" stroke="#E9B7C2"/>
+  <text x="370" y="228" fill="#A14E62" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Linux</text>
+  <text x="370" y="270" fill="#7B4050" font-family="Segoe UI, Arial, sans-serif" font-size="18">命令行部署</text>
+  <text x="370" y="300" fill="#7B4050" font-family="Segoe UI, Arial, sans-serif" font-size="18">Docker Compose</text>
+  <text x="370" y="340" fill="#7B4050" font-family="Segoe UI, Arial, sans-serif" font-size="18">适合正式上线</text>
+
+  <rect x="600" y="180" width="220" height="230" rx="24" fill="#EEF8FF" stroke="#B6D6EC"/>
+  <text x="630" y="228" fill="#356A9A" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">宝塔</text>
+  <text x="630" y="270" fill="#305977" font-family="Segoe UI, Arial, sans-serif" font-size="18">Nginx 站点</text>
+  <text x="630" y="300" fill="#305977" font-family="Segoe UI, Arial, sans-serif" font-size="18">Node / PM2</text>
+  <text x="630" y="340" fill="#305977" font-family="Segoe UI, Arial, sans-serif" font-size="18">适合面板运维</text>
+
+  <rect x="860" y="180" width="220" height="230" rx="24" fill="#F3F0FF" stroke="#D5CAF8"/>
+  <text x="890" y="228" fill="#6B57A2" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">1Panel</text>
+  <text x="890" y="270" fill="#544381" font-family="Segoe UI, Arial, sans-serif" font-size="18">容器编排</text>
+  <text x="890" y="300" fill="#544381" font-family="Segoe UI, Arial, sans-serif" font-size="18">网站反向代理</text>
+  <text x="890" y="340" fill="#544381" font-family="Segoe UI, Arial, sans-serif" font-size="18">适合现代面板</text>
+</svg>

@@ -18,6 +18,7 @@ export default async function Home() {
         maxGuesses={config.maxGuesses}
         turnstileEnabled={config.turnstileEnabled}
         turnstileSiteKey={config.turnstileSiteKey}
+        featureFlags={config.featureFlags}
       />
       <SiteFooter className="mt-5" />
     </main>

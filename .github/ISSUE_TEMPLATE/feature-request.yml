@@ -1,5 +1,5 @@
-name: Feature Request
-description: 提交玩法、UI、题库或部署体验上的改进建议
+name: Feature request
+description: Propose an improvement for gameplay, UI, data flow, or deployment experience
 title: "[Feature] "
 labels:
   - enhancement
@@ -7,37 +7,37 @@ body:
   - type: markdown
     attributes:
       value: |
-        新建议请尽量说明目标玩家、使用场景和影响范围。涉及玩法字段、数据规则或部署方式的改动，需要同步更新文档。
+        Please describe the target users, use case, and expected impact. Proposals that affect gameplay rules, data requirements, or deployment should also account for documentation updates.
 
   - type: dropdown
     id: area
     attributes:
-      label: 建议方向
+      label: Category
       options:
-        - UI / 交互
-        - 玩法 / 判定
-        - 题库 / 数据
-        - 图片 / 资源
-        - 部署 / 自动化
-        - 其他
+        - UI / interaction
+        - Gameplay / rules
+        - Question bank / data
+        - Assets / media
+        - Deployment / automation
+        - Other
     validations:
       required: true
 
   - type: textarea
     id: summary
     attributes:
-      label: 你想实现什么
+      label: Proposal
     validations:
       required: true
 
   - type: textarea
     id: player-value
     attributes:
-      label: 这会给玩家或维护者带来什么帮助
+      label: Value
     validations:
       required: true
 
   - type: textarea
     id: references
     attributes:
-      label: 参考资料或补充说明
+      label: References or additional context

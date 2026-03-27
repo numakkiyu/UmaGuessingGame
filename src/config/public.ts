@@ -7,6 +7,7 @@ export type PublicConfig = {
   turnstileSiteKey: string;
   featureFlags: {
     enableMultiplayer: boolean;
+    enableFriendBattle: boolean;
     enableShare: boolean;
   };
   shareBaseUrl: string;
@@ -16,6 +17,13 @@ export type PublicConfig = {
     wsUrl: string;
     pollIntervalMs: number;
     heartbeatIntervalMs: number;
+  };
+  multiplayer: {
+    matchmakingMaxWaitSeconds: number;
+    acceptConfirmSeconds: number;
+    idleTimeoutSeconds: number;
+    pauseDurationSeconds: number;
+    rematchConfirmSeconds: number;
   };
 };
 
@@ -29,6 +37,7 @@ export function getPublicConfig(): PublicConfig {
     turnstileSiteKey: env.TURNSTILE_SITE_KEY,
     featureFlags: {
       enableMultiplayer: env.ENABLE_MULTIPLAYER,
+      enableFriendBattle: env.ENABLE_FRIEND_BATTLE,
       enableShare: env.ENABLE_SHARE,
     },
     shareBaseUrl: env.APP_BASE_URL,
@@ -38,6 +47,13 @@ export function getPublicConfig(): PublicConfig {
       wsUrl: env.REALTIME_WS_URL,
       pollIntervalMs: env.ROOM_SYNC_POLL_INTERVAL_MS,
       heartbeatIntervalMs: env.REALTIME_HEARTBEAT_INTERVAL_MS,
+    },
+    multiplayer: {
+      matchmakingMaxWaitSeconds: env.MATCHMAKING_MAX_WAIT_SECONDS,
+      acceptConfirmSeconds: env.MATCH_ACCEPT_CONFIRM_SECONDS,
+      idleTimeoutSeconds: env.MATCH_BATTLE_IDLE_TIMEOUT_SECONDS,
+      pauseDurationSeconds: env.MATCH_PAUSE_DURATION_SECONDS,
+      rematchConfirmSeconds: env.ROOM_REMATCH_CONFIRM_TIMEOUT_SECONDS,
     },
   };
 }

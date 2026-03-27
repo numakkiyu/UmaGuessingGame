@@ -1,22 +1,13 @@
 import { NextResponse } from "next/server";
 import { toPlayerFacingGameError } from "@/lib/game/errors";
-import { canEditRoom, getOwnerCookieName } from "@/lib/game/ownership";
+import { getGameViewerFromRequest } from "@/lib/game/auth";
 import { endGame } from "@/lib/game/service";
 import { endGameRequestSchema } from "@/lib/validation/schemas";
 
 export async function POST(request: Request) {
   try {
     const body = endGameRequestSchema.parse(await request.json());
-    const ownerCookie = request.headers
-      .get("cookie")
-      ?.split(";")
-      .map((part) => part.trim())
-      .find((part) => part.startsWith(`${getOwnerCookieName(body.gameId)}=`))
-      ?.split("=")
-      .slice(1)
-      .join("=") ?? null;
-
-    if (!canEditRoom(body.gameId, ownerCookie)) {
+    if (!getGameViewerFromRequest(request, body.gameId)) {
       throw new Error("这个链接只能查看，不能结束这一局。");
     }
 

@@ -1,10 +1,13 @@
 import { NextResponse } from "next/server";
-import { getServerConfig } from "@/config/server";
 import { toPlayerFacingGameError } from "@/lib/game/errors";
-import { buildOwnerCookieValue, getOwnerCookieName } from "@/lib/game/ownership";
+import {
+  attachGameViewerCookies,
+  buildGameViewerToken,
+} from "@/lib/game/auth";
 import { createGameRequestSchema } from "@/lib/validation/schemas";
 import { buildRequestFingerprint, rateLimitGuard, verifyTurnstileToken } from "@/lib/game/security";
 import { createNewGame } from "@/lib/game/service";
+import { getOrCreateSessionIdFromRequest } from "@/lib/auth/session";
 
 export async function POST(request: Request) {
   try {
@@ -14,16 +17,15 @@ export async function POST(request: Request) {
     await verifyTurnstileToken(body.turnstileToken);
 
     const game = await createNewGame();
-    const response = NextResponse.json(game);
-    response.cookies.set({
-      name: getOwnerCookieName(game.roomCode),
-      value: buildOwnerCookieValue(game.roomCode),
-      httpOnly: true,
-      sameSite: "lax",
-      secure: getServerConfig().appEnv === "production",
-      path: "/",
-      maxAge: 60 * 60 * 24 * 30,
+    const sessionId = getOrCreateSessionIdFromRequest(request);
+    const viewerToken = buildGameViewerToken(game.roomCode, request, sessionId);
+    const response = NextResponse.json({
+      ...game,
+      canEdit: true,
+      viewerToken,
     });
+    attachGameViewerCookies(response, request, game.roomCode, viewerToken, sessionId);
+    response.headers.set("Cache-Control", "no-store");
     return response;
   } catch (error) {
     return NextResponse.json(

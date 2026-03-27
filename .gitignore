@@ -35,6 +35,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+dev-server*.log
+prod-server*.log
+
+# local runtime and review files
+data/runtime/
+*-review.png
+*-check.png
 
 # env files (can opt-in for committing if needed)
 .env*
@@ -42,10 +49,7 @@ yarn-error.log*
 
 # local AI collaboration files
 AGENTS.md
-README.md
-CONTRIBUTING.md
-CHANGELOG.md
-docs/
+plan.md
 
 # vercel
 .vercel

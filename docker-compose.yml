@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     command: sh -c "npm run db:push && npm run db:seed"
     env_file:
-      - .env.example
+      - .env
     depends_on:
       postgres:
         condition: service_healthy
@@ -16,7 +16,7 @@ services:
       context: .
       dockerfile: Dockerfile
     env_file:
-      - .env.example
+      - .env
     ports:
       - "3000:3000"
     depends_on:
