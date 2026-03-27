@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>赛马娘猜猜乐 · GitHub 演示页</title>
+    <meta
+      name="description"
+      content="赛马娘猜猜乐 GitHub 演示页，展示项目定位、技术架构、部署方式和仓库入口。"
+    />
+    <link rel="stylesheet" href="./demo.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">GitHub Pages Demo</p>
+          <h1>赛马娘猜猜乐</h1>
+          <p class="lead">
+            这是面向 GitHub 的静态演示页，用来展示项目定位、技术架构和部署入口。
+            正式可游玩的完整版本仍建议部署到支持 Next.js、PostgreSQL 与 Redis 的运行环境。
+          </p>
+          <div class="actions">
+            <a href="https://github.com/numakkiyu/UmaGuessingGame" target="_blank" rel="noreferrer">查看 GitHub 仓库</a>
+            <a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/README.md" target="_blank" rel="noreferrer" class="ghost">阅读 README</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="./assets/demo-logo.png" alt="赛马娘猜猜乐 Logo" class="logo" />
+          <img src="./assets/demo-banner.jpg" alt="赛马娘猜猜乐展示图" class="banner" />
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="panel">
+          <h2>项目亮点</h2>
+          <ul>
+            <li>单人模式已经具备完整对局、分享和只读查看链路。</li>
+            <li>多人匹配与好友对战已经补齐房间、同步和状态面板基础。</li>
+            <li>图片采用受控回源与本地缓存复用策略。</li>
+            <li>仓库自带中文部署文档和标准 GitHub 协作模板。</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>技术架构</h2>
+          <ul>
+            <li>Next.js 16 + React 19 + TypeScript</li>
+            <li>PostgreSQL + Drizzle ORM</li>
+            <li>Redis + Cloudflare Turnstile</li>
+            <li>Docker Compose / PM2 / Nginx</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>推荐部署方式</h2>
+          <ul>
+            <li>Windows / macOS：优先 Docker Desktop</li>
+            <li>Linux 正式环境：Docker Compose 或 PM2 + Nginx</li>
+            <li>面板运维：宝塔面板或 1Panel</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>文档入口</h2>
+          <ul>
+            <li><a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md" target="_blank" rel="noreferrer">快速开始</a></li>
+            <li><a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Windows%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">Windows 部署指南</a></li>
+            <li><a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Linux%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">Linux 部署指南</a></li>
+            <li><a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/macOS%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">macOS 部署指南</a></li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>GitHub Pages 版本仅用于展示项目外观与入口信息。</p>
+        <p>完整站点请按照仓库内文档部署到支持后端运行的环境。</p>
+      </footer>
+    </div>
+  </body>
+</html>
