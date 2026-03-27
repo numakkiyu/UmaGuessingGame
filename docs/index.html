@@ -3,78 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>赛马娘猜猜乐 · GitHub 演示页</title>
+    <title>赛马娘猜猜乐 | 项目主页</title>
     <meta
       name="description"
-      content="赛马娘猜猜乐 GitHub 演示页，展示项目定位、技术架构、部署方式和仓库入口。"
+      content="赛马娘猜猜乐项目主页，面向玩家与部署者介绍项目玩法、使用方式和部署入口。"
     />
     <link rel="stylesheet" href="./demo.css" />
   </head>
   <body>
+    <div class="site-bg"></div>
     <div class="page-shell">
       <header class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">GitHub Pages Demo</p>
-          <h1>赛马娘猜猜乐</h1>
-          <p class="lead">
-            这是面向 GitHub 的静态演示页，用来展示项目定位、技术架构和部署入口。
-            正式可游玩的完整版本仍建议部署到支持 Next.js、PostgreSQL 与 Redis 的运行环境。
-          </p>
-          <div class="actions">
-            <a href="https://github.com/numakkiyu/UmaGuessingGame" target="_blank" rel="noreferrer">查看 GitHub 仓库</a>
-            <a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/README.md" target="_blank" rel="noreferrer" class="ghost">阅读 README</a>
+        <nav class="topbar">
+          <a class="brand" href="https://github.com/numakkiyu/UmaGuessingGame" target="_blank" rel="noreferrer">
+            <span class="brand-kicker">BHCN STUDIO</span>
+            <strong>赛马娘猜猜乐</strong>
+          </a>
+          <div class="top-links">
+            <a href="https://github.com/numakkiyu/UmaGuessingGame" target="_blank" rel="noreferrer">源码仓库</a>
+            <a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/README.md" target="_blank" rel="noreferrer">README</a>
+            <a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/%E6%96%87%E6%A1%A3%E7%B4%A2%E5%BC%95.md" target="_blank" rel="noreferrer">文档索引</a>
           </div>
-        </div>
-        <div class="hero-card">
-          <img src="./assets/demo-logo.png" alt="赛马娘猜猜乐 Logo" class="logo" />
-          <img src="./assets/demo-banner.jpg" alt="赛马娘猜猜乐展示图" class="banner" />
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">Uma Guessing Game</p>
+            <h1>和朋友一起猜，今天轮到哪位马娘登场。</h1>
+            <p class="lead">
+              这里是赛马娘猜猜乐的项目主页。你可以先看看游戏的整体风格，再根据自己的设备和环境，
+              选择合适的方式把它部署起来，搭一个能和朋友一起游玩的站点。
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="https://github.com/numakkiyu/UmaGuessingGame" target="_blank" rel="noreferrer">查看项目仓库</a>
+              <a class="button secondary" href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md" target="_blank" rel="noreferrer">开始部署</a>
+            </div>
+
+            <ul class="hero-facts">
+              <li>
+                <span>一个人玩</span>
+                <strong>随时开一局</strong>
+              </li>
+              <li>
+                <span>和朋友分享</span>
+                <strong>带上房间码一起看</strong>
+              </li>
+              <li>
+                <span>自己部署</span>
+                <strong>Windows、Linux、macOS 都能搭</strong>
+              </li>
+            </ul>
+          </section>
+
+          <aside class="hero-visual">
+            <div class="cover-frame">
+              <img src="./assets/UmaGuessingGame.png" alt="赛马娘猜猜乐封面" class="cover-image" />
+            </div>
+            <div class="hero-note">
+              <p>如果你想先了解项目，可以从这里查看说明和文档。</p>
+              <p>如果你想把站点真正搭起来给大家玩，直接从下方部署入口开始就行。</p>
+            </div>
+          </aside>
         </div>
       </header>
 
-      <main class="content-grid">
-        <section class="panel">
-          <h2>项目亮点</h2>
-          <ul>
-            <li>单人模式已经具备完整对局、分享和只读查看链路。</li>
-            <li>多人匹配与好友对战已经补齐房间、同步和状态面板基础。</li>
-            <li>图片采用受控回源与本地缓存复用策略。</li>
-            <li>仓库自带中文部署文档和标准 GitHub 协作模板。</li>
-          </ul>
+      <main class="content-stack">
+        <section class="section split-section">
+          <div class="section-heading">
+            <p class="eyebrow">For Players</p>
+            <h2>这个项目适合谁</h2>
+          </div>
+
+          <div class="split-grid">
+            <article class="info-panel">
+              <h3>喜欢猜角色的玩家</h3>
+              <ul>
+                <li>输入一位马娘，看看这一猜离答案还有多远</li>
+                <li>适合自己慢慢猜，也适合在群里轮流挑战</li>
+                <li>结束后可以回看这一局的结果与记录</li>
+              </ul>
+            </article>
+
+            <article class="info-panel">
+              <h3>想搭给朋友玩的维护者</h3>
+              <ul>
+                <li>仓库里已经整理好了部署文档和环境配置模板</li>
+                <li>可以按自己的服务器环境选择普通部署或 Docker 部署</li>
+                <li>也可以按面板文档，用宝塔或 1Panel 来搭建</li>
+              </ul>
+            </article>
+          </div>
         </section>
 
-        <section class="panel">
-          <h2>技术架构</h2>
-          <ul>
-            <li>Next.js 16 + React 19 + TypeScript</li>
-            <li>PostgreSQL + Drizzle ORM</li>
-            <li>Redis + Cloudflare Turnstile</li>
-            <li>Docker Compose / PM2 / Nginx</li>
-          </ul>
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Deployment</p>
+            <h2>想自己部署，可以从这里开始</h2>
+          </div>
+
+          <div class="route-grid">
+            <article class="route-item">
+              <span class="route-tag">01</span>
+              <h3>Windows / macOS 本地运行</h3>
+              <p>适合本机试玩、设计联调和演示环境，优先使用 Docker Desktop。</p>
+              <a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Windows%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">查看 Windows 指南</a>
+            </article>
+
+            <article class="route-item">
+              <span class="route-tag">02</span>
+              <h3>Linux 正式部署</h3>
+              <p>适合公网可玩站点，推荐 Docker Compose 或 PM2 + Nginx。</p>
+              <a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Linux%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">查看 Linux 指南</a>
+            </article>
+
+            <article class="route-item">
+              <span class="route-tag">03</span>
+              <h3>宝塔 / 1Panel 面板</h3>
+              <p>适合偏运维托管方式的站点搭建，文档已分别写明面板部署路径。</p>
+              <a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Linux%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">查看面板部署</a>
+            </article>
+          </div>
         </section>
 
-        <section class="panel">
-          <h2>推荐部署方式</h2>
-          <ul>
-            <li>Windows / macOS：优先 Docker Desktop</li>
-            <li>Linux 正式环境：Docker Compose 或 PM2 + Nginx</li>
-            <li>面板运维：宝塔面板或 1Panel</li>
-          </ul>
-        </section>
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Documentation</p>
+            <h2>常用文档入口</h2>
+          </div>
 
-        <section class="panel">
-          <h2>文档入口</h2>
-          <ul>
-            <li><a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md" target="_blank" rel="noreferrer">快速开始</a></li>
-            <li><a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Windows%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">Windows 部署指南</a></li>
-            <li><a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Linux%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">Linux 部署指南</a></li>
-            <li><a href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/macOS%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">macOS 部署指南</a></li>
-          </ul>
+          <div class="docs-grid">
+            <a class="doc-card" href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md" target="_blank" rel="noreferrer">
+              <strong>快速开始</strong>
+              <span>最快把项目跑起来的入口说明。</span>
+            </a>
+            <a class="doc-card" href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Windows%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">
+              <strong>Windows 部署指南</strong>
+              <span>适合本机测试、演示和局域网试玩。</span>
+            </a>
+            <a class="doc-card" href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/Linux%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">
+              <strong>Linux 部署指南</strong>
+              <span>适合正式站点、云服务器和面板环境。</span>
+            </a>
+            <a class="doc-card" href="https://github.com/numakkiyu/UmaGuessingGame/blob/main/docs/macOS%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md" target="_blank" rel="noreferrer">
+              <strong>macOS 部署指南</strong>
+              <span>适合本机开发、调试与演示。</span>
+            </a>
+          </div>
         </section>
       </main>
 
       <footer class="footer">
-        <p>GitHub Pages 版本仅用于展示项目外观与入口信息。</p>
-        <p>完整站点请按照仓库内文档部署到支持后端运行的环境。</p>
+        <p>赛马娘猜猜乐（UmaGuessingGame）由 BHCN STUDIO 开发维护，采用 MIT License 开源。</p>
+        <p>如果你想自己搭一个给朋友玩，可以直接从上面的部署文档开始。</p>
       </footer>
     </div>
   </body>
