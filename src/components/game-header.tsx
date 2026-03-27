@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { SiteBrand } from "@/components/site-brand";
 import { TurnstileWidget } from "@/components/turnstile-widget";
 
 type Props = {
@@ -20,20 +21,35 @@ const menuEntries = [
   {
     id: "single",
     title: "单人游戏",
-    description: "随机抽取一位目标马娘，直接开始这一局。",
+    description: "系统会直接出题，进房后马上就能开始猜。",
     enabled: true,
   },
   {
     id: "multi",
     title: "多人对战",
-    description: "和其他玩家同题竞速，比谁更快猜中。",
+    description: "以后会开放同题竞速，看看谁先冲线。",
     enabled: false,
   },
   {
     id: "friend",
     title: "好友对战",
-    description: "开房邀请朋友一起猜同一题。",
+    description: "以后会开放开房邀请，和朋友一起猜同一题。",
     enabled: false,
+  },
+] as const;
+
+const startTips = [
+  {
+    title: "先猜熟悉的那位",
+    description: "第一猜尽量把范围拉大，后面会更容易读线索。",
+  },
+  {
+    title: "看颜色收范围",
+    description: "绿色最稳，黄色很接近，灰色就换个方向再试。",
+  },
+  {
+    title: "同一局可以分享",
+    description: "把链接发给朋友后，对方能跟着一起看进度。",
   },
 ] as const;
 
@@ -138,46 +154,57 @@ export function GameHeader({
   }
 
   return (
-    <section className="relative overflow-hidden rounded-[40px] border border-[var(--color-line)] bg-[var(--color-panel)] px-5 py-6 shadow-[var(--shadow-panel)] sm:px-7 sm:py-7 lg:px-9 lg:py-9">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,228,188,0.78),transparent_26%),radial-gradient(circle_at_86%_18%,rgba(217,162,92,0.2),transparent_18%),linear-gradient(180deg,rgba(239,209,172,0.3),rgba(255,250,242,0))]" />
-      <div className="pointer-events-none absolute inset-x-0 top-[112px] h-px bg-[linear-gradient(90deg,rgba(156,69,24,0),rgba(156,69,24,0.26),rgba(156,69,24,0))]" />
-      <div className="pointer-events-none absolute -right-12 top-8 h-52 w-52 rounded-full bg-[rgba(200,108,53,0.12)] blur-3xl" />
-      <div className="pointer-events-none absolute bottom-0 left-0 h-40 w-40 rounded-full bg-[rgba(214,160,58,0.12)] blur-3xl" />
+    <section className="uma-hero-shell relative overflow-hidden px-5 py-6 sm:px-7 sm:py-7 lg:px-9 lg:py-8">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--color-brand),var(--color-brand-blue))]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.28),rgba(255,255,255,0))]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[180px] bg-[url('/assets/ui/backgrounds/bwiki-main-bg.png')] bg-cover bg-top opacity-[0.08]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[180px] bg-[linear-gradient(180deg,rgba(148,216,28,0.12),rgba(255,255,255,0))]" />
+      <div className="pointer-events-none absolute right-[-40px] top-[-24px] h-44 w-44 rounded-full bg-[rgba(255,235,167,0.2)] blur-3xl" />
 
-      <div className="relative flex min-h-[78vh] flex-col justify-between">
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)] lg:items-stretch">
-          <div className="flex flex-col justify-between">
-            <div className="max-w-3xl">
-              <div className="inline-flex rounded-full border border-[rgba(156,69,24,0.18)] bg-[rgba(255,245,232,0.92)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--color-brand-strong)]">
-                开始游戏
+      <div className="relative space-y-7">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(340px,420px)] lg:items-start">
+          <div>
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <SiteBrand
+                className="max-w-[620px]"
+                showTitle={false}
+                subtitle="看线索，猜角色，一路把答案追到终点。"
+              />
+
+              <div className="uma-chip shrink-0">
+                当前题库 {questionBankSize} 位
               </div>
-              <h1 className="mt-4 font-[var(--font-display)] text-[2.8rem] font-bold leading-[0.92] tracking-[0.04em] text-[var(--color-ink)] sm:text-[3.7rem] lg:text-[5rem]">
-                赛马娘弗一把
+            </div>
+
+            <div className="mt-6 max-w-3xl">
+              <h1 className="font-[var(--font-display)] text-[2.7rem] font-bold leading-[0.94] tracking-[0.02em] text-[var(--color-ink)] sm:text-[3.4rem] lg:text-[4rem]">
+                赛马娘猜猜乐
               </h1>
-              <p className="mt-5 max-w-2xl text-base leading-7 text-[var(--color-muted)] sm:text-lg">
-                系统会随机抽取一位目标马娘。输入名字开始猜测，每次都会给出字段反馈，帮助你一步步缩小范围。
+              <p className="mt-3 max-w-xl text-base leading-7 text-[var(--color-muted)] sm:text-lg">
+                系统会先藏好一位目标马娘。你只要从熟悉的名字开始，一边看颜色，一边把范围越收越紧。
               </p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2.5">
-              <span className="rounded-full border border-[rgba(104,79,48,0.12)] bg-[var(--color-panel-soft)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
+              <span className="uma-chip">
                 当前题库 {questionBankSize} 位
               </span>
-              <span className="rounded-full border border-[rgba(216,79,66,0.12)] bg-[rgba(216,79,66,0.1)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
-                每局最多 {maxGuesses} 次猜测
+              <span className="uma-chip uma-chip--green">
+                每局 {maxGuesses} 次机会
               </span>
-              <span className="rounded-full border border-[rgba(216,166,66,0.14)] bg-[rgba(216,166,66,0.16)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
-                支持常见中文名、日文名和别名
+              <span className="uma-chip uma-chip--gold">
+                支持常见别名
               </span>
             </div>
 
-            <div className="mt-8 flex flex-col gap-3">
+            <div className="mt-8 flex flex-col gap-4">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <button
                   type="button"
                   onClick={startSingleGame}
                   disabled={starting || questionBankSize === 0}
-                  className="inline-flex min-h-13 items-center justify-center rounded-full bg-[var(--color-brand)] px-6 py-3 text-base font-semibold text-white transition hover:bg-[var(--color-brand-strong)] disabled:cursor-not-allowed disabled:opacity-60"
+                  className="inline-flex min-h-13 items-center justify-center rounded-[18px] border border-[rgba(115,192,22,0.22)] bg-[linear-gradient(180deg,#a8e533,#82cb1a)] bg-[length:180px_64px] bg-left-top px-6 py-3 text-base font-semibold text-[#244117] shadow-[0_16px_28px_rgba(116,194,22,0.22)] transition hover:brightness-[1.02] disabled:cursor-not-allowed disabled:opacity-60"
+                  style={{ backgroundImage: "url('/assets/ui/decor/nav-diamond.svg'), linear-gradient(180deg,#a8e533,#82cb1a)" }}
                 >
                   {questionBankSize === 0
                     ? "题库准备中"
@@ -186,125 +213,136 @@ export function GameHeader({
                       : "开始单人局"}
                 </button>
                 <p className="text-sm leading-6 text-[var(--color-muted)]">
-                  进入后会立即出题，也能把这一局分享给朋友一起猜。
+                  进入后会直接开局，也能把这一局分享给朋友一起看。
                 </p>
               </div>
 
               {turnstileEnabled ? (
-                <div className="max-w-[420px] rounded-[24px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.74)] px-4 py-4">
+                <div className="max-w-[440px] rounded-[24px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.78)] px-4 py-4">
                   <TurnstileWidget
                     siteKey={turnstileSiteKey}
                     resetSignal={turnstileResetSignal}
                     onTokenChange={setTurnstileToken}
                   />
                   <p className="mt-2 text-sm text-[var(--color-muted)]">
-                    {turnstileToken ? "验证完成，可以开始游戏了。" : "先完成人机验证，再开始游戏。"}
+                    {turnstileToken ? "验证完成，可以开始了。" : "先完成人机验证，再开始游戏。"}
                   </p>
                 </div>
               ) : null}
 
               {error ? (
-                <p className="max-w-[520px] rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                <p className="max-w-[560px] rounded-[20px] border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
                   {error}
                 </p>
               ) : null}
             </div>
           </div>
 
-          <div className="rounded-[32px] border border-[rgba(126,90,49,0.14)] bg-[linear-gradient(180deg,rgba(255,250,242,0.96),rgba(250,243,231,0.9))] p-4 shadow-[var(--shadow-soft)] sm:p-5">
-            <div className="rounded-[24px] border border-[rgba(104,79,48,0.12)] bg-[rgba(255,255,255,0.7)] px-4 py-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-brand-strong)]">
-                模式选择
-              </p>
-              <p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">
-                当前可以直接游玩单人模式。多人和好友对战会在后续版本开放。
-              </p>
-            </div>
+          <div className="uma-menu-card rounded-[32px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.8)] p-4 shadow-[var(--shadow-soft)] sm:p-5">
+            <div className="overflow-hidden rounded-[26px] border border-[rgba(96,147,192,0.14)] bg-[var(--color-panel-strong)]">
+              <div className="relative border-b border-[var(--color-line)] px-4 py-4">
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--color-brand),var(--color-brand-blue))]" />
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-brand-strong)]">
+                  开局建议
+                </p>
+                <p className="mt-2 text-lg font-semibold text-[var(--color-ink)]">
+                  这一局从熟悉的角色开始最顺手
+                </p>
+              </div>
 
-            <div className="mt-4 overflow-hidden rounded-[26px] border border-[rgba(104,79,48,0.12)] bg-[rgba(255,255,255,0.82)]">
-              {menuEntries.map((entry, index) => {
-                const sharedClassName =
-                  "flex w-full items-center justify-between gap-4 px-4 py-4 text-left transition sm:px-5";
-
-                const content = (
-                  <>
-                    <div>
-                      <p className="text-xl font-semibold text-[var(--color-ink)]">{entry.title}</p>
-                      <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">
-                        {entry.description}
-                      </p>
-                    </div>
-                    <span
-                      className={[
-                        "shrink-0 rounded-full px-3 py-1 text-xs font-semibold",
-                        entry.enabled
-                          ? "bg-[rgba(200,108,53,0.14)] text-[var(--color-brand-strong)]"
-                          : "bg-[rgba(104,79,48,0.08)] text-[var(--color-muted)]",
-                      ].join(" ")}
+              <div className="p-4">
+                <div className="overflow-hidden rounded-[22px] border border-[rgba(96,147,192,0.14)] bg-white/86 shadow-[var(--shadow-soft)]">
+                  {menuEntries.map((entry, index) => (
+                    <div
+                      key={entry.id}
+                      className={index > 0 ? "border-t border-[rgba(96,147,192,0.12)]" : ""}
                     >
-                      {entry.enabled ? "立即开始" : "敬请期待"}
-                    </span>
-                  </>
-                );
-
-                return entry.enabled ? (
-                  <button
-                    key={entry.id}
-                    type="button"
-                    onClick={startSingleGame}
-                    disabled={starting || questionBankSize === 0}
-                    className={[
-                      sharedClassName,
-                      "bg-[rgba(255,250,244,0.92)] hover:bg-white disabled:cursor-not-allowed disabled:opacity-60",
-                      index > 0 ? "border-t border-[rgba(104,79,48,0.1)]" : "",
-                    ].join(" ")}
-                  >
-                    {content}
-                  </button>
-                ) : (
-                  <div
-                    key={entry.id}
-                    className={[
-                      sharedClassName,
-                      "cursor-not-allowed bg-[rgba(247,241,232,0.78)] opacity-80",
-                      index > 0 ? "border-t border-[rgba(104,79,48,0.1)]" : "",
-                    ].join(" ")}
-                  >
-                    {content}
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="mt-4 rounded-[24px] border border-[rgba(200,108,53,0.14)] bg-[rgba(255,246,234,0.86)] px-4 py-4">
-              <p className="text-sm font-semibold text-[var(--color-ink)]">分享这一局</p>
-              <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">
-                每一局都会生成独立链接。把链接发出去，朋友打开后就能进入同一题。
-              </p>
-              <p className="mt-3 text-sm text-[var(--color-muted)]">
-                如果你只是自己先玩，直接开始单人局就可以。
-              </p>
-              <div className="mt-3">
-                <Link href="/" className="text-sm font-semibold text-[var(--color-brand-strong)]">
-                  单人局入口就在上方
-                </Link>
+                      {entry.enabled ? (
+                        <button
+                          type="button"
+                          onClick={startSingleGame}
+                          disabled={starting || questionBankSize === 0}
+                          className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left transition hover:bg-[rgba(229,244,255,0.74)] disabled:cursor-not-allowed disabled:opacity-60 sm:px-5"
+                        >
+                          <div>
+                            <p className="text-xl font-semibold text-[var(--color-ink)]">
+                              {entry.title}
+                            </p>
+                            <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">
+                              {entry.description}
+                            </p>
+                          </div>
+                          <span
+                            className="shrink-0 rounded-[14px] border border-[rgba(115,192,22,0.2)] bg-[linear-gradient(180deg,#a8e533,#82cb1a)] px-3 py-1 text-xs font-semibold text-[#244117]"
+                            style={{ backgroundImage: "url('/assets/ui/decor/nav-diamond.svg'), linear-gradient(180deg,#a8e533,#82cb1a)" }}
+                          >
+                            现在开始
+                          </span>
+                        </button>
+                      ) : (
+                        <div className="flex items-center justify-between gap-4 px-4 py-4 opacity-75 sm:px-5">
+                          <div>
+                            <p className="text-xl font-semibold text-[var(--color-ink)]">
+                              {entry.title}
+                            </p>
+                            <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">
+                              {entry.description}
+                            </p>
+                          </div>
+                          <span className="shrink-0 rounded-[14px] bg-[rgba(227,233,240,0.92)] px-3 py-1 text-xs font-semibold text-[var(--color-muted)]">
+                            敬请期待
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 rounded-[28px] border border-[rgba(104,79,48,0.12)] bg-[rgba(255,255,255,0.64)] px-4 py-4 sm:px-5">
-          <div className="grid gap-3 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-            <div>
-              <p className="text-sm font-semibold text-[var(--color-ink)]">这一局如何结束</p>
-              <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">
-                猜中后会立刻结算；如果用完 {maxGuesses} 次机会，系统会公开答案，方便你马上再来一局。
-              </p>
+        <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="uma-metric-card rounded-[28px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.72)] px-4 py-4 sm:px-5">
+            <div className="grid gap-3 md:grid-cols-3">
+              {startTips.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-[22px] border border-[rgba(96,147,192,0.12)] bg-white/78 px-4 py-4 shadow-[var(--shadow-soft)]"
+                >
+                  <p className="text-sm font-semibold text-[var(--color-ink)]">{item.title}</p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
             </div>
-            <p className="text-sm leading-6 text-[var(--color-muted)]">
-              当前先开放单人模式，后续会逐步加入多人和好友对战。
-            </p>
           </div>
+
+          <div className="uma-metric-card rounded-[28px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.72)] px-4 py-4 sm:px-5">
+            <p className="text-sm font-semibold text-[var(--color-ink)]">这一局会看到什么</p>
+            <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">
+              星级、场地、距离、跑法、牡牝、GI 档、GII/GIII 档、学年和宿舍都会成为线索。
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {["星级", "场地", "距离", "跑法", "学年", "宿舍"].map((label) => (
+                <span
+                  key={label}
+                  className="rounded-full border border-[rgba(96,147,192,0.14)] bg-white px-3 py-1 text-sm font-medium text-[var(--color-ink)]"
+                >
+                  {label}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="text-sm leading-6 text-[var(--color-muted)]">
+          <Link href="/" className="font-semibold text-[var(--color-brand-strong)]">
+            从主页进入
+          </Link>
+          {" "}
+          后会直接开局，猜中就立刻结算，用完 {maxGuesses} 次机会后也会马上公开答案。
         </div>
       </div>
     </section>

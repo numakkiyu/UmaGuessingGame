@@ -7,6 +7,7 @@ import { CharacterSearchInput } from "@/components/search-input";
 import { GameResultDialog } from "@/components/game-result-dialog";
 import { GameStatusBar } from "@/components/game-status-bar";
 import { GuessTable } from "@/components/guess-table";
+import { SiteBrand } from "@/components/site-brand";
 import { SiteFooter } from "@/components/site-footer";
 import { TurnstileWidget } from "@/components/turnstile-widget";
 import type { PublicConfig } from "@/config/public";
@@ -359,26 +360,36 @@ export function GameShell({
       </div>
 
       <main className="mobile-landscape-shell relative mx-auto flex min-h-screen w-full max-w-[1320px] flex-col px-3 py-3 sm:px-6 sm:py-4 lg:px-8">
-        <div className="pointer-events-none absolute inset-x-6 top-0 -z-10 h-56 rounded-b-[48px] bg-[linear-gradient(180deg,rgba(239,209,172,0.42),rgba(245,239,226,0))]" />
-        <div className="pointer-events-none absolute left-0 right-0 top-16 -z-10 h-px bg-[linear-gradient(90deg,rgba(156,69,24,0),rgba(156,69,24,0.2),rgba(156,69,24,0))]" />
+        <div className="pointer-events-none absolute inset-x-6 top-0 -z-10 h-56 rounded-b-[48px] bg-[linear-gradient(180deg,rgba(151,216,28,0.16),rgba(237,247,255,0))]" />
+        <div className="pointer-events-none absolute left-0 right-0 top-16 -z-10 h-px bg-[linear-gradient(90deg,rgba(115,192,22,0),rgba(115,192,22,0.24),rgba(63,136,247,0.24),rgba(115,192,22,0))]" />
 
-        <section className="battle-top-card rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel)] px-4 py-4 shadow-[var(--shadow-panel)] sm:rounded-[32px] sm:px-6 sm:py-6">
-          <div className="battle-top-layout flex flex-col gap-4">
-            <div className="battle-top-intro flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+        <section className="battle-top-card uma-panel px-4 py-4 sm:px-6 sm:py-5">
+          <div className="battle-top-layout flex flex-col gap-3">
+            <div className="battle-top-intro flex flex-col gap-3">
               <div className="battle-top-heading">
-                <Link
-                  href="/"
-                  className="inline-flex items-center gap-2 rounded-full border border-[var(--color-line)] bg-white/84 px-3 py-1.5 text-sm font-medium text-[var(--color-ink)] transition hover:bg-white"
-                >
-                  返回主页
-                </Link>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-brand-strong)]">
+                <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
+                  <SiteBrand
+                    compact
+                    href="/"
+                    className="max-w-[620px]"
+                    showTitle={false}
+                    subtitle={!canEdit ? "这是一条观战链接，只能看这一局的进度。" : "房间已就位，直接输入名字开始猜。"}
+                  />
+
+                  <Link
+                    href="/"
+                    className="uma-ghost-button text-sm"
+                  >
+                    返回主页
+                  </Link>
+                </div>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-brand-strong)]">
                   单人战局
                 </p>
-                <h1 className="mt-2 font-[var(--font-display)] text-[1.9rem] font-bold leading-tight text-[var(--color-ink)] sm:text-[2.8rem]">
+                <h1 className="mt-1 font-[var(--font-display)] text-[1.9rem] font-bold leading-tight text-[var(--color-ink)] sm:text-[2.6rem]">
                   {!canEdit ? "看看这一局" : gameState.status === "ended" ? "这一局已结束" : "直接开猜"}
                 </h1>
-                <p className="battle-top-copy mt-2 max-w-2xl text-sm leading-6 text-[var(--color-muted)]">
+                <p className="battle-top-copy mt-1 max-w-2xl text-sm leading-6 text-[var(--color-muted)]">
                   {!canEdit
                     ? gameState.status === "ended"
                       ? "这是一条已经结束的房间链接，现在只能看看这局最后留下的记录。"
@@ -387,31 +398,30 @@ export function GameShell({
                       ? "这一局已经结束了，想继续玩就回主页再开一局。"
                       : "这一局已经就位了。输入名字往下猜，想换题就直接换一局，想把同一局发给朋友就带上房间码。"}
                 </p>
-              </div>
-
-              <div className="battle-top-badges flex flex-wrap gap-2">
-                <span className="rounded-full border border-[rgba(104,79,48,0.12)] bg-[var(--color-panel-soft)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
-                  当前可猜 {initialQuestionBankSize} 位
-                </span>
-                <span className="rounded-full border border-[rgba(216,79,66,0.12)] bg-[rgba(216,79,66,0.1)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
-                  每局 {initialConfig.maxGuesses} 次机会
-                </span>
-                <span className="rounded-full border border-[rgba(200,108,53,0.14)] bg-[rgba(255,245,231,0.86)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
-                  房间码 {gameState.roomCode}
-                </span>
-                {canEdit && shareEnabled && gameState.status !== "ended" ? (
-                  <button
-                    type="button"
-                    onClick={shareCurrentGame}
-                    className="inline-flex items-center justify-center rounded-full border border-[rgba(200,108,53,0.18)] bg-white px-3 py-1.5 text-sm font-semibold text-[var(--color-brand-strong)] transition hover:bg-[rgba(255,248,240,0.96)]"
-                  >
-                    发给朋友
-                  </button>
-                ) : null}
+                <div className="battle-top-badges mt-3 flex flex-wrap gap-2">
+                  <span className="uma-chip uma-chip--green">
+                    当前可猜 {initialQuestionBankSize} 位
+                  </span>
+                  <span className="uma-chip uma-chip--gold">
+                    每局 {initialConfig.maxGuesses} 次机会
+                  </span>
+                  <span className="uma-chip uma-chip--blue">
+                    房间码 {gameState.roomCode}
+                  </span>
+                  {canEdit && shareEnabled && gameState.status !== "ended" ? (
+                    <button
+                      type="button"
+                      onClick={shareCurrentGame}
+                      className="uma-ghost-button text-sm"
+                    >
+                      发给朋友
+                    </button>
+                  ) : null}
+                </div>
               </div>
             </div>
 
-            <div className="battle-status-shell rounded-[24px] border border-[rgba(104,79,48,0.12)] bg-[rgba(255,255,255,0.64)] px-4 py-4">
+            <div className="battle-status-shell uma-panel-soft bg-[rgba(239,247,255,0.68)] px-4 py-4">
               <GameStatusBar
                 gameState={gameState}
                 canEdit={canEdit}
@@ -428,10 +438,10 @@ export function GameShell({
 
         <section className="battle-main-grid mt-3 grid gap-3 lg:mt-4">
           <div className="battle-main-column flex flex-col gap-3">
-            <div className="battle-input-card rounded-[24px] border border-[var(--color-line)] bg-[var(--color-panel)] p-4 shadow-[var(--shadow-panel)] sm:rounded-[28px] sm:p-6">
+            <div className="battle-input-card uma-panel p-4 sm:p-5">
               <div className="space-y-4">
                 {turnstileRequired ? (
-                  <div className="rounded-[24px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] px-4 py-3">
+                  <div className="rounded-[24px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] px-4 py-3 shadow-[var(--shadow-soft)]">
                     <TurnstileWidget
                       siteKey={initialConfig.turnstileSiteKey}
                       resetSignal={turnstileResetSignal}
@@ -459,7 +469,7 @@ export function GameShell({
                 />
 
                 {!canEdit ? (
-                  <div className="space-y-3 rounded-2xl border border-[rgba(200,108,53,0.18)] bg-[rgba(255,246,234,0.9)] px-4 py-3 text-sm text-[var(--color-ink)]">
+                  <div className="space-y-3 rounded-2xl border border-[var(--color-line)] bg-[rgba(239,247,255,0.82)] px-4 py-3 text-sm text-[var(--color-ink)]">
                     <p>
                     {gameState.status === "ended"
                       ? "这一局已经结束了，现在只能看看最后留下的线索。"
@@ -487,8 +497,8 @@ export function GameShell({
                                 className={[
                                   "min-h-10 rounded-full border px-3 py-2 text-sm font-medium transition",
                                   active
-                                    ? "border-[rgba(200,108,53,0.28)] bg-white text-[var(--color-brand-strong)]"
-                                    : "border-[rgba(104,79,48,0.14)] bg-[rgba(255,255,255,0.72)] text-[var(--color-ink)] hover:bg-white",
+                                    ? "border-[rgba(63,136,247,0.24)] bg-white text-[var(--color-brand-blue-deep)]"
+                                    : "border-[var(--color-line)] bg-[rgba(255,255,255,0.72)] text-[var(--color-ink)] hover:bg-white",
                                 ].join(" ")}
                               >
                                 {option.label}
@@ -509,7 +519,7 @@ export function GameShell({
                 ) : null}
 
                 {shareNotice ? (
-                  <p className="rounded-2xl border border-[rgba(200,108,53,0.18)] bg-[rgba(255,246,234,0.9)] px-4 py-3 text-sm text-[var(--color-ink)]">
+                  <p className="rounded-2xl border border-[var(--color-line)] bg-[rgba(239,247,255,0.82)] px-4 py-3 text-sm text-[var(--color-ink)]">
                     {shareNotice}
                   </p>
                 ) : null}
@@ -521,7 +531,7 @@ export function GameShell({
                 ) : null}
 
                 {initialQuestionBankSize === 0 ? (
-                  <p className="rounded-2xl border border-[rgba(200,108,53,0.18)] bg-[rgba(255,240,227,0.8)] px-4 py-3 text-sm text-[var(--color-ink)]">
+                  <p className="rounded-2xl border border-[rgba(243,199,84,0.24)] bg-[rgba(255,244,181,0.72)] px-4 py-3 text-sm text-[var(--color-ink)]">
                     当前正式题库还在整理中，等资料补齐后就能正常开局。
                   </p>
                 ) : null}

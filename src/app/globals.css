@@ -7,22 +7,26 @@
   --font-display:
     "Bahnschrift SemiCondensed", "DIN Alternate", "Yu Gothic UI", "Trebuchet MS",
     sans-serif;
-  --color-page: #f5efe2;
-  --color-panel: rgba(255, 250, 243, 0.92);
-  --color-panel-strong: #fffaf2;
-  --color-panel-soft: rgba(247, 236, 219, 0.82);
-  --color-panel-tint: rgba(255, 244, 228, 0.94);
-  --color-ink: #2e271f;
-  --color-muted: #655a4d;
-  --color-brand: #c86c35;
-  --color-brand-strong: #9b471d;
-  --color-brand-soft: #efd1ac;
-  --color-line: rgba(104, 79, 48, 0.16);
-  --color-correct: #58a55c;
-  --color-near: #d6a03a;
-  --color-wrong: #8d939d;
-  --shadow-panel: 0 24px 64px rgba(99, 68, 32, 0.14);
-  --shadow-soft: 0 14px 30px rgba(97, 68, 36, 0.1);
+  --color-page: #edf7ff;
+  --color-panel: rgba(255, 255, 255, 0.9);
+  --color-panel-strong: #ffffff;
+  --color-panel-soft: rgba(239, 250, 231, 0.92);
+  --color-panel-tint: rgba(229, 244, 255, 0.94);
+  --color-panel-sky: rgba(239, 247, 255, 0.92);
+  --color-ink: #1f3655;
+  --color-muted: #5f7998;
+  --color-brand: #97d81c;
+  --color-brand-strong: #67ba18;
+  --color-brand-blue: #3f88f7;
+  --color-brand-blue-deep: #255fcb;
+  --color-brand-soft: #dcf6a3;
+  --color-gold: #f3c754;
+  --color-line: rgba(81, 133, 183, 0.18);
+  --color-correct: #4fb85f;
+  --color-near: #f1c550;
+  --color-wrong: #8d98ab;
+  --shadow-panel: 0 26px 64px rgba(53, 96, 162, 0.16);
+  --shadow-soft: 0 14px 30px rgba(53, 96, 162, 0.1);
 }
 
 @theme inline {
@@ -46,18 +50,19 @@ body {
   min-height: 100vh;
   overflow-x: clip;
   background:
-    linear-gradient(135deg, rgba(190, 138, 87, 0.08) 0, rgba(190, 138, 87, 0.08) 12%, transparent 12%, transparent 100%),
-    radial-gradient(circle at top left, rgba(255, 214, 170, 0.72), transparent 24%),
-    radial-gradient(circle at top right, rgba(251, 232, 197, 0.76), transparent 22%),
-    radial-gradient(circle at 80% 16%, rgba(227, 183, 123, 0.22), transparent 18%),
+    linear-gradient(rgba(242, 249, 255, 0.94), rgba(242, 249, 255, 0.97)),
+    url("/assets/ui/backgrounds/bwiki-main-bg.png") center top / cover fixed no-repeat,
+    radial-gradient(circle at top left, rgba(112, 193, 255, 0.18), transparent 24%),
+    radial-gradient(circle at top right, rgba(255, 243, 175, 0.18), transparent 18%),
+    radial-gradient(circle at 80% 16%, rgba(151, 216, 28, 0.12), transparent 18%),
     repeating-linear-gradient(
       135deg,
-      rgba(146, 107, 59, 0.035) 0,
-      rgba(146, 107, 59, 0.035) 10px,
+      rgba(71, 136, 227, 0.02) 0,
+      rgba(71, 136, 227, 0.02) 10px,
       transparent 10px,
       transparent 28px
     ),
-    linear-gradient(180deg, #f8f1e3 0%, #f4ecdd 48%, #f8f3ea 100%);
+    linear-gradient(180deg, #f3faff 0%, #edf7ff 48%, #f6fbff 100%);
   color: var(--color-ink);
   font-family: var(--font-body);
 }
@@ -76,8 +81,260 @@ img {
   display: block;
 }
 
+.uma-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(8px);
+}
+
+.uma-hero-shell {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(81, 133, 183, 0.16);
+  border-radius: 40px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(250, 252, 255, 0.9)),
+    linear-gradient(135deg, rgba(151, 216, 28, 0.08), rgba(63, 136, 247, 0.06));
+  box-shadow: 0 30px 70px rgba(53, 96, 162, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+.uma-panel-soft {
+  border: 1px solid var(--color-line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow-soft);
+}
+
+.uma-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.uma-brand--compact {
+  gap: 12px;
+}
+
+.uma-brand-mark {
+  position: relative;
+  flex: 0 0 auto;
+  width: 70px;
+  height: 70px;
+  padding: 4px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(151, 216, 28, 0.12), rgba(63, 136, 247, 0.1));
+  box-shadow:
+    0 12px 24px rgba(53, 96, 162, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.uma-brand--compact .uma-brand-mark {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+}
+
+.uma-brand-mark-glow {
+  position: absolute;
+  inset: 8px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(151, 216, 28, 0.18), rgba(63, 136, 247, 0.16));
+}
+
+.uma-brand-avatar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.86);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.88),
+    0 8px 16px rgba(53, 96, 162, 0.14);
+}
+
+.uma-brand--compact .uma-brand-avatar {
+  border-radius: 14px;
+}
+
+.uma-brand-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.uma-brand-topline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.uma-brand-wordmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.uma-brand-wordmark img {
+  width: auto;
+  height: 54px;
+}
+
+.uma-brand-mini {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: rgba(229, 244, 255, 0.52);
+  border: 1px solid rgba(63, 136, 247, 0.12);
+  color: rgba(37, 95, 203, 0.82);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.uma-brand-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-ink);
+}
+
+.uma-brand--compact .uma-brand-title {
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+}
+
+.uma-brand-subtitle {
+  max-width: 42rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.uma-brand--compact .uma-brand-subtitle {
+  font-size: 0.88rem;
+}
+
+.uma-footer-card .uma-brand {
+  gap: 10px;
+}
+
+.uma-footer-card .uma-brand-topline {
+  gap: 6px;
+}
+
+.uma-footer-card .uma-brand-wordmark img {
+  height: 46px;
+}
+
+.uma-panel-head {
+  position: relative;
+  border-bottom: 1px solid var(--color-line);
+  background: linear-gradient(180deg, rgba(151, 216, 28, 0.12), rgba(238, 247, 255, 0.94));
+}
+
+.uma-panel-head::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-brand), var(--color-brand-blue));
+}
+
+.uma-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--color-ink);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.uma-chip--green {
+  background: rgba(239, 250, 231, 0.96);
+}
+
+.uma-chip--gold {
+  border-color: rgba(243, 199, 84, 0.22);
+  background: rgba(255, 244, 181, 0.9);
+}
+
+.uma-chip--blue {
+  border-color: rgba(63, 136, 247, 0.16);
+  background: rgba(229, 244, 255, 0.84);
+}
+
+.uma-ghost-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--color-brand-blue-deep);
+  font-weight: 600;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.uma-ghost-button:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.uma-input-shell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(63, 136, 247, 0.16);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow:
+    0 12px 24px rgba(53, 96, 162, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+}
+
+.uma-menu-card,
+.uma-metric-card,
+.uma-footer-card {
+  position: relative;
+}
+
+.uma-menu-card::before,
+.uma-metric-card::before,
+.uma-footer-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
+}
+
 ::selection {
-  background: rgba(207, 122, 63, 0.24);
+  background: rgba(115, 192, 22, 0.24);
 }
 
 ::-webkit-scrollbar {
@@ -86,13 +343,13 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(122, 91, 58, 0.08);
+  background: rgba(81, 133, 183, 0.08);
 }
 
 ::-webkit-scrollbar-thumb {
   border: 2px solid transparent;
   border-radius: 999px;
-  background: rgba(158, 104, 54, 0.38);
+  background: linear-gradient(180deg, rgba(151, 216, 28, 0.68), rgba(63, 136, 247, 0.64));
   background-clip: padding-box;
 }
 
@@ -110,18 +367,18 @@ img {
     justify-content: center;
     padding: 20px;
     background:
-      linear-gradient(180deg, rgba(28, 21, 13, 0.78), rgba(28, 21, 13, 0.88)),
-      linear-gradient(135deg, rgba(190, 138, 87, 0.08), rgba(190, 138, 87, 0));
+      linear-gradient(180deg, rgba(27, 47, 77, 0.82), rgba(27, 47, 77, 0.9)),
+      linear-gradient(135deg, rgba(63, 136, 247, 0.12), rgba(136, 205, 255, 0));
     backdrop-filter: blur(8px);
   }
 
   .mobile-rotate-card {
     width: min(100%, 360px);
-    border: 1px solid rgba(255, 244, 228, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 28px;
-    background: rgba(255, 250, 243, 0.96);
+    background: rgba(255, 255, 255, 0.96);
     padding: 24px 20px;
-    box-shadow: 0 24px 64px rgba(18, 12, 5, 0.32);
+    box-shadow: 0 24px 64px rgba(16, 39, 74, 0.32);
     color: var(--color-ink);
   }
 
@@ -155,8 +412,8 @@ img {
     margin-top: 18px;
     padding: 0 18px;
     border-radius: 999px;
-    background: var(--color-brand);
-    color: #fff;
+    background: linear-gradient(180deg, #a8e533, #82cb1a);
+    color: #244117;
     font-weight: 600;
   }
 
@@ -184,10 +441,47 @@ img {
     border-radius: 24px;
   }
 
+  .mobile-landscape-shell .uma-brand {
+    gap: 8px;
+  }
+
+  .mobile-landscape-shell .uma-brand-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+  }
+
+  .mobile-landscape-shell .uma-brand-avatar {
+    border-radius: 12px;
+  }
+
+  .mobile-landscape-shell .uma-brand-topline {
+    gap: 5px;
+  }
+
+  .mobile-landscape-shell .uma-brand-wordmark img {
+    max-width: 112px;
+    height: auto;
+  }
+
+  .mobile-landscape-shell .uma-brand-mini {
+    min-height: 22px;
+    padding: 0 7px;
+    font-size: 0.62rem;
+  }
+
+  .mobile-landscape-shell .uma-brand-title {
+    font-size: 1.05rem;
+  }
+
+  .mobile-landscape-shell .uma-brand-subtitle {
+    display: none;
+  }
+
   .mobile-landscape-shell .battle-top-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 10px;
   }
 

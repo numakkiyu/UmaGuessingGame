@@ -48,8 +48,10 @@ export function GameResultDialog({
     : [];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center overflow-y-auto bg-[rgba(34,24,12,0.34)] px-3 py-3 backdrop-blur-[3px] sm:items-center sm:px-4 sm:py-6">
-      <div className="w-full max-w-2xl rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] p-4 shadow-[var(--shadow-panel)] sm:rounded-[30px] sm:p-6">
+    <div className="fixed inset-0 z-50 flex items-end justify-center overflow-y-auto bg-[rgba(23,42,75,0.36)] px-3 py-3 backdrop-blur-[4px] sm:items-center sm:px-4 sm:py-6">
+      <div className="relative w-full max-w-2xl overflow-hidden rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] p-4 shadow-[var(--shadow-panel)] sm:rounded-[30px] sm:p-6">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--color-brand),var(--color-brand-blue))]" />
+        <div className="pointer-events-none absolute -right-16 top-10 h-36 w-36 rounded-full bg-[rgba(243,199,84,0.18)] blur-3xl" />
         <p className="font-[var(--font-display)] text-sm uppercase tracking-[0.3em] text-[var(--color-brand-strong)]">
           {gameState.status === "won" ? `第 ${gameState.guessRows.length} 猜命中` : "答案揭晓"}
         </p>
@@ -69,10 +71,10 @@ export function GameResultDialog({
         </p>
         <p className="mt-2 text-sm text-[var(--color-muted)]">{summaryText}</p>
 
-        <div className="mt-5 rounded-[24px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.82)] p-4 sm:rounded-[26px]">
+        <div className="mt-5 rounded-[24px] border border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(229,244,255,0.72),rgba(255,255,255,0.92))] p-4 sm:rounded-[26px]">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
             <div className="mx-auto flex w-full max-w-[180px] flex-col items-center text-center sm:mx-0">
-              <div className="flex size-28 items-center justify-center overflow-hidden rounded-[26px] border border-[var(--color-line)] bg-white shadow-[var(--shadow-soft)]">
+              <div className="flex size-28 items-center justify-center overflow-hidden rounded-[26px] border border-[var(--color-line)] bg-white shadow-[var(--shadow-soft)] ring-4 ring-[rgba(255,255,255,0.72)]">
                 <AvatarImage
                   primarySrc={answerEntry?.image_local_path}
                   proxySrc={answerEntry?.image_local_path}
@@ -99,7 +101,7 @@ export function GameResultDialog({
                   {detailItems.map((item) => (
                     <div
                       key={item.label}
-                      className="rounded-[18px] border border-[var(--color-line)] bg-[var(--color-panel)] px-3 py-3"
+                      className="rounded-[18px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.88)] px-3 py-3 shadow-[var(--shadow-soft)]"
                     >
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]">
                         {item.label}
@@ -120,7 +122,7 @@ export function GameResultDialog({
             <button
               type="button"
               onClick={onShare}
-              className="min-h-12 rounded-[20px] border border-[rgba(200,108,53,0.18)] bg-white px-4 py-3 text-sm font-semibold text-[var(--color-brand-strong)]"
+              className="min-h-12 rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.92)] px-4 py-3 text-sm font-semibold text-[var(--color-brand-blue-deep)] shadow-[var(--shadow-soft)]"
             >
               分享这一局
             </button>
@@ -128,7 +130,7 @@ export function GameResultDialog({
           <button
             type="button"
             onClick={onRestart}
-            className="min-h-12 rounded-[20px] bg-[var(--color-brand)] px-4 py-3 text-sm font-semibold text-white"
+            className="min-h-12 rounded-[20px] border border-[rgba(103,186,24,0.22)] bg-[linear-gradient(180deg,#a8e533,#82cb1a)] px-4 py-3 text-sm font-semibold text-[#244117] shadow-[0_16px_28px_rgba(116,194,22,0.18)]"
           >
             再来一局
           </button>

@@ -1,0 +1,47 @@
+[
+  {
+    "asset_id": "ui-bwiki-main-bg",
+    "source_site": "biliwiki",
+    "source_page": "wiki_image_page",
+    "source_url": "https://patchwiki.biligame.com/images/umamusume/a/ae/0o5v7jr3cqggjele4zr8jl2rrhvbzp4.png",
+    "local_path": "public/assets/ui/backgrounds/bwiki-main-bg.png",
+    "usage_scope": "site_background",
+    "cache_status": "cached"
+  },
+  {
+    "asset_id": "ui-bwiki-home-banner",
+    "source_site": "biliwiki",
+    "source_page": "wiki_home",
+    "source_url": "https://patchwiki.biligame.com/images/umamusume/e/e0/11a3te19q8e2uazff7ukfw228b9rxfj.jpg",
+    "local_path": "public/assets/ui/backgrounds/bwiki-home-banner.jpg",
+    "usage_scope": "panel_texture_reference",
+    "cache_status": "cached"
+  },
+  {
+    "asset_id": "ui-bwiki-logo",
+    "source_site": "biliwiki",
+    "source_page": "wiki_home",
+    "source_url": "https://patchwiki.biligame.com/resources/assets/images/logo/logo_umamusume.png?t=2026032708&v=76",
+    "local_path": "public/assets/ui/branding/bwiki-logo.png",
+    "usage_scope": "source_credit_branding",
+    "cache_status": "cached"
+  },
+  {
+    "asset_id": "ui-moegirl-site-logo",
+    "source_site": "moegirl",
+    "source_page": "site_header",
+    "source_url": "https://storage.moegirl.org.cn/moegirl/logo/zhMoegirl15.2.png",
+    "local_path": "public/assets/ui/branding/moegirl-site-logo.png",
+    "usage_scope": "source_credit_branding",
+    "cache_status": "cached"
+  },
+  {
+    "asset_id": "ui-moegirl-kv-2026",
+    "source_site": "moegirl",
+    "source_page": "umamusume_pretty_derby",
+    "source_url": "https://storage.moegirl.org.cn/moegirl/commons/d/d4/Umamusume_Pretty_Derby_Game_KV_2026_sp.jpg",
+    "local_path": "public/assets/ui/backgrounds/moegirl-kv-2026.jpg",
+    "usage_scope": "secondary_background_reference",
+    "cache_status": "cached"
+  }
+]

@@ -29,7 +29,7 @@ export function LatestGuessHighlight({ latestGuess }: Props) {
     .slice(0, 4);
 
   return (
-    <div className="latest-guess-card rounded-[24px] border border-[rgba(200,108,53,0.18)] bg-[linear-gradient(180deg,rgba(255,244,228,0.96),rgba(255,249,241,0.9))] px-4 py-4 text-sm text-[var(--color-ink)] shadow-[var(--shadow-soft)]">
+    <div className="latest-guess-card rounded-[24px] border border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(229,244,255,0.96),rgba(255,255,255,0.92))] px-4 py-4 text-sm text-[var(--color-ink)] shadow-[var(--shadow-soft)]">
       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-brand-strong)]">
         刚刚落下的一行
       </p>
@@ -43,7 +43,7 @@ export function LatestGuessHighlight({ latestGuess }: Props) {
           {visibleHints.map(([key, cell]) => (
             <span
               key={key}
-              className="rounded-full border border-[rgba(200,108,53,0.16)] bg-white/80 px-3 py-1 text-xs font-medium text-[var(--color-ink)]"
+              className="rounded-full border border-[var(--color-line)] bg-white/80 px-3 py-1 text-xs font-medium text-[var(--color-ink)]"
             >
               {cellLabels[key]} · {cell.value}
             </span>

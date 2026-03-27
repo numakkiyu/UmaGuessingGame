@@ -1,0 +1,15 @@
+<svg width="160" height="64" viewBox="0 0 160 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="64" fill="#9FDF2D"/>
+  <g opacity="0.16">
+    <path d="M20 6L30 16L20 26L10 16L20 6Z" fill="white"/>
+    <path d="M52 6L62 16L52 26L42 16L52 6Z" fill="white"/>
+    <path d="M84 6L94 16L84 26L74 16L84 6Z" fill="white"/>
+    <path d="M116 6L126 16L116 26L106 16L116 6Z" fill="white"/>
+    <path d="M148 6L158 16L148 26L138 16L148 6Z" fill="white"/>
+    <path d="M20 38L30 48L20 58L10 48L20 38Z" fill="white"/>
+    <path d="M52 38L62 48L52 58L42 48L52 38Z" fill="white"/>
+    <path d="M84 38L94 48L84 58L74 48L84 38Z" fill="white"/>
+    <path d="M116 38L126 48L116 58L106 48L116 38Z" fill="white"/>
+    <path d="M148 38L158 48L148 58L138 48L148 38Z" fill="white"/>
+  </g>
+</svg>

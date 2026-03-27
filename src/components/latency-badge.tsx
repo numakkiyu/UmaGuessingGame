@@ -32,9 +32,9 @@ const toneStyles = {
   },
   unknown: {
     text: "text-[var(--color-muted)]",
-    bg: "bg-[rgba(104,79,48,0.1)]",
-    dim: "bg-[rgba(104,79,48,0.18)]",
-    bar: "bg-[rgba(104,79,48,0.42)]",
+    bg: "bg-[rgba(81,133,183,0.12)]",
+    dim: "bg-[rgba(81,133,183,0.24)]",
+    bar: "bg-[rgba(81,133,183,0.4)]",
   },
 } as const;
 
@@ -47,7 +47,7 @@ export function LatencyBadge({ latencyMs, compact = false }: Props) {
   return (
     <div
       className={[
-        "inline-flex items-center gap-2 rounded-full border border-[rgba(104,79,48,0.12)] px-3 py-2",
+        "inline-flex items-center gap-2 rounded-full border border-[var(--color-line)] px-3 py-2",
         styles.bg,
       ].join(" ")}
     >

@@ -6,11 +6,11 @@ type Props = {
 
 const statusStyles = {
   correct:
-    "border-[rgba(66,122,70,0.24)] bg-[rgba(88,165,92,0.94)] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.16)]",
+    "border-[rgba(61,145,79,0.22)] bg-[rgba(79,184,95,0.94)] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.16)]",
   near:
-    "border-[rgba(176,125,21,0.22)] bg-[rgba(214,160,58,0.94)] text-[#3f2e10] shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]",
+    "border-[rgba(193,146,29,0.22)] bg-[rgba(241,197,80,0.95)] text-[#4a3612] shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]",
   wrong:
-    "border-[rgba(90,98,112,0.24)] bg-[rgba(141,147,157,0.94)] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12)]",
+    "border-[rgba(116,128,147,0.24)] bg-[rgba(141,152,171,0.95)] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12)]",
 } as const;
 
 export function StatusCell({ value, status, emphasized = false }: Props) {
@@ -19,7 +19,7 @@ export function StatusCell({ value, status, emphasized = false }: Props) {
       className={[
         "flex min-h-[54px] min-w-[88px] items-center justify-center rounded-[16px] border px-3 py-2 text-center text-sm font-medium leading-5 break-words sm:min-w-[96px]",
         statusStyles[status],
-        emphasized ? "ring-2 ring-[rgba(200,108,53,0.22)]" : "",
+        emphasized ? "ring-2 ring-[rgba(63,136,247,0.24)]" : "",
       ].join(" ")}
     >
       {value}

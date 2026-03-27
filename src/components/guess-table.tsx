@@ -76,8 +76,8 @@ export function GuessTable({ rows }: Props) {
   });
 
   return (
-    <section className="guess-table overflow-hidden rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel)] shadow-[var(--shadow-panel)]">
-      <div className="guess-table-head border-b border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(239,209,172,0.18),rgba(255,250,242,0))] px-4 py-4 sm:px-5">
+    <section className="guess-table uma-panel">
+      <div className="guess-table-head uma-panel-head px-4 py-4 sm:px-5">
         <div className="guess-table-head-inner flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-brand-strong)]">
@@ -88,14 +88,14 @@ export function GuessTable({ rows }: Props) {
               每一行都是你刚刚猜的那位马娘。先看左边几列，再顺着颜色把范围继续缩小。
             </p>
           </div>
-          <div className="rounded-full border border-[rgba(104,79,48,0.1)] bg-[var(--color-panel-soft)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
+          <div className="rounded-full border border-[var(--color-line)] bg-[var(--color-panel-soft)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
             已留下 {rows.length} 行线索
           </div>
         </div>
       </div>
       <div className="guess-table-scroll overflow-x-scroll overscroll-x-contain [touch-action:pan-x] [-webkit-overflow-scrolling:touch] bg-[linear-gradient(180deg,rgba(255,255,255,0.18),rgba(255,255,255,0))]">
         <table className="min-w-[980px] border-separate border-spacing-0 sm:min-w-[1080px]">
-          <thead className="sticky top-0 z-20 bg-[var(--color-panel-strong)]">
+          <thead className="sticky top-0 z-20 bg-[rgba(248,252,255,0.98)]">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
@@ -104,8 +104,8 @@ export function GuessTable({ rows }: Props) {
                     <th
                       key={header.id}
                       className={[
-                        "border-b border-[var(--color-line)] px-3 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-muted)]",
-                        isNameColumn ? "sticky left-0 z-30 bg-[var(--color-panel-strong)]" : "",
+                        "border-b border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(229,244,255,0.94),rgba(248,252,255,0.96))] px-3 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-muted)]",
+                        isNameColumn ? "sticky left-0 z-30 bg-[linear-gradient(180deg,rgba(229,244,255,0.98),rgba(248,252,255,0.98))]" : "",
                       ].join(" ")}
                     >
                       {flexRender(header.column.columnDef.header, header.getContext())}
@@ -133,7 +133,7 @@ export function GuessTable({ rows }: Props) {
                   key={row.id}
                   initial={isLatestRow ? { opacity: 0, y: 12 } : false}
                   animate={{ opacity: 1, y: 0 }}
-                  className={isLatestRow ? "bg-[rgba(239,209,172,0.1)]" : ""}
+                  className={isLatestRow ? "bg-[rgba(229,244,255,0.62)]" : ""}
                 >
                   {row.getVisibleCells().map((cell) => {
                     const key = cell.column.id;
@@ -141,7 +141,7 @@ export function GuessTable({ rows }: Props) {
                       return (
                         <td
                           key={cell.id}
-                          className="sticky left-0 z-10 border-b border-[var(--color-line)] bg-[var(--color-panel)] px-3 py-3 shadow-[6px_0_16px_rgba(245,239,226,0.96)]"
+                          className="sticky left-0 z-10 border-b border-[var(--color-line)] bg-[rgba(248,252,255,0.98)] px-3 py-3 shadow-[6px_0_16px_rgba(229,244,255,0.96)]"
                         >
                           <div className="flex min-w-[140px] items-center gap-3">
                             <div className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-line)] bg-white sm:size-11">
@@ -158,7 +158,7 @@ export function GuessTable({ rows }: Props) {
                                 {row.original.displayName}
                               </span>
                               {isLatestRow ? (
-                                <span className="mt-1 inline-flex rounded-full bg-[rgba(200,108,53,0.12)] px-2 py-0.5 text-xs font-medium text-[var(--color-brand-strong)]">
+                                <span className="mt-1 inline-flex rounded-full border border-[rgba(63,136,247,0.12)] bg-[rgba(229,244,255,0.92)] px-2 py-0.5 text-xs font-medium text-[var(--color-brand-blue-deep)]">
                                   最新一猜
                                 </span>
                               ) : null}

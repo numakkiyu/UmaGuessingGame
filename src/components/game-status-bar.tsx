@@ -40,7 +40,8 @@ export function GameStatusBar({
   return (
     <div className="status-bar grid gap-2.5">
       <div className="status-bar-metrics grid gap-2.5 sm:grid-cols-3 lg:grid-cols-4">
-        <div className="status-metric rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.78)] px-4 py-3">
+        <div className="status-metric overflow-hidden rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.88)] px-4 py-3 shadow-[var(--shadow-soft)]">
+          <div className="mb-3 h-1 rounded-full bg-[linear-gradient(90deg,var(--color-brand),rgba(151,216,28,0))]" />
           <p className="text-[11px] uppercase tracking-[0.18em] text-[var(--color-muted)]">
             剩余次数
           </p>
@@ -49,7 +50,8 @@ export function GameStatusBar({
           </p>
         </div>
 
-        <div className="status-metric rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.78)] px-4 py-3">
+        <div className="status-metric overflow-hidden rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.88)] px-4 py-3 shadow-[var(--shadow-soft)]">
+          <div className="mb-3 h-1 rounded-full bg-[linear-gradient(90deg,var(--color-brand-blue),rgba(63,136,247,0))]" />
           <p className="text-[11px] uppercase tracking-[0.18em] text-[var(--color-muted)]">
             当前状态
           </p>
@@ -58,7 +60,8 @@ export function GameStatusBar({
           </p>
         </div>
 
-        <div className="status-metric rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.78)] px-4 py-3 sm:col-auto">
+        <div className="status-metric overflow-hidden rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.88)] px-4 py-3 shadow-[var(--shadow-soft)] sm:col-auto">
+          <div className="mb-3 h-1 rounded-full bg-[linear-gradient(90deg,var(--color-gold),rgba(243,199,84,0))]" />
           <p className="text-[11px] uppercase tracking-[0.18em] text-[var(--color-muted)]">
             房间码
           </p>
@@ -67,7 +70,8 @@ export function GameStatusBar({
           </p>
         </div>
 
-        <div className="status-metric rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.78)] px-4 py-3">
+        <div className="status-metric overflow-hidden rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.88)] px-4 py-3 shadow-[var(--shadow-soft)]">
+          <div className="mb-3 h-1 rounded-full bg-[linear-gradient(90deg,var(--color-brand-blue-deep),rgba(37,95,203,0))]" />
           <p className="text-[11px] uppercase tracking-[0.18em] text-[var(--color-muted)]">
             {canEdit ? "围观情况" : "当前延迟"}
           </p>
@@ -88,21 +92,21 @@ export function GameStatusBar({
 
       <div className="status-bar-actions grid gap-2.5 sm:grid-cols-2">
         {!canEdit ? (
-          <div className="status-action-secondary inline-flex min-h-12 items-center justify-center rounded-[20px] border border-[rgba(104,79,48,0.14)] bg-white/86 px-5 py-3 text-sm font-semibold text-[var(--color-ink)]">
+          <div className="status-action-secondary inline-flex min-h-12 items-center justify-center rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.86)] px-5 py-3 text-sm font-semibold text-[var(--color-ink)] shadow-[var(--shadow-soft)]">
             {gameState?.status === "ended" ? "这一局已结束" : "这是观战链接"}
           </div>
         ) : null}
 
         {canEdit && gameState?.status !== "ended" ? (
-        <button
-          type="button"
-          onClick={onStartNewGame}
-          disabled={disabled || questionBankSize === 0}
-          className="status-action-primary inline-flex min-h-12 items-center justify-center gap-2 rounded-[20px] bg-[var(--color-brand)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--color-brand-strong)] disabled:cursor-not-allowed disabled:opacity-60"
-        >
-          <RefreshCcw className="size-4" />
-          换一局试试
-        </button>
+          <button
+            type="button"
+            onClick={onStartNewGame}
+            disabled={disabled || questionBankSize === 0}
+            className="status-action-primary inline-flex min-h-12 items-center justify-center gap-2 rounded-[20px] border border-[rgba(103,186,24,0.22)] bg-[linear-gradient(180deg,#a8e533,#82cb1a)] px-5 py-3 text-sm font-semibold text-[#244117] shadow-[0_16px_28px_rgba(116,194,22,0.18)] transition hover:brightness-[1.03] disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <RefreshCcw className="size-4" />
+            换一局试试
+          </button>
         ) : null}
 
         {canEdit && gameState?.status !== "ended" ? (
@@ -110,7 +114,7 @@ export function GameStatusBar({
             type="button"
             onClick={onEndCurrentGame}
             disabled={disabled || !gameState || gameState.status !== "playing"}
-            className="status-action-secondary inline-flex min-h-12 items-center justify-center rounded-[20px] border border-[rgba(104,79,48,0.14)] bg-white/86 px-5 py-3 text-sm font-semibold text-[var(--color-ink)] transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-60"
+            className="status-action-secondary inline-flex min-h-12 items-center justify-center rounded-[20px] border border-[var(--color-line)] bg-[rgba(255,255,255,0.86)] px-5 py-3 text-sm font-semibold text-[var(--color-brand-blue-deep)] shadow-[var(--shadow-soft)] transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-60"
           >
             结束这一局
           </button>

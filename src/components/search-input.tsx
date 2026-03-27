@@ -43,8 +43,8 @@ export function CharacterSearchInput({ entries, disabled, disabledHint, onSelect
   }
 
   return (
-    <section className="search-panel overflow-hidden rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] shadow-[var(--shadow-soft)]">
-      <div className="search-panel-head border-b border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(239,209,172,0.22),rgba(255,250,242,0))] px-4 pb-3 pt-4">
+    <section className="search-panel overflow-hidden rounded-[24px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] shadow-[var(--shadow-soft)]">
+      <div className="search-panel-head uma-panel-head px-4 pb-3 pt-4">
         <div className="search-panel-title flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-brand-strong)]">
@@ -54,13 +54,13 @@ export function CharacterSearchInput({ entries, disabled, disabledHint, onSelect
               输入中文、日文、英文或常见外号都可以。
             </p>
           </div>
-          <div className="inline-flex rounded-full border border-[rgba(104,79,48,0.1)] bg-[var(--color-panel-soft)] px-3 py-1 text-xs font-medium text-[var(--color-ink)]">
+          <div className="inline-flex rounded-full border border-[var(--color-line)] bg-[var(--color-panel-soft)] px-3 py-1 text-xs font-medium text-[var(--color-ink)] shadow-[var(--shadow-soft)]">
             {disabled ? (disabledHint ?? "等这一局开始后就能继续猜") : "点一下候选就会提交"}
           </div>
         </div>
 
-        <div className="search-panel-input mt-4 flex items-center gap-3 rounded-[22px] border border-[var(--color-line)] bg-white/88 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.8)]">
-          <Search className="size-4 text-[var(--color-muted)]" />
+        <div className="uma-input-shell search-panel-input mt-4 px-4 py-3">
+          <Search className="size-4 text-[var(--color-brand-blue-deep)]" />
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
@@ -73,13 +73,13 @@ export function CharacterSearchInput({ entries, disabled, disabledHint, onSelect
 
       <div className="search-panel-candidates max-h-80 overflow-y-auto p-2">
         {!showCandidates ? (
-          <div className="search-panel-note rounded-[20px] border border-dashed border-[rgba(104,79,48,0.16)] bg-[rgba(255,255,255,0.64)] px-4 py-4 text-sm leading-6 text-[var(--color-muted)]">
+          <div className="search-panel-note rounded-[20px] border border-dashed border-[var(--color-line)] bg-[rgba(239,247,255,0.68)] px-4 py-4 text-sm leading-6 text-[var(--color-muted)]">
             输入名字后，这里会出现头像、中文名和日文名。先从你最熟的那位开始，通常更容易把范围缩小。
           </div>
         ) : null}
 
         {showCandidates && filteredEntries.length === 0 ? (
-          <div className="rounded-[20px] bg-[rgba(255,255,255,0.62)] px-3 py-4 text-sm text-[var(--color-muted)]">
+          <div className="rounded-[20px] bg-[rgba(239,247,255,0.72)] px-3 py-4 text-sm text-[var(--color-muted)]">
             暂时没找到这位马娘，换个名字或常见外号再试试。
           </div>
         ) : null}
@@ -90,7 +90,7 @@ export function CharacterSearchInput({ entries, disabled, disabledHint, onSelect
                 key={entry.id}
                 type="button"
                 onClick={() => handleSelect(entry.id)}
-                className="mb-1 flex min-h-[60px] w-full items-center gap-3 rounded-[18px] px-3 py-2 text-left transition hover:bg-[rgba(200,108,53,0.08)] focus:bg-[rgba(200,108,53,0.12)] focus:outline-none"
+                className="mb-1 flex min-h-[60px] w-full items-center gap-3 rounded-[18px] border border-transparent bg-white/52 px-3 py-2 text-left transition hover:border-[rgba(63,136,247,0.16)] hover:bg-[rgba(229,244,255,0.72)] focus:border-[rgba(63,136,247,0.22)] focus:bg-[rgba(229,244,255,0.82)] focus:outline-none"
               >
                 <div className="flex size-11 items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-line)] bg-white shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
                   <AvatarImage

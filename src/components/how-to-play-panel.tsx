@@ -51,7 +51,7 @@ export function HowToPlayPanel({ config, gameState, onShare, shareNotice }: Prop
         </div>
       </div>
 
-      <div className="how-to-share mt-4 rounded-[24px] border border-[rgba(200,108,53,0.16)] bg-[rgba(255,245,231,0.84)] px-4 py-4">
+      <div className="how-to-share mt-4 rounded-[24px] border border-[var(--color-line)] bg-[rgba(239,247,255,0.84)] px-4 py-4">
         <p className="text-sm font-semibold text-[var(--color-ink)]">
           {shareEnabled ? "这局顺手发给朋友" : "分享功能还在准备中"}
         </p>
@@ -64,7 +64,7 @@ export function HowToPlayPanel({ config, gameState, onShare, shareNotice }: Prop
           <button
             type="button"
             onClick={onShare}
-            className="mt-3 min-h-11 w-full rounded-[18px] border border-[rgba(200,108,53,0.18)] bg-white px-4 py-3 text-sm font-semibold text-[var(--color-brand-strong)] transition hover:bg-[rgba(255,248,240,0.96)]"
+            className="mt-3 min-h-11 w-full rounded-[18px] border border-[var(--color-line)] bg-white px-4 py-3 text-sm font-semibold text-[var(--color-brand-blue-deep)] transition hover:bg-[rgba(229,244,255,0.96)]"
           >
             分享这一局
           </button>
