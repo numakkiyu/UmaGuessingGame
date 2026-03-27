@@ -27,7 +27,7 @@
 </div>
 
 <p align="center">
-  <img src="./public/assets/ui/backgrounds/bwiki-home-banner.jpg" alt="赛马娘猜猜乐封面">
+  <img src="./docs/assets/UmaGuessingGame.png" alt="赛马娘猜猜乐封面">
 </p>
 
 赛马娘猜猜乐是一个围绕赛马娘角色资料设计的网页猜谜项目。玩家通过头像、名字和每次猜测返回的字段提示，逐步逼近目标角色；维护者则可以通过仓库内已经整理好的数据文件、题库构建脚本、部署脚本和 GitHub 协作模板，直接把项目部署到本地、服务器或面板环境。
