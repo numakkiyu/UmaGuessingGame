@@ -12,6 +12,11 @@ export type PublicConfig = {
   shareBaseUrl: string;
   maxGuesses: number;
   assetProxyEnabled: boolean;
+  realtime: {
+    wsUrl: string;
+    pollIntervalMs: number;
+    heartbeatIntervalMs: number;
+  };
 };
 
 export function getPublicConfig(): PublicConfig {
@@ -29,5 +34,10 @@ export function getPublicConfig(): PublicConfig {
     shareBaseUrl: env.APP_BASE_URL,
     maxGuesses: env.MAX_GUESSES,
     assetProxyEnabled: env.ASSET_PROXY_ENABLED,
+    realtime: {
+      wsUrl: env.REALTIME_WS_URL,
+      pollIntervalMs: env.ROOM_SYNC_POLL_INTERVAL_MS,
+      heartbeatIntervalMs: env.REALTIME_HEARTBEAT_INTERVAL_MS,
+    },
   };
 }

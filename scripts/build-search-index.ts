@@ -17,6 +17,7 @@ async function main() {
       name_en: entry.name_en ?? null,
       aliases: entry.aliases,
       image_local_path: entry.image_local_path,
+      image_url: entry.image_url ?? null,
     }),
   );
   await fs.mkdir(path.dirname(outputPath), { recursive: true });

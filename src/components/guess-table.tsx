@@ -1,7 +1,9 @@
 "use client";
 
+import { useMemo } from "react";
 import { flexRender, getCoreRowModel, useReactTable } from "@tanstack/react-table";
 import { motion } from "motion/react";
+import { AvatarImage } from "@/components/avatar-image";
 import { StatusCell } from "@/components/status-cell";
 
 const columns = [
@@ -25,6 +27,7 @@ type GuessCell = {
 type GuessTableRow = {
   displayName: string;
   avatarUrl: string;
+  avatarFallbackUrl?: string | null;
   star: GuessCell;
   surface: GuessCell;
   distance: GuessCell;
@@ -41,14 +44,16 @@ type Props = {
     characterId: string;
     displayName: string;
     avatarUrl: string;
+    avatarFallbackUrl?: string | null;
     cells: Record<string, { value: string; status: "correct" | "near" | "wrong" }>;
   }>;
 };
 
 export function GuessTable({ rows }: Props) {
-  const data: GuessTableRow[] = rows.map((row) => ({
+  const data: GuessTableRow[] = useMemo(() => rows.map((row) => ({
     displayName: row.displayName,
     avatarUrl: row.avatarUrl,
+    avatarFallbackUrl: row.avatarFallbackUrl ?? null,
     star: row.cells.star,
     surface: row.cells.surface,
     distance: row.cells.distance,
@@ -58,41 +63,38 @@ export function GuessTable({ rows }: Props) {
     g23: row.cells.g23,
     grade: row.cells.grade,
     dormitory: row.cells.dormitory,
-  }));
+  })), [rows]);
 
-  // TanStack Table exposes imperative helpers here; memoization warnings are expected.
+  const coreRowModel = useMemo(() => getCoreRowModel<GuessTableRow>(), []);
+
+  // TanStack Table is the intended table state source here.
   // eslint-disable-next-line react-hooks/incompatible-library
   const table = useReactTable({
     data,
     columns,
-    getCoreRowModel: getCoreRowModel(),
+    getCoreRowModel: coreRowModel,
   });
 
   return (
-    <section className="overflow-hidden rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel)] shadow-[var(--shadow-panel)]">
-      <div className="border-b border-[var(--color-line)] px-4 py-4 sm:px-5">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+    <section className="guess-table overflow-hidden rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel)] shadow-[var(--shadow-panel)]">
+      <div className="guess-table-head border-b border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(239,209,172,0.18),rgba(255,250,242,0))] px-4 py-4 sm:px-5">
+        <div className="guess-table-head-inner flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-brand-strong)]">
-              结果表
+              线索记录
             </p>
             <h2 className="mt-2 font-[var(--font-display)] text-2xl font-bold">猜测记录</h2>
             <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">
-              表格里显示的是你这一猜本身的数据，颜色只负责告诉你离答案有多近。
+              每一行都是你刚刚猜的那位马娘。先看左边几列，再顺着颜色把范围继续缩小。
             </p>
           </div>
-          <div className="rounded-full bg-[var(--color-panel-soft)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
+          <div className="rounded-full border border-[rgba(104,79,48,0.1)] bg-[var(--color-panel-soft)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)]">
             已留下 {rows.length} 行线索
           </div>
         </div>
       </div>
-
-      <div className="border-b border-[var(--color-line)] bg-[rgba(255,255,255,0.56)] px-4 py-3 text-sm text-[var(--color-muted)] sm:px-5">
-        最新一行就是你刚刚那一猜。手机上如果看不全，直接左右滑动表格就好。
-      </div>
-
-      <div className="overflow-x-auto overscroll-x-contain">
-        <table className="min-w-[1080px] border-separate border-spacing-0">
+      <div className="guess-table-scroll overflow-x-scroll overscroll-x-contain [touch-action:pan-x] [-webkit-overflow-scrolling:touch] bg-[linear-gradient(180deg,rgba(255,255,255,0.18),rgba(255,255,255,0))]">
+        <table className="min-w-[980px] border-separate border-spacing-0 sm:min-w-[1080px]">
           <thead className="sticky top-0 z-20 bg-[var(--color-panel-strong)]">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
@@ -102,7 +104,7 @@ export function GuessTable({ rows }: Props) {
                     <th
                       key={header.id}
                       className={[
-                        "border-b border-[var(--color-line)] px-3 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-muted)]",
+                        "border-b border-[var(--color-line)] px-3 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-muted)]",
                         isNameColumn ? "sticky left-0 z-30 bg-[var(--color-panel-strong)]" : "",
                       ].join(" ")}
                     >
@@ -139,13 +141,14 @@ export function GuessTable({ rows }: Props) {
                       return (
                         <td
                           key={cell.id}
-                          className="sticky left-0 z-10 border-b border-[var(--color-line)] bg-[var(--color-panel)] px-3 py-3"
+                          className="sticky left-0 z-10 border-b border-[var(--color-line)] bg-[var(--color-panel)] px-3 py-3 shadow-[6px_0_16px_rgba(245,239,226,0.96)]"
                         >
-                          <div className="flex items-center gap-3">
-                            <div className="flex size-11 items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-line)] bg-white">
-                              {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img
-                                src={row.original.avatarUrl}
+                          <div className="flex min-w-[140px] items-center gap-3">
+                            <div className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-line)] bg-white sm:size-11">
+                              <AvatarImage
+                                primarySrc={row.original.avatarUrl}
+                                proxySrc={row.original.avatarUrl}
+                                remoteSrc={row.original.avatarFallbackUrl}
                                 alt={row.original.displayName}
                                 className="size-full object-cover"
                               />
@@ -166,11 +169,16 @@ export function GuessTable({ rows }: Props) {
                     }
 
                     const guessCell = row.original[key as keyof GuessTableRow];
-                    if (typeof guessCell === "string") {
+                    if (
+                      !guessCell ||
+                      typeof guessCell === "string" ||
+                      !("value" in guessCell) ||
+                      !("status" in guessCell)
+                    ) {
                       return null;
                     }
                     return (
-                      <td key={cell.id} className="border-b border-[var(--color-line)] px-2 py-2 align-top">
+                      <td key={cell.id} className="border-b border-[var(--color-line)] px-2 py-2 align-middle">
                         <StatusCell
                           value={guessCell.value}
                           status={guessCell.status}

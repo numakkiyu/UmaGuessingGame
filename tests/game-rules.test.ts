@@ -11,6 +11,7 @@ describe("game rules", () => {
       calls.push([gameId, includeAnswer]);
       return {
         gameId,
+        roomCode: gameId,
         status: "playing",
         remainingGuesses: 6,
         guessRows: [],
@@ -22,6 +23,24 @@ describe("game rules", () => {
     await readPublicGameState("game_active", reader);
 
     assert.deepEqual(calls, [["game_active", undefined]]);
+  });
+
+  it("shows an ended state instead of exposing the finished answer in public recovery", async () => {
+    const reader: typeof getGameState = (async (gameId: string) => ({
+      gameId,
+      roomCode: gameId,
+      status: "won",
+      remainingGuesses: 4,
+      guessRows: [],
+      answerCharacterId: "answer",
+      answerDisplayName: "特别周",
+    })) as typeof getGameState;
+
+    const state = await readPublicGameState("game_done", reader);
+
+    assert.equal(state.status, "ended");
+    assert.equal(state.answerCharacterId, null);
+    assert.equal(state.answerDisplayName, null);
   });
 
   it("stops decreasing remaining guesses after a correct guess", () => {

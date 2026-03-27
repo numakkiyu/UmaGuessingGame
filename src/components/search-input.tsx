@@ -1,23 +1,26 @@
 "use client";
 
 import { useDeferredValue, useMemo, useState } from "react";
-import { Command } from "cmdk";
 import { Search } from "lucide-react";
+import { AvatarImage } from "@/components/avatar-image";
 import { type SearchIndexEntry } from "@/lib/validation/schemas";
 
 type Props = {
   entries: SearchIndexEntry[];
   disabled?: boolean;
+  disabledHint?: string;
   onSelect: (characterId: string) => void;
 };
 
-export function CharacterSearchInput({ entries, disabled, onSelect }: Props) {
+export function CharacterSearchInput({ entries, disabled, disabledHint, onSelect }: Props) {
   const [query, setQuery] = useState("");
   const deferredQuery = useDeferredValue(query);
+  const keyword = deferredQuery.trim().toLowerCase();
+  const showCandidates = keyword.length > 0;
 
   const filteredEntries = useMemo(() => {
-    const keyword = deferredQuery.trim().toLowerCase();
-    if (!keyword) return entries.slice(0, 12);
+    if (!keyword) return [];
+
     return entries
       .filter((entry) =>
         [
@@ -31,75 +34,85 @@ export function CharacterSearchInput({ entries, disabled, onSelect }: Props) {
           .toLowerCase()
           .includes(keyword),
       )
-      .slice(0, 12);
-  }, [deferredQuery, entries]);
+      .slice(0, 8);
+  }, [entries, keyword]);
+
+  function handleSelect(characterId: string) {
+    setQuery("");
+    onSelect(characterId);
+  }
 
   return (
-    <Command
-      shouldFilter={false}
-      className="overflow-hidden rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] shadow-[var(--shadow-soft)]"
-    >
-      <div className="border-b border-[var(--color-line)] px-4 pb-3 pt-4">
-        <div className="flex items-center justify-between gap-3">
+    <section className="search-panel overflow-hidden rounded-[28px] border border-[var(--color-line)] bg-[var(--color-panel-strong)] shadow-[var(--shadow-soft)]">
+      <div className="search-panel-head border-b border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(239,209,172,0.22),rgba(255,250,242,0))] px-4 pb-3 pt-4">
+        <div className="search-panel-title flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-brand-strong)]">
-              搜索马娘
+              猜一位马娘
             </p>
             <p className="mt-1 text-sm text-[var(--color-muted)]">
-              输入中文、日文、英文或常见别名都可以。
+              输入中文、日文、英文或常见外号都可以。
             </p>
           </div>
-          <div className="rounded-full bg-[var(--color-panel-soft)] px-3 py-1 text-xs font-medium text-[var(--color-ink)]">
-            {disabled ? "暂时不能继续猜" : "选中后立刻提交"}
+          <div className="inline-flex rounded-full border border-[rgba(104,79,48,0.1)] bg-[var(--color-panel-soft)] px-3 py-1 text-xs font-medium text-[var(--color-ink)]">
+            {disabled ? (disabledHint ?? "等这一局开始后就能继续猜") : "点一下候选就会提交"}
           </div>
         </div>
 
-        <div className="mt-4 flex items-center gap-3 rounded-[22px] border border-[var(--color-line)] bg-white/70 px-4 py-3">
+        <div className="search-panel-input mt-4 flex items-center gap-3 rounded-[22px] border border-[var(--color-line)] bg-white/88 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.8)]">
           <Search className="size-4 text-[var(--color-muted)]" />
-          <Command.Input
+          <input
             value={query}
-            onValueChange={setQuery}
+            onChange={(event) => setQuery(event.target.value)}
             disabled={disabled}
-            placeholder="先输入一位你想猜的马娘"
+            placeholder="输入一位马娘开始猜"
             className="h-8 w-full bg-transparent text-sm outline-none placeholder:text-[var(--color-muted)] sm:text-base"
           />
         </div>
       </div>
-      <Command.List className="max-h-72 overflow-y-auto p-2">
-        {filteredEntries.length === 0 ? (
-          <Command.Empty className="px-3 py-4 text-sm text-[var(--color-muted)]">
-            暂时没找到这位马娘。
-          </Command.Empty>
+
+      <div className="search-panel-candidates max-h-80 overflow-y-auto p-2">
+        {!showCandidates ? (
+          <div className="search-panel-note rounded-[20px] border border-dashed border-[rgba(104,79,48,0.16)] bg-[rgba(255,255,255,0.64)] px-4 py-4 text-sm leading-6 text-[var(--color-muted)]">
+            输入名字后，这里会出现头像、中文名和日文名。先从你最熟的那位开始，通常更容易把范围缩小。
+          </div>
         ) : null}
-        {filteredEntries.map((entry) => (
-          <Command.Item
-            key={entry.id}
-            value={`${entry.id}-${entry.name_zh}`}
-            onSelect={() => {
-              setQuery("");
-              onSelect(entry.id);
-            }}
-            className="mb-1 flex min-h-[60px] cursor-pointer items-center gap-3 rounded-[18px] px-3 py-2 text-left outline-none data-[selected=true]:bg-[rgba(200,108,53,0.12)]"
-          >
-            <div className="flex size-11 items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-line)] bg-white">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={entry.image_local_path}
-                alt={entry.name_zh}
-                className="size-full object-cover"
-              />
-            </div>
-            <div className="min-w-0">
-              <p className="truncate text-sm font-semibold text-[var(--color-ink)]">
-                {entry.name_zh}
-              </p>
-              <p className="truncate text-xs text-[var(--color-muted)]">
-                {entry.name_jp}
-              </p>
-            </div>
-          </Command.Item>
-        ))}
-      </Command.List>
-    </Command>
+
+        {showCandidates && filteredEntries.length === 0 ? (
+          <div className="rounded-[20px] bg-[rgba(255,255,255,0.62)] px-3 py-4 text-sm text-[var(--color-muted)]">
+            暂时没找到这位马娘，换个名字或常见外号再试试。
+          </div>
+        ) : null}
+
+        {showCandidates
+          ? filteredEntries.map((entry) => (
+              <button
+                key={entry.id}
+                type="button"
+                onClick={() => handleSelect(entry.id)}
+                className="mb-1 flex min-h-[60px] w-full items-center gap-3 rounded-[18px] px-3 py-2 text-left transition hover:bg-[rgba(200,108,53,0.08)] focus:bg-[rgba(200,108,53,0.12)] focus:outline-none"
+              >
+                <div className="flex size-11 items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-line)] bg-white shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
+                  <AvatarImage
+                    primarySrc={entry.image_local_path}
+                    proxySrc={entry.image_local_path}
+                    remoteSrc={entry.image_url}
+                    alt={entry.name_zh}
+                    className="size-full object-cover"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-semibold text-[var(--color-ink)]">
+                    {entry.name_zh}
+                  </p>
+                  <p className="truncate text-xs text-[var(--color-muted)]">
+                    {entry.name_jp}
+                  </p>
+                </div>
+              </button>
+            ))
+          : null}
+      </div>
+    </section>
   );
 }

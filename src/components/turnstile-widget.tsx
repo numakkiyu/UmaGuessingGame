@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useEffectEvent, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 type TurnstileInstance = {
   render: (
@@ -63,7 +63,11 @@ function ensureTurnstileScript() {
 export function TurnstileWidget({ siteKey, resetSignal, onTokenChange }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const widgetIdRef = useRef<string | null>(null);
-  const syncTokenChange = useEffectEvent(onTokenChange);
+  const onTokenChangeRef = useRef(onTokenChange);
+
+  useEffect(() => {
+    onTokenChangeRef.current = onTokenChange;
+  }, [onTokenChange]);
 
   useEffect(() => {
     if (!siteKey) {
@@ -81,12 +85,12 @@ export function TurnstileWidget({ siteKey, resetSignal, onTokenChange }: Props) 
         containerRef.current.innerHTML = "";
         widgetIdRef.current = window.turnstile.render(containerRef.current, {
           sitekey: siteKey,
-          callback: (token: string) => syncTokenChange(token),
-          "expired-callback": () => syncTokenChange(null),
-          "error-callback": () => syncTokenChange(null),
+          callback: (token: string) => onTokenChangeRef.current(token),
+          "expired-callback": () => onTokenChangeRef.current(null),
+          "error-callback": () => onTokenChangeRef.current(null),
         });
       })
-      .catch(() => syncTokenChange(null));
+      .catch(() => onTokenChangeRef.current(null));
 
     return () => {
       disposed = true;
@@ -102,7 +106,7 @@ export function TurnstileWidget({ siteKey, resetSignal, onTokenChange }: Props) 
       return;
     }
 
-    syncTokenChange(null);
+    onTokenChangeRef.current(null);
     window.turnstile.reset(widgetIdRef.current);
   }, [resetSignal]);
 

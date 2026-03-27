@@ -19,7 +19,11 @@
     "assets:preload": "tsx scripts/preload-assets.ts",
     "db:seed": "tsx scripts/seed-question-bank.ts",
     "prepare:data": "npm run question-bank:build && npm run search-index:build",
-    "ci:check": "npm run prepare:data && npm run typecheck && npm run lint && npm test && npm run build"
+    "ci:check": "npm run prepare:data && npm run typecheck && npm run lint && npm test && npm run build",
+    "server:start": "powershell -ExecutionPolicy Bypass -File ./scripts/server-control.ps1 start",
+    "server:stop": "powershell -ExecutionPolicy Bypass -File ./scripts/server-control.ps1 stop",
+    "server:status": "powershell -ExecutionPolicy Bypass -File ./scripts/server-control.ps1 status",
+    "server:restart": "powershell -ExecutionPolicy Bypass -File ./scripts/server-control.ps1 restart"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.21.3",

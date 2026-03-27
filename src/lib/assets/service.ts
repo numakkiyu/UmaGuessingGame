@@ -1,8 +1,12 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import { getServerConfig } from "@/config/server";
+import {
+  buildCachedThumbnailLocalPath,
+  inferImageExtension,
+} from "@/lib/assets/resolve-image";
 import {
   assetManifestEntrySchema,
+  questionBankEntrySchema,
   type AssetManifestEntry,
 } from "@/lib/validation/schemas";
 
@@ -18,6 +22,11 @@ const cacheIndexPath = path.join(
   "assets",
   "cache-index.json",
 );
+const readyPath = path.join(
+  /* turbopackIgnore: true */ process.cwd(),
+  "data",
+  "question_bank_ready.json",
+);
 const allowedHosts = new Set([
   "umamusume.jp",
   "wiki.biligame.com",
@@ -27,6 +36,13 @@ const allowedHosts = new Set([
 ]);
 
 const inflight = new Map<string, Promise<AssetManifestEntry>>();
+let manifestCache: AssetManifestEntry[] | null = null;
+let manifestMapCache: Map<string, AssetManifestEntry> | null = null;
+
+function getAssetProxyTimeoutMs() {
+  const parsed = Number.parseInt(process.env.ASSET_PROXY_TIMEOUT_MS ?? "", 10);
+  return Number.isFinite(parsed) ? parsed : 8000;
+}
 
 async function ensureDir(filePath: string) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
@@ -52,12 +68,66 @@ function toAbsoluteLocalPath(localPath: string) {
   );
 }
 
+function classifySourceSite(sourceUrl: string) {
+  const hostname = new URL(sourceUrl).hostname;
+  if (hostname.includes("biligame.com")) {
+    return "biliwiki";
+  }
+  if (hostname.includes("moegirl.org.cn")) {
+    return "moegirl";
+  }
+  if (hostname.includes("umamusume.jp")) {
+    return "umamusume-official";
+  }
+
+  return hostname;
+}
+
+async function discoverAssetEntry(assetId: string) {
+  const raw = await readJson<unknown[]>(readyPath, []);
+
+  for (const item of raw) {
+    const parsed = questionBankEntrySchema.safeParse(item);
+    if (!parsed.success) {
+      continue;
+    }
+
+    if (parsed.data.asset_id !== assetId || !parsed.data.image_url) {
+      continue;
+    }
+
+    const extension = inferImageExtension(parsed.data.image_url) ?? "png";
+
+    return assetManifestEntrySchema.parse({
+      asset_id: parsed.data.asset_id,
+      character_id: parsed.data.id,
+      source_site: classifySourceSite(parsed.data.image_url),
+      source_page: parsed.data.image_url,
+      source_url: parsed.data.image_url,
+      local_path: buildCachedThumbnailLocalPath(parsed.data.asset_id, extension),
+      downloaded_at: null,
+      usage_scope: "search_and_guess_table",
+      copyright_note: "Source tracked for controlled proxy and cache use.",
+      cache_status: "missing",
+      last_checked_at: null,
+    });
+  }
+
+  return null;
+}
+
 export async function loadAssetManifest() {
+  if (manifestCache) {
+    return manifestCache;
+  }
+
   const raw = await readJson<unknown[]>(assetManifestPath, []);
-  return raw.flatMap((item) => {
+  manifestCache = raw.flatMap((item) => {
     const parsed = assetManifestEntrySchema.safeParse(item);
     return parsed.success ? [parsed.data] : [];
   });
+  manifestMapCache = new Map(manifestCache.map((entry) => [entry.asset_id, entry]));
+  return manifestCache;
 }
 
 async function updateAssetManifestEntry(entry: AssetManifestEntry) {
@@ -65,12 +135,28 @@ async function updateAssetManifestEntry(entry: AssetManifestEntry) {
   const next = manifest.filter((item) => item.asset_id !== entry.asset_id);
   next.push(entry);
   next.sort((left, right) => left.asset_id.localeCompare(right.asset_id));
+  manifestCache = next;
+  manifestMapCache = new Map(next.map((item) => [item.asset_id, item]));
   await writeJson(assetManifestPath, next);
 }
 
 export async function getAssetEntry(assetId: string) {
-  const manifest = await loadAssetManifest();
-  return manifest.find((entry) => entry.asset_id === assetId) ?? null;
+  if (!manifestMapCache) {
+    await loadAssetManifest();
+  }
+
+  const existingEntry = manifestMapCache?.get(assetId) ?? null;
+  if (existingEntry) {
+    return existingEntry;
+  }
+
+  const discoveredEntry = await discoverAssetEntry(assetId);
+  if (!discoveredEntry) {
+    return null;
+  }
+
+  await updateAssetManifestEntry(discoveredEntry);
+  return discoveredEntry;
 }
 
 export async function ensureAssetCached(assetId: string) {
@@ -96,10 +182,7 @@ export async function ensureAssetCached(assetId: string) {
     }
 
     const controller = new AbortController();
-    const timer = setTimeout(
-      () => controller.abort(),
-      getServerConfig().assetProxyTimeoutMs,
-    );
+    const timer = setTimeout(() => controller.abort(), getAssetProxyTimeoutMs());
     try {
       const response = await fetch(entry.source_url, {
         signal: controller.signal,

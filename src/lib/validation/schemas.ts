@@ -48,6 +48,7 @@ export const searchIndexEntrySchema = z.object({
   name_en: z.string().nullable(),
   aliases: z.array(z.string()),
   image_local_path: z.string(),
+  image_url: z.string().url().nullable().default(null),
 });
 
 export const guessCellSchema = z.object({
@@ -59,6 +60,7 @@ export const guessRowSchema = z.object({
   characterId: z.string(),
   displayName: z.string(),
   avatarUrl: z.string(),
+  avatarFallbackUrl: z.string().url().nullable().default(null),
   cells: z.object({
     star: guessCellSchema,
     surface: guessCellSchema,
@@ -84,6 +86,26 @@ export const publicConfigSchema = z.object({
   shareBaseUrl: z.string().url(),
   maxGuesses: z.number().int(),
   assetProxyEnabled: z.boolean(),
+  realtime: z.object({
+    wsUrl: z.string(),
+    pollIntervalMs: z.number().int(),
+    heartbeatIntervalMs: z.number().int(),
+  }),
+});
+
+export const roomPresenceHeartbeatRequestSchema = z.object({
+  roomCode: z.string().min(1),
+  role: z.enum(["host", "spectator"]),
+  sessionId: z.string().min(1),
+  latencyMs: z.number().int().nonnegative().nullable().optional(),
+});
+
+export const roomPresenceSummarySchema = z.object({
+  roomCode: z.string(),
+  spectatorCount: z.number().int().nonnegative(),
+  averageLatencyMs: z.number().int().nonnegative().nullable(),
+  hostOnline: z.boolean(),
+  updatedAt: z.string().datetime(),
 });
 
 export const createGameRequestSchema = z.object({
@@ -96,18 +118,29 @@ export const guessRequestSchema = z.object({
   turnstileToken: z.string().optional(),
 });
 
-export const gameStatusSchema = z.enum(["playing", "won", "lost"]);
+export const endGameRequestSchema = z.object({
+  gameId: z.string().min(1),
+});
+
+export const gameStatusSchema = z.enum(["playing", "won", "lost", "ended"]);
 
 export const gameStateSchema = z.object({
   gameId: z.string(),
+  roomCode: z.string(),
   status: gameStatusSchema,
   remainingGuesses: z.number().int(),
   guessRows: z.array(guessRowSchema),
+  startedAt: z.string().datetime().optional(),
+  finishedAt: z.string().datetime().nullable().optional(),
+  updatedAt: z.string().datetime().optional(),
   answerCharacterId: z.string().nullable().optional(),
   answerDisplayName: z.string().nullable().optional(),
 });
 
 export type AssetManifestEntry = z.infer<typeof assetManifestEntrySchema>;
 export type GuessRow = z.infer<typeof guessRowSchema>;
+export type GameState = z.infer<typeof gameStateSchema>;
+export type PublicConfigPayload = z.infer<typeof publicConfigSchema>;
 export type QuestionBankEntry = z.infer<typeof questionBankEntrySchema>;
 export type SearchIndexEntry = z.infer<typeof searchIndexEntrySchema>;
+export type RoomPresenceSummary = z.infer<typeof roomPresenceSummarySchema>;

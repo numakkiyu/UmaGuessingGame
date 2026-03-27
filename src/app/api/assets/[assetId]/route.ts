@@ -4,7 +4,7 @@ import { readAssetBytes } from "@/lib/assets/service";
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ assetId: string }> },
-) {
+  ) {
   try {
     const { assetId } = await params;
     const { entry, bytes } = await readAssetBytes(assetId);
@@ -14,11 +14,13 @@ export async function GET(
         "Content-Type": contentTypeFromPath(entry.local_path),
       },
     });
-  } catch (error) {
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : "读取资源失败。" },
-      { status: 404 },
-    );
+  } catch {
+    return new NextResponse(null, {
+      status: 404,
+      headers: {
+        "Cache-Control": "no-store",
+      },
+    });
   }
 }
 
@@ -27,5 +29,6 @@ function contentTypeFromPath(filePath: string) {
   if (ext === "png") return "image/png";
   if (ext === "jpg" || ext === "jpeg") return "image/jpeg";
   if (ext === "webp") return "image/webp";
+  if (ext === "svg") return "image/svg+xml; charset=utf-8";
   return "application/octet-stream";
 }

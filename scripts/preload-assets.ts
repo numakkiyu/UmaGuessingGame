@@ -1,8 +1,10 @@
-import { ensureAssetCached, loadAssetManifest } from "../src/lib/assets/service";
+import { ensureAssetCached } from "../src/lib/assets/service";
+import { loadQuestionBankReady } from "../src/lib/question-bank";
 
 async function main() {
-  const manifest = await loadAssetManifest();
-  for (const entry of manifest) {
+  const questionBank = await loadQuestionBankReady();
+
+  for (const entry of questionBank) {
     try {
       await ensureAssetCached(entry.asset_id);
       console.log(`cached ${entry.asset_id}`);

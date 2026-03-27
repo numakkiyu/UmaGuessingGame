@@ -90,6 +90,7 @@ export function buildGuessRow(guess: QuestionBankEntry, answer: QuestionBankEntr
     characterId: guess.id,
     displayName: guess.name_zh,
     avatarUrl: guess.image_local_path,
+    avatarFallbackUrl: guess.image_url,
     cells: {
       star: { value: `${guess.star}星`, status: compareStar(guess, answer) },
       surface: { value: formatGroup(guess.surface_group), status: compareSurface(guess, answer) },

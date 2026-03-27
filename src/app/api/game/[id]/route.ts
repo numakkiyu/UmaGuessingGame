@@ -1,11 +1,22 @@
 import { NextResponse } from "next/server";
+import { toPlayerFacingGameError } from "@/lib/game/errors";
 import { getGameState } from "@/lib/game/service";
 
 export async function readPublicGameState(
   id: string,
   reader: typeof getGameState = getGameState,
 ) {
-  return reader(id);
+  const state = await reader(id);
+  if (state.status !== "playing") {
+    return {
+      ...state,
+      status: "ended" as const,
+      answerCharacterId: null,
+      answerDisplayName: null,
+    };
+  }
+
+  return state;
 }
 
 export async function GET(
@@ -18,7 +29,7 @@ export async function GET(
     return NextResponse.json(state);
   } catch (error) {
     return NextResponse.json(
-      { error: error instanceof Error ? error.message : "读取游戏失败。" },
+      { error: toPlayerFacingGameError(error, "这局暂时读不到了。") },
       { status: 404 },
     );
   }

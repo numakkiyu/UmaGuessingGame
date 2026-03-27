@@ -1,4 +1,8 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import type { NextConfig } from "next";
+
+const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
   images: {
@@ -9,6 +13,9 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "storage.moegirl.org.cn" },
       { protocol: "https", hostname: "zh.moegirl.org.cn" },
     ],
+  },
+  turbopack: {
+    root: rootDir,
   },
 };
 

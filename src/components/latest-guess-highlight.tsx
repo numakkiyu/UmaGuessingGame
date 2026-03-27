@@ -29,21 +29,21 @@ export function LatestGuessHighlight({ latestGuess }: Props) {
     .slice(0, 4);
 
   return (
-    <div className="rounded-[24px] border border-[rgba(200,108,53,0.18)] bg-[rgba(255,242,225,0.86)] px-4 py-4 text-sm text-[var(--color-ink)] shadow-[var(--shadow-soft)]">
+    <div className="latest-guess-card rounded-[24px] border border-[rgba(200,108,53,0.18)] bg-[linear-gradient(180deg,rgba(255,244,228,0.96),rgba(255,249,241,0.9))] px-4 py-4 text-sm text-[var(--color-ink)] shadow-[var(--shadow-soft)]">
       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-brand-strong)]">
-        最新一猜
+        刚刚落下的一行
       </p>
-      <p className="mt-2 leading-6">
+      <p className="latest-guess-copy mt-2 leading-6">
         刚刚猜的是 <span className="font-semibold">{latestGuess.displayName}</span>。这一行里已经对上{" "}
         <span className="font-semibold">{correctCount}</span> 项，另外还有{" "}
         <span className="font-semibold">{Math.max(closeCount - correctCount, 0)}</span> 项很接近。
       </p>
       {visibleHints.length > 0 ? (
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className="latest-guess-tags mt-3 flex flex-wrap gap-2">
           {visibleHints.map(([key, cell]) => (
             <span
               key={key}
-              className="rounded-full border border-[rgba(200,108,53,0.16)] bg-white/75 px-3 py-1 text-xs font-medium text-[var(--color-ink)]"
+              className="rounded-full border border-[rgba(200,108,53,0.16)] bg-white/80 px-3 py-1 text-xs font-medium text-[var(--color-ink)]"
             >
               {cellLabels[key]} · {cell.value}
             </span>
