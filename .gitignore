@@ -42,6 +42,8 @@ prod-server*.log
 data/runtime/
 *-review.png
 *-check.png
+.publish-temp/
+.publish-temp.zip
 
 # env files (can opt-in for committing if needed)
 .env*

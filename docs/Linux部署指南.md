@@ -258,6 +258,8 @@ chmod +x ./scripts/docker-up-linux.sh
 docker compose -f docker-compose.yml up -d --build
 ```
 
+生产编排默认只对宿主机暴露应用的 `3000` 端口，`postgres` 和 `redis` 仅在 Compose 内部网络中提供给应用使用。这样更适合公网服务器、宝塔和 1Panel 场景，也能避免与宿主机已有的数据库或 Redis 服务冲突。
+
 ### 第 5 步：查看状态与日志
 
 ```bash
@@ -356,6 +358,8 @@ pm2 save
 - 使用宝塔 Docker 管理器启动 `postgres:17-alpine` 与 `redis:7-alpine`
 
 只要 `.env` 中的连接地址正确即可。
+
+如果你直接使用仓库内生产 `docker-compose.yml`，其中自带的 `postgres` 和 `redis` 默认不会占用宿主机 `5432` / `6379`。宝塔只需要反向代理应用的 `3000` 端口即可。
 
 ## 五、方案 D：1Panel 部署
 
