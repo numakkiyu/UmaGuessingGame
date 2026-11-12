@@ -1,0 +1,58 @@
+
+
+/* 内容容器可收缩（：grid 子项 min-width:0） */
+.u-min-0 {
+  min-width: 0;
+}
+
+/* 只读视觉：不承担语义边界 */
+.u-text-muted {
+  color: var(--color-muted);
+}
+
+.u-text-aux {
+  font-size: var(--text-aux);
+  line-height: 1.5;
+}
+
+/* 触摸区兜底 */
+.u-touch {
+  min-height: var(--touch-min);
+  min-width: var(--touch-min);
+}
+
+@media (width < 30rem) {
+  .u-touch {
+    min-height: var(--touch-comfortable);
+  }
+}
+
+/* 仅在屏幕阅读器可见的语义补充（反馈符号的文字兜底） */
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 容器约束用 clamp 实现流体字号，避免死板跳变 */
+.u-fluid-title {
+  font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.u-fluid-task {
+  font-size: clamp(1.5rem, 1.15rem + 1.1vw, 2rem);
+  line-height: 1.3;
+}
+
+/* 大屏展示：正文 ≥24px */
+.u-display-text {
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem);
+  line-height: 1.45;
+}

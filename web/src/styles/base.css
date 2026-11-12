@@ -1,0 +1,195 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* 100dvh 有回退，见 .uma-app-shell */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* 不在 html 上设置 overflow-x，任何水平溢出都必须定位到真实来源 */
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  /* 手机正文 16px/1.6，不靠 10–12px 挤内容 */
+  font-size: 1rem;
+  line-height: 1.6;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 中文标题使用同家族中粗字重 */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+/* 自然阅读顺序与 DOM 一致；长译名换行，不用全局 overflow hidden 掩盖 */
+h1,
+h2,
+h3,
+p,
+li,
+dd,
+dt,
+span {
+  overflow-wrap: break-word;
+}
+
+/*
+ * base 层不强制链接颜色，只继承父级颜色。
+ *
+ * 原因：Button 等组件通过 utilities 层设置自己的文字色（白字 on #367A16 = 5.31:1）。
+ * 如果 base 层给 a 设蓝色，就会覆盖组件文字色，深绿按钮上出现蓝字——
+ * 蓝 on #367A16 只有约 1.5:1，属于严重对比度失败。
+ * 真正的正文链接用 components 层的 .uma-link（见 components.css），语义清晰且可预测。
+ */
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* 数字计时用 tabular-nums */
+[data-numeric] {
+  font-family: var(--font-numeric);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 焦点可见：blue-deep 对 page 5.41:1、对 panel 5.87:1，满足 ≥3:1 非文本边界 */
+:focus-visible {
+  outline: 2px solid var(--color-blue-deep);
+  outline-offset: 2px;
+  border-radius: var(--radius-control);
+}
+
+/* 鼠标点击不显示焦点环，但键盘必须可见 */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+::selection {
+  background-color: var(--color-brand-green-soft);
+  color: var(--color-ink);
+}
+
+/* 屏幕阅读器工具类 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 跳至主内容：键盘用户第一站 */
+.uma-skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: var(--z-fault);
+  padding: 12px 16px;
+  border-radius: var(--radius-control);
+  background-color: var(--color-ink);
+  color: var(--color-panel);
+  font-weight: 600;
+  transform: translateY(-200%);
+  transition: transform var(--duration-quick) var(--ease-primary);
+}
+
+.uma-skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+/* 减少动态。系统偏好与局内开关共用同一套降级 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 局内「减少动态」开关：data-motion="reduced" 挂在 <html> 上 */
+[data-motion="reduced"] *,
+[data-motion="reduced"] *::before,
+[data-motion="reduced"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Press feedback must also stay still when reduced motion is chosen in-game. */
+[data-motion="reduced"] button:active,
+[data-motion="reduced"] a:active {
+  scale: 1 !important;
+}
+
+/* 不出现每秒三次以上闪烁，不自动视差 */
+@media (prefers-reduced-motion: reduce) {
+  .uma-allow-motion {
+    display: none !important;
+  }
+}
+
+[data-motion="reduced"] .uma-allow-motion {
+  display: none !important;
+}

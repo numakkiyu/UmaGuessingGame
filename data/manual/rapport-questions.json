@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "1.0.0",
+  "_note": "原创游戏设计内容，不是官方数据。这些是玩家偏好问题，不声称任何官方人格或人气答案。",
+  "questions": [
+    {
+      "questionId": "rp-01",
+      "prompt": "训练结束后最想做的事是？",
+      "options": [
+        "去食堂加一餐",
+        "回宿舍补觉",
+        "再跑一组加练",
+        "和大家一起看电影"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-02",
+      "prompt": "赛前最需要的心理准备是？",
+      "options": [
+        "安静独处",
+        "听一首固定的歌",
+        "和搭档聊两句",
+        "把路线再走一遍"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-03",
+      "prompt": "如果只能选一种奖励，会选？",
+      "options": [
+        "多一天休息",
+        "一份限定甜点",
+        "新的训练装备",
+        "现场看一场比赛"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-04",
+      "prompt": "遇到状态低谷时，更希望？",
+      "options": [
+        "别人别来打扰",
+        "有人陪着待着",
+        "被直接指出问题",
+        "换个环境散散心"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-05",
+      "prompt": "在团队里最愿意承担的角色是？",
+      "options": [
+        "定计划的人",
+        "盯细节的人",
+        "鼓励大家的人",
+        "默默补位的人"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-06",
+      "prompt": "比赛当天早餐会选？",
+      "options": [
+        "照常吃",
+        "只喝点东西",
+        "多吃一点",
+        "和平时一样但更早吃"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-07",
+      "prompt": "空闲的半天最想去？",
+      "options": [
+        "训练场",
+        "图书馆",
+        "商店街",
+        "什么都不做"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-08",
+      "prompt": "收到礼物时更在意？",
+      "options": [
+        "实用",
+        "心意",
+        "惊喜",
+        "包装"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-09",
+      "prompt": "最不擅长应对的是？",
+      "options": [
+        "突然被点名",
+        "长时间的等待",
+        "人多吵闹",
+        "被夸奖"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-10",
+      "prompt": "复盘时会先看？",
+      "options": [
+        "自己的失误",
+        "对手的强项",
+        "整体节奏",
+        "最后一个弯道"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-11",
+      "prompt": "如果换一种训练方式，最想试？",
+      "options": [
+        "换场地",
+        "换距离",
+        "换跑法",
+        "换搭档"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-12",
+      "prompt": "最希望别人记住你的哪一点？",
+      "options": [
+        "成绩",
+        "努力",
+        "性格",
+        "某一场比赛"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-13",
+      "prompt": "遇到不擅长的距离时会？",
+      "options": [
+        "提前加练",
+        "比赛中调整",
+        "靠搭档补位",
+        "接受结果"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "questionId": "rp-14",
+      "prompt": "休息日最不可能做的事是？",
+      "options": [
+        "睡到中午",
+        "主动加练",
+        "整理房间",
+        "看比赛录像"
+      ],
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    }
+  ]
+}

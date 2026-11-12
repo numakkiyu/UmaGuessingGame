@@ -1,0 +1,16 @@
+{
+  "grid": [
+    {"name":"two exact A grades", "distance":"A", "style":"A", "fits":true},
+    {"name":"distance B is not enough", "distance":"B", "style":"A", "fits":false},
+    {"name":"style S is not the documented A", "distance":"A", "style":"S", "fits":false},
+    {"name":"unknown distance is not a match", "distance":"", "style":"A", "fits":false},
+    {"name":"unknown style is not a match", "distance":"A", "style":"", "fits":false}
+  ],
+  "draft": [
+    {"name":"three A axes", "aptitudes":{"surface":{"草地":"A"},"distance":{"短":"A"},"style":{"逃":"A"}},"price":5,"points":9},
+    {"name":"A B C axes", "aptitudes":{"surface":{"草地":"A"},"distance":{"短":"B"},"style":{"逃":"C"}},"price":3,"points":6},
+    {"name":"S and missing grades are zero", "aptitudes":{"surface":{"草地":"S"},"distance":{},"style":{"逃":"G"}},"price":3,"points":0},
+    {"name":"ceil two and three A grades with dirt bonus", "aptitudes":{"surface":{"草地":"B","泥地":"A"},"distance":{"短":"A","英":"A","中":"A"},"style":{"逃":"A","先":"A"}},"price":7,"points":8},
+    {"name":"all four distance and style A", "aptitudes":{"surface":{"草地":"A","泥地":"A"},"distance":{"短":"A","英":"A","中":"A","长":"A"},"style":{"逃":"A","先":"A","差":"A","追":"A"}},"price":8,"points":9}
+  ]
+}

@@ -1,60 +1,64 @@
-services:
-  app-init:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: sh -c "npm run db:push && npm run db:seed"
-    env_file:
-      - .env
-    depends_on:
-      postgres:
-        condition: service_healthy
-    restart: "no"
+# One process owns SQLite on a local filesystem; do not share its live database
 
+services:
   app:
     build:
       context: .
       dockerfile: Dockerfile
-    env_file:
-      - .env
-    ports:
-      - "3000:3000"
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-      app-init:
-        condition: service_completed_successfully
-    volumes:
-      - asset-cache:/app/public/assets
+      args:
+        RUNTIME_IMAGE: "${UMA_RUNTIME_IMAGE:-gcr.io/distroless/static-debian12:nonroot}"
+        GO_MODULE_PROXY: "${UMA_BUILD_GO_PROXY:-https://proxy.golang.org,direct}"
+    image: umaguessinggame:2.0.0-draft.1
+    # Replicas cannot share this SQLite data directory
     restart: unless-stopped
-
-  postgres:
-    image: postgres:17-alpine
+    ports:
+      # Only the host port is configurable; the container listens on 8080
+      - "${UMA_HOST_PORT:-8080}:8080"
     environment:
-      POSTGRES_DB: umaguessinggame
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      UMA_ADDR: ":8080"
+      UMA_DATA_DIR: /var/lib/umaguess
+      UMA_CONTENT_DIR: /content
+      UMA_BACKUP_DIR: /backups
+      # Only the host port is configurable; the container listens on 8080
+      UMA_PUBLIC_ORIGIN: "${UMA_PUBLIC_ORIGIN:-http://localhost:${UMA_HOST_PORT:-8080}}"
+      UMA_LOG_LEVEL: "${UMA_LOG_LEVEL:-info}"
+      UMA_DEPLOYMENT: "${UMA_DEPLOYMENT:-}"
+      UMA_CONFIG: "${UMA_CONFIG:-/etc/umaguess/lan.json}"
+      # Compose interpolation reads shell/.env values, not sibling environment entries
+      UMA_ALLOWED_ORIGINS: "${UMA_ALLOWED_ORIGINS:-http://localhost:${UMA_HOST_PORT:-8080}}"
+      UMA_SECURE_COOKIES: "${UMA_SECURE_COOKIES:-false}"
+      # Empty pass-through values preserve policy-file proxy settings
+      UMA_TRUST_PROXY: "${UMA_TRUST_PROXY:-}"
+      UMA_TRUSTED_PROXY_CIDRS: "${UMA_TRUSTED_PROXY_CIDRS:-}"
+      UMA_TURNSTILE_SECRET: "${UMA_TURNSTILE_SECRET:-}"
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      # Named volume keeps the database on the Docker-managed local filesystem.
+      - uma-runtime:/var/lib/umaguess
+      - ./content:/content:ro
+      - ./config:/etc/umaguess:ro
+      - uma-backups:/backups
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    # Allow more time than the server shutdown grace
+    stop_grace_period: 30s
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d umaguessinggame"]
-      interval: 5s
-      timeout: 5s
-      retries: 10
-
-  redis:
-    image: redis:7-alpine
-    volumes:
-      - redis-data:/data
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 5s
-      timeout: 5s
-      retries: 10
+      test: ["CMD", "/app/uma-server", "healthcheck"]
+      interval: 30s
+      timeout: 3s
+      start_period: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          # Adjust limits only after measuring the deployment host
+          cpus: "2.0"
+          memory: 2g
 
 volumes:
-  asset-cache:
-  postgres-data:
-  redis-data:
+  uma-runtime:
+  uma-backups:

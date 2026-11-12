@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "_note": "原创娱乐玩法的模拟参数，不是官方游戏公式；玩法说明见 docs/玩法与规则.md",
+  "track": {
+    "totalTurns": 8,
+    "decisionSeconds": 20,
+    "startPosition": 0,
+    "startStamina": 6,
+    "staminaCap": 8,
+    "followMinGap": 1,
+    "followMaxGap": 3,
+    "defaultAction": "steady",
+    "actions": [
+      {
+        "action": "steady",
+        "label": "稳进",
+        "positionGain": 3,
+        "staminaDelta": 0
+      },
+      {
+        "action": "sprint",
+        "label": "冲刺",
+        "positionGain": 5,
+        "staminaDelta": -2,
+        "minStamina": 2
+      },
+      {
+        "action": "recover",
+        "label": "恢复",
+        "positionGain": 1,
+        "staminaDelta": 2
+      },
+      {
+        "action": "follow",
+        "label": "跟跑",
+        "positionGain": 4,
+        "alternateGain": 2,
+        "staminaDelta": 0,
+        "leaderGap": true
+      }
+    ],
+    "terrainChanges": false,
+    "randomEvents": false,
+    "provenance": {
+      "kind": "authored-design-value",
+      "notOfficialData": true,
+      "author": "modes-g08-g15",
+      "basis": "docs/玩法与规则.md",
+      "simulation": true
+    }
+  }
+}

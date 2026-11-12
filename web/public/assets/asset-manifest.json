@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-11-08T08:34:09.710Z",
+  "note": "素材权利归各自权利人所有；来源与使用说明见 docs/第三方依赖与资料来源.md",
+  "destRoot": "web/public/assets",
+  "items": [
+    {
+      "path": "/assets/ui/branding/official-logo-jp.png",
+      "source": "branding/official-logo-jp.png",
+      "reason": "页头与加载页标识",
+      "bytes": 76808,
+      "sha256": "860127d64aab091c91f7269c3ecef09a41bfd3c8968c19669c3b7cadb8407662",
+      "copied": true,
+      "format": "png"
+    },
+    {
+      "path": "/assets/ui/backgrounds/lobby-scene.webp",
+      "source": "backgrounds/Bg_0001_01113.png",
+      "reason": "大厅首屏背景",
+      "bytes": 171034,
+      "sha256": "bd10b8a73d0f2a2b38a0de978727cf7693d601b2e7699bfcc49ace5a5969efdb",
+      "copied": true,
+      "format": "webp",
+      "quality": 82,
+      "originalBytes": 1369121
+    },
+    {
+      "path": "/assets/ui/scenes/event-stage.jpg",
+      "source": "backgrounds/Bg_0366_00000.png",
+      "sourceUrl": "https://patchwiki.biligame.com/images/umamusume/5/52/c50kyuoa1xj073m0pycmdeyzinf9hg5.png",
+      "reason": "活动只读大屏外围舞台；静态插画，不参与题面",
+      "bytes": 184837,
+      "sha256": "d7ad346edeb5f677286478bf78d578466b4988ae1e3c1d6f9c6fb3e031cf561b",
+      "copied": true,
+      "format": "jpeg"
+    }
+  ]
+}

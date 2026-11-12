@@ -1,0 +1,58 @@
+// Names are game-menu labels, not claimed official regional product names.
+// Facts/limits here mirror the existing mode summaries; authoritative settings
+// and admission continue to come from the API.
+type ModeCopy = { name: string; description: string; difficulty: string };
+type ModeCatalog = Record<string, ModeCopy>;
+export const modes: Record<"zh-Hans" | "zh-Hant" | "ja", ModeCatalog> = {
+  "zh-Hans": {
+    classic: { name: "经典弗一把", description: "在限定错误额度内猜出角色，每次猜测都会给出九项线索", difficulty: "低门槛，认识角色名就能玩" },
+    "aptitude-grid": { name: "适性交叉占格", description: "在 3×3 适性棋盘上，选符合两项条件的角色占格。占格后不能撤回", difficulty: "需要了解场地与距离适性" },
+    draft: { name: "公开编队", description: "在预算内为四个任务各选一位不同角色，按三项适配情况计分", difficulty: "需要了解适性与预算取舍" },
+    "race-rebuild": { name: "历史赛况复原", description: "把一场收录赛事的参赛者按真实名次排列，按两两先后关系计分", difficulty: "需要熟悉真实比赛名次" },
+    "co-race-path": { name: "同场之路", description: "用共同参赛经历连接两位角色，路线越短，得分越高", difficulty: "需要队内分工与赛事常识" },
+    sort: { name: "排序", description: "按身高、生日月日或已核实的事件日期排序，相同数值可以并列", difficulty: "需要熟悉角色身高与生日" },
+    memory: { name: "记忆配对", description: "观看 8 秒后盖牌，在最多 20 次尝试内完成 4×4 牌面上的八对配对", difficulty: "低门槛，靠记忆配对" },
+    bluff: { name: "假档案", description: "围绕一条已核对的事实编出假答案，再匿名投票找出真相。骗到别人也能加分", difficulty: "需要编造与判断" },
+    "clue-puzzle": { name: "团队情报拼图", description: "每人掌握不同的私密线索，靠交流把卡片放进正确位置，由当前代表提交全队答案", difficulty: "需要团队情报交换" },
+    "strategy-race": { name: "回合制策略赛道", description: "八回合同时揭晓，选择稳进、冲刺、恢复或跟跑。管理体力，争取领先", difficulty: "需要回合规划" },
+    rapport: { name: "默契问答", description: "轮流选出自己的偏好，其他人预测。锁定后一同揭晓，猜中越多，默契越高", difficulty: "低门槛，靠默契" },
+    creative: { name: "创意企划", description: "抽取角色、场景与限制，写一段不超过 80 字的企划。匿名展示后，队伍和观众分别投票", difficulty: "需要临场创作" },
+    trade: { name: "档案交易", description: "手牌公开、任务保密。三轮协商中双方各出一张牌，确认后交换，最后按手牌完成秘密任务", difficulty: "需要议价判断" },
+    pedigree: { name: "血统", description: "把史实原型赛马的祖先放回正确的血统位置，只按已确认资料计分", difficulty: "需要血统常识" },
+    audio: { name: "听音辨马", description: "听语音，找出说话的角色。每组配对正确得分，播放失败不算答错", difficulty: "需要听音辨识" },
+  },
+  "zh-Hant": {
+    classic: { name: "經典猜角色", description: "在猜錯次數用完前找出角色。每次猜測都有九項提示，幫你縮小範圍", difficulty: "認得角色名字就能玩" },
+    "aptitude-grid": { name: "適性交叉佔格", description: "在 3×3 適性棋盤上，選出同時符合兩項條件的角色佔格。選定後無法撤回", difficulty: "需要認識場地與距離適性" },
+    draft: { name: "公開組隊", description: "在預算內為四項任務各選一位不同角色，依三項適合程度計分", difficulty: "需要權衡適性與預算" },
+    "race-rebuild": { name: "歷史賽況重現", description: "依史實名次排列同一場賽事的參賽者，按照兩兩先後關係計分", difficulty: "適合熟悉史實賽事的玩家" },
+    "co-race-path": { name: "同場之路", description: "透過共同參賽的經歷連起兩位角色。路線越短，分數越高", difficulty: "需要合作分工與賽事知識" },
+    sort: { name: "排序挑戰", description: "依身高、生日月日或已確認的事件日期排序，相同數值可以並列", difficulty: "需要認識角色身高與生日" },
+    memory: { name: "記憶配對", description: "先看牌面 8 秒，再蓋牌。最多嘗試 20 次，找出 4×4 牌面中的八組配對", difficulty: "不用背資料，考驗記憶力" },
+    bluff: { name: "真假檔案", description: "替已核實的事實編一個假答案，再匿名投票找真相。成功騙過別人也能得分", difficulty: "考驗編故事與判斷能力" },
+    "clue-puzzle": { name: "團隊情報拼圖", description: "每人都有別人看不到的線索。一起討論卡片的位置，再由本輪代表送出全隊答案", difficulty: "需要隊友互相交換情報" },
+    "strategy-race": { name: "回合策略賽", description: "八回合一起揭曉行動：穩進、衝刺、恢復或跟跑。分配體力，爭取領先", difficulty: "需要規劃每回合的行動" },
+    rapport: { name: "默契問答", description: "輪流選出自己的偏好，其他人猜答案。鎖定後一起揭曉，看看大家有多默契", difficulty: "不用背資料，靠彼此的默契" },
+    creative: { name: "創意企劃", description: "抽出角色、場景和限制，寫出不超過 80 字的企劃。匿名展示後，由隊伍與觀眾分別票選", difficulty: "考驗臨場創意" },
+    trade: { name: "檔案交易", description: "手牌公開，任務保密。三輪協商中雙方各出一張牌，確認後交換，最後依手牌判定秘密任務", difficulty: "需要協商與判斷" },
+    pedigree: { name: "血統拼圖", description: "將史實原型賽馬的祖先放回正確的血統位置，依已確認的資料計分", difficulty: "需要馬匹血統知識" },
+    audio: { name: "聽聲辨角色", description: "聽語音，找出是哪位角色說的。配對正確就得分，播放失敗不算答錯", difficulty: "適合熟悉角色聲音的玩家" },
+  },
+  ja: {
+    classic: { name: "キャラクター当て", description: "間違えられる回数を使い切る前に、正解のウマ娘を当てよう。回答ごとに九つのヒントが出ます", difficulty: "キャラクターの名前が分かれば遊べます" },
+    "aptitude-grid": { name: "適性マス埋め", description: "3×3 の盤面に、二つの条件を満たすウマ娘を選ぼう。一度埋めたマスは変更できません", difficulty: "バ場・距離適性の知識がある方向け" },
+    draft: { name: "予算内でチーム編成", description: "予算内で四つの課題に別々のウマ娘を選び、三つの適合度で得点を競います", difficulty: "適性と予算のバランスが大切です" },
+    "race-rebuild": { name: "史実の着順クイズ", description: "同じレースの出走者を史実の着順に並べよう。二頭ごとの先着関係で採点します", difficulty: "史実のレースに詳しい方向け" },
+    "co-race-path": { name: "同走レースでつなごう", description: "同じレースに出走した関係をたどり、二人をつなごう。短いルートほど高得点です", difficulty: "レースの知識とチームの協力が大切です" },
+    sort: { name: "並べ替えクイズ", description: "身長、誕生日の月日、確認済みの出来事の日付で並べ替えます。同じ値は同順位にできます", difficulty: "身長や誕生日を知っている方向け" },
+    memory: { name: "神経衰弱", description: "8 秒間カードを覚えてからスタート。4×4 の盤面にある八組のペアを、20 回以内に見つけよう", difficulty: "予備知識はいりません。記憶力で勝負！" },
+    bluff: { name: "ウソを見抜け！", description: "確認済みの事実をもとにウソの回答を作り、匿名投票で本当の答えを探します。ほかの人をだませても得点", difficulty: "発想力と見抜く力が試されます" },
+    "clue-puzzle": { name: "チーム情報パズル", description: "一人ずつ違うヒントを持っています。相談してカードの配置を決め、今の代表者がチームの回答を送信します", difficulty: "仲間との情報共有がポイントです" },
+    "strategy-race": { name: "ターン制レース", description: "八ターンで体力と位置取りを競います。着実に進む、スパート、回復、追走の行動を同時に公開", difficulty: "先を見越した作戦が大切です" },
+    rapport: { name: "以心伝心クイズ", description: "交代で好みを選び、ほかの人が予想します。回答を締め切って一斉に公開。どれだけ気が合うかな？", difficulty: "知識よりも、お互いの理解が大切です" },
+    creative: { name: "ひらめき企画会議", description: "キャラクター、場面、条件を引き、80 文字以内で企画を作ります。匿名公開後、チームと観客が別々に投票します", difficulty: "その場のひらめきで勝負！" },
+    trade: { name: "ひみつのお題トレード", description: "手札は公開、課題は秘密。三ラウンドの交渉で双方が一枚ずつ選び、合意して交換。最後の手札で課題達成を判定します", difficulty: "交渉と見極めがポイントです" },
+    pedigree: { name: "血統パズル", description: "史実のモデルとなった競走馬の祖先を、正しい血統の位置に戻そう。確認済みの資料で採点します", difficulty: "競走馬の血統に詳しい方向け" },
+    audio: { name: "声でウマ娘当て", description: "ボイスを聞いて、話しているウマ娘を当てよう。正しい組み合わせで得点。再生できなかった音声は不正解にしません", difficulty: "声を聞き分けるのが得意な方向け" },
+  },
+};

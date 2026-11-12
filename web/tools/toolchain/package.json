@@ -1,0 +1,16 @@
+{
+  "name": "@umaguess/toolchain",
+  "private": true,
+  "version": "2.0.0-draft.1",
+  "description": "隔离工具链（TypeScript 6）：契约类型生成与 ESLint 类型感知检查。openapi-typescript 与 typescript-eslint 均不支持项目主工具链的 TypeScript 7，按 TS 官方 side-by-side 方案隔离。",
+  "type": "module",
+  "dependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.14.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.14.0",
+    "openapi-typescript": "7.13.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1"
+  }
+}

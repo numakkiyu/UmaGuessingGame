@@ -1,131 +1,101 @@
-# Contributing Guide
+# 参与贡献
 
-感谢你考虑参与 赛马娘猜猜乐。
+欢迎修复问题、补充规则测试、改善界面和修正资料。提交前请先搜索已有 Issue；涉及玩法规则、数据模型或部署方式的大改动，先说明玩家遇到的问题、预期行为及兼容方案
 
-本项目希望保持“可直接部署、可持续维护、对玩家友好”的开源质量，因此提交前请先快速阅读这份文档。
+## 建立开发环境
 
-## 贡献方式
-
-你可以通过以下方式参与：
-
-- 提交 Bug 报告
-- 提交功能建议
-- 改进界面、交互或可访问性
-- 补充测试、脚本或部署文档
-- 修正数据、题库或素材台账问题
-
-## 开始之前
-
-1. 先搜索现有 Issue，避免重复提交。
-2. 如果改动较大，先开一个 Issue 说明目标与范围。
-3. Fork 仓库并从最新分支开始开发。
-
-推荐分支命名：
-
-- `feat/<topic>`
-- `fix/<topic>`
-- `docs/<topic>`
-- `chore/<topic>`
-
-## 本地开发
-
-### 环境要求
-
-- Node.js 22 或更高版本
-- npm
-- Docker 与 Docker Compose V2
-
-### 初始化步骤
+环境要求与步骤见[快速开始](docs/快速开始.md)。前端安装包含应用及隔离工具链两套锁文件：
 
 ```bash
-npm install
-cp .env.example .env
-npm run prepare:data
-npm run db:push
-npm run db:seed
+make web-install
+make web-build
+make embed-spa
+make content-compile
+make content-verify
+make dev
 ```
 
-如需容器化开发，请查看 [docs/Linux部署指南.md](./docs/Linux部署指南.md) 与 [docs/Windows部署指南.md](./docs/Windows部署指南.md)。
+不要将运行数据库、密钥、下载缓存、采集脚本或临时工作资料加入提交。公开文档和测试必须在干净克隆中可用，不依赖维护者的私人文件
 
-## 常用命令
+## 修改范围与约定
+
+| 改动 | 应同步维护 |
+| --- | --- |
+| API | `api/openapi.json`、生成类型、HTTP 实现、客户端调用及契约测试 |
+| 实时消息 | `api/realtime.schema.json`、投影权限、重放和恢复测试 |
+| 玩法 | 确定性规则、错误输入、阶段转换、超时、计分、公开与私有投影 |
+| 内容 | 来源、置信度、实体分类、人工审校台账、内容准入与质量报告 |
+| 页面 | 三语文案、键盘操作、移动布局、大屏只读展示、减少动态 |
+| 配置 | 默认值、JSON 与环境变量优先级、容器透传、示例与部署说明 |
+
+领域规则放在 `internal/modes`，不要引入 HTTP、SQL 或浏览器依赖。身份及权限来自服务端会话和房间成员关系，不信任请求体里的角色、队伍或主持人声明。秘密答案通过权限投影提供，不靠前端隐藏保护
+
+规则输出应可重复，不依赖 map 遍历顺序、系统语言或未经约束的浮点计算。内部计分单位与显示分的换算必须统一，不在各页面另造公式。对局恢复要保留截止时间与已确认提交，刷新不能获得额外时间或重复得分
+
+## 注释与文档
+
+按[注释与文档规范](docs/注释与文档规范.md)处理。保留必要的契约、并发条件、单位和安全原因，去掉复述代码、内部任务编号和执行过程说明。Go 文档遵循 Go Doc Comments，生成标记、编译指令和版权头不能随意修改
+
+公开文档描述当前行为，历史设计与调查记录单独存档。文档修改应保持信息可追溯，过期操作说明与现行指南分开维护。不要将“测试通过”永久写成无环境、无日期的质量承诺
+
+## 验证
+
+按[测试与质量检查](docs/测试与质量检查.md)选择检查范围。常用命令：
 
 ```bash
-npm run dev
-npm run lint
-npm run test
-npm run build
-npm run ci:check
+make fmt-check
+make vet
+make test
+make test-race
+make web-typecheck
+make web-lint
+make web-copy-check
+make web-test
+make web-build
+make web-size
+make embed-spa
+make embed-spa-check
+make content-verify
+pnpm --dir web run api:check
+go run ./cmd/content contract --spec api/openapi.json --routes
 ```
 
-如果你的改动影响数据链路，也请执行：
+只改文档也要验证链接、命令和路径。涉及真实联机时，用独立数据目录与测试账号/会话进行验证，不能连接他人正在使用的活动房间。不要为“通过检查”关闭断言、伪造审校台账或把真实失败改成静默跳过
+
+## 提交与 Pull Request
+
+分支与提交应围绕一个明确问题，提交信息可使用 `fix:`、`feat:`、`docs:`、`test:` 等前缀。PR 说明需要包含触发条件、改后行为、验证命令、结果以及尚未覆盖的风险
+
+### 版本管理范围
+
+| 内容 | 提交规则 |
+| --- | --- |
+| 源码、测试、依赖清单与锁文件 | 提交；不要提交依赖安装目录 |
+| Dockerfile、Compose、CI、Makefile、公开配置示例 | 提交，保证干净克隆可以构建和部署 |
+| 题库快照、来源清单、审校台账、实际使用的图片 | 提交，保留来源与许可说明 |
+| 正式音频 | 来源明确且经审校后保存在 `data/assets/audio/`；按文件名添加忽略例外，同次提交清单与绑定 SHA-256 的审校台账 |
+| 前端编译目录、Go 二进制、编译题包、构建归档 | 不提交；由构建流程生成，发布包单独保存 |
+| 运行数据库及旁文件、备份、密钥、本地配置、日志与测试报告 | 不提交 |
+| 批量下载音频、资料获取缓存、一次性工具与私人工作资料 | 不提交 |
+
+素材不因扩展名是图片或音频就自动获得提交资格。禁止将整套下载缓存加入仓库；正式资源需要明确用途、来源及审校状态。单文件上限为 50 MiB，更大的必要资源使用经维护者确认的发布附件或外部存储，不能通过拆分绕过限制
+
+音频默认排除，正式片段逐项添加 `!/data/assets/audio/<文件名>.mp3` 例外。提交检查只允许根目录中的 MP3，且字节摘要必须匹配 `data/manual/audio-clips.review.json` 中具备审校人、日期及完整试听确认的条目；未审校的批量下载不因文件存在就能提交。合成测试音频保留在 `internal/content/testdata/`，不用于正式题目
+
+`internal/spafs/dist/.gitkeep` 只用于保证未构建时 Go 的嵌入目录存在。实际前端文件由 `make web-build`、`make embed-spa` 生成，不随源码提交；需要验证真实嵌入页面的测试必须先构建。CI 在前端构建成功后将产物传给 Go 检查，避免依赖维护者机器上的旧构建
+
+提交前检查暂存区；`repo:check` 检查 Git 索引中的实际内容，不能只依据工作目录或忽略规则判断：
 
 ```bash
-npm run prepare:data
+git add -A
+git diff --cached --stat
+git diff --cached --check
+pnpm run repo:check
+git commit -m "fix: describe the concrete change"
 ```
 
-## 提交规范
+忽略规则不会自动移除已跟踪文件；如果此前误入库，需只从索引移除并保留必要本地数据。不要用强制添加绕过提交检查。CI 同样运行仓库范围检查，本地提交与推送是两个独立操作
 
-建议使用约定式提交前缀：
+界面改动附关键尺寸截图，说明桌面表格与手机卡片的信息是否一致；行为或安全改动附真实装配链的回归验证。生成类型应与契约一起提交，运行数据和内部证据不随 PR 上传
 
-- `feat:`
-- `fix:`
-- `docs:`
-- `refactor:`
-- `test:`
-- `chore:`
-- `ci:`
-- `build:`
-
-示例：
-
-- `feat: add friend room rematch confirmation flow`
-- `fix: prevent active game answer from leaking on refresh`
-- `docs: refresh deployment guide and project overview`
-
-## Pull Request 要求
-
-提交 PR 前请确认：
-
-- 改动范围明确，避免把无关修改混在一起
-- 本地已经运行必要的校验命令
-- 涉及玩法、数据、配置或部署时，同步更新了对应文档
-- 没有提交密钥、日志、缓存、构建产物或临时测试文件
-
-PR 描述建议包含：
-
-- 改动背景
-- 解决方案
-- 验证方式
-- 是否有兼容性影响
-
-## 文案与界面约定
-
-- 玩家可见文案要自然、清晰，避免实现细节式表达
-- UI 改动需要同时兼顾桌面端与移动端
-- 不要在页面上暴露接口、配置或内部机制等开发术语
-
-## 数据与资源约定
-
-- 正式运行链路只依赖仓库内数据文件
-- 不要引入未经确认的外部数据源
-- 图片、资料来源和缓存策略改动，需要同步更新台账或说明文档
-
-## Issue 与讨论建议
-
-适合开 Issue 的情况：
-
-- 可稳定复现的 Bug
-- 明确的功能提案
-- 部署兼容性问题
-- 数据遗漏或题库规则异常
-
-不适合直接提交代码的情况：
-
-- 需求范围不明确
-- 玩法规则尚未达成一致
-- 需要先确认题库准入或资源来源
-
-## License
-
-向本仓库提交代码即表示你同意该贡献在项目的 [MIT License](./LICENSE) 下发布。
-
+安全问题请按[安全策略](SECURITY.md)私下报告；讨论与协作遵守[行为准则](CODE_OF_CONDUCT.md)

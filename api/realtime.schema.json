@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://umaguess.invalid/contracts/realtime.schema.json",
+  "title": "UmaGuessingGame realtime messages",
+  "description": "Notifications only. Persist game commands through REST. Cursor is opaque and projection-scoped.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/ServerMessage"
+    },
+    {
+      "$ref": "#/$defs/ClientMessage"
+    }
+  ],
+  "$defs": {
+    "ServerMessage": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1"
+        },
+        "eventId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "hello",
+            "state.changed",
+            "phase.changed",
+            "presence.changed",
+            "resync.required",
+            "session.revoked",
+            "pong"
+          ]
+        },
+        "roomId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "roomVersion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "serverEpoch": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "serverTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "cursor": {
+          "type": "string"
+        },
+        "resource": {
+          "type": "string",
+          "enum": [
+            "room",
+            "round",
+            "event"
+          ]
+        },
+        "roundId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "phaseVersion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reason": {
+          "type": "string"
+        },
+        "onlineCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "heartbeatIntervalMs": {
+          "type": "integer",
+          "minimum": 1000
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "eventId",
+        "type",
+        "roomId",
+        "roomVersion",
+        "serverEpoch",
+        "serverTime",
+        "cursor"
+      ],
+      "additionalProperties": false
+    },
+    "ClientMessage": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "ping"
+            },
+            "clientMessageId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "sentAt": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "type",
+            "clientMessageId",
+            "sentAt"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "ack"
+            },
+            "cursor": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "cursor"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

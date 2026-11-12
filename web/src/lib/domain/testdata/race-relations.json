@@ -1,0 +1,8 @@
+[
+ {"name":"source rank gaps remain exact", "truth":{"a":1,"b":3,"c":5,"d":7},"groups":[["a"],["b"],["c"],["d"]],"correct":6,"total":6,"scoreUnits":10000},
+ {"name":"real tie in one group", "truth":{"a":1,"b":3,"c":3,"d":7},"groups":[["a"],["c","b"],["d"]],"correct":6,"total":6,"scoreUnits":10000},
+ {"name":"separated tie loses that pair", "truth":{"a":1,"b":3,"c":3,"d":7},"groups":[["a"],["b"],["c"],["d"]],"correct":5,"total":6,"scoreUnits":8300},
+ {"name":"reversed relation and separated tie", "truth":{"a":1,"b":3,"c":3,"d":7},"groups":[["d"],["c"],["b"],["a"]],"correct":0,"total":6,"scoreUnits":0},
+ {"name":"false tie is not correct", "truth":{"a":1,"b":2,"c":3,"d":4},"groups":[["a","b","c","d"]],"correct":0,"total":6,"scoreUnits":0},
+ {"name":"seven runners and one swapped pair", "truth":{"a":1,"b":2,"c":4,"d":7,"e":8,"f":9,"g":11},"groups":[["b"],["a"],["c"],["d"],["e"],["f"],["g"]],"correct":20,"total":21,"scoreUnits":9500}
+]

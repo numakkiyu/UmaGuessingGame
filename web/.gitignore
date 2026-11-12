@@ -1,0 +1,11 @@
+# 前端及隔离工具链依赖
+node_modules/
+
+# 构建产物：由 pnpm --dir web build 生成，不入库。
+# Go 侧 embed 需要 dist 存在，构建流水线必须先跑 web 构建再编译 Go。
+dist/
+
+# TypeScript 增量信息
+*.tsbuildinfo
+
+# 隔离工具链的锁文件与依赖由各自 .npmrc 管理，node_modules 已在上面忽略

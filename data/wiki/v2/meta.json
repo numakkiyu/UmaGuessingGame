@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-11-08T06:06:23.314Z",
+  "sourceSite": "https://wiki.biligame.com/umamusume",
+  "versionScope": "日服当前实装（以 wiki Category:赛马娘 为准）",
+  "counts": {
+    "characters": 144,
+    "implemented": 133,
+    "planned": 11,
+    "outfits": 272,
+    "outfitsBase": 135,
+    "outfitsEvent": 0,
+    "outfitsCollab": 1,
+    "outfitsAlt": 136,
+    "withGameData": 133,
+    "withEnglish": 100,
+    "withPrototypeHorse": 100
+  }
+}

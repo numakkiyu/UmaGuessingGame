@@ -1,0 +1,989 @@
+
+
+
+.uma-app-shell {
+  display: flex;
+  flex-direction: column;
+  /* 100dvh 必须有内容滚动回退，页面根不能固定高后把内容裁掉 */
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.uma-main {
+  flex: 1 1 auto;
+  width: 100%;
+  /* 默认内容宽 min(100% - 2*gutter, 1440px) */
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  /* 底部为 sticky 操作预留高度 + safe-area */
+  padding-bottom: calc(var(--gap-region) + env(safe-area-inset-bottom, 0px));
+  padding-top: var(--gap-region);
+}
+
+/* 玩法主区可窄至 960–1200 */
+.uma-main--narrow {
+  max-width: 75rem;
+}
+
+.uma-main--prose {
+  max-width: 60rem;
+}
+
+
+.uma-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  background-color: color-mix(in srgb, var(--color-panel) 92%, transparent);
+  border-bottom: 1px solid var(--color-line);
+  padding-inline: env(safe-area-inset-left, 0px) env(safe-area-inset-right, 0px);
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  .uma-header {
+    backdrop-filter: blur(8px);
+  }
+}
+
+.uma-header__inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  min-height: var(--header-h);
+}
+
+
+.uma-panel {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-panel);
+  background-color: var(--color-panel);
+}
+
+.uma-card {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  background-color: var(--color-panel);
+}
+
+.uma-subpanel {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  background-color: var(--color-panel-soft);
+}
+
+
+.uma-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-region);
+  /* grid/flex 子项可收缩，避免长内容把容器撑出横向溢出 */
+  min-width: 0;
+}
+
+.uma-stack--tight {
+  gap: var(--gap-related);
+}
+
+.uma-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+  min-width: 0;
+}
+
+/* A race programme accent distinguishes the current task from auxiliary cards.
+ * Text and artwork stay independent for later layout and asset changes. */
+.uma-play-surface h1 {
+  border-inline-start: 4px solid var(--color-action-green);
+  padding-inline-start: 12px;
+}
+
+/* One semantic table, one set of controls. Reflow by the board's actual space,
+ * so a narrow desktop column does not inherit a cramped desktop table. */
+.uma-sort-board { container-type: inline-size; }
+.uma-sort-table { display: block; width: 100%; text-align: start; }
+.uma-sort-table thead { display: none; }
+.uma-sort-table tbody { display: flex; flex-direction: column; gap: 8px; }
+.uma-sort-table__row {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  padding: 8px;
+  background: var(--color-panel);
+}
+.uma-sort-table__row--tied {
+  border-color: var(--color-brand-green);
+  background: var(--color-brand-green-soft);
+}
+.uma-sort-table__rank {
+  display: flex;
+  flex: 0 0 44px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-control);
+  padding: 8px 4px;
+  background: var(--color-panel-soft);
+}
+.uma-sort-table__characters { display: block; flex: 1; min-width: 0; }
+.uma-sort-table__actions { display: flex; align-items: center; flex-shrink: 0; }
+@container (width < 20rem) {
+  .uma-sort-table__row { flex-wrap: wrap; }
+  .uma-sort-table__characters { flex-basis: calc(100% - 60px); }
+  .uma-sort-table__actions { flex-basis: 100%; justify-content: flex-end; }
+}
+@container (width >= 36rem) {
+  .uma-sort-table { display: table; table-layout: fixed; border-collapse: collapse; }
+  .uma-sort-table thead { display: table-header-group; }
+  .uma-sort-table tbody { display: table-row-group; }
+  .uma-sort-table thead th { padding: 8px 12px; font-size: var(--text-aux); color: var(--color-muted); }
+  .uma-sort-table thead th:first-child { width: 5rem; }
+  .uma-sort-table thead th:last-child:not(:nth-child(2)) { width: 10rem; text-align: end; }
+  .uma-sort-table__row { display: table-row; border: 0; border-bottom: 1px solid var(--color-line); border-radius: 0; }
+  .uma-sort-table__rank, .uma-sort-table__characters, .uma-sort-table__actions {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 12px;
+  }
+  .uma-sort-table__rank { text-align: center; border-radius: 0; }
+  .uma-sort-table__rank > span { display: block; }
+}
+
+
+.uma-touch-target {
+  min-height: var(--touch-min);
+  min-width: var(--touch-min);
+}
+
+
+.uma-scene {
+  position: relative;
+  isolation: isolate;
+}
+
+.uma-scene__image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 装饰层，不接收指针事件 */
+  pointer-events: none;
+}
+
+.uma-scene__veil {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  /* 白色雾化遮罩：保证其上文字对比度仍满足 ≥4.5:1 */
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-panel) 88%, transparent) 0%,
+    color-mix(in srgb, var(--color-page) 94%, transparent) 62%,
+    var(--color-page) 100%
+  );
+}
+
+/* Use gradients on small screens to avoid decorative image decoding */
+@media (width < 48rem) {
+  .uma-scene__image {
+    display: none;
+  }
+
+  .uma-scene__veil {
+    background: linear-gradient(180deg, var(--color-page-tint) 0%, var(--color-page) 70%);
+  }
+}
+
+
+.uma-prose {
+  max-width: 44em;
+}
+
+.uma-prose p + p {
+  margin-top: 0.75em;
+}
+
+.uma-prose ul,
+.uma-prose ol {
+  margin: 0;
+  padding-inline-start: 1.25em;
+}
+
+.uma-prose li + li {
+  margin-top: 0.35em;
+}
+
+
+.uma-scroll-x {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  /* 键盘可聚焦滚动容器需要可见焦点 */
+  scrollbar-width: thin;
+}
+
+.uma-scroll-x:focus-visible {
+  outline-offset: 4px;
+}
+
+
+.uma-state-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  border-radius: var(--radius-control);
+  border-width: 1px;
+  border-style: solid;
+  padding: 6px 10px;
+  font-weight: 600;
+  line-height: 1.35;
+  /* 状态值可能很长（中文/日文名），必须能换行 */
+  overflow-wrap: break-word;
+}
+
+/* 三态底 + 深色文字：correct 6.29 / near 9.68 / wrong 5.43（对 --color-ink-strong） */
+.uma-state-cell[data-state="correct"] {
+  background-color: var(--color-correct);
+  border-color: var(--color-correct-edge);
+  color: var(--color-ink-strong);
+}
+
+.uma-state-cell[data-state="near"] {
+  background-color: var(--color-near);
+  border-color: var(--color-near-edge);
+  color: var(--color-ink-strong);
+}
+
+.uma-state-cell[data-state="wrong"] {
+  background-color: var(--color-wrong);
+  border-color: var(--color-wrong-edge);
+  color: var(--color-ink-strong);
+}
+
+
+.uma-connbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: var(--text-aux);
+  line-height: 1.5;
+  border-bottom: 1px solid var(--color-line);
+  background-color: var(--color-panel-soft);
+  color: var(--color-ink);
+}
+
+/* Keep connection status compact so it does not displace game actions */
+.uma-connbar[data-tone="warn"] {
+  background-color: var(--color-panel-soft);
+  color: var(--color-ink-strong);
+  border-bottom-color: var(--color-line);
+  border-left: 3px solid var(--color-near-edge);
+  padding-left: 9px;
+}
+
+.uma-connbar[data-tone="bad"] {
+  background-color: var(--color-danger-soft);
+  color: var(--color-ink);
+  border-bottom-color: var(--color-danger);
+  border-left: 3px solid var(--color-danger);
+  padding-left: 9px;
+}
+
+
+.uma-skeleton {
+  border-radius: var(--radius-control);
+  background-color: color-mix(in srgb, var(--color-line) 60%, var(--color-panel));
+  /* 不做高频闪烁；呼吸周期 1.6s，低于每秒 3 次 */
+  animation: uma-breathe 1.6s var(--ease-primary) infinite;
+}
+
+@keyframes uma-breathe {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+[data-motion="reduced"] .uma-skeleton {
+  animation: none;
+  opacity: 1;
+}
+
+
+.uma-code {
+  font-family: var(--font-numeric);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+
+/* Reserve danger emphasis for expanded destructive actions */
+.uma-danger-zone {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  background-color: var(--color-panel);
+  padding: 16px;
+}
+
+.uma-danger-zone[open] {
+  border-color: color-mix(in srgb, var(--color-danger) 40%, var(--color-line));
+  background-color: var(--color-danger-soft);
+}
+
+
+.uma-dialog-overlay {
+  background-color: rgb(31 54 85 / 0.45);
+  animation: uma-fade-in var(--duration-standard) var(--ease-primary);
+}
+
+@keyframes uma-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+[data-motion="reduced"] .uma-dialog-overlay {
+  animation: none;
+}
+
+
+.uma-portal-root {
+  position: relative;
+  z-index: var(--z-popover);
+}
+
+
+/* blue-deep 对 panel 5.87:1、对 page 5.41:1，满足普通文字 ≥4.5:1 */
+.uma-link {
+  color: var(--color-blue-deep);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.uma-link:hover {
+  color: var(--color-ink);
+}
+
+
+/*
+ * 策略赛赛道。
+ *
+ * 横向跑道：位置越大越靠右，终点在最右。每队一行，标记用真实头像。
+ * 体力画成标记所在行下方的细条——它和位置是同一支队伍的两个状态，放在一起读比
+ * 两个数字卡片更直观。
+ *
+ * 全部用 transform/left 定位，不做逐帧重排；减少动态时直接给终态。
+ */
+.uma-race-track {
+  padding: 0.75rem;
+  border-radius: var(--radius-panel);
+  background: linear-gradient(180deg, var(--color-page-tint) 0%, var(--color-panel-soft) 100%);
+  border: 1px solid var(--color-line);
+}
+
+.uma-race-track__lane {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* 终点标记需要一点右侧留白，否则最后一个标记会贴边 */
+  padding-right: 2.5rem;
+}
+
+.uma-race-track__row {
+  display: grid;
+  grid-template-columns: minmax(6rem, 8rem) 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+}
+
+.uma-race-track__row--self {
+  /* 自己那一行给底色，扫一眼就能找到 */
+  background: color-mix(in srgb, var(--color-brand-green) 12%, transparent);
+  border-radius: var(--radius-control);
+  padding-inline: 0.375rem;
+  margin-inline: -0.375rem;
+}
+
+.uma-race-track__label {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-width: 0;
+}
+
+.uma-race-track__avatar {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+  flex: 0 0 auto;
+  background: var(--color-panel);
+  box-shadow: 0 0 0 1px var(--color-line);
+}
+
+.uma-race-track__avatar--initial {
+  border-radius: 9999px;
+  display: grid;
+  place-items: center;
+  background: var(--color-brand-green-soft);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.uma-race-track__name {
+  font-size: var(--text-aux);
+  font-weight: 600;
+  color: var(--color-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.uma-race-track__you {
+  margin-left: 0.25rem;
+  padding: 0 0.25rem;
+  border-radius: 9999px;
+  background: var(--color-brand-green-soft);
+  font-size: var(--text-aux);
+}
+
+.uma-race-track__field {
+  container-type: inline-size;
+  position: relative;
+  height: 2.25rem;
+  border-radius: var(--radius-control);
+  /* 跑道：横向虚线，读起来像分格 */
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-line) 0 1px,
+    transparent 1px 2rem
+  );
+  background-color: color-mix(in srgb, var(--color-panel) 70%, transparent);
+}
+
+/* Animate the position number, not the resolved cqw distance. A width change
+ * must reflow immediately rather than tweening old desktop pixels on mobile.
+ * Browsers without registered properties still place markers correctly; they jump. */
+@property --race-progress {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+/* 标记 + 体力条作为一个整体跟着位置移动 */
+.uma-race-track__marker-wrap {
+  position: absolute;
+  top: 0.125rem;
+  width: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transform: translateX(calc(var(--race-progress) * 1cqw - 50%));
+  transition: --race-progress var(--duration-reveal) var(--ease-primary);
+}
+
+.uma-race-track__marker {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: var(--color-panel);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 18%);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.uma-race-track__marker img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.uma-race-track__marker-initial {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+/* Stamina width is relative to the marker, not the whole race track */
+.uma-race-track__stamina {
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--color-ink) 12%, transparent);
+  overflow: hidden;
+}
+
+.uma-race-track__stamina span {
+  display: block;
+  height: 100%;
+  background: var(--color-brand-green);
+  width: 100%;
+  transform-origin: left;
+  transition: transform var(--duration-reveal) var(--ease-primary);
+}
+
+.uma-race-track__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.125rem;
+  font-size: var(--text-aux);
+  color: var(--color-ink);
+}
+
+.uma-race-track__stamina-text {
+  font-size: var(--text-aux);
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.uma-race-track__finish {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+  display: grid;
+  place-items: center;
+  font-size: var(--text-aux);
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+  /* 终点线：一条竖向棋盘纹，不用纯色块抢注意力 */
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--color-line) 0 4px,
+    transparent 4px 8px
+  );
+  border-radius: var(--radius-control);
+  pointer-events: none;
+}
+
+@media (width < 30rem) {
+  .uma-race-track__row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.375rem;
+  }
+
+  .uma-race-track__label { grid-column: 1; grid-row: 1; }
+  .uma-race-track__stats { grid-column: 2; grid-row: 1; }
+  .uma-race-track__field { grid-column: 1 / -1; grid-row: 2; }
+  .uma-race-track__lane { padding-right: 0; }
+  .uma-race-track__finish { display: none; }
+  .uma-race-track__row--self { padding-block: 0.375rem; }
+  .uma-race-track__name {
+    max-width: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uma-race-track__marker-wrap,
+  .uma-race-track__stamina span {
+    transition: none;
+  }
+}
+
+/*
+ * 折叠块（规则速查 / 更多操作）。
+ *
+ * 用原生 <details>：键盘可达、读屏语义正确、不引入 JS 状态。
+ * 只把 chevron 做成旋转指示，其余保持静态——折叠本身不需要动画表演。
+ */
+.uma-disclosure > summary {
+  list-style: none;
+}
+
+.uma-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.uma-disclosure__chevron {
+  flex: 0 0 auto;
+  color: var(--color-muted);
+  transition: transform 160ms ease;
+}
+
+.uma-disclosure[open] > summary .uma-disclosure__chevron {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uma-disclosure__chevron {
+    transition: none;
+  }
+}
+
+/*
+ * 记忆翻牌的 3D 翻转。
+ *
+ * 正反两面都常驻 DOM，各自 backface-visibility: hidden，只在朝前时可见。
+ * 不靠条件渲染切换内容——一换内容就没有过渡可做，玩家看到的是图片「突然出现」。
+ *
+ * 关键约束：
+ * - 背面永远不挂角色图，翻到一半时背面朝前，不会泄题
+ * - transform 只在两个面，不动布局；容器已有 overflow: hidden
+ * - 减少动态时直接给终态，不做 3D
+ */
+.uma-flip-card {
+  perspective: 40rem;
+  transform-style: preserve-3d;
+}
+
+.uma-flip-card__face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.uma-flip-card__face--back {
+  transform: rotateY(0deg);
+}
+
+.uma-flip-card__face--front {
+  transform: rotateY(180deg);
+}
+
+/* 翻开：两面各自转 180°，背面转到背面、正面转到正面 */
+.uma-flip-card__face--back.uma-flip-card__face--turned {
+  transform: rotateY(-180deg);
+}
+
+.uma-flip-card__face--front.uma-flip-card__face--turned {
+  transform: rotateY(0deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .uma-flip-card__face {
+    transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /*
+   * 不做 3D 翻转，但也不能两面同时可见。
+   * 关掉 backface-visibility 的过渡后，靠 visibility 保证只有正确的一面显示。
+   */
+  .uma-flip-card__face {
+    transition: none;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+  }
+
+  .uma-flip-card__face--back {
+    visibility: visible;
+  }
+
+  .uma-flip-card__face--front {
+    visibility: hidden;
+    transform: none;
+  }
+
+  .uma-flip-card__face--back.uma-flip-card__face--turned {
+    visibility: hidden;
+    transform: none;
+  }
+
+  .uma-flip-card__face--front.uma-flip-card__face--turned {
+    visibility: visible;
+    transform: none;
+  }
+}
+
+[data-motion="reduced"] .uma-flip-card__face {
+  transition: none;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  transform: none;
+}
+
+[data-motion="reduced"] .uma-flip-card__face--back {
+  visibility: visible;
+}
+
+[data-motion="reduced"] .uma-flip-card__face--front,
+[data-motion="reduced"] .uma-flip-card__face--back.uma-flip-card__face--turned {
+  visibility: hidden;
+}
+
+[data-motion="reduced"] .uma-flip-card__face--front.uma-flip-card__face--turned {
+  visibility: visible;
+}
+
+/*
+ * 成交瞬间的一次性强调。
+ *
+ * 只在「pending → accepted」那一次触发，不是每次渲染都演。轮询会把同一条记录反复
+ * 送来，无条件加动画会让整页每隔几秒闪一下（补充文档禁止「每次轮询重复领奖」）。
+ *
+ * 用 outline 而不是 transform：这一项在列表里，放大缩下会挤动相邻项。
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .uma-trade-just-accepted {
+    animation: uma-trade-settle 720ms cubic-bezier(0.22, 1, 0.36, 1) 1;
+  }
+
+  @keyframes uma-trade-settle {
+    0% {
+      outline: 2px solid var(--color-correct-edge);
+      outline-offset: 0;
+    }
+    60% {
+      outline: 3px solid var(--color-correct-edge);
+      outline-offset: 3px;
+    }
+    100% {
+      outline: 0 solid transparent;
+      outline-offset: 6px;
+    }
+  }
+}
+
+/* 减少动态：只留一个静态的成功边框，不做扩散 */
+@media (prefers-reduced-motion: reduce) {
+  .uma-trade-just-accepted {
+    outline: 2px solid var(--color-correct-edge);
+    outline-offset: 2px;
+  }
+}
+
+/*
+ * 大屏榜单位次变化的一次性强调。
+ *
+ * 只在名次真的变了时触发（比较上一次看到的名次），不是每次轮询都演。
+ * 用 outline 而不是 transform/scale：榜单在页脚一行里，放大会挤动相邻项。
+ * 附带的 ▲/▼ 让「上升还是下降」不依赖颜色也能读出来。
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .uma-rank-moved {
+    animation: uma-rank-shift 900ms cubic-bezier(0.22, 1, 0.36, 1) 1;
+  }
+
+  @keyframes uma-rank-shift {
+    0% {
+      outline: 2px solid var(--color-blue-deep);
+      outline-offset: 0;
+    }
+    70% {
+      outline: 3px solid var(--color-blue-deep);
+      outline-offset: 4px;
+    }
+    100% {
+      outline: 0 solid transparent;
+      outline-offset: 8px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uma-rank-moved {
+    outline: 2px solid var(--color-blue-deep);
+    outline-offset: 2px;
+  }
+}
+
+.uma-rank-moved__hint {
+  font-size: 0.75em;
+  font-weight: 700;
+}
+
+/* 线索揭晓：逐格入场。
+ *
+ * 每一行带 animation-delay 阶梯（0/70/140…ms），像一张张翻开。
+ * 尊重 prefers-reduced-motion：动画在减少动效时直接跳过，行仍可见——
+ * 不能因为「不做动画」就把内容藏起来。
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .uma-reveal-row {
+    animation: uma-reveal-in 320ms var(--ease-primary) both;
+  }
+}
+
+@keyframes uma-reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 学园大厅：场景只出现在入口外围，游玩数据区域保持纯净。 */
+.uma-lobby-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-panel-lg);
+  background: var(--color-panel);
+}
+.uma-lobby-hero__scene {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--color-panel) 35%, rgb(255 255 255 / 92%) 49%, rgb(255 255 255 / 8%) 78%), url('/assets/ui/backgrounds/lobby-scene.webp') right 45% / cover no-repeat;
+}
+.uma-lobby-hero__intro { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; min-width: 0; padding: 2rem; }
+.uma-lobby-hero__tag { display: flex; align-items: center; gap: .5rem; color: var(--color-action-green); font-size: .875rem; font-weight: 700; }
+.uma-lobby-hero__title { font-size: clamp(1.75rem, 2.8vw, 2.75rem); line-height: 1.25; font-weight: 850; letter-spacing: -.035em; color: var(--color-ink); }
+.uma-lobby-hero__description { font-size: 1rem; line-height: 1.8; color: var(--color-muted); max-width: 32em; }
+.uma-lobby-hero__help { display: inline-flex; align-items: center; min-height: 44px; padding-inline: .5rem; font-size: .875rem; text-decoration: underline; text-underline-offset: 4px; }
+.uma-lobby-social { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-self: end; gap: 1rem; padding: 1.25rem; margin: 1rem; border: 1px solid var(--color-line); border-radius: var(--radius-card); background: rgb(255 255 255 / 96%); }
+.uma-lobby-social__group { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.uma-lobby-social > div + div { border-left: 1px solid var(--color-line); padding-left: 1rem; }
+.uma-lobby-social h2 { margin-block: .5rem .25rem; font-size: 1rem; font-weight: 750; }
+.uma-lobby-social p { flex: 1; font-size: .875rem; line-height: 1.7; color: var(--color-muted); margin-bottom: 1rem; }
+.uma-mode-group-heading { display: flex; align-items: center; gap: .5rem; font-size: 1rem; font-weight: 750; padding-block: .5rem; margin-bottom: .5rem; }
+.uma-mode-group-heading > svg { width: 1.125rem; height: 1.125rem; color: var(--color-action-green); }
+@media (width < 64rem) {
+  .uma-lobby-hero { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .uma-lobby-hero__scene { background-position: right top; background-size: auto 100%; }
+  .uma-lobby-hero__intro { padding: 1.5rem; }
+  .uma-lobby-social { margin: 0; border: 0; border-top: 1px solid var(--color-line); border-radius: 0; padding: 1.25rem 1.5rem; background: var(--color-panel-soft); }
+}
+@media (width < 48rem) {
+  .uma-lobby-hero__scene { background: linear-gradient(135deg, var(--color-panel) 50%, var(--color-brand-green-soft)); }
+  .uma-lobby-hero__intro { gap: .875rem; padding: 1.25rem; }
+  .uma-lobby-social { padding: 1rem 1.25rem; }
+  .uma-lobby-social > div > svg { display: none; }
+  .uma-lobby-social h2 { margin-top: 0; }
+}
+@media (height < 30rem) and (orientation: landscape) {
+  .uma-lobby-hero__intro { gap: .5rem; padding: 1rem; }
+}
+
+.uma-display-stage > header,
+.uma-display-stage > footer { position: relative; min-width: 0; }
+.uma-display-stage > main { min-height: 52vh; }
+.uma-display-stage > header h1 { flex: 1 1 50%; overflow-wrap: anywhere; }
+
+.uma-public-round { width: 100%; min-width: 0; }
+.uma-public-round__heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.uma-public-round__heading h2 { font-size: clamp(2rem, 3vw, 4rem); }
+.uma-public-round__eyebrow { font-size: clamp(1.5rem, 1.5vw, 2rem); color: var(--color-muted); }
+.uma-public-round__clock { font-family: var(--font-numeric); font-size: clamp(2rem, 3.5vw, 4.5rem); font-weight: 750; color: var(--color-action-green); font-variant-numeric: tabular-nums; }
+.uma-public-round__hint { font-size: clamp(1.5rem, 1.5vw, 2rem); color: var(--color-muted); margin-bottom: .75rem; }
+.uma-public-round__message { min-height: 28vh; display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; text-align: center; font-size: clamp(2rem, 2.5vw, 3rem); }
+.uma-public-round .uma-race-track__row { grid-template-columns: minmax(10rem, 24%) minmax(0, 1fr) auto; gap: 1rem; padding: .25rem .5rem; }
+.uma-public-round .uma-race-track__name { max-width: none; font-size: clamp(1.5rem, 1.6vw, 2.5rem); }
+.uma-public-round .uma-race-track__stats { font-size: clamp(1.5rem, 1.6vw, 2.5rem); }
+.uma-public-round .uma-race-track__stamina-text { font-size: clamp(1.5rem, 1.4vw, 2rem); }
+.uma-public-round .uma-race-track__finish { font-size: 1.5rem; }
+@media (width >= 64rem) and (height <= 50rem) {
+  .uma-display-stage > main:has(.uma-public-round) { padding: 1rem; }
+  .uma-public-round__heading { margin-bottom: .5rem; }
+  .uma-public-round__heading h2 { font-size: 2rem; }
+  .uma-public-round__eyebrow { font-size: 1.5rem; }
+}
+
+/* Display type scales remain readable on projectors without scaling the page. */
+.uma-display-stage {
+  --display-hero: clamp(2rem, 3.2vw + 1rem, 4.5rem);
+  --display-task: clamp(1.5rem, 1.6vw + 1rem, 3rem);
+  --display-team: clamp(1.125rem, 1.1vw + 1rem, 2.25rem);
+  --display-aux: clamp(1rem, .6vw + 1.1rem, 1.75rem);
+}
+.uma-display-stage footer > div { font-size: inherit; }
+@media (width < 48rem) {
+  .uma-public-round__heading h2 { font-size: 1.5rem; }
+  .uma-public-round__clock { font-size: 1.75rem; }
+  .uma-public-round__hint,
+  .uma-public-round__eyebrow { font-size: 1rem; }
+  .uma-public-round__message { font-size: 1.5rem; }
+  .uma-public-round .uma-race-track__row { grid-template-columns: minmax(0,1fr) auto; gap: .5rem; }
+  .uma-public-round .uma-race-track__field { grid-column: 1 / -1; grid-row: 2; }
+  .uma-public-round .uma-race-track__name,
+  .uma-public-round .uma-race-track__stats,
+  .uma-public-round .uma-race-track__stamina-text { font-size: 1rem; }
+}
+
+/* Public information stays in view on shorter projectors; narrow screens scroll
+   naturally instead of squeezing a scoreboard into unreadable columns. */
+.uma-display-body { display: grid; grid-template-columns: minmax(0,1fr); gap: 1rem; flex: 1; min-width: 0; min-height: 0; }
+.uma-display-body > main { min-height: 0; }
+@media (width >= 64rem) {
+  .uma-display-body:has(> section) { grid-template-columns: minmax(0,1.4fr) minmax(22rem,1fr); align-items: center; }
+}
+@media (width >= 64rem) and (height <= 50rem) {
+  .uma-public-round__message { min-height: 12vh; gap: .75rem; }
+  .uma-public-round__hint { margin-bottom: .375rem; }
+  .uma-display-stage > footer { padding-top: .5rem; }
+}
+
+/* Control polish: scoped spacing, consistent choices, and interaction-led motion. */
+.uma-lobby-hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; margin-top: .25rem; }
+.uma-lobby-social__actions { display: flex; flex-wrap: wrap; align-items: stretch; gap: .5rem; width: 100%; }
+.uma-lobby-social__actions > a { height: auto; min-width: 0; max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+.uma-lobby-social__match { align-self: flex-start; margin-top: .5rem; padding-inline: .25rem; }
+.uma-select-trigger { transition: border-color var(--duration-quick) var(--ease-primary), background-color var(--duration-quick) var(--ease-primary), box-shadow var(--duration-quick) var(--ease-primary); }
+.uma-select-trigger:hover:not(:disabled) { border-color: var(--color-action-green); background-color: var(--color-panel-soft); }
+.uma-select-trigger[data-state="open"] { border-color: var(--color-action-green); box-shadow: 0 0 0 3px var(--color-brand-green-soft); }
+.uma-select-chevron { transition: transform var(--duration-quick) var(--ease-primary); }
+.uma-select-trigger[data-state="open"] .uma-select-chevron { transform: rotate(180deg); }
+.uma-select-content { transform-origin: var(--radix-select-content-transform-origin); }
+.uma-select-item { transition: background-color var(--duration-quick) var(--ease-primary), color var(--duration-quick) var(--ease-primary); }
+.uma-select-item[data-state="checked"] { background: var(--color-brand-green-soft); }
+@media (prefers-reduced-motion: no-preference) {
+  .uma-select-content[data-state="open"] { animation: uma-select-in var(--duration-standard) var(--ease-primary); }
+}
+@keyframes uma-select-in { from { opacity: 0; transform: translateY(-4px) scale(.98); } to { opacity: 1; transform: none; } }
+[data-motion="reduced"] .uma-select-content { animation: none; }
+[data-motion="reduced"] .uma-select-trigger,
+[data-motion="reduced"] .uma-select-chevron,
+[data-motion="reduced"] .uma-select-item { transition: none; }
+@media (width < 36rem) {
+  .uma-lobby-social { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .uma-lobby-social > div + div { border-left: 0; border-top: 1px solid var(--color-line); padding-left: 0; padding-top: 1rem; }
+  .uma-lobby-social__actions > a { flex: 1 1 9rem; }
+}
+
+@supports (grid-template-rows: subgrid) {
+  @media (width >= 36rem) {
+    .uma-lobby-social { grid-template-rows: auto auto minmax(0, 1fr) auto auto; row-gap: .5rem; }
+    .uma-lobby-social__group { display: grid; grid-template-rows: subgrid; grid-row: span 5; align-items: start; }
+    .uma-lobby-social h2, .uma-lobby-social p { margin: 0; }
+    .uma-lobby-social__match { margin-top: 0; }
+  }
+}
+
+/* Confirmation enters once; closing immediately releases focus and scroll. */
+.uma-confirmation-dialog { animation: uma-confirm-enter var(--duration-standard) var(--ease-primary); }
+@keyframes uma-confirm-enter { from { opacity: 0; scale: 0.98; } to { opacity: 1; scale: 1; } }
+@media (prefers-reduced-motion: reduce) { .uma-confirmation-dialog { animation: none; } }
+[data-motion="reduced"] .uma-confirmation-dialog { animation: none; }

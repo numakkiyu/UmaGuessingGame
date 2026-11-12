@@ -1,0 +1,52 @@
+// Interface copy only. Player input, game facts and answer material never enter
+// this catalog. zh-Hant and ja are localization drafts pending regional review.
+export const common = {
+  "zh-Hans": {
+    confirmation: { cancel: "取消", finish: {title: "结束这局？", action: "结束并查看结果"}, remove: {title: "删除这条记录？", action: "删除记录"}, submit: {title: "提交这套编队？", action: "确认提交"}, prepare: {title: "准备语音资料", action: "开始准备"}, report: {title: "这段语音无法播放？", action: "确认无法播放"} },
+    alert: { info: "提示", success: "成功", warning: "注意", danger: "错误", offline: "网络" },
+    brand: { name: "赛马娘猜猜乐", home: "赛马娘猜猜乐，返回游玩大厅" },
+    language: { label: "语言" },
+    nav: { lobby: "游玩大厅", classic: "经典弗一把", help: "规则说明", sources: "资料来源", skip: "跳到主要内容", main: "主导航", open: "打开导航菜单", close: "关闭导航菜单", title: "导航", description: "选择要前往的页面", join: "用邀请码加入房间" },
+    actions: { close: "关闭", retry: "重试", reload: "重新加载", permissions: "重新检查权限", home: "返回游玩大厅", rules: "查看规则", back: "回到上一页" },
+    state: { loading: "正在加载", problemId: "问题编号", notFound: "这个页面不存在", notFoundDetail: "没有找到这个地址对应的页面。可能是链接写错了，或者内容已经下架", loadFailed: "页面加载失败", loadFailedDetail: "页面暂时未能打开，请稍后重试", problem: "出了点问题" },
+    connection: { connecting: "正在入场", online: "已连接", reconnecting: "正在重连", offline: "连接中断", stale: "画面更新较慢", checking: "正在确认房间进度", retained: "已确认的作答会保留", updating: "正在获取最新进度" },
+    footer: {
+      copyright: "素材版权归 Cygames 所有，本项目仅作非商业用途展示",
+      about: "BHCN STUDIO 维护的开源项目，采用 MIT 许可发布。题库与角色资料整理离不开哔哩哔哩游戏百科、萌娘百科以及长期维护词条的编辑者，也感谢每一位帮忙核对别名、补充信息、指出问题的玩家",
+      sources: "资料与来源", feedback: "资料若有缺漏或图片显示异常，欢迎继续反馈。角色图片版权归 Cygames 所有",
+      repository: "项目仓库", maintainer: "维护者 GitHub", biliwiki: "哔哩哔哩游戏百科", moegirl: "萌娘百科", characters: "角色与适性基础资料", aliases: "别名与补充条目",
+    },
+  },
+  "zh-Hant": {
+    confirmation: { cancel: "取消", finish: {title: "要結束這局嗎？", action: "結束並查看結果"}, remove: {title: "要刪除這筆紀錄嗎？", action: "刪除紀錄"}, submit: {title: "要送出這組編隊嗎？", action: "確認送出"}, prepare: {title: "準備語音資料", action: "開始準備"}, report: {title: "這段語音無法播放嗎？", action: "確認無法播放"} },
+    alert: { info: "提示", success: "成功", warning: "注意", danger: "錯誤", offline: "連線" },
+    brand: { name: "賽馬娘猜猜樂", home: "賽馬娘猜猜樂，返回遊戲大廳" },
+    language: { label: "語言" },
+    nav: { lobby: "遊戲大廳", classic: "經典猜角色", help: "玩法說明", sources: "資料來源", skip: "跳至主要內容", main: "主要導覽", open: "開啟選單", close: "關閉選單", title: "選單", description: "選擇要前往的頁面", join: "輸入邀請碼加入房間" },
+    actions: { close: "關閉", retry: "再試一次", reload: "重新載入", permissions: "重新確認權限", home: "返回遊戲大廳", rules: "查看玩法", back: "返回上一頁" },
+    state: { loading: "載入中", problemId: "問題編號", notFound: "找不到這個頁面", notFoundDetail: "這個網址沒有對應的頁面。請確認連結是否正確，內容也可能已經移除", loadFailed: "無法載入頁面", loadFailedDetail: "目前無法開啟頁面，請稍後再試", problem: "遇到一點狀況" },
+    connection: { connecting: "正在進入房間", online: "已連線", reconnecting: "重新連線中", offline: "連線中斷", stale: "畫面更新較慢", checking: "正在確認房間進度", retained: "已確認的作答會保留", updating: "正在取得最新進度" },
+    footer: {
+      copyright: "素材版權歸 Cygames 所有，本專案僅供非商業用途展示",
+      about: "由 BHCN STUDIO 維護的開源專案，採用 MIT 授權。感謝嗶哩嗶哩遊戲百科、萌娘百科及持續編輯條目的貢獻者，也謝謝每一位協助確認別名、補充資料與回報問題的玩家",
+      sources: "資料與來源", feedback: "資料有缺漏或圖片顯示不正常，歡迎回報。角色圖片版權歸 Cygames 所有",
+      repository: "專案原始碼", maintainer: "維護者 GitHub", biliwiki: "嗶哩嗶哩遊戲百科", moegirl: "萌娘百科", characters: "角色與適性資料", aliases: "別名與延伸資料",
+    },
+  },
+  ja: {
+    confirmation: { cancel: "キャンセル", finish: {title: "今回のゲームを終了しますか？", action: "終了して結果を見る"}, remove: {title: "この記録を削除しますか？", action: "記録を削除"}, submit: {title: "この編成で決定しますか？", action: "この編成に決定"}, prepare: {title: "音声データの準備", action: "準備を始める"}, report: {title: "この音声を再生できませんか？", action: "再生できないと報告"} },
+    alert: { info: "お知らせ", success: "完了", warning: "注意", danger: "エラー", offline: "接続" },
+    brand: { name: "ウマ娘あてクイズ", home: "ウマ娘あてクイズ、ロビーへ戻る" },
+    language: { label: "言語" },
+    nav: { lobby: "ロビー", classic: "キャラクター当て", help: "遊び方", sources: "出典", skip: "メインコンテンツへ", main: "メインメニュー", open: "メニューを開く", close: "メニューを閉じる", title: "メニュー", description: "移動先を選んでください", join: "招待コードで参加" },
+    actions: { close: "閉じる", retry: "もう一度試す", reload: "再読み込み", permissions: "操作できるか確認する", home: "ロビーへ戻る", rules: "遊び方を見る", back: "前のページへ" },
+    state: { loading: "読み込み中", problemId: "お問い合わせ番号", notFound: "ページが見つかりません", notFoundDetail: "リンクが間違っているか、ページが削除された可能性があります", loadFailed: "ページを読み込めませんでした", loadFailedDetail: "しばらくしてから、もう一度お試しください", problem: "うまく表示できませんでした" },
+    connection: { connecting: "ルームに参加中", online: "接続済み", reconnecting: "再接続中", offline: "接続が切れました", stale: "画面の更新が遅れています", checking: "ルームの進行状況を確認中", retained: "受け付け済みの回答は保存されています", updating: "最新の進行状況を確認中" },
+    footer: {
+      copyright: "素材の著作権は Cygames に帰属します。本プロジェクトでの使用は非商用の展示に限ります",
+      about: "BHCN STUDIO が開発・保守する、MIT ライセンスのオープンソースプロジェクトです。bilibili ゲーム Wiki、萌娘百科の編集者の皆さま、別名の確認や情報提供、不具合報告にご協力くださったプレイヤーの皆さまに感謝します",
+      sources: "資料・出典", feedback: "資料の誤りや画像の不具合にお気づきの際は、お知らせください。キャラクター画像の著作権は Cygames に帰属します",
+      repository: "ソースコード", maintainer: "開発者の GitHub", biliwiki: "bilibili ゲーム Wiki", moegirl: "萌娘百科", characters: "キャラクター・適性データ", aliases: "別名・関連情報",
+    },
+  },
+} as const;

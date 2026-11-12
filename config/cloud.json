@@ -1,0 +1,53 @@
+{
+  "deploymentMode": "internet",
+  "forms": {
+    "local": true,
+    "verified": true,
+    "solo": true,
+    "friend": true,
+    "matchmaking": false,
+    "event": false
+  },
+  "modes": {
+    "trade": {
+      "solo": false,
+      "friend": false
+    },
+    "strategy-race": {
+      "friend": false
+    }
+  },
+  "limits": {
+    "sessionCreatePerIPMinute": 120,
+    "sessionCreatePerIPBurst": 30,
+    "queuedCommands": 512,
+    "rateLimitBuckets": 10000,
+    "connections": 300,
+    "connectionsPerRoom": 32,
+    "connectionsPerSession": 2,
+    "playersPerRoom": 16,
+    "spectatorsPerRoom": 12,
+    "verifiedChallenges": 128
+  },
+  "identity": {
+    "disambiguateNames": true
+  },
+  "turnstile": {
+    "enabled": false,
+    "siteKey": "",
+    "secretEnv": "UMA_TURNSTILE_SECRET",
+    "hostnames": [],
+    "grantSeconds": 900,
+    "maxConcurrent": 8,
+    "browserSignals": false,
+    "signalPerMinute": 30,
+    "signalBurst": 10,
+    "operations": [
+      "createRoom",
+      "joinRoom",
+      "createMatchmakingTicket",
+      "createChallenge",
+      "createEvent"
+    ]
+  }
+}

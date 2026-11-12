@@ -1,0 +1,7 @@
+{
+  "_note": "本文件记录的是自动筛选结果，不是人工试听。listened=false 表示尚未有人试听过这段音频。",
+  "_correction": "未完成真人试听；reviewedAt 与 reviewer 均为空，仅通过格式检查的片段不能用于正式题目",
+  "reviewedAt": null,
+  "reviewer": null,
+  "clips": []
+}
