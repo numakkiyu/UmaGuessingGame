@@ -22,7 +22,7 @@ defaults:
 
 jobs:
   repository:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -40,7 +40,7 @@ jobs:
 
   go:
     needs: web
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -91,7 +91,7 @@ jobs:
           govulncheck ./...
 
   web:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     defaults:
       run:
@@ -157,7 +157,7 @@ jobs:
           retention-days: 1
 
   contract:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     defaults:
       run:
@@ -218,7 +218,7 @@ jobs:
 
   content:
     needs: repository
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -238,7 +238,7 @@ jobs:
         run: go test ./internal/e2e -run TestPublishedQuestionPools -count=1 -v
 
   docs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -264,7 +264,7 @@ jobs:
         run: pnpm --dir docs run check:layout
 
   docker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     needs: [go, web, content, docs, contract]
     steps:
@@ -286,7 +286,7 @@ jobs:
   checks:
     if: always()
     needs: [repository, go, web, contract, content, docs, docker]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
       - name: Require all checks to pass
