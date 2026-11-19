@@ -1,38 +1,116 @@
-name: Pages
+name: Documentation
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  actions: read
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: documentation-pages
+  cancel-in-progress: false
 
 jobs:
+  eligibility:
+    if: >-
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'push' &&
+       github.event.workflow_run.head_repository.full_name == github.repository) ||
+      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      publish: ${{ steps.ci.outputs.publish }}
+      sha: ${{ steps.ci.outputs.sha }}
+    steps:
+      - name: Require successful CI for the current main commit
+        id: ci
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          TARGET_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          set -euo pipefail
+          current=$(gh api "repos/$REPOSITORY/commits/main" --jq .sha)
+          if [ "$current" != "$TARGET_SHA" ]; then
+            echo 'Main has a newer commit; this deployment is skipped.'
+            echo 'publish=false' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          passed=$(gh api "repos/$REPOSITORY/actions/workflows/ci.yml/runs?branch=main&event=push&head_sha=$TARGET_SHA&per_page=100" --jq ".workflow_runs | any(.head_sha == \"$TARGET_SHA\" and .conclusion == \"success\")")
+          if [ "$passed" != 'true' ]; then
+            echo 'The current main commit has no successful CI run.' >&2
+            exit 1
+          fi
+          echo 'publish=true' >> "$GITHUB_OUTPUT"
+          echo "sha=$TARGET_SHA" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: eligibility
+    if: needs.eligibility.outputs.publish == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ needs.eligibility.outputs.sha }}
+          persist-credentials: false
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.0
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: docs/pnpm-lock.yaml
+      - name: Read Pages configuration
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Install documentation dependencies
+        run: pnpm --dir docs install --frozen-lockfile
+      - name: Check documentation
+        run: pnpm --dir docs run check
+      - name: Build documentation
+        env:
+          DOCS_BASE: ${{ steps.pages.outputs.base_path }}/
+        run: pnpm --dir docs run build
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
   deploy:
-    runs-on: ubuntu-latest
+    needs: [eligibility, build]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./site
-
+      - name: Confirm main still points to the checked commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          TARGET_SHA: ${{ needs.eligibility.outputs.sha }}
+        run: |
+          current=$(gh api "repos/$REPOSITORY/commits/main" --jq .sha)
+          test "$current" = "$TARGET_SHA"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

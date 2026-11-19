@@ -1,0 +1,687 @@
+{
+  "description": "Current game UI screenshots. The bluff images show its unavailable entry; other modes use real game states.",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "ja"
+  ],
+  "screenshots": 90,
+  "thumbnails": 45,
+  "files": [
+    {
+      "file": "aptitude-grid-ja-desktop.webp",
+      "bytes": 53470,
+      "sha256": "f4ef5d1df5a1f13cbc3ea9b3780bf01ec91e75cb89ca2a1f58ddf9b7aa4b08ba"
+    },
+    {
+      "file": "aptitude-grid-ja-mobile.webp",
+      "bytes": 27562,
+      "sha256": "2b985acb68f9a2dc5bf9f1fe9e63527410c3abe84efe8b5122d25116fc494558"
+    },
+    {
+      "file": "aptitude-grid-ja-thumb.webp",
+      "bytes": 14320,
+      "sha256": "95b22ec9bad578019af993b4e7455949e6c8bdb2a49aaee364740845067f19e6"
+    },
+    {
+      "file": "aptitude-grid-zh-Hans-desktop.webp",
+      "bytes": 45480,
+      "sha256": "acd9d41f43a28eec62d391a9aa9c3240364684c9479bb15f32177a9ee2e6daa2"
+    },
+    {
+      "file": "aptitude-grid-zh-Hans-mobile.webp",
+      "bytes": 24360,
+      "sha256": "58fa492c6a5db1bbbe36a46f28f7525b801c492a42a3a7aa24b5cd6061497ec3"
+    },
+    {
+      "file": "aptitude-grid-zh-Hans-thumb.webp",
+      "bytes": 11778,
+      "sha256": "6dea03f4fdf33d3e45397a4124f7beb92ea808a15ce8730a7ff30c4484ad1ecf"
+    },
+    {
+      "file": "aptitude-grid-zh-Hant-desktop.webp",
+      "bytes": 47804,
+      "sha256": "2c38fc2c4597932c60f12ec47c973bad5e2a2f95c45fb2a4b12bcc7b72a9b18a"
+    },
+    {
+      "file": "aptitude-grid-zh-Hant-mobile.webp",
+      "bytes": 26558,
+      "sha256": "d9ee58dd48362e6104b7106059cd6ab871e97985c9d763d20d527c3df7ea5c39"
+    },
+    {
+      "file": "aptitude-grid-zh-Hant-thumb.webp",
+      "bytes": 12288,
+      "sha256": "2f6ae178ad7f520f32c3a8fd09140839b559bff8b86640eb9576ece7132676f6"
+    },
+    {
+      "file": "audio-ja-desktop.webp",
+      "bytes": 64348,
+      "sha256": "e54f108ecb7a66bea2b6a81e83b90e455fc30683896004ed6ff915a33595d3d2"
+    },
+    {
+      "file": "audio-ja-mobile.webp",
+      "bytes": 33262,
+      "sha256": "8ba6c42c046096ce0f0c0d2550589f1530b93fe5ca95a8a4b64e69cd694cf128"
+    },
+    {
+      "file": "audio-ja-thumb.webp",
+      "bytes": 15154,
+      "sha256": "dde0400ca59a8ff486e62ba51cbaa6b7b938d9a459609297881e6d08e7a34c4d"
+    },
+    {
+      "file": "audio-zh-Hans-desktop.webp",
+      "bytes": 53688,
+      "sha256": "8ac6df0621dfba5ec957f9d2dbb06da3eb1e0560174026881e3c4cf7b1ab512f"
+    },
+    {
+      "file": "audio-zh-Hans-mobile.webp",
+      "bytes": 28332,
+      "sha256": "61a2546bca480f18281e853b887eb1b15a92341c9e2ccb710b75340b96da5e4a"
+    },
+    {
+      "file": "audio-zh-Hans-thumb.webp",
+      "bytes": 12292,
+      "sha256": "9bda5f1c27d6bac17bc8a5fad9fe88b0e5e4d936b9a0d626009c9189831effd9"
+    },
+    {
+      "file": "audio-zh-Hant-desktop.webp",
+      "bytes": 54926,
+      "sha256": "76222863a37348d4de76444842fce924d6829e4902feae33292cf6541cfda0d1"
+    },
+    {
+      "file": "audio-zh-Hant-mobile.webp",
+      "bytes": 28226,
+      "sha256": "210c752afe26bf191cd196e7745d82946c77e91835017dd89bb613191bab8eb8"
+    },
+    {
+      "file": "audio-zh-Hant-thumb.webp",
+      "bytes": 12266,
+      "sha256": "b2047761a8692f564edbcf97b791f6fa6f60b26bd357741200aeb5223fa0e5d2"
+    },
+    {
+      "file": "bluff-ja-desktop.webp",
+      "bytes": 42754,
+      "sha256": "010dc7f2578364274781845d37c12232f5950dda25d84c5b9f7beaff16fa6e54"
+    },
+    {
+      "file": "bluff-ja-mobile.webp",
+      "bytes": 27876,
+      "sha256": "3de34a69b58b1d03d2cc5981d911874d73642589b564eb3bb3c38b4598c102b9"
+    },
+    {
+      "file": "bluff-ja-thumb.webp",
+      "bytes": 10664,
+      "sha256": "19d913f7cd449d09a8630040b06ad7fdb01b343f43240b9678fdeeef68a923cb"
+    },
+    {
+      "file": "bluff-zh-Hans-desktop.webp",
+      "bytes": 39164,
+      "sha256": "3b6af0918e2a50a5ab07fb0bfc1f32cd92f72d06e288b1e7fdb19258007b82a2"
+    },
+    {
+      "file": "bluff-zh-Hans-mobile.webp",
+      "bytes": 25316,
+      "sha256": "65b2bce6466520680d5d8177cda20cd4a8ca0aafa3e8f4b479a5d4c8b214d09d"
+    },
+    {
+      "file": "bluff-zh-Hans-thumb.webp",
+      "bytes": 8992,
+      "sha256": "bff77da8c7c8bc4165b87718c3aff7d374022e07c34b723897cc662740ffa189"
+    },
+    {
+      "file": "bluff-zh-Hant-desktop.webp",
+      "bytes": 40546,
+      "sha256": "d58d68412be3db5a791782d0fa48114a3431e3dc7ae54f8b58dc73ae61dac292"
+    },
+    {
+      "file": "bluff-zh-Hant-mobile.webp",
+      "bytes": 27082,
+      "sha256": "e84dafb57ddb527bdc54230cb7f877857df24a85a7653bc34ff0ff0b6937db9b"
+    },
+    {
+      "file": "bluff-zh-Hant-thumb.webp",
+      "bytes": 9204,
+      "sha256": "3ac4c781575cd8be7b8a3e8b1edb2266b0852977d47e513b710d84a9624200cf"
+    },
+    {
+      "file": "classic-ja-desktop.webp",
+      "bytes": 54186,
+      "sha256": "605fe7c5f246c327d9e593af70f9726b34174fc20badd10a96c66799c41fdee5"
+    },
+    {
+      "file": "classic-ja-mobile.webp",
+      "bytes": 25682,
+      "sha256": "0071bbc9ef3dbc3531ab3f08b38fe5b7051a2637942370501e2f9f561612ef5d"
+    },
+    {
+      "file": "classic-ja-thumb.webp",
+      "bytes": 14612,
+      "sha256": "e560bd12ee4a643d59e2917aeb90d4c90fa6ffc9dd577ff56e510ea16b93f57f"
+    },
+    {
+      "file": "classic-zh-Hans-desktop.webp",
+      "bytes": 47502,
+      "sha256": "692ba35da84d7e0a6173e2b894ba1dbf9768deb7eac1c64a330d8d4a8a12a7ea"
+    },
+    {
+      "file": "classic-zh-Hans-mobile.webp",
+      "bytes": 23514,
+      "sha256": "3ea7719038290e9d3217c5ecee07f08522914cf0f94d8df3b71306043a3c9083"
+    },
+    {
+      "file": "classic-zh-Hans-thumb.webp",
+      "bytes": 12334,
+      "sha256": "90fa6153d1ce97eff7b67b84c474c823bd17c66706669d51ddc046f1e77171e4"
+    },
+    {
+      "file": "classic-zh-Hant-desktop.webp",
+      "bytes": 48474,
+      "sha256": "4050c173dda37fc8d2a47b84244264bf0e76e3dc4e800aed8567cc13a1c40306"
+    },
+    {
+      "file": "classic-zh-Hant-mobile.webp",
+      "bytes": 23982,
+      "sha256": "8e72a6b358d8314bb13b13a4bf33032ff5c9909a79a96d4327d2a4ec99d6d890"
+    },
+    {
+      "file": "classic-zh-Hant-thumb.webp",
+      "bytes": 12608,
+      "sha256": "d47221c1110265f3696eb3b7c9f878b6df5f27708fc3cc007632a2e2144e3ec0"
+    },
+    {
+      "file": "clue-puzzle-ja-desktop.webp",
+      "bytes": 78334,
+      "sha256": "ecf5634aa812bb9572aef7dea25f029afc1a480841975d84e340923210e08d7d"
+    },
+    {
+      "file": "clue-puzzle-ja-mobile.webp",
+      "bytes": 29214,
+      "sha256": "ad589f799138004027c767f4b45a2f0fc9e0c3293c427730dae13d78caa2eae6"
+    },
+    {
+      "file": "clue-puzzle-ja-thumb.webp",
+      "bytes": 14998,
+      "sha256": "d322af0379f8ae8824f79d751d58eb1651c97ae501221404b5818cfafc00207a"
+    },
+    {
+      "file": "clue-puzzle-zh-Hans-desktop.webp",
+      "bytes": 70076,
+      "sha256": "8ce3a87c852e457a65f3c421dc7133f84a312300075b2385ad5847207e12727a"
+    },
+    {
+      "file": "clue-puzzle-zh-Hans-mobile.webp",
+      "bytes": 26756,
+      "sha256": "075898a7b9fe7ac978ccd9db7d94f57a92854e38552c350723d48643dd4181b0"
+    },
+    {
+      "file": "clue-puzzle-zh-Hans-thumb.webp",
+      "bytes": 13642,
+      "sha256": "539d8e43341ac9b5d8402c27a9338455092000a9ddc39e96b517a736252f9825"
+    },
+    {
+      "file": "clue-puzzle-zh-Hant-desktop.webp",
+      "bytes": 71826,
+      "sha256": "046a95c48dfbd95ea3e01eb7295ef397ace502ebe4b4f9155c271677106822a3"
+    },
+    {
+      "file": "clue-puzzle-zh-Hant-mobile.webp",
+      "bytes": 26428,
+      "sha256": "65ca5c2fa8f125438e2dd179427ab0f80728b6601fa5653480efe133376c1806"
+    },
+    {
+      "file": "clue-puzzle-zh-Hant-thumb.webp",
+      "bytes": 13516,
+      "sha256": "f101f5e30678491c1affe42ca94bf0a0f02cfa06b4422b4f93a161cd1f99f25b"
+    },
+    {
+      "file": "co-race-path-ja-desktop.webp",
+      "bytes": 65752,
+      "sha256": "47a7830e9508235a895e37ad3f9091a06a67d8fe0b2f717a7fc253c132522330"
+    },
+    {
+      "file": "co-race-path-ja-mobile.webp",
+      "bytes": 26100,
+      "sha256": "b02fca3b99f36e77517c2130f0d132b5363337cb70f0b5237e9cccf48cb77562"
+    },
+    {
+      "file": "co-race-path-ja-thumb.webp",
+      "bytes": 16358,
+      "sha256": "eab229a93de7c748f5124b3777c75a1f5a450945e402a8a6f151a6989222b22b"
+    },
+    {
+      "file": "co-race-path-zh-Hans-desktop.webp",
+      "bytes": 55480,
+      "sha256": "f1d3fc19bab95c5eeb230251745939a42ca9d4fd6d888d756301d76a6c31c8bd"
+    },
+    {
+      "file": "co-race-path-zh-Hans-mobile.webp",
+      "bytes": 28858,
+      "sha256": "0258ae1c12641c4700c36a3a5ee9b883959828e0d15a005199815b9943cb22d6"
+    },
+    {
+      "file": "co-race-path-zh-Hans-thumb.webp",
+      "bytes": 12912,
+      "sha256": "ea0e988c71a55a16d65094a24b86e4aa9050ee94d1631f2e532610c4f2cfba38"
+    },
+    {
+      "file": "co-race-path-zh-Hant-desktop.webp",
+      "bytes": 56100,
+      "sha256": "2d4c6ef75001355cd2bdd093ba216de5c3918ed1f2d9e234276b003726aca9b8"
+    },
+    {
+      "file": "co-race-path-zh-Hant-mobile.webp",
+      "bytes": 28602,
+      "sha256": "3f985053f7c44bc4db2fc995f87f2f24d8d4486670344fe0062e341b246a092a"
+    },
+    {
+      "file": "co-race-path-zh-Hant-thumb.webp",
+      "bytes": 12980,
+      "sha256": "d8123a3179f209fcbdeaca123f63544a02a2d47779a19b76f88d33a32f2fb66d"
+    },
+    {
+      "file": "creative-ja-desktop.webp",
+      "bytes": 59740,
+      "sha256": "dda1f8ed8fa97fd6a4d74147a747a8870594d306d559d446cd0c7f11db6701e4"
+    },
+    {
+      "file": "creative-ja-mobile.webp",
+      "bytes": 30116,
+      "sha256": "2ab8874e75431286934d20071335525cc245b73f8b23904b372b0d8291cda67b"
+    },
+    {
+      "file": "creative-ja-thumb.webp",
+      "bytes": 14744,
+      "sha256": "03ee991d50d27bc3b08721bfd25476d2433942f93a98f208b9a16ab608050de4"
+    },
+    {
+      "file": "creative-zh-Hans-desktop.webp",
+      "bytes": 51804,
+      "sha256": "0a449f270bf7871e4dfb67c6211a551394b5f3476a23f264097241a8e20f1b5b"
+    },
+    {
+      "file": "creative-zh-Hans-mobile.webp",
+      "bytes": 27228,
+      "sha256": "1ede5a74fbabee0a9b4cbc42bca5a581f05861a69d941b8c64e3067021214e87"
+    },
+    {
+      "file": "creative-zh-Hans-thumb.webp",
+      "bytes": 12352,
+      "sha256": "d55bfa0d78f2e05bbf05c56eba870e03f43d1e924004573854826aaff3d8fbdf"
+    },
+    {
+      "file": "creative-zh-Hant-desktop.webp",
+      "bytes": 52962,
+      "sha256": "f8d7671e4b3f5b882bc23f3857cc190a91db1e92bbfc964aae35441de32d02c7"
+    },
+    {
+      "file": "creative-zh-Hant-mobile.webp",
+      "bytes": 27980,
+      "sha256": "d1c8e485d79a1bec329c3a33d6930c79516e37de46a8bca0b3fa3fcc3baab896"
+    },
+    {
+      "file": "creative-zh-Hant-thumb.webp",
+      "bytes": 12396,
+      "sha256": "d3361e7dd71e95a85a79ccb313bb354ce17635def9fd579719c07dd08b675e00"
+    },
+    {
+      "file": "draft-ja-desktop.webp",
+      "bytes": 139710,
+      "sha256": "67e85cb5be7fe85e71d320e6f5f2ba2ba5071c463cfc3895249338883e108093"
+    },
+    {
+      "file": "draft-ja-mobile.webp",
+      "bytes": 26744,
+      "sha256": "bcdd6f44404b7e0228686f6578db92dd55f78e056692de8fcaa799eb4f338072"
+    },
+    {
+      "file": "draft-ja-thumb.webp",
+      "bytes": 18688,
+      "sha256": "71bc12f1d007358aecb641a18998b48d650f2f109ccb5c4240519c3cd9af00e9"
+    },
+    {
+      "file": "draft-zh-Hans-desktop.webp",
+      "bytes": 117478,
+      "sha256": "1948f86e62654591a6682f4ccb9765a4abaa32ba16605ecc153a539d9deab223"
+    },
+    {
+      "file": "draft-zh-Hans-mobile.webp",
+      "bytes": 24738,
+      "sha256": "97f7575d4005d564c39f92e7f4ef4e29b5f982d5f0bf8369069ec036e60c8d4f"
+    },
+    {
+      "file": "draft-zh-Hans-thumb.webp",
+      "bytes": 15966,
+      "sha256": "6e6de35af3dfe90e53d5077173dddcc008218b9a3f1e696946779b6cdce66c58"
+    },
+    {
+      "file": "draft-zh-Hant-desktop.webp",
+      "bytes": 122212,
+      "sha256": "b2632bb54c8076621218d4aa4676c819ced651f51f829b2d880f60631b802d74"
+    },
+    {
+      "file": "draft-zh-Hant-mobile.webp",
+      "bytes": 25792,
+      "sha256": "aa9dfaeb0761e8e40952320dc76f6eb7266afd6d9280662130383c3dfbb00fc3"
+    },
+    {
+      "file": "draft-zh-Hant-thumb.webp",
+      "bytes": 16258,
+      "sha256": "97be0826bb42008a640acbfdafe90a3169be5debb301f757559d0f0637e4e339"
+    },
+    {
+      "file": "memory-ja-desktop.webp",
+      "bytes": 57886,
+      "sha256": "a1602fe222f0cae16c23dc91c993fb0abb8b0a5dedbd25dddc56983436a06d6f"
+    },
+    {
+      "file": "memory-ja-mobile.webp",
+      "bytes": 32136,
+      "sha256": "41e054b7e2dcce8459ab9cf7a6d7b9bee3ac1c529f4241b2749b2aa546657133"
+    },
+    {
+      "file": "memory-ja-thumb.webp",
+      "bytes": 15426,
+      "sha256": "07532939c8117cd93796f00f14dffd97c47f75c06b09db2088f52fb734c271e6"
+    },
+    {
+      "file": "memory-zh-Hans-desktop.webp",
+      "bytes": 55544,
+      "sha256": "586c75f5957d8d2264af095094f4f200b1c0a5a5488d203d4386357b36611d31"
+    },
+    {
+      "file": "memory-zh-Hans-mobile.webp",
+      "bytes": 31488,
+      "sha256": "47d590e5deb67622114f2c70281c6377aa8d6dfd507358862b2f97985a9f80ca"
+    },
+    {
+      "file": "memory-zh-Hans-thumb.webp",
+      "bytes": 14644,
+      "sha256": "f36095b45e1632c9a7f3d7e099741bfe9dcb64cd1a89e146b1b4f5994040f87f"
+    },
+    {
+      "file": "memory-zh-Hant-desktop.webp",
+      "bytes": 56076,
+      "sha256": "13f9fa9f0a1e604ba7add18302835e577b4414f35eaee03d7149b1e768581a10"
+    },
+    {
+      "file": "memory-zh-Hant-mobile.webp",
+      "bytes": 31820,
+      "sha256": "af7a389d9f0a73b9d893dabe5de4a1515fddb5e161e4acae9eccbba55b66e608"
+    },
+    {
+      "file": "memory-zh-Hant-thumb.webp",
+      "bytes": 14732,
+      "sha256": "fa6c3300cce0e65211940a990c2a6d62701febb067c8434f6c38e8cce9c6042b"
+    },
+    {
+      "file": "pedigree-ja-desktop.webp",
+      "bytes": 84322,
+      "sha256": "f1e65dd14c2451fa738c1d7432cfab91c4e0d2d670d2bfd79f7a50b7fbc8356b"
+    },
+    {
+      "file": "pedigree-ja-mobile.webp",
+      "bytes": 24062,
+      "sha256": "7bb99685d63e51dbcb0013000c70c6dca55058638b01bcd70650b77bb91da92e"
+    },
+    {
+      "file": "pedigree-ja-thumb.webp",
+      "bytes": 19522,
+      "sha256": "17eb0340285d6d8ab8ab91be471b533c7ad79f4d4bd93995b59c16c8cdd000e1"
+    },
+    {
+      "file": "pedigree-zh-Hans-desktop.webp",
+      "bytes": 77796,
+      "sha256": "79f98a4473d17404f33292060cb05e1cb8cd76d22bb2c45d9096bbf8a7219aee"
+    },
+    {
+      "file": "pedigree-zh-Hans-mobile.webp",
+      "bytes": 24386,
+      "sha256": "72c5203db3a2d7770e10416c3606c3189b345e11895be2843006bcff5509531a"
+    },
+    {
+      "file": "pedigree-zh-Hans-thumb.webp",
+      "bytes": 18370,
+      "sha256": "f0449d1a5cdefa6d132d115b89187f9d68cf5923a4c0b70f7cdc351cb31a1812"
+    },
+    {
+      "file": "pedigree-zh-Hant-desktop.webp",
+      "bytes": 79530,
+      "sha256": "4099e17c2292a399cc5f5c86bce6d965e1eea070b1e5de175ef7431fbc0eb8f4"
+    },
+    {
+      "file": "pedigree-zh-Hant-mobile.webp",
+      "bytes": 24364,
+      "sha256": "8fcd776d412d91c14010b2f5e9ab4bed1d719748025c10a0cc407bd0d797bff9"
+    },
+    {
+      "file": "pedigree-zh-Hant-thumb.webp",
+      "bytes": 18384,
+      "sha256": "dde96763162dbbec16c8e79fd071eff6efa6e111b2457e19d41b0367ef1b8192"
+    },
+    {
+      "file": "race-rebuild-ja-desktop.webp",
+      "bytes": 67808,
+      "sha256": "9e5e9fbbc4d67c13d1192cb314aba6c30145c5c48c548b782adc1241e42f0b37"
+    },
+    {
+      "file": "race-rebuild-ja-mobile.webp",
+      "bytes": 32052,
+      "sha256": "56ccb65cc33246f33ac919c6dc419ab641bba771d6350e5712911f74283afcd9"
+    },
+    {
+      "file": "race-rebuild-ja-thumb.webp",
+      "bytes": 17008,
+      "sha256": "77f42fa812273f6ba4ec653f711521917015ff4e19860eaf966b98b81848712b"
+    },
+    {
+      "file": "race-rebuild-zh-Hans-desktop.webp",
+      "bytes": 60956,
+      "sha256": "e3d344b9441fef4cdc21a82748701c87a3bc3a7a0faea3f58e4ec74148649471"
+    },
+    {
+      "file": "race-rebuild-zh-Hans-mobile.webp",
+      "bytes": 30660,
+      "sha256": "d0f553bbdef7d5e08a1d549210d0e7dd7665ecd8883a5249a07c50079b32218a"
+    },
+    {
+      "file": "race-rebuild-zh-Hans-thumb.webp",
+      "bytes": 15204,
+      "sha256": "d5cbdc86b28a7084ca4d27ebbbf964578762e7ce589d71dd1d24dd2bbf5f5372"
+    },
+    {
+      "file": "race-rebuild-zh-Hant-desktop.webp",
+      "bytes": 61602,
+      "sha256": "b11c748b8f4e34345a943a4cf1946eb693b0a55119b024c994a25b16da393e4c"
+    },
+    {
+      "file": "race-rebuild-zh-Hant-mobile.webp",
+      "bytes": 31414,
+      "sha256": "fa4a3ac6c7dc69ea6135f667cf00f769f8268453f6a27a661adc9ffa7f3428fa"
+    },
+    {
+      "file": "race-rebuild-zh-Hant-thumb.webp",
+      "bytes": 15162,
+      "sha256": "625bb528c565a4493bd6a375f4f6e80304de5e232dab91e7065f179a23deccbb"
+    },
+    {
+      "file": "rapport-ja-desktop.webp",
+      "bytes": 59032,
+      "sha256": "7abac8da67285357aa67d75258a374ed5d72aa3dbcc8dcb33b6fd370d119aff6"
+    },
+    {
+      "file": "rapport-ja-mobile.webp",
+      "bytes": 30558,
+      "sha256": "c9eb0000b54978358bbb4c437f3a028331ec39a12cb7e6dc6591e535371cfbfe"
+    },
+    {
+      "file": "rapport-ja-thumb.webp",
+      "bytes": 15908,
+      "sha256": "eb642c841289a2b845d58f17114b97478375e37a2b8385fd870fadf4d22bb965"
+    },
+    {
+      "file": "rapport-zh-Hans-desktop.webp",
+      "bytes": 52276,
+      "sha256": "1a02778b0643f2651eb8390284873f9d2da8f6eb917b7fce966f53ffac535460"
+    },
+    {
+      "file": "rapport-zh-Hans-mobile.webp",
+      "bytes": 26522,
+      "sha256": "fcfbad208f47a1c40a599681f64ddcf34cba11d4f5e527a90367cc62c364ffbd"
+    },
+    {
+      "file": "rapport-zh-Hans-thumb.webp",
+      "bytes": 13410,
+      "sha256": "83f02fe8c4cbaab6a8848f5fd0ce4057c825135a0c7993fee3e837c1df55ec65"
+    },
+    {
+      "file": "rapport-zh-Hant-desktop.webp",
+      "bytes": 53430,
+      "sha256": "b1532d5b645b0376e365ce9cba9c004e4e08e4c5b582fdc4e897de6cd9f1f7fd"
+    },
+    {
+      "file": "rapport-zh-Hant-mobile.webp",
+      "bytes": 27026,
+      "sha256": "a7c93002f89e6994ecb05f22ca7e4f4dd0d215ffd6d9e873299cc28e6ade2290"
+    },
+    {
+      "file": "rapport-zh-Hant-thumb.webp",
+      "bytes": 13434,
+      "sha256": "5747ef7d6e3a9665ff98ecbcf005c19c09952378e922e9593de732afc778d286"
+    },
+    {
+      "file": "sort-ja-desktop.webp",
+      "bytes": 61538,
+      "sha256": "b7eda4874bb9168decd214089b4f3443326fb481d294941fa07908e6ac9677f0"
+    },
+    {
+      "file": "sort-ja-mobile.webp",
+      "bytes": 28460,
+      "sha256": "697498f6e015addaed2d44ff2dcb9c1e7f7420f876ea2cc79495b058b1a81518"
+    },
+    {
+      "file": "sort-ja-thumb.webp",
+      "bytes": 17386,
+      "sha256": "167898f87f97c81c05a3a0bf74869671ca4b3f86f6979d5ca08bd67af1192238"
+    },
+    {
+      "file": "sort-zh-Hans-desktop.webp",
+      "bytes": 54048,
+      "sha256": "8dd9296ed42275566438b8996d4368d096e1c9060fb893c70c5336ea81cff348"
+    },
+    {
+      "file": "sort-zh-Hans-mobile.webp",
+      "bytes": 25818,
+      "sha256": "8da578f5c11093b929c5f9c329f51b2c8ce4509acf785462c29922b8c83d19d7"
+    },
+    {
+      "file": "sort-zh-Hans-thumb.webp",
+      "bytes": 14286,
+      "sha256": "c592da6cfd54eef3b70c47a58356a8f0b5692e91991d88652b2a317bdc75f695"
+    },
+    {
+      "file": "sort-zh-Hant-desktop.webp",
+      "bytes": 54262,
+      "sha256": "afb95acf315306fdc0fa95ebb9442a7aff710e04afc7ae7b02d2d5aecdd1e850"
+    },
+    {
+      "file": "sort-zh-Hant-mobile.webp",
+      "bytes": 26148,
+      "sha256": "9585ba238b3e4d1ae786aa784b58ec0de02990e3c9f34f792fb754d609cbc44e"
+    },
+    {
+      "file": "sort-zh-Hant-thumb.webp",
+      "bytes": 14086,
+      "sha256": "f794497b7e085c6c37974aefbb543905bd2d1267e1c3c6a5e459ea05071b8fb3"
+    },
+    {
+      "file": "strategy-race-ja-desktop.webp",
+      "bytes": 60480,
+      "sha256": "3dd56315d0019385ac50693ee871ccbeb225501efb677d177b3a68634a6e7fe4"
+    },
+    {
+      "file": "strategy-race-ja-mobile.webp",
+      "bytes": 29212,
+      "sha256": "7126e762c89f4a419da7b3cb6b82703de3c118016a05662d35e8814037066ced"
+    },
+    {
+      "file": "strategy-race-ja-thumb.webp",
+      "bytes": 14894,
+      "sha256": "eaf395e3508b72d36e11191e866add0cf31bb03f4188a77270513b64ca280813"
+    },
+    {
+      "file": "strategy-race-zh-Hans-desktop.webp",
+      "bytes": 54148,
+      "sha256": "33af6d909f347371b2210f55a711f94518337a199a92623ae6488bc10c84f53a"
+    },
+    {
+      "file": "strategy-race-zh-Hans-mobile.webp",
+      "bytes": 26968,
+      "sha256": "05909cc3dd8e75c39fe3fca20d4648c07e12af39ad642956a43743a6c06ab0ba"
+    },
+    {
+      "file": "strategy-race-zh-Hans-thumb.webp",
+      "bytes": 12958,
+      "sha256": "a058a65701658b0d2c92dc9558a763a1ff3140c675ffa0e56cefc0c33f6f4039"
+    },
+    {
+      "file": "strategy-race-zh-Hant-desktop.webp",
+      "bytes": 56456,
+      "sha256": "6bb76b94a7506c9ed95dd6fab1989c46a1f4de056e3a25dd4cab8cdfd9b43155"
+    },
+    {
+      "file": "strategy-race-zh-Hant-mobile.webp",
+      "bytes": 28554,
+      "sha256": "82254a1daf72fc67c8f9c8f5842904d871af96a6f7e71e90e959c570b96f2aa1"
+    },
+    {
+      "file": "strategy-race-zh-Hant-thumb.webp",
+      "bytes": 13238,
+      "sha256": "d9470360a9552923c518d65d812b5180f52100d95de41cb2a7790bf9f5ce7a5e"
+    },
+    {
+      "file": "trade-ja-desktop.webp",
+      "bytes": 81002,
+      "sha256": "d904564e5f21cdaba220bf6ffe058bc80d4a49b08c6d2e9db5d10f93f8c7123f"
+    },
+    {
+      "file": "trade-ja-mobile.webp",
+      "bytes": 24928,
+      "sha256": "96da71e7ef90bb8bce1bf7d3beed7a3954f8da57de693b2e280047a31d9123f1"
+    },
+    {
+      "file": "trade-ja-thumb.webp",
+      "bytes": 16288,
+      "sha256": "0f76c6778d69f09b125af48ad19d20f446a10a178f38dd9f6523198bffaf659f"
+    },
+    {
+      "file": "trade-zh-Hans-desktop.webp",
+      "bytes": 73950,
+      "sha256": "5ccf434ddf23acbd087866ed19cd3c5f8175fdb1980c4da1be3b9dcdaa549bd9"
+    },
+    {
+      "file": "trade-zh-Hans-mobile.webp",
+      "bytes": 23338,
+      "sha256": "de078bd4e2f14e1d6b9bc9630318ee0ed772c2e1ac21f2bd6eb4edf7aa2b0f2d"
+    },
+    {
+      "file": "trade-zh-Hans-thumb.webp",
+      "bytes": 14032,
+      "sha256": "63234d642446c4dbb97597e431af13558a5e9c4a5b4d945472695d7e8b747411"
+    },
+    {
+      "file": "trade-zh-Hant-desktop.webp",
+      "bytes": 76420,
+      "sha256": "9a42bef5cf09022f183b7d788b6dc640efbae79ff2597c18952333294915f5ad"
+    },
+    {
+      "file": "trade-zh-Hant-mobile.webp",
+      "bytes": 24038,
+      "sha256": "3694a39f4bbe318f3bd8d1f89d5a05807704d1e014e019abede14316f0410ec2"
+    },
+    {
+      "file": "trade-zh-Hant-thumb.webp",
+      "bytes": 14112,
+      "sha256": "49f9bca2f85d6c796957fb78fa14e35cf3326382c0556d6490a52508c938ddb7"
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "schemaVersion": "1.0.0",
+  "_note": "原创游戏设计内容，不是官方数据。场景与限制是自拟的写作题目，角色名从公开索引取，不在此文件重复维护。",
+  "scenes": [
+    {
+      "sceneId": "sc-01",
+      "text": "下雨天的校门口",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-02",
+      "text": "训练结束后空掉的跑道",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-03",
+      "text": "食堂快关门的时候",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-04",
+      "text": "借出去的笔记还没还",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-05",
+      "text": "第一次值日的清晨",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-06",
+      "text": "宿舍熄灯前的十分钟",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-07",
+      "text": "教室后排靠窗的位置",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-08",
+      "text": "自动贩卖机前找零钱",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-09",
+      "text": "操场看台上等一个人",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-10",
+      "text": "文化祭收摊的傍晚",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-11",
+      "text": "雨停后的自行车棚",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-12",
+      "text": "周末早班的图书馆",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-13",
+      "text": "换季整理衣柜的下午",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-14",
+      "text": "走廊尽头的公告栏前",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-15",
+      "text": "等末班车的时候",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-16",
+      "text": "雪停后第一节课前",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-17",
+      "text": "社团活动室的午休",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-18",
+      "text": "把伞借出去之后",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-19",
+      "text": "体检当天的走廊",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-20",
+      "text": "新学期发课本的时候",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-21",
+      "text": "半夜肚子饿了",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-22",
+      "text": "临时被叫去代打",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-23",
+      "text": "捡到东西送去失物招领",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "sceneId": "sc-24",
+      "text": "深夜便利店的关东煮",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    }
+  ],
+  "constraints": [
+    {
+      "constraintId": "ct-01",
+      "text": "整段不能出现「跑」字",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-02",
+      "text": "必须以一个问题结尾",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-03",
+      "text": "必须包含一个具体的数字",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-04",
+      "text": "只能写一件事，不能转折",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-05",
+      "text": "必须用第二人称「你」",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-06",
+      "text": "不能出现任何人的名字",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-07",
+      "text": "必须提到一件道具",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-08",
+      "text": "只能写一句话，不得分段",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-09",
+      "text": "必须出现一个时间点",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-10",
+      "text": "不能使用感叹号",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-11",
+      "text": "必须以「后来」开头",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "constraintId": "ct-12",
+      "text": "必须包含一句对话",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    }
+  ]
+}

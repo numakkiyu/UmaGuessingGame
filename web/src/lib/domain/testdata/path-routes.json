@@ -1,0 +1,16 @@
+{
+  "nodes": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "z"],
+  "edges": [["a", "b"], ["b", "d"], ["a", "c"], ["c", "e"], ["e", "d"], ["d", "f"], ["f", "g"], ["g", "h"], ["h", "i"]],
+  "cases": [
+    { "name": "shortest arrival", "path": ["a", "b", "d"], "goal": "d", "accepted": true, "scoreUnits": 10000 },
+    { "name": "alternative arrival", "path": ["a", "c", "e", "d"], "goal": "d", "accepted": true, "scoreUnits": 9000 },
+    { "name": "legal incomplete chain", "path": ["a", "c"], "goal": "d", "accepted": true, "scoreUnits": 0 },
+    { "name": "zero step incomplete", "path": ["a"], "goal": "d", "accepted": true, "scoreUnits": 0 },
+    { "name": "six edge arrival", "path": ["a", "b", "d", "f", "g", "h", "i"], "goal": "i", "accepted": true, "scoreUnits": 10000 },
+    { "name": "missing co-appearance", "path": ["a", "e", "d"], "goal": "d", "accepted": false },
+    { "name": "cycle repeats a character", "path": ["a", "b", "a", "c"], "goal": "d", "accepted": false },
+    { "name": "seven edges rejected", "path": ["a", "c", "e", "d", "f", "g", "h", "i"], "goal": "i", "accepted": false },
+    { "name": "unknown character rejected", "path": ["a", "foreign", "d"], "goal": "d", "accepted": false },
+    { "name": "wrong start rejected", "path": ["b", "d"], "goal": "d", "accepted": false }
+  ]
+}

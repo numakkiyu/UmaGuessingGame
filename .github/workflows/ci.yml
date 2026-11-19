@@ -5,47 +5,275 @@ on:
     branches:
       - main
       - develop
-      - "codex/**"
   pull_request:
+  merge_group:
   workflow_dispatch:
-  schedule:
-    - cron: "0 3 * * 1"
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash --noprofile --norc -e -o pipefail {0}
+
 jobs:
-  verify:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
-    permissions:
-      contents: read
+  repository:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
-          node-version: 22
-          cache: npm
+          node-version: 24
+      - name: Check repository contents
+        run: node web/scripts/check-repository.mjs
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+      - name: Lint workflow definitions
+        run: go run github.com/rhysd/actionlint/cmd/actionlint@v1.7.7
 
-      - name: Install dependencies
-        run: npm ci
+  go:
+    needs: web
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
-      - name: Run repository checks
-        run: npm run ci:check
+      - name: Download the frontend build for embedding
+        uses: actions/download-artifact@v4
+        with:
+          name: web-dist
+          path: internal/spafs/dist
+
+      - name: Set up Go
+        uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Verify formatting
+        run: |
+          set -euo pipefail
+          out=$(gofmt -l cmd internal)
+          if [ -n "$out" ]; then
+            echo "unformatted files:"
+            echo "$out"
+            exit 1
+          fi
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Compile content for integration tests
+        run: go run ./cmd/content build --out content
+
+      - name: Test with race detection and coverage
+        run: |
+          go test ./... -count=1 -race -covermode=atomic -coverprofile=coverage.out
+          go tool cover -func=coverage.out | tail -1
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: go-coverage
+          path: coverage.out
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Vulnerability scan
+        run: |
+          set -euo pipefail
+          go install golang.org/x/vuln/cmd/govulncheck@latest
+          govulncheck ./...
+
+  web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.0
+
+      - name: Set up Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: pnpm
+          # Cache the application and isolated toolchain lockfiles
+          cache-dependency-path: |
+            web/pnpm-lock.yaml
+            web/tools/toolchain/pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Install isolated toolchain
+        run: pnpm --dir tools/toolchain install --frozen-lockfile
+
+      - name: Type-check
+        run: pnpm run typecheck
+
+      - name: Lint
+        run: pnpm run lint
+
+      - name: Check player-facing copy
+        run: pnpm run copy:check
+
+      - name: Check API references
+        run: pnpm run api:check
+
+      - name: Test
+        run: pnpm run test
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Check the embedded SPA is not stale
+        working-directory: .
+        run: |
+          set -euo pipefail
+          make embed-spa
+          make embed-spa-check
+
+      - name: Check bundle size budgets
+        run: pnpm run size
+
+      - name: Share the frontend build with Go checks
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-dist
+          path: web/dist/
+          if-no-files-found: error
+          retention-days: 1
+
+  contract:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Set up Go
+        uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.0
+
+      - name: Set up Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: |
+            web/pnpm-lock.yaml
+            web/tools/toolchain/pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Install isolated toolchain
+        run: pnpm --dir tools/toolchain install --frozen-lockfile
+
+      - name: Validate OpenAPI document and route parity
+        working-directory: .
+        run: go run ./cmd/content contract --spec api/openapi.json --routes
+
+      - name: Regenerate API types
+        run: pnpm run api:types
+
+      - name: Fail on drift
+        working-directory: .
+        run: |
+          set -euo pipefail
+          if ! git diff --exit-code -- web/src/lib/api/schema.d.ts; then
+            echo "generated API types are stale; run 'make web-api-types' and commit"
+            exit 1
+          fi
+
+      - name: Fail if the contract artifact is untracked
+        working-directory: .
+        run: |
+          set -euo pipefail
+          if ! git ls-files --error-unmatch api/openapi.json >/dev/null 2>&1; then
+            echo "api/openapi.json is not tracked by git; the contract must be a project artifact"
+            exit 1
+          fi
+
+  content:
+    needs: repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+      - name: Verify module checksums
+        run: go mod verify
+      - name: Decode and verify the complete audio library
+        run: go run ./cmd/content audio-verify
+      - name: Compile content from repository sources
+        run: go run ./cmd/content build --out content
+      - name: Verify the published content pack
+        run: go run ./cmd/content verify --out content
+      - name: Exercise published question pools
+        run: go test ./internal/e2e -run TestPublishedQuestionPools -count=1 -v
+
+  docs:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.0
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: docs/pnpm-lock.yaml
+      - name: Install documentation dependencies
+        run: pnpm --dir docs install --frozen-lockfile
+      - name: Check translations and links
+        run: pnpm --dir docs run check
+      - name: Build documentation
+        env:
+          DOCS_BASE: /UmaGuessingGame/
+        run: pnpm --dir docs run build
+      - name: Check the runner browser
+        run: google-chrome --version
+      - name: Check documentation layout and navigation
+        env:
+          DOCS_BROWSER_CHANNEL: chrome
+        run: pnpm --dir docs run check:layout
 
   docker:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    needs: verify
-    permissions:
-      contents: read
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    needs: [go, web, content, docs, contract]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -57,3 +285,17 @@ jobs:
           file: ./Dockerfile
           push: false
           tags: umaguessinggame:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  checks:
+    if: always()
+    needs: [repository, go, web, contract, content, docs, docker]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Require all checks to pass
+        env:
+          RESULTS: ${{ toJSON(needs.*.result) }}
+        run: |
+          node -e 'const results = JSON.parse(process.env.RESULTS); if (!results.length || results.some(result => result !== "success")) { console.error("Required checks did not pass:", results); process.exit(1); }'

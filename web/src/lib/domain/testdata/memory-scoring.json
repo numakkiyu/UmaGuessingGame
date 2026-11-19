@@ -1,0 +1,9 @@
+[
+  {"name":"no matches","matched":0,"wrong":0,"scoreUnits":0},
+  {"name":"fractional pair percentage floors first","matched":1,"wrong":0,"scoreUnits":1200},
+  {"name":"one wrong attempt","matched":1,"wrong":1,"scoreUnits":1000},
+  {"name":"half board","matched":4,"wrong":3,"scoreUnits":4400},
+  {"name":"perfect board","matched":8,"wrong":0,"scoreUnits":10000},
+  {"name":"all found with mistakes","matched":8,"wrong":5,"scoreUnits":9000},
+  {"name":"floor at zero","matched":1,"wrong":20,"scoreUnits":0}
+]

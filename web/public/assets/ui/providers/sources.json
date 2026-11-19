@@ -1,0 +1,60 @@
+{
+  "retrievedAt": "2026-11-18",
+  "rights": "Brand marks belong to their respective owners and are not covered by the project MIT licence",
+  "items": [
+    {
+      "provider": "google",
+      "file": "google.svg",
+      "source": "https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg",
+      "guidelines": "https://developers.google.com/identity/branding-guidelines",
+      "sha256": "cbe9772630b9b72daf7c14eab28c6c86f88e07da9cb08487544e022e385ede1f",
+      "bytes": 2326,
+      "adjustment": "None"
+    },
+    {
+      "provider": "github",
+      "file": "github.svg",
+      "source": "https://github.githubassets.com/favicons/favicon.svg",
+      "guidelines": "https://github.com/logos",
+      "sha256": "6a9577cd4f7fa6b75bde1025af85b944e9dd1388373b55ccba6e9f80ac2eae60",
+      "bytes": 959,
+      "adjustment": "None"
+    },
+    {
+      "provider": "microsoft",
+      "file": "microsoft.svg",
+      "source": "https://learn.microsoft.com/en-us/entra/identity-platform/media/howto-add-branding-in-apps/ms-symbollockup_mssymbol_19.svg",
+      "guidelines": "https://learn.microsoft.com/en-us/entra/identity-platform/howto-add-branding-in-apps",
+      "sha256": "929f48f88c8ca7f3f5d294be47ec4caf51acc28ac25340c19a903125d7ecd84a",
+      "bytes": 343,
+      "adjustment": "None"
+    },
+    {
+      "provider": "x",
+      "file": "x.svg",
+      "source": "https://cdn.sanity.io/files/kjy2lb0k/production/3bb3c110d1f6fc7c759ea7fafa18c4d7e21f380c.zip?dl=x-logo.zip",
+      "guidelines": "https://about.x.com/en/who-we-are/brand-toolkit",
+      "sha256": "ea83de1be17ad045045820f2ad9326e1b5f6eb6a540ae331f78a8425fdbdbfb3",
+      "bytes": 432,
+      "adjustment": "Black colour variant of the official SVG; geometry unchanged"
+    },
+    {
+      "provider": "qq",
+      "file": "qq.png",
+      "source": "https://static-res.qq.com/static-res/imqq/qq-logo.png",
+      "guidelines": "https://connect.qq.com/",
+      "sha256": "ee3ab39d757df98d57d676779b97fb8e20d70c97900976b4ffe239f3b6a54bfe",
+      "bytes": 1167,
+      "adjustment": "None"
+    },
+    {
+      "provider": "facebook",
+      "file": "facebook.png",
+      "source": "Facebook Brand Asset Pack/Logo/Primary Logo/Facebook_Logo_Primary.png",
+      "guidelines": "https://www.meta.com/brand/resources/facebook/logo/",
+      "sha256": "2adfd474d91fd20c51084309ed000c1ae6cc7f5f70af14d375930f5a71301308",
+      "bytes": 54771,
+      "adjustment": "None"
+    }
+  ]
+}

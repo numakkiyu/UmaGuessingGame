@@ -1,0 +1,10 @@
+[
+  { "name": "steady", "position": 0, "stamina": 6, "action": "steady", "wantPosition": 3, "wantStamina": 6 },
+  { "name": "sprint at minimum", "position": 3, "stamina": 2, "action": "sprint", "wantPosition": 8, "wantStamina": 0 },
+  { "name": "sprint requires stamina", "position": 3, "stamina": 1, "action": "sprint", "rejected": true },
+  { "name": "recover caps stamina", "position": 5, "stamina": 7, "action": "recover", "wantPosition": 6, "wantStamina": 8 },
+  { "name": "recover at ceiling", "position": 5, "stamina": 8, "action": "recover", "wantPosition": 6, "wantStamina": 8 },
+  { "name": "single team follow has no leader", "position": 5, "stamina": 4, "action": "follow", "wantPosition": 7, "wantStamina": 4 },
+  { "name": "recovery from zero", "position": 20, "stamina": 0, "action": "recover", "wantPosition": 21, "wantStamina": 2 },
+  { "name": "unknown action", "position": 0, "stamina": 6, "action": "cheat", "rejected": true }
+]

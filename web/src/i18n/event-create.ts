@@ -1,0 +1,47 @@
+import { registerMessages } from ".";
+
+export const eventCreateCopy = {
+  "zh-Hans": {
+    title: "创建活动", intro: "约上训练员们来一场娱乐赛！先安排玩法和名额，创建后再到主持台编排分项、分队和开场",
+    loading: "正在查看活动安排", name: "活动名称", placeholder: "例如：周末娱乐杯", nameHint: "最多48个字符，选手和大屏上都会显示", nameCount: "{{count}} / 48 个字符", nameTooLong: "名字有点长，缩短到48个字符再开场吧",
+    mode: "起始玩法", modeHint: "房间先采用这个玩法。创建后可在赛程中添加其他分项，各玩法的时限和计分单独设置", missingMode: "之前选择的玩法暂时不能开场，请重新选择", savedMode: "之前选择：{{mode}}", classic: "经典活动局每局180秒，最多猜错8次，在限时内按作答成绩计分", entertainment: "这个玩法的娱乐结果单独展示，不计入正式总榜",
+    seats: "安排入场名额", players: "参赛名额", playersHint: "不含主持，最多{{count}}位选手。分队后按各玩法要求开场", spectators: "观众名额", spectatorsHint: "最多{{count}}位观众，填0则不开放旁观", invalidSeats: "参赛名额请填1至{{players}}的整数，观众名额请填0至{{spectators}}的整数",
+    tie: "同分怎么处理", shared: "同分并列", sharedDetail: "分数相同的队伍共享同一名次，不额外比较", hostTie: "同分时安排加赛", hostTieDetail: "正式同分仍并列；需要区分先后时，由主持人按开场公布的规则安排加赛",
+    create: "创建并进入主持台", busy: "正在确认安排……", confirm: "确认创建结果", back: "返回大厅", revise: "修改安排", reset: "重新安排一场",
+    blocked: "先核对之前的安排", blockedDetail: "暂时无法核对之前是否创建成功。若已有活动链接，请先打开确认；确定要另开一场时，再选「重新安排一场」", pending: "继续刚才的活动安排", pendingDetail: "活动名称、玩法、名额和规则已保留。请先确认结果，确认后进入主持台",
+    storage: "请先保留这个页面", storageDetail: "没能保存这次安排，离开或刷新后可能无法恢复。请留在这里完成创建或确认", unavailable: "暂时不能创建活动", unavailableDetail: "可以返回大厅，试试其他游玩方式",
+    identityTitle: "暂时找不到原来的主持身份", identityDetail: "请用创建活动时的浏览器继续", expiredTitle: "这次安排已超过可确认时间", expiredDetail: "先查看已有活动；需要重新安排时，请确认不会重复", uncertainTitle: "这次安排还没有确认完成", uncertainDetail: "刚才的安排还在当前页面，请确认创建结果，避免重复开场",
+    rejectedTitle: "这次安排未被接受", rejectedDetail: "请核对名额和玩法，修改安排后再试。尚未建立活动",
+    resetTitle: "要重新安排一场吗？", resetDetail: "之前的活动可能已经建立。重新安排会创建另一场，不会取消之前的活动。请先核对已有活动", keep: "保留原安排",
+    next: "创建之后", step1: "在主持台添加分项：每项选择玩法，设置分值上限与回合数", step2: "把房间分享码发给选手，大家加入后可在等待区分队", step3: "开始活动后逐项开局，每局结束总榜自动更新", step4: "需要接大屏幕时，在主持台获取大屏配对码，再用另一台设备打开观赛大屏", rules: "查看完整规则", roomName: "{{name}} 的活动房",
+  },
+  "zh-Hant": {
+    title: "建立活動", intro: "約訓練員們一起辦場同樂賽吧！先安排玩法與名額，建立後再到主持台編排項目、分隊及開場",
+    loading: "正在讀取活動安排", name: "活動名稱", placeholder: "例如：週末同樂盃", nameHint: "最多48個字，參賽者和大螢幕都會顯示這個名稱", nameCount: "{{count}} / 48 字", nameTooLong: "名稱有點長，請縮短至48個字再開場",
+    mode: "起始玩法", modeHint: "房間先使用這個玩法。建立後可在賽程加入其他項目，分別設定時限與計分", missingMode: "先前選擇的玩法目前無法開場，請重新選擇", savedMode: "先前選擇：{{mode}}", classic: "經典活動局每場180秒，最多猜錯8次，依限時內的作答成績計分", entertainment: "這個玩法的同樂成績獨立顯示，不計入正式總榜",
+    seats: "安排參加名額", players: "參賽名額", playersHint: "不含主持人，最多{{count}}位參賽者。分隊後依各玩法要求開場", spectators: "觀眾名額", spectatorsHint: "最多{{count}}位觀眾，填0表示不開放觀戰", invalidSeats: "參賽名額請填1至{{players}}的整數，觀眾名額請填0至{{spectators}}的整數",
+    tie: "同分時如何排名", shared: "同分並列", sharedDetail: "同分隊伍並列，不另行比較", hostTie: "同分時安排加賽", hostTieDetail: "正式同分仍並列；如需分出先後，由主持人依開場公布的規則安排加賽",
+    create: "建立並進入主持台", busy: "正在確認安排……", confirm: "確認建立結果", back: "返回大廳", revise: "修改安排", reset: "重新安排一場",
+    blocked: "請先確認之前的安排", blockedDetail: "暫時無法確認先前是否建立成功。若已有活動連結，請先開啟確認；確定要另開一場時，再選「重新安排一場」", pending: "繼續剛才的活動安排", pendingDetail: "活動名稱、玩法、名額和規則已保留。請先確認結果，確認後進入主持台",
+    storage: "請先保持頁面開啟", storageDetail: "未能儲存這次安排，離開或重新整理後可能無法恢復。請留在這裡完成建立或確認", unavailable: "目前無法建立活動", unavailableDetail: "可以回到大廳，試試其他玩法",
+    identityTitle: "目前找不到原來的主持人身分", identityDetail: "請用建立活動時的瀏覽器繼續", expiredTitle: "這次安排已超過可確認時間", expiredDetail: "請先查看已有活動；如需重新安排，請確認不會重複", uncertainTitle: "尚未確認這次安排是否完成", uncertainDetail: "剛才的安排仍保留在目前頁面，請確認建立結果，避免重複開場",
+    rejectedTitle: "這次安排未被接受", rejectedDetail: "請確認名額與玩法，修改安排後再試。目前尚未建立活動",
+    resetTitle: "要重新安排一場嗎？", resetDetail: "之前的活動可能已經建立。重新安排會新增另一場，不會取消先前的活動。請先確認已有活動", keep: "保留原安排",
+    next: "建立之後", step1: "在主持台新增項目，分別選擇玩法、分值上限與回合數", step2: "將房間代碼分享給參賽者，大家加入後可在等候區分隊", step3: "活動開始後依序進行各項目，每場結束後總榜自動更新", step4: "需要接大螢幕時，在主持台取得大螢幕配對碼，再用另一台裝置開啟觀賽畫面", rules: "閱讀完整玩法", roomName: "{{name}}的活動房間",
+  },
+  ja: {
+    title: "イベントを作成", intro: "トレーナー仲間を誘って、みんなで楽しむ大会を開きましょう！遊び方と定員を決めたら、進行画面で種目の追加やチーム分けができます",
+    loading: "イベントの設定を読み込み中", name: "イベント名", placeholder: "例：週末トレーナー交流杯", nameHint: "48文字以内。参加者の画面や会場スクリーンにも表示されます", nameCount: "{{count}} / 48 文字", nameTooLong: "イベント名は48文字以内にしてください",
+    mode: "最初の遊び方", modeHint: "まずはこの遊び方でルームを作ります。作成後にほかの種目を追加して、制限時間や配点を設定できます", missingMode: "以前選んだ遊び方は現在利用できません。別のものを選んでください", savedMode: "以前の選択：{{mode}}", classic: "キャラクター当ては1ラウンド180秒、不正解は8回まで。制限時間内の回答成績で得点が決まります", entertainment: "この遊び方の成績は別に表示され、総合順位には反映されません",
+    seats: "参加人数を決める", players: "参加者の定員", playersHint: "進行役を除き、最大{{count}}人。チーム分けの後、各種目に必要な人数をそろえて開始します", spectators: "観戦者の定員", spectatorsHint: "最大{{count}}人。0にすると観戦を受け付けません", invalidSeats: "参加者は1～{{players}}人、観戦者は0～{{spectators}}人の整数で指定してください",
+    tie: "同点のときの順位", shared: "同点は同順位", sharedDetail: "同じ得点のチームは同順位とし、追加の比較は行いません", hostTie: "同点なら決勝ラウンド", hostTieDetail: "同点は同順位のままです。順位を分ける必要がある場合は、開始前に発表したルールで決勝ラウンドを行います",
+    create: "作成して進行画面へ", busy: "作成結果を確認中……", confirm: "作成結果を確認", back: "ロビーへ戻る", revise: "設定を変更", reset: "別のイベントを作成",
+    blocked: "以前の設定を確認してください", blockedDetail: "前のイベントを作成できたか確認できません。リンクがある場合は先に開いて確認してください。別のイベントを作る場合は「別のイベントを作成」を選んでください", pending: "さきほどの設定から続ける", pendingDetail: "イベント名、遊び方、定員、ルールはそのままです。作成結果を確認してから進行画面へ進みます",
+    storage: "このページを開いたままにしてください", storageDetail: "設定を保存できませんでした。ページを閉じたり再読み込みしたりすると、続きから確認できない場合があります。このまま作成や結果の確認を進めてください", unavailable: "現在イベントを作成できません", unavailableDetail: "ロビーに戻って、ほかの遊び方をお試しください",
+    identityTitle: "作成時の進行役の情報が見つかりません", identityDetail: "イベントを作成したときのブラウザーで続けてください", expiredTitle: "作成結果を確認できる期限を過ぎました", expiredDetail: "まず作成済みのイベントを確認してください。新たに作成する場合は重複にご注意ください", uncertainTitle: "作成が完了したか確認できません", uncertainDetail: "さきほどの設定はこの画面に残っています。重複を避けるため、作成結果を確認してください",
+    rejectedTitle: "この設定では作成できませんでした", rejectedDetail: "定員や遊び方を確認し、設定を変更してお試しください。イベントはまだ作成されていません",
+    resetTitle: "別のイベントを作成しますか？", resetDetail: "前のイベントがすでに作成されている可能性があります。新しく作成しても、前のイベントは取り消されません。作成済みのものを先に確認してください", keep: "元の設定を残す",
+    next: "作成したら", step1: "進行画面で種目を追加し、遊び方、配点の上限、ラウンド数を設定します", step2: "ルームコードを共有しましょう。全員が参加したら、待機画面でチームを決められます", step3: "イベントを開始して、種目ごとにラウンドを進めます。終了するたびに総合順位が更新されます", step4: "大画面に映す場合は、進行画面でスクリーンのペアリングコードを発行し、別の端末で観客向けの画面を開きます", rules: "詳しい遊び方を見る", roomName: "{{name}}のイベントルーム",
+  },
+} as const;
+registerMessages("eventCreate", eventCreateCopy);

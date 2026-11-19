@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "project": "UmaGuessingGame",
+  "rights": "非官方同人插画；角色权利归 Cygames 等原权利人，图片不适用代码的 MIT 许可",
+  "references": [
+    "https://umamusume.jp/character/matikanetannhauser",
+    "https://umamusume.jp/character/specialweek",
+    "https://umamusume.jp/character/tokaiteio",
+    "https://umamusume.jp/character/goldship"
+  ],
+  "items": [
+    {
+      "file": "party-logo.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 32854,
+      "sha256": "e0710642c47a088838be79b50469b622b3ee7fc928392fb4f11c9b480f80609c",
+      "generator": "Grsai gpt-image-2.5",
+      "role": "Project logo and browser icon",
+      "copies": [
+        "web/public/assets/ui/branding/party-logo.webp"
+      ]
+    },
+    {
+      "file": "party-keyvisual.webp",
+      "width": 2048,
+      "height": 1152,
+      "bytes": 204700,
+      "sha256": "a89d37036188b8b50358f239ef1530992e9adfb4373da9da45af36f129ea6fcc",
+      "generator": "Grsai gpt-image-2.5-sunburst",
+      "role": "README and documentation homepage key visual"
+    },
+    {
+      "file": "favicon-64.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 8830,
+      "sha256": "8dda8b2aa0dff443ab9cd82910375c53d878bb9293e676583d31b80db1aa5fe6",
+      "generator": "Grsai gpt-image-2.5",
+      "role": "Project logo and browser icon",
+      "copies": [
+        "web/public/assets/ui/branding/favicon-64.png"
+      ]
+    },
+    {
+      "file": "apple-touch-icon.png",
+      "width": 180,
+      "height": 180,
+      "bytes": 51273,
+      "sha256": "dda3bd6ce22f973eb9268460087b93e8881addc0d30930a8b523f7ee178ac6d7",
+      "generator": "Grsai gpt-image-2.5",
+      "role": "Project logo and browser icon",
+      "copies": [
+        "web/public/assets/ui/branding/apple-touch-icon.png"
+      ]
+    }
+  ]
+}

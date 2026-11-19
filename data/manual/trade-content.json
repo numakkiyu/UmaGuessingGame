@@ -1,0 +1,348 @@
+{
+  "schemaVersion": "1.0.0",
+  "_note": "本文件是原创游戏设计内容，不是官方数据。每个条目的 provenance.kind 标明来源性质，notOfficialData=true 表示自拟设计值。",
+  "cards": [
+    {
+      "cardId": "speed",
+      "label": "速度档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "stamina",
+      "label": "耐力档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "power",
+      "label": "力量档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "wit",
+      "label": "智慧档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "charm",
+      "label": "魅力档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "grit",
+      "label": "毅力档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "grace",
+      "label": "仪态档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "insight",
+      "label": "洞察档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "rhythm",
+      "label": "节奏档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "bond",
+      "label": "羁绊档案",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    }
+  ],
+  "objectives": [
+    {
+      "objectiveId": "ob-01",
+      "text": "最终持有速度与耐力档案各一张",
+      "kinds": [
+        "speed",
+        "stamina"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-02",
+      "text": "最终持有力量与耐力档案各一张",
+      "kinds": [
+        "power",
+        "stamina"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-03",
+      "text": "最终持有力量与智慧档案各一张",
+      "kinds": [
+        "power",
+        "wit"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-04",
+      "text": "最终持有魅力与智慧档案各一张",
+      "kinds": [
+        "charm",
+        "wit"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-05",
+      "text": "最终持有魅力与毅力档案各一张",
+      "kinds": [
+        "charm",
+        "grit"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-06",
+      "text": "最终持有仪态与毅力档案各一张",
+      "kinds": [
+        "grace",
+        "grit"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-07",
+      "text": "最终持有仪态与洞察档案各一张",
+      "kinds": [
+        "grace",
+        "insight"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-08",
+      "text": "最终持有洞察与节奏档案各一张",
+      "kinds": [
+        "insight",
+        "rhythm"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-09",
+      "text": "最终持有羁绊与节奏档案各一张",
+      "kinds": [
+        "bond",
+        "rhythm"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-10",
+      "text": "最终持有羁绊与速度档案各一张",
+      "kinds": [
+        "bond",
+        "speed"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-11",
+      "text": "最终持有力量与速度档案各一张",
+      "kinds": [
+        "power",
+        "speed"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-12",
+      "text": "最终持有耐力与智慧档案各一张",
+      "kinds": [
+        "stamina",
+        "wit"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-13",
+      "text": "最终持有魅力与力量档案各一张",
+      "kinds": [
+        "charm",
+        "power"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-14",
+      "text": "最终持有毅力与智慧档案各一张",
+      "kinds": [
+        "grit",
+        "wit"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-15",
+      "text": "最终持有魅力与仪态档案各一张",
+      "kinds": [
+        "charm",
+        "grace"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "objectiveId": "ob-16",
+      "text": "最终持有毅力与洞察档案各一张",
+      "kinds": [
+        "grit",
+        "insight"
+      ],
+      "points": 50,
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    }
+  ]
+}

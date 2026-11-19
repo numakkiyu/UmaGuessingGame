@@ -1,0 +1,58 @@
+{
+  "deploymentMode": "lan",
+  "forms": {
+    "local": true,
+    "verified": true,
+    "solo": true,
+    "friend": true,
+    "matchmaking": true,
+    "event": true
+  },
+  "modes": {},
+  "limits": {
+    "apiRequests": 128,
+    "requestPerIPMinute": 6000,
+    "requestPerIPBurst": 1200,
+    "sessionCreatePerIPMinute": 600,
+    "sessionCreatePerIPBurst": 200,
+    "queuedCommands": 4096,
+    "rateLimitBuckets": 20000,
+    "connections": 2000,
+    "connectionsPerRoom": 220,
+    "connectionsPerSession": 2,
+    "playersPerRoom": 100,
+    "spectatorsPerRoom": 100,
+    "verifiedChallenges": 512
+  },
+  "identity": {
+    "disambiguateNames": true
+  },
+  "turnstile": {
+    "enabled": false,
+    "siteKey": "",
+    "secretEnv": "UMA_TURNSTILE_SECRET",
+    "hostnames": [],
+    "grantSeconds": 900,
+    "maxConcurrent": 8,
+    "browserSignals": false,
+    "signalPerMinute": 30,
+    "signalBurst": 10,
+    "operations": [
+      "createRoom",
+      "joinRoom",
+      "createMatchmakingTicket",
+      "createChallenge",
+      "createEvent"
+    ],
+    "adaptive": true,
+    "riskThreshold": 6,
+    "riskWindowSeconds": 60
+  },
+  "matchmaking": {
+    "lobbyEnabled": true,
+    "queueCapacity": 1000,
+    "proofBits": 16,
+    "idleEnabled": true,
+    "idleSeconds": 60
+  }
+}

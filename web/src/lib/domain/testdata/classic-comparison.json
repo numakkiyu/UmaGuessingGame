@@ -1,0 +1,650 @@
+[
+  {
+    "name": "same-and-J",
+    "guess": {
+      "characterId": "a",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": true,
+      "surface": [
+        "草地"
+      ],
+      "distance": [
+        "中",
+        "长"
+      ],
+      "runningStyle": [
+        "先",
+        "差"
+      ],
+      "sex": "牡",
+      "g1": "3-4",
+      "g23": "4-6",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "中等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "answer": {
+      "characterId": "a",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": true,
+      "surface": [
+        "草地"
+      ],
+      "distance": [
+        "中",
+        "长"
+      ],
+      "runningStyle": [
+        "先",
+        "差"
+      ],
+      "sex": "牡",
+      "g1": "3-4",
+      "g23": "4-6",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "中等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "expected": {
+      "characterId": "a",
+      "displayName": "练习甲",
+      "avatarPath": "/assets/avatars/a.webp",
+      "cells": {
+        "star": {
+          "field": "star",
+          "value": "3星",
+          "status": "correct"
+        },
+        "surface": {
+          "field": "surface",
+          "value": "草地",
+          "status": "correct"
+        },
+        "distance": {
+          "field": "distance",
+          "value": "中/长",
+          "status": "correct"
+        },
+        "style": {
+          "field": "style",
+          "value": "先/差",
+          "status": "correct"
+        },
+        "sex": {
+          "field": "sex",
+          "value": "牡",
+          "status": "correct"
+        },
+        "g1": {
+          "field": "g1",
+          "value": "3-4J",
+          "status": "correct"
+        },
+        "g23": {
+          "field": "g23",
+          "value": "4-6J",
+          "status": "correct"
+        },
+        "grade": {
+          "field": "grade",
+          "value": "中等部",
+          "status": "correct"
+        },
+        "dormitory": {
+          "field": "dormitory",
+          "value": "栗东宿舍",
+          "status": "correct"
+        }
+      },
+      "attempt": 1,
+      "correct": true
+    }
+  },
+  {
+    "name": "adjacent-and-overlap",
+    "guess": {
+      "characterId": "b",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 2,
+      "starKnown": true,
+      "surface": [
+        "草地",
+        "泥地"
+      ],
+      "distance": [
+        "英"
+      ],
+      "runningStyle": [
+        "逃"
+      ],
+      "sex": "牝",
+      "g1": "1-2",
+      "g23": "1-3",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "中等部",
+      "dormitory": "美浦宿舍",
+      "answerEligible": true
+    },
+    "answer": {
+      "characterId": "a",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": true,
+      "surface": [
+        "草地"
+      ],
+      "distance": [
+        "中",
+        "长"
+      ],
+      "runningStyle": [
+        "先",
+        "差"
+      ],
+      "sex": "牡",
+      "g1": "3-4",
+      "g23": "4-6",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "中等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "expected": {
+      "characterId": "b",
+      "displayName": "练习甲",
+      "avatarPath": "/assets/avatars/a.webp",
+      "cells": {
+        "star": {
+          "field": "star",
+          "value": "2星",
+          "status": "near"
+        },
+        "surface": {
+          "field": "surface",
+          "value": "草地/泥地",
+          "status": "near"
+        },
+        "distance": {
+          "field": "distance",
+          "value": "英",
+          "status": "near"
+        },
+        "style": {
+          "field": "style",
+          "value": "逃",
+          "status": "near"
+        },
+        "sex": {
+          "field": "sex",
+          "value": "牝",
+          "status": "wrong"
+        },
+        "g1": {
+          "field": "g1",
+          "value": "1-2",
+          "status": "near"
+        },
+        "g23": {
+          "field": "g23",
+          "value": "1-3",
+          "status": "near"
+        },
+        "grade": {
+          "field": "grade",
+          "value": "中等部",
+          "status": "correct"
+        },
+        "dormitory": {
+          "field": "dormitory",
+          "value": "美浦宿舍",
+          "status": "wrong"
+        }
+      },
+      "attempt": 1,
+      "correct": false
+    }
+  },
+  {
+    "name": "far-and-disjoint",
+    "guess": {
+      "characterId": "c",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 1,
+      "starKnown": true,
+      "surface": [
+        "泥地"
+      ],
+      "distance": [
+        "短"
+      ],
+      "runningStyle": [
+        "追"
+      ],
+      "sex": "牡",
+      "g1": "0",
+      "g23": "0",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "高等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "answer": {
+      "characterId": "a",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": true,
+      "surface": [
+        "草地"
+      ],
+      "distance": [
+        "中",
+        "长"
+      ],
+      "runningStyle": [
+        "先",
+        "差"
+      ],
+      "sex": "牡",
+      "g1": "3-4",
+      "g23": "4-6",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "中等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "expected": {
+      "characterId": "c",
+      "displayName": "练习甲",
+      "avatarPath": "/assets/avatars/a.webp",
+      "cells": {
+        "star": {
+          "field": "star",
+          "value": "1星",
+          "status": "wrong"
+        },
+        "surface": {
+          "field": "surface",
+          "value": "泥地",
+          "status": "wrong"
+        },
+        "distance": {
+          "field": "distance",
+          "value": "短",
+          "status": "wrong"
+        },
+        "style": {
+          "field": "style",
+          "value": "追",
+          "status": "near"
+        },
+        "sex": {
+          "field": "sex",
+          "value": "牡",
+          "status": "correct"
+        },
+        "g1": {
+          "field": "g1",
+          "value": "0",
+          "status": "wrong"
+        },
+        "g23": {
+          "field": "g23",
+          "value": "0",
+          "status": "wrong"
+        },
+        "grade": {
+          "field": "grade",
+          "value": "高等部",
+          "status": "wrong"
+        },
+        "dormitory": {
+          "field": "dormitory",
+          "value": "栗东宿舍",
+          "status": "correct"
+        }
+      },
+      "attempt": 1,
+      "correct": false
+    }
+  },
+  {
+    "name": "missing-never-green",
+    "guess": {
+      "characterId": "d",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": false,
+      "surface": [],
+      "distance": [],
+      "runningStyle": [],
+      "sex": "",
+      "g1": "",
+      "g23": "",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "",
+      "dormitory": "",
+      "answerEligible": true
+    },
+    "answer": {
+      "characterId": "d",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": false,
+      "surface": [],
+      "distance": [],
+      "runningStyle": [],
+      "sex": "",
+      "g1": "",
+      "g23": "",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "",
+      "dormitory": "",
+      "answerEligible": true
+    },
+    "expected": {
+      "characterId": "d",
+      "displayName": "练习甲",
+      "avatarPath": "/assets/avatars/a.webp",
+      "cells": {
+        "star": {
+          "field": "star",
+          "value": "未知",
+          "status": "wrong"
+        },
+        "surface": {
+          "field": "surface",
+          "value": "",
+          "status": "wrong"
+        },
+        "distance": {
+          "field": "distance",
+          "value": "",
+          "status": "wrong"
+        },
+        "style": {
+          "field": "style",
+          "value": "",
+          "status": "wrong"
+        },
+        "sex": {
+          "field": "sex",
+          "value": "",
+          "status": "wrong"
+        },
+        "g1": {
+          "field": "g1",
+          "value": "",
+          "status": "wrong"
+        },
+        "g23": {
+          "field": "g23",
+          "value": "",
+          "status": "wrong"
+        },
+        "grade": {
+          "field": "grade",
+          "value": "",
+          "status": "wrong"
+        },
+        "dormitory": {
+          "field": "dormitory",
+          "value": "",
+          "status": "wrong"
+        }
+      },
+      "attempt": 1,
+      "correct": true
+    }
+  },
+  {
+    "name": "set-order-and-duplicates",
+    "guess": {
+      "characterId": "e",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": true,
+      "surface": [
+        "草地"
+      ],
+      "distance": [
+        "长",
+        "中",
+        "中"
+      ],
+      "runningStyle": [
+        "差",
+        "先"
+      ],
+      "sex": "牡",
+      "g1": "3-4",
+      "g23": "4-6",
+      "g1HasJpn": false,
+      "g23HasJpn": true,
+      "grade": "中等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "answer": {
+      "characterId": "a",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": true,
+      "surface": [
+        "草地"
+      ],
+      "distance": [
+        "中",
+        "长"
+      ],
+      "runningStyle": [
+        "先",
+        "差"
+      ],
+      "sex": "牡",
+      "g1": "3-4",
+      "g23": "4-6",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "中等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "expected": {
+      "characterId": "e",
+      "displayName": "练习甲",
+      "avatarPath": "/assets/avatars/a.webp",
+      "cells": {
+        "star": {
+          "field": "star",
+          "value": "3星",
+          "status": "correct"
+        },
+        "surface": {
+          "field": "surface",
+          "value": "草地",
+          "status": "correct"
+        },
+        "distance": {
+          "field": "distance",
+          "value": "长/中/中",
+          "status": "correct"
+        },
+        "style": {
+          "field": "style",
+          "value": "差/先",
+          "status": "correct"
+        },
+        "sex": {
+          "field": "sex",
+          "value": "牡",
+          "status": "correct"
+        },
+        "g1": {
+          "field": "g1",
+          "value": "3-4J",
+          "status": "correct"
+        },
+        "g23": {
+          "field": "g23",
+          "value": "4-6J",
+          "status": "correct"
+        },
+        "grade": {
+          "field": "grade",
+          "value": "中等部",
+          "status": "correct"
+        },
+        "dormitory": {
+          "field": "dormitory",
+          "value": "栗东宿舍",
+          "status": "correct"
+        }
+      },
+      "attempt": 1,
+      "correct": false
+    }
+  },
+  {
+    "name": "J-comes-from-answer",
+    "guess": {
+      "characterId": "f",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": true,
+      "surface": [
+        "草地"
+      ],
+      "distance": [
+        "中",
+        "长"
+      ],
+      "runningStyle": [
+        "先",
+        "差"
+      ],
+      "sex": "牡",
+      "g1": "3-4",
+      "g23": "4-6",
+      "g1HasJpn": true,
+      "g23HasJpn": true,
+      "grade": "中等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "answer": {
+      "characterId": "a",
+      "displayName": "练习甲",
+      "aliases": [],
+      "imagePath": "/assets/avatars/a.webp",
+      "star": 3,
+      "starKnown": true,
+      "surface": [
+        "草地"
+      ],
+      "distance": [
+        "中",
+        "长"
+      ],
+      "runningStyle": [
+        "先",
+        "差"
+      ],
+      "sex": "牡",
+      "g1": "3-4",
+      "g23": "4-6",
+      "g1HasJpn": false,
+      "g23HasJpn": false,
+      "grade": "中等部",
+      "dormitory": "栗东宿舍",
+      "answerEligible": true
+    },
+    "expected": {
+      "characterId": "f",
+      "displayName": "练习甲",
+      "avatarPath": "/assets/avatars/a.webp",
+      "cells": {
+        "star": {
+          "field": "star",
+          "value": "3星",
+          "status": "correct"
+        },
+        "surface": {
+          "field": "surface",
+          "value": "草地",
+          "status": "correct"
+        },
+        "distance": {
+          "field": "distance",
+          "value": "中/长",
+          "status": "correct"
+        },
+        "style": {
+          "field": "style",
+          "value": "先/差",
+          "status": "correct"
+        },
+        "sex": {
+          "field": "sex",
+          "value": "牡",
+          "status": "correct"
+        },
+        "g1": {
+          "field": "g1",
+          "value": "3-4",
+          "status": "correct"
+        },
+        "g23": {
+          "field": "g23",
+          "value": "4-6",
+          "status": "correct"
+        },
+        "grade": {
+          "field": "grade",
+          "value": "中等部",
+          "status": "correct"
+        },
+        "dormitory": {
+          "field": "dormitory",
+          "value": "栗东宿舍",
+          "status": "correct"
+        }
+      },
+      "attempt": 1,
+      "correct": false
+    }
+  }
+]

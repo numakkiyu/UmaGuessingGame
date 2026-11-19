@@ -1,0 +1,58 @@
+// Names are game-menu labels, not claimed official regional product names.
+// Facts/limits here mirror the existing mode summaries; authoritative settings
+// and admission continue to come from the API.
+type ModeCopy = { name: string; description: string; difficulty: string };
+type ModeCatalog = Record<string, ModeCopy>;
+export const modes: Record<"zh-Hans" | "zh-Hant" | "ja", ModeCatalog> = {
+  "zh-Hans": {
+    classic: { name: "经典弗一把", description: "从你最熟悉的马娘猜起，顺着九项线索找到她。留意剩下的猜错机会哦", difficulty: "认得角色名就能玩" },
+    "aptitude-grid": { name: "适性交叉占格", description: "这格派谁？找出距离与跑法都合适的马娘，填满 3×3 棋盘。确认后就不能换人啦", difficulty: "熟悉距离与跑法适性" },
+    draft: { name: "公开编队", description: "预算有限，排兵布阵正是训练员的拿手好戏。为四个任务各选一位马娘，搭出你的得意阵容", difficulty: "爱琢磨阵容与预算" },
+    "race-rebuild": { name: "历史赛况复原", description: "那场比赛，谁先冲过终点？把参赛者按史实名次排好，重温熟悉的赛场", difficulty: "记得那些经典赛事" },
+    "co-race-path": { name: "同场之路", description: "她们之间隔着几场相遇？沿着原型马同场参赛的记录，把两位马娘连起来，路线越短分越高", difficulty: "喜欢翻赛事记录、找联系" },
+    sort: { name: "排序", description: "谁更高，谁先过生日？把角色卡排一排，看看这些小档案你还记得多少。相同的值记得并列", difficulty: "对角色小档案如数家珍" },
+    memory: { name: "记忆配对", description: "先看 8 秒，把大家的位置记在心里。翻开两张找一对，20 次内找齐八对头像吧", difficulty: "认认脸，拼记忆" },
+    bluff: { name: "假档案", description: "这条档案，哪句才是真的？编个像模像样的假答案混进去，看看谁能慧眼识破。骗到别人也能加分", difficulty: "脑洞和判断力都要有" },
+    "clue-puzzle": { name: "团队情报拼图", description: "你的线索，可能正是队友缺的那一条。把情报拼在一起，商量好卡片位置，再由本轮代表交答案", difficulty: "爱和队友一起推理" },
+    "strategy-race": { name: "回合制策略赛道", description: "现在冲刺，还是留点体力？八回合里安排好稳进、冲刺、恢复与跟跑，对战时一起亮出行动，争取领先", difficulty: "喜欢算体力、选时机" },
+    rapport: { name: "默契问答", description: "这次，队友会选哪一个？轮流选喜好、猜心思，锁定后一起揭晓，看看你们有多默契", difficulty: "聊得来，也猜得中" },
+    creative: { name: "创意企划", description: "给你一位马娘、一个场景，再加一点小限制。用 80 字写出有趣的企划，匿名亮相后让大家来投票", difficulty: "临场脑洞，越想越有趣" },
+    trade: { name: "档案交易", description: "想要的牌在谁手里？亮出手牌、藏好任务，三轮交换里谈成好交易，凑齐你的秘密目标", difficulty: "会商量，也会留一手" },
+    pedigree: { name: "血统", description: "沿着父系与母系找一找，把角色原型马的祖先填回血统图。名字熟悉，位置也认得吗？", difficulty: "爱研究原型马的血统" },
+    audio: { name: "听音辨马", description: "这声音，一听就知道是她？把语音和角色配成对，试试你的听声识人本领", difficulty: "熟悉大家的声音" },
+  },
+  "zh-Hant": {
+    classic: { name: "經典猜角色", description: "先猜一位熟悉的賽馬娘，跟著九項提示找出她。記得留意剩下的猜錯次數", difficulty: "認得角色名字就能玩" },
+    "aptitude-grid": { name: "適性交叉佔格", description: "這格派誰好？找出距離與跑法都合適的賽馬娘，填滿 3×3 棋盤。確認後就不能換人囉", difficulty: "熟悉距離與跑法適性" },
+    draft: { name: "公開組隊", description: "預算有限，正好考考訓練員的眼光。為四項任務各選一位賽馬娘，組出你的得意陣容", difficulty: "喜歡研究陣容與預算" },
+    "race-rebuild": { name: "歷史賽況重現", description: "那場比賽，誰先衝過終點？依史實名次排好參賽者，回味賽場上的那一刻", difficulty: "記得那些經典賽事" },
+    "co-race-path": { name: "同場之路", description: "她們之間隔著幾次相遇？沿著原型馬同場出賽的紀錄，將兩位賽馬娘連起來，路線越短分數越高", difficulty: "喜歡翻賽事紀錄、找關聯" },
+    sort: { name: "排序挑戰", description: "誰比較高，誰先過生日？把角色卡排一排，看看這些小檔案你還記得多少。相同的數值記得並列", difficulty: "熟悉角色的小檔案" },
+    memory: { name: "記憶配對", description: "先看 8 秒，記住大家的位置。每次翻兩張，試著在 20 次內找齊八組頭像吧", difficulty: "認認臉，考記性" },
+    bluff: { name: "真假檔案", description: "這條檔案，哪句才是真的？編個像模像樣的假答案混進去，看看誰能識破。成功騙過別人也能得分", difficulty: "考驗想像力與判斷力" },
+    "clue-puzzle": { name: "團隊情報拼圖", description: "你手上的線索，可能正是隊友缺的那一條。一起拼好情報、排好卡片，再由本輪代表送出答案", difficulty: "喜歡和隊友一起推理" },
+    "strategy-race": { name: "回合策略賽", description: "現在衝刺，還是留點體力？八回合裡安排好穩健前進、衝刺、恢復與跟跑，對戰時一起揭曉行動，爭取領先", difficulty: "喜歡分配體力、掌握時機" },
+    rapport: { name: "默契問答", description: "這次，隊友會選哪一個？輪流選喜好、猜心思，鎖定後一起揭曉，看看你們多有默契", difficulty: "聊得來，也猜得中" },
+    creative: { name: "創意企劃", description: "給你一位賽馬娘、一個場景，再加一點小限制。用 80 字寫出有趣的企劃，匿名展示後讓大家投票", difficulty: "即興發想，越想越有趣" },
+    trade: { name: "檔案交易", description: "想要的牌在誰手上？公開手牌、藏好任務，在三輪交換中談成好交易，湊齊你的秘密目標", difficulty: "會協商，也會留一手" },
+    pedigree: { name: "血統拼圖", description: "沿著父系與母系找一找，將角色原型馬的祖先填回血統圖。認得名字，也認得位置嗎？", difficulty: "喜歡研究原型馬的血統" },
+    audio: { name: "聽聲辨角色", description: "這聲音，一聽就知道是她？把語音和角色配成對，試試你的好耳力", difficulty: "熟悉大家的聲音" },
+  },
+  ja: {
+    classic: { name: "キャラクター当て", description: "よく知っているウマ娘から予想しよう。九つのヒントを頼りに、間違えられる回数のうちに見つけてね", difficulty: "名前が分かれば気軽に遊べます" },
+    "aptitude-grid": { name: "適性マス埋め", description: "このマスには誰がぴったり？距離と脚質を見ながら 3×3 の盤面を埋めよう。確定したマスは変更できません", difficulty: "距離・脚質の適性に詳しい方に" },
+    draft: { name: "予算内でチーム編成", description: "限られた予算で、どんなチームを組む？四つの課題に一人ずつ、適性を見てメンバーを選ぼう", difficulty: "編成や予算のやりくりが好きな方に" },
+    "race-rebuild": { name: "史実の着順クイズ", description: "あのレース、先にゴールしたのは？出走者を史実の着順に並べて、思い出の一戦を振り返ろう", difficulty: "思い出のレースがある方に" },
+    "co-race-path": { name: "同走レースでつなごう", description: "二人をつなぐレースはどこにある？モチーフ馬の同走記録をたどって、短いルートを探そう", difficulty: "レースの記録をたどるのが好きな方に" },
+    sort: { name: "並べ替えクイズ", description: "背が高いのは誰？誕生日が早いのは？プロフィールを思い出してカードを並べよう。同じ値は同順位に", difficulty: "プロフィールを覚えている方に" },
+    memory: { name: "神経衰弱", description: "8 秒間でみんなの位置を覚えよう。二枚ずつめくって、20 回以内に八組のペアを見つけてね", difficulty: "顔を覚えて、記憶力で勝負" },
+    bluff: { name: "ウソを見抜け！", description: "本当の答えはどれ？もっともらしいウソを考えて、みんなの答えに紛れ込ませよう。だますのも見抜くのも得点のチャンス", difficulty: "ひらめきと見抜く力で勝負" },
+    "clue-puzzle": { name: "チーム情報パズル", description: "そのヒント、仲間が探していた手がかりかも。情報を持ち寄ってカードを並べ、今の回答担当が答えを送ろう", difficulty: "仲間との相談や推理が好きな方に" },
+    "strategy-race": { name: "ターン制レース", description: "今こそスパート？それとも体力を温存？8 ターンの作戦を考えよう。対戦では行動を一斉に公開して、先頭を目指します", difficulty: "体力配分や駆け引きが好きな方に" },
+    rapport: { name: "以心伝心クイズ", description: "このお題、仲間ならどれを選ぶ？好みを選ぶ役と予想する役を交代して、答えを一斉に公開。どれだけ気が合うかな？", difficulty: "仲間の好み、どれだけ分かる？" },
+    creative: { name: "ひらめき企画会議", description: "ウマ娘と場面、ちょっとした条件がお題に。80 文字以内で楽しい企画を考えよう。作品は匿名で公開して、みんなで投票します", difficulty: "その場のひらめきで勝負" },
+    trade: { name: "ひみつのお題トレード", description: "欲しいカードは誰の手に？手札を見せ合い、お題は秘密のまま交渉しよう。3 ラウンドの交換で目標達成を目指してね", difficulty: "交渉や読み合いが好きな方に" },
+    pedigree: { name: "血統パズル", description: "父系と母系をたどって、モチーフ馬の祖先を血統表に当てはめよう。見覚えのある名前はあるかな？", difficulty: "モチーフ馬の血統に詳しい方に" },
+    audio: { name: "声でウマ娘当て", description: "この声、聞けばすぐに分かる？ボイスとウマ娘を組み合わせて、聞き分けに挑戦しよう", difficulty: "みんなの声に聞き覚えがある方に" },
+  },
+};

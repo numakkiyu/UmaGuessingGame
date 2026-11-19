@@ -1,12 +1,82 @@
-.git
-.next
-node_modules
-npm-debug.log
-coverage
-dist
-drizzle
-tmp-umaguessinggame
-public/assets/characters/thumbnails/*
-!public/assets/characters/thumbnails/.gitkeep
-public/assets/characters/portraits/*
-!public/assets/characters/portraits/.gitkeep
+# Git ignore rules do not exclude files from Docker build contexts
+
+# Private workspace files
+.agent/
+**/.agent/
+.cache/
+
+# Version control
+.git/
+.github/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+web/node_modules/
+docs/node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
+web/dist/
+internal/spafs/dist/
+npm-debug.log*
+pnpm-debug.log*
+
+# Go
+*.test
+*.out
+
+# Runtime data — never bake a database into an image
+data/runtime/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+server.lock
+content/
+backups/
+config/*.local.json
+
+# Content packs are mounted separately; neither stage reads raw audio downloads
+data/assets/audio/
+
+# Test and coverage reports
+coverage/
+playwright-report/
+test-results/
+.playwright/
+
+# Legacy Next.js artefacts
+.next/
+out/
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Editors and OS
+.DS_Store
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+*.swp
+.idea/
+.vscode/
+
+# Local review artefacts
+*-review.png
+*-check.png
+.publish-temp/
+.publish-temp.zip

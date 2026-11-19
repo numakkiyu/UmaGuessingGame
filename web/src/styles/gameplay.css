@@ -1,0 +1,347 @@
+/* Only mounted game pages use these surfaces; the lobby keeps its own theme. */
+.uma-audio-character {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.uma-audio-character img { flex: 0 0 auto; border-radius: 50%; }
+.uma-game-stage[data-game-mode="audio"] :is(tbody tr, .uma-audio-clip) {
+  transition: background-color 180ms ease-out, border-color 180ms ease-out;
+}
+.uma-game-stage[data-game-mode="audio"] [data-playing="true"] {
+  background-color: #eef7e7;
+  border-color: #9bc47b;
+}
+.uma-audio-submit { bottom: 12px; }
+@media (max-width: 767px) {
+  /* Keep answer controls visible while scrolling through clips on small screens. */
+  .uma-audio-submit { position: static; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .uma-game-stage[data-game-mode="audio"] :is(tbody tr, .uma-audio-clip) { transition: none; }
+}
+.uma-game-stage {
+  --color-correct: #deefcc;
+  --color-near: #fff0bd;
+  --color-wrong: #e7edf1;
+  --game-edge: #d5e3cb;
+  --game-shadow: 0 4px 0 #e5eddf, 0 12px 28px #42612d06;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  max-width: 1240px;
+  margin-inline: auto;
+  color: var(--color-ink);
+}
+.uma-game-stage > :is(header, section):has(h1) {
+  position: relative;
+  min-width: 0;
+  padding: 22px 26px;
+  border: 1px solid var(--game-edge);
+  border-radius: 18px;
+  background: linear-gradient(108deg, #fff 55%, #f0f7e8);
+  box-shadow: 0 3px 0 #e8efdf;
+}
+.uma-game-stage[data-illustration="true"] > :is(header, section):has(h1) {
+  padding-inline-end: 168px;
+  min-height: 126px;
+}
+.uma-game-stage[data-illustration="true"] > :is(header, section):has(h1)::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 18px;
+  bottom: 0;
+  width: 138px;
+  height: 136px;
+  background: var(--game-companion) center bottom / contain no-repeat;
+  pointer-events: none;
+}
+.uma-game-stage h1 {
+  font-size: clamp(1.35rem, 1rem + 1vw, 2rem);
+  font-weight: 600;
+  letter-spacing: .015em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.uma-game-stage > :is(header, section):has(h1) :is([role="timer"], .tabular-nums) {
+  font-variant-numeric: tabular-nums;
+}
+.uma-game-stage .uma-panel {
+  border-color: var(--game-edge);
+  background-color: #fff;
+  box-shadow: var(--game-shadow);
+}
+.uma-game-stage .uma-card {
+  border-color: var(--game-edge);
+  box-shadow: 0 2px 0 #e7eedf;
+}
+.uma-game-stage :is(.uma-panel, .uma-card) h2 {
+  letter-spacing: .01em;
+}
+.uma-game-stage > details,
+.uma-game-stage > aside details {
+  background: #fbfdf8;
+  box-shadow: none;
+}
+.uma-game-stage .uma-button { min-width: 0; }
+.uma-game-stage .uma-button:disabled { transform: none; }
+.uma-game-stage .uma-button:has(> svg) { row-gap: 4px; }
+.uma-game-stage [role="option"][aria-selected="true"] {
+  background-color: #eaf3df;
+}
+.uma-game-stage :is(input,textarea,[role="combobox"]) { scroll-margin-block: 100px; }
+.uma-game-stage :is([aria-pressed="true"], [aria-selected="true"]) {
+  transition: background-color 150ms ease-out, border-color 150ms ease-out;
+}
+.uma-game-companion {
+  width: 102px;
+  height: 116px;
+  flex: 0 0 auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+.uma-game-history {
+  padding: 22px 24px;
+  border: 1px solid var(--game-edge);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: var(--game-shadow);
+}
+.uma-game-answer {
+  position: relative;
+  z-index: 2;
+  padding: 22px 24px;
+  border: 1px solid var(--game-edge);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 3px 0 #e5eddf;
+}
+.uma-game-quota {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #cde1b8;
+  border-radius: 18px;
+  background: #eef7e3;
+  overflow: hidden;
+}
+.uma-game-quota::after {
+  content: "";
+  position: absolute;
+  right: -28px;
+  bottom: -48px;
+  width: 116px;
+  height: 116px;
+  border: 9px solid #dcecc9;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.uma-game-quota > * { position: relative; z-index: 1; }
+.uma-game-quota .uma-game-companion { width: 88px; height: 112px; }
+.uma-game-quota strong {
+  display: block;
+  color: #456c2d;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.uma-game-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px dashed var(--game-edge);
+  padding-top: 14px;
+}
+.uma-game-selected {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 6px 10px;
+  background: #f3f8ec;
+}
+.uma-game-selected > span { min-width: 0; overflow-wrap: anywhere; }
+.uma-game-stage .uma-guess-table { border: 0; border-radius: 0; }
+.uma-game-stage .uma-guess-table table {
+  border-collapse: separate;
+  border-spacing: 5px 6px;
+  min-width: 46rem;
+}
+.uma-game-stage .uma-guess-table :is(thead,thead th) { background: #fff; }
+.uma-game-stage .uma-guess-table thead th { color: #637957; font-size: 12px; padding: 6px; }
+.uma-game-stage .uma-guess-table tbody { border: 0; }
+.uma-game-stage .uma-guess-table tbody :is(th,td) { border: 0; }
+.uma-game-stage .uma-guess-table tbody th { padding: 8px 6px; }
+.uma-game-stage .uma-guess-table td[data-state] {
+  border-radius: 9px;
+  padding: 13px 7px;
+  text-align: center;
+  vertical-align: middle;
+}
+.uma-game-stage .uma-guess-table td[data-state] > span {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  width: max-content;
+  min-width: 60px;
+  margin-inline: auto;
+}
+.uma-game-stage .uma-guess-table td[data-state] > span > .font-semibold { grid-column: 1 / -1; grid-row: 1; }
+.uma-game-stage .uma-guess-table td[data-state] svg { width: 12px; height: 12px; align-self: center; }
+.uma-game-stage .uma-guess-table td[data-state] > span > span:last-child { font-size: 11px; }
+.uma-game-stage .uma-guess-card {
+  border-color: var(--game-edge);
+  box-shadow: 0 3px 0 #e9efdf;
+}
+.uma-game-stage .uma-flip-card {
+  border-color: #c8dcb7;
+  background: #f7faef;
+  box-shadow: 0 3px 0 #dbe7ce;
+  isolation: isolate;
+}
+.uma-game-stage .uma-flip-card__face--back {
+  background: repeating-linear-gradient(135deg, #ffffff00 0 12px, #ffffff90 12px 14px), #edf5df;
+}
+.uma-game-stage .uma-flip-card__face--back > span {
+  width: 46%;
+  aspect-ratio: 1;
+  justify-content: center;
+  border: 1px solid #b9d497;
+  border-radius: 50%;
+  background: #f8fbf0;
+  transform: rotate(-12deg);
+}
+.uma-game-stage .uma-flip-card:has(.uma-flip-card__face--front.uma-flip-card__face--turned) {
+  border-color: #7ba860;
+  background: #fff;
+}
+.uma-game-stage :is(ol,ul) { min-width: 0; }
+
+@media (min-width: 1024px) {
+  .uma-game-classic-top {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 260px;
+    gap: 20px;
+    align-items: stretch;
+  }
+}
+@media (max-width: 1023px) {
+  .uma-game-classic-top { display: grid; grid-template-columns: minmax(0,1fr) 210px; gap: 14px; }
+  .uma-game-quota .uma-game-companion { width: 62px; height: 90px; }
+}
+@media (max-width: 639px) {
+  .uma-game-stage > :is(header,section):has(h1) { padding: 15px 16px; border-radius: 14px; }
+  .uma-game-stage[data-illustration="true"] > :is(header,section):has(h1) { padding-inline-end: 86px; min-height: 98px; }
+  .uma-game-stage[data-illustration="true"] > :is(header,section):has(h1)::after { right: 4px; width: 76px; height: 90px; }
+  .uma-game-stage h1 { font-size: 21px; }
+  .uma-game-classic-top { display: flex; flex-direction: column-reverse; gap: 12px; }
+  .uma-game-quota { justify-content: flex-start; padding: 9px 14px; gap: 10px; min-height: 66px; }
+  .uma-game-quota .uma-game-companion { width: 48px; height: 54px; }
+  .uma-game-quota strong { display: inline; font-size: 21px; }
+  .uma-game-quota p { margin: 0; font-size: 12px; }
+  .uma-game-history { padding: 16px 12px; border-radius: 16px; }
+  .uma-game-answer { padding: 16px; border-radius: 15px; }
+  .uma-game-stage .uma-guess-card { padding: 12px; }
+  .uma-game-tools { gap: 6px; padding-top: 10px; }
+  .uma-game-tools > p { flex-basis: 100%; }
+  .uma-game-tools .uma-button { font-size: 13px; padding-inline: 10px; white-space: normal; }
+}
+@media (max-height: 540px) and (min-width: 600px) {
+  .uma-game-stage[data-illustration="true"] > :is(header,section):has(h1) { min-height: 0; padding: 12px 18px; }
+  .uma-game-stage[data-illustration="true"] > :is(header,section):has(h1)::after { display: none; }
+  .uma-game-stage h1 { font-size: 22px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .uma-game-stage .uma-button:not(:disabled):active { transform: translateY(2px) scale(.985); }
+  .uma-game-stage [role="option"] { transition: background-color 100ms ease-out; }
+  .uma-game-stage .uma-guess-table tbody tr:last-child { animation: uma-game-record-in 280ms cubic-bezier(.2,0,0,1) both; }
+  .uma-game-stage .uma-flip-card:has(.uma-flip-card__face--front.uma-flip-card__face--turned) > span:last-child:not(.uma-flip-card__face) { animation: uma-game-confirm 240ms cubic-bezier(.2,.8,.2,1.2); }
+  .uma-game-stage :is([aria-pressed="true"], [data-state="checked"]) { animation: uma-game-confirm 180ms ease-out; }
+}
+@keyframes uma-game-record-in {
+  from { opacity: .45; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes uma-game-confirm {
+  from { transform: scale(.96); }
+  to { transform: scale(1); }
+}
+
+.uma-game-online-support {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  align-items: start;
+  gap: 14px;
+}
+.uma-game-online-support .uma-game-companion { width: 78px; height: 106px; }
+
+/* Smaller title bands keep long localized names above the timer. */
+@media (max-width: 639px) {
+  .uma-game-stage > header:has(> [role="timer"]) > div { flex-basis: 100%; }
+}
+[data-motion="reduced"] .uma-game-stage :is(.uma-guess-table tbody tr, [aria-pressed="true"], [data-state="checked"]) {
+  animation: none;
+}
+[data-motion="reduced"] .uma-game-stage .uma-button:active { transform: none; }
+[data-motion="reduced"] .uma-game-stage .uma-flip-card > span { animation: none; }
+
+.uma-game-stage .uma-game-grid-cell {
+  border-color: #c3d6b0;
+  background: linear-gradient(145deg, #fff 65%, #f2f7ea);
+  box-shadow: 0 3px 0 #e3ecd8;
+  border-radius: 14px;
+}
+.uma-game-stage .uma-game-grid-cell[aria-pressed="true"] {
+  border-color: #638d45;
+  background: #edf5e1;
+}
+.uma-game-stage .uma-game-grid-cell:has(img) {
+  background: #edf5e1;
+  border-color: #85a96a;
+}
+.uma-game-stage .uma-sort-table__rank > .uma-code {
+  color: #456c2d;
+  font-size: 19px;
+  font-weight: 600;
+}
+.uma-game-stage .uma-sort-table__row--tied { background: #f5f8ee; }
+@media (min-width: 768px) {
+  .uma-game-stage .uma-sort-board {
+    padding: 10px 14px;
+    border: 1px solid var(--game-edge);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 3px 0 #e5eddf;
+  }
+  .uma-game-stage .uma-sort-table__rank { background: #f5f8ee; }
+}
+
+/* Decoration shares the title area, never the width of a live board or progress panel. */
+.uma-game-stage[data-illustration="true"] > .uma-game-detailed-heading {
+  padding-inline-end: 26px;
+}
+.uma-game-stage[data-illustration="true"] > .uma-game-detailed-heading::after {
+  top: 12px;
+  bottom: auto;
+  height: 100px;
+  width: 100px;
+}
+.uma-game-summary-copy { min-height: 86px; padding-inline-end: 125px; }
+@media (max-width: 639px) {
+  .uma-game-stage[data-illustration="true"] > .uma-game-detailed-heading { padding-inline-end: 16px; }
+  .uma-game-stage[data-illustration="true"] > .uma-game-detailed-heading::after { height: 90px; width: 76px; }
+  .uma-game-summary-copy { min-height: 86px; padding-inline-end: 76px; }
+}
+@media (max-height: 540px) and (min-width: 600px) {
+  .uma-game-summary-copy { min-height: 0; padding-inline-end: 0; }
+}

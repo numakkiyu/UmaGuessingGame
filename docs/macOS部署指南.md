@@ -1,179 +1,50 @@
-# macOS 部署指南
+# macOS 运行与部署
 
-本文档介绍赛马娘猜猜乐在 macOS 下的两种常见部署方式：
+macOS 适合开发、预演和小型局域网活动。长时间公网运行仍需稳定电源、网络、磁盘与服务管理；开发机器上的一次通过不代表持续运行能力
 
-1. 普通部署：Homebrew + 本机 Node.js 运行
-2. Docker 部署：Docker Desktop 统一运行
+## 原生开发
 
-如果你使用的是 MacBook 或设计联调环境，普通部署通常更方便；如果你希望结构接近正式环境，推荐 Docker Desktop。
-
-## 一、部署前准备
-
-### 建议系统环境
-
-- macOS 13 或更高版本
-- Apple Silicon 或 Intel 均可
-
-### 建议安装的软件
-
-- Xcode Command Line Tools
-- Homebrew
-- Git
-- Node.js 22+
-- PostgreSQL
-- Redis
-- Docker Desktop（可选）
-
-## 二、方案 A：普通部署
-
-### 第 1 步：安装 Homebrew
-
-如果系统还没有 Homebrew，可先安装：
+安装 Go 1.26.11、Node.js 24、pnpm 10.33.0 与 Make，确认 `go version`、`node --version`、`pnpm --version`。在仓库根目录执行：
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+corepack enable
+make web-install
+make web-build
+make embed-spa
+make embed-spa-check
+make content-compile
+make content-verify
+make dev
 ```
 
-### 第 2 步：安装 Node.js、PostgreSQL、Redis
+打开 `http://localhost:8080`。开发数据默认在 `.cache/runtime`，不要在多个终端重复启动同一数据目录。前端热更新与原生启动的区别见[快速开始](快速开始.md)
+
+## Docker Desktop
+
+先启动 Docker Desktop，确认 `docker info` 成功，再编译内容包：
 
 ```bash
-brew install node@22 postgresql@17 redis
-```
-
-根据你的芯片与 shell，把 Node.js 加到 PATH。
-
-### 第 3 步：启动 PostgreSQL 与 Redis
-
-```bash
-brew services start postgresql@17
-brew services start redis
-```
-
-### 第 4 步：创建数据库
-
-```bash
-createdb umaguessinggame
-```
-
-如果你需要独立用户，请使用 PostgreSQL 自己的用户与权限管理方式创建。
-
-### 第 5 步：拉取项目
-
-```bash
-git clone https://github.com/numakkiyu/UmaGuessingGame.git
-cd UmaGuessingGame
+make content-compile
+make content-verify
 cp .env.example .env
+docker compose config --quiet
+docker compose up -d --build
+docker compose ps
 ```
 
-编辑 `.env`，至少确认：
+容器构建会生成前端和 Go 二进制，运行内容包来自宿主的 `content/` 只读挂载。默认命名卷位于 Docker 管理的本地 Linux 文件系统，不能换成 NAS 共享数据库目录
 
-- `DATABASE_URL`
-- `REDIS_URL`
-- `APP_BASE_URL`
-- `ASSET_BASE_URL`
-- `APP_SIGNING_SECRET`
+若遇镜像或依赖网络问题，先检查 Docker Desktop 代理与出站网络；允许显式使用 Dockerfile 支持的运行镜像与 Go 代理设置，见[配置参考](配置参考.md)，不要把未知镜像源写成默认配置
 
-### 第 6 步：安装依赖并准备数据
+## 手机、平板和展示屏
+
+在系统网络设置确认 Mac 的局域网地址，将 Origin 改为实际访问地址，允许 macOS 防火墙所需入站连接。原生运行示例：
 
 ```bash
-npm install
-npm run prepare:data
-npm run db:push
-npm run db:seed
+UMA_ADDR=0.0.0.0:8080 \
+UMA_PUBLIC_ORIGIN=http://192.168.1.20:8080 \
+UMA_ALLOWED_ORIGINS=http://192.168.1.20:8080 \
+make dev
 ```
 
-### 第 7 步：启动开发模式
-
-```bash
-npm run dev
-```
-
-### 第 8 步：启动生产模式
-
-```bash
-npm run build
-npm run start
-```
-
-## 三、方案 B：Docker Desktop 部署
-
-### 第 1 步：安装 Docker Desktop
-
-安装完成后检查：
-
-```bash
-docker version
-docker compose version
-```
-
-### 第 2 步：复制环境变量
-
-```bash
-cp .env.example .env
-```
-
-### 第 3 步：使用一键脚本
-
-开发模式：
-
-```bash
-chmod +x ./scripts/docker-up-macos.sh
-./scripts/docker-up-macos.sh dev
-```
-
-生产模式：
-
-```bash
-./scripts/docker-up-macos.sh
-```
-
-### 第 4 步：手动启动
-
-开发编排：
-
-```bash
-docker compose -f docker-compose.dev.yml up -d --build
-```
-
-生产编排：
-
-```bash
-docker compose -f docker-compose.yml up -d --build
-```
-
-### 第 5 步：停止容器
-
-```bash
-docker compose -f docker-compose.yml down
-```
-
-## 四、常见问题
-
-### 1. Apple Silicon 拉镜像慢
-
-可以提前配置镜像加速，或先手动拉取基础镜像。
-
-### 2. `brew services` 没有启动成功
-
-请检查：
-
-- Homebrew 安装路径是否正确
-- 当前 shell 的 PATH 是否已生效
-- 端口是否被别的服务占用
-
-### 3. Docker 启动后端口冲突
-
-请确认：
-
-- `3000`
-- `5432`
-- `6379`
-
-没有被本机其他进程占用。
-
-## 五、推荐结论
-
-- 本机开发与设计联调：普通部署
-- 想快速复现正式环境：Docker Desktop
-- 要给公网玩家使用：仍建议迁移到 Linux 服务器，见 [Linux部署指南.md](./Linux部署指南.md)
-
+容器使用 `.env` 设置相同公开地址。手机不使用 localhost，注意来宾 Wi-Fi 的客户端隔离、VPN 及 Mac 休眠对实时连接的影响。HTTP 局域网环境不保证提供安全上下文下的全部浏览器缓存能力

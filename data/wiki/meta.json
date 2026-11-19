@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-11-08T05:34:14.875Z",
+  "sourceSite": "https://wiki.biligame.com/umamusume",
+  "sourceLicense": "内容来自 biliwiki 赛马娘WIKI（CC BY-NC-SA 3.0），原型马史实文本源自萌娘百科。仅供非商业用途。",
+  "counts": {
+    "characters": 143,
+    "withGameData": 123,
+    "withVoices": 80,
+    "totalVoices": 15222,
+    "withSecrets": 134,
+    "withPrototypeHorse": 95,
+    "withRaceHistory": 95,
+    "totalRaces": 1988,
+    "skills": 1289
+  }
+}

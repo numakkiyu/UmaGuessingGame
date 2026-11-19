@@ -1,0 +1,159 @@
+@theme {
+
+  /* 淡绿页面基底，场景图保持低不透明度 */
+  --color-page: #f4f8ed;
+  --color-page-tint: #eef5e5;
+  /* 正文区域使用白色面板 */
+  --color-panel: #ffffff;
+  --color-panel-soft: #f7faf3;
+
+  --color-ink: #304739;
+  --color-ink-strong: #12233a;
+  --color-muted: #5a705e;
+  --color-name-secondary: #52525b;
+
+  /* 亮绿用于装饰和选中底，操作按钮使用深绿 */
+  --color-brand-green: #97d81c;
+  --color-brand-green-soft: #e4f1d3;
+  --color-action-green: #367a16;
+  --color-action-green-hover: #2c6212;
+
+  /* 深蓝用于链接与焦点环 */
+  --color-blue: #3f88f7;
+  --color-blue-deep: #255fcb;
+
+  --color-gold: #f3c754;
+  /* Sakura is decorative and must remain distinct from result colors */
+  --color-sakura: #f2a0b8;
+  --color-sakura-soft: #fde8ee;
+
+  /* 三态底：颜色只是附加编码，必须同时有文字/符号 */
+  --color-correct: #4fb85f;
+  --color-near: #f1c550;
+  --color-wrong: #8d98ab;
+  --color-correct-edge: #358546;
+  --color-near-edge: #b0851a;
+  --color-wrong-edge: #6b7789;
+
+  /* 淡色分隔线与深色控件边界分别使用 */
+  --color-line: #d8e4cf;
+  --color-line-strong: #78936b;
+
+  /* 错误文字搭配浅红背景 */
+  --color-danger: #b3261e;
+  --color-danger-soft: #fdecea;
+
+
+  --font-sans: var(--uma-font);
+  --font-numeric: var(--uma-font);
+
+  /* 辅助文字最低 13px/1.5；正文 16px/1.6 由 base 层强制 */
+  --text-aux: 0.8125rem;
+  --text-aux--line-height: 1.5;
+  --text-body: 1rem;
+  --text-body--line-height: 1.6;
+  /* 任务标题 24–32，页面标题 28–40 */
+  --text-task: 1.5rem;
+  --text-task--line-height: 1.35;
+  --text-page: 1.75rem;
+  --text-page--line-height: 1.25;
+
+
+  --radius-control: 0.625rem;
+  --radius-control-lg: 0.75rem;
+  --radius-card: 1rem;
+  --radius-panel: 1.25rem;
+  --radius-panel-lg: 1.5rem;
+
+
+  --breakpoint-sm: 30rem; /* 480 */
+  --breakpoint-md: 48rem; /* 768 */
+  --breakpoint-lg: 64rem; /* 1024 */
+  --breakpoint-xl: 90rem; /* 1440 */
+
+
+  --duration-instant: 80ms;
+  --duration-quick: 120ms;
+  --duration-standard: 200ms;
+  --duration-reveal: 320ms;
+  --duration-scene: 480ms;
+  --duration-ceremony: 800ms;
+  --duration-ceremony-max: 1200ms;
+
+  --ease-primary: cubic-bezier(0.2, 0, 0, 1);
+  --ease-exit: cubic-bezier(0.3, 0, 1, 1);
+
+
+  --shadow-panel: 0 2px 8px rgb(53 96 162 / 0.06);
+  --shadow-soft: 0 1px 4px rgb(53 96 162 / 0.04);
+}
+
+/* 非 Tailwind 命名空间的令牌放在 :root，语义同上 */
+:root {
+
+  --z-base: 0;
+  --z-sticky: 10;
+  --z-popover: 30;
+  --z-select: 55; /* Above dialog/sheet controls, below toast */
+  --z-sheet: 50;
+  --z-toast: 60;
+  --z-fault: 80;
+
+
+  --touch-min: 44px;
+  --touch-comfortable: 48px;
+
+
+  --header-h: 56px;
+  --header-h-short: 48px;
+  --content-max: 1440px;
+  --gutter: 12px;
+
+
+  --gap-region: 24px;
+  --gap-related: 12px;
+}
+
+@media (width >= 30rem) {
+  :root {
+    --gutter: 16px;
+  }
+}
+
+@media (width >= 48rem) {
+  :root {
+    --gutter: 24px;
+    --header-h: 64px;
+  }
+}
+
+@media (width >= 64rem) {
+  :root {
+    --gutter: 32px;
+    --gap-region: 32px;
+  }
+}
+
+@media (width >= 90rem) {
+  :root {
+    --gutter: 48px;
+  }
+}
+
+/* viewport height <600px 时 header 收紧，主控不悬空占半屏 */
+@media (height < 37.5rem) {
+  :root {
+    --header-h: var(--header-h-short);
+    --gap-region: 16px;
+  }
+}
+
+/*
+ * 高度不足 600px 时缩减辅助内容，为主要操作留出空间。
+ * 用 @custom-variant 暴露给 Tailwind，让短屏能隐藏非必要元素，
+ * 把游戏反馈优先放进首屏。
+ */
+@custom-variant short (@media (height < 37.5rem));
+@custom-variant tall (@media (height >= 37.5rem));
+/* 矮且宽（横屏手机）：高度不足以垂直堆叠，必须改双栏 */
+@custom-variant wide-short (@media (height < 37.5rem) and (width >= 40rem));

@@ -1,0 +1,17 @@
+{
+  "slotIds": ["sire", "dam", "sireSire", "damSire"],
+  "candidateIds": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"],
+  "solution": {"sire":"a", "dam":"b", "sireSire":"c", "damSire":"e"},
+  "cases": [
+    {"name":"all four correct", "assignments":[{"slotId":"sire","horseId":"a"},{"slotId":"dam","horseId":"b"},{"slotId":"sireSire","horseId":"c"},{"slotId":"damSire","horseId":"e"}], "accepted":true, "scoreUnits":10000},
+    {"name":"three correct floors to seventy five", "assignments":[{"slotId":"sire","horseId":"a"},{"slotId":"dam","horseId":"b"},{"slotId":"sireSire","horseId":"c"},{"slotId":"damSire","horseId":"f"}], "accepted":true, "scoreUnits":7500},
+    {"name":"swapping father and mother never matches", "assignments":[{"slotId":"sire","horseId":"b"},{"slotId":"dam","horseId":"a"}], "accepted":true, "scoreUnits":0},
+    {"name":"partial one correct", "assignments":[{"slotId":"sire","horseId":"a"}], "accepted":true, "scoreUnits":2500},
+    {"name":"one horse cannot occupy two directions", "assignments":[{"slotId":"sire","horseId":"a"},{"slotId":"dam","horseId":"a"}], "accepted":false},
+    {"name":"one direction cannot hold multiple horses", "assignments":[{"slotId":"sire","horseId":"a"},{"slotId":"sire","horseId":"b"}], "accepted":false},
+    {"name":"repeating identical direction still rejected", "assignments":[{"slotId":"sire","horseId":"a"},{"slotId":"sire","horseId":"a"}], "accepted":false},
+    {"name":"unknown direction rejected", "assignments":[{"slotId":"unknown","horseId":"a"}], "accepted":false},
+    {"name":"foreign candidate rejected", "assignments":[{"slotId":"sire","horseId":"outside"}], "accepted":false},
+    {"name":"empty confirmation rejected", "assignments":[], "accepted":false}
+  ]
+}

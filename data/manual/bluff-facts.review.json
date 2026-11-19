@@ -1,0 +1,7 @@
+{
+  "_note": "本文件的 answer 由程序从事实原文中挑选可挖空子串并验证其出现在原文中；这不是人工语义审核。",
+  "_correction": "未完成人工语义审校；reviewedAt 与 reviewer 均为空，自动提取的答案不能作为已经核实的事实",
+  "reviewedAt": null,
+  "reviewer": null,
+  "facts": []
+}

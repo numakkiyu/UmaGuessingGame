@@ -1,0 +1,15 @@
+/* Keep custom rules in Tailwind layers so utilities can override element defaults */
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./base.css" layer(base);
+@import "./components.css" layer(components);
+@import "./theme.css" layer(components);
+/* Fault dialogs keep their recovery controls consistent across button variants */
+@import "./errors.css";
+@import "./utilities.css" layer(utilities);
+
+/* Use one text family and two weights across game controls and panels. */
+@layer utilities {
+  .font-medium, .font-semibold, .font-bold, .font-extrabold, .font-black { font-weight: 600; }
+}
+html body { font-family: var(--uma-font); font-synthesis: none; }

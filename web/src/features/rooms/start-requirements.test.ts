@@ -1,0 +1,25 @@
+import { expect, it } from "vitest";
+import { startIssue } from "./start-requirements";
+type Roster = Parameters<typeof startIssue>[1];
+const solo = (n: number): Roster => Array.from({length:n}, () => ({role:"player",teamId:null}));
+const team = (n: number, id: string): Roster => Array.from({length:n}, (_,i) => ({role:i===0?"team-captain":"player",teamId:id}));
+it("shows real room requirements before an invalid round can be sent", () => {
+  expect(startIssue("clue-puzzle",solo(3))).toBe("clue-puzzle");
+  expect(startIssue("clue-puzzle",team(2,"a"))).toBe("clue-puzzle");
+  expect(startIssue("clue-puzzle",team(3,"a"))).toBeNull();
+  expect(startIssue("clue-puzzle",team(3,"a"),{participants:4})).toBe("clue-puzzle");
+  expect(startIssue("rapport",solo(1))).toBe("rapport");
+  expect(startIssue("rapport",solo(2))).toBeNull();
+  expect(startIssue("rapport",[...team(2,"a"),...solo(1)])).toBe("rapport");
+  expect(startIssue("rapport",[...team(2,"a"),...team(3,"b")])).toBeNull();
+  expect(startIssue("rapport",[...team(2,"a"),...team(4,"b")])).toBe("rapport");
+  expect(startIssue("trade",solo(2))).toBe("trade");
+  expect(startIssue("trade",solo(3))).toBeNull();
+  expect(startIssue("trade",solo(9))).toBe("trade");
+  expect(startIssue("strategy-race",solo(1))).toBe("strategy-race");
+  expect(startIssue("strategy-race",solo(2))).toBeNull();
+  expect(startIssue("strategy-race",team(3,"a"))).toBe("strategy-race");
+  expect(startIssue("strategy-race",[...team(3,"a"),...team(2,"b")])).toBeNull();
+  expect(startIssue("strategy-race",team(3,"a"),{practice:true})).toBeNull();
+  expect(startIssue("classic",[{role:"player",teamId:"a"}])).toBe("captains");
+});

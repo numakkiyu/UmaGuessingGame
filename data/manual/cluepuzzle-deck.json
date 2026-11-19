@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0.0",
+  "_note": "原创游戏设计内容，不是官方数据。这些是拼图用的抽象档案卡标签，不绑定任何真实角色。",
+  "cards": [
+    {
+      "cardId": "dc-01",
+      "label": "档案 A：出赛记录",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-02",
+      "label": "档案 B：训练日志",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-03",
+      "label": "档案 C：宿舍值日表",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-04",
+      "label": "档案 D：赛事报名表",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-05",
+      "label": "档案 E：体能测试表",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-06",
+      "label": "档案 F：课程出席表",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-07",
+      "label": "档案 G：器材借用单",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-08",
+      "label": "档案 H：场地预约表",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-09",
+      "label": "档案 I：陪练安排表",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-10",
+      "label": "档案 J：补给清单",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-11",
+      "label": "档案 K：赛后复盘表",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    },
+    {
+      "cardId": "dc-12",
+      "label": "档案 L：出行计划表",
+      "provenance": {
+        "kind": "authored-design-value",
+        "notOfficialData": true,
+        "author": "modes-g08-g15",
+        "basis": "docs/玩法与规则.md"
+      }
+    }
+  ]
+}

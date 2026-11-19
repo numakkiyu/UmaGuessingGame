@@ -1,0 +1,367 @@
+{
+  "_note": "听音辨马语音审校记录，包含说话人、台词及文件校验信息",
+  "reviewedAt": "2026-11-17",
+  "reviewer": "bhcn",
+  "clips": [
+    {
+      "clipId": "clip_f168719c9580c5d3",
+      "sha256": "10cf8738939170bbb932d8897129eae7cb1bfc2560acc81f85796c8770488009",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1001",
+      "source": "https://patchwiki.biligame.com/images/umamusume/e/e6/s0etd5yl7cza64qo1gyhutojtkuykmq.mp3",
+      "jp": "ライバルのみんなと一緒に… 私、必ず強くなりますっ。",
+      "chs": "和对手们一起…… 我一定会变强。",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "519db06ac14a1427da1ced0c29c5c16018c24c8bfb15dd9487075df0b51d5afa",
+      "file": "s0etd5yl7cza64qo1gyhutojtkuykmq.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_a40b0a4411701fc3",
+      "sha256": "7914461407c655a9d049914db38a6a0078532563b611e0ee210e5312c35087ce",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1002",
+      "source": "https://patchwiki.biligame.com/images/umamusume/b/bb/eo2srh9xagort08qg440miuf9j9q73c.mp3",
+      "jp": "苦手なことも少しずつできるように なれる気がします。 トレーナーさんと一緒なら。",
+      "chs": "我现在觉得不擅长的事 也可以慢慢克服。 有训练员在的话一定没问题。",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "ff1410e434fbda0c305b4ee08c5825250b191143d568deeceb8acd481db911cc",
+      "file": "eo2srh9xagort08qg440miuf9j9q73c.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_f08966adc1787883",
+      "sha256": "f539d468845be4695b586ae1fd954b5ffeeceffdebafe598b6a27dcdc9b593e0",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1003",
+      "source": "https://patchwiki.biligame.com/images/umamusume/a/ab/cc8nbz6kxs8m9qamxgtlfj15dz31tib.mp3",
+      "jp": "今日のログインボーナスは～… これっ！",
+      "chs": "今天的登录奖励是…… 这个！",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "291a2b60eb55c2a11c3e5baa6cfe82602b0c91c8826f9bd3477996d309554ee4",
+      "file": "cc8nbz6kxs8m9qamxgtlfj15dz31tib.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_eed38643cfb765f7",
+      "sha256": "b39ac1a44909fb6577692291afd267586e5908065173e4b6b9928297749b37de",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1004",
+      "source": "https://patchwiki.biligame.com/images/umamusume/0/06/5wp3uhy001k81svq5spe2wbv8uqis27.mp3",
+      "jp": "あたしの走りが誰かの憧れに なっているのなら…お姉さん、 も～っと頑張っちゃうわ！",
+      "chs": "如果有人向往 我的奔跑的话…… 那姐姐我要更加努力了！",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "3bb7a17ff4d91190f8ae690558ea141acdf3a278ebc9bb071c1c3eae441cd1b9",
+      "file": "5wp3uhy001k81svq5spe2wbv8uqis27.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_4e3b5c56f0bac70a",
+      "sha256": "b4a551f8409e3bbd947e738cb545fa193ab926e2af575a776ef8f43bfe452903",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1005",
+      "source": "https://patchwiki.biligame.com/images/umamusume/f/f5/fksmo6av289kozto7ty2811z1thqdm7.mp3",
+      "jp": "明日はこれか。楽しみが増えたね。",
+      "chs": "明天是这个啊。又多了一个期待呢。",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "980564edf37685640059ca0ee1453af29d756d3d978231eb3c81ca5bdf1f36ee",
+      "file": "fksmo6av289kozto7ty2811z1thqdm7.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_6da2f8b1172f2689",
+      "sha256": "1cc6c7ebc728e49a521bb241ae932ccafd54702ef8c54bfc1527f286ad4f26be",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1006",
+      "source": "https://patchwiki.biligame.com/images/umamusume/7/7b/d7frewjfddpjbi2pgox2d2dzqzsk1qz.mp3",
+      "jp": "私より速いウマ娘たちが まだまだいると思うと、 胸が高鳴るな…！",
+      "chs": "一想到还有很多 比我更快的优俊少女， 我就很激动！",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "155601d48b759460a963c48af156a67147a4a88754328e3a80e5cfde3db01654",
+      "file": "d7frewjfddpjbi2pgox2d2dzqzsk1qz.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_7f0e2e36fc049c89",
+      "sha256": "2c4a3c74ba8a876b1b722058a12e526fd6ba3ccb8ad2b99ca9978a19a2cd7081",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1007",
+      "source": "https://patchwiki.biligame.com/images/umamusume/0/01/4tqls8hh8d38sjwdh6d60bxbvw6urp6.mp3",
+      "jp": "なあ、100年後ヒマ？ 空いてたら宇宙行こーぜ。",
+      "chs": "喂，100年后有空吗？ 有空的话我们去宇宙吧。",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "968481810812583ee904a69b39fdde2c36ae6d3f2ceadf47cf6beb050bf44f0a",
+      "file": "4tqls8hh8d38sjwdh6d60bxbvw6urp6.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_ba23248f7f43a773",
+      "sha256": "4ede18a5235cf2a22acc6c70d1ff15660f3af6c336f1cb3292e7948c5e8b8c83",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1008",
+      "source": "https://patchwiki.biligame.com/images/umamusume/6/64/kb6s0aacbre10knel44xh4krwxh2abh.mp3",
+      "jp": "これからも、俺は俺らしく カッコよくなってやる。 しっかりついて来いよな、相棒！",
+      "chs": "从今以后，我要按照自己的原则 活得帅气潇洒。 要紧紧跟住我啊，搭档！",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "ef9b7b6010796b9d19665b91669c4bdefb80cc656fdd9d2ab711ecaa65d0282a",
+      "file": "kb6s0aacbre10knel44xh4krwxh2abh.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_4cd70ae4f465ac06",
+      "sha256": "95fc1f2596ab9035983f06705c72c45a3b798cc02554c583c0a31729e8f52f7b",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1009",
+      "source": "https://patchwiki.biligame.com/images/umamusume/8/8c/8jgcdmzp9p1v9gmxkrz93w6ghyddhvo.mp3",
+      "jp": "アタシは1番のウマ娘になる。 アンタも1番のトレーナーになって しっかりついてきなさい！",
+      "chs": "我要成为第一优俊少女。 你也要成为第一训练员， 紧紧跟上我！",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "899b54c55cad1a7810e21244c5b2f60698f7b408f89630f09f791646eaac02ce",
+      "file": "8jgcdmzp9p1v9gmxkrz93w6ghyddhvo.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_0a4a07e865a05da6",
+      "sha256": "b9966c3aa5040462167432b449cd16594142fb291b5a320ef732b585212ee0df",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1010",
+      "source": "https://patchwiki.biligame.com/images/umamusume/4/40/ls97illcd74qpgo3pxlyblh61lj36cu.mp3",
+      "jp": "今日のログインボーナスは これみたいデスネ！",
+      "chs": "今天的登录奖励…… 好像是这个！",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "0e3b0693bf6bd7c8b50119151d40bb198f63b48210858beeaa957d05dee3e090",
+      "file": "ls97illcd74qpgo3pxlyblh61lj36cu.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_e8fe6899d92854fd",
+      "sha256": "ffcb4a5877c0b8beed6a5499b1db3f952c9818124b4e40c0c7153de3dfe0ca88",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1011",
+      "source": "https://patchwiki.biligame.com/images/umamusume/a/af/6drd1uwgmufq2ljb4ejd7z1rqa9lqob.mp3",
+      "jp": "明日は こちらがもらえるそうですよ。",
+      "chs": "明天好像能收到这个哦。",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "d6e1ae6f18c814a819975993e4cfb4858c2cdb79e32038829dfb1c0727f4c9e4",
+      "file": "6drd1uwgmufq2ljb4ejd7z1rqa9lqob.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_e57ccd178efe8383",
+      "sha256": "126db6bf14854abeeadda0cdc44cec73e53d7575c463de02c14168ea285bc6db",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1012",
+      "source": "https://patchwiki.biligame.com/images/umamusume/6/63/k3itgcfkcgx64al2qfrj0tdint2qhid.mp3",
+      "jp": "アタシが胸張ってられんのは、 いつも支えられてるからさ。 これからも頼りにしてるよトレ公！",
+      "chs": "我能如此自信， 都是多亏了你平日的支持。 今后也要拜托你啦，训练员老大！",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "0ac967d688959c41cbf752999797cb5a6c38b2d9be383c39ec0ac510fff38908",
+      "file": "k3itgcfkcgx64al2qfrj0tdint2qhid.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_81d6e50e88d93c9d",
+      "sha256": "298598e4ae9fd4b3f7ad9ad6383949f24ce074ac8d568286d2906dfb15e21df8",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1013",
+      "source": "https://patchwiki.biligame.com/images/umamusume/1/1e/bwhe165pd7iqnr5rln8uclien5395fm.mp3",
+      "jp": "好きなものを食べられるって 幸せですのね…トレーナーさんの 献立表のおかげですわ。",
+      "chs": "能吃到喜欢的东西 是一件很幸福的事…… 这都是多亏了训练员的菜单。",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "004ea1b0d8760ccc10fd5267c2bd04c0e36bd69847b07565f39418dd5ca39b29",
+      "file": "bwhe165pd7iqnr5rln8uclien5395fm.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_4777cb94810bd445",
+      "sha256": "350002f1e48521c23ea0b4b637c76cd297d21fff8c9f10aa61f1a131c786ef3e",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1014",
+      "source": "https://patchwiki.biligame.com/images/umamusume/8/83/t9mnqrwte5osxoshjane6573onljzty.mp3",
+      "jp": "ウマ娘、プリティーダービー！",
+      "chs": "闪耀！优俊少女！",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "723076e56236d017cb6744cc8535a929465d20ba30ee0d454efe180c598d5051",
+      "file": "t9mnqrwte5osxoshjane6573onljzty.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_5bf1c4b429538b88",
+      "sha256": "486dcd8c83f75697ccc00dc4009a1a0ed82a9c71da60730ab1a5bc5f23985889",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1015",
+      "source": "https://patchwiki.biligame.com/images/umamusume/d/d4/oym7vmjcqsy0g764jwbnzp6wbn8kpyf.mp3",
+      "jp": "みんなそわそわしているね。ボクに チョコレートを渡したいのなら、 遠慮する必要なんてないのに。",
+      "chs": "大家看起来都很慌张呢。 如果想送我巧克力的话， 根本不用这么犹豫啊。",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "e56eb71f1dbb5114942549c70eb6a058a0a791fab0e36961ced9f8c9a1021b7d",
+      "file": "oym7vmjcqsy0g764jwbnzp6wbn8kpyf.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    },
+    {
+      "clipId": "clip_32da7df2b63c64c0",
+      "sha256": "400f423b90eb3db7dfa455d6f4bc5dc4d6350567b405ffd353f940f49610a30a",
+      "speakerVerified": true,
+      "transcriptVerified": true,
+      "noNameSpoiler": true,
+      "listened": true,
+      "characterId": "1016",
+      "source": "https://patchwiki.biligame.com/images/umamusume/6/62/55z8cu1n7ro73sdafga0ftqc8x5lrza.mp3",
+      "jp": "最初からしつこい奴だったな、 アンタは。…ある意味、 見上げた根性だ。",
+      "chs": "你从一开始就是个难缠的家伙。 从某种意义上说， 你的毅力值得敬佩。",
+      "reviewNote": "已核对说话人与台词；WebM 文件通过解码、时长及摘要检查",
+      "sourceSHA256": "e614198d7e863e55c9f1013c70f8d437dde2e03354b8c02d70187d78003d6933",
+      "file": "55z8cu1n7ro73sdafga0ftqc8x5lrza.webm",
+      "encoding": {
+        "codec": "opus",
+        "container": "webm",
+        "targetBitrate": 40000,
+        "sampleRate": 48000,
+        "channels": 1
+      }
+    }
+  ],
+  "_history": [
+    {
+      "note": "本文件记录的是自动筛选结果，不是人工试听。listened=false 表示尚未有人试听过这段音频。",
+      "correction": "未完成真人试听；reviewedAt 与 reviewer 均为空，仅通过格式检查的片段不能用于正式题目",
+      "reviewedAt": null,
+      "reviewer": null
+    }
+  ]
+}

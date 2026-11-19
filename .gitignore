@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -25,10 +25,19 @@
 
 # production
 /build
+/dist/
 
 # misc
 .DS_Store
 *.pem
+*.key
+*.p12
+*.pfx
+*.log
+*.swp
+*.swo
+.idea/
+.vscode/
 
 # debug
 npm-debug.log*
@@ -49,7 +58,7 @@ data/runtime/
 .env*
 !.env.example
 
-# local AI collaboration files
+# Private workspace files
 AGENTS.md
 plan.md
 
@@ -59,3 +68,73 @@ plan.md
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local caches
+/.cache/
+
+# ---- UmaGuessingGame v2 (Go + Vite) ----------------------------------------
+# Go build output
+/bin/
+*.test
+coverage.out
+
+# Vite build output is regenerated; the Go server embeds/serves web/dist
+/web/dist/
+/web/node_modules/
+/internal/spafs/dist/*
+!/internal/spafs/dist/.gitkeep
+
+# Local runtime state: never commit a database or its WAL/SHM sidecars
+/.cache/runtime/
+/runtime.db
+/runtime.db-shm
+/runtime.db-wal
+/server.lock
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+server.lock
+config/*.local.json
+
+# Compiled content packs are build artefacts derived from data/.
+# The manifest is reproducible via `make content-compile`.
+/content/pack-*/
+/content/current
+
+# Local backups
+/backups/
+
+# Original audio downloads and conversion logs stay outside the repository
+/data/assets/audio/*
+!/data/assets/audio/manifest.json
+!/data/assets/audio/library/
+/data/assets/audio/library/*
+!/data/assets/audio/library/*.webm
+
+# Test reports and browser downloads
+coverage/
+playwright-report/
+test-results/
+.playwright/
+
+# Private workspace directories, including nested paths
+.agent/
+
+# Default output names from direct Go builds
+/server
+/uma-server
+/uma-content
+
+# VitePress generated site and development cache
+/docs/.vitepress/dist/
+/docs/.vitepress/cache/
+/docs/.vitepress/.temp/

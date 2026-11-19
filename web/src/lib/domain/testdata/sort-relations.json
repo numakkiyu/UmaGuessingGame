@@ -1,0 +1,7 @@
+[
+ {"name":"ascending with genuine tie","values":{"a":150,"b":160,"c":160},"groups":[["a"],["b","c"]],"correct":3,"total":3,"scoreUnits":10000},
+ {"name":"equal values must be grouped","values":{"a":150,"b":160,"c":160},"groups":[["a"],["b"],["c"]],"correct":2,"total":3,"scoreUnits":6600},
+ {"name":"false tie loses a relation","values":{"a":150,"b":160,"c":170},"groups":[["a","b"],["c"]],"correct":2,"total":3,"scoreUnits":6600},
+ {"name":"reversed order","values":{"a":150,"b":160,"c":170},"groups":[["c"],["b"],["a"]],"correct":0,"total":3,"scoreUnits":0},
+ {"name":"birthday month day without years","values":{"a":229,"b":301,"c":1231},"groups":[["a"],["b"],["c"]],"correct":3,"total":3,"scoreUnits":10000}
+]
