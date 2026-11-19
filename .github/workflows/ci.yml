@@ -261,9 +261,11 @@ jobs:
         env:
           DOCS_BASE: /UmaGuessingGame/
         run: pnpm --dir docs run build
-      - name: Install browser for documentation checks
-        run: pnpm --dir docs exec playwright install --with-deps chromium
+      - name: Check the runner browser
+        run: google-chrome --version
       - name: Check documentation layout and navigation
+        env:
+          DOCS_BROWSER_CHANNEL: chrome
         run: pnpm --dir docs run check:layout
 
   docker:
