@@ -36,6 +36,8 @@ func run(args []string) error {
 		return cmdSections(args[1:])
 	case "contract":
 		return cmdContract(args[1:])
+	case "audio-verify":
+		return cmdAudioVerify(args[1:])
 	case "-h", "--help", "help":
 		fmt.Print(usageText)
 		return nil
@@ -47,18 +49,35 @@ func run(args []string) error {
 const usageText = `content - compile the content pack
 
 Commands:
-  build     read data/ and publish a new pack under content/
-  verify    re-verify the manifest and every file checksum of a pack
-  current   print the currently published pack directory
-  sections  list the sections a pack carries
-  contract  check the served API against the project OpenAPI document
+  build         read data/ and publish a new pack under content/
+  verify        re-verify the manifest and every file checksum of a pack
+  current       print the currently published pack directory
+  sections      list the sections a pack carries
+  contract      check the served API against the project OpenAPI document
+  audio-verify  decode the full WebM/Opus library and verify its manifest
 
 Run "content build -h" for the build flags.
 `
 
 func usageError() error {
 	fmt.Fprint(os.Stderr, usageText)
-	return errors.New("expected a command: build, verify, current, sections or contract")
+	return errors.New("expected a command: build, verify, current, sections, contract or audio-verify")
+}
+
+func cmdAudioVerify(args []string) error {
+	fs := flag.NewFlagSet("audio-verify", flag.ContinueOnError)
+	root := fs.String("root", ".", "repository root containing data/")
+	if err := fs.Parse(args); err != nil {
+		return err
+	}
+	if fs.NArg() != 0 {
+		return errors.New("audio-verify: unexpected positional arguments")
+	}
+	report, err := content.VerifyAudioLibrary(*root)
+	if err != nil {
+		return err
+	}
+	return json.NewEncoder(os.Stdout).Encode(report)
 }
 
 func cmdBuild(args []string) error {

@@ -44,6 +44,7 @@ func buildContent(t *testing.T) string {
 	}
 	must("assets/faces/mf-aaa.png", "PNGDATA")
 	must("assets/avatars/1001.png", "AVATAR")
+	must("assets/audio/voice.webm", "WEBM_OPUS")
 	// A secret outside the pack that traversal must never reach.
 	if err := os.WriteFile(filepath.Join(dir, "secret.txt"), []byte("TOPSECRET"), 0o600); err != nil {
 		t.Fatalf("write secret: %v", err)
@@ -69,6 +70,33 @@ func get(t *testing.T, h http.Handler, path string) *httptest.ResponseRecorder {
 	rec := httptest.NewRecorder()
 	h.ServeHTTP(rec, httptest.NewRequest(http.MethodGet, path, nil))
 	return rec
+}
+
+func TestOpusWebMAudioTypeAndRange(t *testing.T) {
+	h := newHandler(t)
+	request := httptest.NewRequest(http.MethodGet, "/assets/audio/voice.webm", nil)
+	request.Header.Set("Range", "bytes=0-3")
+	response := httptest.NewRecorder()
+	h.ServeHTTP(response, request)
+	if response.Code != http.StatusPartialContent || response.Body.String() != "WEBM" ||
+		response.Header().Get("Content-Type") != "audio/webm; codecs=opus" ||
+		response.Header().Get("X-Content-Type-Options") != "nosniff" {
+		t.Fatalf("audio range response: status=%d headers=%v body=%q", response.Code, response.Header(), response.Body.String())
+	}
+}
+
+func TestMediaRejectsOtherAudioFormats(t *testing.T) {
+	spa, content := buildSPA(t), buildContent(t)
+	h := Handler(Config{SPADir: spa, ContentDir: content}, http.NotFoundHandler())
+	for _, ext := range []string{".mp3", ".m4a", ".ogg", ".opus", ".wav", ".aac", ".flac"} {
+		file := filepath.Join(content, "pack-test1", "public", "assets", "audio", "voice"+ext)
+		if err := os.WriteFile(file, []byte("legacy media"), 0644); err != nil {
+			t.Fatal(err)
+		}
+		if response := get(t, h, "/assets/audio/voice"+ext); response.Code != http.StatusNotFound {
+			t.Errorf("%s: got %d, want 404", ext, response.Code)
+		}
+	}
 }
 
 // TestAPIPathsAreNeverAnsweredWithHTML is the core routing guarantee: an API or
@@ -216,5 +244,48 @@ func TestMethodNotAllowed(t *testing.T) {
 	h.ServeHTTP(rec, httptest.NewRequest(http.MethodPost, "/help", nil))
 	if rec.Code != http.StatusMethodNotAllowed {
 		t.Errorf("POST status = %d, want 405", rec.Code)
+	}
+}
+
+func TestSPARejectsUntrustedScripts(t *testing.T) {
+	h := Handler(Config{SPADir: buildSPA(t)}, http.NotFoundHandler())
+	rec := get(t, h, "/matchmaking")
+	policy := rec.Header().Get("Content-Security-Policy")
+	for _, part := range []string{"script-src 'self' https://challenges.cloudflare.com", "worker-src 'self'", "object-src 'none'", "base-uri 'none'", "frame-ancestors 'none'"} {
+		if !strings.Contains(policy, part) {
+			t.Fatalf("missing directive %s", part)
+		}
+	}
+	script := strings.Split(strings.Split(policy, "script-src ")[1], ";")[0]
+	if strings.Contains(script, "'unsafe-inline'") || strings.Contains(script, "'unsafe-eval'") {
+		t.Fatal("script policy permits inline execution")
+	}
+}
+
+func TestPublishedMediaRejectsActiveFilesAndEscapingSymlinks(t *testing.T) {
+	content := buildContent(t)
+	root := filepath.Join(content, "pack-test1", "public", "assets")
+	for _, name := range []string{"evil.html", "evil.svg", "evil.js", "private.json", "secret.db"} {
+		if err := os.WriteFile(filepath.Join(root, name), []byte("private"), 0600); err != nil {
+			t.Fatal(err)
+		}
+	}
+	if err := os.Symlink(filepath.Join(content, "secret.txt"), filepath.Join(root, "escape.png")); err != nil {
+		t.Fatal(err)
+	}
+	h := Handler(Config{SPADir: buildSPA(t), ContentDir: content}, http.NotFoundHandler())
+	for _, name := range []string{"evil.html", "evil.svg", "evil.js", "private.json", "secret.db", "escape.png"} {
+		rec := httptest.NewRecorder()
+		h.ServeHTTP(rec, httptest.NewRequest("GET", "/content-assets/"+name, nil))
+		if rec.Code != 404 {
+			t.Fatalf("%s served: %d", name, rec.Code)
+		}
+	}
+	rec := httptest.NewRecorder()
+	req := httptest.NewRequest("GET", "/content-assets/faces/mf-aaa.png", nil)
+	req.Header.Set("Range", "bytes=0-2")
+	h.ServeHTTP(rec, req)
+	if rec.Code != 206 || rec.Body.String() != "PNG" {
+		t.Fatalf("media range regressed: %d %q", rec.Code, rec.Body.String())
 	}
 }

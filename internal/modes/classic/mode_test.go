@@ -205,6 +205,51 @@ func TestPrepareDeterministic(t *testing.T) {
 	}
 }
 
+func TestCompetitiveAnswersAndGuessPoolAreSeparate(t *testing.T) {
+	var entries []packEntry
+	if err := json.Unmarshal(defaultPack()["classic.characters"], &entries); err != nil {
+		t.Fatal(err)
+	}
+	guessOnly := entries[0]
+	guessOnly.ID, guessOnly.NameZh, guessOnly.AmbiguityGroup = "guess_only", "仅供猜测", "twins"
+	entries[0].AmbiguityGroup = "twins"
+	guessCards := append(append([]packEntry{}, entries...), guessOnly)
+	competitive := entries[1:]
+	pack := fakeContent{"classic.characters": modeutil.Marshal(map[string]any{"cards": competitive, "practiceCards": guessCards})}
+	subject := modes.Subject{ID: "p1", Kind: modes.SubjectPlayer}
+	for _, seed := range []string{"a", "b", "c", "d", "e", "f"} {
+		prep, priv, pub := prepareRound(t, pack, seed, `{}`, subject)
+		if priv.Answer.AmbiguityGroup != "" || priv.AnswerID == guessOnly.ID || priv.AnswerID == entries[0].ID {
+			t.Fatal("competitive answer drawn from ambiguity group")
+		}
+		if len(priv.Pool) != 7 || pub.PoolSize != 7 || len(pub.Pool) != 7 {
+			t.Fatal("comparable guess-only characters missing from frozen pool")
+		}
+		dec, st := apply(t, prep, subject, nil, 0, guessAction(guessOnly.ID))
+		if !dec.Accepted || st.Solved || st.Attempts != 1 || st.RemainingWrong != pub.Config.WrongBudget-1 {
+			t.Fatalf("guess-only character not accepted as wrong guess: %+v %+v", dec, st)
+		}
+		unknown, _ := apply(t, prep, subject, dec.State, 1, guessAction("unpublished_npc"))
+		if unknown.Accepted || unknown.Code != CodeUnknownCharacter || len(unknown.State) != 0 {
+			t.Fatal("unknown guess must not change state or consume an attempt")
+		}
+	}
+	// Restoring a round prepared before the wider pool must not change its rules.
+	old, _, oldPub := prepareRound(t, buildPack(competitive...), "old", `{}`, subject)
+	out, err := New().Project(modes.ProjectInput{Public: old.Public, Private: old.Private, Phase: modes.PhaseCollecting})
+	if err != nil {
+		t.Fatal(err)
+	}
+	var view projection
+	if err := json.Unmarshal(out, &view); err != nil || len(view.Pool) != len(oldPub.Pool) {
+		t.Fatalf("old frozen pool not preserved: %s %v", out, err)
+	}
+	dec, _ := apply(t, old, subject, nil, 0, guessAction(guessOnly.ID))
+	if dec.Accepted || dec.Code != CodeUnknownCharacter {
+		t.Fatal("restored round silently widened its pool")
+	}
+}
+
 // TestGuessWrongDecrementsBudget asserts one wrong guess costs exactly one
 // budget unit .
 func TestGuessWrongDecrementsBudget(t *testing.T) {
@@ -467,11 +512,25 @@ func TestProjectDoesNotLeakAnswer(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Project: %v", err)
 	}
-	if strings.Contains(string(out), priv.AnswerID) {
-		t.Fatalf("projection leaked the answer id %q", priv.AnswerID)
+	var projected projection
+	if err := json.Unmarshal(out, &projected); err != nil {
+		t.Fatal(err)
 	}
-	if strings.Contains(string(out), wrongID) {
-		t.Fatalf("opponent shadow leaked the guessed character id %q", wrongID)
+	if len(projected.Pool) != len(priv.Pool) || projected.Self == nil || len(projected.Self.Rows) != 0 {
+		t.Fatal("guess identities must be public without exposing opponent rows")
+	}
+	var fields map[string]json.RawMessage
+	if err := json.Unmarshal(out, &fields); err != nil {
+		t.Fatal(err)
+	}
+	var cards []map[string]json.RawMessage
+	if err := json.Unmarshal(fields["pool"], &cards); err != nil {
+		t.Fatal(err)
+	}
+	for _, card := range cards {
+		if len(card) != 3 || card["id"] == nil || card["name"] == nil || card["imagePath"] == nil {
+			t.Fatal("candidate includes fields beyond public identity")
+		}
 	}
 	if strings.Contains(string(out), `"answer"`) {
 		t.Fatal("projection included an answer field for an unauthorised viewer")

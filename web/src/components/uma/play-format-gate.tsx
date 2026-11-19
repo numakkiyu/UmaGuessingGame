@@ -1,6 +1,7 @@
 import "@/i18n/gates";
 import { useTranslation } from "@/i18n";
-import type { ReactNode } from "react";
+import { lazy, Suspense, type ReactNode } from "react";
+const AccountGate = lazy(() => import("@/features/account/account-ui").then(m => ({default:m.AccountGate})));
 import { Link } from "react-router";
 import { usePublicConfig } from "@/lib/api/queries";
 import { anyCanPlay, canPlay, type PlayForm } from "@/lib/deployment/capabilities";
@@ -17,5 +18,5 @@ export function PlayFormatGate({ form, modeId, children }: { form: PlayForm; mod
   if (!(modeId ? canPlay(config.data, modeId, form) : anyCanPlay(config.data, form))) {
     return <div className="uma-stack"><Alert tone="info" title={t("title")}>{t("detail")}</Alert><Button asChild variant="secondary"><Link to="/">{t("home")}</Link></Button></div>;
   }
-  return children;
+  return config.data?.accounts?.enabled && config.data.accounts.requireLogin[form as "friend" | "event" | "matchmaking"] ? <Suspense fallback={<LoadingBlock label={t("loading")} rows={2} />}><AccountGate>{children}</AccountGate></Suspense> : children;
 }

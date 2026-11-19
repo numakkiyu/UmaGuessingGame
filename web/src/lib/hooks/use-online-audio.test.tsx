@@ -5,7 +5,7 @@ import {normalizeAudioRound} from "@/lib/api/audio";
 class Media {
  static items:Media[]=[];oncanplaythrough:(()=>void)|null=null;onerror:(()=>void)|null=null;onended:(()=>void)|null=null;onplaying:(()=>void)|null=null;preload="";src="";play=vi.fn(async()=>{this.onplaying?.();});pause=vi.fn();load=vi.fn();removeAttribute=vi.fn();constructor(src?:string){this.src=src??"";Media.items.push(this);}
 }
-const round=normalizeAudioRound({publicState:{clips:[0,1].map(i=>({clipId:`c${i}`,audioPath:`/${i}.wav`,maxPlays:2})),candidates:[]}});
+const round=normalizeAudioRound({publicState:{clips:[0,1].map(i=>({clipId:`c${i}`,audioPath:`/assets/audio/clip${i}.webm`,maxPlays:2})),candidates:[]}});
 beforeEach(()=>{Media.items=[];vi.stubGlobal("Audio",Media);});
 afterEach(()=>{cleanup();vi.unstubAllGlobals();sessionStorage.clear();});
 async function preload(){await act(async()=>{for(const m of Media.items)if(m.preload==="auto")m.oncanplaythrough?.();});}

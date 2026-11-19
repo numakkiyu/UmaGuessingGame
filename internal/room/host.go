@@ -46,6 +46,9 @@ func (s *Service) TransferHost(ctx context.Context, sessionID, roomID string, in
 	if err != nil {
 		return HostTransfer{}, err
 	}
+	if rm.Config.Kind == "matchmaking" {
+		return HostTransfer{}, problem.Forbidden("matchmaking-reserved", "matched rooms have no player host")
+	}
 	if rm.OwnerID != sessionID {
 		return HostTransfer{}, problem.Forbidden("host-required", "only the current host may transfer the room")
 	}
@@ -177,18 +180,21 @@ func (s *Service) LeaveOrRemoveBySession(ctx context.Context, sessionID, roomID,
 
 // Control authority is rechecked after entering the write transaction, so an
 // already-resolved former host cannot race a handoff with a queued command.
-func validateControllerQ(ctx context.Context, tx *sql.Tx, actor Actor) error {
-	if !actor.Has(CapManageRoom) && !actor.Has(CapHost) {
-		return nil
-	}
+func (s *Service) validateControllerQ(ctx context.Context, tx *sql.Tx, actor Actor) error {
 	if actor.Membership != nil {
 		var active int
-		if err := tx.QueryRowContext(ctx, `SELECT COUNT(*) FROM memberships WHERE id=? AND room_id=? AND session_id=? AND left_at IS NULL AND revoked_at IS NULL`, actor.Membership.ID, actor.RoomID, actor.SessionID).Scan(&active); err != nil {
+		if err := tx.QueryRowContext(ctx, `SELECT COUNT(*) FROM memberships m JOIN sessions s ON s.id=m.session_id
+			WHERE m.id=? AND m.room_id=? AND m.session_id=? AND m.role=? AND COALESCE(m.team_id,'')=?
+			AND m.left_at IS NULL AND m.revoked_at IS NULL AND s.revoked_at IS NULL AND s.expires_at>?`,
+			actor.Membership.ID, actor.RoomID, actor.SessionID, actor.Membership.Role, actor.Membership.TeamID, s.nowMS()).Scan(&active); err != nil {
 			return problem.Internal(err)
 		}
 		if active != 1 {
 			return problem.Forbidden("membership-inactive", "this member has left the room")
 		}
+	}
+	if !actor.Has(CapManageRoom) && !actor.Has(CapHost) {
+		return nil
 	}
 	var owner string
 	if err := tx.QueryRowContext(ctx, `SELECT owner_session_id FROM rooms WHERE id=? AND status NOT IN ('archived','cancelled')`, actor.RoomID).Scan(&owner); err != nil {

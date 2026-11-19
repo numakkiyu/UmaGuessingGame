@@ -1,3 +1,4 @@
+import "@/i18n/entry";
 // Translate admission diagnostics into player guidance without exposing raw rejection codes
 
 import i18n from "@/i18n";

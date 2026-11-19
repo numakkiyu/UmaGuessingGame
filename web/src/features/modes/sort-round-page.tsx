@@ -1,3 +1,6 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
+import { MatchProgress } from "@/features/rooms/match-progress";
 import "@/i18n/sort-online";
 import { useTranslation } from "@/i18n";
 import { cardName } from "@/i18n/entities";
@@ -96,9 +99,9 @@ export function SortRoundPage() {
     setDraftSaved(saved); setNotice(saved ? "saved" : "saveFailed");
   }
   async function handleSubmit(retry = false) {
-    if (!roundId || !round || refreshing || command.busy) return;
-    if (!retry && (locked || busy || problems.length)) return;
-    const body: SortOrderCommand | undefined = retry ? undefined : {
+    if (!roundId || refreshing || command.busy) return;
+    if (!retry && (!round || locked || busy || problems.length)) return;
+    const body: SortOrderCommand | undefined = retry || !round ? undefined : {
       phaseVersion:round.phaseVersion, submissionRevision:round.submissionRevision, controlGeneration:round.controlGeneration,
       modeAction:{kind:"sort.order",groups:draft.map(group => [...group])},
     };
@@ -126,9 +129,10 @@ export function SortRoundPage() {
   }
   const connectionStatus = realtime.status === "online" ? "online" : realtime.status === "connecting" || realtime.status === "reconnecting" ? "reconnecting" : realtime.status === "stale" ? "stale" : "offline";
   const criterion = sortCriterion(round?.criterionKey ?? null);
-  return <div className="uma-stack">
+  return <GameStage mode="sort" className="uma-stack">
     <TeamRoundControl room={roomQuery.data?.room} raw={roundQuery.data} onChanged={roundQuery.refetch}/>
-    <ConnectionBar status={connectionStatus} detail={roomQuery.data?.room.name ?? t("room")}/>
+    <ConnectionBar quality={realtime.quality} status={connectionStatus} detail={roomDisplayName(roomQuery.data?.room, t("room"))}/>
+      <MatchProgress room={roomQuery.data?.room} raw={roundQuery.data}/>
     <section className="uma-panel p-4">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0"><h1 className="u-fluid-task text-[var(--color-ink)]">{t("title",{criterion})}</h1>
@@ -163,7 +167,7 @@ export function SortRoundPage() {
       </div>
       <aside className="uma-stack uma-stack--tight min-w-0"><section className="uma-card p-4"><h2 className="text-base font-bold">{t("rules")}</h2><ul className="mt-2 space-y-1.5 text-sm leading-6 text-[var(--color-muted)]"><li>{t("pairRule")}</li><li>{t("totalRule",{count:round.totalPairs})}</li><li>{t("scoreRule")}</li><li>{t("tieRule",{criterion})}</li><li>{t("revealRule")}</li><li>{t("revisionRule")}</li>{round.criterionKey === "birthday" ? <li>{t("birthdayRule")}</li> : round.criterionKey === "eventDate" || round.criterionKey === "event-date" ? <li>{t("eventRule")}</li> : null}</ul></section><Button asChild variant="secondary" block><Link to={`/rooms/${roomId}`}>{t("back")}</Link></Button></aside>
     </div> : null}
-  </div>;
+  </GameStage>;
 }
 
 export function SortResultPanel({round}:{round:SortRound}) {
@@ -178,7 +182,8 @@ export function SortResultPanel({round}:{round:SortRound}) {
     else groups.push({ids:[id],value});
   }
   return <section id="sort-result" className="uma-panel p-5" tabIndex={-1}>
-    <h2 className="u-fluid-task text-[var(--color-ink)]">{t(round.phase === "cancelled" ? "cancelled" : !revealed ? "waitingResult" : round.submitted && round.correctPairs === round.totalPairs ? "complete" : "result")}</h2>
+    <h2 className="u-fluid-task text-[var(--color-ink)]">{t(round.phase === "cancelled" ? "cancelled" : round.surrendered ? "surrendered" : !revealed ? "waitingResult" : round.submitted && round.correctPairs === round.totalPairs ? "complete" : "result")}</h2>
+    {round.surrendered && round.phase !== "cancelled" ? <p className="mt-2">{t("surrenderedDetail")}</p> : null}
     {round.phase === "cancelled" ? <p className="mt-2">{t("cancelledDetail")}</p> : revealed ? <dl className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">{[
       [t("score"),Math.floor(round.scoreUnits/100)], [t("correctPairs"),`${round.correctPairs}/${round.totalPairs}`], [t("accuracy"),`${round.totalPairs > 0 ? Math.floor(100*round.correctPairs/round.totalPairs) : 0}%`],
     ].map(([label,value]) => <div key={label} className="rounded-[var(--radius-card)] border border-[var(--color-line)] bg-[var(--color-panel-soft)] p-3"><dt className="text-sm text-[var(--color-muted)]">{label}</dt><dd className="uma-code text-xl font-bold">{value}</dd></div>)}</dl> : null}

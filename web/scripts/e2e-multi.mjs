@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {createMatchingTicket} from "./matchmaking-support.mjs";
 /** Uses isolated browser contexts to check room invitations, member-specific views and turn authority. */
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -139,17 +140,17 @@ function makeClient() {
 
 const key = () => crypto.randomUUID().replace(/-/g, "");
 
-  async function drainQueue(modeConfig) {
+  async function drainQueue() {
   // Drain shared tickets until two consecutive probes remain unmatched
   for (let attempt = 0; attempt < 8; attempt += 1) {
     const probeA = makeClient();
     await probeA.newSession(`清队列-${attempt}-a`);
-    const ticketA = await probeA.call("POST", "/matchmaking-tickets", { modeConfig }, key());
+    const ticketA = await createMatchingTicket(probeA);
     if (ticketA.status !== 201) return;
 
     const probeB = makeClient();
     await probeB.newSession(`清队列-${attempt}-b`);
-    const ticketB = await probeB.call("POST", "/matchmaking-tickets", { modeConfig }, key());
+    const ticketB = await createMatchingTicket(probeB);
 
     // 无论 A 是否配上，都取消它（取消会同时释放被它占住的 partner）
     await probeA.call("DELETE", `/matchmaking-tickets/${ticketA.json.ticketId}`, undefined, key());
@@ -165,7 +166,7 @@ const key = () => crypto.randomUUID().replace(/-/g, "");
       // 两张都 queueing 且都已取消 → 队列应该空了，再确认一次
       const probeC = makeClient();
       await probeC.newSession(`清队列-${attempt}-c`);
-      const ticketC = await probeC.call("POST", "/matchmaking-tickets", { modeConfig }, key());
+      const ticketC = await createMatchingTicket(probeC);
       if (ticketC.status === 201) {
         const paired = ticketC.json?.status !== "queueing";
         await probeC.call("DELETE", `/matchmaking-tickets/${ticketC.json.ticketId}`, undefined, key());
@@ -1119,7 +1120,7 @@ async function main() {
 
   /* F. 匹配成功后的状态流转 */
   {
-    // Assert matching state transitions and distinct host/player capabilities
+    // Random matches start automatically; neither participant manages the room.
     // Drain stale tickets through the API to keep shared matchmaking queues isolated
     const mmFirst = makeClient();
     await mmFirst.newSession("先建票者");
@@ -1136,13 +1137,13 @@ async function main() {
 
     await drainQueue(MM_CFG);
 
-    const ticketFirst = await mmFirst.call("POST", "/matchmaking-tickets", { modeConfig: MM_CFG }, key());
+    const ticketFirst = await createMatchingTicket(mmFirst);
     assert("匹配 甲建票成功且初始为 queueing", ticketFirst.status === 201 && ticketFirst.json?.status === "queueing", {
       status: ticketFirst.status,
       ticketStatus: ticketFirst.json?.status,
     });
 
-    const ticketSecond = await mmSecond.call("POST", "/matchmaking-tickets", { modeConfig: MM_CFG }, key());
+    const ticketSecond = await createMatchingTicket(mmSecond);
     note("乙建票返回状态", { status: ticketSecond.json?.status, roomId: ticketSecond.json?.roomId });
 
     // 重新读取两张票，避免只看建票响应体（响应可能不是落库后的真实状态）
@@ -1217,14 +1218,10 @@ async function main() {
       },
     );
 
-    /*
-     * 核心断言：房主归属。
-     * 先建票者拿 manage-room，后接受者只有 play。
-     * 这条能抓住「owner 取当前触发者」的 bug。
-     */
+    // Both participants have identical play authority, independent of arrival order.
     const firstCaps = mmRoomFirst.json?.viewer?.capabilities ?? [];
     const secondCaps = mmRoomSecond.json?.viewer?.capabilities ?? [];
-    assert("匹配 先建票者拥有 manage-room", firstCaps.includes("manage-room"), { capabilities: firstCaps });
+    assert("匹配 先建票者只有参赛权限", !firstCaps.includes("manage-room") && firstCaps.includes("play"), { capabilities: firstCaps });
     assert(
       "匹配 后接受者只有 play（不因后接受而获得管理权）",
       secondCaps.includes("play") && !secondCaps.includes("manage-room"),
@@ -1244,7 +1241,7 @@ async function main() {
     );
 
     const firstStarts = await mmFirst.call("POST", `/rooms/${matchRoomId}/rounds`, { modeConfig: MM_CFG }, key());
-    assert("匹配 先建票者实际开局成功", firstStarts.status === 201, {
+    assert("匹配 先建票者也不能重复开局", firstStarts.status === 403, {
       status: firstStarts.status,
       code: firstStarts.json?.code,
     });
@@ -1267,8 +1264,8 @@ async function main() {
 
     await drainQueue(MM_CFG2);
 
-    const dTicketFirst = await declineFirst.call("POST", "/matchmaking-tickets", { modeConfig: MM_CFG2 }, key());
-    const dTicketSecond = await declineSecond.call("POST", "/matchmaking-tickets", { modeConfig: MM_CFG2 }, key());
+    const dTicketFirst = await createMatchingTicket(declineFirst);
+    const dTicketSecond = await createMatchingTicket(declineSecond);
 
     // 甲拒绝
     const declined = await declineFirst.call(

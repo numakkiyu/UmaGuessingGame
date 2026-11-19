@@ -1,38 +1,34 @@
+import { usePlayerName } from "@/lib/player-name";
+import "@/i18n/entry";
 // An empty contentPackId selects the active pack on the server instead of pinning a build-specific identifier
 import { Check, Loader2 } from "lucide-react";
 import { useCallback, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { useApi } from "@/lib/api";
-import { createIdempotencyKey, describeFailure, type Failure } from "@/lib/api/client";
+import { createIdempotencyKey, describeFailure, localizeFailure, type Failure } from "@/lib/api/client";
 import { useModes, usePublicConfig } from "@/lib/api/queries";
 import { canPlay } from "@/lib/deployment/capabilities";
 import { cn } from "@/lib/utils";
 import { describeUnavailable } from "@/lib/copy/unavailable";
+import { useTranslation } from "@/i18n";
+import "@/i18n/sort-start";
 
 type Step = "session" | "room" | "round" | "start";
 type StepState = "pending" | "active" | "done" | "failed";
 
-const STEP_LABELS: Record<Step, string> = {
-  session: "正在准备你的座位",
-  room: "创建单人房间",
-  round: "生成本局题目",
-  start: "开始接受提交",
-};
-
 const STEP_ORDER: Step[] = ["session", "room", "round", "start"];
 
 export function SortPlayPage() {
-  const { api, session, ensureSession } = useApi();
+  const { t } = useTranslation(["sortStart", "entry", "common"]);
+  const { api, ensureSession } = useApi();
   const navigate = useNavigate();
   const modesQuery = useModes();
   const config = usePublicConfig();
   const soloAllowed = !config.isPending && !config.isError && canPlay(config.data, "sort", "solo");
 
-  const [displayName, setDisplayName] = useState(session?.displayName ?? "");
+  const displayName = usePlayerName();
   const [steps, setSteps] = useState<Record<Step, StepState>>({
     session: "pending",
     room: "pending",
@@ -40,7 +36,8 @@ export function SortPlayPage() {
     start: "pending",
   });
   const [running, setRunning] = useState(false);
-  const [failure, setFailure] = useState<Failure | null>(null);
+  const [storedFailure, setFailure] = useState<Failure | null>(null);
+  const failure = storedFailure ? localizeFailure(storedFailure) : null;
   const [keys, setKeys] = useState<Partial<Record<Step, string>>>({});
 
   const mode = (modesQuery.data ?? []).find((item) => item.modeId === "sort");
@@ -67,7 +64,7 @@ export function SortPlayPage() {
 
     try {
       setStep("session", "active");
-      const name = displayName.trim() || "玩家";
+      const name = displayName.trim() || t("start.defaultPlayer", { ns: "entry" });
       await ensureSession(name);
       setStep("session", "done");
 
@@ -77,7 +74,7 @@ export function SortPlayPage() {
       setStep("room", "active");
       const roomResponse = await api.createRoom(
         {
-          name: `${name}的排序对局`,
+          name: t("start.defaultRoom", { ns: "entry", name, mode: t("title") }),
           kind: "solo",
           modeConfig: {
             modeId: "sort",
@@ -135,15 +132,14 @@ export function SortPlayPage() {
     } finally {
       setRunning(false);
     }
-  }, [api, displayName, ensureSession, keys, mode, navigate, running, soloAllowed]);
+  }, [api, displayName, ensureSession, keys, mode, navigate, running, soloAllowed, t]);
 
   return (
     <div className="uma-prose mx-auto flex flex-col gap-5">
       <header>
-        <h1 className="u-fluid-title text-[var(--color-ink)]">按身高排序</h1>
+        <h1 className="u-fluid-title text-[var(--color-ink)]">{t("title")}</h1>
         <p className="mt-2 text-base leading-7 text-[var(--color-ink)]">
-          系统给出若干张马娘卡，你要按<strong>身高从小到大</strong>排好。
-          排序值相同的卡要标成并列——只排顺序、不标并列会被判错
+          {t("intro")}
         </p>
       </header>
 
@@ -153,21 +149,9 @@ export function SortPlayPage() {
         </Alert>
       ) : null}
 
-      {!config.isPending && !soloAllowed ? <Alert tone="info" title="这里暂未开放单人对局">可以返回大厅选择其他游玩方式</Alert> : null}
+      {!config.isPending && !soloAllowed ? <Alert tone="info" title={t("start.soloClosed", { ns: "entry" })}>{t("start.soloClosedDetail", { ns: "entry" })}</Alert> : null}
 
       <section className="uma-panel flex flex-col gap-4 p-5">
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="sort-name">显示名</Label>
-          <Input
-            id="sort-name"
-            value={displayName}
-            onChange={(event) => setDisplayName(event.target.value)}
-            placeholder="其他玩家看到的名字"
-            maxLength={24}
-            disabled={running}
-            autoComplete="nickname"
-          />
-        </div>
 
         <Button
           variant="primary"
@@ -176,7 +160,7 @@ export function SortPlayPage() {
           disabled={running || Boolean(unavailableCopy) || !soloAllowed}
           block
         >
-          {running ? "正在开局……" : "开始对局"}
+          {t(running ? "start.busy" : "start.play", { ns: "entry" })}
         </Button>
 
         {running || failure ? (
@@ -201,7 +185,7 @@ export function SortPlayPage() {
                     />
                   )}
                   <span className={cn(state === "pending" ? "text-[var(--color-muted)]" : "font-semibold text-[var(--color-ink)]")}>
-                    {STEP_LABELS[step]}
+                    {t(`start.steps.${step}`, { ns: "entry" })}
                   </span>
                 </li>
               );
@@ -215,14 +199,14 @@ export function SortPlayPage() {
             title={failure.title}
             action={
               <Button variant="secondary" onClick={() => void start()}>
-                再试一次
+                {t("actions.retry", { ns: "common" })}
               </Button>
             }
           >
             <p>{failure.detail}</p>
             {failure.diagnosticId ? (
               <p className="mt-1 text-[length:var(--text-aux)]">
-                问题编号：<span className="uma-code">{failure.diagnosticId}</span>
+                {t("state.problemId", { ns: "common" })}：<span className="uma-code">{failure.diagnosticId}</span>
               </p>
             ) : null}
           </Alert>
@@ -237,21 +221,19 @@ export function SortPlayPage() {
       */}
       <details className="uma-card uma-disclosure p-4">
         <summary className="cursor-pointer text-base font-bold text-[var(--color-ink)]">
-          计分方式
+          {t("scoring")}
         </summary>
         <ul className="mt-2 space-y-1.5 text-sm leading-6 text-[var(--color-muted)]">
-          <li>按「关系对」计分：任意两张卡的先后关系正确即得 1 对</li>
-          <li>得分 = 100 × 正确关系对 ÷ 总关系对</li>
-          <li>全部正确得满分</li>
+          {[0, 1, 2].map(index => <li key={index}>{t(`rules.${index}`)}</li>)}
         </ul>
       </details>
 
       <div className="flex flex-col gap-2 border-t border-[var(--color-line)] pt-4 sm:flex-row">
         <Button asChild variant="secondary" size="primary">
-          <Link to="/help">先看规则</Link>
+          <Link to="/help">{t("actions.rules", { ns: "common" })}</Link>
         </Button>
         <Button asChild variant="secondary" size="primary">
-          <Link to="/">返回大厅</Link>
+          <Link to="/">{t("actions.home", { ns: "common" })}</Link>
         </Button>
       </div>
     </div>

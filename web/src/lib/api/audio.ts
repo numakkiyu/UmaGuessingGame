@@ -68,11 +68,7 @@ export function normalizeAudioRound(raw: unknown): AudioRound {
   for (const entry of rawClips) {
     const item = asRecord(entry);
     if (!item) continue;
-    /*
-     * clipId 优先；退化时用 audioPath 的末段（内容包没有 clipId 字段）。
-     * 这不是"编造 ID"，而是给同一份数据一个稳定标识——同一 audioPath 必然同一条。
-     */
-    // 实测字段是 audioPath；契约写的是 assetUrl，两个都读
+    // 缺少 clipId 时使用音频文件名；兼容 audioPath 与 assetUrl。
     const audioPath = str(item["audioPath"]) ?? str(item["assetUrl"]) ?? "";
     const clipId =
       str(item["clipId"]) ??

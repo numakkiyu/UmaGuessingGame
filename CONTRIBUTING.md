@@ -1,5 +1,7 @@
 # 参与贡献
 
+[简体中文](docs/参与贡献.md) · [繁體中文](docs/zh-Hant/参与贡献.md) · [日本語](docs/ja/参与贡献.md)
+
 欢迎修复问题、补充规则测试、改善界面和修正资料。提交前请先搜索已有 Issue；涉及玩法规则、数据模型或部署方式的大改动，先说明玩家遇到的问题、预期行为及兼容方案
 
 ## 建立开发环境
@@ -34,33 +36,13 @@ make dev
 
 ## 注释与文档
 
-按[注释与文档规范](docs/注释与文档规范.md)处理。保留必要的契约、并发条件、单位和安全原因，去掉复述代码、内部任务编号和执行过程说明。Go 文档遵循 Go Doc Comments，生成标记、编译指令和版权头不能随意修改
+注释说明接口约束、并发条件、单位和安全原因。Go 文档遵循 Go Doc Comments，生成标记、编译指令和版权头不能随意修改
 
-公开文档描述当前行为，历史设计与调查记录单独存档。文档修改应保持信息可追溯，过期操作说明与现行指南分开维护。不要将“测试通过”永久写成无环境、无日期的质量承诺
+公开文档描述当前行为，历史设计与调查记录单独存档。文档修改应保持信息可追溯，过期操作说明与现行指南分开维护。测试结果放在对应 Issue 或 Pull Request 中，公开指南说明当前行为与用法
 
-## 验证
+## 开发工具
 
-按[测试与质量检查](docs/测试与质量检查.md)选择检查范围。常用命令：
-
-```bash
-make fmt-check
-make vet
-make test
-make test-race
-make web-typecheck
-make web-lint
-make web-copy-check
-make web-test
-make web-build
-make web-size
-make embed-spa
-make embed-spa-check
-make content-verify
-pnpm --dir web run api:check
-go run ./cmd/content contract --spec api/openapi.json --routes
-```
-
-只改文档也要验证链接、命令和路径。涉及真实联机时，用独立数据目录与测试账号/会话进行验证，不能连接他人正在使用的活动房间。不要为“通过检查”关闭断言、伪造审校台账或把真实失败改成静默跳过
+[开发命令](docs/测试与质量检查.md)列出测试、构建、类型和接口工具。运行数据、测试截图与报告不加入版本控制
 
 ## 提交与 Pull Request
 
@@ -73,28 +55,19 @@ go run ./cmd/content contract --spec api/openapi.json --routes
 | 源码、测试、依赖清单与锁文件 | 提交；不要提交依赖安装目录 |
 | Dockerfile、Compose、CI、Makefile、公开配置示例 | 提交，保证干净克隆可以构建和部署 |
 | 题库快照、来源清单、审校台账、实际使用的图片 | 提交，保留来源与许可说明 |
-| 正式音频 | 来源明确且经审校后保存在 `data/assets/audio/`；按文件名添加忽略例外，同次提交清单与绑定 SHA-256 的审校台账 |
+| 语音素材库 | 40 kbps VBR、Opus / WebM 存放在 `data/assets/audio/library/`，提交来源、文件摘要、大小和时长 |
+| 听音题库 | 在试听台账中核对说话人、台词与姓名提示，编译器仅发布已确认片段 |
 | 前端编译目录、Go 二进制、编译题包、构建归档 | 不提交；由构建流程生成，发布包单独保存 |
 | 运行数据库及旁文件、备份、密钥、本地配置、日志与测试报告 | 不提交 |
 | 批量下载音频、资料获取缓存、一次性工具与私人工作资料 | 不提交 |
 
-素材不因扩展名是图片或音频就自动获得提交资格。禁止将整套下载缓存加入仓库；正式资源需要明确用途、来源及审校状态。单文件上限为 50 MiB，更大的必要资源使用经维护者确认的发布附件或外部存储，不能通过拆分绕过限制
+素材不因扩展名是图片或音频就自动获得提交资格。原始下载缓存不提交；正式资源需要明确用途、来源及审校状态。单文件上限为 50 MiB，更大的必要资源使用经维护者确认的发布附件或外部存储，不能通过拆分绕过限制
 
-音频默认排除，正式片段逐项添加 `!/data/assets/audio/<文件名>.mp3` 例外。提交检查只允许根目录中的 MP3，且字节摘要必须匹配 `data/manual/audio-clips.review.json` 中具备审校人、日期及完整试听确认的条目；未审校的批量下载不因文件存在就能提交。合成测试音频保留在 `internal/content/testdata/`，不用于正式题目
+音频素材以 40 kbps VBR、Opus / WebM 存放在 `data/assets/audio/library/`，`data/assets/audio/manifest.json` 记录来源、文件的 SHA-256、大小和时长。加入听音题前，须在 `data/manual/audio-clips.review.json` 完成说话人、台词、姓名提示与试听核对。提交检查核对实际文件与清单。合成测试音频放在 `internal/content/testdata/`
 
 `internal/spafs/dist/.gitkeep` 只用于保证未构建时 Go 的嵌入目录存在。实际前端文件由 `make web-build`、`make embed-spa` 生成，不随源码提交；需要验证真实嵌入页面的测试必须先构建。CI 在前端构建成功后将产物传给 Go 检查，避免依赖维护者机器上的旧构建
 
-提交前检查暂存区；`repo:check` 检查 Git 索引中的实际内容，不能只依据工作目录或忽略规则判断：
-
-```bash
-git add -A
-git diff --cached --stat
-git diff --cached --check
-pnpm run repo:check
-git commit -m "fix: describe the concrete change"
-```
-
-忽略规则不会自动移除已跟踪文件；如果此前误入库，需只从索引移除并保留必要本地数据。不要用强制添加绕过提交检查。CI 同样运行仓库范围检查，本地提交与推送是两个独立操作
+`pnpm run repo:check` 读取 Git 索引，检查私人文件、构建产物、音频来源和文件体积。完整规则见 `web/scripts/check-repository.mjs`
 
 界面改动附关键尺寸截图，说明桌面表格与手机卡片的信息是否一致；行为或安全改动附真实装配链的回归验证。生成类型应与契约一起提交，运行数据和内部证据不随 PR 上传
 

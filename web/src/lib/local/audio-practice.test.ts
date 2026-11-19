@@ -3,7 +3,7 @@ import { audioPracticeResult, changeAudioPairs, reportPracticeAudio, startAudioP
 import { createAudioGame, readAudioPack, validateAudioArchive, type AudioPack } from "./audio-practice-store";
 import { sha256 } from "./checksum";
 import { audioPlaybackGain } from "@/lib/domain/audio-level";
-function facts() { const clips = Array.from({ length: 8 }, (_, i) => ({ clipId: `clip-${i}`, characterId: `char-${i}`, characterName: `合成角色${i}`, transcript: "合成信号测试，不是真实角色台词", audioPath: `/assets/audio/tone-${i}.mp3`, durationMillis: 1000, byteLength: 99, sha256: "a".repeat(64) })); return { clips, mediaBytes: 792 }; }
+function facts() { const clips = Array.from({ length: 8 }, (_, i) => ({ clipId: `clip-${i}`, characterId: `char-${i}`, characterName: `合成角色${i}`, transcript: "合成信号测试，不是真实角色台词", audioPath: `/assets/audio/tone-${i}.webm`, durationMillis: 1000, byteLength: 99, sha256: "a".repeat(64) })); return { clips, mediaBytes: 792 }; }
 function pack(content = facts()): AudioPack { const contentJSON = JSON.stringify(content); return { schemaVersion: 1, modeId: "audio", rulesVersion: "2.0.0-draft.1", datasetVersion: "test-data", contentPackVersion: "test-pack", sourceUrls: ["https://example.invalid/"], reviewStatus: "source-snapshot", contentJSON, sha256: sha256(contentJSON), byteLength: new TextEncoder().encode(contentJSON).length }; }
 describe("audio practice rules and recovery", () => {
   it("levels quiet clips within a bounded gain and peak ceiling",()=>{
@@ -43,8 +43,8 @@ describe("audio practice rules and recovery", () => {
   it("rejects unsafe media, duplicate identities, changed clocks and budgets; discards imported score claims", () => {
     const p = pack(), g = createAudioGame(p, 4, 1000);
     for (const patch of [{ clipIds: [g.clipIds[0], g.clipIds[0]] }, { candidateIds: [...g.candidateIds, "foreign"] }, { failedIds: ["unknown"] }, { plays: { [g.clipIds[0]!]: 3 } }, { plays: { [g.clipIds[0]!]: 1 }, revision: 0 }, { deadlineAt: g.deadlineAt + 1 }, { submitted: [], submittedAt: 1001, submissions: 1, revision: 1, updatedAt: 1001 }]) expect(() => validateAudioArchive({ schemaVersion: 1, pack: p, game: { ...g, ...patch } })).toThrow();
-    const restored = validateAudioArchive({ schemaVersion: 1, pack: p, game: { ...g, scoreUnits: 10000, rank: 1, audioPath: "https://evil.invalid/x.mp3" } }); expect(restored.game).not.toHaveProperty("scoreUnits"); expect(restored.game).not.toHaveProperty("audioPath");
-    for (const path of ["https://evil.invalid/x.mp3", "//evil.invalid/x.mp3", "/assets/audio/%2e%2e/x.mp3", "/assets/audio/../x.mp3"]) { const f = facts(); f.clips[0]!.audioPath = path; expect(() => readAudioPack(pack(f))).toThrow(); }
+    const restored = validateAudioArchive({ schemaVersion: 1, pack: p, game: { ...g, scoreUnits: 10000, rank: 1, audioPath: "https://evil.invalid/x.webm" } }); expect(restored.game).not.toHaveProperty("scoreUnits"); expect(restored.game).not.toHaveProperty("audioPath");
+    for (const path of ["https://evil.invalid/x.webm", "//evil.invalid/x.webm", "/assets/audio/%2e%2e/x.webm", "/assets/audio/../x.webm", "/assets/audio/old.mp3", "/assets/audio/other.opus"]) { const f = facts(); f.clips[0]!.audioPath = path; expect(() => readAudioPack(pack(f))).toThrow(); }
     const duplicate = facts(); duplicate.clips[1]!.characterId = duplicate.clips[0]!.characterId; expect(() => readAudioPack(pack(duplicate))).toThrow();
     expect(() => readAudioPack({ ...p, byteLength: p.byteLength + 1 })).toThrow(); expect(() => readAudioPack({ ...p, sha256: "0".repeat(64) })).toThrow();
     expect(sha256(new Uint8Array([0, 255, 128, 1]))).toBe("6509423fd9da5c225d2f8619ffae394b40f9f7686fee55a38c54b1424ac65f46");

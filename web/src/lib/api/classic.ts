@@ -1,12 +1,12 @@
 import type { LocalizedNames } from "@/i18n/entities";
 
-import type { components } from "./types";
+import type { Character, components } from "./types";
 
 type Schemas = components["schemas"];
 
 export type CellStatus = "correct" | "near" | "wrong" | "unknown";
 
-/** 九个字段的稳定顺序（与 的字段顺序一致） */
+/** 猜测记录的九项线索显示顺序 */
 export const FIELD_ORDER = [
   "star",
   "surface",
@@ -28,15 +28,15 @@ export const FIELD_LABELS: Record<ClassicField, string> = {
   distance: "距离",
   style: "跑法",
   sex: "性别",
-  g1: "G1 适性",
-  g23: "G2/G3 适性",
-  grade: "学段",
+  g1: "G1 胜场",
+  g23: "G2/G3 胜场",
+  grade: "学部",
   dormitory: "宿舍",
 };
 
 /** 手机默认展示的核心四项 */
 export const CORE_FIELDS: readonly ClassicField[] = ["star", "surface", "distance", "style"];
-/** 其余五项（展开后完整可达， 要求展开后完整） */
+/** 手机端展开后显示的其余五项线索 */
 export const SECONDARY_FIELDS: readonly ClassicField[] = ["sex", "g1", "g23", "grade", "dormitory"];
 
 export type NormalizedCell = {
@@ -59,6 +59,7 @@ export type NormalizedGuessRow = {
 
 export type NormalizedRound = {
   roundId: string;
+  guessPool: Character[];
   modeId: string;
   phase: string;
   phaseVersion: number;
@@ -70,21 +71,17 @@ export type NormalizedRound = {
   attempts: number;
   solved: boolean;
   failed: boolean;
+  competitive: boolean;
+  duel?: boolean;
+  anySolved: boolean;
   surrendered: boolean;
+  wonBySurrender?: boolean;
+  lostBySurrender?: boolean;
   /** 按提交先后升序 */
   rows: NormalizedGuessRow[];
   /** 本局错误额度上限 */
   wrongBudget: number | null;
-  /**
-   * 对手影子：只给「第几次 + 每格状态」，不给角色身份与字段值。
-   *
-   * 服务端 `projection.Shadows`（`shadowRow`）一直是有的，但前端类型里没有、
-   * 归一化也不读——对手的影子进度在界面上完全看不到。这是「服务端发、前端不读」
-   * 的第 7 个实例（前六个：clue-puzzle / pedigree / rapport / sort /
-   * co-race-path / creative）。
-   *
-   * 明确要求「对手影子以独立区呈现，明确『对手第几次』，不能混入自己的历史」。
-   */
+  /** 对手的作答次数与线索状态；不含猜测角色或线索值 */
   shadows: { attempt: number; statuses: { field: ClassicField; status: CellStatus }[] }[];
   submissionRevision: number;
   controlGeneration: number;
@@ -200,6 +197,8 @@ export function characterIdFromAvatarPath(path: string | null): string | null {
 }
 
 type SelfState = {
+  subjectId?: unknown;
+  surrendered?: unknown;
   remainingWrong?: unknown;
   attempts?: unknown;
   solved?: unknown;
@@ -215,6 +214,22 @@ export function normalizeClassicRound(view: Schemas["RoundView"] | null | undefi
   const round = view.round;
   const publicState = view.publicState as Record<string, unknown> | undefined;
   const self = (publicState?.["self"] ?? null) as SelfState | null;
+  const guessPool: Character[] = [];
+  const seen = new Set<string>();
+  const rawPool = publicState?.["pool"];
+  if (Array.isArray(rawPool)) {
+    for (const entry of rawPool) {
+      if (!entry || typeof entry !== "object") continue;
+      const card = entry as Record<string, unknown>;
+      const id = card["id"];
+      const name = card["name"];
+      if (typeof id !== "string" || !id || typeof name !== "string" || !name || seen.has(id)) continue;
+      seen.add(id);
+      guessPool.push({ characterId: id, displayName: name, aliases: [], entityKind: "uma", datasetVersion: round.datasetVersion });
+    }
+  } else {
+    warnings.push("Missing classic guess pool");
+  }
 
   // 优先读取 publicState.self.rows，兼容 privateState.guesses 中的历史记录
   let rawRows: unknown = self?.rows ?? null;
@@ -262,7 +277,7 @@ export function normalizeClassicRound(view: Schemas["RoundView"] | null | undefi
 
   let remainingWrong: number | null = serverRemaining;
   if (attempts === 0 && serverRemaining === 0 && wrongBudget !== null && wrongBudget > 0) {
-    // 常规兼容，不记入 shapeWarnings（那是给用户看的契约差异提示，不该被这条噪音占满）
+    // 常规兼容不记入 shapeWarnings；该字段仅供诊断与测试
     remainingWrong = wrongBudget;
   }
 
@@ -295,6 +310,7 @@ export function normalizeClassicRound(view: Schemas["RoundView"] | null | undefi
 
   return {
     roundId: round.roundId,
+    guessPool,
     modeId: round.modeId,
     phase: round.phase,
     phaseVersion: round.phaseVersion,
@@ -304,7 +320,12 @@ export function normalizeClassicRound(view: Schemas["RoundView"] | null | undefi
     attempts,
     solved: self?.solved === true,
     failed: self?.failed === true,
-    surrendered: (view as { privateState?: { surrendered?: unknown } }).privateState?.surrendered === true,
+    anySolved: Array.isArray(publicState?.["subjects"]) && (publicState["subjects"] as {solved?:boolean}[]).some(subject=>subject.solved===true),
+    duel: Array.isArray(publicState?.["subjects"]) && publicState["subjects"].length === 2 && config?.["winPolicy"] === "first-correct",
+    competitive: config?.["winPolicy"] === "first-correct" || config?.["variant"] === "friend",
+    surrendered: self?.surrendered === true || (view as { privateState?: { surrendered?: unknown } }).privateState?.surrendered === true,
+    wonBySurrender: typeof self?.subjectId === "string" && publicState?.["surrenderWinnerSubjectId"] === self.subjectId,
+    lostBySurrender: self?.surrendered === true && typeof publicState?.["surrenderWinnerSubjectId"] === "string" && publicState["surrenderWinnerSubjectId"] !== self.subjectId,
     rows,
     wrongBudget,
     shadows,
@@ -317,6 +338,12 @@ export function normalizeClassicRound(view: Schemas["RoundView"] | null | undefi
     revealedAnswerName: answerNameFromPublicState(view.publicState),
     shapeWarnings: warnings,
   };
+}
+
+/** Frozen round identities define eligibility; the directory only enriches names. */
+export function classicGuessChoices(round: NormalizedRound | null, directory: readonly Character[]): Character[] {
+  const known = new Map(directory.map(character => [character.characterId, character]));
+  return (round?.guessPool ?? []).map(character => known.get(character.characterId) ?? character);
 }
 
 /** 已猜过的角色 ID 集合，用于搜索排除 */

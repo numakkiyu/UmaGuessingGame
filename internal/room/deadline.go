@@ -63,6 +63,13 @@ func (s *Service) RunDeadlineSweeper(ctx context.Context) {
 // so one stuck round cannot block the others.
 func (s *Service) SweepExpired(ctx context.Context) (int, error) {
 	now := s.now().UTC()
+	if err := s.SweepMatchmaking(ctx); err != nil {
+		return 0, err
+	}
+	idleCount, err := s.sweepIdleMatches(ctx, now)
+	if err != nil {
+		return 0, err
+	}
 	rows, err := s.db.Read().QueryContext(ctx, `
 		SELECT id FROM rounds
 		WHERE deadline_at IS NOT NULL
@@ -89,7 +96,7 @@ func (s *Service) SweepExpired(ctx context.Context) (int, error) {
 	}
 	rows.Close()
 
-	advanced := 0
+	advanced := idleCount
 	for _, id := range ids {
 		ok, err := s.advanceExpired(ctx, id, now)
 		if err != nil {

@@ -46,7 +46,7 @@ try {
     body: JSON.stringify({ status: 503, code: "unavailable", title: "服务器 cloud internal detail", requestId: "req-location-check" }),
   }));
   await page.goto(`${base}/play/classic`, { waitUntil: "networkidle" });
-  await page.getByRole("button", { name: "准备练习资料", exact: true }).click();
+  await page.getByRole("button", { name: "准备挑战资料", exact: true }).click();
   await page.getByText("请稍等片刻，再试一次。已确认的作答会保留。", { exact: true }).waitFor();
   await scan(page, "Content preparation failure hides raw execution details");
   await recovery.close();

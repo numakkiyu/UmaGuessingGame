@@ -36,7 +36,7 @@ describe("describeUnavailable", () => {
 
   it("bluff 的真实准入原因翻译成玩家说法", () => {
     const copy = assertClean("bluff", REAL_BLUFF);
-    expect(copy.title).toContain("审");
+    expect(copy.title).toContain("核对");
   });
 
   it("未知拒绝码给通用说明，不回显原始字符串", () => {

@@ -1,10 +1,10 @@
-# Windows 运行与部署 V2
+# Windows 运行与部署
 
 推荐在 WSL2 中运行开发命令，或使用 Docker Desktop 的 Linux 容器。当前 Dockerfile 面向 Linux 容器，不是 Windows 容器镜像
 
 ## WSL2
 
-在 WSL2 发行版安装 Git、Go 1.26.1、Node.js 24、pnpm 10.33.0 和 Make。建议把仓库与 SQLite 运行数据放在 WSL 的 Linux 文件系统中，避免网络共享和跨文件系统 I/O 影响数据库行为
+在 WSL2 发行版安装 Git、Go 1.26.11、Node.js 24、pnpm 10.33.0 和 Make。建议把仓库与 SQLite 运行数据放在 WSL 的 Linux 文件系统中，避免网络共享和跨文件系统 I/O 影响数据库行为
 
 在仓库根目录：
 
@@ -19,7 +19,7 @@ make content-verify
 make dev
 ```
 
-浏览器打开 <http://localhost:8080>。若从其他设备访问，需要同时检查 WSL 网络模式、Windows 防火墙、监听地址与 Origin，而不是只改应用监听到 `0.0.0.0`
+浏览器打开 `http://localhost:8080`。若从其他设备访问，需要同时检查 WSL 网络模式、Windows 防火墙、监听地址与 Origin，而不是只改应用监听到 `0.0.0.0`
 
 ## PowerShell 原生开发
 

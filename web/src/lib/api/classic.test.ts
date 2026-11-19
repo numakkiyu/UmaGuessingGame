@@ -15,10 +15,36 @@ import {
   guessedCharacterIds,
   normalizeClassicRound,
   normalizeRowFromFeedback,
+  classicGuessChoices,
 } from "@/lib/api/classic";
 import type { components } from "@/lib/api/types";
 
 type RoundView = components["schemas"]["RoundView"];
+
+describe("本局可选角色", () => {
+  it("仅使用冻结候选，目录只能补充名字，不能放入其他角色", () => {
+    const view = makeLiveRound();
+    Object.assign(view.publicState, {pool:[{id:"1127",name:"超常骏骥",imagePath:"/assets/avatars/1127.webp"},{id:"old",name:"旧局角色",imagePath:""},{id:"1127",name:"重复"},null,{id:"invalid"}]});
+    const round = normalizeClassicRound(view)!;
+    const choices = classicGuessChoices(round, [
+      {characterId:"1127",displayName:"超常骏骥",localizedNames:{ja:"フェノーメノ"},aliases:[],entityKind:"uma",datasetVersion:"new"},
+      {characterId:"npc",displayName:"不适用角色",aliases:[],entityKind:"npc",datasetVersion:"new"},
+    ]);
+    expect(choices.map(character=>character.characterId)).toEqual(["1127","old"]);
+    expect(choices[0]?.localizedNames?.ja).toBe("フェノーメノ");
+    expect(choices[1]?.displayName).toBe("旧局角色");
+    expect(choices[1]?.datasetVersion).toBe("ds");
+  });
+
+  it("候选缺失或为空时不能退回全部角色", () => {
+    const view = makeLiveRound();
+    const directory = [{characterId:"npc",displayName:"不适用角色",aliases:[],entityKind:"npc" as const,datasetVersion:"new"}];
+    expect(classicGuessChoices(normalizeClassicRound(view),directory)).toEqual([]);
+    Object.assign(view.publicState,{pool:[]});
+    expect(classicGuessChoices(normalizeClassicRound(view),directory)).toEqual([]);
+    expect(classicGuessChoices(null,directory)).toEqual([]);
+  });
+});
 
 const NINE_FIELDS = [...FIELD_ORDER];
 

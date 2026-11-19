@@ -643,10 +643,8 @@ func (*Mode) Apply(in modes.ApplyInput) (modes.Decision, error) {
 
 // applyDecoy validates and records a fake answer.
 //
-// A decoy identical to the truth is accepted but recorded as identifying the truth
-// rather than as a decoy: the plan says such a submission earns the identification
-// points and is not treated as its author's own fake answer
-// .
+// A submission matching the truth earns identification points and is excluded
+// from the author's decoys.
 func applyDecoy(in modes.ApplyInput) (modes.Decision, error) {
 	if err := in.Action.Validate(); err != nil {
 		return modes.Rejected(CodeInvalidPayload, err.Error()), nil

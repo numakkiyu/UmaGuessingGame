@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"golang.org/x/text/unicode/norm"
 
 	"math"
 	"os"
@@ -14,6 +13,9 @@ import (
 	"sort"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/bhcn/umaguessinggame/internal/modes/aptitudegrid"
+	"golang.org/x/text/unicode/norm"
 )
 
 // Section names. The seven primary names are the contract mode packages read
@@ -158,7 +160,7 @@ func compileClassic(ctx *compileContext) (modeResult, error) {
 		fmt.Sprintf("%d excluded from competitive play because their nine-field vector is identical to another character; they remain available in practice packs flagged with ambiguityGroup", ambiguous),
 		"the legacy *_group buckets are kept verbatim; the raw A-G aptitude grades were NOT substituted for them",
 	}
-	if len(practice) < classicMinPool {
+	if len(practice) < classicMinPool || len(competitive) < 2 {
 		return unavailable(ModeClassic, SectionClassicCharacters, classicMinPool, tally, notes...), nil
 	}
 
@@ -288,7 +290,15 @@ func compileAptitudeGrid(ctx *compileContext) (modeResult, error) {
 		fmt.Sprintf("%d of 16 distance x style cells have at least one A/A card", coverable),
 		"aptitudes are per character record, not per outfit: the snapshot does not give each of the 272 outfits its own aptitude set",
 	}
-	if len(cards) < aptitudeGridMinPool || coverable < 9 {
+	boardCards := make([]aptitudegrid.Card, 0, len(cards))
+	for _, c := range cards {
+		boardCards = append(boardCards, aptitudegrid.Card{ID: c.CharacterID, Aptitudes: aptitudegrid.Aptitudes{
+			Surface: c.Aptitudes.Surface, Distance: c.Aptitudes.Distance, Style: c.Aptitudes.Style,
+		}})
+	}
+	canFill := aptitudegrid.HasSolution(boardCards)
+	notes = append(notes, fmt.Sprintf("standard 3x3 board has a matching of nine distinct characters: %t", canFill))
+	if len(cards) < aptitudeGridMinPool || coverable < 9 || !canFill {
 		if coverable < 9 {
 			tally[RejectIncompleteAptitude] += 9 - coverable
 		}
@@ -996,12 +1006,15 @@ func compileSort(ctx *compileContext) (modeResult, error) {
 	// compared values are not all equal .
 	distinctHeights := make(map[int]bool)
 	distinctBirthdays := make(map[string]bool)
+	withHeight, withBirthday := 0, 0
 	withEventDate := 0
 	for _, c := range cards {
 		if c.HeightCm != nil {
+			withHeight++
 			distinctHeights[*c.HeightCm] = true
 		}
 		if c.BirthMonth != nil && c.BirthDay != nil {
+			withBirthday++
 			distinctBirthdays[fmt.Sprintf("%02d-%02d", *c.BirthMonth, *c.BirthDay)] = true
 		}
 		if c.EventDate != nil {
@@ -1009,14 +1022,18 @@ func compileSort(ctx *compileContext) (modeResult, error) {
 		}
 	}
 	sortable := 0
-	if len(cards) >= sortMinCards && len(distinctHeights) >= 2 {
+	keys := []string{}
+	if withHeight >= sortMaxCards && len(distinctHeights) >= 2 {
 		sortable++
+		keys = append(keys, "heightCm")
 	}
-	if len(cards) >= sortMinCards && len(distinctBirthdays) >= 2 {
+	if withBirthday >= sortMaxCards && len(distinctBirthdays) >= 2 {
 		sortable++
+		keys = append(keys, "birthday")
 	}
-	if withEventDate >= sortMinCards && countDistinctEventDates(cards) >= 2 {
+	if withEventDate >= sortMaxCards && countDistinctEventDates(cards) >= 2 {
 		sortable++
+		keys = append(keys, "eventDate")
 	}
 	if sortable == 0 {
 		tally.add(RejectAllValuesEqual)
@@ -1028,7 +1045,7 @@ func compileSort(ctx *compileContext) (modeResult, error) {
 		fmt.Sprintf("default card count %d; birthdays compare by month/day and never mix the prototype birth year", sortMaxCards),
 		"event dates are normalised to ISO YYYY-MM-DD and carry an explicit region; string-literal date sorting is not used",
 	}
-	if len(cards) < sortMinPool || sortable == 0 {
+	if len(cards) < sortMinPool || withHeight < sortMaxCards || len(distinctHeights) < 2 {
 		return unavailable(ModeSort, SectionSortCards, sortMinPool, tally, notes...), nil
 	}
 
@@ -1037,7 +1054,7 @@ func compileSort(ctx *compileContext) (modeResult, error) {
 			Mode:            ModeSort,
 			Cards:           cards,
 			DefaultCards:    sortMaxCards,
-			SortableKeys:    []string{"heightCm", "birthday", "eventDate"},
+			SortableKeys:    keys,
 			DistinctHeights: len(distinctHeights),
 		},
 	}), nil
@@ -1766,12 +1783,12 @@ func audioRouteFor(rawURL string) string {
 // file, both because the game must work offline and because the licence covers
 // redistribution of the clip, not hot-linking the wiki. A clip therefore counts only
 // when the file is actually on disk.
-const audioDir = "data/assets/audio"
+const audioDir = "data/assets/audio/library"
 
 // hasLocalAudio reports whether a downloaded clip exists for one recorded URL.
 //
 // The file is named after the URL's last path segment: the wiki stores every clip as
-// <hash>.mp3, and that hash is unique, so it is a stable key that survives a change of
+// <hash>.webm, derived from the source URL hash, so the key survives a change of
 // CDN host. Only the presence of a non-empty file counts — a zero-byte placeholder
 // from a failed download must not pass, or the mode would offer silence.
 func (ctx *compileContext) hasLocalAudio(rawURL string) bool {
@@ -1793,7 +1810,7 @@ type audioClip struct {
 	// candidate list so a player can identify who they are matching; without it the
 	// board would show opaque ids .
 	CharacterName string `json:"characterName,omitempty"`
-	// AudioPath is the served route a browser fetches, e.g. /assets/audio/<hash>.mp3.
+	// AudioPath is the served route a browser fetches, e.g. /assets/audio/<hash>.webm.
 	// It is deliberately NOT the upstream CDN address: requires the game to
 	// work without reaching a third party, and a hot-linked clip would fail offline
 	// and depend on a URL that can change or expire.

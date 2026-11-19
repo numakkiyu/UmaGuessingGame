@@ -99,7 +99,6 @@ export function PracticeStartPage() {
       {message?<p role="status" className="text-sm leading-6 text-[var(--color-ink)]">{message}</p>:null}
       <div className="flex flex-wrap gap-2 border-t border-[var(--color-line)] pt-3">
         {pack?<Button variant="ghost" onClick={()=>void prepare()} disabled={busy}><RefreshCw className="size-4" aria-hidden="true"/>{t("refresh")}</Button>:null}
-        <Button asChild variant="secondary"><Link to="/play/classic/verified">{t("challenge")}</Link></Button>
         <Button variant="ghost" onClick={()=>fileRef.current?.click()} disabled={busy}><Upload className="size-4" aria-hidden="true"/>{t("import")}</Button>
         <input ref={fileRef} className="sr-only" type="file" accept="application/json,.json" aria-label={t("file")} onChange={e=>void importRecord(e.target.files?.[0])}/>
       </div>

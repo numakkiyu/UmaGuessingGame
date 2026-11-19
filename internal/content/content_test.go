@@ -2,6 +2,7 @@ package content
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
@@ -1446,8 +1447,8 @@ func TestBothAvatarSourcesAreReported(t *testing.T) {
 		if !strings.Contains(g.Detail, "TWO INDEPENDENT AVATAR SETS") {
 			t.Errorf("assets gap does not explain that two sets exist: %s", g.Detail)
 		}
-		if !strings.Contains(g.Measured, "staging") {
-			t.Errorf("assets gap measured text does not mention the staging set: %s", g.Measured)
+		if !strings.Contains(g.Measured, fmt.Sprintf("canonical avatar directory declares %d avatars of which %d verified", as.StagingDeclared, as.StagingVerified)) {
+			t.Errorf("assets gap does not report the canonical avatar counts: %s", g.Measured)
 		}
 	}
 	if !found {

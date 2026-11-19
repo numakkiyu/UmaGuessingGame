@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 import "@/i18n/draft-online";
 import {useTranslation} from "@/i18n";
 import {usePlayerText} from "@/i18n/player-text";
@@ -85,8 +87,8 @@ export function DraftRoundPage(){
  function closePicker(){setOpenTaskId(null);setQuery("");requestAnimationFrame(()=>triggerRef.current?.focus());}
  function pick(cardId:string){if(!editable||!openTask)return;if(used.has(cardId)&&draft.assignments[openTask.taskId]!==cardId)return;update({assignments:{...draft.assignments,[openTask.taskId]:cardId}});closePicker();}
  async function submit(retry=false){
-  if(!roundId||!round||command.busy||refreshing)return;
-  if(!retry&&(!editable||problems.length))return;
+  if(!roundId||command.busy||refreshing)return;
+  if(!retry&&(!round||!editable||problems.length))return;
   const body:DraftLineupCommand|undefined=retry?undefined:{phaseVersion:snapshot.meta!.phaseVersion,submissionRevision:snapshot.submissionRevision,controlGeneration:snapshot.controlGeneration,modeAction:{kind:"draft.lineup",assignments:tasks.map(task=>({slotId:task.taskId,characterId:draft.assignments[task.taskId]!}))}};
   setRefreshing(true);setFailure(null);setErrorCode("");setRejected(false);setNotice("");
   try{
@@ -100,8 +102,8 @@ export function DraftRoundPage(){
  if(roomQuery.isLoading)return <LoadingBlock label={t("loadingRoom")} rows={3}/>;
  if(roomQuery.isError){const info=describeFailure(roomQuery.error);return info.kind==="forbidden"?<ForbiddenView failure={info} onRetry={()=>void roomQuery.refetch()}/>:<ErrorView failure={info} onRetry={()=>void roomQuery.refetch()}/>;}
  const connectionStatus=realtime.status==="online"?"online":realtime.status==="connecting"||realtime.status==="reconnecting"?"reconnecting":realtime.status==="stale"?"stale":"offline";
- return <div className="uma-stack">
-  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={connectionStatus} detail={roomQuery.data?.room.name??t("room")}/>
+ return <GameStage mode="draft" className="uma-stack">
+  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={connectionStatus} detail={roomDisplayName(roomQuery.data?.room, t("room"))}/>
   {round&&!cancelled&&!ended?<div className="sticky z-[var(--z-sticky)] rounded-[var(--radius-card)] border border-[var(--color-line-strong)] bg-[var(--color-panel)] px-3 py-2 shadow-[var(--shadow-soft)]" style={{top:"calc(var(--header-h) + 4px)"}}>
    <dl className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-sm"><div><dt className="inline text-[var(--color-muted)]">{t("budget")} </dt><dd className="uma-code inline font-bold">{spent} / {budget}</dd><dd className={cn("ml-2 inline",remaining<0&&"text-[var(--color-danger)]")}>{t(remaining<0?"over":"remaining",{count:Math.abs(remaining)})}</dd></div><div><dt className="inline">{t("tasks")} </dt><dd className="uma-code inline font-bold">{Object.keys(shownDraft.assignments).length} / {tasks.length}</dd></div>{collecting&&snapshot.meta?.deadlineAt?<div><dt className="inline">{t("time")} </dt><dd className="uma-code inline font-bold" aria-live="off">{countdown.text}</dd></div>:null}</dl>
   </div>:null}
@@ -135,7 +137,7 @@ export function DraftRoundPage(){
     {card.imagePath?<img src={card.imagePath} alt="" className="size-10 shrink-0 object-contain" loading="lazy" decoding="async"/>:null}<span className="min-w-0 flex-1"><span className="block break-words text-sm font-semibold">{card.name?cardName(card):t("unknownCard")}</span><span className="mt-1 flex flex-wrap items-center gap-1"><GradeBadge grade={card.aptitudes.surface[openTask?.surface??""]??""}/><GradeBadge grade={card.aptitudes.distance[openTask?.distance??""]??""}/><GradeBadge grade={card.aptitudes.style[openTask?.style??""]??""}/>{points?<span className="text-xs">{t("points",{points:points.total})}</span>:null}</span>{usedByOther?<span className="block text-xs">{t("used")}</span>:null}</span><span className="uma-code shrink-0 text-sm">{t("price",{price:card.price})}</span>
    </button></li>;})}</ul>}
   </SheetContent></Sheet>
- </div>;
+ </GameStage>;
 }
 
 export function DraftResultPanel({round,cancelled=false,scores=[],labelFor}:{round:DraftRound;cancelled?:boolean;scores?:Score[];labelFor?:(id:string)=>string}){

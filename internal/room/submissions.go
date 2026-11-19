@@ -12,6 +12,7 @@ import (
 	"github.com/bhcn/umaguessinggame/internal/httpapi/problem"
 	"github.com/bhcn/umaguessinggame/internal/modes"
 	"github.com/bhcn/umaguessinggame/internal/modes/bluff"
+	"github.com/bhcn/umaguessinggame/internal/modes/classic"
 	"github.com/bhcn/umaguessinggame/internal/modes/creative"
 )
 
@@ -82,7 +83,7 @@ func (s *Service) CreateSubmission(ctx context.Context, actor Actor, roundID str
 	if receipt, replayed, err := replayGameplayQ[SubmissionReceipt](ctx, tx, actor.SessionID, commandScope, in.Command, s.nowMS()); err != nil || replayed {
 		return receipt, err
 	}
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return SubmissionReceipt{}, err
 	}
 
@@ -150,6 +151,11 @@ func (s *Service) CreateSubmission(ctx context.Context, actor Actor, roundID str
 	if r.DeadlineAt != nil && receivedMS > r.DeadlineAt.UnixMilli() {
 		return SubmissionReceipt{}, problem.Conflict("deadline-passed",
 			"the submission arrived after the window closed")
+	}
+	if expired, err := s.matchIdleExpiredQ(ctx, tx, r, receivedMS); err != nil {
+		return SubmissionReceipt{}, problem.Internal(err)
+	} else if expired {
+		return SubmissionReceipt{}, problem.Conflict("matchmaking-idle", "the match ended without an accepted action")
 	}
 	if in.PhaseVersion != r.PhaseVersion {
 		return SubmissionReceipt{}, phaseConflict(r.PhaseVersion)
@@ -220,6 +226,22 @@ func (s *Service) CreateSubmission(ctx context.Context, actor Actor, roundID str
 	currentState, err := participantStateQ(ctx, tx, r.ID, subject.ID)
 	if err != nil {
 		return SubmissionReceipt{}, err
+	}
+	if isSurrendered(currentState) {
+		return SubmissionReceipt{}, problem.Conflict("participant-surrendered", "this participant has surrendered")
+	}
+	if creativeVote && actor.Has(CapPlay) {
+		voter, err := s.roundSubject(r, actor)
+		if err != nil {
+			return SubmissionReceipt{}, err
+		}
+		state, err := participantStateQ(ctx, tx, r.ID, voter.ID)
+		if err != nil {
+			return SubmissionReceipt{}, err
+		}
+		if isSurrendered(state) {
+			return SubmissionReceipt{}, problem.Conflict("participant-surrendered", "this participant has surrendered")
+		}
 	}
 	accepted, err := acceptedCountQ(ctx, tx, r.ID, subject.ID)
 	if err != nil {
@@ -419,6 +441,17 @@ func (s *Service) CreateSubmission(ctx context.Context, actor Actor, roundID str
 	if err := s.rotateTeamControlsQ(ctx, tx, r, mode, publicState, afterPublic, subject.ID, currentState, now); err != nil {
 		return SubmissionReceipt{}, err
 	}
+	if r.ModeID == "classic" && decision.Finished {
+		states, err := participantStatesQ(ctx, tx, r.ID)
+		if err != nil {
+			return SubmissionReceipt{}, err
+		}
+		allFinished, err := classic.AllFinished(publicState, states)
+		if err != nil {
+			return SubmissionReceipt{}, problem.Internal(err)
+		}
+		decision.RoundOver = decision.RoundOver || allFinished
+	}
 	closedPhase := r.Status
 	if decision.RoundOver && r.Status == modes.PhaseCollecting {
 		closedPhase = modes.PhaseLocked
@@ -482,8 +515,14 @@ func recordClassicGuess(ctx context.Context, tx *sql.Tx, roundID, subjectID stri
 		 WHERE round_id = ? AND subject_id = ?`, roundID, subjectID).Scan(&next); err != nil {
 		return problem.Internal(fmt.Errorf("room: next guess attempt: %w", err))
 	}
+	var outcome struct {
+		Solved bool `json:"solved"`
+	}
+	if err := json.Unmarshal(decision.State, &outcome); err != nil {
+		return problem.Internal(fmt.Errorf("room: decode classic guess outcome: %w", err))
+	}
 	correct := 0
-	if decision.Finished {
+	if outcome.Solved {
 		correct = 1
 	}
 	feedback := decision.Feedback
@@ -670,8 +709,8 @@ func SubmissionSlotsForMode(modeID string, kinds []string) []string {
 
 // CreateSurrender records that a participant left the round.
 //
-// Surrender ends the round for that subject only; it never grants kick or
-// removal authority to the surrendering player .
+// In a classic duel, conceding settles the round in favour of the opponent.
+// Other formats retain their per-subject surrender rules.
 func (s *Service) CreateSurrender(ctx context.Context, actor Actor, roundID string, phaseVersion int64) (surrenderID string, acceptedAt int64, err error) {
 	subject, err := actor.Subject()
 	if err != nil {
@@ -697,6 +736,17 @@ func (s *Service) CreateSurrender(ctx context.Context, actor Actor, roundID stri
 	if r.RoomID != actor.RoomID {
 		return "", 0, errRoundNotFound
 	}
+	var active int
+	if err := tx.QueryRowContext(ctx, `SELECT COUNT(*) FROM memberships WHERE id=? AND room_id=? AND session_id=? AND role IN ('player','team-captain') AND left_at IS NULL AND revoked_at IS NULL`, actor.MembershipID(), r.RoomID, actor.SessionID).Scan(&active); err != nil {
+		return "", 0, problem.Internal(err)
+	}
+	if active != 1 {
+		return "", 0, problem.Forbidden("membership-inactive", "only an active participant may surrender")
+	}
+	subject, err = s.roundSubject(r, actor)
+	if err != nil {
+		return "", 0, err
+	}
 	if err := s.requireTeamControllerQ(ctx, tx, r, actor); err != nil {
 		return "", 0, err
 	}
@@ -706,6 +756,16 @@ func (s *Service) CreateSurrender(ctx context.Context, actor Actor, roundID stri
 	}
 	if phaseVersion != r.PhaseVersion {
 		return "", 0, phaseConflict(r.PhaseVersion)
+	}
+	if !r.Paused() {
+		if r.DeadlineAt != nil && now > r.DeadlineAt.UnixMilli() {
+			return "", 0, problem.Conflict("deadline-passed", "the surrender arrived after the window closed")
+		}
+		if expired, err := s.matchIdleExpiredQ(ctx, tx, r, now); err != nil {
+			return "", 0, problem.Internal(err)
+		} else if expired {
+			return "", 0, problem.Conflict("matchmaking-idle", "the match ended without an accepted action")
+		}
 	}
 
 	id, err := newID("srd_")
@@ -717,6 +777,9 @@ func (s *Service) CreateSurrender(ctx context.Context, actor Actor, roundID stri
 	state, err := participantStateQ(ctx, tx, r.ID, subject.ID)
 	if err != nil {
 		return "", 0, err
+	}
+	if isSurrendered(state) {
+		return "", 0, problem.Conflict("participant-surrendered", "this participant has already surrendered")
 	}
 	merged := map[string]any{}
 	if len(state) > 0 {
@@ -736,6 +799,39 @@ func (s *Service) CreateSurrender(ctx context.Context, actor Actor, roundID stri
 		r.ID, subject.ID, string(subject.Kind), string(mergedJSON), now); err != nil {
 		return "", 0, problem.Internal(fmt.Errorf("room: write surrender: %w", err))
 	}
+	duelFinished := false
+	if r.ModeID == "classic" {
+		public, err := roundPublicStateQ(ctx, tx, r.ID)
+		if err != nil {
+			return "", 0, err
+		}
+		states, err := participantStatesQ(ctx, tx, r.ID)
+		if err != nil {
+			return "", 0, err
+		}
+		winner, err := classic.SurrenderWinner(public, states)
+		if err != nil {
+			return "", 0, problem.Internal(err)
+		}
+		if winner != "" {
+			if err := s.settleRoundQ(ctx, tx, r, modes.PhaseSettled, now); err != nil {
+				return "", 0, err
+			}
+			if _, err := tx.ExecContext(ctx, `UPDATE rounds SET status='settled', phase_version=phase_version+1, deadline_at=NULL, paused_at=NULL, paused_remaining_ms=NULL, paused_previous_phase=NULL, updated_at=? WHERE id=?`, now, r.ID); err != nil {
+				return "", 0, problem.Internal(err)
+			}
+			if err := s.syncSegmentStatusQ(ctx, tx, r.ID, modes.PhaseSettled, now); err != nil {
+				return "", 0, err
+			}
+			if _, err := tx.ExecContext(ctx, `UPDATE rooms SET status='finished', updated_at=? WHERE id=? AND status='playing'`, now, r.RoomID); err != nil {
+				return "", 0, problem.Internal(err)
+			}
+			if err := writeAudit(ctx, tx, r.RoomID, "", actor.SessionID, "round.surrendered", map[string]any{"roundId": r.ID, "subjectId": subject.ID, "winnerSubjectId": winner}, now); err != nil {
+				return "", 0, err
+			}
+			duelFinished = true
+		}
+	}
 
 	roomVersion, err := bumpRoomVersion(ctx, tx, r.RoomID, now)
 	if err != nil {
@@ -745,6 +841,11 @@ func (s *Service) CreateSurrender(ctx context.Context, actor Actor, roundID stri
 		"resource": "round", "roundId": r.ID, "roomVersion": roomVersion,
 	}, now); err != nil {
 		return "", 0, err
+	}
+	if duelFinished {
+		if err := emitOutbox(ctx, tx, r.RoomID, "phase.changed", map[string]any{"resource": "round", "roundId": r.ID, "phase": "settled", "phaseVersion": r.PhaseVersion + 1, "roomVersion": roomVersion}, now); err != nil {
+			return "", 0, err
+		}
 	}
 	if err := tx.Commit(); err != nil {
 		return "", 0, problem.Internal(fmt.Errorf("room: commit surrender: %w", err))

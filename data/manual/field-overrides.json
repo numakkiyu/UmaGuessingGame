@@ -1,5 +1,145 @@
 {
   "goorudoshippu": {
-    "grade": "高等部"
+    "grade": "高等部",
+    "g23_bracket": "4-6",
+    "racing_source_url": "https://www.jra.go.jp/gallery/3minmeiba/horse6/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 六胜；GII 四胜、GIII 一胜，重复夺冠逐次计数"
+  },
+  "taikishatoru": {
+    "g1_bracket": "5+",
+    "racing_source_url": "https://www.jra.go.jp/gallery/dendo/horse25/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 五胜，包含法国杰克莫华赏"
+  },
+  "mejiromakkuiin": {
+    "g23_bracket": "4-6",
+    "racing_source_url": "https://www.jra.go.jp/gallery/dendo/horse22/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GII 五胜，阪神大赏典两次、京都大赏典两次、大阪杯一次"
+  },
+  "naritaburaian": {
+    "g23_bracket": "4-6",
+    "racing_source_url": "https://www.jra.go.jp/gallery/3minmeiba/horse17/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GII 三胜、GIII 一胜，阪神大赏典两次分别计数"
+  },
+  "tamamokurosu": {
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "racing_source_url": "https://jra-van.jp/fun/memorial/1984101673.html",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 三胜、GII 一胜、GIII 一胜"
+  },
+  "fuainmooshon": {
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "racing_source_url": "https://www.jbis.or.jp/horse/0000704208/record/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 两胜、GII 三胜"
+  },
+  "mihonoburubon": {
+    "g1_bracket": "3-4",
+    "g23_bracket": "1-3",
+    "racing_source_url": "https://www.jra.go.jp/gallery/3minmeiba/horse34/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 三胜、GII 两胜"
+  },
+  "raisushawaa": {
+    "g1_bracket": "3-4",
+    "racing_source_url": "https://www.jra.go.jp/gallery/3minmeiba/horse18/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 三胜，天皇赏春两次分别计数"
+  },
+  "inariwan": {
+    "g1_bracket": "3-4",
+    "racing_source_url": "https://jra-van.jp/fun/memorial/1984106229.html",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 三胜；旧地方未分级赛事不追认 GI"
+  },
+  "sumaatofuarukon": {
+    "g1_bracket": "5+",
+    "g23_bracket": "7+",
+    "racing_source_url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_activeCode=1&k_lineageLoginCode=30071402925",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI/JpnI 六胜、JpnII/JpnIII 十三胜；旧数据的零胜不成立",
+    "g1_has_jpn": "true",
+    "g23_has_jpn": "true"
+  },
+  "misutaashiibii": {
+    "g1_bracket": "1-2",
+    "racing_source_url": "https://www.jra.go.jp/gallery/dendo/horse13/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "按比赛当年等级统计，1984 天皇赏秋为 GI；1983 三冠发生于日本分级制度实行前，不追认 GI"
+  },
+  "mejirodooberu": {
+    "g1_bracket": "5+",
+    "racing_source_url": "https://www.jra.go.jp/gallery/3minmeiba/horse7/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 五胜，伊丽莎白女王杯两次分别计数"
+  },
+  "sakurachiyonooo": {
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "racing_source_url": "https://www.jbis.or.jp/horse/0000176226/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 两胜、GII 一胜"
+  },
+  "yamaninzefuaa": {
+    "g1_bracket": "3-4",
+    "racing_source_url": "https://jra-van.jp/fun/memorial/1988101069.html",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 三胜，安田纪念两次分别计数"
+  },
+  "shinborikurisuesu": {
+    "g1_bracket": "3-4",
+    "racing_source_url": "https://www.jbis.or.jp/horse/0000700008/record/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 四胜，天皇赏秋与有马纪念各两次"
+  },
+  "taninogimuretto": {
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "racing_source_url": "https://www.jra.go.jp/gallery/3minmeiba/horse42/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 一胜、GII 一胜、GIII 两胜"
+  },
+  "mejiroramoonu": {
+    "g23_bracket": "1-3",
+    "racing_source_url": "https://www.jra.go.jp/gallery/dendo/horse15/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GII 三胜，三场不同的三冠前哨战"
+  },
+  "asutonmaachan": {
+    "g1_bracket": "1-2",
+    "g23_bracket": "1-3",
+    "racing_source_url": "https://jra-van.jp/fun/memorial/2004103323.html",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 一胜、JpnII 一胜、GIII 两胜",
+    "g23_has_jpn": "true"
+  },
+  "katsuragieesu": {
+    "g1_bracket": "1-2",
+    "racing_source_url": "https://www.jbis.or.jp/horse/0000124927/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "1984 GI 两胜，分级制度实行前赛事不追认 GI"
+  },
+  "tappudansushichii": {
+    "g23_bracket": "4-6",
+    "racing_source_url": "https://www.radionikkei.jp/keiba_article/news/entry-130632.html",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GII 四胜、GIII 一胜，金鯱赏三连冠逐次计数"
+  },
+  "aamondoai": {
+    "g23_bracket": "1-3",
+    "racing_source_url": "https://www.jra.go.jp/gallery/dendo/horse35/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GIII 一胜：2018 神赞纪念"
+  },
+  "biriivu": {
+    "g1_bracket": "1-2",
+    "racing_source_url": "https://www.jbis.or.jp/horse/0000324472/record/",
+    "racing_checked_at": "2026-11-17",
+    "racing_note": "GI 两胜：2002 短途马锦标、2003 高松宫纪念；GIII 两胜，空赛绩不能当作零胜"
   }
 }

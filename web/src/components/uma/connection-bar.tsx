@@ -1,5 +1,6 @@
 
 import { CircleAlert, CircleCheck, Loader2, WifiOff } from "lucide-react";
+import type { NetworkQuality } from "@/lib/realtime/network-quality";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "@/i18n";
 
@@ -47,12 +48,13 @@ const STATUS_META: Record<
 
 export type ConnectionBarProps = {
   status: ConnectionStatus;
+  quality?: NetworkQuality | null;
   /** 补充说明，例如重连尝试次数 */
   detail?: string;
   className?: string;
 };
 
-export function ConnectionBar({ status, detail, className }: ConnectionBarProps) {
+export function ConnectionBar({ status, quality, detail, className }: ConnectionBarProps) {
   const { t } = useTranslation("common");
   const meta = STATUS_META[status];
   const { Icon } = meta;
@@ -62,7 +64,7 @@ export function ConnectionBar({ status, detail, className }: ConnectionBarProps)
       role="status"
       aria-live="polite"
       data-tone={meta.tone === "ok" ? undefined : meta.tone}
-      className={cn("uma-connbar", className)}
+      className={cn("uma-connbar flex-wrap", className)}
     >
       <Icon
         aria-hidden="true"
@@ -81,6 +83,7 @@ export function ConnectionBar({ status, detail, className }: ConnectionBarProps)
         --color-ink-strong / --color-ink，继承就是对比度最高的那个。
       */}
       <span className="min-w-0 truncate">{status === "online" ? detail : t(meta.hint)}</span>
+      {status === "online" && quality ? <span className="ml-auto shrink-0 whitespace-nowrap text-sm" data-quality={quality}>{t("connection.qualityLabel")}：{t(`connection.quality.${quality}`)}</span> : null}
     </div>
   );
 }

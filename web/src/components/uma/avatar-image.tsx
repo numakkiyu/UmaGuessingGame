@@ -78,8 +78,8 @@ function buildCandidateUrls(input: {
     }
   }
 
-  // 3) 占位图：两者都失败才显示（保持结构与品牌色，）
-  urls.push(`${ASSET_BASE}/ui/branding/official-logo-jp.png`);
+  // 3) 占位图：两者都失败才显示（保持结构与品牌色）
+  urls.push(`${ASSET_BASE}/ui/branding/party-logo.webp`);
   return { urls, remoteCount };
 }
 

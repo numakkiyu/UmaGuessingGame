@@ -40,7 +40,7 @@ func verifiedPack(n int) modes.ContentSource {
 		clips = append(clips, clipSpec{
 			ClipID:          fmt.Sprintf("clip-%03d", i+1),
 			CharacterID:     fmt.Sprintf("c%03d", i+1),
-			AudioPath:       fmt.Sprintf("/assets/voices/clip-%03d.ogg", i+1),
+			AudioPath:       fmt.Sprintf("/assets/audio/clip-%03d.webm", i+1),
 			DurationMillis:  2400 + i*100,
 			Transcript:      fmt.Sprintf("第%d段台词", i+1),
 			SpeakerVerified: true,
@@ -73,7 +73,7 @@ func remoteOnlyPack(n int) modes.ContentSource {
 		}{
 			ClipID:      fmt.Sprintf("clip-%05d", i+1),
 			CharacterID: fmt.Sprintf("c%03d", i%133+1),
-			AudioURL:    "https://example.invalid/voice.ogg",
+			AudioURL:    "https://example.invalid/voice.webm",
 			Chs:         "一段台词",
 		})
 	}
@@ -329,7 +329,7 @@ func TestPrepareRefusesUnverifiedOrUnreviewedClips(t *testing.T) {
 		},
 		{
 			name:    "remote url only",
-			mutate:  func(c *clipSpec) { c.AudioPath = "https://example.invalid/voice.ogg" },
+			mutate:  func(c *clipSpec) { c.AudioPath = "https://example.invalid/voice.webm" },
 			wantMsg: "without a local decodable file",
 			wantCnt: func(a *AdmissionError) int { return a.NoLocalFile },
 		},
@@ -347,7 +347,7 @@ func TestPrepareRefusesUnverifiedOrUnreviewedClips(t *testing.T) {
 				c := clipSpec{
 					ClipID:          fmt.Sprintf("clip-%03d", i+1),
 					CharacterID:     fmt.Sprintf("c%03d", i+1),
-					AudioPath:       fmt.Sprintf("/assets/voices/clip-%03d.ogg", i+1),
+					AudioPath:       fmt.Sprintf("/assets/audio/clip-%03d.webm", i+1),
 					DurationMillis:  2400,
 					Transcript:      "台词",
 					SpeakerVerified: true,
@@ -411,17 +411,17 @@ func TestUnusableClipsNeverReachPublicState(t *testing.T) {
 	clips := []clipSpec{
 		{
 			ClipID: "clip-good-1", CharacterID: "c001",
-			AudioPath: "/assets/voices/good1.ogg", DurationMillis: 2000,
+			AudioPath: "/assets/audio/good1.webm", DurationMillis: 2000,
 			Transcript: "已审校台词一", SpeakerVerified: true, Reviewed: true, Decodable: true,
 		},
 		{
 			ClipID: "clip-good-2", CharacterID: "c002",
-			AudioPath: "/assets/voices/good2.ogg", DurationMillis: 2100,
+			AudioPath: "/assets/audio/good2.webm", DurationMillis: 2100,
 			Transcript: "已审校台词二", SpeakerVerified: true, Reviewed: true, Decodable: true,
 		},
 		{
 			ClipID: "clip-bad", CharacterID: "c003",
-			AudioPath: "/assets/voices/bad.ogg", DurationMillis: 2200,
+			AudioPath: "/assets/audio/bad.webm", DurationMillis: 2200,
 			Transcript: "未审校台词", SpeakerVerified: true, Reviewed: false, Decodable: true,
 		},
 	}
@@ -444,7 +444,7 @@ func TestUnusableClipsNeverReachPublicState(t *testing.T) {
 	if strings.Contains(string(prep.Public), "未审校台词") {
 		t.Fatal("the unreviewed transcript reached the public state")
 	}
-	if strings.Contains(string(prep.Public), "bad.ogg") {
+	if strings.Contains(string(prep.Public), "bad.webm") {
 		t.Fatal("the unreviewed clip's audio path reached the public state")
 	}
 }
@@ -510,10 +510,7 @@ func TestTranscriptAndSpeakerWithheldUntilReveal(t *testing.T) {
 	}
 }
 
-// TestClipIDsCarryNoSpeaker covers the 「非可推导答案 URL」 requirement.
-//
-// The board id must not encode the speaker, and the audio route is published openly
-// rather than pretended to be secret — the plan says hiding it is not a guarantee.
+// TestClipIDsCarryNoSpeaker verifies that public clip IDs do not identify speakers.
 func TestClipIDsCarryNoSpeaker(t *testing.T) {
 	_, pub, priv := prepareRound(t, verifiedPack(6), "id-seed", `{}`, 2)
 
@@ -999,8 +996,7 @@ func TestBoardOrderIsShuffled(t *testing.T) {
 	}
 }
 
-// TestAudioRouteIsNotPresentedAsSecret asserts the payload does not claim the audio route
-// is hidden, which the plan says would be a false guarantee .
+// TestAudioRouteIsNotPresentedAsSecret rejects misleading route secrecy fields.
 func TestAudioRouteIsNotPresentedAsSecret(t *testing.T) {
 	prep, _, _ := prepareRound(t, verifiedPack(8), "route-seed", `{"clips":4}`, 2)
 	public := strings.ToLower(string(prep.Public))

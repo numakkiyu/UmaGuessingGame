@@ -113,10 +113,12 @@ config/*.local.json
 # Local backups
 /backups/
 
-# Ignore bulk audio downloads; reviewed clips need per-file exceptions
-# Exclude children, not the directory, so the manifest exception can match
+# Original audio downloads and conversion logs stay outside the repository
 /data/assets/audio/*
 !/data/assets/audio/manifest.json
+!/data/assets/audio/library/
+/data/assets/audio/library/*
+!/data/assets/audio/library/*.webm
 
 # Test reports and browser downloads
 coverage/
@@ -131,3 +133,8 @@ test-results/
 /server
 /uma-server
 /uma-content
+
+# VitePress generated site and development cache
+/docs/.vitepress/dist/
+/docs/.vitepress/cache/
+/docs/.vitepress/.temp/

@@ -152,6 +152,22 @@ func (s *Service) BuildRoundView(ctx context.Context, roundID string, room Room,
 				return RoundView{}, problem.Internal(fmt.Errorf("room: project round: %w", perr))
 			}
 			view.PublicState = projected
+			if r.ModeID == "classic" {
+				view.CanSubmit = view.CanSubmit && !r.Paused() && (r.Status == modes.PhaseCollecting || r.Status == modes.PhaseBriefing)
+				var progress struct {
+					Self *struct {
+						Solved      bool `json:"solved"`
+						Failed      bool `json:"failed"`
+						Surrendered bool `json:"surrendered"`
+					} `json:"self"`
+				}
+				if err := json.Unmarshal(projected, &progress); err != nil {
+					return RoundView{}, problem.Internal(err)
+				}
+				if progress.Self != nil {
+					view.CanSubmit = view.CanSubmit && !progress.Self.Solved && !progress.Self.Failed && !progress.Self.Surrendered
+				}
+			}
 			if r.ModeID == "rapport" && s.individualRoundSeats(r) {
 				var authority struct {
 					CanAnswer bool `json:"canAnswer"`
@@ -265,6 +281,16 @@ func (s *Service) BuildRoundView(ctx context.Context, roundID string, room Room,
 				view.SubmissionRevision = voteRevision
 			}
 		}
+	}
+	// Phase and surrender gates apply after mode-specific authority, including
+	// creative voting, so a projection cannot reopen a closed participant.
+	view.CanSubmit = view.CanSubmit && !r.Paused() && !isSurrendered(states[viewer.Subject.ID]) &&
+		(r.Status == modes.PhaseCollecting || r.Status == modes.PhaseBriefing)
+	if r.DeadlineAt != nil && s.nowMS() > r.DeadlineAt.UnixMilli() {
+		view.CanSubmit = false
+	}
+	if r.Status == modes.PhaseBriefing && (s.previewWindowMS(r) > 0 || r.ModeID == "rapport" || r.ModeID == "bluff" || r.ModeID == "strategy-race" || r.ModeID == "creative" || r.ModeID == "trade") {
+		view.CanSubmit = false
 	}
 	// Attach player-facing names for every subject in this round.
 	//

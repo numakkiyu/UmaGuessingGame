@@ -3,7 +3,9 @@ package httpapi_test
 import (
 	"context"
 	"encoding/json"
+	"github.com/bhcn/umaguessinggame/internal/room"
 	"net/http"
+	"strconv"
 	"testing"
 	"time"
 
@@ -25,9 +27,7 @@ func TestMatchmakingTicketStatusReachesTheWire(t *testing.T) {
 	firstClient, first := h.newSession("first")
 	secondClient, second := h.newSession("second")
 
-	body := map[string]any{
-		"modeConfig": map[string]any{"modeId": "classic", "config": map[string]any{}},
-	}
+	body := matchTicketBody(t, h, firstClient, first, "classic-duel")
 
 	firstRec := h.doAs(firstClient, http.MethodPost, "/api/v1/matchmaking-tickets", body,
 		map[string]string{"X-CSRF-Token": first.CSRFToken, "Idempotency-Key": "ticket-first-0001"})
@@ -45,6 +45,7 @@ func TestMatchmakingTicketStatusReachesTheWire(t *testing.T) {
 		t.Errorf("a lone ticket must report queueing, got %q", firstTicket.Status)
 	}
 
+	body = matchTicketBody(t, h, secondClient, second, "classic-duel")
 	secondRec := h.doAs(secondClient, http.MethodPost, "/api/v1/matchmaking-tickets", body,
 		map[string]string{"X-CSRF-Token": second.CSRFToken, "Idempotency-Key": "ticket-second-001"})
 	if secondRec.Status != http.StatusCreated {
@@ -79,18 +80,14 @@ func TestMatchmakingTicketStatusReachesTheWire(t *testing.T) {
 	}
 }
 
-// TestMatchmakingPairingGivesEarlierTicketControl asserts the ownership rule over
-// HTTP: the ticket created FIRST owns the room, whichever side accepts last.
+// TestMatchmakingPairingGivesEarlierTicketControl keeps both matched players outside management authority.
 func TestMatchmakingPairingGivesEarlierTicketControl(t *testing.T) {
 	h := newMatchmakingHarness(t)
 	firstClient, first := h.newSession("first")
 	secondClient, second := h.newSession("second")
-	body := map[string]any{
-		"modeConfig": map[string]any{"modeId": "classic", "config": map[string]any{}},
-	}
 
 	create := func(client *http.Client, sess testSession, key string) (string, string) {
-		rec := h.doAs(client, http.MethodPost, "/api/v1/matchmaking-tickets", body,
+		rec := h.doAs(client, http.MethodPost, "/api/v1/matchmaking-tickets", matchTicketBody(t, h, client, sess, "classic-duel"),
 			map[string]string{"X-CSRF-Token": sess.CSRFToken, "Idempotency-Key": key})
 		if rec.Status != http.StatusCreated {
 			t.Fatalf("create ticket status = %d; body=%s", rec.Status, rec.Body)
@@ -152,8 +149,8 @@ func TestMatchmakingPairingGivesEarlierTicketControl(t *testing.T) {
 		}
 		return false
 	}
-	if !hasManage(readRoom(firstClient)) {
-		t.Error("the earlier ticket must hold manage-room over HTTP")
+	if hasManage(readRoom(firstClient)) {
+		t.Error("matched players must not control the room")
 	}
 	if hasManage(readRoom(secondClient)) {
 		t.Error("the later ticket must NOT hold manage-room over HTTP")
@@ -218,6 +215,7 @@ func newMatchmakingHarness(t *testing.T) *harness {
 	return newHarness(t, func(c *harnessConfig) {
 		c.AllowMissingOrigin = true
 		c.Modes = reg
+		c.Content = matchHTTPContent{}
 	})
 }
 
@@ -348,4 +346,32 @@ func TestEventSegmentFollowsItsRound(t *testing.T) {
 		t.Errorf("a settled round must complete its segment, got %q", status)
 	}
 
+}
+
+type matchHTTPContent struct{ tradeContent }
+
+func (matchHTTPContent) ModeAdmission(id string) (room.ModeAdmission, bool) {
+	return room.ModeAdmission{Mode: id, Available: true, QuestionCount: 100}, true
+}
+func matchTicketBody(t *testing.T, h *harness, client *http.Client, sess testSession, pool string) map[string]any {
+	t.Helper()
+	rec := h.doAs(client, http.MethodPost, "/api/v1/matchmaking-proofs", map[string]any{"poolId": pool}, map[string]string{"X-CSRF-Token": sess.CSRFToken})
+	if rec.Status != 201 {
+		t.Fatalf("proof status %d: %s", rec.Status, rec.Body)
+	}
+	var p struct {
+		ChallengeID string `json:"challengeId"`
+		Bits        int    `json:"bits"`
+	}
+	if err := json.Unmarshal(rec.Body, &p); err != nil {
+		t.Fatal(err)
+	}
+	for i := 0; i < 1<<25; i++ {
+		nonce := strconv.Itoa(i)
+		if room.ValidMatchProof(p.ChallengeID, nonce, p.Bits) {
+			return map[string]any{"poolId": pool, "proof": map[string]string{"challengeId": p.ChallengeID, "nonce": nonce}}
+		}
+	}
+	t.Fatal("proof search exhausted")
+	return nil
 }

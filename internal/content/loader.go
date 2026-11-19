@@ -64,15 +64,16 @@ func (p SourcePaths) normalizedDir() string {
 
 // RawInputs is every decoded source artifact plus its snapshot hash.
 type RawInputs struct {
-	Ready      []RawQuestionBankEntry
-	Blocked    []RawBlockedEntry
-	Overrides  RawFieldOverrides
-	Wiki       RawWikiSnapshot
-	Outfits    RawOutfitFile
-	Skills     RawSkillFile
-	Assets     []RawAssetManifestEntry
-	CacheIndex map[string]string
-	Normalized []RawNormalizedCharacter
+	Ready           []RawQuestionBankEntry
+	Blocked         []RawBlockedEntry
+	RaceCorrections map[string]RawRaceCorrection
+	Overrides       RawFieldOverrides
+	Wiki            RawWikiSnapshot
+	Outfits         RawOutfitFile
+	Skills          RawSkillFile
+	Assets          []RawAssetManifestEntry
+	CacheIndex      map[string]string
+	Normalized      []RawNormalizedCharacter
 	// BluffReviews carries human review decisions for bluff-mode facts. It is
 	// optional: without it every fact stays reviewStatus=pending and the mode reports
 	// itself unavailable, which is the honest answer rather than publishing an
@@ -119,6 +120,9 @@ func Load(p SourcePaths) (*RawInputs, error) {
 		return nil, err
 	}
 	if err := readJSONHashed(p.fieldOverrides(), "field_overrides", &in.Overrides, &in.Snapshots); err != nil {
+		return nil, err
+	}
+	if err := readOptionalJSON(filepath.Join(p.Root, "data", "manual", "race-corrections.json"), "race_corrections", &in.RaceCorrections, &in.Snapshots); err != nil {
 		return nil, err
 	}
 	// The bluff review ledger is optional by design: a build with no reviews must

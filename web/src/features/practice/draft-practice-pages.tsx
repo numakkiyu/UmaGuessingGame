@@ -1,3 +1,4 @@
+import { GameStage } from "@/components/uma/game-stage";
 import { useConfirmation } from "@/lib/confirmation";
 import "@/i18n/aptitude";
 import { useTranslation } from "@/i18n";
@@ -32,7 +33,7 @@ function DraftPracticeGame({ initial }: { initial: DraftArchive }) {
   function open(id: string) { returnFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null; setQuery(""); setOpenTask(id); }
   async function pick(id: string) { if (openTask && await p.act((g, at) => changeLineup(g, tasks, openTask, id, at))) setOpenTask(null); }
   async function submit() { if (!disabled && await confirmAction({ns:"aptitude",key:"ui.submitConfirm"},"submit")) await p.act((g, at) => submitLineup(g, cards, tasks, at)); }
-  return <div className="uma-stack">
+  return <GameStage mode="draft" className="uma-stack">
     <PracticeGameHeading title={draftAdapter.title} modeId={game.modeId} deadlineAt={game.deadlineAt} now={now} finished={finished} />
     <PracticeNotices saved={p.saved} stale={stale} message={p.message} />
     {finished ? <section className="uma-panel space-y-3 p-4 sm:p-5" aria-labelledby="draft-result"><h2 id="draft-result" className="text-xl font-bold">{t(result ? "draftResult" : "draftEnded")}</h2><p className="text-3xl font-bold text-[var(--color-action-green)]">{result ? result.scoreUnits / 100 : 0}<span className="ml-1 text-base">{t("points")}</span></p><p className="text-sm leading-6 text-[var(--color-muted)]">{result ? t("draftScore",{points:result.totalPoints,spent:result.spent}) : t("unsubmitted")}</p><Button variant="primary" disabled={busy} onClick={() => void p.again()}><RotateCcw className="size-4" aria-hidden="true" />{t("again")}</Button></section> : null}
@@ -48,7 +49,7 @@ function DraftPracticeGame({ initial }: { initial: DraftArchive }) {
     <PracticeUtilityActions finished={finished} busy={busy} stale={stale} exportRecord={p.exportRecord} finish={p.finish} />
     <PracticeInstructions rules={draftAdapter.rules} />
     <Sheet open={!!openTask && !finished} onOpenChange={value => { if (!value) setOpenTask(null); }}><SheetContent closeLabel={t("close")} onCloseAutoFocus={e => { e.preventDefault(); const target = returnFocus.current; if (target?.isConnected && !target.matches(":disabled")) target.focus(); else taskHeading.current?.focus(); }}><SheetHeader><SheetTitle>{t("taskPicker",{count:tasks.findIndex(task=>task.taskId===openTask)+1})}</SheetTitle><SheetDescription>{activeTask ? t("taskPickerHint",{conditions:taskConditions(activeTask),spent}) : t("taskPickerEmpty")}</SheetDescription></SheetHeader><label className="block text-sm font-semibold">{t("search")}<Input className="mt-1" value={query} onChange={e => setQuery(e.target.value)} autoComplete="off" inputMode="search" placeholder={t("searchPlaceholder")} /></label><div className="mt-3 space-y-2">{activeTask ? filtered.map(c => <DraftPracticeCandidate key={c.id} card={c} task={activeTask} usedElsewhere={Object.entries(game.draft).some(([id, value]) => id !== openTask && value === c.id)} selected={game.draft[activeTask.taskId] === c.id} disabled={disabled} onPick={() => void pick(c.id)} />) : null}{!filtered.length ? <p className="text-sm">{t("noResult")}</p> : null}</div><div className="mt-3"><PracticeNotices saved={p.saved} stale={stale} message={p.message} /></div></SheetContent></Sheet>
-  </div>;
+  </GameStage>;
 }
 function DraftPracticeCandidate({ card, task, usedElsewhere, selected, disabled, onPick }: { card: PricedCard; task: DraftTask; usedElsewhere: boolean; selected: boolean; disabled: boolean; onPick: () => void }) {
   const {t}=useTranslation("aptitude",{keyPrefix:"ui"});

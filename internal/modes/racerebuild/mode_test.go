@@ -264,6 +264,15 @@ func TestScoreCorrectPairs(t *testing.T) {
 			if scores[0].ScoreUnits != tc.wantUnits {
 				t.Fatalf("scoreUnits = %d, want %d", scores[0].ScoreUnits, tc.wantUnits)
 			}
+			var explanation struct {
+				CorrectPairs int `json:"correctPairs"`
+			}
+			if err := json.Unmarshal(scores[0].Explanation, &explanation); err != nil {
+				t.Fatal(err)
+			}
+			if explanation.CorrectPairs != tc.wantPairs {
+				t.Fatalf("result explanation reports %d correct pairs, want %d", explanation.CorrectPairs, tc.wantPairs)
+			}
 			if err := scores[0].Validate(); err != nil {
 				t.Fatalf("invalid score: %v", err)
 			}

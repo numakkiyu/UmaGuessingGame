@@ -29,6 +29,9 @@ type OutboxPayload struct {
 	Audience     Audience `json:"audience,omitempty"`
 	// RevokeMembershipID is a server-only delivery instruction, never wire data.
 	RevokeMembershipID string `json:"revokeMembershipId,omitempty"`
+	// RevokeRoomSessionID targets the old device after a seat transfer.
+	RevokeRoomSessionID     string `json:"revokeRoomSessionId,omitempty"`
+	TransferredMembershipID string `json:"transferredMembershipId,omitempty"`
 	// MembershipID supports revocations committed by older V2 builds.
 	MembershipID string `json:"membershipId,omitempty"`
 }
@@ -311,6 +314,9 @@ func (d *Dispatcher) pending(ctx context.Context, limit int) ([]outboxRow, error
 
 // publishRow fans one row out to the hub.
 func (d *Dispatcher) publishRow(row outboxRow) error {
+	if row.payload.RevokeRoomSessionID != "" {
+		d.hub.RevokeIdentity(Identity{RoomID: row.roomID, SessionID: row.payload.RevokeRoomSessionID, MembershipID: row.payload.TransferredMembershipID}, "authorization-changed")
+	}
 	target := row.payload.RevokeMembershipID
 	if row.msgType == TypeSessionRevoked {
 		// Legacy room writes incorrectly used a connection-level type for a
@@ -326,7 +332,7 @@ func (d *Dispatcher) publishRow(row outboxRow) error {
 		// A delayed outbox row must not disconnect a member who has since
 		// legitimately rejoined with the same membership ID.
 		var active int
-		if err := d.db.Read().QueryRow(`SELECT COUNT(*) FROM memberships WHERE id=? AND room_id=? AND left_at IS NULL`, target, row.roomID).Scan(&active); err != nil {
+		if err := d.db.Read().QueryRow(`SELECT COUNT(*) FROM memberships WHERE id=? AND room_id=? AND left_at IS NULL AND revoked_at IS NULL`, target, row.roomID).Scan(&active); err != nil {
 			return fmt.Errorf("realtime: check revoked membership: %w", err)
 		}
 		if active == 0 {

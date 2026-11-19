@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 import "@/i18n/bluff-online";
 import {useMemo,useState} from "react";
 import {Link,useParams} from "react-router";
@@ -45,8 +47,8 @@ export function BluffRoundPage(){
  function edit(next:BluffDraft){setDraft(next);setNotice("");if(storageScope&&!saveBluffDraft(storageScope,next))setNotice("saveFailed");}
  function labelFor(id:string,index:number){const team=readTeams(roomQuery.data?.room).find(x=>x.teamId===id);if(team)return team.label;const m=readTeamMembers(roomQuery.data?.room).find(x=>x.membershipId===id);return m?/^\d{6}$/.test(m.publicCode??"")?`${m.displayName} · ${m.publicCode}`:m.displayName:t("progressLabel",{number:index+1});}
  async function submit(kind:"decoy"|"vote",retry=false){
-  if(!roundId||!round||command.busy||refreshing)return;
-  if(!retry){if(!canAct||kind==="decoy"&&(!writing||written)||kind==="vote"&&(!voting||voted||identified))return;const error=validateBluffDraft(kind,kind==="decoy"?draft.text:draft.vote??"",false);if(error){setNotice(error);return;}if(kind==="vote"&&(!selected||selected.selfAuthored))return;}
+  if(!roundId||command.busy||refreshing)return;
+  if(!retry){if(!round||!canAct||kind==="decoy"&&(!writing||written)||kind==="vote"&&(!voting||voted||identified))return;const error=validateBluffDraft(kind,kind==="decoy"?draft.text:draft.vote??"",false);if(error){setNotice(error);return;}if(kind==="vote"&&(!selected||selected.selfAuthored))return;}
   const body:BluffCommand|undefined=retry?undefined:{phaseVersion:snapshot.meta!.phaseVersion,submissionRevision:revisionForSlot(snapshot,kind),controlGeneration:snapshot.controlGeneration,modeAction:kind==="decoy"?{kind:"bluff.decoy",text:bluffText(draft.text)}:{kind:"bluff.vote",optionId:draft.vote!}};
   setRefreshing(true);setFailure(null);setCode("");setRejected(false);setNotice("");
   try{const result=await command.run(body);if(!result)return;if(!result.ok){setFailure(describeFailure(result.error));setCode(result.error instanceof ApiError?result.error.code:"");if(!result.uncertain&&result.error instanceof ApiError&&result.error.isConflict)await snapshot.refetch();if(isCredentialRefreshFailure(result.error))setNeedsRejoin(true);return;}if(result.value.data?.outcome!=="accepted"){setRejected(true);setFailure({kind:"error",title:"",detail:"",diagnosticId:result.value.requestId,retryable:true});return;}
@@ -54,7 +56,7 @@ export function BluffRoundPage(){
   }finally{setRefreshing(false);}
  }
  async function openVoting(retry=false){
-  if(!roundId||!round||reviewCommand.busy||refreshing)return;if(!retry&&(!canReview||round.reviewOptions.length-excluded.length<2))return;
+  if(!roundId||reviewCommand.busy||refreshing)return;if(!retry&&(!round||!canReview||round.reviewOptions.length-excluded.length<2))return;
   const body:BluffReviewCommand|undefined=retry?undefined:{target:"bluff-voting",expectedPhaseVersion:snapshot.meta!.phaseVersion,excludedOptionIds:[...excluded]};
   setRefreshing(true);setFailure(null);setCode("");setRejected(false);setNotice("");
   try{const result=await reviewCommand.run(body);if(!result)return;if(!result.ok){setFailure(describeFailure(result.error));setCode(result.error instanceof ApiError?result.error.code:"");if(!result.uncertain&&result.error instanceof ApiError&&result.error.isConflict)await snapshot.refetch();if(isCredentialRefreshFailure(result.error))setNeedsRejoin(true);return;}setNotice("reviewAccepted");await snapshot.refetch();}finally{setRefreshing(false);}
@@ -63,8 +65,8 @@ export function BluffRoundPage(){
  if(!roomId)return <ErrorView failure={{kind:"error",title:t("missingTitle"),detail:t("missingDetail"),diagnosticId:null,retryable:false}}/>;
  if(roomQuery.isLoading)return <LoadingBlock label={t("loadingRoom")} rows={3}/>;
  if(roomQuery.isError){const f=describeFailure(roomQuery.error);return f.kind==="forbidden"?<ForbiddenView failure={f} onRetry={()=>void roomQuery.refetch()}/>:<ErrorView failure={f} onRetry={()=>void roomQuery.refetch()}/>;}
- return <div className="uma-stack">
-  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={realtime.status} detail={roomQuery.data?.room.name??t("room")}/>
+ return <GameStage mode="bluff" className="uma-stack">
+  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={realtime.status} detail={roomDisplayName(roomQuery.data?.room, t("room"))}/>
   <section className="uma-panel p-4"><h1 className="u-fluid-task">{t("title")}</h1><p className="mt-2 text-sm leading-6">{t("summary")}</p><p className="mt-2 text-sm font-bold">{phaseLabel(phase)}{round?.subphase?` · ${t(cancelled?"cancelled":revealed?"revealed":round.subphase==="writing"?"writing":round.subphase==="review"?"review":"voting")}`:""}{snapshot.meta?.paused?` · ${t("paused")}`:""}</p>{collecting&&snapshot.meta?.deadlineAt?<p className="mt-2 text-xl font-bold"><span className="mr-2 text-sm">{t("time")}</span>{countdown.text}</p>:null}</section>
   {command.pending&&!command.busy||reviewCommand.pending&&!reviewCommand.busy?<Alert tone="warning" title={t("confirmTitle")}><p>{t("confirmDetail")}</p><Button variant="secondary" className="h-auto min-h-12 whitespace-normal" disabled={refreshing} onClick={()=>void (reviewCommand.pending?openVoting(true):submit("decoy",true))}>{t("confirmAction")}</Button></Alert>:null}
   {command.expired||reviewCommand.expired?<Alert tone="warning" title={t("expiredTitle")}><p>{t("expiredDetail")}</p><Button variant="secondary" onClick={()=>void snapshot.refetch().then(ok=>{if(ok){command.acknowledgeExpired();reviewCommand.acknowledgeExpired();}})}>{t("latest")}</Button></Alert>:null}{command.storageLimited||reviewCommand.storageLimited?<p className="text-sm">{t("limited")}</p>:null}{needsRejoin?<RejoinPrompt roomId={roomId}/>:null}
@@ -82,7 +84,7 @@ export function BluffRoundPage(){
   {round&&!cancelled?<section className="uma-card p-4"><h2 className="font-bold">{t("progress")}</h2><p className="mt-2 text-sm">{t("progressText",{written:round.decoyCount,total:round.progress.length,voted:round.voteCount})}</p><ul className="mt-2 space-y-2 text-sm">{round.progress.map((p,i)=><li key={p.subjectId} className="break-words">{labelFor(p.subjectId,i)}：{t(p.voted?"participantVoted":p.submitted?"participantWrote":"participantWaiting")}</li>)}</ul></section>:null}
   {round&&!cancelled?<details className="uma-card p-4"><summary className="cursor-pointer font-bold">{t("rules")}</summary><ul className="mt-3 space-y-2 text-sm leading-6">{(t("ruleLines",{returnObjects:true,write:round.writeSeconds,vote:round.voteSeconds}) as string[]).map(line=><li key={line}>{line}</li>)}</ul></details>:null}
   <Button asChild variant="secondary" className="h-auto min-h-11 whitespace-normal"><Link to={`/rooms/${roomId}`}>{t("back")}</Link></Button>
- </div>;
+ </GameStage>;
 }
 export function BluffResultPanel({round,scores,labelFor,cancelled=false}:{round:BluffRound;scores:unknown[];labelFor:(id:string,index:number)=>string;cancelled?:boolean}){
  const {t}=useTranslation("bluffOnline");const own=scores.find(raw=>raw&&typeof raw==="object"&&(raw as Record<string,unknown>).subjectId===round.self?.subjectId) as Record<string,unknown>|undefined,units=own?.scoreUnits;

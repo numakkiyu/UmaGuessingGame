@@ -1,10 +1,27 @@
 package httpapi
 
 import (
+	"context"
 	"net/http"
 
 	"github.com/bhcn/umaguessinggame/internal/realtime"
 )
+
+func (a streamAuthorizer) IdentityActive(ctx context.Context, identity realtime.Identity) (bool, error) {
+	if identity.Role != "display" {
+		form, err := a.srv.rooms.AccessForm(ctx, "room", identity.RoomID)
+		if err != nil {
+			return false, err
+		}
+		if a.srv.accounts.Required(form) {
+			active, err := a.srv.accounts.GameActive(ctx, identity.SessionID)
+			if err != nil || !active {
+				return false, err
+			}
+		}
+	}
+	return a.srv.rooms.StreamIdentityActive(ctx, identity.RoomID, identity.MembershipID, identity.SessionID, identity.Role)
+}
 
 // streamAuthorizer adapts the session and room services to realtime.Authorizer.
 //
@@ -35,6 +52,9 @@ func (a streamAuthorizer) AuthorizeSSE(r *http.Request, roomID string) (realtime
 // is why a revoked client's reconnect is rejected instead of being sent a revocation
 // frame it can no longer receive.
 func (a streamAuthorizer) authorize(r *http.Request, roomID string) (realtime.Identity, bool, error) {
+	if err := a.srv.sessions.OriginAllowedForStream(r); err != nil {
+		return realtime.Identity{}, false, nil
+	}
 	sess, ok := sessionOf(r)
 	if !ok {
 		return realtime.Identity{}, false, nil

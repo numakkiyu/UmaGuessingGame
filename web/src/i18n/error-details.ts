@@ -1,11 +1,43 @@
 export const errorDetails = {
   "zh-Hans": {
+    "account-seat-active": { title: "你已经在房间里了", detail: "请回到原来的席位，或先离开那边的房间" },
+    "account-queue-active": { title: "你已经在匹配或对局中了", detail: "请先完成当前一场，再来寻找新的对手" },
+    "account-required": { title: "此玩法需要登录", detail: "点右上角的头像，选择登录方式" },
+    "account-changed": { title: "登录的账户变了", detail: "请回到大厅，重新进入这场游玩" },
+    "account-csrf-invalid": { title: "请刷新页面后再试", detail: "登录状态需要重新确认，刷新后就能继续" },
+    "login-unavailable": { title: "这个登录方式暂时用不了", detail: "换一个登录方式，或稍后再试一次" },
+    "account-disabled": { title: "账户登录暂未开放", detail: "你仍可体验已经开放的游玩" },
+
+    "pause-counterparty-required": { title:"请等对方确认暂停", detail:"申请人和同队伙伴不能替对方确认" },
+    "pause-request-closed": { title:"这次暂停已有结果", detail:"请查看最新对局进度" },
+    "pause-request-stale": { title:"这次暂停已失效", detail:"对局已进入下一阶段，请查看最新进度" },
+    "participant-surrendered": { title:"你已认输", detail:"这局不能继续作答，请等待结果，或回大厅再开一场" },
+    "matchmaking-idle": { title:"这局已经结束", detail:"开始后一直没有作答，可以重新匹配" },
+
+    "matchmaking-proof-required": { title: "这次匹配还没准备好", detail: "请再试一次，准备好就能开始寻找对手" },
+    "matchmaking-proof-invalid": { title: "这次匹配还没准备好", detail: "请再试一次，准备好就能开始寻找对手" },
+    "ticket-already-active": { title: "你已经在排队或对局中", detail: "正在找回当前匹配，请稍等" },
+    "match-already-started": { title: "这场已经开跑了", detail: "请进入当前对局，或在房间里选择离开" },
+    "matchmaking-rules-fixed": { title: "本场规则已经定好", detail: "回到匹配大厅选择一场，再来比一比" },
+    "matchmaking-reserved": { title: "本场规则已经定好", detail: "回到匹配大厅选择一场，再来比一比" },
+    "matchmaking-pause-disabled": { title: "本场规则已经定好", detail: "回到匹配大厅选择一场，再来比一比" },
+    "matchmaking-rematch-disabled": { title: "本场规则已经定好", detail: "回到匹配大厅选择一场，再来比一比" },
+    "matchmaking-mode-unavailable": { title: "这次匹配还没准备好", detail: "请再试一次，准备好就能开始寻找对手" },
+
+
+    unknown_character: { title: "这局不能选择这位角色", detail: "这次没有扣除猜测机会，请从本局可选角色中重新选择" },
+    "session-rejoin-required": {"title": "需要重新进入这一局", "detail": "请重新打开本局，恢复后再继续作答"},
+    "session-storage-unavailable": {"title": "无法保存游玩身份", "detail": "请检查浏览器是否允许保存网站数据，再试一次"},
+    "session-storage-blocked": {"title": "请先关闭旧的游戏页面", "detail": "还有旧页面开着，请关闭后再试一次"},
+    "session-busy": {"title": "另一个页面正在准备加入", "detail": "请稍等片刻再试，无需重复开启游戏页面"},
+    "session-restore-failed": {"title": "无法恢复游玩身份", "detail": "请保持原来的游戏页面，稍后再试一次"},
+    "session-create-failed": {"title": "暂时无法加入", "detail": "请稍等片刻，再试着加入"},
     "solo-room": {
-      "title": "这是一个人的练习",
-      "detail": "想和朋友一起玩，可以在大厅选择好友多人，另开一个房间"
+      "title": "这是一个人的挑战",
+      "detail": "想和朋友一起玩，可以在大厅选择「好友游玩」，另开一个房间"
     },
     "host-changed": {
-      "title": "主持人已经换啦",
+      "title": "主持人已更换",
       "detail": "请查看最新房间安排，再继续游玩"
     },
     "host-required": {
@@ -22,12 +54,13 @@ export const errorDetails = {
     },
     "individual-controls": {
       "title": "这局各自操作",
-      "detail": "请用自己的手牌作答，不需要安排队伍代表"
+      "detail": "每位玩家各自作答，不需要安排队伍代表"
     },
     "admission-cancelled": {
       "title": "已返回，尚未开始",
       "detail": "刚才填写的内容还在。准备好后，再点一次开始就行"
     },
+    "admission-risk-required": { title: "训练员，稍等一下", detail: "请稍后再试，完成入场确认后就能继续游玩" },
     "admission-required": {
       "title": "开始前还需确认一下",
       "detail": "请重新点一次开始，完成入场确认后继续"
@@ -37,15 +70,15 @@ export const errorDetails = {
       "detail": "可以继续和队友讨论，由当前代表确认全队的作答"
     },
     "control-generation-conflict": {
-      "title": "作答安排刚刚变了",
-      "detail": "请刷新状态，查看现在轮到谁，再继续作答"
+      "title": "作答代表已更换",
+      "detail": "请刷新页面，确认当前作答代表后继续"
     },
     "preview-in-progress": {
       "title": "先记住牌面",
       "detail": "观看结束后会一起盖牌，到时再开始翻牌"
     },
     "team-locked": {
-      "title": "已经开场啦",
+      "title": "本局已开始",
       "detail": "这一局的队伍和参赛身份保持不变，下一局开始前再调整"
     },
     "practice-unavailable": {
@@ -81,12 +114,12 @@ export const errorDetails = {
       "detail": "开启设备的自动日期与时间，再试着开始挑战"
     },
     "duplicate-guess": {
-      "title": "已经猜过她啦",
+      "title": "已经猜过她",
       "detail": "这次没有扣除机会，换一位赛马娘试试吧"
     },
     "rapport-roster-invalid": {
       "title": "先安排好默契搭档",
-      "detail": "每组需要 2–8 位伙伴，分队后请让所有选手加入队伍，各队人数相差不超过一人；题目数量也要够大家轮流选偏好"
+      "detail": "每组需要 2–8 位伙伴，分队后请让所有选手加入队伍，各队人数相差不超过一人；每组人数不能超过本场题数，请减少每组人数后重试"
     },
     "team-roster-invalid": {
       "title": "先安排好情报小队",
@@ -110,7 +143,7 @@ export const errorDetails = {
     },
     "segment-rules-mismatch": {
       "title": "本项规则刚刚有变",
-      "detail": "请刷新节目单，按最新规则重新开局"
+      "detail": "请刷新页面，查看赛程中的最新规则后重新开局"
     },
     "segment-roster-changed": {
       "title": "本项的参赛名单变了",
@@ -118,7 +151,7 @@ export const errorDetails = {
     },
     "segment-closed": {
       "title": "这个分项已结束",
-      "detail": "可以查看本项成绩，或从节目单选择其他项目"
+      "detail": "可以查看本项成绩，或从赛程选择其他项目"
     },
     "segment-rounds-complete": {
       "title": "本项的对局已经开齐",
@@ -134,7 +167,7 @@ export const errorDetails = {
     },
     "segments-incomplete": {
       "title": "还有分项没完成",
-      "detail": "先完成节目单中的全部对局，或说明原因作废分项，再结束活动"
+      "detail": "先完成赛程中的全部对局，或说明原因作废分项，再结束活动"
     },
     "round-already-open": {
       "title": "上一局还没结束",
@@ -142,7 +175,7 @@ export const errorDetails = {
     },
     "room-full": {
       "title": "这个房间已经满员了",
-      "detail": "请让房主增加席位，或回到大厅另找一场"
+      "detail": "可以请房主另开一个房间，或返回大厅选择其他玩法"
     },
     "room-in-progress": {
       "title": "这一局已经开始",
@@ -153,8 +186,8 @@ export const errorDetails = {
       "detail": "回到当前房间继续就好"
     },
     "invitation-invalid": {
-      "title": "邀请码不对",
-      "detail": "请向房主确认邀请码，注意区分大小写，再试一次"
+      "title": "房间分享码不对",
+      "detail": "请检查房间分享码中的字母和数字，或请房主重新分享邀请"
     },
     "invitation-not-found": {
       "title": "找不到这个邀请",
@@ -238,16 +271,48 @@ export const errorDetails = {
     },
     "join-unavailable": {
       "title": "无法加入这个房间",
-      "detail": "房间匹配码可能已失效，或房间当前不接受新成员。请向房主确认后再试"
+      "detail": "房间分享码可能已失效，或房间当前不接受新成员。请向房主确认后再试"
     }
   },
   "zh-Hant": {
+    "account-seat-active": { title: "你已經在房間裡了", detail: "請返回原本的席位，或先離開那邊的房間" },
+    "account-queue-active": { title: "你已經在配對或對局中了", detail: "請先完成目前這場，再來尋找新的對手" },
+    "account-required": { title: "此玩法需要登入", detail: "點右上角的頭像，選擇登入方式" },
+    "account-changed": { title: "登入的帳號變了", detail: "請返回大廳，重新加入這場遊玩" },
+    "account-csrf-invalid": { title: "請重新整理頁面後再試", detail: "需要重新確認登入狀態，重新整理後就能繼續" },
+    "login-unavailable": { title: "這個登入方式暫時無法使用", detail: "換個登入方式，或稍後再試一次" },
+    "account-disabled": { title: "帳號登入尚未開放", detail: "你仍可體驗已經開放的遊玩" },
+
+    "pause-counterparty-required": { title:"請等對方確認暫停", detail:"申請人和同隊夥伴無法代替對方確認" },
+    "pause-request-closed": { title:"這次暫停已有結果", detail:"請查看最新遊戲進度" },
+    "pause-request-stale": { title:"這次暫停已失效", detail:"遊戲已進入下一階段，請查看最新進度" },
+    "participant-surrendered": { title:"你已認輸", detail:"這場無法繼續作答，請等候結果，或回大廳再開一場" },
+    "matchmaking-idle": { title:"這場已經結束", detail:"開始後一直沒有作答，可以重新配對" },
+
+    "matchmaking-proof-required": { title: "這次配對還沒準備好", detail: "請再試一次，準備好就能開始尋找對手" },
+    "matchmaking-proof-invalid": { title: "這次配對還沒準備好", detail: "請再試一次，準備好就能開始尋找對手" },
+    "ticket-already-active": { title: "你已經在排隊或遊玩中", detail: "正在找回目前的配對，請稍候" },
+    "match-already-started": { title: "這場已經開始了", detail: "請進入目前的遊戲，或在房間裡選擇離開" },
+    "matchmaking-rules-fixed": { title: "本場規則已經訂好", detail: "回到配對大廳選一場，再來比比看" },
+    "matchmaking-reserved": { title: "本場規則已經訂好", detail: "回到配對大廳選一場，再來比比看" },
+    "matchmaking-pause-disabled": { title: "本場規則已經訂好", detail: "回到配對大廳選一場，再來比比看" },
+    "matchmaking-rematch-disabled": { title: "本場規則已經訂好", detail: "回到配對大廳選一場，再來比比看" },
+    "matchmaking-mode-unavailable": { title: "這次配對還沒準備好", detail: "請再試一次，準備好就能開始尋找對手" },
+
+
+    unknown_character: { title: "這局無法選擇這位角色", detail: "這次沒有扣除猜測次數，請從這局可選的角色中重新選擇" },
+    "session-rejoin-required": {"title": "需要重新進入這一局", "detail": "請重新開啟本局，恢復後再繼續作答"},
+    "session-storage-unavailable": {"title": "無法儲存遊玩身分", "detail": "請確認瀏覽器允許儲存網站資料，再試一次"},
+    "session-storage-blocked": {"title": "請先關閉舊的遊戲頁面", "detail": "還有舊頁面開著，請關閉後再試一次"},
+    "session-busy": {"title": "另一個頁面正在準備加入", "detail": "請稍候再試，不必重複開啟遊戲頁面"},
+    "session-restore-failed": {"title": "無法恢復遊玩身分", "detail": "請保留原本的遊戲頁面，稍候再試一次"},
+    "session-create-failed": {"title": "暫時無法加入", "detail": "請稍候再試著加入"},
     "solo-room": {
-      "title": "這是一個人的練習",
-      "detail": "想和朋友一起玩，可以回大廳選擇好友同樂，另外建立房間"
+      "title": "這是一個人的挑戰",
+      "detail": "想和朋友一起玩，可以在大廳選「好友同樂」，另外建立房間"
     },
     "host-changed": {
-      "title": "主持人已經換人囉",
+      "title": "主持人已更換",
       "detail": "請確認最新的房間安排，再繼續遊玩"
     },
     "host-required": {
@@ -264,12 +329,13 @@ export const errorDetails = {
     },
     "individual-controls": {
       "title": "這一局各自操作",
-      "detail": "請使用自己的手牌作答，不需要安排隊伍代表"
+      "detail": "每位玩家各自作答，不必安排隊伍代表"
     },
     "admission-cancelled": {
       "title": "已返回，還沒開始遊戲",
       "detail": "剛才填寫的內容還在。準備好後，再按一次開始就可以了"
     },
+    "admission-risk-required": { title: "訓練員，請稍等一下", detail: "請稍後再試，完成入場確認後即可繼續遊玩" },
     "admission-required": {
       "title": "開始前還需要確認一下",
       "detail": "請再按一次開始，完成入場確認後就能繼續"
@@ -279,7 +345,7 @@ export const errorDetails = {
       "detail": "可以繼續和隊友討論，由目前的代表確認全隊答案"
     },
     "control-generation-conflict": {
-      "title": "作答順序剛剛變更了",
+      "title": "作答代表已更換",
       "detail": "請重新載入，確認現在輪到誰，再繼續作答"
     },
     "preview-in-progress": {
@@ -287,7 +353,7 @@ export const errorDetails = {
       "detail": "觀看時間結束後，牌會一起蓋上，到時再開始翻牌"
     },
     "team-locked": {
-      "title": "已經開始囉",
+      "title": "本場已開始",
       "detail": "這一局的隊伍與參賽身分不能變更，請在下一局開始前調整"
     },
     "practice-unavailable": {
@@ -323,12 +389,12 @@ export const errorDetails = {
       "detail": "請開啟裝置的自動日期與時間，再試著開始挑戰"
     },
     "duplicate-guess": {
-      "title": "已經猜過她囉",
+      "title": "已經猜過她",
       "detail": "這次沒有扣除次數，換一位賽馬娘猜猜看吧"
     },
     "rapport-roster-invalid": {
       "title": "先安排好默契搭檔吧",
-      "detail": "每組需要 2–8 人，請將所有選手分隊，各隊人數相差不得超過一人；題目也要足夠讓每位成員輪流選偏好"
+      "detail": "每組需要 2–8 人，請將所有選手分隊，各隊人數相差不得超過一人；每組人數不能超過本場題數，請減少每組人數後重試"
     },
     "team-roster-invalid": {
       "title": "先安排好情報小隊吧",
@@ -352,7 +418,7 @@ export const errorDetails = {
     },
     "segment-rules-mismatch": {
       "title": "本項規則剛剛變更了",
-      "detail": "請重新載入節目表，依最新規則重新開始"
+      "detail": "請重新載入賽程，依最新規則重新開始"
     },
     "segment-roster-changed": {
       "title": "本項參賽名單變更了",
@@ -360,7 +426,7 @@ export const errorDetails = {
     },
     "segment-closed": {
       "title": "這個分項已結束",
-      "detail": "可以查看本項成績，或從節目表選擇其他項目"
+      "detail": "可以查看本項成績，或從賽程選擇其他項目"
     },
     "segment-rounds-complete": {
       "title": "本項的對局已全部開始",
@@ -376,27 +442,27 @@ export const errorDetails = {
     },
     "segments-incomplete": {
       "title": "還有分項未完成",
-      "detail": "請先完成節目表中的所有對局，或註明原因將分項作廢，再結束活動"
+      "detail": "請先完成賽程中的所有對局，或註明原因將項目作廢，再結束活動"
     },
     "round-already-open": {
       "title": "上一局還沒結束",
       "detail": "請先收卷、揭曉並結算目前的對局，再開始下一局"
     },
     "room-full": {
-      "title": "這個房間已經滿員囉",
-      "detail": "可以請房主增加名額，或回大廳找其他房間"
+      "title": "這個房間已經滿員",
+      "detail": "可以請房主另外建立房間，或回大廳選擇其他玩法"
     },
     "room-in-progress": {
       "title": "這一局已經開始了",
       "detail": "請等本局結束後再加入，或請房主另外開一場"
     },
     "already-member": {
-      "title": "你已經在房間裡囉",
+      "title": "你已經在房間裡",
       "detail": "回到目前的房間繼續玩就好"
     },
     "invitation-invalid": {
-      "title": "邀請碼不正確",
-      "detail": "請向房主確認邀請碼，留意大小寫後再試"
+      "title": "房間代碼不正確",
+      "detail": "請檢查房間代碼中的字母與數字，或請房主重新分享邀請"
     },
     "invitation-not-found": {
       "title": "找不到這個邀請",
@@ -455,7 +521,7 @@ export const errorDetails = {
       "detail": "請查看對方向你提出的交易"
     },
     "self-trade": {
-      "title": "不能和自己交易喔",
+      "title": "不能和自己交易",
       "detail": "請選擇另一位夥伴"
     },
     "card-not-held": {
@@ -484,17 +550,46 @@ export const errorDetails = {
     }
   },
   "ja": {
+    "account-seat-active": { title: "このルームには参加済みです", detail: "元の席に戻るか、そちらのルームから退出してください" },
+    "account-queue-active": { title: "すでにマッチング中か対戦中です", detail: "今の対戦が終わってから、新しい相手を探してください" },
+    "account-required": { title: "ログインが必要です", detail: "右上のアイコンからログイン方法を選んでください" },
+    "account-changed": { title: "ログイン中のアカウントが変わりました", detail: "ロビーへ戻り、もう一度参加してください" },
+    "account-csrf-invalid": { title: "ページを再読み込みしてください", detail: "ログイン状態を確認してから続けられます" },
+    "login-unavailable": { title: "この方法ではログインできません", detail: "別の方法を選ぶか、少し待ってからもう一度お試しください" },
+    "account-disabled": { title: "ログインはまだ開放されていません", detail: "開放中のモードはそのまま遊べます" },
+    "pause-counterparty-required": { title:"相手の確認を待ってください", detail:"申請した人や同じチームの仲間は、相手に代わって確認できません" },
+    "pause-request-closed": { title:"この一時停止の申請は回答済みです", detail:"最新の対戦状況を確認してください" },
+    "pause-request-stale": { title:"この一時停止の申請は無効です", detail:"対戦が次の段階に進みました。最新の状況を確認してください" },
+    "participant-surrendered": { title:"降参済みです", detail:"このゲームではこれ以上回答できません。結果を待つか、ロビーから新しく始めてください" },
+    "matchmaking-idle": { title:"今回の対戦は終了しました", detail:"開始後に回答がなかったため終了しました。もう一度マッチングできます" },
+    "matchmaking-proof-required": { title: "参加の準備ができていません", detail: "もう一度試してください。準備ができたら相手を探せます" },
+    "matchmaking-proof-invalid": { title: "参加の準備ができていません", detail: "もう一度試してください。準備ができたら相手を探せます" },
+    "ticket-already-active": { title: "参加中のマッチングがあります", detail: "現在のマッチングを確認しています。少しお待ちください" },
+    "match-already-started": { title: "この対戦は始まっています", detail: "参加中の対戦へ進むか、ルームから退出してください" },
+    "matchmaking-rules-fixed": { title: "この対戦のルールは決まっています", detail: "マッチングロビーで対戦形式を選んでください" },
+    "matchmaking-reserved": { title: "この対戦のルールは決まっています", detail: "マッチングロビーで対戦形式を選んでください" },
+    "matchmaking-pause-disabled": { title: "この対戦のルールは決まっています", detail: "マッチングロビーで対戦形式を選んでください" },
+    "matchmaking-rematch-disabled": { title: "この対戦のルールは決まっています", detail: "マッチングロビーで対戦形式を選んでください" },
+    "matchmaking-mode-unavailable": { title: "参加の準備ができていません", detail: "もう一度試してください。準備ができたら相手を探せます" },
+
+    unknown_character: { title: "このゲームでは選べないウマ娘です", detail: "回答回数は減っていません。このゲームで選べるウマ娘から選び直してください" },
+    "session-rejoin-required": {"title": "このゲームを開き直してください", "detail": "ゲームを開き直し、復帰してから回答を続けてください"},
+    "session-storage-unavailable": {"title": "参加情報を保存できません", "detail": "ブラウザーでサイトデータの保存を許可してから、もう一度お試しください"},
+    "session-storage-blocked": {"title": "以前開いたゲームのページを閉じてください", "detail": "古いページが開いたままです。閉じてからもう一度お試しください"},
+    "session-busy": {"title": "別のページで参加の準備中です", "detail": "少し待ってからお試しください。ゲームのページを増やす必要はありません"},
+    "session-restore-failed": {"title": "参加情報を復元できません", "detail": "元のゲームのページを閉じずに、少し待ってからお試しください"},
+    "session-create-failed": {"title": "参加の準備ができませんでした", "detail": "少し待ってから、もう一度参加してください"},
     "solo-room": {
-      "title": "これは一人用の練習です",
-      "detail": "フレンドと遊ぶ場合は、ロビーで「フレンドと遊ぶ」を選び、別のルームを作成してください"
+      "title": "これは一人用のチャレンジです",
+      "detail": "フレンドと遊ぶ場合は、ロビーの「フレンド」から別のルームを作ってください"
     },
     "host-changed": {
-      "title": "主催者が交代しました",
+      "title": "進行役が交代しました",
       "detail": "最新のルーム情報を確認してから続けてください"
     },
     "host-required": {
-      "title": "主催者が操作してください",
-      "detail": "主催者の引き継ぎは、現在の主催者のみ行えます"
+      "title": "進行役が操作してください",
+      "detail": "進行役の引き継ぎは、現在の進行役のみ行えます"
     },
     "invalid-host-target": {
       "title": "このメンバーには引き継げません",
@@ -506,19 +601,20 @@ export const errorDetails = {
     },
     "individual-controls": {
       "title": "今回はそれぞれが操作します",
-      "detail": "自分の手札を使って回答してください。チームの代表を決める必要はありません"
+      "detail": "一人ずつ自分で回答します。チームの回答担当を決める必要はありません"
     },
     "admission-cancelled": {
       "title": "開始せずに戻りました",
       "detail": "入力した内容は残っています。準備ができたら、もう一度開始してください"
     },
+    "admission-risk-required": { title: "参加前の確認が必要です", detail: "参加前の確認を済ませてから、もう一度お試しください" },
     "admission-required": {
       "title": "開始前の確認が必要です",
       "detail": "もう一度開始ボタンを押し、参加前の確認を済ませてください"
     },
     "team-controller-required": {
       "title": "今回はチームメイトが確定します",
-      "detail": "相談は続けられます。今の代表者がチームの回答を確定してください"
+      "detail": "相談は続けられます。今の回答担当がチームの回答を確定してください"
     },
     "control-generation-conflict": {
       "title": "操作するメンバーが変わりました",
@@ -529,7 +625,7 @@ export const errorDetails = {
       "detail": "確認時間が終わるとカードが伏せられます。それからめくり始めてください"
     },
     "team-locked": {
-      "title": "もう始まっています",
+      "title": "ゲームは開始済みです",
       "detail": "今回のチームと参加者の役割は変更できません。次のゲームが始まる前に調整してください"
     },
     "practice-unavailable": {
@@ -538,7 +634,7 @@ export const errorDetails = {
     },
     "audio-playback-review-required": {
       "title": "今回、音声を再生できませんでした",
-      "detail": "この回の得点は保留です。主催者がこの回を無効にして、新しい問題を開始してください"
+      "detail": "この回の得点は保留です。進行役がこの回を無効にして、新しい問題を開始してください"
     },
     "play-disabled": {
       "title": "この遊び方は現在利用できません",
@@ -570,11 +666,11 @@ export const errorDetails = {
     },
     "rapport-roster-invalid": {
       "title": "まずはペア・チームを決めよう",
-      "detail": "各チームは 2～8 人で、全員をチームに割り当ててください。人数差は 1 人まで。全員が順番に好みを選べるだけの問題も必要です"
+      "detail": "各チームは 2～8 人で、全員をチームに割り当ててください。人数差は 1 人まで。各チームの人数が問題数を超える場合は、チームの人数を減らしてからお試しください"
     },
     "team-roster-invalid": {
       "title": "まずは情報チームを編成しよう",
-      "detail": "情報パズルは 1～8 チーム、各 3～6 人で遊びます。待機画面で全員をチームに割り当て、各チームのキャプテンを選んでください"
+      "detail": "情報パズルは 1～8 チーム、各 3～6 人で遊びます。待機画面で全員をチームに割り当て、各チームのリーダーを選んでください"
     },
     "not-enough-participants": {
       "title": "参加者がまだ足りません",
@@ -589,7 +685,7 @@ export const errorDetails = {
       "detail": "最新の参加者一覧と設定を読み込み、確認してから開始してください"
     },
     "event-entertainment-only": {
-      "title": "この種目はお楽しみ用です",
+      "title": "この種目はお楽しみ種目です",
       "detail": "得点は総合順位に反映されません。お楽しみ種目として設定してください"
     },
     "segment-rules-mismatch": {
@@ -626,23 +722,23 @@ export const errorDetails = {
     },
     "room-full": {
       "title": "ルームが満員です",
-      "detail": "ルーム作成者に定員を増やしてもらうか、ロビーで別のルームを探してください"
+      "detail": "ホストに別のルームを作ってもらうか、ロビーでほかのゲームを選んでください"
     },
     "room-in-progress": {
       "title": "ゲームはすでに始まっています",
-      "detail": "終了後に参加するか、ルーム作成者に別のゲームを作ってもらってください"
+      "detail": "終了後に参加するか、ホストに別のゲームを作ってもらってください"
     },
     "already-member": {
       "title": "すでに参加しています",
       "detail": "今のルームに戻って、そのまま遊べます"
     },
     "invitation-invalid": {
-      "title": "招待コードが違います",
-      "detail": "ルーム作成者にコードを確認し、大文字・小文字にも気を付けて入力してください"
+      "title": "ルームコードが違います",
+      "detail": "ルームコードの英数字を確認するか、ホストに招待を送り直してもらってください"
     },
     "invitation-not-found": {
       "title": "招待が見つかりません",
-      "detail": "招待が無効になった可能性があります。ルーム作成者にもう一度送ってもらってください"
+      "detail": "招待が無効になった可能性があります。ホストにもう一度送ってもらってください"
     },
     "not-a-participant": {
       "title": "今回の参加者に含まれていません",
@@ -650,11 +746,11 @@ export const errorDetails = {
     },
     "owner-cannot-leave": {
       "title": "今はそのまま退出できません",
-      "detail": "別のメンバーに主催者を引き継いでから、ルームを退出してください"
+      "detail": "別のメンバーに進行役を譲ってから、ルームを退出してください"
     },
     "round-paused": {
       "title": "ゲームは一時停止中です",
-      "detail": "主催者が再開してから回答してください"
+      "detail": "進行役が再開してから回答してください"
     },
     "round-not-collecting": {
       "title": "今は回答を送れません",
@@ -677,8 +773,8 @@ export const errorDetails = {
       "detail": "待機画面で参加者をチームに割り当ててから開始してください"
     },
     "team-captain-required": {
-      "title": "キャプテンが操作してください",
-      "detail": "自分のチームのキャプテンに確認してもらってください"
+      "title": "リーダーが操作してください",
+      "detail": "自分のチームのリーダーに確認してもらってください"
     },
     "team-label-taken": {
       "title": "そのチーム名は使われています",
@@ -722,7 +818,7 @@ export const errorDetails = {
     },
     "join-unavailable": {
       "title": "このルームには参加できません",
-      "detail": "コードが無効か、新しい参加者を受け付けていません。ルーム作成者に確認してからお試しください"
+      "detail": "コードが無効か、新しい参加者を受け付けていません。ホストに確認してからお試しください"
     }
   }
 } as const;

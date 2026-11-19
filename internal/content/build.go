@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"net/url"
 	"os"
 	"path/filepath"
 	"sort"
@@ -43,6 +44,12 @@ type joinStats struct {
 
 // BuildDataset turns raw inputs into the canonical dataset.
 func BuildDataset(in *RawInputs, generatedAt, datasetVersion, root string) (*Dataset, *joinStats, error) {
+	if err := validateKnowledge(in); err != nil {
+		return nil, nil, err
+	}
+	if err := validateFieldOverrides(in); err != nil {
+		return nil, nil, err
+	}
 	st := &joinStats{
 		ReadyEntries:    len(in.Ready),
 		BlockedEntries:  len(in.Blocked),
@@ -57,6 +64,12 @@ func BuildDataset(in *RawInputs, generatedAt, datasetVersion, root string) (*Dat
 	wikiByJa := make(map[string]*RawWikiCharacter, len(in.Wiki.Characters))
 	for i := range in.Wiki.Characters {
 		w := &in.Wiki.Characters[i]
+		if w.ID == "" {
+			return nil, nil, fmt.Errorf("content: empty canonical id in wiki snapshot")
+		}
+		if _, exists := wikiByID[w.ID]; exists {
+			return nil, nil, fmt.Errorf("content: duplicate canonical id %q in wiki snapshot", w.ID)
+		}
 		wikiByID[w.ID] = w
 		if w.Names.Ja != "" {
 			if _, dup := wikiByJa[w.Names.Ja]; dup {
@@ -71,6 +84,12 @@ func BuildDataset(in *RawInputs, generatedAt, datasetVersion, root string) (*Dat
 	normByFile := make(map[string]*RawNormalizedCharacter, len(in.Normalized))
 	for i := range in.Normalized {
 		n := &in.Normalized[i]
+		if _, exists := normByID[n.ID]; n.ID != "" && exists {
+			return nil, nil, fmt.Errorf("content: duplicate normalized id %q", n.ID)
+		}
+		if _, exists := normByFile[n.FileName]; n.FileName != "" && exists {
+			return nil, nil, fmt.Errorf("content: duplicate normalized filename %q", n.FileName)
+		}
 		normByID[n.ID] = n
 		normByFile[n.FileName] = n
 	}
@@ -177,7 +196,7 @@ func BuildDataset(in *RawInputs, generatedAt, datasetVersion, root string) (*Dat
 	// are indistinguishable and must be excluded from competitive packs .
 	groupSignature := make(map[string][]string)
 	for _, r := range in.Ready {
-		g := groupsFromReady(r)
+		g := groupsFromReady(r, in.Overrides[r.ID])
 		if len(g.Missing()) != 0 {
 			continue
 		}
@@ -199,6 +218,9 @@ func BuildDataset(in *RawInputs, generatedAt, datasetVersion, root string) (*Dat
 
 	// Prototype/race aggregation happens once over the snapshot.
 	races := buildRaces(in.Wiki.Characters)
+	if err := applyRaceCorrections(races, in.RaceCorrections); err != nil {
+		return nil, nil, err
+	}
 
 	for i := range in.Wiki.Characters {
 		w := &in.Wiki.Characters[i]
@@ -307,8 +329,12 @@ func buildCharacter(
 			c.LegacyIDs = []string{li.romanised}
 		}
 		if li.ready != nil {
-			g := groupsFromReady(*li.ready)
+			g := groupsFromReady(*li.ready, overrides[li.romanised])
 			c.Groups = &g
+			if ov := overrides[li.romanised]; ov["racing_source_url"] != "" {
+				c.Sources = append(c.Sources, SourceRef{Site: "racing-correction", URL: ov["racing_source_url"]})
+				c.ReviewNotes = append(c.ReviewNotes, ov["racing_note"]+" ("+ov["racing_checked_at"]+")")
+			}
 			c.AssetID = li.ready.AssetID
 		}
 		if li.blocked != nil {
@@ -524,17 +550,26 @@ func aliasesFromWiki(w *RawWikiCharacter) []Alias {
 
 func sourcesFromWiki(w *RawWikiCharacter) []SourceRef {
 	var out []SourceRef
+	seen := map[string]bool{}
+	add := func(site, page, base string) {
+		page = strings.TrimSpace(page)
+		if page == "" || seen[site+"/"+page] {
+			return
+		}
+		seen[site+"/"+page] = true
+		out = append(out, SourceRef{Site: site, Page: page, URL: base + url.PathEscape(page)})
+	}
+	add("biliwiki", w.Names.WikiTitle, "https://wiki.biligame.com/umamusume/")
 	for _, page := range w.Sources.Pages {
-		out = append(out, SourceRef{Site: "biliwiki", Page: page})
+		add("biliwiki", page, "https://wiki.biligame.com/umamusume/")
 	}
-	if w.Implementation.Source != "" {
-		out = append(out, SourceRef{Site: "biliwiki", Page: w.Implementation.Source})
-	}
+	add("biliwiki", w.Implementation.Source, "https://wiki.biligame.com/umamusume/")
+	add("moegirl", w.Sources.Moegirl, "https://zh.moegirl.org.cn/")
 	return out
 }
 
-func groupsFromReady(r RawQuestionBankEntry) LegacyGroups {
-	return LegacyGroups{
+func groupsFromReady(r RawQuestionBankEntry, overrides map[string]string) LegacyGroups {
+	g := LegacyGroups{
 		Star:              r.Star,
 		SurfaceGroup:      append([]string(nil), r.SurfaceGroup...),
 		DistanceGroup:     append([]string(nil), r.DistanceGroup...),
@@ -547,6 +582,18 @@ func groupsFromReady(r RawQuestionBankEntry) LegacyGroups {
 		SchoolGrade:       r.SchoolGrade,
 		Dormitory:         r.Dormitory,
 	}
+	for key, dst := range map[string]*string{"grade": &g.SchoolGrade, "dormitory": &g.Dormitory, "sex_type": &g.SexType, "g1_bracket": &g.G1Bracket, "g23_bracket": &g.G23Bracket} {
+		if v, ok := overrides[key]; ok {
+			*dst = v
+		}
+	}
+	if v, ok := overrides["g1_has_jpn"]; ok {
+		g.G1HasJpn = v == "true"
+	}
+	if v, ok := overrides["g23_has_jpn"]; ok {
+		g.G23HasJpn = v == "true"
+	}
+	return g
 }
 
 func prototypeFromWiki(w *RawWikiCharacter) *PrototypeHorse {
@@ -577,11 +624,9 @@ func prototypeFromWiki(w *RawWikiCharacter) *PrototypeHorse {
 			DamDam:   raw.Pedigree.DamDam,
 		},
 	}
-	if raw.SourceBiliwiki {
-		p.Sources = append(p.Sources, SourceRef{Site: "biliwiki", Page: "原型马"})
-	}
-	if raw.SourceMoegirl {
-		p.Sources = append(p.Sources, SourceRef{Site: "moegirl", Page: "原型马"})
+	p.Sources = sourcesFromWiki(w)
+	if raw.NKBID != "" {
+		p.Sources = append(p.Sources, SourceRef{Site: "netkeiba", Page: raw.NKBID, URL: "https://db.netkeiba.com/horse/" + url.PathEscape(raw.NKBID) + "/"})
 	}
 	return p
 }

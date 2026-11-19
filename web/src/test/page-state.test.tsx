@@ -30,7 +30,7 @@ describe("describeFailure 的状态映射", () => {
   it("超时 → timeout，标题说明「还在确认」而不是断言失败", () => {
     const failure = describeFailure(new TimeoutError(1000));
     expect(failure.kind).toBe("timeout");
-    expect(failure.title).toContain("还在确认这次答案是否提交成功");
+    expect(failure.title).toContain("正在确认刚才的操作");
   });
 
   it("网络失败 → offline", () => {
@@ -60,7 +60,7 @@ describe("状态视图渲染", () => {
   it("ForbiddenView 显示权限说明与诊断编号，不是「暂无数据」", () => {
     render(<ForbiddenView failure={describeFailure(apiError(403, "FORBIDDEN"))} />);
     expect(screen.getByRole("alert")).toBeTruthy();
-    expect(screen.getByText("没有访问权限")).toBeTruthy();
+    expect(screen.getByText("暂时无法查看")).toBeTruthy();
     expect(screen.getByText(/req-test/)).toBeTruthy();
     expect(screen.queryByText(/暂无/)).toBeNull();
   });
@@ -73,10 +73,10 @@ describe("状态视图渲染", () => {
     expect(onRetry).toHaveBeenCalledTimes(1);
   });
 
-  it("超时状态用 warning 语气，提示先别重复作答（不暴露内部机制）", () => {
+  it("超时状态用 warning 语气，提示确认进度后再继续（不暴露内部机制）", () => {
     render(<ErrorView failure={describeFailure(new TimeoutError(500))} onRetry={vi.fn()} />);
-    expect(screen.getByText(/还在确认这次答案是否提交成功/)).toBeTruthy();
-    expect(screen.getByText(/先别重复作答/)).toBeTruthy();
+    expect(screen.getByText(/正在确认刚才的操作/)).toBeTruthy();
+    expect(screen.getByText(/确认进度后再继续/)).toBeTruthy();
     // 玩家文案：不得出现幂等键等内部词
     expect(screen.queryByText(/幂等/)).toBeNull();
   });

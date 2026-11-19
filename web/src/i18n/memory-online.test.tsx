@@ -49,3 +49,26 @@ it("已结束面板切语不重算得分，不渲染pairId或重开局",async()=
  fixture.characters=[{displayName:"来源原名",localizedNames:{ja:"確認した名前","zh-Hant":"來源名稱"}}];
  const before=JSON.stringify(fixture.view);show();for(const lang of LANGUAGES){await language(lang);expect(screen.getByText(memoryOnlineCopy[lang].complete)).toBeTruthy();expect(screen.getByText("98")).toBeTruthy();expect(screen.getByText(lang==="ja"?"確認した名前":lang==="zh-Hant"?"來源名稱":"来源原名")).toBeTruthy();expect(document.body.innerHTML).not.toContain("secret-pair");expect(JSON.stringify(fixture.view)).toBe(before);}expect(fixture.api.createSubmission).not.toHaveBeenCalled();expect(fixture.refresh).not.toHaveBeenCalled();
 });
+it("取消回合不展示正式成绩、答案或继续翻牌提示，三语均说明不计分",async()=>{
+ fixture.view={...fixture.view,meta:{phase:"cancelled",phaseVersion:5,deadlineAt:null},raw:{publicState:{phase:"cancelled",cards:[{cardId:"x",position:0,state:"matched",imagePath:"/assets/public.webp"}],self:{attempts:2,matchedPairs:1,scoreUnits:9800,finished:true},answer:{pairs:[{pairId:"hidden",label:"不应揭晓",cards:[{cardId:"x",imagePath:"/assets/public.webp"}]}]}}}};
+ show();
+ for(const lang of LANGUAGES){
+  await language(lang);
+  expect(screen.getByText(memoryOnlineCopy[lang].cancelledDetail)).toBeTruthy();
+  expect(screen.queryByText(memoryOnlineCopy[lang].answerPairs)).toBeNull();
+  expect(screen.queryByText(memoryOnlineCopy[lang].currentScore.replace("{{score}}","98"))).toBeNull();
+  expect(screen.queryByText("不应揭晓")).toBeNull();
+  expect(document.querySelectorAll("img")).toHaveLength(0);
+ }
+ expect(fixture.api.createSubmission).not.toHaveBeenCalled();
+});
+it("正式零分不会被认输前的配对成绩覆盖",async()=>{
+ fixture.view={...fixture.view,meta:{phase:"settled",phaseVersion:5,deadlineAt:null},raw:{results:[{subjectId:"me",scoreUnits:0,outcome:"surrendered"}],publicState:{cards:[{cardId:"x",position:0,state:"matched"},{cardId:"y",position:1,state:"matched"}],self:{subjectId:"me",attempts:2,matchedPairs:1,scoreUnits:9800,finished:true}}}};
+ show();
+ expect(screen.getByText(memoryOnlineCopy["zh-Hans"].currentScore.replace("{{score}}","0"))).toBeTruthy();
+ expect(screen.queryByText("98")).toBeNull();
+ expect(screen.queryByText(memoryOnlineCopy["zh-Hans"].answerRemaining)).toBeNull();
+ expect(screen.queryByText(memoryOnlineCopy["zh-Hans"].turnOver)).toBeNull();
+ expect(screen.getByText(memoryOnlineCopy["zh-Hans"].surrenderedDetail)).toBeTruthy();
+ expect(screen.queryByText(memoryOnlineCopy["zh-Hans"].complete)).toBeNull();
+});

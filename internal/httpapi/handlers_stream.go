@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"github.com/bhcn/umaguessinggame/internal/httpapi/problem"
+	"github.com/bhcn/umaguessinggame/internal/realtime"
 	"github.com/bhcn/umaguessinggame/internal/room"
 	"github.com/bhcn/umaguessinggame/internal/session"
 )
@@ -132,8 +133,24 @@ func (s *Server) handleStreamRoomEvents(w http.ResponseWriter, r *http.Request) 
 		s.writeError(w, r, err)
 		return
 	}
+	if actor.Membership == nil {
+		s.writeError(w, r, problem.Forbidden("membership-inactive", "an active room membership is required"))
+		return
+	}
 	// Origin is validated on the handshake just like a WebSocket upgrade .
 	if err := s.sessions.OriginAllowedForStream(r); err != nil {
+		s.writeError(w, r, err)
+		return
+	}
+
+	cursor := r.URL.Query().Get("cursor")
+	if cursor == "" {
+		cursor = r.Header.Get("Last-Event-ID")
+	}
+	if _, _, resync, err := s.rooms.ListRoomEvents(r.Context(), actor, cursor, 1); err != nil || resync {
+		if err == nil {
+			err = problem.BadRequest("invalid-cursor", "the stream cursor is invalid")
+		}
 		s.writeError(w, r, err)
 		return
 	}
@@ -146,7 +163,6 @@ func (s *Server) handleStreamRoomEvents(w http.ResponseWriter, r *http.Request) 
 	w.WriteHeader(http.StatusOK)
 	flusher.Flush()
 
-	cursor := r.URL.Query().Get("cursor")
 	// hello carries the connection parameters the client needs .
 	s.writeSSE(w, flusher, "hello", map[string]any{
 		"schemaVersion":       "1",
@@ -176,7 +192,13 @@ func (s *Server) handleStreamRoomEvents(w http.ResponseWriter, r *http.Request) 
 			flusher.Flush()
 		case <-ticker.C:
 			// Re-authorise on every poll: a removed member must stop receiving.
-			if _, aerr := s.rooms.LoadActor(r.Context(), sess.ID, roomID); aerr != nil {
+			active, aerr := (streamAuthorizer{srv: s}).IdentityActive(r.Context(), realtime.Identity{RoomID: roomID, MembershipID: actor.MembershipID(), SessionID: sess.ID, Role: string(actor.Membership.Role)})
+			if aerr != nil {
+				// A failed lookup must neither leak events nor treat a database
+				// interruption as a definite membership revocation.
+				continue
+			}
+			if !active {
 				s.writeSSE(w, flusher, "session.revoked", map[string]any{
 					"schemaVersion": "1", "type": "session.revoked", "roomId": roomID,
 					"serverEpoch": s.rooms.Epoch(), "serverTime": rfc3339(nowMS()),
@@ -211,13 +233,16 @@ func (s *Server) handleStreamRoomEvents(w http.ResponseWriter, r *http.Request) 
 
 // writeSSE emits one event frame.
 func (s *Server) writeSSE(w http.ResponseWriter, flusher http.Flusher, event string, payload any) {
+	if strings.ContainsAny(event, "\r\n\x00") {
+		return
+	}
 	body, err := json.Marshal(payload)
 	if err != nil {
 		return
 	}
 	fmt.Fprintf(w, "event: %s\n", event)
 	// The id field is the opaque scope cursor, so a reconnect can resume.
-	if id := sseID(payload); id != "" {
+	if id := sseID(payload); id != "" && !strings.ContainsAny(id, "\r\n\x00") {
 		fmt.Fprintf(w, "id: %s\n", id)
 	}
 	fmt.Fprintf(w, "data: %s\n\n", body)

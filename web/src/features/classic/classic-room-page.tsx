@@ -1,3 +1,5 @@
+import { GameCompanion, GameStage } from "@/components/uma/game-stage";
+import { MatchProgress } from "@/features/rooms/match-progress";
 import "@/i18n/classic-online";
 import "@/i18n/classic";
 import { useTranslation } from "@/i18n";
@@ -6,21 +8,7 @@ import { useGameCommand } from "@/lib/hooks/use-game-command";
 import { validClassicGuess, type ClassicGuessCommand } from "@/lib/api/game-commands";
 import { phaseLabel } from "@/lib/api/round-snapshot";
 import { TeamRoundControl } from "@/features/rooms/team-round-control";
-/**
- * 经典对局页 /rooms/:roomId。
- *
- * 手机结构：
- * 本局状态 / 网络 → 角色搜索 → 当前角色 + 猜一次 → 最新猜测（头像+名字+九字段）
- * → 历史记录 → 规则/结束
- *
- * 桌面：主区 8–9 栏（搜索 + 猜测记录），侧区 3–4 栏（状态、规则、对手影子）。
- *
- * 关键约束：
- * - 状态覆盖 loading / ready / empty / error / forbidden / ended。
- * - 提交必须用同一幂等键重试；超时显示「正在确认提交结果」，不显示失败。
- * - 不伪造成功：只有拿到 accepted 回执才把行标为已提交。
- * - 首屏必须看见搜索、提交、剩余错误额度、至少一条最新反馈。
- */
+/** Server snapshots determine results; retry pending submissions without changing their keys. */
 import { ArrowRight, ChevronDown, Flag, RefreshCw, Users } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router";
@@ -36,6 +24,7 @@ import { useApi } from "@/lib/api";
 import {
   guessedCharacterIds,
   normalizeClassicRound,
+  classicGuessChoices,
   normalizeRowFromFeedback,
   type NormalizedRound,
 } from "@/lib/api/classic";
@@ -113,13 +102,7 @@ export function ClassicRoomPage() {
   });
 
   const guessedIds = useMemo(() => guessedCharacterIds(round), [round]);
-  /**
-   * 认输：本人退出本局。
-   *
-   * 认输只影响自己，不授予踢人权。它必须有幂等键：重复点击或超时重试
-   * 要用同一个键，否则会记录两次。成功后重新取回合视图，让服务端投影决定结束状态，
-   * 而不是前端自己宣布结束。
-   */
+  /** 双人局认输后对手获胜；胜负与结束阶段均从服务端重新读取 */
   const surrender = useCallback(async () => {
     if (!roundId || !round || !round.canSubmit) return;
     if (surrendering) return;
@@ -139,13 +122,15 @@ export function ClassicRoomPage() {
     }
   }, [api, roundId, round, surrendering, roundQuery]);
 
-  const characters = charactersQuery.data?.items ?? [];
+  const characters = classicGuessChoices(round, charactersQuery.data?.items ?? []);
+  const selectedChoice = selected && characters.some(character => character.characterId === selected.characterId) ? selected : null;
 
   /** Replay an uncertain guess with its original body and key, even after
    * a newer snapshot, language, controller or phase has arrived. */
   async function submitGuess(character?: Character) {
     if (refreshing || surrendering || !roundId || !round) return;
     if (character && (!round.canSubmit || phase.kind !== "idle" || command.expired || roundQuery.isError)) return;
+    if (character && !characters.some(choice => choice.characterId === character.characterId)) return;
     const body: ClassicGuessCommand | undefined = character ? {
       phaseVersion: round.phaseVersion,
       submissionRevision: round.submissionRevision,
@@ -207,14 +192,16 @@ export function ClassicRoomPage() {
   const connectionStatus = realtime.status;
 
   return (
-    <div className="uma-stack">
+    <GameStage mode="classic" illustration={false} className="uma-stack">
       {/* 网络状态条：断线保留内容，只禁用危险提交 */}
       <TeamRoundControl room={roomQuery.data?.room} raw={roundQuery.data} onChanged={async () => { await roundQuery.refetch(); }}/>
       <ConnectionBar
+        quality={realtime.quality}
         status={connectionStatus}
-        detail={room.name}
+        detail={room.kind === "matchmaking" ? t("matchingRoom") : room.name}
         className="short:hidden"
       />
+      <MatchProgress room={room} raw={roundQuery.data}/>
 
       {/* 紧凑状态条保留玩法、阶段与剩余额度，为作答反馈留出首屏空间 */}
       <section className="uma-panel flex flex-wrap items-center gap-x-3 gap-y-2 px-3 py-2">
@@ -264,16 +251,8 @@ export function ClassicRoomPage() {
       ) : null}
 
       {round ? (
-        <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,15rem)] xl:items-start">
-          {/* 视觉层级：
-          - L1 核心 = 猜测记录表格，占中央主区，给足宽度
-          - L2 支撑 = 搜索/当前选择/猜一次，通栏在上
-          - L3 参考 = 本局信息/规则/认输，右侧窄栏，xl 以下收起
-
-          此前把猜测记录放进右侧 17rem 窄栏、把本局信息放在左侧大块，
-          正是用户指出的"次要排中间、核心被压缩"。表格在窄栏里横向滚动
-          无法避免，读表也失去意义，因此改为上下结构。 */}
-          {/* L1+L2 主列：猜测记录在上（核心），搜索/提交紧随其下 */}
+        <div className="uma-stack min-w-0">
+          {/* Search and records keep the full available width. */}
           <div className="uma-stack uma-stack--tight min-w-0">
           {round.paused ? <p role="status" className="text-sm leading-6 text-[var(--color-muted)]">{t("pausedDetail")}</p> : null}
           {round.phase === "locked" ? (
@@ -288,15 +267,15 @@ export function ClassicRoomPage() {
               <ClassicEndPanel round={round} />
             ) : (
               <>
-                {/* 搜索与提交同行；隐藏重复标签时仍保留可访问名称和完整触摸区 */}
-                <section className="uma-panel p-2.5 sm:p-3" aria-labelledby="guess-heading">
+                {/* 手机作答区纵向排列，保留完整的角色候选宽度 */}
+                <section className="uma-game-answer" aria-labelledby="guess-heading">
                   <div className="flex items-center justify-between gap-2">
                     <h2 id="guess-heading" className="text-base font-bold text-[var(--color-ink)]">
                       {tc("who")}
                     </h2>
-                    {selected ? (
+                    {selectedChoice ? (
                       <span className="min-w-0 truncate rounded-full bg-[var(--color-brand-green-soft)] px-2.5 py-1 text-[length:var(--text-aux)] font-bold text-[var(--color-ink)]">
-                        {t("selected", { name: characterName(selected) })}
+                        {t("selected", { name: characterName(selectedChoice) })}
                       </span>
                     ) : (
                       <p className="hidden text-[length:var(--text-aux)] text-[var(--color-muted)] tall:block">
@@ -305,12 +284,12 @@ export function ClassicRoomPage() {
                     )}
                   </div>
 
-                  <div className="mt-2 flex items-start gap-2">
-                    <div className="min-w-0 flex-1">
+                  <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:items-start">
+                    <div className="w-full min-w-0 sm:flex-1">
                       <SearchInput
                         items={characters}
                         loading={charactersQuery.isLoading}
-                        loadError={charactersQuery.isError ? describeFailure(charactersQuery.error).detail : null}
+                        loadError={round.guessPool.length === 0 ? t("choicesUnavailable") : null}
                         disabled={!canPlay || busy}
                         disabledHint={canPlay ? t("submitting") : t("notAccepting")}
                         excludeIds={guessedIds}
@@ -322,16 +301,15 @@ export function ClassicRoomPage() {
                         placeholder={t("guessPlaceholder")}
                       />
                     </div>
-                    {/* 一个页面只有一个最强主操作；它就在输入框右侧，
-                        不再需要滚过一整块选中面板才够得到。 */}
+
                     <Button
                       variant="primary"
                       size="primary"
-                      disabled={!canPlay || busy || !selected}
+                      disabled={!canPlay || busy || !selectedChoice}
                       onClick={() => {
-                        if (selected) void submitGuess(selected);
+                        if (selectedChoice) void submitGuess(selectedChoice);
                       }}
-                      className="shrink-0"
+                      className="w-full shrink-0 sm:w-auto"
                     >
                       {phase.kind === "submitting"
                         ? t("submitting")
@@ -378,7 +356,7 @@ export function ClassicRoomPage() {
 
           {/* ---- 猜测记录（L1 核心，占中央主区） ---- */}
           {!ended ? (
-            <section aria-labelledby="history-heading" className="uma-stack uma-stack--tight min-w-0">
+            <section aria-labelledby="history-heading" className="uma-game-history uma-stack uma-stack--tight min-w-0">
                   {/*
                     量「主区可用宽度」而不是 window.innerWidth：侧栏是否展开、页面是否
                     分屏都会改变真正留给记录的宽度，而窗口宽度不会。探针 div 是块级元素，
@@ -461,8 +439,9 @@ export function ClassicRoomPage() {
           </div>
 
           {/* ---- 侧区：状态 / 规则 / 对手（矮宽屏隐藏，把空间让给反馈） ---- */}
-          <aside className="uma-stack uma-stack--tight min-w-0 wide-short:hidden">
-            <section className="uma-card p-4">
+          <aside className="uma-game-online-support min-w-0">
+            <section className="uma-card relative min-w-0 overflow-hidden p-4 pr-24">
+              <GameCompanion mode="classic" className="absolute bottom-0 right-1"/>
               <h2 className="flex items-center gap-2 text-base font-bold text-[var(--color-ink)]">
                 <Users aria-hidden="true" className="size-4 text-[var(--color-action-green)]" />
                 {t("info")}
@@ -485,7 +464,7 @@ export function ClassicRoomPage() {
                       : t("budget", { count: round.attempts, budget: round.wrongBudget })
                   }
                 />
-                <InfoRow label={t("room")} value={room.name} />
+                <InfoRow label={t("room")} value={room.kind === "matchmaking" ? t("matchingRoom") : room.name} />
               </dl>
             </section>
 
@@ -562,7 +541,7 @@ export function ClassicRoomPage() {
                 <ChevronDown aria-hidden="true" className="uma-disclosure__chevron size-4" />
               </summary>
               <p className="mt-2 text-[length:var(--text-aux)] leading-6 text-[var(--color-muted)]">
-                {t("surrenderDetail")}
+                {t(round?.duel ? "duelSurrenderDetail" : "surrenderDetail")}
               </p>
               <Button
                 variant="secondary"
@@ -577,7 +556,7 @@ export function ClassicRoomPage() {
           </aside>
         </div>
       ) : null}
-    </div>
+    </GameStage>
   );
 }
 
@@ -715,8 +694,10 @@ export function ClassicEndPanel({ round }: { round: NormalizedRound }) {
   const answerRow = round.rows.find(row => row.correct) ?? null;
   const known = characters.find(character => character.characterId === round.revealedAnswerCharacterId);
   const answerName = round.revealedAnswerCharacterId ? known ? characterName(known) : round.revealedAnswerName ?? (answerRow ? characterName(answerRow) : null) : null;
-  const title = t(round.surrendered ? "surrendered" : round.solved ? "solved" : round.failed ? "failed" : "ended");
-  const shareLines = [t(round.surrendered ? "shareSurrendered" : round.solved ? "shareSolved" : round.failed ? "shareFailed" : "shareEnded", { count: round.attempts })];
+  const waiting = round.competitive && !["revealed","settled","cancelled"].includes(round.phase) && !round.solved && !round.wonBySurrender && !round.lostBySurrender;
+  const outcome = round.phase !== "cancelled" && round.wonBySurrender ? "wonBySurrender" : round.phase !== "cancelled" && round.lostBySurrender ? "lostBySurrender" : waiting ? "waitingOpponent" : round.competitive && round.phase !== "cancelled" ? round.solved ? "won" : round.anySolved ? "lost" : "noWinner" : round.surrendered ? "surrendered" : round.solved ? "solved" : round.failed ? "failed" : "ended";
+  const title = t(outcome);
+  const shareLines = [t(round.wonBySurrender ? "shareWonBySurrender" : round.surrendered ? "shareSurrendered" : round.solved ? "shareSolved" : round.failed ? "shareFailed" : "shareEnded", { count: round.attempts })];
   // 答案已揭晓才加入分享；个人猜对不代表允许在分享中公开答案。
   if (round.revealedAnswerCharacterId) {
     shareLines.push(answerName ? t("shareAnswer", { name: answerName }) : t("answerRevealed"));
@@ -724,12 +705,12 @@ export function ClassicEndPanel({ round }: { round: NormalizedRound }) {
   const shareText = shareLines.join("\n");
   return <section className="uma-panel p-5">
     <h2 className="u-fluid-task text-[var(--color-ink)]">{title}</h2>
-    <p className="mt-2 text-base leading-7 text-[var(--color-muted)]">{t(round.surrendered ? "surrenderedDetail" : round.solved ? "solvedDetail" : round.failed ? "failedDetail" : "endedDetail", { count: round.attempts })}</p>
-    {round.revealedAnswerCharacterId ? <p className="mt-2 text-base text-[var(--color-ink)]">{answerName ? <>{t("answer")}<strong>{answerName}</strong></> : t("answerRevealed")}</p> : null}
+    <p className="mt-2 text-base leading-7 text-[var(--color-muted)]">{t(`${outcome}Detail`, { count: round.attempts })}</p>
+    {!waiting && round.revealedAnswerCharacterId ? <p className="mt-2 text-base text-[var(--color-ink)]">{answerName ? <>{t("answer")}<strong>{answerName}</strong></> : t("answerRevealed")}</p> : null}
     <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
-      <Button asChild variant="primary" size="primary" className="h-auto min-h-12 whitespace-normal"><Link to="/">{t("home")}</Link></Button>
+      {!waiting ? <Button asChild variant="primary" size="primary" className="h-auto min-h-12 whitespace-normal"><Link to="/">{t("home")}</Link></Button> : null}
       <Button asChild variant="secondary" size="primary" className="h-auto min-h-12 whitespace-normal"><Link to="/help">{t("seeRules")}</Link></Button>
-      <ShareResultButton text={shareText}/>
+      {!waiting ? <ShareResultButton text={shareText}/> : null}
     </div>
   </section>;
 }

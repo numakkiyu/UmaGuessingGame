@@ -22,7 +22,7 @@ async function waitRevision(target, mode, revision) { await target.waitForFuncti
 function condition(g, i) { const d = ["短", "英", "中"], s = ["逃", "先", "差"], row = Math.floor(i / 3), col = i % 3; return { distance: d[g.rowAxis === "distance" ? row : col], style: s[g.rowAxis === "distance" ? col : row] }; }
 function solution(cards, g) { const owners = new Map(), result = Array(9); function visit(i, seen) { const cond = condition(g, i); for (const c of cards) { if (seen.has(c.id) || c.aptitudes.distance[cond.distance] !== "A" || c.aptitudes.style[cond.style] !== "A") continue; seen.add(c.id); const previous = owners.get(c.id); if (previous === undefined || visit(previous, seen)) { owners.set(c.id, i); result[i] = c.id; return true; } } return false; } for (let i = 0; i < 9; i++) if (!visit(i, new Set())) throw new Error("unsolvable test board"); return result; }
 async function downloadAndImport(target, mode) {
-  const before = await archive(target, mode), pending = target.waitForEvent("download"); await target.getByRole("button", { name: "导出练习记录", exact: true }).click(); const download = await pending, file = await download.path();
+  const before = await archive(target, mode), pending = target.waitForEvent("download"); await target.getByRole("button", { name: "导出挑战记录", exact: true }).click(); const download = await pending, file = await download.path();
   await target.goto(base + "/play/" + mode); await target.locator('input[type="file"]').setInputFiles(file); await target.waitForURL(new RegExp(`/practice/${mode}/local-`)); await target.getByText("本局结束", { exact: true }).waitFor(); const after = await archive(target, mode);
   check(mode + " offline export/import preserves result and clock", after.game.gameId !== before.game.gameId && after.game.deadlineAt === before.game.deadlineAt && after.game.revision === before.game.revision);
 }
@@ -48,7 +48,7 @@ try {
         if (i === 1) { await page.setViewportSize({ width: 320, height: 740 }); check("grid 320px preserves three columns and 84px cells", await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth) && await page.locator('[aria-label="占格棋盘"] button').first().evaluate(el => el.getBoundingClientRect().width >= 84)); await page.evaluate(() => scrollTo(0, 0)); await page.screenshot({ path: resolve(output, "grid-practice-narrow.png"), fullPage: true }); }
         await page.locator('[aria-label="占格棋盘"] button').nth(i).click(); const scope = i === 1 ? page.getByRole("dialog") : page;
         const c = initial.content.cards.find(c => c.id === answer[i]); await scope.getByLabel("搜索角色名字", { exact: true }).fill(c.name); await scope.getByRole("button", { name: c.name, exact: true }).click(); await scope.getByRole("button", { name: "确认占格", exact: true }).click(); await waitRevision(page, mode, i + 1);
-        if (i === 1) { await page.getByRole("dialog").waitFor({ state: "hidden" }); check("grid small screen picker returns focus to board", await page.locator("#grid-board-heading").evaluate(el => el === document.activeElement)); await other.getByText("另一页已经更新了这局练习", { exact: false }).waitFor(); check("grid stale tab is read only", await other.getByRole("button", { name: "结束并揭晓", exact: true }).isDisabled()); await other.close(); await page.setViewportSize({ width: 1440, height: 1000 }); }
+        if (i === 1) { await page.getByRole("dialog").waitFor({ state: "hidden" }); check("grid small screen picker returns focus to board", await page.locator("#grid-board-heading").evaluate(el => el === document.activeElement)); await other.getByText("另一页已经更新了这局挑战", { exact: false }).waitFor(); check("grid stale tab is read only", await other.getByRole("button", { name: "结束并揭晓", exact: true }).isDisabled()); await other.close(); await page.setViewportSize({ width: 1440, height: 1000 }); }
       }
       await page.getByText("九格集齐，漂亮！", { exact: true }).waitFor(); check("grid nine unique legal claims score 100 and finish", (await archive(page, mode)).game.claims.length === 9 && await page.getByText("100分", { exact: true }).isVisible());
       await page.evaluate(() => scrollTo(0, 0)); await page.screenshot({ path: resolve(output, "grid-practice-desktop-result.png"), fullPage: true });
@@ -82,9 +82,9 @@ try {
     await limited.goto(base + "/play/" + mode);
     const prepare = mode === "draft" ? "准备编队资料" : "准备占格资料", start = mode === "draft" ? "开始编队" : "开始占格";
     await limited.getByRole("button", { name: prepare, exact: true }).click(); await limited.getByRole("button", { name: start, exact: true }).waitFor({ timeout: 30000 }); await limited.getByRole("button", { name: start, exact: true }).click();
-    await limited.getByText("本局仍可继续，离开或刷新前请导出练习记录。", { exact: true }).waitFor();
+    await limited.getByText("本局仍可继续，离开或刷新前请导出挑战记录。", { exact: true }).waitFor();
     check(mode + " storage denial allows play without raw errors", !/private server|database path|SecurityError|服务器|本机|云端/.test(await limited.locator("body").innerText()));
-    const pending = limited.waitForEvent("download"); await limited.getByRole("button", { name: "导出练习记录", exact: true }).click();
+    const pending = limited.waitForEvent("download"); await limited.getByRole("button", { name: "导出挑战记录", exact: true }).click();
     check(mode + " storage denial retains export recovery", (await pending).suggestedFilename().startsWith(mode === "draft" ? "umaguess-draft-" : "umaguess-grid-"));
     await denied.close();
   }

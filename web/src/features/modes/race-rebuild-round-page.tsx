@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 import "@/i18n/race-online";
 import {useTranslation} from "@/i18n";
 import {usePlayerText} from "@/i18n/player-text";
@@ -65,7 +67,7 @@ export function RaceRebuildRoundPage(){
  const clues=round?.clueRelations.map(clue=>{const first=round.entries.find(e=>e.characterId===clue.firstId),second=round.entries.find(e=>e.characterId===clue.secondId);return tr(clue.kind==="tied"?"clueTied":"clueBefore",{first:first?.name?cardName(first):t("unknownCard"),second:second?.name?cardName(second):t("unknownCard")});})??[];
  function update(next:SortDraft){if(!editable)return;setOrder(next);setNotice("");if(draftScope&&!saveRaceDraft(draftScope,next))setNotice("saveFailed");}
  async function submit(retry=false){
-  if(!roundId||!round||command.busy||refreshing)return;if(!retry&&(!editable||problems.length))return;
+  if(!roundId||command.busy||refreshing)return;if(!retry&&(!round||!editable||problems.length))return;
   const body:RaceOrderCommand|undefined=retry?undefined:{phaseVersion:snapshot.meta!.phaseVersion,submissionRevision:snapshot.submissionRevision,controlGeneration:snapshot.controlGeneration,modeAction:{kind:"race.order",groups:order.map(group=>[...group])}};
   setRefreshing(true);setFailure(null);setRejected(false);setNotice("");
   try{const result=await command.run(body);if(!result)return;if(!result.ok){setFailure(describeFailure(result.error));if(!result.uncertain&&result.error instanceof ApiError&&(result.error.isConflict||result.error.isUnprocessable))await snapshot.refetch();if(isCredentialRefreshFailure(result.error))setNeedsRejoin(true);return;}
@@ -78,8 +80,8 @@ export function RaceRebuildRoundPage(){
  if(roomQuery.isError){const failure=describeFailure(roomQuery.error);return failure.kind==="forbidden"?<ForbiddenView failure={failure} onRetry={()=>void roomQuery.refetch()}/>:<ErrorView failure={failure} onRetry={()=>void roomQuery.refetch()}/>;}
  const connectionStatus=realtime.status==="online"?"online":realtime.status==="connecting"||realtime.status==="reconnecting"?"reconnecting":realtime.status==="stale"?"stale":"offline";
  const ownScore=resultsOf(snapshot.raw).flatMap(value=>{if(!value||typeof value!=="object")return [];const result=value as Record<string,unknown>;return result.subjectId===round?.self?.subjectId&&typeof result.scoreUnits==="number"&&Number.isSafeInteger(result.scoreUnits)&&result.scoreUnits>=0?[result.scoreUnits]:[];})[0];
- return <div className="uma-stack">
-  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={connectionStatus} detail={roomQuery.data?.room.name??t("room")}/>
+ return <GameStage mode="race-rebuild" className="uma-stack">
+  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={connectionStatus} detail={roomDisplayName(roomQuery.data?.room, t("room"))}/>
   <section className="uma-panel p-4"><div className="flex flex-wrap items-start justify-between gap-3"><div className="min-w-0"><h1 className="u-fluid-task">{round?.raceName?raceName(round.raceName,undefined,{raceId:round.raceId,date:round.raceDate}):t("title")}</h1><p className="mt-1 text-sm text-[var(--color-muted)]">{phaseLabel(phase)}{round?.raceDate?` · ${raceDate(round.raceDate)}`:""}{round?` · ${t("entrants",{count:round.entries.length})}`:""}{snapshot.meta?.paused?` · ${t("paused")}`:""}</p>{round?<p className="mt-1 text-sm">{t(round.cooperative?"cooperative":"closed")}{round.openBook?` · ${t("openBook")}`:""}</p>:null}</div>{collecting&&snapshot.meta?.deadlineAt?<div className="shrink-0"><p className="text-xs text-[var(--color-muted)]">{t("time")}</p><p className="uma-code text-2xl font-bold" aria-live="off">{countdown.text}</p></div>:null}</div></section>
   {command.pending&&!command.busy?<Alert tone="warning" title={t("confirmTitle")}><p>{t("confirmDetail")}</p><Button variant="secondary" className="h-auto min-h-12 whitespace-normal" disabled={refreshing} onClick={()=>void submit(true)}>{t("confirmAction")}</Button></Alert>:null}
   {command.expired?<Alert tone="warning" title={t("expiredTitle")}><p>{t("expiredDetail")}</p><Button variant="secondary" onClick={()=>void snapshot.refetch().then(ok=>{if(ok)command.acknowledgeExpired();})}>{t("latest")}</Button></Alert>:null}
@@ -92,7 +94,7 @@ export function RaceRebuildRoundPage(){
    <section className="uma-panel p-4"><h2 className="text-base font-bold">{t("submitTitle")}</h2>{problems.length?<Alert tone="warning" title={t("problems",{count:problems.length})} className="mt-3"><ul className="list-disc pl-4">{[...new Set(problems)].map(problem=><li key={problem}>{t(`issues.${problem}`)}</li>)}</ul></Alert>:null}<div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap"><Button variant="secondary" size="primary" className="h-auto min-h-12 whitespace-normal" disabled={!editable} onClick={()=>{if(draftScope)setNotice(saveRaceDraft(draftScope,order)?"saved":"saveFailed");}}>{t("save")}</Button><Button variant="primary" size="primary" className="h-auto min-h-12 whitespace-normal" disabled={!editable||problems.length>0} onClick={()=>void submit()}>{command.busy||refreshing?<Loader2 aria-hidden="true" className="size-4 motion-safe:animate-spin"/>:<Send aria-hidden="true" className="size-4"/>}{t(command.busy||refreshing?"submitting":"submit")}</Button></div></section>
    </div><aside className="uma-stack uma-stack--tight min-w-0">{clues.length||round.clues.length?<section className="uma-card p-4" aria-labelledby="race-clues-heading"><h2 id="race-clues-heading" className="text-base font-bold">{t("cooperative")}</h2><ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6">{clues.map((clue,index)=><li key={index}>{clue}</li>)}{round.clues.length>clues.length?<li>{t("clueUnavailable")}</li>:null}</ul></section>:null}<section className="uma-card p-4"><h2 className="text-base font-bold">{t("rules")}</h2><ul className="mt-2 space-y-2 text-sm leading-6 text-[var(--color-muted)]">{(t("playRules",{returnObjects:true,count:round.entries.length,seconds:round.questionSeconds??180}) as string[]).map(rule=><li key={rule}>{rule}</li>)}</ul></section><Button asChild variant="secondary" block><Link to={`/rooms/${roomId}`}>{t("back")}</Link></Button></aside></div>:null}
   {round&&ended?<RaceRevealPanel round={round} cancelled={cancelled} scoreUnits={ownScore}/>:null}
- </div>;
+ </GameStage>;
 }
 
 export function RaceRevealPanel({round,cancelled=false,scoreUnits}:{round:RaceRound;cancelled?:boolean;scoreUnits?:number}){

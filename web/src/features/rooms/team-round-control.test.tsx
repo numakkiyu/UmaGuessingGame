@@ -1,3 +1,4 @@
+import { dismissFault } from "@/test/dismiss-fault";
 import { chooseSelect } from "@/test/select";
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
 import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
@@ -63,9 +64,9 @@ it("切语不重发换人，未确认时锁定其他队，重试保留原回合�
  expect(screen.getByLabelText("今回の回答担当（胡萝卜队）").textContent).toContain("特别周 · 002（ルーム内 ID 000002）");
  expect(state.issue).not.toHaveBeenCalled();
  fireEvent.click(screen.getByRole("button",{name:"胡萝卜队で選んだメンバーに交代"}));
- await screen.findByText("交代の結果がまだ確認できていません。先ほどの操作を先に確認してください");
+ await screen.findByText("交代の結果がまだ確認できていません。直前の操作を先に確認してください");
  await act(async()=>{await changeLanguage("zh-Hant");});
- expect(screen.getByRole("button",{name:"交給冲刺队選定的隊員"}).hasAttribute("disabled")).toBe(true);
+ await dismissFault();expect(screen.getByRole("button",{name:"交給冲刺队選定的隊員"}).hasAttribute("disabled")).toBe(true);
  expect((screen.getByLabelText("本次代表（胡萝卜队）") as HTMLSelectElement).value).toBe("a2");
  fireEvent.click(screen.getByRole("button",{name:"確認胡萝卜队剛才的換人"}));
  await waitFor(()=>expect(state.issue).toHaveBeenCalledTimes(2));

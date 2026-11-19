@@ -241,9 +241,27 @@ func TestRealPackAdmissionMatchesPrepare(t *testing.T) {
 			t.Fatalf("published clip is unplayable: %+v", c)
 		}
 	}
-	if len(pub.Candidates) <= len(pub.Clips) {
-		t.Fatalf("%d candidates for %d clips; the answer space is not larger than the answer",
+	if len(pub.Candidates) != len(pub.Clips) {
+		t.Fatalf("%d candidates for %d clips; one-to-one pairing requires equal counts",
 			len(pub.Candidates), len(pub.Clips))
+	}
+	var priv privateState
+	if err := json.Unmarshal(prep.Private, &priv); err != nil {
+		t.Fatalf("decode private state: %v", err)
+	}
+	candidates := make(map[string]bool, len(pub.Candidates))
+	for _, c := range pub.Candidates {
+		if c.CharacterID == "" || candidates[c.CharacterID] {
+			t.Fatalf("empty or duplicate candidate: %+v", c)
+		}
+		candidates[c.CharacterID] = true
+	}
+	for _, c := range pub.Clips {
+		speaker := priv.SpeakerOf[c.ClipID]
+		if !candidates[speaker] {
+			t.Fatalf("clip %s has no matching candidate", c.ClipID)
+		}
+		delete(candidates, speaker)
 	}
 	if strings.Contains(string(prep.Public), `"transcript"`) {
 		t.Fatal("the public state carries a transcript, which would let a player skip listening")
@@ -293,8 +311,11 @@ func TestAdmissionGateExcludesEachSpoiledClip(t *testing.T) {
 		{name: "not reviewed", mutate: func(c *clipSpec) { c.Reviewed = false }},
 		{name: "no local file", mutate: func(c *clipSpec) { c.AudioPath = "" }},
 		{name: "remote url only", mutate: func(c *clipSpec) {
-			c.AudioPath = "https://example.invalid/v.mp3"
+			c.AudioPath = "https://example.invalid/v.webm"
 		}},
+		{name: "legacy mp3", mutate: func(c *clipSpec) { c.AudioPath = "/assets/audio/old.mp3" }},
+		{name: "other container", mutate: func(c *clipSpec) { c.AudioPath = "/assets/audio/other.ogg" }},
+		{name: "nested media", mutate: func(c *clipSpec) { c.AudioPath = "/assets/audio/nested/voice.webm" }},
 		{name: "zero duration", mutate: func(c *clipSpec) { c.DurationMillis = 0 }},
 	}
 	for _, tc := range cases {
@@ -307,7 +328,7 @@ func TestAdmissionGateExcludesEachSpoiledClip(t *testing.T) {
 				c := clipSpec{
 					ClipID:          fmt.Sprintf("clip-%03d", i+1),
 					CharacterID:     fmt.Sprintf("c%03d", i+1),
-					AudioPath:       fmt.Sprintf("/assets/audio/clip-%03d.mp3", i+1),
+					AudioPath:       fmt.Sprintf("/assets/audio/clip-%03d.webm", i+1),
 					DurationMillis:  2000 + i*100,
 					Transcript:      fmt.Sprintf("第%d段台词", i+1),
 					SpeakerVerified: true,
@@ -356,7 +377,7 @@ func TestAdmissionGateExcludesEachSpoiledClip(t *testing.T) {
 			clips = append(clips, clipSpec{
 				ClipID:          fmt.Sprintf("clip-%03d", i+1),
 				CharacterID:     fmt.Sprintf("c%03d", i+1),
-				AudioPath:       fmt.Sprintf("/assets/audio/clip-%03d.mp3", i+1),
+				AudioPath:       fmt.Sprintf("/assets/audio/clip-%03d.webm", i+1),
 				DurationMillis:  2000,
 				Transcript:      "台词",
 				Decodable:       true,
@@ -404,7 +425,7 @@ func TestRecoveryIsMechanical(t *testing.T) {
 		clips = append(clips, clipSpec{
 			ClipID:          fmt.Sprintf("reviewed-%03d", i+1),
 			CharacterID:     fmt.Sprintf("c%03d", i+1),
-			AudioPath:       fmt.Sprintf("/assets/audio/reviewed-%03d.mp3", i+1),
+			AudioPath:       fmt.Sprintf("/assets/audio/reviewed-%03d.webm", i+1),
 			DurationMillis:  2000 + i*50,
 			Transcript:      fmt.Sprintf("已听审台词 %d", i+1),
 			SpeakerVerified: true,

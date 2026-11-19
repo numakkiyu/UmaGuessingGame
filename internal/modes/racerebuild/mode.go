@@ -983,7 +983,7 @@ func (*Mode) Settle(in modes.SettleInput) ([]modes.Score, error) {
 			Revisions    int  `json:"revisions"`
 		}{
 			Submitted:    st.Submitted,
-			CorrectPairs: 0,
+			CorrectPairs: st.CorrectPairs,
 			TotalPairs:   st.TotalPairs,
 			Revisions:    st.Revisions,
 		})

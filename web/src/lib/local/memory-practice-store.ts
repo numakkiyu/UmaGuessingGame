@@ -49,4 +49,4 @@ export function validateMemoryArchive(raw: unknown): MemoryArchive {
   replayMemory(game); return { schemaVersion: 1, game, pack };
 }
 export const memoryStore = activityStore<MemoryPack, MemoryGame>("umaguess-memory-practice", validateMemoryArchive, memoryPackKey);
-export const volatileMemoryGames = new Map<string, MemoryArchive>();
+export const volatileMemoryGames = new Map<string, MemoryArchive & {savedRevision?:number|null}>();

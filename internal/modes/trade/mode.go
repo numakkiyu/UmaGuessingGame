@@ -24,9 +24,7 @@
 // state and in the server-only state; no projection ever includes another
 // player's objectives.
 //
-// The mode is explicitly non-competitive by default: the plan says it does not
-// enter the formal cup , so Settle reports objective
-// completion and contributes zero score unless a round explicitly opts in.
+// Settle reports objective completion. Scoring is disabled unless the round opts in.
 package trade
 
 import (

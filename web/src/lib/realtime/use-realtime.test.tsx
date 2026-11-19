@@ -24,6 +24,27 @@ beforeEach(() => {
 });
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.useRealTimers(); });
 
+describe("关闭连接后的异步回调", () => {
+  it("离开房间后旧轮询的拒绝响应不会触发身份失效", async () => {
+    let finish: (response: Response) => void = () => undefined;
+    vi.stubGlobal("fetch", vi.fn(() => new Promise<Response>(resolve => { finish = resolve; })));
+    const revoked = vi.fn();
+    const snapshot = vi.fn();
+    const { unmount } = renderHook(() => useRealtime({ roomId: "r", preferSse: false, handlers: { onSessionRevoked: revoked, onSnapshotNeeded: snapshot } }));
+    unmount();
+    await act(async () => { finish(new Response("gone", { status: 403 })); await Promise.resolve(); });
+    expect(revoked).not.toHaveBeenCalled();
+    expect(snapshot).not.toHaveBeenCalled();
+  });
+
+  it("断网后已排队的打开回调不会将关闭的连接显示为在线", () => {
+    const { result } = renderHook(() => useRealtime({ roomId: "r" }));
+    const lateOpen = FakeSource.instances[0]?.onopen;
+    act(() => { window.dispatchEvent(new Event("offline")); lateOpen?.(); });
+    expect(result.current.status).toBe("offline");
+  });
+});
+
 describe("联机同步恢复", () => {
   it("健康空闲连接超过旧20秒超时后仍在线，使用真实健康地址", async () => {
     const fetcher = vi.fn().mockResolvedValue(new Response("ok"));

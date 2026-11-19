@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 /** Each participant answers independently; group choices stay private. */
 import "@/i18n/rapport-online";
 import {useMemo, useState} from "react";
@@ -94,8 +96,8 @@ export function RapportRoundPage() {
   }finally{setRefreshing(false);}
  }
  if(!roomId)return <ErrorView failure={{kind:"error",title:t("missingTitle"),detail:t("missingDetail"),diagnosticId:null,retryable:false}}/>;
- return <div className="uma-stack">
-  <ConnectionBar status={realtime.status} detail={room?.name??t("room")}/>
+ return <GameStage mode="rapport" className="uma-stack">
+  <ConnectionBar status={realtime.status} detail={roomDisplayName(room, t("room"))}/>
   {needsRejoin||isCredentialRefreshFailure(snapshot.error)?<RejoinPrompt roomId={roomId}/>:null}
   {roomQuery.isLoading?<LoadingBlock label={t("loadingRoom")} rows={3}/>:null}
   {roomQuery.isError?(describeFailure(roomQuery.error).kind==="forbidden"?<ForbiddenView failure={describeFailure(roomQuery.error)} onRetry={()=>void roomQuery.refetch()}/>:<ErrorView failure={describeFailure(roomQuery.error)} onRetry={()=>void roomQuery.refetch()}/>):null}
@@ -132,5 +134,5 @@ export function RapportRoundPage() {
   </>:!snapshot.isLoading&&!snapshot.isError&&!roomQuery.isLoading&&!roomQuery.isError?<EmptyView title={t("emptyTitle")} detail={t("emptyDetail")}/>:null}
   <TeamRoundControl room={room} raw={snapshot.raw} onChanged={snapshot.refetch}/>
   <Button asChild variant="secondary" className="h-auto min-h-11 whitespace-normal"><Link to={`/rooms/${roomId}`}>{t("back")}</Link></Button>
- </div>;
+ </GameStage>;
 }

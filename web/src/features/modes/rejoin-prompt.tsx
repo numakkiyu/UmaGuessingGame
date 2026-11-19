@@ -5,17 +5,15 @@ import { Link } from "react-router";
 import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { ApiError, type Failure } from "@/lib/api/client";
-import { COPY } from "@/lib/copy";
 
 /** 这个失败是不是「刷新后凭据失效」 */
 export function isCredentialRefreshFailure(error: unknown): boolean {
-  return error instanceof ApiError && error.code === "CSRF_UNAVAILABLE";
+  return error instanceof ApiError && (error.code === "CSRF_UNAVAILABLE" || error.code === "csrf-token-invalid");
 }
 
 /** 从任意异常判断是否是凭据失效 */
 export function failureIsCredentialRefresh(failure: Failure | null): boolean {
-  if (!failure) return false;
-  return failure.detail === COPY.rejoinAfterRefresh || failure.kind === "forbidden";
+  return failure?.messageKey === "session-rejoin-required";
 }
 
 /**

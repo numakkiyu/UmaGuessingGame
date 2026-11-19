@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { setPlayerName } from "./player-profile.mjs";
 /** Exercises game entry, matchmaking and event pages against a running service; records viewport checks and screenshots. */
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -338,8 +339,7 @@ async function main() {
 
     try {
       await page.goto(`${WEB_BASE}/play/memory`, { waitUntil: "commit" });
-      await page.waitForSelector("input#memory-name", { timeout: 25000 });
-      await page.getByLabel("显示名").fill("记忆E2E");
+      await setPlayerName(page, "记忆E2E");
       await page.getByRole("button", { name: /开始对局/ }).click();
       await page.waitForFunction(() => location.pathname.startsWith("/rooms/"), { timeout: 40000 });
       await page.waitForSelector('[aria-label*="行第"]', { timeout: 25000 });
@@ -1226,34 +1226,33 @@ async function main() {
     /*
      * / ：「最长中文/日文角色名、4 行任务、长队名」必须单独审查。
      *
-     * 做法：用超长显示名建房，检查页面不被撑开、名字不被截断到无法辨认。
-     * 显示名上限 24 字符（session 校验），用满 24 个全角汉字。
+     * 做法：用超长昵称建房，检查页面不被撑开、名字不被截断到无法辨认。
+     * 昵称上限 24 字符（session 校验），用满 24 个全角汉字。
      */
     /*
-     * 更可靠的做法：直接走 UI 开局，用满 24 字符的显示名，
+     * 更可靠的做法：直接走 UI 开局，用满 24 字符的昵称，
      * 让页面自己把长名字渲染出来，然后测量溢出。
      */
     const longContext = await browser.newContext({ viewport: { width: 320, height: 568 } });
     const longPage = await longContext.newPage();
     try {
       await longPage.goto(`${WEB_BASE}/play/memory`, { waitUntil: "commit" });
-      await longPage.waitForSelector("input#memory-name", { timeout: 20000 });
-      // 用满 24 个全角字符（最长可能输入）
-      await longPage.getByLabel("显示名").fill("超长测试队伍名称极限二十四个汉字全角占位符测试");
+        // 用满 24 个全角字符（最长可能输入）
+      await setPlayerName(longPage, "超长测试队伍名称极限二十四个汉字全角占位符测试");
       await longPage.getByRole("button", { name: /开始对局/ }).click();
       await longPage.waitForFunction(() => location.pathname.startsWith("/rooms/"), { timeout: 40000 });
       await longPage.waitForSelector('[aria-label*="行第"]', { timeout: 25000 });
       await longPage.waitForTimeout(1200);
 
       const longMeasure = await measure(longPage);
-      assert("长显示名 320 宽无水平溢出", longMeasure.overflowPx === 0, {
+      assert("长昵称 320 宽无水平溢出", longMeasure.overflowPx === 0, {
         overflowPx: longMeasure.overflowPx,
       });
-      assert("长显示名触摸区 ≥44px", longMeasure.smallTargets.length === 0, longMeasure.smallTargets);
+      assert("长昵称触摸区 ≥44px", longMeasure.smallTargets.length === 0, longMeasure.smallTargets);
 
       // 名字必须真的渲染出来（不是被截成空）
       const bodyText = await longPage.locator("body").innerText();
-      assert("长显示名确实渲染在页面上", bodyText.includes("超长测试"), {
+      assert("长昵称确实渲染在页面上", bodyText.includes("超长测试"), {
         excerpt: bodyText.slice(0, 200),
       });
 
@@ -2004,7 +2003,7 @@ async function main() {
         excerpt: panelText.slice(0, 400),
       });
 
-      /* 按 subjectId 从房间成员与队伍列表解析显示名，检查面板实际显示队名 */
+      /* 按 subjectId 从房间成员与队伍列表解析昵称，检查面板实际显示队名 */
       assert("缺交 面板显示真实成员名（不是未命名）", !/未命名队伍/.test(panelText), {
         excerpt: panelText.slice(0, 500),
       });

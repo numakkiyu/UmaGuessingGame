@@ -9,541 +9,494 @@ import (
 	"time"
 
 	"github.com/bhcn/umaguessinggame/internal/httpapi/problem"
+	"github.com/bhcn/umaguessinggame/internal/modes"
 )
 
-// Ticket statuses the contract exposes.
-var ticketStatuses = map[string]bool{
-	"queueing": true, "matched-pending-accept": true, "ready": true,
-	"playing": true, "cancelled": true, "expired": true, "finished": true,
-}
+var ticketStatuses = map[string]bool{"queueing": true, "matched-pending-accept": true, "ready": true, "playing": true, "cancelled": true, "expired": true, "finished": true}
 
-// Ticket is a matchmaking ticket.
+const matchLeaseMS int64 = 35000
+const matchQueueMS int64 = 120000
+const matchAcceptMS int64 = 20000
+
+// Ticket is private to its owning session. Group identifiers are never projected.
 type Ticket struct {
-	ID        string
-	SessionID string
-	ModeID    string
-	Status    string
-	RoomID    string
-	CreatedAt int64
-	ExpiresAt int64
-	UpdatedAt int64
+	ID, SessionID, ModeID, Status, RoomID, PoolID string
+	CreatedAt, ExpiresAt, UpdatedAt               int64
+	Players, Accepted                             int
 }
-
-// CreateTicketInput is the command to queue for matchmaking.
 type CreateTicketInput struct {
+	Command    *CreationCommand
+	PoolID     string
 	ModeConfig json.RawMessage
+	Proof      MatchProofAnswer
 }
 
-// CreateMatchmakingTicket queues the caller for a random match.
-//
-// A session may hold at most one active ticket , enforced by the
-// partial unique index; the check below produces the friendly error.
-func (s *Service) CreateMatchmakingTicket(ctx context.Context, sessionID string, in CreateTicketInput) (Ticket, error) {
-	if err := s.validateModeConfig(in.ModeConfig); err != nil {
+func (s *Service) CreateMatchmakingTicket(ctx context.Context, sid string, in CreateTicketInput) (Ticket, error) {
+	if in.PoolID == "" {
+		in.PoolID = "classic-duel"
+	}
+	p, err := s.matchPool(in.PoolID)
+	if err != nil {
 		return Ticket{}, err
 	}
-	resolved, err := resolveModeConfig(in.ModeConfig)
+	if len(in.ModeConfig) > 0 {
+		got, e := resolveModeConfig(in.ModeConfig)
+		if e != nil {
+			return Ticket{}, e
+		}
+		want, e := resolveModeConfig(p.ModeConfig)
+		if e != nil {
+			return Ticket{}, e
+		}
+		var a, b any
+		_ = json.Unmarshal(got, &a)
+		_ = json.Unmarshal(want, &b)
+		x, _ := json.Marshal(a)
+		y, _ := json.Marshal(b)
+		if string(x) != string(y) {
+			return Ticket{}, problem.Unprocessable("matchmaking-rules-fixed", "choose a fixed matchmaking pool")
+		}
+	}
+	now := s.nowMS()
+	tx, err := s.db.Write().BeginTx(ctx, nil)
 	if err != nil {
 		return Ticket{}, problem.Internal(err)
 	}
-	in.ModeConfig = resolved
-	if err := s.checkModeForm(in.ModeConfig, "matchmaking"); err != nil {
+	defer tx.Rollback()
+	if id, e := createdResource(ctx, tx, "matchmaking_tickets", "session_id", sid, in.Command); e != nil {
+		return Ticket{}, e
+	} else if id != "" {
+		return loadTicketTx(ctx, tx, id)
+	}
+	if err = s.reconcileMatchesQ(ctx, tx, now); err != nil {
 		return Ticket{}, err
 	}
-	var probe struct {
-		ModeID string `json:"modeId"`
+	if err = s.checkAccountQueue(ctx, tx, sid); err != nil {
+		return Ticket{}, err
 	}
-	if err := json.Unmarshal(in.ModeConfig, &probe); err != nil {
-		return Ticket{}, problem.Validation("modeConfig is invalid",
-			problem.FieldError{Field: "modeConfig", Message: "must be a JSON object"})
-	}
-	if probe.ModeID != "classic" {
-		return Ticket{}, problem.Unprocessable("matchmaking-mode-unavailable", "random matching is available for classic games only")
-	}
-	// Stable key ordering makes equivalent form submissions share a queue. Keep
-	// the actual rules, not just the mode id: both opponents must agree to them.
-	var configValue map[string]any
-	if err := json.Unmarshal(in.ModeConfig, &configValue); err != nil {
-		return Ticket{}, problem.Validation("modeConfig is invalid")
-	}
-	configJSON, err := json.Marshal(configValue)
-	if err != nil {
+	var active, count int
+	var cooling int64
+	if err = tx.QueryRowContext(ctx, `SELECT COUNT(*),COALESCE(MAX(cooldown_until),0) FROM matchmaking_tickets WHERE session_id=? AND (status IN ('queueing','matched-pending-accept','ready','playing') OR cooldown_until>?)`, sid, now).Scan(&active, &cooling); err != nil {
 		return Ticket{}, problem.Internal(err)
 	}
-
+	if cooling > now {
+		return Ticket{}, problem.RateLimited(15)
+	}
+	if active > 0 {
+		return Ticket{}, problem.Conflict("ticket-already-active", "this session already has an active match")
+	}
+	if err = tx.QueryRowContext(ctx, `SELECT COUNT(*) FROM matchmaking_tickets WHERE status IN ('queueing','matched-pending-accept','ready') AND room_id IS NULL`).Scan(&count); err != nil {
+		return Ticket{}, problem.Internal(err)
+	}
+	if count >= s.cfg.Policy.Matchmaking.Capacity() {
+		return Ticket{}, problem.Busy(10)
+	}
+	if err = consumeMatchProof(ctx, tx, sid, p.ID, in.Proof, now); err != nil {
+		return Ticket{}, err
+	}
 	id, err := newID("tkt_")
 	if err != nil {
 		return Ticket{}, problem.Internal(err)
 	}
-	now := s.nowMS()
-	expires := now + int64(2*60*1000)
-
-	tx, err := s.db.Write().BeginTx(ctx, nil)
-	if err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: begin ticket: %w", err))
-	}
-	defer tx.Rollback()
-
-	// Retire this session's expired tickets before deciding whether one is active.
-	//
-	// Expiry used to be a pure read-time filter, so a ticket whose window had passed
-	// stayed in an active status forever: the partial unique index still counted it,
-	// and the same session could never queue again without first cancelling by hand.
-	// A player who closed the tab was locked out of matchmaking permanently.
-	//
-	// The status is what the index and the client both read, so it has to be updated,
-	// not merely interpreted.
-	if _, err := tx.ExecContext(ctx, `
-		UPDATE matchmaking_tickets SET status = 'expired', updated_at = ?
-		WHERE session_id = ? AND status IN ('queueing','matched-pending-accept')
-		  AND expires_at <= ?`, now, sessionID, now); err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: expire stale tickets: %w", err))
-	}
-
-	var active int
-	if err := tx.QueryRowContext(ctx, `
-		SELECT COUNT(1) FROM matchmaking_tickets
-		WHERE session_id = ? AND status IN ('queueing','matched-pending-accept','ready')
-		  AND expires_at > ?`, sessionID, now).Scan(&active); err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: check active ticket: %w", err))
-	}
-	if active > 0 {
-		return Ticket{}, problem.Conflict("ticket-already-active",
-			"this session already holds an active matchmaking ticket")
-	}
-	if _, err := tx.ExecContext(ctx, `
-		INSERT INTO matchmaking_tickets (id, session_id, mode_id, mode_config_json, status, created_at, expires_at, updated_at)
-		VALUES (?, ?, ?, ?, 'queueing', ?, ?, ?)`,
-		id, sessionID, probe.ModeID, string(configJSON), now, expires, now); err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: insert ticket: %w", err))
-	}
-
-	// Try to pair with an opponent that is already waiting.
-	//
-	// Pairing happens here, synchronously, rather than in a background ticker:
-	// with a single process and SQLite this keeps the decision inside one
-	// transaction, so two tickets can never both think they got the same partner.
-	// The cost is that a lone waiter is only matched when someone else arrives —
-	// which is exactly the event that makes a match possible.
-	//
-	// The status moves to matched-pending-accept for BOTH tickets: neither side
-	// joins until it accepts .
-	partnerID, partnerSession, pairErr := s.findWaitingPartner(ctx, tx, probe.ModeID, sessionID, string(configJSON), now)
-	if pairErr != nil {
-		return Ticket{}, pairErr
-	}
-	if partnerID != "" {
-		if _, err := tx.ExecContext(ctx, `
-			UPDATE matchmaking_tickets
-			SET status = 'matched-pending-accept', matched_with = ?, updated_at = ?
-			WHERE id IN (?, ?)`,
-			partnerID, now, id, partnerID); err != nil {
-			return Ticket{}, problem.Internal(fmt.Errorf("room: pair tickets: %w", err))
-		}
-		// Record the reverse pointer on the opponent's row.
-		if _, err := tx.ExecContext(ctx, `
-			UPDATE matchmaking_tickets SET matched_with = ? WHERE id = ?`,
-			id, partnerID); err != nil {
-			return Ticket{}, problem.Internal(fmt.Errorf("room: link partner ticket: %w", err))
-		}
-		_ = partnerSession
-	}
-
-	// Read the final row INSIDE the transaction, before commit.
-	//
-	// Reading through the Read pool after commit is not equivalent: the pool has
-	// several connections and each may be on an older WAL snapshot, so the caller
-	// could be told "queueing" while the row already says matched-pending-accept.
-	// That is exactly the bug the frontend found: the pairing happened, but the
-	// create response and an immediate re-read both reported the pre-pairing state.
-	final, err := loadTicketTx(ctx, tx, id)
+	key, hash, err := in.Command.identity()
 	if err != nil {
 		return Ticket{}, err
 	}
-	if err := tx.Commit(); err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: commit ticket: %w", err))
+	if _, err = tx.ExecContext(ctx, `INSERT INTO matchmaking_tickets(id,session_id,mode_id,mode_config_json,pool_id,status,created_at,expires_at,updated_at,lease_until,creation_key,creation_hash) VALUES(?,?,?,?,?,'queueing',?,?,?,?,?,?)`, id, sid, p.ModeID, string(p.ModeConfig), p.ID, now, now+matchQueueMS, now, now+matchLeaseMS, key, hash); err != nil {
+		return Ticket{}, problem.Internal(err)
 	}
-	return final, nil
-}
-
-// loadTicketTx reads a ticket on a given transaction so a writer sees its own
-// uncommitted changes.
-func loadTicketTx(ctx context.Context, tx *sql.Tx, ticketID string) (Ticket, error) {
-	var (
-		t      Ticket
-		roomID sql.NullString
-	)
-	err := tx.QueryRowContext(ctx, `
-		SELECT id, session_id, mode_id, status, room_id, created_at, expires_at, updated_at
-		FROM matchmaking_tickets WHERE id = ?`, ticketID).
-		Scan(&t.ID, &t.SessionID, &t.ModeID, &t.Status, &roomID,
-			&t.CreatedAt, &t.ExpiresAt, &t.UpdatedAt)
-	if errors.Is(err, sql.ErrNoRows) {
-		return Ticket{}, errTicketNotFound
+	if err = s.formMatchQ(ctx, tx, p, now); err != nil {
+		return Ticket{}, err
 	}
-	if err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: load ticket: %w", err))
-	}
-	t.RoomID = roomID.String
-	return t, nil
-}
-
-// findWaitingPartner returns an unexpired queued ticket in the same mode owned by
-// a different session, or "" when nobody is waiting.
-//
-// The row is locked by the surrounding write transaction, so the same opponent
-// cannot be handed to two arriving players.
-func (s *Service) findWaitingPartner(
-	ctx context.Context, tx *sql.Tx, modeID, sessionID, configJSON string, now int64,
-) (ticketID, partnerSession string, err error) {
-	err = tx.QueryRowContext(ctx, `
-		SELECT id, session_id FROM matchmaking_tickets
-		WHERE mode_id = ? AND session_id <> ? AND mode_config_json = ? AND status = 'queueing' AND expires_at > ?
-		ORDER BY rowid ASC LIMIT 1`, modeID, sessionID, configJSON, now).Scan(&ticketID, &partnerSession)
-	if errors.Is(err, sql.ErrNoRows) {
-		return "", "", nil
-	}
-	if err != nil {
-		return "", "", problem.Internal(fmt.Errorf("room: find waiting partner: %w", err))
-	}
-	return ticketID, partnerSession, nil
-}
-
-// GetMatchmakingTicket reads a ticket the caller owns.
-//
-// Another session's ticket is reported as 404, not 403: ticket ids must not be
-// enumerable .
-func (s *Service) GetMatchmakingTicket(ctx context.Context, sessionID, ticketID string) (Ticket, error) {
-	t, err := s.loadTicket(ctx, ticketID)
+	t, err := loadTicketTx(ctx, tx, id)
 	if err != nil {
 		return Ticket{}, err
 	}
-	if t.SessionID != sessionID {
-		return Ticket{}, errTicketNotFound
+	if err = tx.Commit(); err != nil {
+		return Ticket{}, problem.Internal(err)
 	}
 	return t, nil
 }
 
-func (s *Service) loadTicket(ctx context.Context, ticketID string) (Ticket, error) {
-	var (
-		t      Ticket
-		roomID sql.NullString
-	)
-	err := s.db.Read().QueryRowContext(ctx, `
-		SELECT id, session_id, mode_id, status, room_id, created_at, expires_at, updated_at
-		FROM matchmaking_tickets WHERE id = ?`, ticketID).
-		Scan(&t.ID, &t.SessionID, &t.ModeID, &t.Status, &roomID,
-			&t.CreatedAt, &t.ExpiresAt, &t.UpdatedAt)
+func loadTicketTx(ctx context.Context, tx *sql.Tx, id string) (Ticket, error) {
+	return loadTicketQ(ctx, tx, id)
+}
+func loadTicketQ(ctx context.Context, q queryer, id string) (Ticket, error) {
+	var t Ticket
+	var rid sql.NullString
+	err := q.QueryRowContext(ctx, `SELECT id,session_id,mode_id,status,room_id,pool_id,created_at,expires_at,updated_at FROM matchmaking_tickets WHERE id=?`, id).Scan(&t.ID, &t.SessionID, &t.ModeID, &t.Status, &rid, &t.PoolID, &t.CreatedAt, &t.ExpiresAt, &t.UpdatedAt)
 	if errors.Is(err, sql.ErrNoRows) {
 		return Ticket{}, errTicketNotFound
 	}
 	if err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: load ticket: %w", err))
+		return Ticket{}, problem.Internal(err)
 	}
-	t.RoomID = roomID.String
+	t.RoomID = rid.String
+	for _, p := range matchPools {
+		if p.ID == t.PoolID {
+			t.Players = p.Players
+		}
+	}
+	if err = q.QueryRowContext(ctx, `SELECT COUNT(*) FROM matchmaking_tickets WHERE status IN ('ready','playing') AND ((match_group IS NOT NULL AND match_group=(SELECT match_group FROM matchmaking_tickets WHERE id=?)) OR (room_id IS NOT NULL AND room_id=?))`, id, t.RoomID).Scan(&t.Accepted); err != nil {
+		return Ticket{}, problem.Internal(err)
+	}
 	return t, nil
 }
-
-// CancelMatchmakingTicket cancels the caller's own ticket.
-func (s *Service) CancelMatchmakingTicket(ctx context.Context, sessionID, ticketID string) error {
-	tx, err := s.db.Write().BeginTx(ctx, nil)
-	if err != nil {
-		return problem.Internal(fmt.Errorf("room: begin cancel ticket: %w", err))
-	}
-	defer tx.Rollback()
-
-	var owner, status string
-	err = tx.QueryRowContext(ctx,
-		`SELECT session_id, status FROM matchmaking_tickets WHERE id = ?`, ticketID).Scan(&owner, &status)
-	if errors.Is(err, sql.ErrNoRows) {
-		return errTicketNotFound
-	}
-	if err != nil {
-		return problem.Internal(fmt.Errorf("room: load ticket owner: %w", err))
-	}
-	if owner != sessionID {
-		return errTicketNotFound
-	}
-	if status == "cancelled" || status == "expired" || status == "finished" {
-		// Cancelling an already-terminal ticket is idempotent.
-		return nil
-	}
-	now := s.nowMS()
-	if _, err := tx.ExecContext(ctx,
-		`UPDATE matchmaking_tickets SET status = 'cancelled', updated_at = ? WHERE id = ?`,
-		now, ticketID); err != nil {
-		return problem.Internal(fmt.Errorf("room: cancel ticket: %w", err))
-	}
-	return tx.Commit()
+func (s *Service) loadTicket(ctx context.Context, id string) (Ticket, error) {
+	return loadTicketQ(ctx, s.db.Read(), id)
 }
 
-// RespondToMatch accepts or declines a proposed match.
-//
-// Acceptance marks the ticket ready; it never creates a room on behalf of another
-// session, because the pairing decision belongs to the matchmaker.
-func (s *Service) RespondToMatch(ctx context.Context, sessionID, ticketID string, accept bool) (Ticket, error) {
-	tx, err := s.db.Write().BeginTx(ctx, nil)
-	if err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: begin match response: %w", err))
-	}
-	defer tx.Rollback()
-
-	var owner, status string
-	err = tx.QueryRowContext(ctx,
-		`SELECT session_id, status FROM matchmaking_tickets WHERE id = ?`, ticketID).Scan(&owner, &status)
-	if errors.Is(err, sql.ErrNoRows) || (err == nil && owner != sessionID) {
-		return Ticket{}, errTicketNotFound
-	}
-	if err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: load match ticket: %w", err))
-	}
-	if status != "queueing" && status != "matched-pending-accept" {
-		return Ticket{}, problem.Conflict("ticket-not-pending",
-			fmt.Sprintf("the ticket is %s and cannot be answered", status))
-	}
-	now := s.nowMS()
-	// A lapsed ticket cannot be answered.
-	//
-	// Without this check an expired ticket could still be accepted, become 'ready',
-	// and — together with a partner that also accepted — create a room for a pair
-	// that had already timed out. The window is short but real: the acceptance
-	// screen can sit open for minutes. Retiring the row here keeps the status honest
-	// and tells the client the truth instead of silently succeeding.
-	var expiresAt int64
-	if err := tx.QueryRowContext(ctx,
-		`SELECT expires_at FROM matchmaking_tickets WHERE id = ?`, ticketID).Scan(&expiresAt); err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: load ticket expiry: %w", err))
-	}
-	if expiresAt <= now {
-		if _, err := tx.ExecContext(ctx,
-			`UPDATE matchmaking_tickets SET status = 'expired', updated_at = ? WHERE id = ?`,
-			now, ticketID); err != nil {
-			return Ticket{}, problem.Internal(fmt.Errorf("room: expire ticket: %w", err))
-		}
-		if err := tx.Commit(); err != nil {
-			return Ticket{}, problem.Internal(fmt.Errorf("room: commit expiry: %w", err))
-		}
-		return Ticket{}, problem.Conflict("ticket-expired",
-			"this matchmaking ticket has expired; queue again to find a match")
-	}
-	if !accept {
-		// Declining releases the partner too: leaving them paired with someone who
-		// will never accept would strand them until expiry.
-		if _, err := tx.ExecContext(ctx, `
-			UPDATE matchmaking_tickets SET status = 'cancelled', updated_at = ?
-			WHERE id = ?`, now, ticketID); err != nil {
-			return Ticket{}, problem.Internal(fmt.Errorf("room: decline ticket: %w", err))
-		}
-		if _, err := tx.ExecContext(ctx, `
-			UPDATE matchmaking_tickets
-			SET status = 'queueing', matched_with = NULL, updated_at = ?
-			WHERE matched_with = ? AND status = 'matched-pending-accept'`,
-			now, ticketID); err != nil {
-			return Ticket{}, problem.Internal(fmt.Errorf("room: release partner: %w", err))
-		}
-		final, err := loadTicketTx(ctx, tx, ticketID)
-		if err != nil {
-			return Ticket{}, err
-		}
-		if err := tx.Commit(); err != nil {
-			return Ticket{}, problem.Internal(fmt.Errorf("room: commit decline: %w", err))
-		}
-		return final, nil
-	}
-
-	if _, err := tx.ExecContext(ctx,
-		`UPDATE matchmaking_tickets SET status = 'ready', updated_at = ? WHERE id = ?`,
-		now, ticketID); err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: mark ticket ready: %w", err))
-	}
-
-	// Both sides ready → the match becomes a real room.
-	//
-	// This is the step that makes matchmaking mean something: two strangers end up
-	// in one room without either creating it. It runs inside the same transaction as
-	// the readiness update, so a room cannot be created for a pair that did not both
-	// accept, and two concurrent accepts cannot each create a room.
-	if err := s.finalisePairIfReady(ctx, tx, ticketID, now); err != nil {
-		// The partner lapsed while this side was accepting. Rolling back is what keeps
-		// the caller's ticket out of 'ready': that status means "waiting for the other
-		// side", and the other side can never arrive. The player is told to queue
-		// again instead of being left on a success screen for a match that is gone.
-		if errors.Is(err, errPartnerExpired) {
-			return Ticket{}, problem.Conflict("partner-expired",
-				"the other player's matchmaking ticket expired before the match completed; queue again to find a new match")
-		}
-		return Ticket{}, err
-	}
-
-	final, err := loadTicketTx(ctx, tx, ticketID)
-	if err != nil {
-		return Ticket{}, err
-	}
-	if err := tx.Commit(); err != nil {
-		return Ticket{}, problem.Internal(fmt.Errorf("room: commit match response: %w", err))
-	}
-	return final, nil
-}
-
-// errPartnerExpired reports that a pairing cannot complete because the other side's
-// ticket lapsed.
-//
-// It must be distinguishable from "still waiting": both used to return nil, so
-// RespondToMatch could not tell an incomplete pair from a dead one and answered 201
-// for a match that would never become a room. The accepting player saw success and
-// then waited forever, with their own ticket stuck on 'ready'.
-var errPartnerExpired = errors.New("room: partner ticket expired")
-
-// matchRoomCapacity is the seat count for a room created by the matchmaker.
-//
-// The queue promises a two-player duel; invitations cannot add extra opponents.
-const matchRoomCapacity = 2
-
-// finalisePairIfReady creates the shared room once both paired tickets are ready.
-//
-// It is a no-op while either side is still pending, which is why it is safe to call
-// on every accept: the second accept is the one that completes the pair.
-func (s *Service) finalisePairIfReady(ctx context.Context, tx *sql.Tx, ticketID string, now int64) error {
-	var (
-		partner    sql.NullString
-		status     string
-		modeID     string
-		modeConfig string
-		existing   sql.NullString
-	)
-	// NOTE: the ticket's own session_id is deliberately NOT read here. It names
-	// whoever accepted second, and every ownership decision below must be based on
-	// the earlier ticket instead, otherwise accept order decides who runs the room.
-	if err := tx.QueryRowContext(ctx, `
-		SELECT matched_with, status, mode_id, room_id, mode_config_json
-		FROM matchmaking_tickets WHERE id = ?`, ticketID).
-		Scan(&partner, &status, &modeID, &existing, &modeConfig); err != nil {
-		return problem.Internal(fmt.Errorf("room: load pair: %w", err))
-	}
-	if !partner.Valid || partner.String == "" {
-		return nil
-	}
-	if existing.Valid && existing.String != "" {
-		// Already paired into a room; nothing more to do.
-		return nil
-	}
-	var partnerStatus, partnerSession, selfSession string
-	if err := tx.QueryRowContext(ctx, `
-		SELECT status, session_id FROM matchmaking_tickets WHERE id = ?`, partner.String).
-		Scan(&partnerStatus, &partnerSession); err != nil {
-		return problem.Internal(fmt.Errorf("room: load partner ticket: %w", err))
-	}
-	// The two sessions that must end up in the room are the two tickets' owners.
-	// Reading the current ticket's owner here (rather than assuming it equals one of
-	// firstSession/partnerSession) keeps membership correct regardless of which side
-	// triggered finalisation.
-	if err := tx.QueryRowContext(ctx, `
-		SELECT session_id FROM matchmaking_tickets WHERE id = ?`, ticketID).
-		Scan(&selfSession); err != nil {
-		return problem.Internal(fmt.Errorf("room: load self ticket: %w", err))
-	}
-	// A lapsed partner can never complete the pair, so this must be checked BEFORE the
-	// "still waiting" shortcut below. When the partner has not accepted yet its status
-	// is 'matched-pending-accept', and the shortcut would return nil — reporting a
-	// successful accept for a match that can never happen. The accepting player would
-	// see success, their own ticket would stay on 'ready', and no room would ever
-	// appear.
-	var partnerExpires int64
-	if err := tx.QueryRowContext(ctx,
-		`SELECT expires_at FROM matchmaking_tickets WHERE id = ?`, partner.String).
-		Scan(&partnerExpires); err != nil {
-		return problem.Internal(fmt.Errorf("room: load partner expiry: %w", err))
-	}
-	if partnerExpires <= now {
-		return errPartnerExpired
-	}
-	// Still waiting on the other side: this is an ordinary, successful accept.
-	if partnerStatus != "ready" {
-		return nil
-	}
-
-	// The earlier ticket owns the room.
-	//
-	// "Earlier" must mean insertion order, not created_at: two tickets can be created
-	// in the same millisecond, and the id is random hex, so ordering by (created_at,
-	// id) picks an arbitrary one — which is exactly how the later ticket ended up with
-	// ownership. rowid reflects real insert order for this table.
-	var firstSession string
-	if err := tx.QueryRowContext(ctx, `
-		SELECT session_id FROM matchmaking_tickets
-		WHERE id IN (?, ?) ORDER BY rowid ASC LIMIT 1`,
-		ticketID, partner.String).Scan(&firstSession); err != nil {
-		return problem.Internal(fmt.Errorf("room: pick matched owner: %w", err))
-	}
-
-	roomID, err := newID("rom_")
+// formMatchQ reserves exactly one FIFO group on the serialized SQLite writer.
+func (s *Service) formMatchQ(ctx context.Context, tx *sql.Tx, p MatchPool, now int64) error {
+	rows, err := tx.QueryContext(ctx, `SELECT id FROM matchmaking_tickets WHERE pool_id=? AND status='queueing' AND expires_at>? AND lease_until>? ORDER BY rowid LIMIT ?`, p.ID, now, now, p.Players)
 	if err != nil {
 		return problem.Internal(err)
 	}
-	invite, err := s.generateInviteCode()
+	var ids []string
+	for rows.Next() {
+		var id string
+		if err = rows.Scan(&id); err != nil {
+			rows.Close()
+			return problem.Internal(err)
+		}
+		ids = append(ids, id)
+	}
+	err = rows.Err()
+	rows.Close()
+	if err != nil {
+		return problem.Internal(err)
+	}
+	if len(ids) < p.Players {
+		return nil
+	}
+	g, err := newID("mtg_")
+	if err != nil {
+		return problem.Internal(err)
+	}
+	for _, id := range ids {
+		if _, err = tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET status='matched-pending-accept',match_group=?,matched_with=NULL,expires_at=?,updated_at=? WHERE id=?`, g, now+matchAcceptMS, now, id); err != nil {
+			return problem.Internal(err)
+		}
+	}
+	return nil
+}
+
+// reconcileMatchesQ releases stale groups, including players who had already accepted.
+func (s *Service) reconcileMatchesQ(ctx context.Context, tx *sql.Tx, now int64) error {
+	// Recover a commit after a successful start but before ticket publication.
+	if _, err := tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET status='playing',updated_at=? WHERE status='ready' AND room_id IS NOT NULL AND EXISTS(SELECT 1 FROM rounds r WHERE r.room_id=matchmaking_tickets.room_id AND (r.status='collecting' OR (r.mode_id='memory' AND r.status='briefing')))`, now); err != nil {
+		return problem.Internal(err)
+	}
+	// Failed preparation cannot reserve participants indefinitely, even if everyone closes the page.
+	if _, err := tx.ExecContext(ctx, `UPDATE rooms SET status='cancelled',updated_at=? WHERE id IN (SELECT room_id FROM matchmaking_tickets WHERE status='ready' AND room_id IS NOT NULL AND updated_at<=?)`, now, now-60000); err != nil {
+		return problem.Internal(err)
+	}
+	if _, err := tx.ExecContext(ctx, `UPDATE rounds SET status='cancelled',phase_version=phase_version+1,deadline_at=NULL,updated_at=? WHERE status IN ('prepared','briefing') AND room_id IN (SELECT r.id FROM rooms r WHERE r.status='cancelled' AND json_extract(r.config_json,'$.kind')='matchmaking')`, now); err != nil {
+		return problem.Internal(err)
+	}
+	// A departed participant is free to queue again; the remaining match continues.
+	if _, err := tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET status='finished',updated_at=? WHERE status IN ('ready','playing') AND room_id IS NOT NULL AND (EXISTS(SELECT 1 FROM rounds r WHERE r.room_id=matchmaking_tickets.room_id AND r.status IN ('settled','cancelled')) OR EXISTS(SELECT 1 FROM rooms r WHERE r.id=matchmaking_tickets.room_id AND r.status IN ('finished','archived','cancelled')) OR EXISTS(SELECT 1 FROM memberships m WHERE m.room_id=matchmaking_tickets.room_id AND m.session_id=matchmaking_tickets.session_id AND (m.left_at IS NOT NULL OR m.revoked_at IS NOT NULL)))`, now); err != nil {
+		return problem.Internal(err)
+	}
+	if _, err := tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET status='expired',cooldown_until=CASE WHEN status IN ('ready','matched-pending-accept') THEN ? ELSE 0 END,updated_at=? WHERE room_id IS NULL AND status IN ('queueing','matched-pending-accept','ready') AND (expires_at<=? OR lease_until<=?)`, now+15000, now, now, now); err != nil {
+		return problem.Internal(err)
+	}
+	if _, err := tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET status='queueing',match_group=NULL,matched_with=NULL,expires_at=?,updated_at=? WHERE room_id IS NULL AND status IN ('matched-pending-accept','ready') AND match_group IN (SELECT match_group FROM matchmaking_tickets WHERE status IN ('expired','cancelled'))`, now+matchQueueMS, now); err != nil {
+		return problem.Internal(err)
+	}
+	// Records used for retry recovery outlive queue visibility but have a bounded retention.
+	if _, err := tx.ExecContext(ctx, `DELETE FROM matchmaking_tickets WHERE status IN ('finished','expired','cancelled') AND updated_at<?`, now-int64(48*time.Hour/time.Millisecond)); err != nil {
+		return problem.Internal(err)
+	}
+	if _, err := tx.ExecContext(ctx, `DELETE FROM matchmaking_proofs WHERE expires_at<=?`, now); err != nil {
+		return problem.Internal(err)
+	}
+	return nil
+}
+
+func (s *Service) readOwnTicket(ctx context.Context, sid, id string, heartbeat bool) (Ticket, error) {
+	tx, err := s.db.Write().BeginTx(ctx, nil)
+	if err != nil {
+		return Ticket{}, problem.Internal(err)
+	}
+	defer tx.Rollback()
+	t, err := loadTicketTx(ctx, tx, id)
+	if err != nil {
+		return Ticket{}, err
+	}
+	if t.SessionID != sid {
+		return Ticket{}, errTicketNotFound
+	}
+	now := s.nowMS()
+	if err = s.reconcileMatchesQ(ctx, tx, now); err != nil {
+		return Ticket{}, err
+	}
+	if heartbeat {
+		if _, err = tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET lease_until=? WHERE id=? AND room_id IS NULL AND status IN ('queueing','matched-pending-accept','ready')`, now+matchLeaseMS, id); err != nil {
+			return Ticket{}, problem.Internal(err)
+		}
+	}
+	if p, e := s.matchPool(t.PoolID); e == nil {
+		if err = s.formMatchQ(ctx, tx, p, now); err != nil {
+			return Ticket{}, err
+		}
+	}
+	t, err = loadTicketTx(ctx, tx, id)
+	if err != nil {
+		return Ticket{}, err
+	}
+	if err = tx.Commit(); err != nil {
+		return Ticket{}, problem.Internal(err)
+	}
+	if t.RoomID != "" && t.Status == "ready" {
+		if err = s.ensureMatchStarted(ctx, t.RoomID); err != nil {
+			return Ticket{}, err
+		}
+		return s.loadTicket(ctx, id)
+	}
+	return t, nil
+}
+func (s *Service) GetMatchmakingTicket(ctx context.Context, sid, id string) (Ticket, error) {
+	return s.readOwnTicket(ctx, sid, id, false)
+}
+func (s *Service) HeartbeatMatchmakingTicket(ctx context.Context, sid, id string) (Ticket, error) {
+	return s.readOwnTicket(ctx, sid, id, true)
+}
+func (s *Service) ActiveMatchmakingTicket(ctx context.Context, sid string) (*Ticket, error) {
+	if err := s.SweepMatchmaking(ctx); err != nil {
+		return nil, err
+	}
+	var id string
+	err := s.db.Read().QueryRowContext(ctx, `SELECT id FROM matchmaking_tickets WHERE session_id=? AND status IN ('queueing','matched-pending-accept','ready','playing') ORDER BY rowid DESC LIMIT 1`, sid).Scan(&id)
+	if errors.Is(err, sql.ErrNoRows) {
+		return nil, nil
+	}
+	if err != nil {
+		return nil, problem.Internal(err)
+	}
+	t, err := s.GetMatchmakingTicket(ctx, sid, id)
+	return &t, err
+}
+func (s *Service) CancelMatchmakingTicket(ctx context.Context, sid, id string) error {
+	_, err := s.changeMatch(ctx, sid, id, false, true)
+	return err
+}
+func (s *Service) RespondToMatch(ctx context.Context, sid, id string, accept bool) (Ticket, error) {
+	return s.changeMatch(ctx, sid, id, accept, false)
+}
+func (s *Service) changeMatch(ctx context.Context, sid, id string, accept, cancel bool) (Ticket, error) {
+	tx, err := s.db.Write().BeginTx(ctx, nil)
+	if err != nil {
+		return Ticket{}, problem.Internal(err)
+	}
+	defer tx.Rollback()
+	t, err := loadTicketTx(ctx, tx, id)
+	if err != nil {
+		return Ticket{}, err
+	}
+	if t.SessionID != sid {
+		return Ticket{}, errTicketNotFound
+	}
+	now := s.nowMS()
+	if err = s.reconcileMatchesQ(ctx, tx, now); err != nil {
+		return Ticket{}, err
+	}
+	live, err := loadTicketTx(ctx, tx, id)
+	if err != nil {
+		return Ticket{}, err
+	}
+	if live.Status == "expired" {
+		if err = tx.Commit(); err != nil {
+			return Ticket{}, problem.Internal(err)
+		}
+		return Ticket{}, problem.Conflict("ticket-expired", "the match confirmation expired")
+	}
+	if live.RoomID != "" {
+		if cancel || !accept {
+			return Ticket{}, problem.Conflict("match-already-started", "the match has started; leave through the room")
+		}
+	} else if cancel || !accept {
+		if _, err = tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET status='cancelled',updated_at=?,cooldown_until=? WHERE id=? AND status IN ('queueing','matched-pending-accept','ready')`, now, now+15000, id); err != nil {
+			return Ticket{}, problem.Internal(err)
+		}
+		if err = s.reconcileMatchesQ(ctx, tx, now); err != nil {
+			return Ticket{}, err
+		}
+	} else {
+		if live.Status != "matched-pending-accept" && live.Status != "ready" {
+			return Ticket{}, problem.Conflict("ticket-not-pending", "there is no match to accept")
+		}
+		// If another group member expired, reconciliation requeued this caller.
+		if _, err = tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET status='ready',lease_until=?,updated_at=? WHERE id=?`, now+matchLeaseMS, now, id); err != nil {
+			return Ticket{}, problem.Internal(err)
+		}
+		if err = s.finaliseMatchQ(ctx, tx, id, now); err != nil {
+			return Ticket{}, err
+		}
+	}
+	t, err = loadTicketTx(ctx, tx, id)
+	if err != nil {
+		return Ticket{}, err
+	}
+	if err = tx.Commit(); err != nil {
+		return Ticket{}, problem.Internal(err)
+	}
+	if t.RoomID != "" && t.Status == "ready" {
+		if err = s.ensureMatchStarted(ctx, t.RoomID); err != nil {
+			return Ticket{}, err
+		}
+		return s.loadTicket(ctx, id)
+	}
+	return t, nil
+}
+
+func (s *Service) finaliseMatchQ(ctx context.Context, tx *sql.Tx, id string, now int64) error {
+	var g, poolID string
+	if err := tx.QueryRowContext(ctx, `SELECT COALESCE(match_group,''),pool_id FROM matchmaking_tickets WHERE id=?`, id).Scan(&g, &poolID); err != nil {
+		return problem.Internal(err)
+	}
+	if g == "" {
+		return nil
+	}
+	p, err := s.matchPool(poolID)
 	if err != nil {
 		return err
 	}
-	cfgJSON, err := json.Marshal(RoomConfig{
-		Kind: "matchmaking", ModeConfig: json.RawMessage(modeConfig),
-		MaxPlayers: matchRoomCapacity, Visibility: "invite",
-	})
-	if err != nil {
-		return problem.Internal(fmt.Errorf("room: encode matched room config: %w", err))
-	}
-	if _, err := tx.ExecContext(ctx, `
-		INSERT INTO rooms (id, invite_code, owner_session_id, name, status, room_version,
-		                   config_json, capacity, created_at, updated_at)
-		VALUES (?, ?, ?, ?, 'lobby', 1, ?, ?, ?, ?)`,
-		roomID, invite, firstSession, "快速匹配", string(cfgJSON), matchRoomCapacity, now, now); err != nil {
-		return problem.Internal(fmt.Errorf("room: insert matched room: %w", err))
-	}
-	// Both players join as players; the room exists because they matched.
-	//
-	// The loop uses firstSession (the earlier ticket) plus the partner, NOT the
-	// current caller: the caller is whichever side accepted second, so using it
-	// would make membership depend on accept order.
-	//
-	// The two are de-duplicated because they can legitimately be the same session:
-	// nothing stops one player from holding two tickets over time, and inserting the
-	// same (room, session) twice violates the unique membership index. That failure
-	// surfaced as a 500 on the second accept.
-	members := []string{selfSession}
-	if partnerSession != selfSession {
-		members = append(members, partnerSession)
-	}
-	for _, sid := range members {
-		membershipID, err := newID("mem_")
-		if err != nil {
-			return problem.Internal(err)
-		}
-		if _, err := tx.ExecContext(ctx, `
-			INSERT INTO memberships (id, room_id, session_id, role, team_id, ready, joined_at)
-			VALUES (?, ?, ?, 'player', NULL, 0, ?)`, membershipID, roomID, sid, now); err != nil {
-			return problem.Internal(fmt.Errorf("room: insert matched membership: %w", err))
-		}
-	}
-	// Ownership authority goes to the player whose ticket was created FIRST, not to
-	// whoever accepted last. The later accepter is an accident of timing and must
-	// not gain host control of a room neither player chose to create.
-	grantID, err := newID("grn_")
+	rows, err := tx.QueryContext(ctx, `SELECT session_id,status FROM matchmaking_tickets WHERE match_group=? ORDER BY rowid`, g)
 	if err != nil {
 		return problem.Internal(err)
 	}
-	if _, err := tx.ExecContext(ctx, `
-		INSERT INTO room_grants (id, room_id, session_id, capability, granted_at)
-		VALUES (?, ?, ?, 'manage-room', ?)`, grantID, roomID, firstSession, now); err != nil {
-		return problem.Internal(fmt.Errorf("room: insert matched grant: %w", err))
+	var sessions []string
+	ready := 0
+	for rows.Next() {
+		var sid, status string
+		if err = rows.Scan(&sid, &status); err != nil {
+			rows.Close()
+			return problem.Internal(err)
+		}
+		sessions = append(sessions, sid)
+		if status == "ready" {
+			ready++
+		}
 	}
-	// Both tickets point at the room and drop the pairing pointer: the pair is now
-	// expressed by the room, not by the queue.
-	if _, err := tx.ExecContext(ctx, `
-		UPDATE matchmaking_tickets
-		SET status = 'ready', room_id = ?, matched_with = NULL, updated_at = ?
-		WHERE id IN (?, ?)`, roomID, now, ticketID, partner.String); err != nil {
-		return problem.Internal(fmt.Errorf("room: bind tickets to room: %w", err))
+	err = rows.Err()
+	rows.Close()
+	if err != nil {
+		return problem.Internal(err)
+	}
+	if ready != p.Players || len(sessions) != p.Players {
+		return nil
+	}
+	rid, err := newID("rom_")
+	if err != nil {
+		return problem.Internal(err)
+	}
+	// An opaque, undisplayed invitation satisfies legacy storage constraints. Join rejects this room kind.
+	invite, err := newID("")
+	if err != nil {
+		return problem.Internal(err)
+	}
+	cfg, _ := json.Marshal(RoomConfig{Kind: "matchmaking", ModeConfig: p.ModeConfig, MaxPlayers: p.Players, Visibility: "invite"})
+	if _, err = tx.ExecContext(ctx, `INSERT INTO rooms(id,invite_code,owner_session_id,creator_session_id,name,status,room_version,config_json,capacity,created_at,updated_at) VALUES(?,?,?,?,?,'lobby',1,?,?,?,?)`, rid, invite, sessions[0], sessions[0], "随机对战", string(cfg), p.Players, now, now); err != nil {
+		return problem.Internal(err)
+	}
+	for _, sid := range sessions {
+		mid, e := newID("mem_")
+		if e != nil {
+			return problem.Internal(e)
+		}
+		if _, err = tx.ExecContext(ctx, `INSERT INTO memberships(id,room_id,session_id,role,ready,joined_at) VALUES(?,?,?,'player',1,?)`, mid, rid, sid, now); err != nil {
+			return problem.Internal(err)
+		}
+	}
+	if _, err = tx.ExecContext(ctx, `UPDATE matchmaking_tickets SET room_id=?,match_group=NULL,matched_with=NULL,updated_at=? WHERE match_group=?`, rid, now, g); err != nil {
+		return problem.Internal(err)
 	}
 	return nil
+}
+
+// ensureMatchStarted resumes preparation after a failed response or process restart.
+func (s *Service) ensureMatchStarted(ctx context.Context, rid string) error {
+	_, release, err := s.queue.Enqueue(ctx, "match-start:"+rid)
+	if err != nil {
+		return err
+	}
+	defer release()
+	rm, err := s.loadRoom(ctx, rid)
+	if err != nil {
+		return err
+	}
+	actor, err := s.LoadActor(ctx, rm.OwnerID, rid)
+	if err != nil {
+		return err
+	}
+	actor.Capabilities[CapManageRoom] = true
+	r, err := s.currentRoundQ(ctx, s.db.Read(), rid)
+	if err != nil {
+		return err
+	}
+	if r == nil {
+		// A terminal first round must never silently become a second round.
+		old, e := s.LatestRoundSummary(ctx, rid)
+		if e != nil {
+			return e
+		}
+		if old != nil {
+			return nil
+		}
+		made, e := s.CreateRound(ctx, actor, RoundCreateInput{})
+		if e != nil {
+			if problem.As(e).Code != "round-already-open" && problem.As(e).Code != "room-version-conflict" {
+				return e
+			}
+			r, err = s.currentRoundQ(ctx, s.db.Read(), rid)
+			if err != nil {
+				return err
+			}
+		} else {
+			r = &made
+		}
+	}
+	if r == nil {
+		return nil
+	}
+	targets := []string{}
+	if r.Status == modes.PhasePrepared {
+		targets = append(targets, "briefing")
+		if r.ModeID != "memory" {
+			targets = append(targets, "collecting")
+		}
+	}
+	if r.Status == modes.PhaseBriefing && r.ModeID != "memory" {
+		targets = append(targets, "collecting")
+	}
+	version := r.PhaseVersion
+	for _, target := range targets {
+		res, e := s.CreateTransition(ctx, actor, r.ID, TransitionInput{Target: target, ExpectedPhaseVersion: version})
+		if e != nil {
+			if problem.As(e).Code == "phase-version-conflict" {
+				break
+			}
+			return e
+		}
+		version = res.PhaseVersion
+	}
+	if _, err = s.db.Write().ExecContext(ctx, `UPDATE matchmaking_tickets SET status='playing',updated_at=? WHERE room_id=? AND status='ready'`, s.nowMS(), rid); err != nil {
+		return problem.Internal(err)
+	}
+	return nil
+}
+
+func (s *Service) SweepMatchmaking(ctx context.Context) error {
+	tx, err := s.db.Write().BeginTx(ctx, nil)
+	if err != nil {
+		return problem.Internal(err)
+	}
+	defer tx.Rollback()
+	if err = s.reconcileMatchesQ(ctx, tx, s.nowMS()); err != nil {
+		return err
+	}
+	return tx.Commit()
 }
 
 // ---- grants --------------------------------------------------------------
@@ -613,7 +566,7 @@ func (s *Service) CreateRecoveryGrant(ctx context.Context, actor Actor, membersh
 		return Grant{}, problem.Internal(fmt.Errorf("room: begin recovery grant: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Grant{}, err
 	}
 
@@ -804,7 +757,7 @@ func (s *Service) RedeemDisplayGrant(ctx context.Context, code string, expectedE
 
 // RedeemRecoveryGrant exchanges a recovery code for a fresh session bound to the
 // original membership, revoking the previous controller.
-func (s *Service) RedeemRecoveryGrant(ctx context.Context, code string) (membershipID, roomID string, err error) {
+func (s *Service) RedeemRecoveryGrant(ctx context.Context, code string, createSession func(context.Context, *sql.Tx, string) (string, error)) (membershipID, roomID string, err error) {
 	code = trimSpace(code)
 	if len(code) < 16 || len(code) > 128 {
 		return "", "", problem.Validation("grantCode is invalid",
@@ -848,10 +801,39 @@ func (s *Service) RedeemRecoveryGrant(ctx context.Context, code string) (members
 		return "", "", problem.Conflict("grant-already-used", "this recovery code has already been used")
 	}
 
-	var roomIDv string
-	if err := tx.QueryRowContext(ctx,
-		`SELECT room_id FROM memberships WHERE id = ?`, membershipIDv).Scan(&roomIDv); err != nil {
+	var roomIDv, previousSession, displayName string
+	if err := tx.QueryRowContext(ctx, `SELECT m.room_id,m.session_id,s.display_name
+		FROM memberships m JOIN sessions s ON s.id=m.session_id JOIN rooms r ON r.id=m.room_id
+		WHERE m.id=? AND m.left_at IS NULL AND m.revoked_at IS NULL AND r.status NOT IN ('archived','cancelled')`, membershipIDv).Scan(&roomIDv, &previousSession, &displayName); err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return "", "", problem.Conflict("membership-inactive", "this seat is no longer available")
+		}
 		return "", "", problem.Internal(fmt.Errorf("room: load recovery membership: %w", err))
+	}
+	if createSession == nil {
+		return "", "", problem.Internal(fmt.Errorf("room: missing recovery session factory"))
+	}
+	newSession, err := createSession(ctx, tx, displayName)
+	if err != nil {
+		return "", "", err
+	}
+	// Carry the protected seat's account binding across its session transfer.
+	if _, err = tx.ExecContext(ctx, `INSERT INTO account_game_bindings(session_id,account_id,authorized_session_id,created_at) SELECT ?,account_id,authorized_session_id,? FROM account_game_bindings WHERE session_id=?`, newSession, now, previousSession); err != nil {
+		return "", "", problem.Internal(err)
+	}
+	// Preserve the membership and its scores; transfer only this room's authority.
+	for _, statement := range []struct {
+		query string
+		args  []any
+	}{
+		{`UPDATE memberships SET session_id=? WHERE id=?`, []any{newSession, membershipIDv}},
+		{`UPDATE rooms SET owner_session_id=?,room_version=room_version+1,updated_at=? WHERE id=? AND owner_session_id=?`, []any{newSession, now, roomIDv, previousSession}},
+		{`UPDATE room_grants SET session_id=? WHERE room_id=? AND session_id=? AND revoked_at IS NULL`, []any{newSession, roomIDv, previousSession}},
+		{`UPDATE event_sessions SET host_session_id=?,event_version=event_version+1,updated_at=? WHERE room_id=? AND host_session_id=?`, []any{newSession, now, roomIDv, previousSession}},
+	} {
+		if _, err := tx.ExecContext(ctx, statement.query, statement.args...); err != nil {
+			return "", "", problem.Internal(fmt.Errorf("room: transfer recovery seat: %w", err))
+		}
 	}
 	// Recovery revokes the previous controller so two devices cannot both write.
 	if _, err := tx.ExecContext(ctx, `
@@ -859,6 +841,16 @@ func (s *Service) RedeemRecoveryGrant(ctx context.Context, code string) (members
 		WHERE room_id = ? AND membership_id = ? AND revoked_at IS NULL`,
 		now, roomIDv, membershipIDv); err != nil {
 		return "", "", problem.Internal(fmt.Errorf("room: revoke old controller: %w", err))
+	}
+	if _, err := tx.ExecContext(ctx, `UPDATE recovery_grants SET consumed_at=? WHERE membership_id=? AND consumed_at IS NULL`, now, membershipIDv); err != nil {
+		return "", "", problem.Internal(err)
+	}
+	version, err := bumpRoomVersion(ctx, tx, roomIDv, now)
+	if err != nil {
+		return "", "", err
+	}
+	if err := emitOutbox(ctx, tx, roomIDv, "state.changed", map[string]any{"resource": "room", "roomVersion": version, "revokeRoomSessionId": previousSession, "transferredMembershipId": membershipIDv}, now); err != nil {
+		return "", "", err
 	}
 	if err := writeAudit(ctx, tx, roomIDv, "", "", "recovery-grant.redeemed", map[string]any{
 		"membershipId": membershipIDv,

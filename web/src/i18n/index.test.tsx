@@ -21,9 +21,25 @@ describe("language selection is independent of game identity", () => {
     ["en", undefined], ["javascript", undefined],
   ])("matches supported language %s", (input, expected) => expect(matchLanguage(input)).toBe(expected));
 
-  it("uses an explicitly saved preference before browser defaults", () => {
+  it("uses a saved preference when browser languages do not match", () => {
+    vi.spyOn(navigator, "languages", "get").mockReturnValue(["en-US"]);
     localStorage.setItem(LANGUAGE_STORAGE_KEY, "ja");
     expect(initialLanguage()).toBe("ja");
+  });
+
+  it.each([["ja-JP", "ja"], ["zh-CN", "zh-Hans"], ["zh-SG", "zh-Hans"], ["zh-TW", "zh-Hant"], ["zh-HK", "zh-Hant"], ["zh-MO", "zh-Hant"]])("follows browser %s before an old preference", (language, expected) => {
+    vi.spyOn(navigator, "languages", "get").mockReturnValue([language]);
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, "ja");
+    expect(initialLanguage()).toBe(expected);
+  });
+
+  it("follows a browser language change without clearing a game", async () => {
+    localStorage.setItem("example-game", "unchanged");
+    await changeLanguage("zh-Hans");
+    vi.spyOn(navigator, "languages", "get").mockReturnValue(["ja-JP"]);
+    window.dispatchEvent(new Event("languagechange"));
+    expect(i18n.language).toBe("ja");
+    expect(localStorage.getItem("example-game")).toBe("unchanged");
   });
 
   it("has the same nonempty common message keys in all three languages", () => {
@@ -64,19 +80,19 @@ describe("language selection is independent of game identity", () => {
 
   it("does not expose missing internal keys", async () => {
     await changeLanguage("ja");
-    expect(i18n.t("internal.missing.key")).toBe("ページを読み込めませんでした");
+    expect(i18n.t("internal.missing.key")).toBe("表示する文言がありません");
   });
 
   it("keeps unknown submission results uncertain and raw diagnostics private", async () => {
     await changeLanguage("ja");
     const timeout = describeFailure(new TimeoutError(1));
-    expect(timeout.title).toBe("回答が届いたか確認しています");
+    expect(timeout.title).toBe("直前の操作を確認しています");
     expect(timeout.retryable).toBe(true);
     expect(describeFailure(new NetworkError("secret raw diagnostic", null)).detail).not.toContain("secret");
     const error = describeFailure(new ApiError({ status: 500, code: "private-code", message: "SQL /private/file", requestId: "safe-id" }));
     expect(error.diagnosticId).toBe("safe-id");
     expect(error.detail).not.toMatch(/SQL|private/);
     await changeLanguage("zh-Hant");
-    expect(describeFailure(new TimeoutError(1)).title).toBe("還在確認答案是否已送出");
+    expect(describeFailure(new TimeoutError(1)).title).toBe("正在確認剛才的操作");
   });
 });

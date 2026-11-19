@@ -85,7 +85,7 @@ export function TeamRoundControl({ room, raw, onChanged }: { room: Room | undefi
         </div>
       </div>
     </details> : null}
-    {info ? <Alert tone="warning" title={info.title}>{info.detail}</Alert> : null}
+    {info ? <Alert fault tone="warning" title={info.title}>{info.detail}</Alert> : null}
     {hasPending && !busy ? <p role="status" className="text-sm leading-6">{t("pending")}</p> : null}
   </section>;
 }

@@ -32,6 +32,22 @@ func TestDefaultWinPolicyFollowsVariant(t *testing.T) {
 	}
 }
 
+func TestFriendCannotOverrideFirstCorrect(t *testing.T) {
+	for _, policy := range []WinPolicy{WinPolicySolo, WinPolicyWindowAttempts, WinPolicyFirstCorrect} {
+		raw, err := json.Marshal(Config{Variant: VariantFriend, WinPolicy: policy})
+		if err != nil {
+			t.Fatal(err)
+		}
+		cfg, err := decodeConfig(raw)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if cfg.WinPolicy != WinPolicyFirstCorrect {
+			t.Fatalf("friend policy %q remained %q", policy, cfg.WinPolicy)
+		}
+	}
+}
+
 func TestFirstCorrectSetsRoundOver(t *testing.T) {
 	t.Parallel()
 	// 直接构造 Apply 的输入太重；这里用源码断言锁住「猜中且 first-correct → RoundOver」。

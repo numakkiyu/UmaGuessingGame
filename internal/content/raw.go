@@ -174,7 +174,8 @@ type RawWikiCharacter struct {
 	} `json:"trivia"`
 	Article map[string]any `json:"article"`
 	Sources struct {
-		Pages []string `json:"pages"`
+		Pages   []string `json:"pages"`
+		Moegirl string   `json:"moegirl"`
 	} `json:"sources"`
 }
 
@@ -339,6 +340,6 @@ type RawSkillDef struct {
 }
 
 // RawFieldOverrides is data/manual/field-overrides.json: a manual correction
-// table keyed by legacy romanised id. Currently one entry, which is why the
-// overrides count must appear in the quality report rather than being assumed.
+// table keyed by legacy romanised id. Racing corrections include their source
+// and checked date; they apply to comparison vectors as well as the profile.
 type RawFieldOverrides map[string]map[string]string

@@ -1,3 +1,4 @@
+import { setPlayerName } from "./player-profile.mjs";
 /** Real UI invitation and saved-configuration start, on an isolated instance. */
 import { chromium } from 'playwright';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -14,10 +15,10 @@ const page=await host.newPage(),other=await guest.newPage();
 for(const p of [page,other])p.on('pageerror',e=>errors.push(e.message));
 const button=(p,name)=>p.getByRole('button',{name,exact:true});
 try{
- await page.goto(base);await page.getByRole('link',{name:'创建好友房间',exact:true}).click();await page.getByRole('heading',{name:'和朋友约一局',exact:true}).waitFor();
+ await page.goto(`${base}/friends`);await page.locator('a[href="/rooms/new?mode=sort"]').click();await page.getByRole('heading',{name:'和朋友约一局',exact:true}).waitFor();
  check('Lobby offers real friend creation',new URL(page.url()).pathname==='/rooms/new');
  for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1000});check(`Creation ${width}px no overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
- await page.getByLabel('这局玩什么？',{exact:true}).selectOption('sort');await page.getByLabel('你的显示名',{exact:true}).fill('约局房主');await page.getByLabel('房间名称（可不填）',{exact:true}).fill('周末档案排序');
+ await page.getByLabel('这局玩什么？',{exact:true}).click();await page.locator('[role="option"][data-value="sort"]').click();await setPlayerName(page, '约局房主');await page.getByLabel('房间名称（可不填）',{exact:true}).fill('周末档案排序');
  await page.waitForFunction(()=>[...document.querySelectorAll('button')].some(b=>b.textContent.includes('创建好友房间')&&!b.disabled));
  await page.screenshot({path:new URL('creation-1440.png',output).pathname,fullPage:true,animations:'disabled'});
  const made=page.waitForResponse(r=>r.url().endsWith('/api/v1/rooms')&&r.request().method()==='POST');
@@ -26,8 +27,8 @@ try{
  await page.getByText('本场项目：排序',{exact:true}).waitFor();await page.getByTestId('room-invite-code').waitFor();
  check('Invitation survives reload',await (async()=>{await page.reload();await page.getByTestId('room-invite-code').waitFor();return(await page.getByTestId('room-invite-code').innerText())===code;})());
  await button(page,'复制邀请链接').click();const invitation=await page.evaluate(()=>navigator.clipboard.readText());check('Copy creates usable code link',new URL(invitation).searchParams.get('code')===code);
- await other.goto(invitation);await other.getByRole('heading',{name:'加入房间',exact:true}).waitFor();check('Share link fills invitation code',await other.getByLabel('邀请码',{exact:true}).inputValue()===code);
- await other.getByLabel('显示名',{exact:true}).fill('约局来宾');const joined=other.waitForResponse(r=>r.url().includes('/memberships')&&r.request().method()==='POST');await button(other,'加入房间').click();check('Joining submits membership before room navigation',(await joined).status()===201);
+ await other.goto(invitation);await other.getByRole('heading',{name:'加入房间',exact:true}).waitFor();check('Share link fills invitation code',await other.getByLabel('房间分享码',{exact:true}).inputValue()===code);
+ await setPlayerName(other, '约局来宾');const joined=other.waitForResponse(r=>r.url().includes('/memberships')&&r.request().method()==='POST');await button(other,'加入房间').click();check('Joining submits membership before room navigation',(await joined).status()===201);
  await other.getByText('本场项目：排序',{exact:true}).waitFor();check('Guest cannot see manager invitation or start controls',await other.getByTestId('room-invite-code').count()===0&&await button(other,'开始对局').count()===0);
  await page.getByText('约局来宾',{exact:true}).first().waitFor();check('Host observes guest without reload',await page.getByText('约局来宾',{exact:true}).first().isVisible());
  await button(other,'准备好了').click();await button(other,'取消准备').waitFor();check('Member can confirm ready',await button(other,'取消准备').isVisible());
@@ -35,9 +36,9 @@ try{
  const start=page.waitForResponse(r=>r.url().endsWith(`/rooms/${roomId}/rounds`)&&r.request().method()==='POST');await button(page,'开始对局').click();const begun=await start;const round=await begun.json();check('Default start uses saved sort, never hardcoded classic',begun.status()===201&&round.modeId==='sort'&&Object.keys(begun.request().postDataJSON()).length===0,round.modeId);
  await page.getByRole('heading',{name:/^按.+排序$/}).waitFor();await other.getByRole('heading',{name:/^按.+排序$/}).waitFor();check('Both real identities enter selected game',await page.getByRole('heading',{name:/^按.+排序$/}).isVisible()&&await other.getByRole('heading',{name:/^按.+排序$/}).isVisible());
  check('System player copy hides execution location',findExecutionLocationWords(await readPlayerSurface(page)).length===0&&findExecutionLocationWords(await readPlayerSurface(other)).length===0);
- await page.goto(`${base}/rooms/new?mode=classic`);await page.getByLabel('你的显示名',{exact:true}).waitFor();await page.getByLabel('你的显示名',{exact:true}).fill('约局房主');check('Classic duel fixes two participant seats',await page.getByLabel('最多几人参加？',{exact:true}).getAttribute('max')==='2');
+ await page.goto(`${base}/rooms/new?mode=classic`);await setPlayerName(page, '约局房主');check('Classic duel fixes two participant seats',await page.getByLabel('最多几人参加？',{exact:true}).getAttribute('max')==='2');
  const classicResponse=page.waitForResponse(r=>r.url().endsWith('/api/v1/rooms')&&r.request().method()==='POST');await button(page,'创建好友房间').click();const classic=await(await classicResponse).json();await page.getByTestId('room-invite-code').waitFor();
- await other.goto(`${base}/join?code=${classic.inviteCode}`);await other.getByLabel('显示名',{exact:true}).fill('约局来宾');await button(other,'加入房间').click();await other.getByText('本场项目：经典弗一把',{exact:true}).waitFor();await page.getByText('约局来宾',{exact:true}).first().waitFor();
+ await other.goto(`${base}/join?code=${classic.inviteCode}`);await setPlayerName(other, '约局来宾');await button(other,'加入房间').click();await other.getByText('本场项目：经典弗一把',{exact:true}).waitFor();await page.getByText('约局来宾',{exact:true}).first().waitFor();
  const classicStart=page.waitForResponse(r=>r.url().endsWith(`/rooms/${classic.room.roomId}/rounds`)&&r.request().method()==='POST');await button(page,'开始对局').click();check('Two-person timed classic configuration prepares successfully',(await classicStart).status()===201);
  await page.getByRole('combobox').first().waitFor();
  check('No uncaught browser errors',errors.length===0,errors);

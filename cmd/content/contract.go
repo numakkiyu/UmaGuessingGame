@@ -222,7 +222,19 @@ func validateContract(specPath string) (*contractReport, error) {
 				hasCSRF, hasIdem := headerParams(op, item)
 				// Session creation, single-use grant redemption and invitation
 				// resolution are the documented exceptions .
-				if !opIsUnsafeWithoutCSRF(opID) && opID != "rotateSessionCsrf" {
+				if opID == "renewAccount" || opID == "deleteAccountSession" {
+					hasAccountCSRF := false
+					parameters, _ := op["parameters"].([]any)
+					for _, v := range parameters {
+						p, _ := v.(map[string]any)
+						if p["in"] == "header" && p["name"] == "X-Account-CSRF" && p["required"] == true {
+							hasAccountCSRF = true
+						}
+					}
+					if !hasAccountCSRF {
+						rep.problem("%s: account write must declare X-Account-CSRF", where)
+					}
+				} else if !opIsUnsafeWithoutCSRF(opID) && opID != "rotateSessionCsrf" {
 					if !hasCSRF {
 						rep.problem("%s (%s): mutating operation does not declare X-CSRF-Token", where, opID)
 					}
@@ -402,7 +414,7 @@ func headerParams(op, item map[string]any) (csrf, idem bool) {
 // this route noCsrf: true, and the contract omits both headers to match.
 func opIsUnsafeWithoutCSRF(opID string) bool {
 	switch opID {
-	case "createSession", "redeemDisplayGrant", "redeemRecoveryGrant", "resolveRoomInvitation":
+	case "createSession", "redeemDisplayGrant", "redeemRecoveryGrant", "resolveRoomInvitation", "startAccountLogin":
 		return true
 	}
 	return false
@@ -418,7 +430,9 @@ func requiresIdempotency(opID string) bool {
 	// Admission consumes a provider token and issues a bounded cookie. It does
 	// not allocate a game resource; an existing valid cookie restores success.
 	// Persisting a generic receipt would replay an expired grant after restart.
-	if opID == "rotateSessionCsrf" || opID == "verifyAdmission" {
+	// Matchmaking challenge replacement and presence renewal are bounded leases,
+	// not game commands; replaying a receipt would not renew their validity.
+	if opID == "rotateSessionCsrf" || opID == "verifyAdmission" || opID == "createMatchmakingProof" || opID == "heartbeatMatchmakingTicket" {
 		return false
 	}
 	return !opIsUnsafeWithoutCSRF(opID)

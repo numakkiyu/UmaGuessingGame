@@ -33,6 +33,7 @@ func TestStrategyHostCannotSkipRaceTurns(t *testing.T) {
 func TestStrategyBriefingCannotAcceptDecisions(t *testing.T) {
 	db, svc, clock := newStrategyService(t)
 	roomID, roundID := seedStrategyRound(t, db, *clock, clock.Add(20*time.Second))
+	seedStrategySeats(t, db, roomID)
 	if _, err := db.Write().ExecContext(context.Background(), `UPDATE rounds SET status='briefing' WHERE id=?`, roundID); err != nil {
 		t.Fatal(err)
 	}

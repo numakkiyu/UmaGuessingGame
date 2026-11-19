@@ -1,27 +1,54 @@
 <!doctype html>
 <html lang="zh-CN">
   <head>
+    <link rel="stylesheet" href="/fonts/source-han-sans.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <!-- Preserve browser zoom for accessibility -->
     <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#EDF7FF" />
-    <title>赛马娘猜猜乐 · UmaGuessingGame</title>
+    <title>马娘猜猜乐 · UmaGuessingGame</title>
     <meta
       name="description"
-      content="赛马娘猜猜乐：看线索、收范围，把答案一路追到终点。单人练习、朋友对战与娱乐杯项目。"
+      content="马娘猜猜乐：顺着九项线索找到她，也可以约上训练员伙伴，一起翻牌、组队、办场娱乐赛"
     />
-    <link rel="icon" type="image/png" href="/assets/ui/branding/official-logo-jp.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/ui/branding/favicon-64.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/ui/branding/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/browser-support.css" />
     <!-- Preload only the lobby background -->
     <link rel="preload" as="image" href="/assets/ui/backgrounds/lobby-scene.webp" type="image/webp" />
   </head>
   <body>
+    <main id="browser-support" style="display: none" aria-labelledby="browser-title">
+      <section class="browser-card">
+        <img class="browser-logo" src="/assets/ui/branding/apple-touch-icon.png" alt="" width="96" height="96" />
+        <nav class="browser-languages" aria-label="Language">
+          <button type="button" data-browser-language="zh-Hans" lang="zh-Hans">简体中文</button>
+          <button type="button" data-browser-language="zh-Hant" lang="zh-Hant">繁體中文</button>
+          <button type="button" data-browser-language="ja" lang="ja">日本語</button>
+        </nav>
+        <h1 id="browser-title"></h1>
+        <p id="browser-detail"></p>
+        <div class="browser-requirements">
+          <p id="browser-versions"></p>
+          <p id="browser-apple" class="browser-small"></p>
+        </div>
+        <p id="browser-ie" class="browser-small"></p>
+        <button id="browser-refresh" class="browser-refresh" type="button"></button>
+        <p id="browser-downloads" class="browser-small"></p>
+        <a href="https://www.google.com/chrome/">Chrome</a>
+        <a href="https://www.microsoft.com/edge/">Edge</a>
+        <a href="https://www.mozilla.org/firefox/new/">Firefox</a>
+        <a href="https://support.apple.com/105280">Safari</a>
+      </section>
+    </main>
     <div id="root"></div>
     <noscript>
       <p style="padding: 24px; font-family: system-ui, sans-serif">
-        赛马娘猜猜乐需要启用 JavaScript 才能运行。请在浏览器设置中允许 JavaScript 后刷新页面。
+        马娘猜猜乐需要启用 JavaScript 才能运行。请在浏览器设置中允许 JavaScript 后刷新页面。
       </p>
     </noscript>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="/browser-support.js"></script>
   </body>
 </html>

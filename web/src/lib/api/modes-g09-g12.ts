@@ -279,11 +279,10 @@ export function normalizeStrategyRaceRound(raw: unknown): StrategyRaceRound {
       choices,
     },
     competitive: bool(ps["competitive"]),
-    // 游玩页只说「这是设计值」，不把内部文档路径（如 05-…）摆到玩家面前。
-    // basis 是给审核与来源页用的溯源信息，留在服务端数据里，不渲染在游玩页。
+    // 只保留数值来源说明，basis 中的内部资料路径不用于界面展示。
     provenanceNote:
       provenance && bool(provenance["notOfficialData"])
-        ? "本玩法的位置与体力数值是为好玩设计的模拟值，不是官方数据。"
+        ? "位置与体力采用本站模拟数值，非官方数据"
         : null,
     phase,
   };

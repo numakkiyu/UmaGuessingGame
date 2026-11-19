@@ -330,7 +330,7 @@
   font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.08em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 
@@ -449,7 +449,7 @@
   place-items: center;
   background: var(--color-brand-green-soft);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-ink);
 }
 
@@ -525,7 +525,7 @@
 
 .uma-race-track__marker-initial {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-ink);
 }
 
@@ -814,7 +814,7 @@
 
 .uma-rank-moved__hint {
   font-size: 0.75em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* 线索揭晓：逐格入场。
@@ -860,16 +860,16 @@
   background: linear-gradient(90deg, var(--color-panel) 35%, rgb(255 255 255 / 92%) 49%, rgb(255 255 255 / 8%) 78%), url('/assets/ui/backgrounds/lobby-scene.webp') right 45% / cover no-repeat;
 }
 .uma-lobby-hero__intro { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; min-width: 0; padding: 2rem; }
-.uma-lobby-hero__tag { display: flex; align-items: center; gap: .5rem; color: var(--color-action-green); font-size: .875rem; font-weight: 700; }
-.uma-lobby-hero__title { font-size: clamp(1.75rem, 2.8vw, 2.75rem); line-height: 1.25; font-weight: 850; letter-spacing: -.035em; color: var(--color-ink); }
+.uma-lobby-hero__tag { display: flex; align-items: center; gap: .5rem; color: var(--color-action-green); font-size: .875rem; font-weight: 600; }
+.uma-lobby-hero__title { font-size: clamp(1.75rem, 2.8vw, 2.75rem); line-height: 1.25; font-weight: 600; letter-spacing: -.035em; color: var(--color-ink); }
 .uma-lobby-hero__description { font-size: 1rem; line-height: 1.8; color: var(--color-muted); max-width: 32em; }
 .uma-lobby-hero__help { display: inline-flex; align-items: center; min-height: 44px; padding-inline: .5rem; font-size: .875rem; text-decoration: underline; text-underline-offset: 4px; }
 .uma-lobby-social { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-self: end; gap: 1rem; padding: 1.25rem; margin: 1rem; border: 1px solid var(--color-line); border-radius: var(--radius-card); background: rgb(255 255 255 / 96%); }
 .uma-lobby-social__group { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
 .uma-lobby-social > div + div { border-left: 1px solid var(--color-line); padding-left: 1rem; }
-.uma-lobby-social h2 { margin-block: .5rem .25rem; font-size: 1rem; font-weight: 750; }
+.uma-lobby-social h2 { margin-block: .5rem .25rem; font-size: 1rem; font-weight: 600; }
 .uma-lobby-social p { flex: 1; font-size: .875rem; line-height: 1.7; color: var(--color-muted); margin-bottom: 1rem; }
-.uma-mode-group-heading { display: flex; align-items: center; gap: .5rem; font-size: 1rem; font-weight: 750; padding-block: .5rem; margin-bottom: .5rem; }
+.uma-mode-group-heading { display: flex; align-items: center; gap: .5rem; font-size: 1rem; font-weight: 600; padding-block: .5rem; margin-bottom: .5rem; }
 .uma-mode-group-heading > svg { width: 1.125rem; height: 1.125rem; color: var(--color-action-green); }
 @media (width < 64rem) {
   .uma-lobby-hero { grid-template-columns: minmax(0, 1fr); gap: 0; }
@@ -897,7 +897,7 @@
 .uma-public-round__heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; }
 .uma-public-round__heading h2 { font-size: clamp(2rem, 3vw, 4rem); }
 .uma-public-round__eyebrow { font-size: clamp(1.5rem, 1.5vw, 2rem); color: var(--color-muted); }
-.uma-public-round__clock { font-family: var(--font-numeric); font-size: clamp(2rem, 3.5vw, 4.5rem); font-weight: 750; color: var(--color-action-green); font-variant-numeric: tabular-nums; }
+.uma-public-round__clock { font-family: var(--font-numeric); font-size: clamp(2rem, 3.5vw, 4.5rem); font-weight: 600; color: var(--color-action-green); font-variant-numeric: tabular-nums; }
 .uma-public-round__hint { font-size: clamp(1.5rem, 1.5vw, 2rem); color: var(--color-muted); margin-bottom: .75rem; }
 .uma-public-round__message { min-height: 28vh; display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; text-align: center; font-size: clamp(2rem, 2.5vw, 3rem); }
 .uma-public-round .uma-race-track__row { grid-template-columns: minmax(10rem, 24%) minmax(0, 1fr) auto; gap: 1rem; padding: .25rem .5rem; }
@@ -987,3 +987,13 @@
 @keyframes uma-confirm-enter { from { opacity: 0; scale: 0.98; } to { opacity: 1; scale: 1; } }
 @media (prefers-reduced-motion: reduce) { .uma-confirmation-dialog { animation: none; } }
 [data-motion="reduced"] .uma-confirmation-dialog { animation: none; }
+
+.uma-match-pool {
+  transition: border-color var(--duration-quick) var(--ease-primary), background-color var(--duration-quick) var(--ease-primary), transform var(--duration-quick) var(--ease-primary);
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .uma-match-pool:hover:not(:disabled) { transform: translateY(-2px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .uma-match-pool { transition: none; }
+}

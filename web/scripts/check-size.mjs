@@ -118,6 +118,10 @@ async function main() {
   }
 
   const { scripts, styles } = parseEntryHTML(html);
+  // The compatibility gate starts this entry only on supported browsers.
+  // Its game dependencies still count toward the normal first screen.
+  for (const match of html.matchAll(/data-game-entry="([^"]+)"/g)) scripts.push(match[1]);
+  for (const match of html.matchAll(/data-game-style="([^"]+)"/g)) styles.push(match[1]);
 
   // ---- 首屏 JS ----
   const entryFiles = new Set();

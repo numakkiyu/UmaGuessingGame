@@ -2,6 +2,7 @@ import i18n from "@/i18n";
 import { hasErrorMessage, hasDetailedErrorMessage, type ErrorMessageKey } from "@/i18n/errors";
 
 import type { Problem, ProblemFieldError } from "./types";
+import { SessionStateError } from "./session-errors";
 
 /** 契约服务器地址 */
 export const API_BASE = "/api/v1";
@@ -87,7 +88,7 @@ export class NetworkError extends Error {
 /** 客户端主动取消（路由切换、StrictMode 重挂载） */
 export class AbortedError extends Error {
   constructor() {
-    super("请求已取消");
+    super("Request aborted");
     this.name = "AbortedError";
   }
 }
@@ -96,7 +97,7 @@ export class AbortedError extends Error {
 export class TimeoutError extends Error {
   readonly timeoutMs: number;
   constructor(timeoutMs: number) {
-    super(`请求超时（${timeoutMs}ms），提交结果未知`);
+    super(`Request timed out after ${timeoutMs}ms; outcome unknown`);
     this.name = "TimeoutError";
     this.timeoutMs = timeoutMs;
   }
@@ -153,7 +154,7 @@ export type ApiClientOptions = {
   onUnauthenticated?: () => void;
   /** Recover only after a definite CSRF refusal, never after an unknown write. */
   onCsrfInvalid?: () => Promise<boolean>;
-  onAdmissionRequired?: () => Promise<boolean>;
+  onAdmissionRequired?: (reason?: "entry" | "traffic") => Promise<boolean>;
   fetchImpl?: typeof fetch;
 };
 
@@ -211,20 +212,6 @@ export function createApiClient(options: ApiClientOptions = {}): ApiClient {
     const url = buildUrl(path, requestOptions.query);
     const timeoutMs = requestOptions.timeoutMs ?? DEFAULT_TIMEOUT_MS;
 
-    const controller = new AbortController();
-    let timedOut = false;
-    const timer = setTimeout(() => {
-      timedOut = true;
-      controller.abort();
-    }, timeoutMs);
-
-    // 合并外部取消信号（路由切换 / StrictMode 卸载）
-    const onExternalAbort = () => controller.abort();
-    if (requestOptions.signal) {
-      if (requestOptions.signal.aborted) controller.abort();
-      else requestOptions.signal.addEventListener("abort", onExternalAbort, { once: true });
-    }
-
     const headers: Record<string, string> = {
       Accept: "application/json, application/problem+json",
       ...requestOptions.headers,
@@ -248,15 +235,11 @@ export function createApiClient(options: ApiClientOptions = {}): ApiClient {
          * 页面级调用方通过 requireCsrf 打开，以便在刷新后给出准确提示，
          * 而不是让用户看到后端返回的笼统 403。
          */
-        /*
-         * 不向玩家展示「凭据/CSRF/写操作」这类实现词。
-         * message 会原样出现在页面上，所以这里写玩家能懂的话。
-         * code 保留给程序判断（页面据此显示「重新进入这一局」的入口）。
-         */
+        // describeFailure maps this code to localized recovery guidance.
         throw new ApiError({
           status: 403,
           code: "CSRF_UNAVAILABLE",
-          message: "页面刷新后需要重新进入这一局才能继续操作。你已有的进度不会丢。",
+          message: "CSRF_UNAVAILABLE",
           requestId: null,
           retryable: false,
         });
@@ -266,7 +249,22 @@ export function createApiClient(options: ApiClientOptions = {}): ApiClient {
       }
     }
 
+    const controller = new AbortController();
+    let timedOut = false;
+    const timer = setTimeout(() => {
+      timedOut = true;
+      controller.abort();
+    }, timeoutMs);
+
+    // 合并外部取消信号（路由切换 / StrictMode 卸载）
+    const onExternalAbort = () => controller.abort();
+    if (requestOptions.signal) {
+      if (requestOptions.signal.aborted) controller.abort();
+      else requestOptions.signal.addEventListener("abort", onExternalAbort, { once: true });
+    }
+
     let response: Response;
+    let text: string;
     try {
       response = await fetchImpl(url, {
         method,
@@ -279,10 +277,12 @@ export function createApiClient(options: ApiClientOptions = {}): ApiClient {
         cache: "no-store",
         redirect: "error",
       });
+      // Keep cancellation and the deadline active until the whole body arrives
+      text = response.status === 304 || response.status === 204 ? "" : await response.text();
     } catch (error) {
       if (timedOut) throw new TimeoutError(timeoutMs);
       if (controller.signal.aborted) throw new AbortedError();
-      throw new NetworkError("网络请求失败，请检查连接", error);
+      throw new NetworkError("Network request failed", error);
     } finally {
       clearTimeout(timer);
       requestOptions.signal?.removeEventListener("abort", onExternalAbort);
@@ -302,22 +302,22 @@ export function createApiClient(options: ApiClientOptions = {}): ApiClient {
       return { data: null as T, status: 204, requestId, location };
     }
 
-    const text = await response.text();
     const parsed = safeParseJson(text);
 
     if (!response.ok) {
-      if (response.status === 401 && requestOptions.authScope !== "display") options.onUnauthenticated?.();
+
       // 错误使用 application/problem+json，不返回 200 装业务失败
       const problem = isProblemBody(parsed) ? (parsed as Problem) : null;
-      if (mayAdmit && isWrite && requestOptions.idempotencyKey && response.status===403 && problem?.code==="admission-required" && options.onAdmissionRequired) {
+      if (response.status === 401 && requestOptions.authScope !== "display" && problem?.code !== "account-required") options.onUnauthenticated?.();
+      if (mayAdmit && (!isWrite || requestOptions.idempotencyKey) && response.status===403 && (problem?.code==="admission-required" || problem?.code==="admission-risk-required") && options.onAdmissionRequired) {
         if(requestOptions.signal?.aborted)throw new AbortedError();
         const signal=requestOptions.signal;
         let abort:()=>void=()=>undefined;
         const cancelled=new Promise<boolean>(resolve=>{abort=()=>resolve(false);signal?.addEventListener("abort",abort,{once:true})});
-        const admitted=await Promise.race([options.onAdmissionRequired(),cancelled]).finally(()=>signal?.removeEventListener("abort",abort));
+        const admitted=await Promise.race([options.onAdmissionRequired(problem?.code === "admission-risk-required" ? "traffic" : "entry"),cancelled]).finally(()=>signal?.removeEventListener("abort",abort));
         if(signal?.aborted)throw new AbortedError();
         if(admitted)return request<T>(path,requestOptions,mayRecover,false);
-        throw new ApiError({status:403,code:"admission-cancelled",message:"已返回，尚未开始",requestId:null});
+        throw new ApiError({status:403,code:"admission-cancelled",message:"Admission cancelled",requestId:null});
       }
       if (mayRecover && isWrite && !requestOptions.noCsrf && requestOptions.idempotencyKey &&
           response.status === 403 && problem?.code === "csrf-token-invalid" && options.onCsrfInvalid) {
@@ -331,7 +331,7 @@ export function createApiClient(options: ApiClientOptions = {}): ApiClient {
       throw new ApiError({
         status: response.status,
         code: problem?.code ?? `HTTP_${response.status}`,
-        message: problem?.title ?? `请求失败（HTTP ${response.status}）`,
+        message: problem?.title ?? `HTTP ${response.status}`,
         requestId: problem?.requestId ?? requestId,
         retryable: problem?.retryable ?? (response.status === 429 || response.status === 503),
         fieldErrors: problem?.fieldErrors ?? [],
@@ -344,7 +344,7 @@ export function createApiClient(options: ApiClientOptions = {}): ApiClient {
       throw new ApiError({
         status: response.status,
         code: "INVALID_RESPONSE",
-        message: "暂时无法确认结果，请稍后重试",
+        message: "Invalid JSON response",
         requestId,
       });
     }
@@ -398,8 +398,14 @@ export function createFailure(messageKey: ErrorMessageKey, state: Pick<Failure, 
 
 /** Localization never exposes raw server details or changes retry semantics. */
 export function describeFailure(error: unknown): Failure {
+  if (error instanceof SessionStateError) return createFailure(error.code, {
+    kind: "error", diagnosticId: null, retryable: true,
+  });
   if (error instanceof ApiError) {
     const state = { diagnosticId: error.requestId, retryable: error.retryable };
+    if (error.code === "CSRF_UNAVAILABLE" || error.code === "csrf-token-invalid") return createFailure("session-rejoin-required", {
+      ...state, kind: "forbidden", retryable: false,
+    });
     // HTTP codes known to this application are mapped to reviewed copy only.
     // Prototype names, new codes and raw Problem Details cannot become UI copy.
     if (hasDetailedErrorMessage(error.code)) return createFailure(error.code, {

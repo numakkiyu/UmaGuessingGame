@@ -15,10 +15,10 @@ const components = readStyle("components.css");
 
 describe("颜色令牌", () => {
   const REQUIRED_COLORS: Record<string, string> = {
-    "--color-page": "#edf7ff",
+    "--color-page": "#f4f8ed",
     "--color-panel": "#ffffff",
-    "--color-ink": "#1f3655",
-    "--color-muted": "#526b87",
+    "--color-ink": "#304739",
+    "--color-muted": "#5a705e",
     "--color-brand-green": "#97d81c",
     "--color-action-green": "#367a16",
     "--color-blue": "#3f88f7",
@@ -42,17 +42,14 @@ describe("颜色令牌", () => {
 });
 
 describe("字体与尺寸", () => {
-  it("字体栈按中文系统字体回退，不联网加载", () => {
-    for (const family of [
-      "HarmonyOS Sans SC",
-      "Source Han Sans SC",
-      "Noto Sans CJK SC",
-      "PingFang SC",
-      "Microsoft YaHei UI",
-      "sans-serif",
-    ]) {
-      expect(tokens).toContain(family);
+  it("按语言加载本地思源字体，缺失时使用系统字体", () => {
+    const fonts = readFileSync(resolve(STYLES, "../../public/fonts/source-han-sans.css"), "utf8");
+    for (const family of ["Uma Sans SC", "Uma Sans TC", "Uma Sans JP"]) {
+      expect(fonts).toContain(family);
     }
+    expect(fonts).not.toMatch(/https?:/);
+    expect(fonts).toContain("sans-serif");
+    expect(tokens).toContain("--font-sans: var(--uma-font)");
   });
 
   it("正文 16px/1.6，辅助文字最低 13px/1.5", () => {

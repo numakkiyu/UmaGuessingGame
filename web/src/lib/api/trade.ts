@@ -98,7 +98,7 @@ export function normalizeTradeRound(raw: unknown): TradeRound {
       return {
         instanceId,
         cardId: str(item?.["cardId"]) ?? "",
-        label: str(item?.["label"]) ?? "未命名卡牌",
+        label: str(item?.["label"]) ?? "",
       };
     })
     .filter((i): i is TradeInstance => i !== null);
@@ -108,7 +108,7 @@ export function normalizeTradeRound(raw: unknown): TradeRound {
       const item = asRecord(entry);
       const cardId = str(item?.["cardId"]) ?? str(item?.["kind"]);
       if (!cardId) return null;
-      return { cardId, label: str(item?.["label"]) ?? "未命名卡种" };
+      return { cardId, label: str(item?.["label"]) ?? "" };
     })
     .filter((k): k is TradeCardKind => k !== null);
 

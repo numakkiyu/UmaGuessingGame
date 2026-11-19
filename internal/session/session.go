@@ -33,6 +33,7 @@ import (
 
 	"github.com/bhcn/umaguessinggame/internal/httpapi/problem"
 	"github.com/bhcn/umaguessinggame/internal/storage"
+	"github.com/bhcn/umaguessinggame/internal/weborigin"
 )
 
 // Kind distinguishes an interactive browser session from a read-only display
@@ -147,7 +148,20 @@ func (s *Service) CreateDisplay(ctx context.Context) (CreateResult, error) {
 	return s.create(ctx, "Display", KindDisplay, s.cfg.DisplayTTL)
 }
 
+// CreateInTransaction creates a player session as part of an atomic identity transfer.
+func (s *Service) CreateInTransaction(ctx context.Context, tx *sql.Tx, displayName string) (CreateResult, error) {
+	return s.createWith(ctx, tx, displayName, KindPlayer, s.cfg.TTL)
+}
+
+type sessionWriter interface {
+	ExecContext(context.Context, string, ...any) (sql.Result, error)
+}
+
 func (s *Service) create(ctx context.Context, displayName string, kind Kind, ttl time.Duration) (CreateResult, error) {
+	return s.createWith(ctx, s.db.Write(), displayName, kind, ttl)
+}
+
+func (s *Service) createWith(ctx context.Context, writer sessionWriter, displayName string, kind Kind, ttl time.Duration) (CreateResult, error) {
 	if err := ValidateDisplayName(displayName); err != nil {
 		return CreateResult{}, err
 	}
@@ -169,7 +183,7 @@ func (s *Service) create(ctx context.Context, displayName string, kind Kind, ttl
 	now := s.now().UTC()
 	expires := now.Add(ttl)
 
-	_, err = s.db.Write().ExecContext(ctx, `
+	_, err = writer.ExecContext(ctx, `
 		INSERT INTO sessions (id, token_hash, display_name, csrf_token_hash, kind, created_at, expires_at)
 		VALUES (?, ?, ?, ?, ?, ?, ?)`,
 		id, hashToken(token), displayName, hashToken(csrf), string(kind),
@@ -359,22 +373,20 @@ func (s *Service) OriginAllowed(r *http.Request) error {
 }
 
 func (s *Service) originMatches(origin string, r *http.Request) bool {
-	u, err := url.Parse(origin)
-	if err != nil || u.Host == "" {
+	scheme, host, ok := weborigin.Parse(origin)
+	if !ok {
 		return false
 	}
-	// An explicit allow list wins; it lets a Vite dev proxy and a LAN host
-	// coexist without weakening production.
 	for _, allowed := range s.cfg.AllowedOrigins {
-		if strings.EqualFold(strings.TrimRight(allowed, "/"), strings.TrimRight(origin, "/")) {
+		aScheme, aHost, valid := weborigin.Parse(strings.TrimRight(allowed, "/"))
+		if valid && scheme == aScheme && host == aHost {
 			return true
 		}
 	}
 	if len(s.cfg.AllowedOrigins) > 0 {
 		return false
 	}
-	// Default: same-origin against the request Host.
-	return strings.EqualFold(u.Host, r.Host)
+	return weborigin.Same(r, scheme, host)
 }
 
 func isSafeMethod(m string) bool {
@@ -521,7 +533,7 @@ func (s *Service) OriginAllowedForStream(r *http.Request) error {
 // would make the header a way to bypass the check.
 func (s *Service) refererMatches(referer string, r *http.Request) bool {
 	u, err := url.Parse(referer)
-	if err != nil || u.Scheme == "" || u.Host == "" {
+	if err != nil || u.Scheme == "" || u.Host == "" || u.User != nil {
 		return false
 	}
 	return s.originMatches(u.Scheme+"://"+u.Host, r)

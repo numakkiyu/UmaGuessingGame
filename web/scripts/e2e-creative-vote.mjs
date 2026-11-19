@@ -1,3 +1,4 @@
+import { setPlayerName } from "./player-profile.mjs";
 /** Exercises writing, voting and reveal. Voting must use the vote slot revision, independently of the work slot revision. */
 import { chromium } from "playwright";
 import { mkdir, writeFile } from "node:fs/promises";
@@ -61,7 +62,7 @@ async function shot(p, name) {
 try {
   // ---- 建立房间：主持 + 两名玩家 ----
   await host.goto(`${base}/rooms/new?mode=creative`);
-  await host.getByLabel("你的显示名").fill(names[0]);
+  await setPlayerName(host, names[0]);
   const made = await write(host, "POST", "/rooms", () => button(host, "创建好友房间").click());
   const rid = made.room.roomId;
   await host.getByTestId("room-invite-code").waitFor();
@@ -69,7 +70,7 @@ try {
   for (let i = 1; i < 3; i += 1) {
     const p = pages[i];
     await p.goto(`${base}/join?code=${made.inviteCode}`);
-    await p.getByLabel("显示名", { exact: true }).fill(names[i]);
+    await setPlayerName(p, names[i]);
     await write(p, "POST", `/rooms/${rid}/memberships`, () => button(p, "加入房间").click());
     await p.waitForURL(/\/rooms\/rom_/);
   }

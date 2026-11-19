@@ -1,10 +1,10 @@
-# macOS 运行与部署 V2
+# macOS 运行与部署
 
 macOS 适合开发、预演和小型局域网活动。长时间公网运行仍需稳定电源、网络、磁盘与服务管理；开发机器上的一次通过不代表持续运行能力
 
 ## 原生开发
 
-安装 Go 1.26.1、Node.js 24、pnpm 10.33.0 与 Make，确认 `go version`、`node --version`、`pnpm --version`。在仓库根目录执行：
+安装 Go 1.26.11、Node.js 24、pnpm 10.33.0 与 Make，确认 `go version`、`node --version`、`pnpm --version`。在仓库根目录执行：
 
 ```bash
 corepack enable
@@ -17,7 +17,7 @@ make content-verify
 make dev
 ```
 
-打开 <http://localhost:8080>。开发数据默认在 `.cache/runtime`，不要在多个终端重复启动同一数据目录。前端热更新与原生启动的区别见[快速开始](快速开始.md)
+打开 `http://localhost:8080`。开发数据默认在 `.cache/runtime`，不要在多个终端重复启动同一数据目录。前端热更新与原生启动的区别见[快速开始](快速开始.md)
 
 ## Docker Desktop
 
@@ -48,9 +48,3 @@ make dev
 ```
 
 容器使用 `.env` 设置相同公开地址。手机不使用 localhost，注意来宾 Wi-Fi 的客户端隔离、VPN 及 Mac 休眠对实时连接的影响。HTTP 局域网环境不保证提供安全上下文下的全部浏览器缓存能力
-
-## 活动前检查
-
-用实际设备确认入房、同名玩家区分、主持权转交、断线恢复及结算。桌面检查表格可读性，手机检查卡片、软键盘和底部按钮，大屏检查缩放、行距与远距离可读性。多视口截图不能代替触摸和投影测试
-
-退出终端服务使用 Ctrl+C，容器使用 `docker compose stop`。备份、升级和恢复见[维护指南](维护与更新指南.md)，不要用删除卷解决启动问题

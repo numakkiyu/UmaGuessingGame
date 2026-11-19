@@ -58,9 +58,9 @@ describe("shared practice flow localization", () => {
   it("re-localizes a load error in place without loading another record", async () => {
     const adapter = fixture();
     render(<MemoryRouter initialEntries={["/practice/test/missing"]}><Routes><Route path="/practice/test/:gameId" element={<ActivityPracticeLoader adapter={adapter}>{() => <p>unexpected</p>}</ActivityPracticeLoader>} /></Routes></MemoryRouter>);
-    await screen.findByText("还没找到这局练习");
+    await screen.findByText("还没找到这局挑战");
     await language("ja");
-    expect(screen.getByRole("alert").textContent).toContain("練習記録が見つかりません");
+    expect(screen.getByRole("alert").textContent).toContain("チャレンジ記録が見つかりません");
     expect(screen.getByRole("link", { name: practiceFlow.ja.back }).getAttribute("href")).toBe("/play/test");
     expect(adapter.store.load).toHaveBeenCalledTimes(1);
   });

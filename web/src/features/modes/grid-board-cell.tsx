@@ -84,7 +84,7 @@ export function BoardCell({
       aria-label={t("cellAria",{row:cell.row+1,col:cell.col+1,conditions:`${axisName(cell.rowCondition.axis)} ${aptitudeValue(cell.rowCondition.axis,cell.rowCondition.value)} × ${axisName(cell.colCondition.axis)} ${aptitudeValue(cell.colCondition.axis,cell.colCondition.value)}`,occupancy:cell.claim ? t("claimedBy",{name:ownerLabel ? `${cardName(cell.claim)} · ${ownerLabel}` : cardName(cell.claim)}) : t("empty")})}
       className={cn(
         // 格子最短边 ≥84px
-        "relative flex min-h-[84px] min-w-0 flex-col items-center justify-center gap-1 p-1",
+        "uma-game-grid-cell relative flex min-h-[84px] min-w-0 flex-col items-center justify-center gap-1 p-1",
         "rounded-[var(--radius-control)] border-2 text-center",
         showConditions && "min-h-32",
         "transition-[border-color,background-color,box-shadow] duration-[var(--duration-quick)] ease-[var(--ease-primary)]",

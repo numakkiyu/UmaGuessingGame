@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">馬娘猜猜樂</title><desc id="desc">你有多了解《賽馬娘》？</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f4f9ed"/><stop offset="1" stop-color="#fff9f4"/></linearGradient><linearGradient id="card" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#edf7e3"/></linearGradient></defs>
+<rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+<g fill="none" stroke="#dcebcf" stroke-width="2"><rect x="762" y="-80" width="490" height="500" rx="180" transform="rotate(24 1000 180)"/><rect x="778" y="-65" width="458" height="470" rx="168" transform="rotate(24 1000 180)"/><rect x="794" y="-50" width="426" height="440" rx="155" transform="rotate(24 1000 180)"/></g>
+<path d="M64 59h32l-5 14H64z" fill="#80b74c"/><path d="M64 59v32" stroke="#45802c" stroke-width="3"/>
+<text x="110" y="82" fill="#4c7e31" font-family="sans-serif" font-size="22" font-weight="700">UmaGuessingGame</text>
+<text x="62" y="166" fill="#293f31" font-family="sans-serif" font-size="46" font-weight="800">馬娘猜猜樂</text>
+<text x="64" y="221" fill="#3b583f" font-family="sans-serif" font-size="27">你有多了解《賽馬娘》？</text>
+<text x="64" y="288" fill="#6b7e69" font-family="sans-serif" font-size="17">九項提示 · 多種玩法 · 和朋友一起的課間時光</text>
+<g transform="translate(908 80) rotate(10 80 100)"><rect x="-8" y="8" width="176" height="208" rx="18" fill="#dcebcf"/><rect width="160" height="200" rx="16" fill="url(#card)" stroke="#9ac173" stroke-width="2"/>
+<g fill="#a6cd78"><rect x="23" y="34" width="30" height="30" rx="7"/><rect x="65" y="34" width="30" height="30" rx="7"/><rect x="107" y="34" width="30" height="30" rx="7"/><rect x="23" y="76" width="30" height="30" rx="7"/><rect x="65" y="76" width="30" height="30" rx="7"/><rect x="107" y="76" width="30" height="30" rx="7"/><rect x="23" y="118" width="30" height="30" rx="7"/><rect x="65" y="118" width="30" height="30" rx="7"/></g><rect x="107" y="118" width="30" height="30" rx="7" fill="#efc27c"/>
+<path d="m73 91 5 5 10-11" stroke="#fff" stroke-width="3" fill="none"/><path d="M42 177h76" stroke="#d4e7c5" stroke-width="6" stroke-linecap="round"/></g>
+<g fill="#e8c4d3"><path d="m864 67 4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/><path d="m1101 290 3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g></svg>

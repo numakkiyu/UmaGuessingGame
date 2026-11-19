@@ -14,10 +14,10 @@ describe("ShareResultButton", () => {
     const writeText = vi.fn().mockResolvedValue(undefined);
     vi.stubGlobal("navigator", { ...navigator, clipboard: { writeText } });
 
-    render(<ShareResultButton text="我在赛马娘猜猜乐里猜中了，用了 3 次。" />);
+    render(<ShareResultButton text="我在马娘猜猜乐里猜中了，用了 3 次。" />);
     await userEvent.click(screen.getByRole("button", { name: /复制战绩/ }));
 
-    expect(writeText).toHaveBeenCalledWith("我在赛马娘猜猜乐里猜中了，用了 3 次。");
+    expect(writeText).toHaveBeenCalledWith("我在马娘猜猜乐里猜中了，用了 3 次。");
     await waitFor(() => {
       expect(screen.getByRole("button").textContent).toContain("已复制");
     });

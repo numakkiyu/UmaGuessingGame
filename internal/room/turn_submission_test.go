@@ -14,9 +14,21 @@ import (
 )
 
 func strategyActor(roomID, subject string) room.Actor {
-	return room.Actor{SessionID: "ses_owner", RoomID: roomID,
+	return room.Actor{SessionID: "ses_" + subject, RoomID: roomID,
 		Membership:   &room.Membership{ID: subject, Role: room.RolePlayer},
 		Capabilities: map[room.Capability]bool{room.CapPlay: true}}
+}
+
+func seedStrategySeats(t *testing.T, db *storage.DB, roomID string) {
+	t.Helper()
+	for _, id := range []string{"mem_a", "mem_b"} {
+		if _, err := db.Write().Exec(`INSERT INTO sessions(id,token_hash,display_name,csrf_token_hash,kind,created_at,expires_at) VALUES(?,?,?,?, 'player',?,?)`, "ses_"+id, "token_"+id, id, "csrf_"+id, time.Now().UnixMilli(), time.Now().Add(time.Hour).UnixMilli()); err != nil {
+			t.Fatal(err)
+		}
+		if _, err := db.Write().Exec(`INSERT INTO memberships(id,room_id,session_id,role,ready,joined_at) VALUES(?,?,?,'player',1,?)`, id, roomID, "ses_"+id, time.Now().UnixMilli()); err != nil {
+			t.Fatal(err)
+		}
+	}
 }
 
 func strategyCommit(t *testing.T, db *storage.DB, svc *room.Service, roomID, roundID, subject string, turn, revision int) room.SubmissionReceipt {
@@ -55,6 +67,7 @@ func TestStrategySubmissionDoesNotDefaultOtherTeams(t *testing.T) {
 	db, svc, _ := newStrategyService(t)
 	start := time.Now().UTC()
 	roomID, roundID := seedStrategyRound(t, db, start, start.Add(20*time.Second))
+	seedStrategySeats(t, db, roomID)
 	original, _ := readDeadline(t, db, roundID)
 	strategyCommit(t, db, svc, roomID, roundID, "mem_a", 1, 0)
 	if got := readCurrentTurn(t, db, roundID); got != 1 {
@@ -123,6 +136,7 @@ func TestStrategyAllSubmittedFinalTurnCloses(t *testing.T) {
 	db, svc, clock := newStrategyService(t)
 	start := time.Now().UTC()
 	roomID, roundID := seedStrategyRound(t, db, start, start.Add(20*time.Second))
+	seedStrategySeats(t, db, roomID)
 	for turn := 1; turn <= 8; turn++ {
 		strategyCommit(t, db, svc, roomID, roundID, "mem_a", turn, turn-1)
 		strategyCommit(t, db, svc, roomID, roundID, "mem_b", turn, turn-1)
@@ -155,6 +169,7 @@ func TestDuelSubmissionPassesExactlyOnce(t *testing.T) {
 	defer svc.Close()
 	start := time.Now().UTC()
 	roomID, roundID := seedStrategyRound(t, db, start, start.Add(30*time.Second))
+	seedStrategySeats(t, db, roomID)
 	public := `{"modeId":"aptitude-grid","rulesVersion":"test","round":{"config":{"variant":"duel"},"subjects":[{"subjectId":"mem_a"},{"subjectId":"mem_b"}]},"board":{"claims":[],"closed":false,"turnSubjectId":"mem_a"}}`
 	ctx := context.Background()
 	if _, err := db.Write().ExecContext(ctx, `UPDATE rounds SET mode_id='aptitude-grid', config_json=? WHERE id=?`, `{"modeId":"aptitude-grid","config":{"variant":"duel"}}`, roundID); err != nil {

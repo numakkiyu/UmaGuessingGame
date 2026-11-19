@@ -18,7 +18,7 @@ func TestAudioClipRequiresAFileOnDisk(t *testing.T) {
 	// hasLocalAudio resolves against a repo-relative directory, so the fixture is
 	// created there and removed afterwards. Using t.TempDir would test a path the
 	// function never looks at.
-	name := "zz-test-clip-" + t.Name() + ".mp3"
+	name := "zz-test-clip-" + t.Name() + ".webm"
 	full := filepath.Join(audioDir, name)
 	if err := os.MkdirAll(audioDir, 0o755); err != nil {
 		t.Fatalf("mkdir: %v", err)
@@ -118,9 +118,11 @@ func TestAudioClipPublishesALocalRoute(t *testing.T) {
 		url  string
 		want string
 	}{
-		{"https://cdn.example/a/b/clip1.mp3", "/assets/audio/clip1.mp3"},
-		{"https://cdn.example/a/b/clip2.mp3?v=3", "/assets/audio/clip2.mp3"},
-		{"https://other.host/x/y/clip3.mp3", "/assets/audio/clip3.mp3"},
+		{"https://cdn.example/a/b/clip1.webm", "/assets/audio/clip1.webm"},
+		{"https://cdn.example/a/b/clip2.webm?v=3", "/assets/audio/clip2.webm"},
+		{"https://other.host/x/y/clip3.webm", "/assets/audio/clip3.webm"},
+		{"https://cdn.example/a/b/clip1.mp3", "/assets/audio/clip1.webm"},
+		{"https://cdn.example/a/b/clip1.mp3?v=/other.webm", "/assets/audio/clip1.webm"},
 		{"", ""},
 	}
 	for _, c := range cases {

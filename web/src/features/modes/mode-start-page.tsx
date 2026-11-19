@@ -1,16 +1,15 @@
+import { usePlayerName } from "@/lib/player-name";
+import "@/i18n/entry";
 
 import { useTranslation } from "@/i18n";
 import "@/i18n/mode-rules";
 import type { modeRules } from "@/i18n/mode-rules";
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 import { Link } from "react-router";
 import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { StartProgress } from "@/features/modes/start-progress";
 import { useStartRound } from "@/features/modes/use-start-round";
-import { useApi } from "@/lib/api";
 import { canPlay } from "@/lib/deployment/capabilities";
 import { useModes, usePublicConfig } from "@/lib/api/queries";
 import { describeUnavailable } from "@/lib/copy/unavailable";
@@ -24,15 +23,14 @@ export type ModeStartConfig = {
 export function ModeStartPage({ config }: { config: ModeStartConfig }) {
   const { t } = useTranslation(["entry", "modes", "modeRules", "common"]);
   const title = t(`${config.modeId}.name`, { ns: "modes" });
-  const summary = t(`${config.modeId}.summary`, { ns: "modeRules" });
+  const summary = t(config.modeId === "strategy-race" && config.modeConfig?.practice === true ? "strategy-race.practiceSummary" : `${config.modeId}.summary`, { ns: "modeRules" });
   const duration = t(`${config.modeId}.duration`, { ns: "modeRules" });
   const rules = t(`${config.modeId}.rules`, { ns: "modeRules", returnObjects: true }) as readonly string[];
-  const { session } = useApi();
   const modesQuery = useModes();
  const publicConfig = usePublicConfig();
  const soloAllowed = canPlay(publicConfig.data,config.modeId,"solo");
  const friendAllowed = canPlay(publicConfig.data,config.modeId,"friend");
-  const [displayName, setDisplayName] = useState(session?.displayName ?? "");
+  const displayName = usePlayerName();
 
   const controller = useStartRound({
     modeId: config.modeId,
@@ -80,28 +78,9 @@ export function ModeStartPage({ config }: { config: ModeStartConfig }) {
       {!soloAllowed && !needsParty ? <Alert tone="info" title={t("start.soloClosed")}>{t("start.soloClosedDetail")}</Alert> : null}
       {friendAllowed ? <Button asChild variant={needsParty ? "primary" : "secondary"} size="primary"><Link to={`/rooms/new?mode=${encodeURIComponent(config.modeId)}`}>{t("start.friend")}</Link></Button> : null}
       <section className="uma-panel flex flex-col gap-4 p-5" aria-labelledby="mode-start">
-        {/*
-          标题不叫「开始对局」。
-          它和下面那个真正的按钮同名，读屏器与自动化都会分不清
-          「哪个是可点的」——我自己写 e2e 时就因为这个歧义点错了元素两次。
-          区域标题改成「开局设置」，按钮保持「开始对局」这个动作名。
-        */}
         <h2 id="mode-start" className="text-base font-bold text-[var(--color-ink)]">
           {t("start.settings")}
         </h2>
-
-        <div className="flex flex-col gap-2">
-          <Label htmlFor={`${config.modeId}-name`}>{t("start.name")}</Label>
-          <Input
-            id={`${config.modeId}-name`}
-            value={displayName}
-            onChange={(event) => setDisplayName(event.target.value)}
-            placeholder={t("start.namePlaceholder")}
-            maxLength={24}
-            disabled={controller.running}
-            autoComplete="nickname"
-          />
-        </div>
 
         {needsParty ? (
           <Alert tone="info" title={t("start.party", { count: mode?.minPlayers })}>

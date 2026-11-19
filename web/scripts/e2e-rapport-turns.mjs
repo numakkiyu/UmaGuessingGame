@@ -1,3 +1,4 @@
+import { setPlayerName } from "./player-profile.mjs";
 /** Real UI writes, five isolated identities, no answer injection. */
 import {chromium} from 'playwright';
 import {mkdir,writeFile} from 'node:fs/promises';
@@ -12,12 +13,12 @@ for(let i=0;i<5;i++){const c=await browser.newContext({viewport:{width:i?390:144
 const button=(p,name)=>p.getByRole('button',{name,exact:true});
 async function get(i,path){const r=await contexts[i].request.get(base+'/api/v1'+path);if(!r.ok())throw Error(`${path} ${r.status()} ${await r.text()}`);return r.json()}
 async function write(p,method,path,action){const wait=p.waitForResponse(r=>new URL(r.url()).pathname==='/api/v1'+path&&r.request().method()===method);await action();const r=await wait,body=await r.json();if(!r.ok())throw Error(`${path} ${r.status()} ${JSON.stringify(body)}`);return body}
-async function join(i,rid,code){const p=pages[i];await p.goto(base+'/join?code='+code);await p.getByLabel('显示名',{exact:true}).fill('特别周');await write(p,'POST',`/rooms/${rid}/memberships`,()=>button(p,'加入房间').click());await p.waitForURL(/\/rooms\/rom_/)}
+async function join(i,rid,code){const p=pages[i];await p.goto(base+'/join?code='+code);await setPlayerName(p, '特别周');await write(p,'POST',`/rooms/${rid}/memberships`,()=>button(p,'加入房间').click());await p.waitForURL(/\/rooms\/rom_/)}
 async function answer(i,path){const p=pages[i];const view=await get(i,path),q=view.publicState.questions[view.publicState.currentQuestion-1];if(!q||q.answered)return;await button(p,q.options[0].label).click();await write(p,'POST',path+'/submissions',()=>button(p,q.selfIsChooser?'确认我的偏好':'确认我的预测').click())}
 async function waitQuestion(i,path,n){await pages[i].waitForFunction(()=>true);for(let k=0;k<20;k++){const v=await get(i,path);if(v.publicState.currentQuestion===n)return v;await pages[i].waitForTimeout(100)}throw Error('question did not advance')}
 async function shot(i,name){await pages[i].screenshot({path:new URL(name,out).pathname,fullPage:true,animations:'disabled'})}
 try{
- const hp=pages[0];await hp.goto(base+'/rooms/new?mode=rapport');await hp.getByLabel('你的显示名').fill('特别周');await hp.getByLabel('最多几人参加？').fill('2');
+ const hp=pages[0];await hp.goto(base+'/rooms/new?mode=rapport');await setPlayerName(hp, '特别周');await hp.getByLabel('最多几人参加？').fill('2');
  const made=await write(hp,'POST','/rooms',()=>button(hp,'创建好友房间').click());const rid=made.room.roomId;await hp.getByTestId('room-invite-code').waitFor();await join(1,rid,made.inviteCode);await hp.reload();
  check('普通多人不默认分队',await hp.getByText('需要分队？',{exact:true}).count()===0);
  const opened=await write(hp,'POST',`/rooms/${rid}/rounds`,()=>button(hp,'开始对局').click()),path='/rounds/'+opened.roundId;

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { setPlayerName } from "./player-profile.mjs";
 /** Exercises classic guessing against a running Go service, including history, feedback and responsive layout. */
 import { mkdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -135,8 +136,7 @@ async function main() {
     await page.screenshot({ path: resolve(SHOTS, "play-01-start.png") });
     report.screenshots.push("screenshots/play-01-start.png");
 
-    const nameInput = page.getByLabel("显示名");
-    await nameInput.fill("联调玩家");
+    await setPlayerName(page, "联调玩家");
     await page.getByRole("button", { name: /开始对局/ }).click();
 
     // 等跳转到 /rooms/（说明四个阶段都成功）
@@ -256,7 +256,7 @@ async function main() {
     step("历史记录条数", { historyCount });
     assert("历史记录累积了多次猜测", historyCount >= 2, { historyCount });
 
-    const quotaText = await page.locator("text=剩余错误额度").first().textContent().catch(() => null);
+    const quotaText = await page.locator("text=剩余可猜错次数").first().textContent().catch(() => null);
     step("最终额度文本", { quotaText });
 
     // ---- 4) 切换到完整表格 ----

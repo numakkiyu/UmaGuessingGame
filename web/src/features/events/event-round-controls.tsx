@@ -53,7 +53,7 @@ export function EventRoundControls({snapshot,closed,onChanged,roundId,roomId,dis
   {command.pending?<Alert tone="warning" title={t("pendingTitle")}><p>{t("pendingDetail")}</p><Button variant="primary" className="mt-2 h-auto min-h-11 whitespace-normal" disabled={command.busy} onClick={()=>void confirmOriginal()}>{t("confirm")}</Button></Alert>:null}
   {command.expired?<Alert tone="warning" title={t("expiredTitle")}><p>{t("expiredDetail")}</p><Button variant="secondary" className="mt-2 h-auto min-h-11 whitespace-normal" disabled={refreshing} onClick={()=>void refresh(true)}>{t("refresh")}</Button></Alert>:null}
   {command.storageLimited?<Alert tone="warning" title={t("storage")}><p>{t("storageDetail")}</p></Alert>:null}
-  {info&&!command.pending?<Alert tone="warning" title={info.title}><p>{info.detail}</p><Button variant="secondary" className="mt-2 h-auto min-h-11 whitespace-normal" disabled={refreshing} onClick={()=>void refresh()}>{t("refresh")}</Button></Alert>:null}
+  {info&&!command.pending?<Alert fault tone="warning" title={info.title}><p>{info.detail}</p><Button variant="secondary" className="mt-2 h-auto min-h-11 whitespace-normal" disabled={refreshing} onClick={()=>void refresh()}>{t("refresh")}</Button></Alert>:null}
   {notice?<p role="status" className="text-sm leading-6">{t(notice)}</p>:null}
   {!meta?<p className="text-sm">{t("missing")}</p>:closed?<p className="text-sm text-[var(--color-muted)]">{t("closed")}</p>:ended?<p className="text-sm text-[var(--color-muted)]">{t(meta.phase==="settled"?"settled":"cancelled")}</p>:<>
    <div className="flex flex-wrap gap-2">

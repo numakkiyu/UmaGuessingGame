@@ -10,10 +10,10 @@ describe("deployment player entries", () => {
     expect(modeEntry(undefined, "classic")).toBeNull();
     expect(modeEntry(config({}), "classic")).toBeNull();
   });
-  it("a disabled practice entry leads to the permitted purpose", () => {
+  it("a disabled single challenge only advertises available shared play", () => {
     expect(modeEntry(config({ local: true, friend: true }), "classic")).toBe("/play/classic");
-    expect(modeEntry(config({ local: false, verified: true }), "classic")).toBe("/play/classic/verified");
-    expect(modeEntry(config({ local: false, solo: true }), "classic")).toBe("/play/classic/online");
+    expect(modeEntry(config({ local: false, verified: true }), "classic")).toBeNull();
+    expect(modeEntry(config({ local: false, solo: true }), "classic")).toBeNull();
     expect(modeEntry(config({ local: false, friend: true }), "classic")).toBe("/rooms/new?mode=classic");
     expect(modeEntry(config({ event: true }), "classic")).toBe("/events/new");
     expect(modeEntry(config({ matchmaking: true }), "classic")).toBe("/matchmaking?mode=classic");
@@ -29,3 +29,5 @@ it("three player forms do not fall through to a different kind of play", () => {
  expect(formEntry(config({local:true}),"classic","multiplayer")).toBeNull();
  expect(formEntry(config({friend:true}),"classic","team")).toBeNull();
 });
+
+it("single challenge never falls back to remote adjudication",()=>{expect(formEntry(config({verified:true,solo:true}),"classic","single")).toBeNull();});

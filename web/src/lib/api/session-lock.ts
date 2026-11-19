@@ -1,3 +1,5 @@
+import { SessionStateError } from "./session-errors";
+
 /** Only coordination metadata is persisted. Credentials never enter storage. */
 const LOCK = "uma:anonymous-session";
 const WAIT_MS = 15_000;
@@ -6,10 +8,15 @@ let database: Promise<IDBDatabase> | undefined;
 function openDatabase(): Promise<IDBDatabase> {
   database ??= new Promise((resolve, reject) => {
     const request = indexedDB.open("uma:session-coordination", 1);
+    let blocked = false;
     request.onupgradeneeded = () => request.result.createObjectStore("locks");
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => { database = undefined; reject(new Error("暂时无法保留你的座位，请检查浏览器是否允许保存网站数据")); };
-    request.onblocked = () => reject(new Error("请先关闭旧的游戏页面，再回来试一次"));
+    request.onsuccess = () => {
+      if (blocked) { request.result.close(); return; }
+      request.result.onversionchange = () => { request.result.close(); database = undefined; };
+      resolve(request.result);
+    };
+    request.onerror = () => reject(new SessionStateError("session-storage-unavailable", { cause: request.error }));
+    request.onblocked = () => { blocked = true; reject(new SessionStateError("session-storage-blocked")); };
   });
   return database;
 }
@@ -27,7 +34,7 @@ async function lease(db: IDBDatabase, owner: string, release = false): Promise<b
       }
     };
     tx.oncomplete = () => resolve(acquired);
-    tx.onerror = tx.onabort = () => reject(new Error("暂时无法保留你的座位，请稍后再试"));
+    tx.onerror = tx.onabort = () => reject(new SessionStateError("session-storage-unavailable", { cause: tx.error }));
   });
 }
 export async function withSessionLock<T>(work: () => Promise<T>): Promise<T> {
@@ -40,22 +47,34 @@ export async function withSessionLock<T>(work: () => Promise<T>): Promise<T> {
         return work();
       });
     } catch (error) {
-      if (controller.signal.aborted) throw new Error("另一个游戏页面正在为你保留座位，请稍后再试", {cause:error});
+      if (controller.signal.aborted) throw new SessionStateError("session-busy", { cause: error });
       throw error;
     } finally { clearTimeout(timer); }
   }
   // Web Locks needs HTTPS. IndexedDB's read-write transaction also serialises
   // tabs on ordinary HTTP LAN sites, without a racy localStorage check-and-set.
-  const db = await openDatabase();
+  let db: IDBDatabase;
+  try { db = await openDatabase(); }
+  catch (error) {
+    database = undefined;
+    if (error instanceof SessionStateError) throw error;
+    throw new SessionStateError("session-storage-unavailable", { cause: error });
+  }
   const bytes = new Uint8Array(16); crypto.getRandomValues(bytes);
   const owner = [...bytes].map(value => value.toString(16).padStart(2, "0")).join("");
   const deadline = Date.now() + WAIT_MS;
   while (Date.now() < deadline) {
-    if (await lease(db, owner)) {
+    let acquired: boolean;
+    try { acquired = await lease(db, owner); }
+    catch (error) {
+      if (error instanceof SessionStateError) throw error;
+      throw new SessionStateError("session-storage-unavailable", { cause: error });
+    }
+    if (acquired) {
       try { return await work(); }
       finally { await lease(db, owner, true).catch(() => undefined); }
     }
     await new Promise(resolve => setTimeout(resolve, 80));
   }
-  throw new Error("另一个游戏页面正在为你保留座位，请稍后再试");
+  throw new SessionStateError("session-busy");
 }

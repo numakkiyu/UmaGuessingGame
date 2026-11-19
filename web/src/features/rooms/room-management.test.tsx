@@ -35,7 +35,7 @@ it("未知转交切语不重发或更换目标，成功通知也随当前语言�
  expect(screen.getByRole("dialog").textContent).toContain("特别周（ルーム内 ID 987321）");
  expect(screen.getByRole("button", {name:"確認しています…"}).hasAttribute("disabled")).toBe(true);
  await act(async () => { reject(new Error("private transport error")); });
- await screen.findByText("先ほどの操作を確認中");
+ await screen.findByText("直前の操作を確認中");
  await act(async () => { await changeLanguage("zh-Hant"); });
  expect(screen.getByLabelText("轉交主持人").hasAttribute("disabled")).toBe(true);
  expect(screen.getByRole("button", {name:"先留在這裡"}).hasAttribute("disabled")).toBe(true);
@@ -44,7 +44,7 @@ it("未知转交切语不重发或更换目标，成功通知也随当前语言�
  expect(api.transferRoomHost.mock.calls[1]).toEqual(api.transferRoomHost.mock.calls[0]);
  await screen.findByText("主持人已轉交，接下來交給夥伴安排囉");
  await act(async () => { await changeLanguage("ja"); });
- expect(screen.getByRole("status").textContent).toContain("主催者を交代しました");
+ expect(screen.getByRole("status").textContent).toContain("進行役を交代しました");
  expect(document.body.textContent).not.toContain("private transport error");
 });
 it("已收到明确拒绝的错误切语重译，退出未知结果仍复用原凭证", async () => {
@@ -58,7 +58,7 @@ it("已收到明确拒绝的错误切语重译，退出未知结果仍复用原�
  fireEvent.click(screen.getByRole("button",{name:"このまま残る"}));
  api.leaveOrRemoveMembership.mockRejectedValueOnce(new Error("offline")).mockResolvedValueOnce({data:{}});
  fireEvent.click(screen.getByRole("button",{name:"ルームを退出"})); fireEvent.click(screen.getByRole("button",{name:"退出する"}));
- await screen.findByText("先ほどの操作を確認中");
+ await screen.findByText("直前の操作を確認中");
  await act(async () => { await changeLanguage("zh-Hant"); });
  fireEvent.click(screen.getByRole("button",{name:"確認剛才的結果"}));
  await waitFor(() => expect(api.leaveOrRemoveMembership).toHaveBeenCalledTimes(2));

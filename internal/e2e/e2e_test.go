@@ -341,7 +341,32 @@ func TestDuplicateGuessIsRejectedWithoutSpendingBudget(t *testing.T) {
 	h.transition(roundID, "briefing", 1)
 	h.transition(roundID, "collecting", 2)
 
-	guess := map[string]any{"kind": "classic.guess", "characterId": "1003"}
+	// A fixed character can be the random answer and end the round on the first
+	// guess. Select a wrong candidate to keep the duplicate-guess window open.
+	var raw string
+	if err := h.db.Read().QueryRow(`SELECT state_json FROM round_private_state WHERE round_id=? AND scope='round'`, roundID).Scan(&raw); err != nil {
+		t.Fatal(err)
+	}
+	var secret struct {
+		AnswerID string `json:"answerId"`
+		Pool     []struct {
+			ID string `json:"ID"`
+		} `json:"pool"`
+	}
+	if err := json.Unmarshal([]byte(raw), &secret); err != nil {
+		t.Fatal(err)
+	}
+	wrongID := ""
+	for _, candidate := range secret.Pool {
+		if candidate.ID != secret.AnswerID {
+			wrongID = candidate.ID
+			break
+		}
+	}
+	if wrongID == "" {
+		t.Fatal("no incorrect candidate")
+	}
+	guess := map[string]any{"kind": "classic.guess", "characterId": wrongID}
 	status, first := h.do(http.MethodPost, "/api/v1/rounds/"+roundID+"/submissions", map[string]any{
 		"modeAction": guess, "phaseVersion": 3, "submissionRevision": 0, "controlGeneration": 0,
 	}, idem("dup1"))

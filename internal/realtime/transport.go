@@ -123,7 +123,10 @@ func (s *sseConn) Channel() Channel { return ChannelSSE }
 // client having to track anything. This is the one place where the opaque cursor
 // is deliberately exposed to a browser API, and it is still opaque to the client:
 // EventSource stores and replays it verbatim.
-func (s *sseConn) WriteFrame(_ context.Context, m ServerMessage, frame []byte) error {
+func (s *sseConn) WriteFrame(ctx context.Context, m ServerMessage, frame []byte) error {
+	if err := s.setDeadline(ctx); err != nil {
+		return err
+	}
 	// The event name must be on the wire, not only inside the payload.
 	//
 	// EventSource dispatches a frame carrying "event: x" to the listener registered
@@ -155,7 +158,10 @@ func (s *sseConn) ReadFrame(context.Context) ([]byte, error) { return nil, ErrNo
 
 func (s *sseConn) Ping(context.Context) error { return ErrPingUnsupported }
 
-func (s *sseConn) KeepAlive(context.Context) error {
+func (s *sseConn) KeepAlive(ctx context.Context) error {
+	if err := s.setDeadline(ctx); err != nil {
+		return err
+	}
 	// A comment line keeps proxies and the client's idle timer from tearing the
 	// stream down .
 	if _, err := fmt.Fprint(s.w, ": keep-alive\n\n"); err != nil {
@@ -163,6 +169,19 @@ func (s *sseConn) KeepAlive(context.Context) error {
 	}
 	s.flusher.Flush()
 	return nil
+}
+
+// setDeadline makes the hub's write context effective for socket-backed SSE.
+func (s *sseConn) setDeadline(ctx context.Context) error {
+	deadline, ok := ctx.Deadline()
+	if !ok {
+		deadline = time.Now().Add(DefaultWriteTimeout)
+	}
+	err := http.NewResponseController(s.w).SetWriteDeadline(deadline)
+	if errors.Is(err, http.ErrNotSupported) {
+		return nil
+	}
+	return err
 }
 
 func (s *sseConn) NeedsKeepAlive() bool { return true }

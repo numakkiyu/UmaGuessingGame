@@ -1,443 +1,261 @@
-// Matching is server-owned; background tabs pause status reads and refresh on return
+import { useMatchCurtain } from "@/components/uma/match-curtain-provider";
+import { usePlayerName } from "@/lib/player-name";
+import { MenuCharacterArt } from "@/components/uma/menu-character-art";
+
 import "@/i18n/matchmaking";
 import { useTranslation } from "@/i18n";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router";
-import { CircleAlert, Loader2, Radio, Users, X } from "lucide-react";
+import { Link, useNavigate, useSearchParams } from "react-router";
+import { Check, ChevronDown, CircleAlert, Loader2, Radio, Users } from "lucide-react";
 import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { LoadingBlock } from "@/components/uma/page-state";
+import { SelectField } from "@/components/ui/select";
+import { ErrorView, LoadingBlock } from "@/components/uma/page-state";
 import { useApi } from "@/lib/api";
-import { createIdempotencyKey, describeFailure, localizeFailure, type Failure } from "@/lib/api/client";
+import { ApiError, createIdempotencyKey, describeFailure, localizeFailure, type Failure } from "@/lib/api/client";
+import type { components } from "@/lib/api/types";
+import { prepareMatchWork } from "./matchmaking-work";
 import { cn } from "@/lib/utils";
 
-const TICKET_STATUSES = ["queueing", "matched-pending-accept", "ready", "playing", "finished", "cancelled", "expired"];
-
-const QUEUE_POLL_MS = 3000;
-
-type Ticket = {
-  ticketId: string;
-  status: string;
-  roomId: string | null;
-  expiresAt: string;
-  serverTime: string;
-};
-
-function asRecord(value: unknown): Record<string, unknown> | null {
-  return typeof value === "object" && value !== null ? (value as Record<string, unknown>) : null;
-}
-
-function parseTicket(body: unknown): Ticket | null {
-  const record = asRecord(body);
-  if (!record) return null;
-  const ticketId = typeof record["ticketId"] === "string" ? record["ticketId"] : null;
-  if (!ticketId) return null;
-  return {
-    ticketId,
-    status: typeof record["status"] === "string" ? record["status"] : "queueing",
-    roomId: typeof record["roomId"] === "string" ? record["roomId"] : null,
-    expiresAt: typeof record["expiresAt"] === "string" ? record["expiresAt"] : "",
-    serverTime: typeof record["serverTime"] === "string" ? record["serverTime"] : "",
-  };
-}
-
-type PageState =
-  | { kind: "idle" }
-  | { kind: "creating" }
-  | { kind: "queued"; ticket: Ticket }
-  | { kind: "error"; failure: Failure; unreadable?: true };
+type Ticket = components["schemas"]["Ticket"];
+type Lobby = components["schemas"]["MatchLobby"];
+type CreateBody = components["schemas"]["TicketCreate"];
+const terminal = (t:Ticket) => ["cancelled","expired","finished"].includes(t.status);
+const knownPools = ["classic-duel","classic-four","sort-four","memory-four"];
 
 export function MatchmakingPage() {
   const { t } = useTranslation("matchmaking");
-  const { api, session, ensureSession } = useApi();
+  const { api,session,ensureSession,restoreSession } = useApi();
   const navigate = useNavigate();
+  const curtain = useMatchCurtain();
+  const [params] = useSearchParams();
+  const [lobby,setLobby] = useState<Lobby|null>(null);
+  const [lobbyFailure,setLobbyFailure] = useState<Failure|null>(null);
+  const [poolId,setPoolId] = useState(params.get("pool") ?? (params.get("mode")==="sort" ? "sort-four" : params.get("mode")==="memory" ? "memory-four" : "classic-duel"));
+  const displayName = usePlayerName();
+  const [ticket,setTicket] = useState<Ticket|null>(null);
+  const [busy,setBusy] = useState<"create"|"accept"|"decline"|"cancel"|null>(null);
+  const [createLocked,setCreateLocked] = useState(false);
+  const [retryAction,setRetryAction] = useState<"accept"|"decline"|"cancel"|null>(null);
+  const [restoring,setRestoring] = useState(true);
+  const [failure,setFailure] = useState<Failure|null>(null);
+  const [now,setNow] = useState(()=>Date.now());
+  const [clockOffset,setClockOffset] = useState(0);
+  const [disconnected,setDisconnected] = useState(false);
+  const mounted = useRef(true);
+  const request = useRef<AbortController|null>(null);
+  const [queueStarted,setQueueStarted] = useState<{id:string;at:number}|null>(null);
+  const pendingCreate = useRef<{body:CreateBody;key:string}|null>(null);
+  const pendingAction = useRef<{kind:"accept"|"decline"|"cancel";key:string;ticketId:string}|null>(null);
+  const busyRef=useRef(false);
+  const activeId = ticket && !terminal(ticket) ? ticket.ticketId : null;
+  const pending = ticket && !terminal(ticket) && !ticket.roomId;
 
-  const [displayName, setDisplayName] = useState(session?.displayName ?? "");
-  const [wrongBudget, setWrongBudget] = useState(8);
-  const [state, setState] = useState<PageState>({ kind: "idle" });
-  const [respondFailure, setRespondFailure] = useState<Failure | null>(null);
-  const [responding, setResponding] = useState(false);
-  const [cancelling, setCancelling] = useState(false);
+  const receive = useCallback((next:Ticket) => {
+    if(!mounted.current)return;
+    setQueueStarted(previous => previous?.id===next.ticketId ? previous : {id:next.ticketId,at:Date.now()});
+    setTicket(next);setDisconnected(false);
+    setClockOffset(Date.parse(next.serverTime)-Date.now());
+    if(!curtain && next.roomId && (next.status==="ready" || next.status==="playing")) navigate(`/rooms/${encodeURIComponent(next.roomId)}`,{replace:true});
+  },[navigate,curtain]);
 
-  /** 幂等键：同一张票据的创建只发一次，重试复用 */
-  const createKeyRef = useRef<string | null>(null);
+  useEffect(()=>{
+    mounted.current=true;
+    return ()=>{mounted.current=false;request.current?.abort();};
+  },[]);
 
-  const startQueue = useCallback(async () => {
-    if (state.kind === "creating") return;
-    setState({ kind: "creating" });
-    setRespondFailure(null);
-
-    if (!createKeyRef.current) createKeyRef.current = createIdempotencyKey();
-
-    try {
-      const name = displayName.trim() || t("player");
-      await ensureSession(name);
-      const response = await api.createMatchmakingTicket(
-        {
-          // 契约要求 ClassicConfig：字段必须齐全，多传会被拒
-          modeConfig: {
-            modeId: "classic",
-            maxWrongGuesses: wrongBudget,
-            winPolicy: "first-correct",
-            durationSeconds: 0,
-            shadowEnabled: false,
-          },
-        },
-        createKeyRef.current,
-      );
-      const ticket = parseTicket(response.data);
-      if (!ticket) {
-        setState({
-          kind: "error",
-          unreadable: true,
-          failure: {
-            kind: "error",
-            title: "",
-            detail: "",
-            diagnosticId: response.requestId,
-            retryable: true,
-          },
-        });
-        return;
-      }
-      // 新票据需要新的幂等键
-      createKeyRef.current = null;
-      setState({ kind: "queued", ticket });
-    } catch (error) {
-      setState({ kind: "error", failure: describeFailure(error) });
-    }
-  }, [api, displayName, ensureSession, state.kind, wrongBudget, t]);
-
-  const refresh = useCallback(async () => {
-    if (state.kind !== "queued") return;
-    const ticketId = state.ticket.ticketId;
-    try {
-      const response = await api.getMatchmakingTicket(ticketId);
-      const ticket = parseTicket(response.data);
-      if (ticket) setState({ kind: "queued", ticket });
-    } catch (error) {
-      // 票据消失（过期/被清理）：回到可重排状态，但不谎称匹配成功
-      const failure = describeFailure(error);
-      if (failure.kind === "not-found") {
-        setState({ kind: "idle" });
-        return;
-      }
-      setState({ kind: "error", failure });
-    }
-  }, [api, state]);
-
-  /*
-   * 排队中定时刷新状态。
-   *
-   * 只在 queueing / matched-pending-accept 时轮询：
-   * ready 且 roomId 为空只代表本人已确认，仍需等待对手确认后读取房间。
-   */
-  const shouldPoll =
-    state.kind === "queued" &&
-    (state.ticket.status === "queueing" || state.ticket.status === "matched-pending-accept" ||
-      (state.ticket.status === "ready" && !state.ticket.roomId));
-
-  useEffect(() => {
-    if (!shouldPoll) return;
-    const timer = window.setInterval(() => {
-      // 后台标签页不轮询
-      if (document.visibilityState === "visible") void refresh();
-    }, QUEUE_POLL_MS);
-
-    const onVisible = () => {
-      if (document.visibilityState === "visible") void refresh();
+  useEffect(()=>{
+    const controller=new AbortController();let reading=false;
+    const read=async()=>{
+      if(reading || controller.signal.aborted)return;
+      reading=true;
+      try{
+        const response=await api.getMatchmakingLobby(controller.signal);
+        if(controller.signal.aborted)return;
+        if(response.data){setLobby(response.data);setLobbyFailure(null);}
+      }catch(error){if(!controller.signal.aborted)setLobbyFailure(describeFailure(error));}
+      finally{reading=false;}
     };
-    document.addEventListener("visibilitychange", onVisible);
-    return () => {
-      window.clearInterval(timer);
-      document.removeEventListener("visibilitychange", onVisible);
+    void read();
+    const timer=window.setInterval(()=>{if(document.visibilityState==="visible")void read();},5000);
+    return ()=>{controller.abort();window.clearInterval(timer);};
+  },[api]);
+
+  useEffect(()=>{
+    let disposed=false;
+    void(async()=>{
+      try{
+        const restored=session??await restoreSession?.();
+        if(!restored || disposed)return;
+        const response=await api.getActiveMatchmakingTicket();
+        if(!disposed && response.data?.ticket)receive(response.data.ticket);
+      }catch(error){if(!disposed){setFailure(describeFailure(error));setDisconnected(true);}}
+      finally{if(!disposed)setRestoring(false);}
+    })();
+    return ()=>{disposed=true;};
+    // Restoration belongs to this visit; creating a session must not restore over a new ticket.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[api,restoreSession,receive]);
+
+  useEffect(()=>{
+    if(!activeId || ticket?.roomId)return;
+    const controller=new AbortController();let reading=false;
+    const read=async()=>{
+      if(reading || controller.signal.aborted)return;
+      reading=true;
+      try{
+        const response=await api.heartbeatMatchmakingTicket(activeId,controller.signal);
+        if(response.data && !controller.signal.aborted)receive(response.data);
+      }catch(error){
+        if(!controller.signal.aborted){setDisconnected(true);if(error instanceof ApiError && error.status===404){setFailure(describeFailure(error));setTicket(previous => previous ? {...previous,status:"expired",roomId:null} : null);}}
+      }finally{reading=false;}
     };
-  }, [refresh, shouldPoll]);
+    const timer=window.setInterval(()=>{if(document.visibilityState==="visible")void read();},3000);
+    const visible=()=>{if(document.visibilityState==="visible")void read();};
+    document.addEventListener("visibilitychange",visible);
+    return ()=>{controller.abort();window.clearInterval(timer);document.removeEventListener("visibilitychange",visible);};
+  },[activeId,ticket?.roomId,api,receive]);
 
-  /* 房间就绪后自动进入 */
-  useEffect(() => {
-    if (state.kind !== "queued") return;
-    if (state.ticket.status === "ready" && state.ticket.roomId) {
-      navigate(`/rooms/${encodeURIComponent(state.ticket.roomId)}`);
-    }
-  }, [navigate, state]);
+  useEffect(()=>{
+    if(!pending)return;
+    const timer=window.setInterval(()=>setNow(Date.now()),1000);
+    return ()=>window.clearInterval(timer);
+  },[pending]);
 
-  const respond = useCallback(
-    async (accept: boolean) => {
-      if (state.kind !== "queued") return;
-      setResponding(true);
-      setRespondFailure(null);
-      try {
-        const response = await api.respondToMatch(state.ticket.ticketId, { accept });
-        const ticket = parseTicket(response.data);
-        if (ticket) setState({ kind: "queued", ticket });
-        else await refresh();
-      } catch (error) {
-        setRespondFailure(describeFailure(error));
-        await refresh();
-      } finally {
-        setResponding(false);
+  async function startQueue(){
+    if(busyRef.current)return;
+    busyRef.current=true;setBusy("create");setFailure(null);
+    const controller=new AbortController();request.current=controller;
+    try{
+      await ensureSession(displayName.trim()||t("player"));
+      // Recover an uncertain creation before spending another admission challenge.
+      if(!pendingCreate.current){
+        const active=await api.getActiveMatchmakingTicket(controller.signal);
+        if(active.data?.ticket){receive(active.data.ticket);return;}
+        const proof=await api.createMatchmakingProof({poolId},controller.signal);
+        if(!proof.data)throw new Error("Missing admission challenge");
+        const nonce=await prepareMatchWork(proof.data.challengeId,proof.data.bits,controller.signal);
+        setCreateLocked(true);
+        pendingCreate.current={body:{poolId,proof:{challengeId:proof.data.challengeId,nonce}},key:createIdempotencyKey()};
       }
-    },
-    [api, refresh, state],
-  );
-
-  const cancel = useCallback(async () => {
-    if (state.kind !== "queued") return;
-    setCancelling(true);
-    try {
-      await api.cancelMatchmakingTicket(state.ticket.ticketId);
-      setState({ kind: "idle" });
-    } catch (error) {
-      const failure = describeFailure(error);
-      // 已经不在队列里也算成功取消，不报错吓人
-      if (failure.kind === "not-found") setState({ kind: "idle" });
-      else setState({ kind: "error", failure });
-    } finally {
-      setCancelling(false);
-    }
-  }, [api, state]);
-
-  const respondInfo = respondFailure ? localizeFailure(respondFailure) : null;
-  if (state.kind === "creating") {
-    return (
-      <div className="uma-prose mx-auto flex flex-col gap-4">
-        <h1 className="u-fluid-title text-[var(--color-ink)]">{t("title")}</h1>
-        <LoadingBlock label={t("entering")} rows={2} />
-        <p className="text-sm text-[var(--color-muted)]">{t("enteringDetail")}</p>
-      </div>
-    );
+      const command=pendingCreate.current;
+      const response=await api.createMatchmakingTicket(command.body,command.key,controller.signal);
+      if(!response.data)throw new Error("Missing matchmaking ticket");
+      pendingCreate.current=null;setCreateLocked(false);pendingAction.current=null;setRetryAction(null);receive(response.data);
+    }catch(error){
+      if(controller.signal.aborted)return;
+      // A definitive refusal may obtain new admission. Uncertain results reuse the exact body and key.
+      if(error instanceof ApiError && error.status>=400 && error.status<500 && error.status!==408){pendingCreate.current=null;setCreateLocked(false);}
+      if(mounted.current)setFailure(describeFailure(error));
+    }finally{busyRef.current=false;if(mounted.current)setBusy(null);}
   }
 
-  if (state.kind === "error") {
-    const info = state.unreadable ? { ...state.failure, title: t("unreadableTitle"), detail: t("unreadableDetail") } : localizeFailure(state.failure);
-    return (
-      <div className="uma-prose mx-auto flex flex-col gap-4">
-        <h1 className="u-fluid-title text-[var(--color-ink)]">{t("title")}</h1>
-        <Alert
-          tone={info.kind === "offline" ? "warning" : "danger"}
-          title={info.title}
-          action={
-            <Button variant="secondary" onClick={() => void startQueue()}>
-              {t("retry")}
-            </Button>
-          }
-        >
-          <p>{info.detail}</p>
-          {info.diagnosticId ? (
-            <p className="mt-1 text-[length:var(--text-aux)]">
-              {t("problemId")}：<span className="uma-code">{info.diagnosticId}</span>
-            </p>
-          ) : null}
-        </Alert>
-        <Button asChild variant="secondary" size="primary">
-          <Link to="/">{t("home")}</Link>
-        </Button>
-      </div>
-    );
+  async function actOnMatch(kind:"accept"|"decline"|"cancel"){
+    if(!ticket || busyRef.current)return;
+    busyRef.current=true;setBusy(kind);setFailure(null);
+    const action=pendingAction.current??{kind,key:createIdempotencyKey(),ticketId:ticket.ticketId};
+    pendingAction.current=action;setRetryAction(action.kind);
+    try{
+      if(action.kind==="cancel"){
+        await api.cancelMatchmakingTicket(action.ticketId,undefined,action.key);
+        if(mounted.current)setTicket({...ticket,status:"cancelled",roomId:null});
+      }else{
+        const response=await api.respondToMatch(action.ticketId,{accept:action.kind==="accept"},undefined,action.key);
+        if(!response.data)throw new Error("Missing match response");
+        receive(response.data);
+      }
+      pendingAction.current=null;setRetryAction(null);
+    }catch(error){
+      if(error instanceof ApiError && error.status>=400 && error.status<500 && error.status!==408){pendingAction.current=null;setRetryAction(null);}
+      if(mounted.current)setFailure(describeFailure(error));
+      try{const response=await api.getMatchmakingTicket(action.ticketId);if(response.data)receive(response.data);}catch{if(mounted.current)setDisconnected(true);}
+    }finally{busyRef.current=false;if(mounted.current)setBusy(null);}
   }
 
-  if (state.kind === "queued") {
-    const knownStatus = TICKET_STATUSES.includes(state.ticket.status);
-    const awaitingOpponent = state.ticket.status === "ready" && !state.ticket.roomId;
-    const status = { label: t(awaitingOpponent ? "acceptedLabel" : knownStatus ? `statuses.${state.ticket.status}.label` : "unknownLabel"), hint: t(awaitingOpponent ? "acceptedHint" : knownStatus ? `statuses.${state.ticket.status}.hint` : "unknownHint") };
-    const needsAccept = state.ticket.status === "matched-pending-accept";
-    const terminal = ["cancelled", "expired", "finished"].includes(state.ticket.status);
+  const pools=lobby?.pools.filter(p=>knownPools.includes(p.poolId))??[];
+  const selected=pools.find(p=>p.poolId===poolId)??pools[0];
+  useEffect(()=>{if(selected && selected.poolId!==poolId && !pendingCreate.current)setPoolId(selected.poolId);},[selected,poolId]);
+  const info=failure?localizeFailure(failure):null;
+  const closed=lobbyFailure?.kind==="forbidden";
+  const confirm=ticket?.status==="matched-pending-accept";
+  const seconds=ticket?Math.max(0,Math.ceil((Date.parse(ticket.expiresAt)-now-clockOffset)/1000)):0;
+  const waitingSeconds=ticket?Math.max(0,Math.floor((now-(queueStarted?.at??now))/1000)):0;
+  const label=ticket?.status==="ready" && !ticket.roomId?"acceptedLabel":`statuses.${ticket?.status??"queueing"}.label`;
+  const hint=ticket?.status==="ready" && !ticket.roomId?"acceptedHint":`statuses.${ticket?.status??"queueing"}.hint`;
 
-    return (
-      <div className="uma-prose mx-auto flex flex-col gap-5">
-        <header>
-          <h1 className="u-fluid-title text-[var(--color-ink)]">{t("title")}</h1>
-        </header>
+  const ticketContent = ticket ? <section className={cn("uma-panel p-5 sm:p-7",confirm && "border-[var(--color-gold)] ring-2 ring-[var(--color-gold)]")} aria-label={t(label)}>
+      <div className="mc-status-heading flex items-start gap-3">
+        {confirm?<CircleAlert aria-hidden="true" className="mt-1 size-6 shrink-0 text-[var(--color-near-edge)]"/>:<Radio aria-hidden="true" className={cn("mt-1 size-6 shrink-0 text-[var(--color-action-green)]",pending && "motion-safe:animate-pulse")}/>}
+        <div className="min-w-0"><h2 className="text-xl font-bold">{t(label)}</h2><p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">{t(hint)}</p><p className="mt-2 font-semibold">{t(`pools.${ticket.poolId}.name`)}</p></div>
+      </div>
+      {pending?<div className="mc-timing mt-5 flex flex-wrap items-center gap-3 text-sm font-semibold tabular-nums" role="status">
+        <span>{ticket.status==="queueing"?t("queueTime",{count:waitingSeconds}):t("acceptedCount",{accepted:ticket.accepted,total:ticket.players})}</span>
+        {ticket.status!=="queueing"?<span className="text-[var(--color-near-edge)]">{t("confirmCountdown",{count:seconds})}</span>:null}
+      </div>:null}
+      <div className="mc-actions mt-5 grid gap-3 sm:grid-cols-2">
+        {retryAction && failure?<Button variant="primary" size="primary" disabled={!!busy} onClick={()=>void actOnMatch(retryAction)}>{t("retry")}</Button>:<>
+          {confirm?<Button variant="primary" size="primary" disabled={!!busy || seconds===0} onClick={()=>void actOnMatch("accept")}><Check aria-hidden="true" className="size-4"/>{t("accept")}</Button>:null}
+          {pending?<Button variant="secondary" size="primary" disabled={!!busy} onClick={()=>void actOnMatch(confirm?"decline":"cancel")}>{busy?<Loader2 aria-hidden="true" className="size-4 motion-safe:animate-spin"/>:null}{t(busy==="cancel"?"cancelling":confirm?"decline":"cancel")}</Button>:null}
+        </>}
+        {terminal(ticket)?<Button variant="primary" size="primary" onClick={()=>{setTicket(null);setFailure(null);pendingAction.current=null;setRetryAction(null);}}>{t("again")}</Button>:null}
+      </div>
+      <p className="mt-4 text-sm leading-6 text-[var(--color-muted)]">{t(terminal(ticket)?"cooldown":"stay")}</p>
+    </section> : null;
+  useEffect(() => {
+    if (!curtain) return;
+    if (!ticket) { curtain.dismiss(); return; }
+    curtain.show({
+      id: ticket.ticketId,
+      title: t(label), description: t(hint),
+      content: <>{ticketContent}{disconnected ? <p role="status">{t("connectionHint")}</p> : null}</>,
+      failed: terminal(ticket),
+      ready: !!ticket.roomId && (ticket.status === "ready" || ticket.status === "playing"),
+      onCovered: () => { if (ticket.roomId) navigate(`/rooms/${encodeURIComponent(ticket.roomId)}`, { replace: true }); },
+      onCancel: () => { if (!ticket.roomId && !terminal(ticket) && !busyRef.current) void actOnMatch(confirm ? "decline" : "cancel"); },
+    });
+    // Controls carry the current ticket and retry identity into the shell-owned overlay.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [curtain, ticket, busy, retryAction, failure, disconnected, now, clockOffset, t, label, hint, navigate]);
+  useEffect(() => () => curtain?.dismiss(), [curtain]);
 
-        <section
-          className={cn(
-            "uma-panel flex flex-col gap-3 p-5",
-            needsAccept && "border-[var(--color-gold)] ring-2 ring-[var(--color-gold)]",
-          )}
-          aria-labelledby="queue-status"
-        >
-          <div className="flex items-start gap-3">
-            {needsAccept ? (
-              <CircleAlert aria-hidden="true" className="mt-0.5 size-6 shrink-0 text-[var(--color-near-edge)]" />
-            ) : (
-              <Radio
-                aria-hidden="true"
-                className={cn(
-                  "mt-0.5 size-6 shrink-0 text-[var(--color-blue-deep)]",
-                  shouldPoll && "motion-safe:animate-pulse",
-                )}
-              />
-            )}
-            <div className="min-w-0">
-              <h2 id="queue-status" className="text-lg font-bold text-[var(--color-ink)]">
-                {status.label}
-              </h2>
-              <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">{status.hint}</p>
-            </div>
-          </div>
-
-          {needsAccept ? (
-            <div className="flex flex-col gap-2 sm:flex-row">
-              <Button
-                variant="primary"
-                size="primary"
-                onClick={() => void respond(true)}
-                disabled={responding}
-                className="h-auto min-h-12 whitespace-normal sm:flex-1"
-              >
-                {responding ? (
-                  <Loader2 aria-hidden="true" className="size-4 motion-safe:animate-spin" />
-                ) : (
-                  <Users aria-hidden="true" className="size-4" />
-                )}
-                {t("accept")}
-              </Button>
-              <Button
-                variant="secondary"
-                size="primary"
-                onClick={() => void respond(false)}
-                disabled={responding}
-                className="h-auto min-h-12 whitespace-normal sm:flex-1"
-              >
-                {t("decline")}
-              </Button>
-            </div>
-          ) : null}
-
-          {respondInfo ? (
-            <Alert tone="warning" title={respondInfo.title}>
-              <p>{respondInfo.detail}</p>
-              {respondInfo.diagnosticId ? (
-                <p className="mt-1 text-[length:var(--text-aux)]">
-                  {t("problemId")}：<span className="uma-code">{respondInfo.diagnosticId}</span>
-                </p>
-              ) : null}
-            </Alert>
-          ) : null}
-
-          {state.ticket.status === "ready" && state.ticket.roomId ? (
-            <p className="text-sm font-semibold text-[var(--color-action-green)]">
-              {t("joining")}
-            </p>
-          ) : null}
-
-          {shouldPoll ? (
-            <div className="flex flex-col gap-1.5">
-              <p className="flex items-center gap-1.5 text-[length:var(--text-aux)] text-[var(--color-muted)]">
-                <Loader2 aria-hidden="true" className="size-3.5 motion-safe:animate-spin" />
-                {t("waiting")}
-              </p>
-              {/* Pairing is implemented by the server. Keep alternatives helpful
-                  without claiming the active matcher is unavailable. */}
-              <p className="text-[length:var(--text-aux)] leading-5 text-[var(--color-muted)]">
-                {t("waitingHint")}
-              </p>
-            </div>
-          ) : null}
-
-          {!terminal ? (
-            <Button variant="secondary" onClick={() => void cancel()} disabled={cancelling} block>
-              <X aria-hidden="true" className="size-4" />
-              {t(cancelling ? "cancelling" : "cancel")}
-            </Button>
-          ) : null}
-
-          {terminal ? (
-            <Button variant="primary" size="primary" onClick={() => void startQueue()} block>
-              {t("again")}
-            </Button>
-          ) : null}
-        </section>
-
-        <div className="flex flex-col gap-2 border-t border-[var(--color-line)] pt-4 sm:flex-row">
-          <Button asChild variant="secondary" size="primary">
-            <Link to="/play/classic">{t("solo")}</Link>
-          </Button>
-          <Button asChild variant="secondary" size="primary">
-            <Link to="/">{t("home")}</Link>
-          </Button>
+  return <div className="uma-stack mx-auto w-full max-w-5xl">
+    <header className="uma-match-header uma-panel">
+      <div className="uma-match-header-copy"><h1 className="u-fluid-title">{t("title")}</h1><p className="mt-2 text-base leading-7 text-[var(--color-muted)]">{t("intro")}</p></div><MenuCharacterArt pool={selected?.poolId ?? "classic-duel"} className="uma-match-hero-art" />
+      {lobby && !closed ? <section className="mt-5 grid grid-cols-2 gap-2" aria-label={t("online")}>
+        {(["queued","confirming","playing","rooms"] as const).map(key=><p key={key} className="rounded-xl bg-[var(--color-panel-soft)] p-3 text-sm font-semibold tabular-nums">{t(key==="rooms"?"roomCount":`${key}Count`,{count:lobby[key]})}</p>)}
+      </section>:null}
+      {lobbyFailure?<p className="mt-3 text-sm text-[var(--color-muted)]">{t("statsUnavailable")}</p>:null}
+    </header>
+    {restoring?<LoadingBlock label={t("recovering")} rows={1}/>:null}
+    {lobbyFailure && !lobby && !closed ? <ErrorView failure={lobbyFailure} onRetry={()=>window.location.reload()} /> : null}
+    {closed && !ticket ? <Alert tone="info" title={t("closed")}>{t("closedDetail")}</Alert>:null}
+    {info?<Alert fault tone="warning" title={info.title}><p>{info.detail}</p></Alert>:null}
+    {disconnected && ticket?<Alert tone="warning" title={t("connectionHint")}/>:null}
+    {ticket && (!curtain || terminal(ticket)) ? ticketContent : null}
+    {!ticket && !closed && pools.length>0 ? <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1.4fr)_minmax(16rem,1fr)]">
+      <section className="hidden lg:block" aria-labelledby="pool-heading"><h2 id="pool-heading" className="mb-3 text-lg font-bold">{t("choose")}</h2>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1" role="group" aria-labelledby="pool-heading">
+          {pools.map(p=><button key={p.poolId} type="button" aria-pressed={selected?.poolId===p.poolId} disabled={!!busy || createLocked} onClick={()=>setPoolId(p.poolId)} className={cn("uma-match-pool uma-match-art-card min-w-0 rounded-[var(--radius-card)] border text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-blue-deep)] disabled:cursor-wait",selected?.poolId===p.poolId?"border-[var(--color-brand-green)] bg-[var(--color-brand-green-soft)]":"border-[var(--color-line)] bg-[var(--color-panel)]")}>
+            <MenuCharacterArt pool={p.poolId} className="uma-match-card-art" />
+            <span className="flex items-start justify-between gap-3 font-bold"><span>{t(`pools.${p.poolId}.name`)}</span><Users aria-hidden="true" className="mt-1 size-4 shrink-0"/></span>
+            <span className="mt-2 block text-sm leading-6 text-[var(--color-muted)]">{t(`pools.${p.poolId}.rule`)}</span>
+            <span className="mt-3 block text-sm font-semibold text-[var(--color-action-green)]">{t("poolQueue",{count:p.queued})}</span>
+          </button>)}
         </div>
-      </div>
-    );
-  }
-
-  // idle：排队表单
-  return (
-    <div className="uma-prose mx-auto flex flex-col gap-5">
-      <header>
-        <h1 className="u-fluid-title text-[var(--color-ink)]">{t("title")}</h1>
-        <p className="mt-2 text-base leading-7 text-[var(--color-ink)]">
-          {t("intro")}
-        </p>
-      </header>
-
-      <section className="uma-card p-4" aria-labelledby="match-rules">
-        <h2 id="match-rules" className="text-base font-bold text-[var(--color-ink)]">
-          {t("rules")}
-        </h2>
-        <ul className="mt-2 space-y-1.5 text-sm leading-6 text-[var(--color-muted)]">
-          <li>{t("wrongRule", { count: wrongBudget })}</li>
-          <li>{t("timeRule")}</li>
-          <li>{t("acceptRule")}</li>
-          <li>{t("cancelRule")}</li>
-        </ul>
       </section>
-
-      <section className="uma-panel flex flex-col gap-4 p-5" aria-labelledby="queue-start">
-        <h2 id="queue-start" className="text-base font-bold text-[var(--color-ink)]">
-          {t("enter")}
-        </h2>
-
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="match-name">{t("name")}</Label>
-          <Input
-            id="match-name"
-            value={displayName}
-            onChange={(event) => setDisplayName(event.target.value)}
-            placeholder={t("namePlaceholder")}
-            maxLength={24}
-            autoComplete="nickname"
-          />
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="match-budget">{t("budget")}</Label>
-          <div className="flex items-center gap-3">
-            <Input
-              id="match-budget"
-              type="number"
-              min={4}
-              max={12}
-              value={wrongBudget}
-              onChange={(event) => {
-                const next = Number(event.target.value);
-                if (Number.isFinite(next)) setWrongBudget(Math.min(12, Math.max(4, Math.round(next))));
-              }}
-              className="w-24"
-            />
-            <span className="text-sm text-[var(--color-muted)]">{t("budgetHint")}</span>
-          </div>
-        </div>
-
-        <Button variant="primary" size="primary" onClick={() => void startQueue()} block>
-          <Users aria-hidden="true" className="size-4" />
-          {t("start")}
-        </Button>
-
-        <p className="text-[length:var(--text-aux)] text-[var(--color-muted)]">{t("formHint")}</p>
+      <section className="uma-panel p-5 sm:p-6" aria-labelledby="queue-start">
+        <MenuCharacterArt pool={selected?.poolId ?? "classic-duel"} className="uma-match-selected-art" />
+        <div className="mb-5 flex flex-col gap-2 lg:hidden"><Label htmlFor="match-pool">{t("choose")}</Label><SelectField id="match-pool" value={selected?.poolId ?? ""} onValueChange={setPoolId} disabled={!!busy || createLocked} options={pools.map(p=>({value:p.poolId,label:t(`pools.${p.poolId}.name`)}))}/><p className="text-sm leading-6 text-[var(--color-muted)]">{selected?t(`pools.${selected.poolId}.rule`):""}</p><p className="text-sm font-semibold text-[var(--color-action-green)]">{t("poolQueue",{count:selected?.queued??0})}</p></div>
+        <details className="uma-disclosure"><summary id="queue-start" className="flex min-h-11 cursor-pointer items-center justify-between gap-3 font-semibold">{t("rules")}<ChevronDown aria-hidden="true" className="uma-disclosure__chevron size-4"/></summary><p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">{t("readyRule")}</p>{lobby && (lobby.idleSeconds??0)>0?<p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">{t("idleRule",{count:lobby.idleSeconds})}</p>:null}</details>
+        {busy==="create"?<p role="status" className="mt-3 text-sm leading-6 text-[var(--color-muted)]">{t("enteringDetail")}</p>:null}
+        <Button className="mt-5" variant="primary" size="primary" disabled={!!busy || restoring || !selected} onClick={()=>void startQueue()} block>{busy?<Loader2 aria-hidden="true" className="size-4 motion-safe:animate-spin"/>:<Users aria-hidden="true" className="size-4"/>}{t(busy?"entering":failure?"retry":"start")}</Button>
+        <p className="mt-4 text-sm leading-6 text-[var(--color-muted)]">{t("stay")}</p>
       </section>
-
-      <div className="flex flex-col gap-2 border-t border-[var(--color-line)] pt-4 sm:flex-row">
-        <Button asChild variant="secondary" size="primary">
-          <Link to="/play/classic">{t("solo")}</Link>
-        </Button>
-        <Button asChild variant="secondary" size="primary">
-          <Link to="/">{t("home")}</Link>
-        </Button>
-      </div>
-    </div>
-  );
+    </div>:null}
+    {!lobby && !lobbyFailure?<LoadingBlock label={t("title")} rows={2}/>:null}
+    {!ticket && lobby && pools.length===0?<Alert tone="info" title={t("empty")}>{t("emptyDetail")}</Alert>:null}
+    {!ticket && lobbyFailure && !closed?<Button variant="secondary" onClick={()=>window.location.reload()}>{t("retry")}</Button>:null}
+    <div className="flex flex-wrap gap-3 border-t border-[var(--color-line)] pt-4"><Button asChild variant="secondary"><Link to="/">{t("home")}</Link></Button><Button asChild variant="secondary"><Link to="/friends">{t("friends")}</Link></Button></div>
+  </div>;
 }

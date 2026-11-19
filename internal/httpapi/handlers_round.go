@@ -136,11 +136,17 @@ func outcomeFromExplanation(raw json.RawMessage) string {
 	if err := json.Unmarshal(raw, &fields); err != nil {
 		return "completed"
 	}
+	if v := fields["wonBySurrender"]; string(v) == "true" {
+		return "won"
+	}
+	if v := fields["surrendered"]; string(v) == "true" {
+		return "surrendered"
+	}
 	if v, ok := fields["solved"]; ok && strings.Trim(string(v), `"`) == "true" {
-		return "solved"
+		return "won"
 	}
 	if v, ok := fields["failed"]; ok && strings.Trim(string(v), `"`) == "true" {
-		return "failed"
+		return "lost"
 	}
 	return "completed"
 }

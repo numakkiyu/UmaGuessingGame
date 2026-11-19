@@ -1,3 +1,4 @@
+import { useMatchCurtain } from "@/components/uma/match-curtain-provider";
 import { SelectField } from "@/components/ui/select";
 import "@/i18n/room";
 import { useTranslation } from "@/i18n";
@@ -13,6 +14,7 @@ import type { RoomSnapshot } from "@/lib/api/types";
 type Pending = { key: string; body: { targetMembershipId: string; expectedRoomVersion: number } };
 export function RoomManagement({ room, onChanged }: { room: RoomSnapshot; onChanged: () => unknown }) {
   const { t } = useTranslation("room");
+  const curtain = useMatchCurtain();
   const { api } = useApi(), navigate = useNavigate();
   const [target, setTarget] = useState("");
   const [confirm, setConfirm] = useState<"transfer" | "leave" | null>(null);
@@ -36,7 +38,13 @@ export function RoomManagement({ room, onChanged }: { room: RoomSnapshot; onChan
       } else {
         leaveKey.current ??= createIdempotencyKey();
         await api.leaveOrRemoveMembership(room.roomId, room.viewer.membershipId, undefined, leaveKey.current);
-        navigate("/", { replace: true });
+        const destination = room.kind === "matchmaking" ? "/matchmaking" : "/";
+        if (curtain && room.kind === "matchmaking") curtain.show({
+          id:`leave-${room.roomId}`,title:t("leave"),description:t("leaveHint"),ready:false,failed:true,
+          content:<section><h2>{t("leave")}</h2><p className="mt-3 text-sm">{t("leaveHint")}</p></section>,
+          onCancel:()=>{},onCovered:()=>navigate(destination,{replace:true,state:{umaMatchCurtain:true}}),
+        });
+        else navigate(destination, { replace: true });
       }
       setUncertain(false); setConfirm(null); void onChanged();
     } catch (error) {

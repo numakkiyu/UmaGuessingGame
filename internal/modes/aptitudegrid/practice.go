@@ -6,6 +6,12 @@ import (
 	"github.com/bhcn/umaguessinggame/internal/modes/modeutil"
 )
 
+// HasSolution checks whether nine distinct cards can fill the standard board.
+// Transposing the board preserves the same matching, so one axis is sufficient.
+func HasSolution(cards []Card) bool {
+	return solvable(cards, buildBoard(Config{RowAxis: "distance"}))
+}
+
 // PracticeCards exports historical public aptitude facts, not any active board.
 func PracticeCards(source modes.ContentSource) ([]Card, error) {
 	cards, err := loadCards(source)
@@ -21,7 +27,7 @@ func PracticeCards(source modes.ContentSource) ([]Card, error) {
 		}
 		out = append(out, c)
 	}
-	if !solvable(out, buildBoard(Config{RowAxis: "distance"})) {
+	if !HasSolution(out) {
 		return nil, fmt.Errorf("aptitudegrid: public practice library is not solvable")
 	}
 	return out, nil

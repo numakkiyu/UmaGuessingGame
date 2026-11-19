@@ -28,15 +28,15 @@ it("memory result button confirms the failed flip even after state and controlle
   fixture.api.createSubmission.mockRejectedValueOnce(new TimeoutError(10)).mockResolvedValueOnce({ data: { outcome: "accepted", feedback: { resolved: true, matched: true } } });
   const page = show(<MemoryRoundPage />);
   fireEvent.click(screen.getAllByRole("button", { name: /未翻开/ })[0]!);
-  await screen.findByRole("button", { name: "查看提交结果" });
+  await screen.findByRole("button", { name: "确认刚才翻的牌" });
   const original = fixture.api.createSubmission.mock.calls[0];
   page.unmount();
   fixture.view = { ...fixture.view, canSubmit: false, submissionRevision: 7, controlGeneration: 3, meta: { phase: "locked", phaseVersion: 4, deadlineAt: null } };
   show(<MemoryRoundPage />);
-  fireEvent.click(screen.getByRole("button", { name: "查看提交结果" }));
+  fireEvent.click(screen.getByRole("button", { name: "确认刚才翻的牌" }));
   await waitFor(() => expect(fixture.api.createSubmission).toHaveBeenCalledTimes(2));
   expect(fixture.api.createSubmission.mock.calls[1]).toEqual(original);
-  await waitFor(() => expect(screen.queryByRole("button", { name: "查看提交结果" })).toBeNull());
+  await waitFor(() => expect(screen.queryByRole("button", { name: "确认刚才翻的牌" })).toBeNull());
 });
 
 it("trade draft belongs to its current turn; same-nickname recipients show room IDs", async () => {

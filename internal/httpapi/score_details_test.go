@@ -40,8 +40,8 @@ func TestOutcomeReflectsSolved(t *testing.T) {
 		ScoreUnits:  70,
 		Explanation: json.RawMessage(`{"attempts":3,"solved":true,"failed":false}`),
 	}})
-	if out[0].Outcome != "solved" {
-		t.Fatalf("outcome = %q, want solved（猜中不能显示成 completed）", out[0].Outcome)
+	if out[0].Outcome != "won" {
+		t.Fatalf("outcome = %q, want won", out[0].Outcome)
 	}
 }
 
@@ -51,8 +51,8 @@ func TestOutcomeReflectsFailure(t *testing.T) {
 		SubjectID:   "mem_b",
 		Explanation: json.RawMessage(`{"attempts":8,"solved":false,"failed":true}`),
 	}})
-	if out[0].Outcome != "failed" {
-		t.Fatalf("outcome = %q, want failed", out[0].Outcome)
+	if out[0].Outcome != "lost" {
+		t.Fatalf("outcome = %q, want lost", out[0].Outcome)
 	}
 }
 

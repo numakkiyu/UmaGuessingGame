@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 /** Follows two independent sessions from matchmaking to settlement, checking authority, independent scores and disconnect recovery. */
+import {createMatchingTicket} from "./matchmaking-support.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
@@ -139,8 +140,9 @@ const key = () => crypto.randomUUID().replace(/-/g, "");
 const CLASSIC_CFG = {
   modeId: "classic",
   maxWrongGuesses: 8,
-  winPolicy: "window-attempts",
-  durationSeconds: 0,
+  variant: "friend",
+  winPolicy: "first-correct",
+  durationSeconds: 180,
   shadowEnabled: false,
 };
 
@@ -168,12 +170,12 @@ async function main() {
     cookieBLength: playerB.cookie.length,
   });
 
-  // 先建票者 = A，后建票者 = B（决定房间归属）
-  const ticketA = await playerA.call("POST", "/matchmaking-tickets", { modeConfig: CLASSIC_CFG }, key());
+  // Arrival order does not grant either participant management authority.
+  const ticketA = await createMatchingTicket(playerA);
   assert("A 建票成功（较早票）", ticketA.status === 201, { status: ticketA.status, code: ticketA.json?.code });
   const ticketAId = ticketA.json?.ticketId;
 
-  const ticketB = await playerB.call("POST", "/matchmaking-tickets", { modeConfig: CLASSIC_CFG }, key());
+  const ticketB = await createMatchingTicket(playerB);
   assert("B 建票成功（较晚票）", ticketB.status === 201, { status: ticketB.status, code: ticketB.json?.code });
   const ticketBId = ticketB.json?.ticketId;
 
@@ -235,13 +237,8 @@ async function main() {
   const capsB = roomB.json?.viewer?.capabilities ?? [];
   note("双方权限", { capsA, capsB });
 
-  /*
-   * 归属权：先建票者（A）持 manage-room，后建票者（B）只有 play。
-   * 这是「接受顺序不能决定房间归属」的直接体现。
-   */
-  assert("归属权 A（较早票）持有 manage-room", capsA.includes("manage-room"), { capsA });
-  assert("归属权 B（较晚票）不持有 manage-room", !capsB.includes("manage-room"), { capsB });
-
+  assert("A 只持参赛权限", capsA.includes("play") && !capsA.includes("manage-room"), {capsA});
+  assert("B 只持参赛权限", capsB.includes("play") && !capsB.includes("manage-room"), {capsB});
   const members = roomA.json?.members ?? [];
   assert("成员 房间里恰好 2 个成员", members.length === 2, {
     count: members.length,
@@ -264,46 +261,12 @@ async function main() {
     { status: bCreateRound.status, code: bCreateRound.json?.code },
   );
 
-  // A 开局
-  const roundRes = await playerA.call("POST", `/rooms/${roomId}/rounds`, { modeConfig: CLASSIC_CFG }, key());
-  assert("A 可以开局", roundRes.status === 201, { status: roundRes.status, code: roundRes.json?.code });
-  const roundId = roundRes.json?.roundId;
-  if (!roundId) {
-    console.error("[match-flow] 开局失败，无法继续");
-    process.exitCode = 1;
-    return;
-  }
-
-  let phaseVersion = roundRes.json?.phaseVersion ?? 1;
-
-  /*
-   * 不要跳过 briefing 直接 collecting。
-   * 状态机会拒绝，但错误可能被误当成「业务拒绝」而忽略 ——
-   * 这里显式断言 briefing 成功，让顺序问题立刻暴露。
-   */
-  const toBriefing = await playerA.call(
-    "POST",
-    `/rounds/${roundId}/transitions`,
-    { target: "briefing", expectedPhaseVersion: phaseVersion },
-    key(),
-  );
-  assert("状态机 prepared → briefing 成功", toBriefing.status === 201, {
-    status: toBriefing.status,
-    code: toBriefing.json?.code,
-  });
-  phaseVersion = toBriefing.json?.phaseVersion ?? phaseVersion + 1;
-
-  const toCollecting = await playerA.call(
-    "POST",
-    `/rounds/${roundId}/transitions`,
-    { target: "collecting", expectedPhaseVersion: phaseVersion },
-    key(),
-  );
-  assert("状态机 briefing → collecting 成功", toCollecting.status === 201, {
-    status: toCollecting.status,
-    code: toCollecting.json?.code,
-  });
-  phaseVersion = toCollecting.json?.phaseVersion ?? phaseVersion + 1;
+  const roundId=roomA.json?.currentRound?.roundId;
+  assert("确认后自动创建回合",typeof roundId==="string",{roundId});
+  if(!roundId)throw new Error("No automatic round");
+  const phaseVersion=roomA.json.currentRound.phaseVersion;
+  const denied=await playerA.call("POST",`/rooms/${roomId}/rounds`,{},key());
+  assert("A 也不能重复开局",denied.status===403,{status:denied.status});
 
   const roundView = await playerA.call("GET", `/rounds/${roundId}`);
   assert("回合进入 collecting", roundView.json?.round?.phase === "collecting", {
@@ -349,33 +312,19 @@ async function main() {
     },
     key(),
   );
-  assert("B 提交成功", subB.status === 201, { status: subB.status, code: subB.json?.code });
+  assert("B 作答按当前回合裁决", subB.status===201 || (subB.status===409 && subA.json?.feedback?.solved===true), { status: subB.status, code: subB.json?.code });
 
   /* ================= 阶段 6：中途断线不影响结算 ================= */
   console.log("[match-flow] 阶段 6/7：A 断线，B 继续提交，回合仍能结算");
 
-  /*
-   * 断线模拟：不再用 A 的会话发任何请求（等价于「A 的网络断了」）。
-   * 服务端不知道 A 断线，只知道 A 不再提交。
-   * 断言：回合仍能 locked → revealed → settled，不被 A 的沉默阻塞。
-   */
-  const viewBeforeSettle = await playerB.call("GET", `/rounds/${roundId}`);
-  let settlePv = viewBeforeSettle.json?.round?.phaseVersion ?? phaseVersion;
-
-  for (const target of ["locked", "revealed", "settled"]) {
-    const t = await playerA.call(
-      "POST",
-      `/rounds/${roundId}/transitions`,
-      { target, expectedPhaseVersion: settlePv },
-      key(),
-    );
-    assert(`断线不影响 状态机 → ${target} 成功`, t.status === 201, {
-      status: t.status,
-      code: t.json?.code,
-    });
-    if (t.status === 201) settlePv = t.json?.phaseVersion ?? settlePv + 1;
+  // Stop A's interaction. Only the server's timer may settle this random match.
+  const until=performance.now()+195000;
+  let observed;
+  while(performance.now()<until){
+    observed=await playerB.call("GET",`/rounds/${roundId}`);
+    if(observed.json?.round?.phase==="settled")break;
+    await new Promise(resolve=>setTimeout(resolve,2000));
   }
-
   const settledView = await playerB.call("GET", `/rounds/${roundId}`);
   assert("断线不影响 回合最终为 settled", settledView.json?.round?.phase === "settled", {
     phase: settledView.json?.round?.phase,
@@ -393,11 +342,11 @@ async function main() {
     note: "若仍为 playing 说明结算没有回写房间状态",
   });
 
-  /* finished 房间可以创建新回合重赛；archived/cancelled 不允许重赛 */
+  // Random matches return to the queue instead of granting rematch authority.
   const rematch = await playerA.call("POST", `/rooms/${roomId}/rounds`, { modeConfig: CLASSIC_CFG }, key());
   assert(
-    "结算后 finished 房间可以重赛开新局（重赛创建新 round）",
-    rematch.status === 201,
+    "随机匹配结束后须重新排队，不能由玩家开新局",
+    rematch.status === 403,
     {
       status: rematch.status,
       code: rematch.json?.code,
@@ -444,9 +393,10 @@ async function main() {
   note("双方分数", { scoreUnits, solvedFlags, attempts });
 
   const scoresDiffer = new Set(scoreUnits).size > 1;
-  const bothAttempted = attempts.every((a) => a > 0);
+  const expectedAccepted=[subA,subB].filter(r=>r.status===201).length;
+  const bothAttempted = attempts.filter(a=>a>0).length===expectedAccepted;
   assert(
-    "分数 两人都各自提交过（attempts 均 > 0）",
+    "分数 已接受作答只记入各自的主体",
     bothAttempted,
     { attempts, note: "证明两人的提交分别落到了各自的主体" },
   );
@@ -459,18 +409,7 @@ async function main() {
     note("分数存在差异（可用于证明独立累加）", { scoreUnits });
   }
 
-  // 7d. 总榜（不能只看 settled）
-  const standings = await playerA.call("GET", `/events/${"none"}`).catch(() => null);
-  void standings;
-  /*
-   * 匹配房不属于活动，所以没有总榜。
-   * 这里记录这个事实，而不是强行查一个不存在的总榜。
-   * 活动总榜已在 e2e-rehearsal.mjs 里验证过（4 队彩排 + 分项明细）。
-   */
-  report.limits.push(
-    "匹配房不是活动，没有 event standings；「结算后总榜有数据」已在 e2e-rehearsal.mjs 的 4 队彩排里验证（含分项明细与 maxUnits）。" +
-      "本条链路的「结算后分数」通过回合投影的 subjects[].scoreUnits 验证。",
-  );
+  report.limits.push("随机匹配不属于活动，不在此验证活动总榜。脚本等待真实对局时限，不使用玩家管理权限强制结算");
 
   /* ================= 浏览器渲染确认 ================= */
   {

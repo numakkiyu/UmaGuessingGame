@@ -66,6 +66,9 @@ func (s *Service) CreateRoom(ctx context.Context, sessionID string, in RoomCreat
 	if err := s.checkModeForm(in.ModeConfig, in.Kind); err != nil {
 		return RoomCreateResult{}, err
 	}
+	if in.Kind == "matchmaking" {
+		return RoomCreateResult{}, problem.Forbidden("matchmaking-reserved", "use matchmaking to enter this room type")
+	}
 	limits := s.cfg.Policy.Limits
 	if limits.PlayersPerRoom > 0 && in.MaxPlayers > limits.PlayersPerRoom || limits.SpectatorsPerRoom > 0 && in.MaxSpectators > limits.SpectatorsPerRoom {
 		return RoomCreateResult{}, problem.Validation("room capacity exceeds this instance's configured limit")
@@ -288,7 +291,7 @@ func (s *Service) UpdateRoom(ctx context.Context, actor Actor, in RoomPatchInput
 		return Room{}, problem.Internal(fmt.Errorf("room: begin update: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Room{}, err
 	}
 

@@ -29,7 +29,7 @@ it("reads actual shared clue arrays and clearing the whole draft stays cleared",
     fireEvent.click(screen.getByRole("button", { name: "清空这个位置" }));
   }
   expect(screen.getAllByText("还没放卡")).toHaveLength(4);
-  expect(screen.getByRole("button", { name: "确认这份分配" }).hasAttribute("disabled")).toBe(true);
+  expect(screen.getByRole("button", { name: "确认这份卡片排列" }).hasAttribute("disabled")).toBe(true);
 });
 
 it("moving an assigned card never duplicates it and a new team head invalidates drafts", () => {
@@ -37,31 +37,31 @@ it("moving an assigned card never duplicates it and a new team head invalidates 
   fireEvent.click(screen.getByRole("button", { name: "选择位置：第 2 位" }));
   fireEvent.click(screen.getAllByRole("button", { name: "选择档案1" })[0]!);
   expect(screen.getByRole("button", { name: "选择位置：第 1 位" }).textContent).toContain("还没放卡");
-  expect(screen.getByRole("button", { name: "确认这份分配" }).hasAttribute("disabled")).toBe(true);
+  expect(screen.getByRole("button", { name: "确认这份卡片排列" }).hasAttribute("disabled")).toBe(true);
   fixture.view = { ...fixture.view, submissionRevision: 1 };
   page.rerender(<MemoryRouter><CluePuzzleRoundPage /></MemoryRouter>);
   expect(screen.getByRole("button", { name: "选择位置：第 1 位" }).textContent).toContain("档案1");
-  expect(screen.getByRole("button", { name: "确认这份分配" }).hasAttribute("disabled")).toBe(false);
+  expect(screen.getByRole("button", { name: "确认这份卡片排列" }).hasAttribute("disabled")).toBe(false);
 });
 
 it("confirms the original assignment after refresh and representative/phase changes", async () => {
   fixture.api.createSubmission.mockRejectedValueOnce(new TimeoutError(10)).mockResolvedValueOnce({ data: { outcome: "accepted" } });
-  const page = show(); fireEvent.click(screen.getByRole("button", { name: "确认这份分配" }));
-  await screen.findByRole("button", { name: "确认刚才的分配" });
+  const page = show(); fireEvent.click(screen.getByRole("button", { name: "确认这份卡片排列" }));
+  await screen.findByRole("button", { name: "确认刚才的卡片排列" });
   const original = fixture.api.createSubmission.mock.calls[0];
   expect(screen.getByRole("button", { name: "选择位置：第 1 位" }).hasAttribute("disabled")).toBe(true);
   page.unmount();
   fixture.view = { ...fixture.view, meta: { roundId: "round", phase: "locked", phaseVersion: 4 }, canSubmit: false, controlGeneration: 1, submissionRevision: 1 };
-  show(); fireEvent.click(screen.getByRole("button", { name: "确认刚才的分配" }));
+  show(); fireEvent.click(screen.getByRole("button", { name: "确认刚才的卡片排列" }));
   await waitFor(() => expect(fixture.api.createSubmission).toHaveBeenCalledTimes(2));
   expect(fixture.api.createSubmission.mock.calls[1]).toEqual(original);
-  await waitFor(() => expect(screen.queryByRole("button", { name: "确认刚才的分配" })).toBeNull());
+  await waitFor(() => expect(screen.queryByRole("button", { name: "确认刚才的卡片排列" })).toBeNull());
 });
 
 it("paused and read-only views cannot edit or submit", () => {
   fixture.view = { ...fixture.view, meta: { roundId: "round", phase: "collecting", phaseVersion: 3, paused: true } };
   show();expect(screen.getByRole("button", { name: "选择位置：第 1 位" }).hasAttribute("disabled")).toBe(true);
-  expect(screen.getByRole("button", { name: "确认这份分配" }).hasAttribute("disabled")).toBe(true);
+  expect(screen.getByRole("button", { name: "确认这份卡片排列" }).hasAttribute("disabled")).toBe(true);
 });
 
 it("renders only announced team scores and never marks an alternative solution wrong", () => {
@@ -70,5 +70,5 @@ it("renders only announced team scores and never marks an alternative solution w
   expect(screen.getAllByText("100 分")).toHaveLength(2);
   expect(screen.getByRole("heading", { name: "一种可行的排列" })).toBeTruthy();
   expect(screen.queryByText("你猜对了")).toBeNull();
-  expect(screen.queryByRole("button", { name: "确认这份分配" })).toBeNull();
+  expect(screen.queryByRole("button", { name: "确认这份卡片排列" })).toBeNull();
 });

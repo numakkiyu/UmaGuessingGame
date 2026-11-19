@@ -11,16 +11,19 @@ var EntryOperations = []string{"createRoom", "joinRoom", "createMatchmakingTicke
 
 // Turnstile contains no secret value. SecretEnv names an operator-owned variable.
 type Turnstile struct {
-	BrowserSignals  bool     `json:"browserSignals,omitempty"`
-	SignalPerMinute int      `json:"signalPerMinute,omitempty"`
-	SignalBurst     int      `json:"signalBurst,omitempty"`
-	Enabled         bool     `json:"enabled"`
-	SiteKey         string   `json:"siteKey,omitempty"`
-	SecretEnv       string   `json:"secretEnv,omitempty"`
-	Hostnames       []string `json:"hostnames,omitempty"`
-	GrantSeconds    int      `json:"grantSeconds,omitempty"`
-	Operations      []string `json:"operations,omitempty"`
-	MaxConcurrent   int      `json:"maxConcurrent,omitempty"`
+	Adaptive          *bool    `json:"adaptive,omitempty"`
+	RiskThreshold     int      `json:"riskThreshold,omitempty"`
+	RiskWindowSeconds int      `json:"riskWindowSeconds,omitempty"`
+	BrowserSignals    bool     `json:"browserSignals,omitempty"`
+	SignalPerMinute   int      `json:"signalPerMinute,omitempty"`
+	SignalBurst       int      `json:"signalBurst,omitempty"`
+	Enabled           bool     `json:"enabled"`
+	SiteKey           string   `json:"siteKey,omitempty"`
+	SecretEnv         string   `json:"secretEnv,omitempty"`
+	Hostnames         []string `json:"hostnames,omitempty"`
+	GrantSeconds      int      `json:"grantSeconds,omitempty"`
+	Operations        []string `json:"operations,omitempty"`
+	MaxConcurrent     int      `json:"maxConcurrent,omitempty"`
 }
 
 type Identity struct {
@@ -29,6 +32,12 @@ type Identity struct {
 
 func (i Identity) DistinguishNames() bool { return i.DisambiguateNames == nil || *i.DisambiguateNames }
 func (t Turnstile) Resolved() Turnstile {
+	if t.RiskThreshold == 0 {
+		t.RiskThreshold = 6
+	}
+	if t.RiskWindowSeconds == 0 {
+		t.RiskWindowSeconds = 60
+	}
 	if t.SignalPerMinute == 0 {
 		t.SignalPerMinute = 30
 	}
@@ -51,6 +60,9 @@ func (t Turnstile) Resolved() Turnstile {
 }
 func (t Turnstile) Validate() error {
 	t = t.Resolved()
+	if t.RiskThreshold < 3 || t.RiskThreshold > 100 || t.RiskWindowSeconds < 10 || t.RiskWindowSeconds > 600 {
+		return fmt.Errorf("turnstile adaptive limits out of range")
+	}
 	if t.SignalPerMinute < 1 || t.SignalPerMinute > 10000 || t.SignalBurst < 1 || t.SignalBurst > 1000 {
 		return fmt.Errorf("turnstile signal limits out of range")
 	}

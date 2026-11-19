@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"strings"
 
 	"github.com/bhcn/umaguessinggame/internal/httpapi/problem"
 	"github.com/bhcn/umaguessinggame/internal/modes"
@@ -13,12 +14,13 @@ import (
 
 // PauseRequest is a pending consent-based pause.
 type PauseRequest struct {
-	ID          string
-	RoundID     string
-	RoomID      string
-	RequesterID string
-	Status      string
-	ExpiresAt   int64
+	ID           string
+	RoundID      string
+	RoomID       string
+	RequesterID  string
+	Status       string
+	ExpiresAt    int64
+	PhaseVersion int64
 }
 
 // RematchRequest is a pending new-round confirmation.
@@ -64,9 +66,16 @@ func (n negotiationStore) detail(v any) json.RawMessage {
 // CreatePauseRequest opens a classic consent-based pause.
 //
 // Only a participant of a live collecting window may ask. The request does not
-// pause anything by itself: the counterparty must accept , which is what
+// pause anything by itself: the counterparty must accept, which is what
 // stops one player freezing the clock unilaterally.
 func (s *Service) CreatePauseRequest(ctx context.Context, actor Actor, roundID string, phaseVersion int64) (PauseRequest, error) {
+	rm, loadErr := s.loadRoom(ctx, actor.RoomID)
+	if loadErr != nil {
+		return PauseRequest{}, loadErr
+	}
+	if rm.Config.Kind == "matchmaking" {
+		return PauseRequest{}, problem.Conflict("matchmaking-pause-disabled", "random matches use a fixed running clock")
+	}
 	subject, err := actor.Subject()
 	if err != nil {
 		return PauseRequest{}, err
@@ -83,7 +92,7 @@ func (s *Service) CreatePauseRequest(ctx context.Context, actor Actor, roundID s
 		return PauseRequest{}, problem.Internal(fmt.Errorf("room: begin pause request: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return PauseRequest{}, err
 	}
 
@@ -94,6 +103,10 @@ func (s *Service) CreatePauseRequest(ctx context.Context, actor Actor, roundID s
 	if r.RoomID != actor.RoomID {
 		return PauseRequest{}, errRoundNotFound
 	}
+	subject, err = s.roundSubject(r, actor)
+	if err != nil {
+		return PauseRequest{}, err
+	}
 	if r.Status != modes.PhaseCollecting && r.Status != modes.PhaseBriefing {
 		return PauseRequest{}, problem.Conflict("not-pausable",
 			fmt.Sprintf("the round is %s and cannot be paused", r.Status))
@@ -103,6 +116,9 @@ func (s *Service) CreatePauseRequest(ctx context.Context, actor Actor, roundID s
 	}
 	if phaseVersion != r.PhaseVersion {
 		return PauseRequest{}, phaseConflict(r.PhaseVersion)
+	}
+	if r.DeadlineAt != nil && now > r.DeadlineAt.UnixMilli() {
+		return PauseRequest{}, problem.Conflict("deadline-passed", "the pause request arrived after the window closed")
 	}
 
 	id, err := newID("psr_")
@@ -138,8 +154,15 @@ func (s *Service) CreatePauseRequest(ctx context.Context, actor Actor, roundID s
 //
 // Acceptance pauses the round inside this transaction: deadline becomes
 // remainingMs and phaseVersion advances, so the client cannot compute its own
-// pause .
+// pause state.
 func (s *Service) RespondToPause(ctx context.Context, actor Actor, roundID, requestID string, accept bool) (PauseRequest, error) {
+	rm, loadErr := s.loadRoom(ctx, actor.RoomID)
+	if loadErr != nil {
+		return PauseRequest{}, loadErr
+	}
+	if rm.Config.Kind == "matchmaking" {
+		return PauseRequest{}, problem.Conflict("matchmaking-pause-disabled", "random matches use a fixed running clock")
+	}
 	if _, err := actor.Subject(); err != nil {
 		return PauseRequest{}, err
 	}
@@ -155,7 +178,7 @@ func (s *Service) RespondToPause(ctx context.Context, actor Actor, roundID, requ
 		return PauseRequest{}, problem.Internal(fmt.Errorf("room: begin pause response: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return PauseRequest{}, err
 	}
 
@@ -175,9 +198,19 @@ func (s *Service) RespondToPause(ctx context.Context, actor Actor, roundID, requ
 		return PauseRequest{}, problem.NotFound("pause-request-not-found",
 			"the pause request does not belong to this round")
 	}
+	subject, err := s.roundSubject(r, actor)
+	if err != nil {
+		return PauseRequest{}, err
+	}
+	if subject.ID == req.RequesterID {
+		return PauseRequest{}, problem.Forbidden("pause-counterparty-required", "the requesting side cannot respond to its own pause request")
+	}
 	if req.Status != "pending" {
 		return PauseRequest{}, problem.Conflict("pause-request-closed",
 			fmt.Sprintf("the pause request is already %s", req.Status))
+	}
+	if req.PhaseVersion != r.PhaseVersion {
+		return PauseRequest{}, problem.Conflict("pause-request-stale", "the round has advanced since this pause was requested")
 	}
 	if now > req.ExpiresAt {
 		return PauseRequest{}, problem.Conflict("pause-request-expired", "the pause request has expired")
@@ -191,6 +224,9 @@ func (s *Service) RespondToPause(ctx context.Context, actor Actor, roundID, requ
 		if r.Status != modes.PhaseCollecting && r.Status != modes.PhaseBriefing {
 			return PauseRequest{}, problem.Conflict("not-pausable",
 				"the round is no longer in a pausable phase")
+		}
+		if r.DeadlineAt != nil && now > r.DeadlineAt.UnixMilli() {
+			return PauseRequest{}, problem.Conflict("deadline-passed", "the pause response arrived after the window closed")
 		}
 		var remaining int64
 		if r.DeadlineAt != nil {
@@ -251,17 +287,29 @@ func loadPauseRequestQ(ctx context.Context, tx *sql.Tx, roomID, requestID string
 		return PauseRequest{}, problem.Internal(fmt.Errorf("room: load pause request: %w", err))
 	}
 	var d struct {
-		RequestID string `json:"requestId"`
-		RoundID   string `json:"roundId"`
-		SubjectID string `json:"subjectId"`
-		ExpiresAt int64  `json:"expiresAt"`
+		RequestID    string `json:"requestId"`
+		RoundID      string `json:"roundId"`
+		SubjectID    string `json:"subjectId"`
+		ExpiresAt    int64  `json:"expiresAt"`
+		PhaseVersion int64  `json:"phaseVersion"`
 	}
 	if err := json.Unmarshal([]byte(detail), &d); err != nil {
 		return PauseRequest{}, problem.Internal(fmt.Errorf("room: decode pause request: %w", err))
 	}
+	status := "pending"
+	var response string
+	err = tx.QueryRowContext(ctx, `SELECT action FROM audit_events
+		WHERE room_id=? AND action IN ('pause.accepted','pause.rejected')
+		AND json_extract(detail_json,'$.requestId')=? ORDER BY rowid DESC LIMIT 1`, roomID, requestID).Scan(&response)
+	if err != nil && !errors.Is(err, sql.ErrNoRows) {
+		return PauseRequest{}, problem.Internal(err)
+	}
+	if err == nil {
+		status = strings.TrimPrefix(response, "pause.")
+	}
 	return PauseRequest{
 		ID: requestID, RoundID: d.RoundID, RoomID: roomID,
-		RequesterID: d.SubjectID, Status: "pending", ExpiresAt: d.ExpiresAt,
+		RequesterID: d.SubjectID, Status: status, ExpiresAt: d.ExpiresAt, PhaseVersion: d.PhaseVersion,
 	}, nil
 }
 
@@ -271,6 +319,13 @@ func loadPauseRequestQ(ctx context.Context, tx *sql.Tx, roomID, requestID string
 // round is never overwritten . The replacement is created as a
 // fresh prepared round, preserving the old results.
 func (s *Service) RequestRematch(ctx context.Context, actor Actor, roundID string, accept bool) (RematchRequest, error) {
+	rm, loadErr := s.loadRoom(ctx, actor.RoomID)
+	if loadErr != nil {
+		return RematchRequest{}, loadErr
+	}
+	if rm.Config.Kind == "matchmaking" {
+		return RematchRequest{}, problem.Conflict("matchmaking-rematch-disabled", "return to matchmaking for a new game")
+	}
 	subject, err := actor.Subject()
 	if err != nil {
 		return RematchRequest{}, err
@@ -287,7 +342,7 @@ func (s *Service) RequestRematch(ctx context.Context, actor Actor, roundID strin
 		return RematchRequest{}, problem.Internal(fmt.Errorf("room: begin rematch: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return RematchRequest{}, err
 	}
 
@@ -487,7 +542,7 @@ func (s *Service) CreateTrade(ctx context.Context, actor Actor, roundID string, 
 	if trade, replayed, err := replayGameplayQ[Trade](ctx, tx, actor.SessionID, commandScope, in.Command, s.nowMS()); err != nil || replayed {
 		return trade, err
 	}
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Trade{}, err
 	}
 
@@ -509,6 +564,13 @@ func (s *Service) CreateTrade(ctx context.Context, actor Actor, roundID string, 
 	if err != nil {
 		return Trade{}, err
 	}
+	senderState, err := participantStateQ(ctx, tx, r.ID, subject.ID)
+	if err != nil {
+		return Trade{}, err
+	}
+	if isSurrendered(senderState) {
+		return Trade{}, problem.Conflict("participant-surrendered", "this participant has surrendered")
+	}
 	if phaseVersion := in.PhaseVersion; phaseVersion != r.PhaseVersion {
 		return Trade{}, phaseConflict(r.PhaseVersion)
 	}
@@ -523,12 +585,15 @@ func (s *Service) CreateTrade(ctx context.Context, actor Actor, roundID string, 
 		return Trade{}, problem.Validation("recipientMembershipId is invalid",
 			problem.FieldError{Field: "recipientMembershipId", Message: "is not an active member of this room"})
 	}
-	// Card ownership is read from the sender's own private state, which is the
-	// only authority for what they hold.
-	senderState, err := participantStateQ(ctx, tx, r.ID, subject.ID)
+	recipientState, err := participantStateQ(ctx, tx, r.ID, recipient.ID)
 	if err != nil {
 		return Trade{}, err
 	}
+	if isSurrendered(recipientState) {
+		return Trade{}, problem.Conflict("trade-closed", "the recipient has surrendered")
+	}
+	// Card ownership is read from the sender's own private state, which is the
+	// only authority for what they hold.
 	if !holdsInstance(senderState, in.OfferedInstanceID) {
 		return Trade{}, problem.Unprocessable("card-not-held",
 			"you do not hold the offered card instance")
@@ -714,7 +779,7 @@ func (s *Service) RespondToTrade(ctx context.Context, actor Actor, roundID, trad
 	if trade, replayed, err := replayGameplayQ[Trade](ctx, tx, actor.SessionID, commandScope, command, s.nowMS()); err != nil || replayed {
 		return trade, err
 	}
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Trade{}, err
 	}
 
@@ -731,6 +796,13 @@ func (s *Service) RespondToTrade(ctx context.Context, actor Actor, roundID, trad
 	responder, err := s.roundSubject(r, actor)
 	if err != nil {
 		return Trade{}, err
+	}
+	responderState, err := participantStateQ(ctx, tx, r.ID, responder.ID)
+	if err != nil {
+		return Trade{}, err
+	}
+	if isSurrendered(responderState) {
+		return Trade{}, problem.Conflict("participant-surrendered", "this participant has surrendered")
 	}
 	trade, err := loadTradeQ(ctx, tx, r.RoomID, tradeID)
 	if err != nil {
@@ -752,6 +824,13 @@ func (s *Service) RespondToTrade(ctx context.Context, actor Actor, roundID, trad
 	if actor.MembershipID() != trade.RecipientMembershipID {
 		return Trade{}, problem.Forbidden("not-the-recipient",
 			"only the named recipient may respond to this trade")
+	}
+	proposerState, err := participantStateQ(ctx, tx, r.ID, trade.SenderMembershipID)
+	if err != nil {
+		return Trade{}, err
+	}
+	if isSurrendered(proposerState) {
+		return Trade{}, problem.Conflict("trade-closed", "the proposer has surrendered")
 	}
 
 	// The swap must go through the mode so the public projection and the private

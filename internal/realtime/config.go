@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"strings"
 	"time"
 )
 
@@ -73,10 +74,8 @@ const (
 	// protocol violation, not a big ping.
 	DefaultMaxClientMessageBytes = 4096
 
-	// DefaultRevalidateInterval is how often an optional Revalidator re-checks
-	// that a live subscription's membership is still active (: every
-	// subscription re-authorises; an old connection never inherits a revoked
-	// role).
+	// DefaultRevalidateInterval bounds periodic checks of a live subscription's
+	// session, membership binding, and role.
 	DefaultRevalidateInterval = 30 * time.Second
 
 	// DefaultOutboxRetention keeps dispatched outbox rows for the same window as
@@ -146,9 +145,8 @@ type Config struct {
 	// MaxClientMessageBytes is the WebSocket read limit for client frames.
 	MaxClientMessageBytes int64
 
-	// RevalidateInterval enables periodic membership revalidation when a
-	// Revalidator is configured. Zero disables the loop; the explicit
-	// RevokeMembership/RevokeSession calls still work.
+	// RevalidateInterval controls live identity checks when a Revalidator is
+	// configured. Zero uses the default interval.
 	RevalidateInterval time.Duration
 
 	// SessionCookieName is the cookie holding the opaque session token.
@@ -178,6 +176,9 @@ type Config struct {
 func (c Config) withDefaults() Config {
 	if c.HandshakeTimeout <= 0 {
 		c.HandshakeTimeout = 10 * time.Second
+	}
+	if c.RevalidateInterval <= 0 {
+		c.RevalidateInterval = DefaultRevalidateInterval
 	}
 	if c.CoalesceWindow <= 0 {
 		c.CoalesceWindow = DefaultCoalesceWindow
@@ -266,7 +267,7 @@ func (c Config) Validate() error {
 		return errors.New("realtime: MaxClientMessageBytes is too small for a ping")
 	}
 	for _, o := range c.AllowedOrigins {
-		if o == "*" {
+		if strings.ContainsAny(o, "*?") {
 			return errors.New("realtime: AllowedOrigins must not contain a wildcard")
 		}
 	}

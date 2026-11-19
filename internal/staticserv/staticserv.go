@@ -50,7 +50,7 @@ func Handler(cfg Config, next http.Handler) http.Handler {
 		 *
 		 * - X-Frame-Options: DENY — another site cannot frame the room page and
 		 * overlay it, which would hijack "start round" / "submit" clicks.
-		 * - Referrer-Policy: no-referrer — room codes and invite links stay out of
+		 * - Referrer-Policy: same-origin — room codes and invite links stay out of
 		 * the Referer header on outbound navigation.
 		 * - X-Content-Type-Options: nosniff — no MIME sniffing on served files.
 		 *
@@ -59,8 +59,11 @@ func Handler(cfg Config, next http.Handler) http.Handler {
 		 * the media branch set nosniff only.
 		 */
 		w.Header().Set("X-Frame-Options", "DENY")
-		w.Header().Set("Referrer-Policy", "no-referrer")
+		w.Header().Set("Referrer-Policy", "same-origin")
 		w.Header().Set("X-Content-Type-Options", "nosniff")
+		// Scripts must come from this deployment or the optional admission widget.
+		// Inline styles remain available for Radix positioning and React styling.
+		w.Header().Set("Content-Security-Policy", "default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'")
 
 		switch {
 		case strings.HasPrefix(p, "/api/"):
@@ -96,7 +99,6 @@ func Handler(cfg Config, next http.Handler) http.Handler {
 
 type mediaHandler struct {
 	root  string
-	srv   http.Handler
 	ok    bool
 	alias func(string) (string, bool)
 }
@@ -109,7 +111,7 @@ func newMediaHandler(contentDir string, alias func(string) (string, bool)) *medi
 	if err != nil {
 		return &mediaHandler{}
 	}
-	return &mediaHandler{root: root, srv: http.FileServer(http.Dir(root)), ok: true, alias: alias}
+	return &mediaHandler{root: root, ok: true, alias: alias}
 }
 
 // resolveMediaRoot finds the live public asset directory.
@@ -219,14 +221,35 @@ func (h *mediaHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	// Media is versioned by content pack, so it can be cached for a long time.
+	// Restrict content packs to inert media. OpenRoot also prevents symlinks
+	// from escaping the published asset directory.
+	if !publicMediaExtension(path.Ext(servePath)) {
+		http.NotFound(w, r)
+		return
+	}
+	root, err := os.OpenRoot(h.root)
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+	defer root.Close()
+	file, err := root.Open(filepath.FromSlash(servePath))
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+	defer file.Close()
+	info, err = file.Stat()
+	if err != nil || !info.Mode().IsRegular() {
+		http.NotFound(w, r)
+		return
+	}
 	w.Header().Set("Cache-Control", "public, max-age=604800")
 	w.Header().Set("X-Content-Type-Options", "nosniff")
-	// Serve the cleaned relative path through the rooted file server so range
-	// requests and content types keep working.
-	r2 := r.Clone(r.Context())
-	r2.URL.Path = "/" + servePath
-	h.srv.ServeHTTP(w, r2)
+	if strings.HasPrefix(servePath, "audio/") && path.Ext(servePath) == ".webm" {
+		w.Header().Set("Content-Type", "audio/webm; codecs=opus")
+	}
+	http.ServeContent(w, r, path.Base(servePath), info.ModTime(), file)
 }
 
 // hasFile reports whether the SPA handler can serve a real file at the URL path.
@@ -274,4 +297,13 @@ func (h *mediaHandler) resolveFaceToken(trimmed string) (string, bool) {
 		return "", false
 	}
 	return strings.TrimPrefix(clean, "/"), true
+}
+
+func publicMediaExtension(ext string) bool {
+	switch strings.ToLower(ext) {
+	case ".webp", ".png", ".jpg", ".jpeg", ".gif", ".avif", ".webm", ".mp4":
+		return true
+	default:
+		return false
+	}
 }

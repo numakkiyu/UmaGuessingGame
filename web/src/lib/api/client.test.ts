@@ -14,6 +14,33 @@ import {
   describeFailure,
 } from "@/lib/api/client";
 
+describe("响应内容接收期间的超时与取消", () => {
+  function stalledBodyFetch(): FetchMock {
+    return createFetchMock(async (_url, init) => new Response(new ReadableStream({
+      start(controller) {
+        init.signal?.addEventListener("abort", () => controller.error(new DOMException("aborted", "AbortError")), { once: true });
+      },
+    }), { status: 200, headers: { "Content-Type": "application/json" } }));
+  }
+
+  it("收到响应头后仍有超时保护，未知结果不自动重交", async () => {
+    const fetcher = stalledBodyFetch();
+    const client = createApiClient({ fetchImpl: fetcher as unknown as typeof fetch });
+    await expect(client.post("/rounds/r/submissions", { body: {}, timeoutMs: 20 })).rejects.toBeInstanceOf(TimeoutError);
+    expect(fetcher).toHaveBeenCalledTimes(1);
+  });
+
+  it("收到响应头后仍可随页面取消，不误报网络失败", async () => {
+    const fetcher = stalledBodyFetch();
+    const client = createApiClient({ fetchImpl: fetcher as unknown as typeof fetch });
+    const controller = new AbortController();
+    const pending = client.get("/rooms/r", { signal: controller.signal });
+    await Promise.resolve();
+    controller.abort();
+    await expect(pending).rejects.toBeInstanceOf(AbortedError);
+  });
+});
+
 /**
  * 带类型的 fetch mock。
  * 裸 `vi.fn(async () => ...)` 的调用记录会被推成空元组 `[]`，
@@ -191,8 +218,8 @@ describe("API client", () => {
       const failure = describeFailure(error);
       expect(failure.kind).toBe("timeout");
       // 玩家文案：不写「确认提交结果」这类内部口径，改为玩家能理解的说法
-      expect(failure.title).toContain("还在确认这次答案是否提交成功");
-      expect(failure.detail).toContain("先别重复作答");
+      expect(failure.title).toContain("正在确认刚才的操作");
+      expect(failure.detail).toContain("确认进度后再继续");
       expect(failure.retryable).toBe(true);
     }
   });

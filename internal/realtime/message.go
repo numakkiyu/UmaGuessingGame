@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/bhcn/umaguessinggame/internal/jsoninput"
 	"strings"
 	"time"
 )
@@ -204,6 +205,9 @@ var ErrUnknownClientMessage = errors.New("realtime: client message rejected")
 // dropped. The error text names the reason so the caller can log a metric; it
 // never echoes the payload, which could contain answer material.
 func DecodeClientMessage(raw []byte) (ClientMessage, error) {
+	if err := jsoninput.ValidateObject(raw); err != nil {
+		return ClientMessage{}, ErrUnknownClientMessage
+	}
 	var probe struct {
 		Type ClientMessageType `json:"type"`
 	}

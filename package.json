@@ -7,9 +7,9 @@
     "node": ">=24.0.0"
   },
   "packageManager": "pnpm@10.33.0",
-  "//": "Production runs the Go binary; Node and pnpm are build-time tools.",
   "scripts": {
     "repo:check": "node web/scripts/check-repository.mjs",
+    "audio:verify": "go run ./cmd/content audio-verify",
     "dev:web": "pnpm --dir web run dev",
     "build:web": "pnpm --dir web run build",
     "typecheck:web": "pnpm --dir web run typecheck",
@@ -24,8 +24,12 @@
     "test:server:race": "go test ./... -count=1 -race",
     "vet:server": "go vet ./...",
     "content:compile": "go run ./cmd/content build --out content",
-    "content:verify": "go run ./cmd/content verify --dir content",
+    "content:verify": "go run ./cmd/content verify --out content",
     "check": "pnpm run typecheck:web && pnpm run lint:web && pnpm run test:web && pnpm run build:web && go vet ./... && go test ./... -count=1",
-    "ci": "pnpm run api:check && pnpm run check"
+    "ci": "pnpm run api:check && pnpm run check",
+    "docs:dev": "pnpm --dir docs run dev",
+    "docs:build": "pnpm --dir docs run build",
+    "docs:preview": "pnpm --dir docs run preview",
+    "docs:check": "pnpm --dir docs run check"
   }
 }

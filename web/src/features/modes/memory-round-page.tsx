@@ -1,3 +1,6 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
+import { MatchProgress } from "@/features/rooms/match-progress";
 import "@/i18n/memory-online";
 import { useTranslation } from "@/i18n";
 import { characterName } from "@/i18n/entities";
@@ -86,9 +89,12 @@ export function MemoryRoundPage() {
   const round = useMemo(() => {
     const publicState = publicStateOf(snapshot.raw);
     if (!publicState) return null;
-    // normalizeMemoryRound 需要 RoundView 形状；这里用 publicState 直接喂一个最小视图
-    return normalizeMemoryRound({ publicState } as unknown as components["schemas"]["RoundView"]);
-  }, [snapshot.raw]);
+    return normalizeMemoryRound({
+      ...(snapshot.raw as components["schemas"]["RoundView"]),
+      round: snapshot.meta,
+      publicState,
+    } as components["schemas"]["RoundView"]);
+  }, [snapshot.raw, snapshot.meta]);
 
   const [failure, setFailure] = useState<Failure | null>(null);
   const [rejected, setRejected] = useState(false);
@@ -118,7 +124,7 @@ export function MemoryRoundPage() {
   const currentPhase = snapshot.meta?.phase ?? null;
   const ended = isTerminalPhase(currentPhase) || (round?.finished ?? false);
   const submittable = isSubmittablePhase(currentPhase) && !(snapshot.meta?.paused ?? false);
-  const viewing = round !== null && isViewingPhase(round, currentPhase);
+  const viewing = !ended && round !== null && isViewingPhase(round, currentPhase);
 
   // Refreshing preserves the shared viewing deadline; it never grants extra time.
   const viewingCountdown = useCountdown(snapshot.meta?.deadlineAt, viewing && !(snapshot.meta?.paused ?? false));
@@ -213,19 +219,21 @@ export function MemoryRoundPage() {
   const score = displayScore(round?.self?.scoreUnits ?? 0);
 
   return (
-    <div className="uma-stack">
+    <GameStage mode="memory" className="uma-stack">
       <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/>
       <ConnectionBar
+        quality={realtime.quality}
         status={connectionStatus}
-        detail={connectionDetail(roomQuery.data?.room.name ?? t("room"), realtime.transport)}
+        detail={connectionDetail(roomDisplayName(roomQuery.data?.room, t("room")), realtime.transport)}
       />
+      <MatchProgress room={roomQuery.data?.room} raw={snapshot.raw}/>
 
       {/* 状态头：阶段 + 倒计时 + 尝试数，都在首屏 */}
-      <section className="uma-panel p-4" aria-labelledby="memory-heading">
-        <div className="flex flex-wrap items-start justify-between gap-3">
+      <section className="uma-panel uma-game-detailed-heading p-4" aria-labelledby="memory-heading">
+        <div className="uma-game-summary-copy flex flex-wrap items-start justify-between gap-3">
           <div className="min-w-0">
             <h1 id="memory-heading" className="u-fluid-task text-[var(--color-ink)]">
-              {viewing
+              {currentPhase === "cancelled" ? t("cancelled") : round?.self?.surrendered ? t("surrendered") : viewing
                 ? t("viewingTitle")
                 : ended
                   ? t("ended")
@@ -239,7 +247,7 @@ export function MemoryRoundPage() {
             </p>
           </div>
 
-          <div className="flex min-w-0 flex-col items-end">
+          {!ended ? <div className="flex min-w-0 flex-col items-end">
             <span className="text-[length:var(--text-aux)] text-[var(--color-muted)]">
               {t(viewing ? "viewRemaining" : "answerRemaining")}
             </span>
@@ -255,7 +263,7 @@ export function MemoryRoundPage() {
             >
               {viewing ? viewingCountdown.text : answerCountdown.text}
             </span>
-          </div>
+          </div> : null}
         </div>
 
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -304,15 +312,17 @@ export function MemoryRoundPage() {
         })()
       ) : null}
 
-      {round && round.cards.length > 0 ? (
+      {ended && round ? <MemoryResult round={round} /> : null}
+
+      {currentPhase !== "cancelled" && round && round.cards.length > 0 ? (
         <div className="grid gap-4 lg:grid-cols-[minmax(0,32rem)_minmax(0,18rem)] lg:items-start lg:justify-center">
           <section className="uma-panel min-w-0 p-4" aria-labelledby="board-heading">
             <div className="uma-section-head">
               <h2 id="board-heading" className="text-base font-bold text-[var(--color-ink)]">
-                {t("board")}
+                {t(ended ? "answerPairs" : "board")}
               </h2>
               <p className="text-[length:var(--text-aux)] text-[var(--color-muted)]">
-                {t(viewing ? "allVisible" : "turnOver")}
+                {t(ended ? "revealed" : viewing ? "allVisible" : "turnOver")}
               </p>
             </div>
 
@@ -397,8 +407,7 @@ export function MemoryRoundPage() {
         </div>
       ) : null}
 
-      {ended && round ? <MemoryResult round={round} /> : null}
-    </div>
+    </GameStage>
   );
 }
 
@@ -416,12 +425,22 @@ function MemoryResult({ round }: { round: MemoryRound }) {
   const done = round.self?.matchedPairs ?? 0;
   const score = displayScore(round.self?.scoreUnits ?? 0);
 
+  if (round.phase === "cancelled") {
+    return (
+      <section id="memory-result" className="uma-panel p-5" tabIndex={-1} aria-labelledby="memory-result-heading">
+        <h2 id="memory-result-heading" className="u-fluid-task text-[var(--color-ink)]">{t("cancelled")}</h2>
+        <p className="mt-2 text-sm text-[var(--color-muted)]">{t("cancelledDetail")}</p>
+        <Button asChild variant="secondary" className="mt-4"><Link to="/">{t("home")}</Link></Button>
+      </section>
+    );
+  }
+
   return (
     <section id="memory-result" className="uma-panel p-5" tabIndex={-1} aria-labelledby="memory-result-heading">
       <h2 id="memory-result-heading" className="u-fluid-task text-[var(--color-ink)]">
-        {t(done >= total ? "complete" : "ended")}
+        {t(round.self?.surrendered ? "surrendered" : done >= total ? "complete" : "ended")}
       </h2>
-      {done < total ? (
+      {round.self?.surrendered ? <p className="mt-1 text-sm text-[var(--color-muted)]">{t("surrenderedDetail")}</p> : done < total ? (
         <p className="mt-1 break-words text-sm text-[var(--color-muted)]">
           {t("resultHint", { done, total })}
         </p>

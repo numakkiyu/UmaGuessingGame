@@ -72,6 +72,46 @@ describe("SearchInput", () => {
     expect(onSelect.mock.calls[0]?.[0]).toMatchObject({ characterId: "1001" });
   });
 
+  it("按住候选超过 120 毫秒再松开仍能选择，鼠标焦点留在输入框", async () => {
+    const user = userEvent.setup(), onSelect = vi.fn();
+    render(<SearchInput items={CHARACTERS} onSelect={onSelect} />);
+    const input = screen.getByRole("combobox");
+    await user.type(input, "特别");
+    const option = await screen.findByRole("option", { name: /特别周/ });
+    await user.pointer({ target: option, keys: "[MouseLeft>]" });
+    expect(document.activeElement).toBe(input);
+    await act(async () => { await new Promise(resolve => setTimeout(resolve, 160)); });
+    expect(screen.getByRole("option", { name: /特别周/ })).toBe(option);
+    await user.pointer({ target: option, keys: "[/MouseLeft]" });
+    expect(onSelect).toHaveBeenCalledExactlyOnceWith(CHARACTERS[0]);
+    expect(screen.queryByRole("listbox")).toBeNull();
+  });
+
+  it("键盘移入候选不会提前收起，移出搜索区域才关闭", async () => {
+    const user = userEvent.setup(), onSelect = vi.fn();
+    render(<><SearchInput items={CHARACTERS} onSelect={onSelect} /><button>其他操作</button></>);
+    await user.type(screen.getByRole("combobox"), "特别");
+    await user.tab();
+    expect(document.activeElement).toBe(screen.getByRole("option", { name: /特别周/ }));
+    await act(async () => { await new Promise(resolve => setTimeout(resolve, 160)); });
+    expect(screen.getByRole("listbox")).toBeTruthy();
+    await user.tab();
+    expect(document.activeElement).toBe(screen.getByRole("button", { name: "其他操作" }));
+    expect(screen.queryByRole("listbox")).toBeNull();
+    expect(onSelect).not.toHaveBeenCalled();
+  });
+
+  it.each(["loading", "failed", "dismissed"])("%s 状态下 Enter 不提交不可见的候选", async state => {
+    const user = userEvent.setup(), onSelect = vi.fn(), onSubmit = vi.fn();
+    render(<SearchInput items={CHARACTERS} onSelect={onSelect} onSubmit={onSubmit} submitLabel="猜一次"
+      loading={state === "loading"} loadError={state === "failed" ? "角色资料暂时没能打开" : null} />);
+    await user.type(screen.getByRole("combobox"), "特别");
+    if (state === "dismissed") await user.keyboard("{Escape}");
+    await user.keyboard("{Enter}");
+    expect(onSelect).not.toHaveBeenCalled();
+    expect(onSubmit).not.toHaveBeenCalled();
+  });
+
   it("用日文名也能搜到，并展示日文原名", async () => {
     const user = userEvent.setup();
     render(<SearchInput items={CHARACTERS} onSelect={vi.fn()} />);
@@ -160,7 +200,7 @@ describe("SearchInput", () => {
     await user.type(screen.getByRole("combobox"), "不存在的角色");
 
     expect(await screen.findByText(/没有找到/)).toBeTruthy();
-    expect(screen.queryByText(/正在读取角色数据/)).toBeNull();
+    expect(screen.queryByText(/正在查找角色/)).toBeNull();
   });
 
   it("加载中显示载入提示，不显示无结果", async () => {
@@ -169,7 +209,7 @@ describe("SearchInput", () => {
 
     await user.type(screen.getByRole("combobox"), "特别");
 
-    expect(await screen.findByText(/正在读取角色数据/)).toBeTruthy();
+    expect(await screen.findByText(/正在查找角色/)).toBeTruthy();
     expect(screen.queryByText(/没有找到/)).toBeNull();
   });
 

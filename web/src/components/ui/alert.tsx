@@ -1,9 +1,13 @@
-
 import { useTranslation } from "@/i18n";
 import { cva, type VariantProps } from "class-variance-authority";
-import type { ComponentProps, ReactNode } from "react";
+import { lazy, Suspense, type ComponentProps, type ReactNode } from "react";
 import { AlertTriangle, CheckCircle2, Info, ShieldAlert, WifiOff } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+// A failed decoration chunk must leave the message and recovery action usable.
+const ErrorPresentation = lazy(() => import("@/components/uma/error-presentation").catch(() => ({
+  default: ({ fallback }: { fallback: ReactNode }) => <>{fallback}</>,
+})));
 
 const alertVariants = cva("flex gap-3 rounded-[var(--radius-card)] border p-4 text-sm leading-6", {
   variants: {
@@ -36,14 +40,18 @@ export type AlertProps = Omit<ComponentProps<"div">, "title"> &
     children?: ReactNode;
     /** 追加在标题后的操作区 */
     action?: ReactNode;
+    fault?: boolean;
+    diagnosticId?: string;
+    noticeKey?: string;
   };
 
-export function Alert({ className, tone = "info", title, children, action, ...props }: AlertProps) {
+export function Alert({ className, tone = "info", title, children, action, fault, diagnosticId, noticeKey, ...props }: AlertProps) {
   const { t } = useTranslation("common");
   const resolvedTone = tone ?? "info";
   const Icon = TONE_ICON[resolvedTone];
-  return (
-    <div role="alert" data-tone={resolvedTone} className={cn(alertVariants({ tone }), className)} {...props}>
+  const isFault = fault || resolvedTone === "danger" || resolvedTone === "offline";
+  const notice = (
+    <div role="alert" data-tone={resolvedTone} className={cn(alertVariants({ tone }), isFault && "uma-error-fallback", className)} {...props}>
       <Icon aria-hidden="true" className="mt-0.5 size-5 shrink-0" />
       <div className="min-w-0 flex-1">
         <p className="font-semibold">
@@ -52,10 +60,12 @@ export function Alert({ className, tone = "info", title, children, action, ...pr
           {title}
         </p>
         {children ? <div className="mt-1 text-[var(--color-muted)]">{children}</div> : null}
+        {diagnosticId ? <p>{t("state.problemId")}：<span className="uma-code">{diagnosticId}</span></p> : null}
         {action ? <div className="mt-3">{action}</div> : null}
       </div>
     </div>
   );
+  return isFault ? <Suspense fallback={notice}><ErrorPresentation fallback={notice} title={title} action={action} diagnosticId={diagnosticId} noticeKey={noticeKey} tone={resolvedTone}>{children}</ErrorPresentation></Suspense> : notice;
 }
 
 export { alertVariants };

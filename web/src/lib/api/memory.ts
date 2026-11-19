@@ -1,5 +1,6 @@
 // Face references are opaque; hidden cards must not gain readable names or pair hints through normalization
 import type { components } from "./types";
+import { settledScore, settledSurrendered } from "./result-score";
 
 type Schemas = components["schemas"];
 
@@ -26,6 +27,7 @@ export type MemorySelf = {
   maxAttempts: number;
   finished: boolean;
   scoreUnits: number;
+  surrendered?: boolean;
 };
 
 export type MemoryProgress = {
@@ -124,7 +126,8 @@ export function normalizeMemoryRound(view: Schemas["RoundView"] | null | undefin
         attempts: num(selfRecord["attempts"]) ?? 0,
         maxAttempts: num(selfRecord["maxAttempts"]) ?? num(config["maxAttempts"]) ?? 20,
         finished: selfRecord["finished"] === true,
-        scoreUnits: num(selfRecord["scoreUnits"]) ?? 0,
+        scoreUnits: settledScore(view, selfRecord["subjectId"]) ?? num(selfRecord["scoreUnits"]) ?? 0,
+        surrendered: settledSurrendered(view, selfRecord["subjectId"]),
       }
     : null;
 
@@ -167,7 +170,7 @@ export function normalizeMemoryRound(view: Schemas["RoundView"] | null | undefin
       if (pairCards.length === 0) continue;
       revealedPairs.push({
         pairId: str(record["pairId"]) ?? "",
-        label: str(record["label"]) ?? "未命名",
+        label: str(record["label"]) ?? "",
         cards: pairCards,
       });
     }
@@ -176,7 +179,7 @@ export function normalizeMemoryRound(view: Schemas["RoundView"] | null | undefin
   const finished = self?.finished ?? false;
 
   return {
-    phase: typeof publicState["phase"] === "string" ? publicState["phase"] : "",
+    phase: view.round?.phase ?? (typeof publicState["phase"] === "string" ? publicState["phase"] : ""),
     viewSeconds: num(config["viewSeconds"]),
     answerSeconds: num(config["answerSeconds"]),
     maxAttempts: num(config["maxAttempts"]) ?? 20,

@@ -53,7 +53,7 @@ export const clueCards = [
     "id": "dc-09",
     "source": "档案 I：陪练安排表",
     "zh-Hant": "檔案 I：陪練安排表",
-    "ja": "資料 I：練習パートナー表"
+    "ja": "資料 I：挑戰パートナー表"
   },
   {
     "id": "dc-10",

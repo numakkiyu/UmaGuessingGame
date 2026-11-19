@@ -2,6 +2,7 @@ package httpapi
 
 import (
 	"encoding/json"
+	"github.com/bhcn/umaguessinggame/internal/account"
 	"github.com/bhcn/umaguessinggame/internal/admission"
 	"github.com/bhcn/umaguessinggame/internal/characternames"
 	"github.com/bhcn/umaguessinggame/internal/room"
@@ -45,18 +46,20 @@ type sessionUpdateDTO struct {
 
 // publicConfigDTO matches PublicConfig.
 type publicConfigDTO struct {
-	Admission         admission.PublicConfig     `json:"admission"`
-	SiteName          string                     `json:"siteName"`
-	APIVersion        string                     `json:"apiVersion"`
-	ServerTime        string                     `json:"serverTime"`
-	DeploymentMode    string                     `json:"deploymentMode"`
-	MaxRoomMembers    int                        `json:"maxRoomMembers"`
-	MaxRoomSpectators int                        `json:"maxRoomSpectators"`
-	EnabledModeIDs    []string                   `json:"enabledModeIds"`
-	ModeCapabilities  map[string]map[string]bool `json:"modeCapabilities"`
-	DefaultTransport  string                     `json:"defaultTransport"`
-	AssetBaseURL      string                     `json:"assetBaseUrl"`
-	BuildVersion      string                     `json:"buildVersion"`
+	Accounts                account.PublicConfig       `json:"accounts"`
+	MatchmakingLobbyEnabled bool                       `json:"matchmakingLobbyEnabled"`
+	Admission               admission.PublicConfig     `json:"admission"`
+	SiteName                string                     `json:"siteName"`
+	APIVersion              string                     `json:"apiVersion"`
+	ServerTime              string                     `json:"serverTime"`
+	DeploymentMode          string                     `json:"deploymentMode"`
+	MaxRoomMembers          int                        `json:"maxRoomMembers"`
+	MaxRoomSpectators       int                        `json:"maxRoomSpectators"`
+	EnabledModeIDs          []string                   `json:"enabledModeIds"`
+	ModeCapabilities        map[string]map[string]bool `json:"modeCapabilities"`
+	DefaultTransport        string                     `json:"defaultTransport"`
+	AssetBaseURL            string                     `json:"assetBaseUrl"`
+	BuildVersion            string                     `json:"buildVersion"`
 }
 
 // modeDTO matches components.schemas.Mode.
@@ -73,6 +76,7 @@ type modeDTO struct {
 	InformationStyle  string `json:"informationStyle"`
 	SupportsTeams     bool   `json:"supportsTeams"`
 	ConfigSchemaURL   string `json:"configSchemaUrl,omitempty"`
+	StartRule         string `json:"startRule,omitempty"`
 }
 
 // modeListDTO matches ModeList.
@@ -392,11 +396,16 @@ type tradeDTO struct {
 
 // ticketCreateDTO matches TicketCreate.
 type ticketCreateDTO struct {
-	ModeConfig jsonRawMessage `json:"modeConfig"`
+	PoolID     string                `json:"poolId"`
+	Proof      room.MatchProofAnswer `json:"proof"`
+	ModeConfig jsonRawMessage        `json:"modeConfig"`
 }
 
 // ticketDTO matches components.schemas.Ticket.
 type ticketDTO struct {
+	PoolID     string  `json:"poolId"`
+	Players    int     `json:"players"`
+	Accepted   int     `json:"accepted"`
 	TicketID   string  `json:"ticketId"`
 	Status     string  `json:"status"`
 	RoomID     *string `json:"roomId"`

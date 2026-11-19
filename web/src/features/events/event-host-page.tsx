@@ -1,3 +1,5 @@
+import "@/i18n/start-requirements";
+import { startIssue } from "@/features/rooms/start-requirements";
 import { SelectField } from "@/components/ui/select";
 import { useCallback, useRef, useState } from "react";
 import { Link, useParams } from "react-router";
@@ -42,6 +44,7 @@ export function EventHostPage(){
 function EventHostWorkspace({eventId}:{eventId:string|null}){
  const {t,i18n}=useTranslation("eventHost"),{t:rt}=useTranslation("eventResults");
  const {api,session}=useApi();
+ const {t:requirement}=useTranslation("startRequirements");
  const data=useEventData(eventId,{pollIntervalMs:5000});
  const {event,standings,segments,refetch}=data;
  const roomQuery=useRoom(event?.roomId??null);
@@ -126,7 +129,7 @@ function EventHostWorkspace({eventId}:{eventId:string|null}){
   void run({kind:"segment",body:{modeConfig:newEventModeConfig(selected),label:label.trim(),scoreBudget:validBudget,roundCount:validRounds,competitive:!fun&&competitive}});
  }
  function startRound(s:SegmentRef){
-  if(!event||!s.modeConfig||event.status!=="running")return;
+  if(!event||!s.modeConfig||event.status!=="running"||startIssue(s.modeConfig.modeId,roomQuery.data?.room.members??[],s.modeConfig))return;
   void run({kind:"round",roomId:event.roomId,body:{segmentId:s.segmentId,modeConfig:s.modeConfig}});
  }
  function correct(){
@@ -138,7 +141,7 @@ function EventHostWorkspace({eventId}:{eventId:string|null}){
   {command.pending?<Alert tone="warning" title={t("pendingTitle")}><p>{t("pendingDetail")}</p><Button className="mt-2 h-auto min-h-11 whitespace-normal" disabled={command.busy||refreshing} onClick={()=>void run()}>{t("confirm")}</Button></Alert>:null}
   {command.expired?<Alert tone="warning" title={t("expiredTitle")}><p>{t("expiredDetail")}</p><Button variant="secondary" className="mt-2 h-auto min-h-11 whitespace-normal" disabled={refreshing} onClick={()=>void readLatest(true)}>{t("refresh")}</Button></Alert>:null}
   {command.storageLimited?<Alert tone="warning" title={t("storage")}><p>{t("storageDetail")}</p></Alert>:null}
-  {info&&!command.pending?<Alert tone="warning" title={info.title}><p>{info.detail}</p></Alert>:null}
+  {info&&!command.pending?<Alert fault tone="warning" title={info.title}><p>{info.detail}</p></Alert>:null}
   {notice?<p role="status" className="rounded-xl bg-[var(--color-panel-soft)] p-3 text-sm leading-6">{t(notice)}</p>:null}
  </>;
  let unavailable;
@@ -171,7 +174,8 @@ function EventHostWorkspace({eventId}:{eventId:string|null}){
     <section className="uma-panel min-w-0 p-4" aria-labelledby="programme-heading"><h2 id="programme-heading" className="font-bold">{t("programme")}</h2>{!segments.length?<p className="mt-2 text-sm">{t("noProgramme")}</p>:<ol className="mt-3 space-y-2">{segments.map((s,index)=>{
      const playable=s.hasDetail&&s.modeConfig&&s.status!=="completed"&&s.status!=="voided"&&s.status!=="void"&&s.completedRounds<(s.roundCount??1)&&(!s.roundId||s.currentRoundPhase==="settled");
      const state=s.status==="planned"?"planned":s.status==="running"?"segmentRunning":s.status==="completed"?"segmentCompleted":s.status==="void"||s.status==="voided"?"segmentVoided":null;
-     return <li key={s.segmentId} className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-[var(--color-line)] p-3"><div className="min-w-0"><h3 className="break-words text-sm font-semibold">{eventSegmentLabel(s,index)}</h3><p className="mt-1 flex flex-wrap gap-2 text-xs text-[var(--color-muted)]">{state?<span>{t(state)}</span>:null}{!s.competitive?<span>{t("funTag")}</span>:null}<span>{t("roundProgress",{done:s.completedRounds,total:s.roundCount??1})}</span></p></div>{playable?<Button variant="secondary" disabled={disabled||event.status!=="running"||!!roundId&&!['settled','cancelled'].includes(round.meta?.phase??"")} onClick={()=>startRound(s)}>{t(s.startedRounds>0?"nextRound":"newRound")}</Button>:s.roundId?<span className="text-sm text-[var(--color-muted)]">{t(s.status==="completed"?"segmentDone":s.status==="void"||s.status==="voided"?"segmentVoid":"roundStarted")}</span>:null}</li>;
+     const issue=s.modeConfig?startIssue(s.modeConfig.modeId,roomQuery.data?.room.members??[],s.modeConfig):null;
+     return <li key={s.segmentId} className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-[var(--color-line)] p-3"><div className="min-w-0"><h3 className="break-words text-sm font-semibold">{eventSegmentLabel(s,index)}</h3><p className="mt-1 flex flex-wrap gap-2 text-xs text-[var(--color-muted)]">{state?<span>{t(state)}</span>:null}{!s.competitive?<span>{t("funTag")}</span>:null}<span>{t("roundProgress",{done:s.completedRounds,total:s.roundCount??1})}</span></p>{issue?<p className="mt-2 text-sm leading-6 text-[var(--color-near-edge)]">{requirement(issue)}</p>:null}</div>{playable?<Button variant="secondary" disabled={!!issue||disabled||event.status!=="running"||!!roundId&&!['settled','cancelled'].includes(round.meta?.phase??"")} onClick={()=>startRound(s)}>{t(s.startedRounds>0?"nextRound":"newRound")}</Button>:s.roundId?<span className="text-sm text-[var(--color-muted)]">{t(s.status==="completed"?"segmentDone":s.status==="void"||s.status==="voided"?"segmentVoid":"roundStarted")}</span>:null}</li>;
     })}</ol>}</section>
     {roundId?<SubmissionProgressPanel round={round.raw} room={roomQuery.data?.room} phase={round.meta?.phase} paused={round.meta?.paused} modeName={round.meta?eventModeLabel(round.meta.modeId):undefined}/>:<section className="uma-panel p-4"><h2 className="font-bold">{rt("progress")}</h2><p className="mt-2 text-sm leading-6">{t("noRound")}</p></section>}
     <section className="uma-panel min-w-0 p-4" aria-labelledby="add-segment-heading"><h2 id="add-segment-heading" className="font-bold">{t("add")}</h2>{!canEdit?<p className="mt-2 text-sm">{t("programmeLocked")}</p>:<form noValidate onSubmit={e=>{e.preventDefault();add();}}>

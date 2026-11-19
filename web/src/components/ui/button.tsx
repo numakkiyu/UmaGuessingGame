@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
   [
-    "inline-flex items-center justify-center gap-2 whitespace-nowrap",
+    "uma-button inline-flex items-center justify-center gap-2 whitespace-nowrap",
     "rounded-[var(--radius-control-lg)] font-semibold",
     "transition-[background-color,border-color,color,transform,opacity] duration-[var(--duration-quick)] ease-[var(--ease-primary)]",
     "select-none",

@@ -1,3 +1,6 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import "@/i18n/start-requirements";
+import { startIssue } from "./start-requirements";
 
 import "@/i18n/room";
 import { useTranslation } from "@/i18n";
@@ -9,7 +12,7 @@ import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { useApi } from "@/lib/api";
 import { describeFailure, localizeFailure } from "@/lib/api/client";
-import { modeDisplayName } from "@/lib/api/types";
+import { toKnownModeId } from "@/lib/api/types";
 import { useRoom } from "@/lib/api/room-queries";
 import { TeamPanel } from "./team-panel";
 import { RoomRoster } from "./room-roster";
@@ -20,8 +23,9 @@ import { useRealtime } from "@/lib/realtime/use-realtime";
 const ROOM_STATUSES = ["lobby", "ready", "playing", "finished", "archived", "cancelled"];
 
 export function RoomLobbyView({ roomId }: { roomId: string }) {
-  const { t } = useTranslation("room");
+  const { t } = useTranslation(["room", "modes"]);
   const { api } = useApi();
+  const { t: requirement } = useTranslation("startRequirements");
   const roomQuery = useRoom(roomId);
   const [starting, setStarting] = useState(false);
   const [updatingReady, setUpdatingReady] = useState(false);
@@ -59,8 +63,10 @@ export function RoomLobbyView({ roomId }: { roomId: string }) {
   const self = room.viewer;
   const canStart = self.capabilities.includes("host") || self.capabilities.includes("manage-room");
 
+  const issue = startIssue(room.modeId, room.members);
+
   async function startRound() {
-    if (starting) return;
+    if (starting || issue) return;
     setStarting(true);
     setFailure(null);
     try {
@@ -105,11 +111,11 @@ export function RoomLobbyView({ roomId }: { roomId: string }) {
     <div className="uma-stack">
       <ConnectionBar
         status={connectionStatus}
-        detail={connectionDetail(room.name, realtime.transport)}
+        detail={connectionDetail(roomDisplayName(room, t("forms.matchmaking")), realtime.transport)}
       />
 
       <section className="uma-panel p-5">
-        <h1 className="u-fluid-task text-[var(--color-ink)]">{room.name}</h1>
+        <h1 className="u-fluid-task text-[var(--color-ink)]">{room.kind === "matchmaking" ? t("forms.matchmaking") : room.name}</h1>
         {/*
           ：不显示 room.status 原始值与 roomVersion。
           「lobby / roomVersion」是内部状态，玩家只需要知道「在等人」还是「已开始」。
@@ -118,14 +124,14 @@ export function RoomLobbyView({ roomId }: { roomId: string }) {
           {t(`forms.${room.kind === "solo" || room.kind === "friend" || room.kind === "matchmaking" ? room.kind : "event"}`)} ·{" "}
           {t(ROOM_STATUSES.includes(room.status) ? `statuses.${room.status}` : "inProgress")}
         </p>
-        <p className="mt-2 font-semibold text-[var(--color-action-green)]">{t("project", { mode: modeDisplayName(room.modeId) })}</p>
+        <p className="mt-2 font-semibold text-[var(--color-action-green)]">{t("project", { mode: toKnownModeId(room.modeId) ? t(`${room.modeId}.name`, { ns: "modes" }) : t("unknownMode") })}</p>
         {/* 分享使用邀请链接和匹配码，不展示内部 roomId */}
       </section>
 
-      {canStart && room.kind !== "solo" && room.inviteCode ? <section className="uma-card border-[var(--color-brand-green)] p-4" aria-labelledby="room-invitation"><h2 id="room-invitation" className="text-base font-bold">{t("invite")}</h2><div className="mt-3 flex flex-wrap items-center gap-3"><p className="text-sm">{t("codeLabel")}<strong className="uma-code select-all text-xl tracking-widest" data-testid="room-invite-code">{room.inviteCode}</strong></p><Button variant="secondary" onClick={() => void copyInvitation()}>{t("copyInvite")}</Button></div><p role="status" className="mt-2 text-sm leading-6 text-[var(--color-muted)]">{t(copied || "inviteHint")}</p></section> : null}
+      {canStart && room.kind !== "solo" && room.kind !== "matchmaking" && room.inviteCode ? <section className="uma-card border-[var(--color-brand-green)] p-4" aria-labelledby="room-invitation"><h2 id="room-invitation" className="text-base font-bold">{t("invite")}</h2><div className="mt-3 flex flex-wrap items-center gap-3"><p className="text-sm">{t("codeLabel")}<strong className="uma-code select-all text-xl tracking-widest" data-testid="room-invite-code">{room.inviteCode}</strong></p><Button variant="secondary" onClick={() => void copyInvitation()}>{t("copyInvite")}</Button></div><p role="status" className="mt-2 text-sm leading-6 text-[var(--color-muted)]">{t(copied || "inviteHint")}</p></section> : null}
 
       <RoomRoster room={room} />
-      {self.capabilities.includes("play") ? <Button className="w-full sm:w-fit" variant="secondary" disabled={updatingReady || starting} onClick={() => void toggleReady()}>{t(updatingReady ? "confirming" : self.ready ? "cancelReady" : "getReady")}</Button> : null}
+      {self.capabilities.includes("play") && room.kind !== "matchmaking" ? <Button className="w-full sm:w-fit" variant="secondary" disabled={updatingReady || starting} onClick={() => void toggleReady()}>{t(updatingReady ? "confirming" : self.ready ? "cancelReady" : "getReady")}</Button> : null}
 
       {info ? (
         <Alert tone="danger" title={info.title}>
@@ -140,7 +146,7 @@ export function RoomLobbyView({ roomId }: { roomId: string }) {
 
       {/* Optional setup stays folded so the main action follows the roster on
           narrow screens. Existing teams remain accessible in older rooms. */}
-      {room.kind === "event" || room.modeId === "clue-puzzle" || room.teams.length > 0 ? (
+      {room.kind === "event" || ["clue-puzzle","strategy-race","rapport"].includes(room.modeId) || room.teams.length > 0 ? (
         <details className="uma-card uma-disclosure p-4" open={room.teams.length > 0 ? true : undefined}>
           <summary className="min-h-11 cursor-pointer content-center font-semibold">{t(room.teams.length > 0 ? "adjustTeams" : "needTeams")}</summary>
           <div className="mt-3"><TeamPanel
@@ -159,14 +165,15 @@ export function RoomLobbyView({ roomId }: { roomId: string }) {
           <>
             <h2 className="text-base font-bold text-[var(--color-ink)]">{t("start")}</h2>
             <p className="mt-1 text-sm text-[var(--color-muted)]">
-              {t("startHint", { mode: modeDisplayName(room.modeId) })}
+              {t("startHint", { mode: toKnownModeId(room.modeId) ? t(`${room.modeId}.name`, { ns: "modes" }) : t("unknownMode") })}
             </p>
+            {issue ? <p role="status" className="mt-3 text-sm leading-6 text-[var(--color-near-edge)]">{requirement(issue)}</p> : null}
             <Button
               variant="primary"
               size="primary"
               className="mt-3 h-auto min-h-11 w-full whitespace-normal sm:w-auto"
               onClick={() => void startRound()}
-              disabled={starting}
+              disabled={starting || !!issue}
             >
               {starting ? (
                 <Loader2 aria-hidden="true" className="size-4 motion-safe:animate-spin" />

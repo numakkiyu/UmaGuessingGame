@@ -1,3 +1,4 @@
+import { usePlayerName } from "@/lib/player-name";
 import { SelectField } from "@/components/ui/select";
 // Events require an event room first; keep the two creation steps recoverable independently
 import { useEffect, useRef, useState } from "react";
@@ -27,6 +28,7 @@ function loadAttempt(): StoredCreation {
 type Notice = "identity" | "expired" | "uncertain" | "rejected";
 
 export function CreateEventPage() {
+  const displayName = usePlayerName();
   const { t } = useTranslation("eventCreate");
   const { api, ensureSession, restoreSession, session, sessionLoading } = useApi();
   const navigate = useNavigate();
@@ -99,7 +101,7 @@ export function CreateEventPage() {
           setBlocked(true); setNotice("expired"); return;
         }
       } else {
-        const originalIdentity = await ensureSession([...trimmed].slice(0,16).join(""));
+        const originalIdentity = await ensureSession(displayName);
         pending = newEventCreation(originalIdentity.sessionId, {
           name: [...t("roomName",{name:trimmed})].slice(0,48).join(""), kind:"event", modeConfig:newEventModeConfig(baseMode!),
           maxPlayers:seats, maxSpectators:audience, allowSpectators:audience > 0, visibility:"invite",

@@ -5,8 +5,8 @@ on:
     branches:
       - main
       - develop
-      - "codex/**"
   pull_request:
+  merge_group:
   workflow_dispatch:
 
 concurrency:
@@ -16,24 +16,34 @@ concurrency:
 permissions:
   contents: read
 
+defaults:
+  run:
+    shell: bash --noprofile --norc -e -o pipefail {0}
+
 jobs:
   repository:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: 24
       - name: Check repository contents
         run: node web/scripts/check-repository.mjs
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+      - name: Lint workflow definitions
+        run: go run github.com/rhysd/actionlint/cmd/actionlint@v1.7.7
 
   go:
     needs: web
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
       - name: Download the frontend build for embedding
         uses: actions/download-artifact@v4
@@ -42,14 +52,13 @@ jobs:
           path: internal/spafs/dist
 
       - name: Set up Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
         with:
           go-version-file: go.mod
           cache: true
 
       - name: Verify formatting
         run: |
-          # Propagate command failures through pipelines
           set -euo pipefail
           out=$(gofmt -l cmd internal)
           if [ -n "$out" ]; then
@@ -61,19 +70,22 @@ jobs:
       - name: Vet
         run: go vet ./...
 
-      - name: Test with race detector
-        run: go test ./... -count=1 -race
-
-      - name: Coverage
+      - name: Test with race detection and coverage
         run: |
-          # Propagate command failures through pipelines
-          set -euo pipefail
-          go test ./... -count=1 -coverprofile=coverage.out
+          go test ./... -count=1 -race -covermode=atomic -coverprofile=coverage.out
           go tool cover -func=coverage.out | tail -1
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: go-coverage
+          path: coverage.out
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Vulnerability scan
         run: |
-          # Propagate command failures through pipelines
           set -euo pipefail
           go install golang.org/x/vuln/cmd/govulncheck@latest
           govulncheck ./...
@@ -85,15 +97,15 @@ jobs:
       run:
         working-directory: web
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 10.33.0
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: 24
           cache: pnpm
@@ -114,6 +126,12 @@ jobs:
       - name: Lint
         run: pnpm run lint
 
+      - name: Check player-facing copy
+        run: pnpm run copy:check
+
+      - name: Check API references
+        run: pnpm run api:check
+
       - name: Test
         run: pnpm run test
 
@@ -122,9 +140,7 @@ jobs:
 
       - name: Check the embedded SPA is not stale
         working-directory: .
-        # Verify the files embedded into the Go binary match the frontend build
         run: |
-          # Propagate command failures through pipelines
           set -euo pipefail
           make embed-spa
           make embed-spa-check
@@ -147,10 +163,10 @@ jobs:
       run:
         working-directory: web
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
       - name: Set up Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
         with:
           go-version-file: go.mod
           cache: true
@@ -158,10 +174,10 @@ jobs:
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 10.33.0
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: 24
           cache: pnpm
@@ -177,7 +193,6 @@ jobs:
 
       - name: Validate OpenAPI document and route parity
         working-directory: .
-        # Check both undocumented routes and documented routes missing from the router
         run: go run ./cmd/content contract --spec api/openapi.json --routes
 
       - name: Regenerate API types
@@ -186,7 +201,6 @@ jobs:
       - name: Fail on drift
         working-directory: .
         run: |
-          # Propagate command failures through pipelines
           set -euo pipefail
           if ! git diff --exit-code -- web/src/lib/api/schema.d.ts; then
             echo "generated API types are stale; run 'make web-api-types' and commit"
@@ -195,21 +209,66 @@ jobs:
 
       - name: Fail if the contract artifact is untracked
         working-directory: .
-        # The public contract must be available in clean checkouts
         run: |
-          # Propagate command failures through pipelines
           set -euo pipefail
           if ! git ls-files --error-unmatch api/openapi.json >/dev/null 2>&1; then
             echo "api/openapi.json is not tracked by git; the contract must be a project artifact"
             exit 1
           fi
 
+  content:
+    needs: repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+      - name: Verify module checksums
+        run: go mod verify
+      - name: Decode and verify the complete audio library
+        run: go run ./cmd/content audio-verify
+      - name: Compile content from repository sources
+        run: go run ./cmd/content build --out content
+      - name: Verify the published content pack
+        run: go run ./cmd/content verify --out content
+      - name: Exercise published question pools
+        run: go test ./internal/e2e -run TestPublishedQuestionPools -count=1 -v
+
+  docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.0
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: docs/pnpm-lock.yaml
+      - name: Install documentation dependencies
+        run: pnpm --dir docs install --frozen-lockfile
+      - name: Check translations and links
+        run: pnpm --dir docs run check
+      - name: Build documentation
+        env:
+          DOCS_BASE: /UmaGuessingGame/
+        run: pnpm --dir docs run build
+      - name: Install browser for documentation checks
+        run: pnpm --dir docs exec playwright install --with-deps chromium
+      - name: Check documentation layout and navigation
+        run: pnpm --dir docs run check:layout
+
   docker:
     runs-on: ubuntu-latest
     timeout-minutes: 25
-    needs: [go, web]
+    needs: [go, web, content, docs, contract]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -223,3 +282,15 @@ jobs:
           tags: umaguessinggame:ci
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+  checks:
+    if: always()
+    needs: [repository, go, web, contract, content, docs, docker]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Require all checks to pass
+        env:
+          RESULTS: ${{ toJSON(needs.*.result) }}
+        run: |
+          node -e 'const results = JSON.parse(process.env.RESULTS); if (!results.length || results.some(result => result !== "success")) { console.error("Required checks did not pass:", results); process.exit(1); }'

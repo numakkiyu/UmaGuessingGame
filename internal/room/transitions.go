@@ -169,7 +169,7 @@ func (s *Service) CreateTransition(ctx context.Context, actor Actor, roundID str
 		return TransitionResult{}, problem.Internal(fmt.Errorf("room: begin transition: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return TransitionResult{}, err
 	}
 

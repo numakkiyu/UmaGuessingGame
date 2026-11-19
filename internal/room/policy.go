@@ -30,8 +30,15 @@ func (s *Service) ModeCapabilities() map[string]map[string]bool {
 		// Only advertise execution adapters that actually exist.
 		caps["local"] = caps["local"] && (m.ID() == "classic" || m.ID() == "sort" || m.ID() == "memory" || m.ID() == "aptitude-grid" || m.ID() == "draft" || m.ID() == "race-rebuild" || m.ID() == "co-race-path" || m.ID() == "strategy-race" || m.ID() == "pedigree" || m.ID() == "audio")
 		caps["verified"] = caps["verified"] && m.ID() == "classic"
-		// Random two-player matching is currently a classic game feature.
-		caps["matchmaking"] = caps["matchmaking"] && m.ID() == "classic"
+		// Public queues are available only for curated fixed-rule modes.
+		caps["matchmaking"] = caps["matchmaking"] && (m.ID() == "classic" || m.ID() == "sort" || m.ID() == "memory")
+		if limit := s.cfg.Policy.Limits.PlayersPerRoom; limit > 0 {
+			minimum := 4
+			if m.ID() == "classic" {
+				minimum = 2
+			}
+			caps["matchmaking"] = caps["matchmaking"] && limit >= minimum
+		}
 		caps["solo"] = caps["solo"] && m.MinSubjects() <= 1
 		if !s.ModeAvailability(m).Available {
 			for form := range caps {
@@ -51,7 +58,7 @@ func (s *Service) hasPlayableForm(modeID string, minSubjects int) bool {
 		if form == "verified" && modeID != "classic" {
 			continue
 		}
-		if form == "matchmaking" && modeID != "classic" {
+		if form == "matchmaking" && modeID != "classic" && modeID != "sort" && modeID != "memory" {
 			continue
 		}
 		if form == "solo" && minSubjects > 1 {

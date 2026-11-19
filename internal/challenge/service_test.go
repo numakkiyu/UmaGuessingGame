@@ -20,6 +20,57 @@ import (
 
 type testContent struct{}
 
+type widerTestContent struct{}
+
+func (widerTestContent) Version() string { return "wider-test-pack" }
+func (widerTestContent) Section(name string) (json.RawMessage, bool) {
+	raw, ok := (testContent{}).Section(name)
+	if !ok {
+		return nil, false
+	}
+	var section map[string][]map[string]any
+	if err := json.Unmarshal(raw, &section); err != nil {
+		panic(err)
+	}
+	twin := map[string]any{}
+	for key, value := range section["cards"][0] {
+		twin[key] = value
+	}
+	twin["id"], twin["ambiguityGroup"] = "guess_only", "twins"
+	section["practiceCards"] = append(append([]map[string]any{}, section["cards"]...), twin)
+	encoded, err := json.Marshal(section)
+	if err != nil {
+		panic(err)
+	}
+	return encoded, true
+}
+
+func TestChallengeAcceptsGuessOnlyCharacterWithoutDrawingItAsAnswer(t *testing.T) {
+	s, owner, _ := setup(t)
+	s.source = widerTestContent{}
+	v := issue(t, s, owner, "wider-pool")
+	if len(v.CharacterIDs) != 3 || len(v.Characters) != 3 || answerID(t, s, v.ChallengeID) == "guess_only" {
+		t.Fatal("guess pool and answer eligibility were conflated")
+	}
+	raw, err := json.Marshal(v.Characters)
+	if err != nil || strings.Contains(string(raw), "star") || strings.Contains(string(raw), "ambiguityGroup") {
+		t.Fatal("candidate identities leaked comparison data", string(raw), err)
+	}
+	// Guessing must continue against frozen content after the source changes.
+	s.source = testContent{}
+	next, err := s.Guess(context.Background(), owner, v.ChallengeID, "guess-only", GuessInput{Ticket: v.Ticket, CharacterID: "guess_only", ExpectedRevision: 0})
+	if err != nil || next.Attempts != 1 || next.RemainingWrong != 3 || next.Status != "active" {
+		t.Fatalf("guess-only selection failed: %+v %v", next, err)
+	}
+	if len(next.Characters) != 3 || next.Characters[2].CharacterID != "guess_only" || next.Characters[2].DisplayName != "甲" {
+		t.Fatalf("frozen identities lost: %+v", next.Characters)
+	}
+	restored, err := s.Get(context.Background(), owner, v.ChallengeID)
+	if err != nil || len(restored.Characters) != 3 {
+		t.Fatalf("frozen candidates lost on reload: %+v %v", restored, err)
+	}
+}
+
 func (testContent) Version() string { return "test-pack" }
 func (testContent) Section(name string) (json.RawMessage, bool) {
 	if name != "classic.characters" {

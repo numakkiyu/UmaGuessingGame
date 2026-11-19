@@ -140,6 +140,9 @@ func decodeConfig(raw json.RawMessage) (Config, error) {
 	default:
 		return Config{}, fmt.Errorf("classic: unknown winPolicy %q", cfg.WinPolicy)
 	}
+	if cfg.Variant == VariantFriend {
+		cfg.WinPolicy = WinPolicyFirstCorrect
+	}
 	switch cfg.Variant {
 	case VariantSingle, VariantFriend, VariantPublic:
 	default:
@@ -185,8 +188,9 @@ type state struct {
 	// state blob still decodes; see Guesses for why both exist.
 	Rows []GuessRow `json:"rows"`
 	// Solved and Failed are terminal flags.
-	Solved bool `json:"solved"`
-	Failed bool `json:"failed"`
+	Solved      bool `json:"solved"`
+	Failed      bool `json:"failed"`
+	Surrendered bool `json:"surrendered,omitempty"`
 	// SolvedAtAttempt is the attempt index that solved the round, 0 if unsolved.
 	SolvedAtAttempt int `json:"solvedAtAttempt"`
 	// SolvedAtMillis is the server-assigned arrival time of the solving guess.
@@ -197,7 +201,7 @@ type state struct {
 }
 
 // finished reports whether the subject can no longer act.
-func (s state) finished() bool { return s.Solved || s.Failed }
+func (s state) finished() bool { return s.Solved || s.Failed || s.Surrendered }
 
 // rosterEntry is one participant recorded in the public prepared state.
 type rosterEntry struct {
@@ -328,24 +332,37 @@ func (*Mode) Prepare(ctx context.Context, in modes.PrepareInput) (modes.Prepared
 		return modes.Prepared{}, err
 	}
 
-	// Competitive rounds must exclude ambiguous vectors: two characters with
-	// identical nine fields cannot be told apart by the feedback alone, so the
-	// program must not silently treat them as one identity .
-	pool := make([]Character, 0, len(chars))
+	// Only unambiguous characters may be competitive answers. The wider,
+	// comparable pool remains available for guesses, as in local practice.
+	answers := make([]Character, 0, len(chars))
 	for _, c := range chars {
 		if !cfg.Practice && c.AmbiguityGroup != "" {
 			continue
 		}
-		pool = append(pool, c)
+		answers = append(answers, c)
 	}
-	if len(pool) < 2 {
+	if len(answers) < 2 {
 		return modes.Prepared{}, fmt.Errorf(
-			"classic: pool has %d comparable characters, need at least 2", len(pool),
+			"classic: pool has %d eligible answers, need at least 2", len(answers),
 		)
 	}
 
-	answerIdx := modeutil.PickIndex(in.Scope.Seed, "classic.answer", len(pool))
-	answer := pool[answerIdx]
+	pool, err := loadCharacters(in.Content, true)
+	if err != nil {
+		return modes.Prepared{}, err
+	}
+	answerIdx := modeutil.PickIndex(in.Scope.Seed, "classic.answer", len(answers))
+	answer := answers[answerIdx]
+	answerGuessable := false
+	for _, c := range pool {
+		if c.ID == answer.ID {
+			answerGuessable = true
+			break
+		}
+	}
+	if !answerGuessable {
+		return modes.Prepared{}, fmt.Errorf("classic: selected answer is absent from guess pool")
+	}
 
 	roster := make([]rosterEntry, 0, len(in.Subject))
 	seen := make(map[string]struct{}, len(in.Subject))
@@ -557,6 +574,7 @@ type progress struct {
 	RemainingWrong int  `json:"remainingWrong"`
 	Solved         bool `json:"solved"`
 	Failed         bool `json:"failed"`
+	Surrendered    bool `json:"surrendered,omitempty"`
 	// SolvedAtAttempt and SolvedAtMillis make "who solved it first" decidable from the
 	// snapshot alone.
 	//
@@ -570,16 +588,18 @@ type progress struct {
 
 // projection is the viewer-specific round state.
 type projection struct {
-	ModeID       string        `json:"modeId"`
-	RulesVersion string        `json:"rulesVersion"`
-	Phase        modes.Phase   `json:"phase"`
-	Config       Config        `json:"config"`
-	FieldOrder   []string      `json:"fieldOrder"`
-	PoolSize     int           `json:"poolSize"`
-	Subjects     []progress    `json:"subjects"`
-	Self         *selfView     `json:"self,omitempty"`
-	Shadows      []shadowRow   `json:"shadows,omitempty"`
-	Answer       *answerReveal `json:"answer,omitempty"`
+	ModeID                   string        `json:"modeId"`
+	RulesVersion             string        `json:"rulesVersion"`
+	Phase                    modes.Phase   `json:"phase"`
+	Config                   Config        `json:"config"`
+	FieldOrder               []string      `json:"fieldOrder"`
+	PoolSize                 int           `json:"poolSize"`
+	Pool                     []poolCard    `json:"pool"`
+	Subjects                 []progress    `json:"subjects"`
+	Self                     *selfView     `json:"self,omitempty"`
+	Shadows                  []shadowRow   `json:"shadows,omitempty"`
+	Answer                   *answerReveal `json:"answer,omitempty"`
+	SurrenderWinnerSubjectID string        `json:"surrenderWinnerSubjectId,omitempty"`
 }
 
 // selfView is the caller's own full state.
@@ -589,6 +609,7 @@ type selfView struct {
 	RemainingWrong int        `json:"remainingWrong"`
 	Solved         bool       `json:"solved"`
 	Failed         bool       `json:"failed"`
+	Surrendered    bool       `json:"surrendered,omitempty"`
 	Rows           []GuessRow `json:"rows"`
 }
 
@@ -622,8 +643,14 @@ func (*Mode) Project(in modes.ProjectInput) (json.RawMessage, error) {
 		Config:       pub.Config,
 		FieldOrder:   pub.FieldOrder,
 		PoolSize:     pub.PoolSize,
+		Pool:         pub.Pool,
 		Subjects:     make([]progress, 0, len(pub.Subjects)),
 	}
+	winner, err := SurrenderWinner(in.Public, in.States)
+	if err != nil {
+		return nil, err
+	}
+	out.SurrenderWinnerSubjectID = winner
 
 	// Iterate the roster order recorded at prepare time, never the map, so the
 	// projection is byte-identical across runs .
@@ -639,6 +666,7 @@ func (*Mode) Project(in modes.ProjectInput) (json.RawMessage, error) {
 			RemainingWrong:  st.RemainingWrong,
 			Solved:          st.Solved,
 			Failed:          st.Failed,
+			Surrendered:     st.Surrendered,
 			SolvedAtAttempt: st.SolvedAtAttempt,
 			SolvedAtMillis:  st.SolvedAtMillis,
 		})
@@ -649,6 +677,7 @@ func (*Mode) Project(in modes.ProjectInput) (json.RawMessage, error) {
 				RemainingWrong: st.RemainingWrong,
 				Solved:         st.Solved,
 				Failed:         st.Failed,
+				Surrendered:    st.Surrendered,
 				Rows:           st.Rows,
 			}
 			continue
@@ -702,6 +731,10 @@ func (*Mode) Settle(in modes.SettleInput) ([]modes.Score, error) {
 	if budget == 0 {
 		budget = DefaultWrongBudget
 	}
+	winner, err := SurrenderWinner(in.Public, in.States)
+	if err != nil {
+		return nil, err
+	}
 
 	scores := make([]modes.Score, 0, len(pub.Subjects))
 	for _, entry := range pub.Subjects {
@@ -710,18 +743,23 @@ func (*Mode) Settle(in modes.SettleInput) ([]modes.Score, error) {
 			return nil, fmt.Errorf("classic: decode state of %q: %w", entry.SubjectID, err)
 		}
 		units := ActivityScore(st.Attempts, st.Solved, budget)
+		if entry.SubjectID == winner {
+			units = modeutil.Units(activityBase)
+		}
 		explanation := modeutil.Marshal(struct {
 			Attempts       int  `json:"attempts"`
 			RemainingWrong int  `json:"remainingWrong"`
 			Solved         bool `json:"solved"`
 			Failed         bool `json:"failed"`
 			WrongBudget    int  `json:"wrongBudget"`
+			WonBySurrender bool `json:"wonBySurrender,omitempty"`
 		}{
 			Attempts:       st.Attempts,
 			RemainingWrong: st.RemainingWrong,
 			Solved:         st.Solved,
 			Failed:         st.Failed,
 			WrongBudget:    budget,
+			WonBySurrender: entry.SubjectID == winner,
 		})
 		score := modes.Score{
 			Subject:       modes.Subject{ID: entry.SubjectID, Kind: entry.SubjectKind},
@@ -735,4 +773,27 @@ func (*Mode) Settle(in modes.SettleInput) ([]modes.Score, error) {
 		scores = append(scores, score)
 	}
 	return modes.RankScores(scores), nil
+}
+
+// AllFinished closes a round only when every original scoring subject has
+// exhausted their guesses, solved, or surrendered. One exhausted budget alone
+// never reveals the shared answer to a still-active opponent.
+func AllFinished(public json.RawMessage, states map[string]json.RawMessage) (bool, error) {
+	var pub publicPrepared
+	if err := json.Unmarshal(public, &pub); err != nil {
+		return false, err
+	}
+	if len(pub.Subjects) == 0 {
+		return false, nil
+	}
+	for _, subject := range pub.Subjects {
+		st, err := decodeState(states[subject.SubjectID])
+		if err != nil {
+			return false, err
+		}
+		if !st.finished() {
+			return false, nil
+		}
+	}
+	return true, nil
 }

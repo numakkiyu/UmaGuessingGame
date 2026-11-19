@@ -3,6 +3,7 @@ package sortgame
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"testing"
 
 	"github.com/bhcn/umaguessinggame/internal/modes"
@@ -933,5 +934,67 @@ func TestEmptySubmittedGroupsRejected(t *testing.T) {
 	dec, _ := applyOne(t, prep, subject, nil, sortActionGroups([][]string{{"a"}, {"b"}, {}, {"c"}, {"d"}, {"e"}, {"f"}}))
 	if dec.Accepted || dec.Code != CodeIncomplete {
 		t.Fatalf("empty group accepted: %+v", dec)
+	}
+}
+
+func TestConstantDrawUsesRemainingDifferentValue(t *testing.T) {
+	pack := packOf(
+		cardSpec{CharacterID: "a", Name: "甲", HeightCm: intPtr(160)},
+		cardSpec{CharacterID: "b", Name: "乙", HeightCm: intPtr(160)},
+		cardSpec{CharacterID: "c", Name: "丙", HeightCm: intPtr(160)},
+		cardSpec{CharacterID: "d", Name: "丁", HeightCm: intPtr(170)},
+	)
+	for i := 0; i < 64; i++ {
+		seed := fmt.Sprintf("constant-draw-%d", i)
+		prep, pub, priv := prepare(t, pack, seed, `{"cardCount":3}`, modes.Subject{ID: "p1", Kind: modes.SubjectPlayer})
+		values := map[int]bool{}
+		ids := map[string]bool{}
+		for _, c := range pub.Cards {
+			values[priv.Values[c.CharacterID]] = true
+			ids[c.CharacterID] = true
+		}
+		if len(values) < 2 || len(ids) != 3 {
+			t.Fatalf("invalid draw for %s: %s", seed, prep.Public)
+		}
+		replay, _, _ := prepare(t, pack, seed, `{"cardCount":3}`, modes.Subject{ID: "p1", Kind: modes.SubjectPlayer})
+		if string(prep.Public) != string(replay.Public) || string(prep.Private) != string(replay.Private) {
+			t.Fatal("draw is not deterministic")
+		}
+	}
+}
+
+func TestEventDatesUseGregorianCalendar(t *testing.T) {
+	for _, date := range []string{"2023-02-29", "1900-02-29", "2024-04-31", "0000-01-01"} {
+		if _, _, _, ok := parseISODate(date); ok {
+			t.Errorf("invalid event date accepted: %s", date)
+		}
+	}
+	for _, date := range []string{"2024-02-29", "2000-02-29", "2023-02-28"} {
+		if _, _, _, ok := parseISODate(date); !ok {
+			t.Errorf("valid event date rejected: %s", date)
+		}
+	}
+	if !validMonthDay(2, 29) {
+		t.Fatal("birthday without year must still allow leap day")
+	}
+}
+
+func TestEventDatesNeverMixUnknownOrDifferentRegions(t *testing.T) {
+	pack := packOf(
+		cardSpec{CharacterID: "jp1", Name: "日1", EventDate: map[string]string{"date": "2026-01-01", "region": "JP"}},
+		cardSpec{CharacterID: "jp2", Name: "日2", EventDate: map[string]string{"date": "2026-02-01", "region": "JP"}},
+		cardSpec{CharacterID: "cn1", Name: "中1", EventDate: map[string]string{"date": "2025-01-01", "region": "CN"}},
+		cardSpec{CharacterID: "unknown", Name: "未知地区", EventDate: "2024-01-01"},
+	)
+	subjects := []modes.Subject{{ID: "p1", Kind: modes.SubjectPlayer}}
+	_, err := New().Prepare(context.Background(), modes.PrepareInput{Scope: scope("mixed-region"), Subject: subjects, Content: pack, Config: json.RawMessage(`{"key":"eventDate","cardCount":2}`)})
+	if err == nil {
+		t.Fatal("mixed event regions admitted without an explicit region")
+	}
+	_, pub, _ := prepare(t, pack, "pinned-region", `{"key":"eventDate","cardCount":2,"eventRegion":"jp"}`, subjects...)
+	for _, card := range pub.Cards {
+		if card.CharacterID != "jp1" && card.CharacterID != "jp2" {
+			t.Fatal("date with different or unknown region admitted")
+		}
 	}
 }

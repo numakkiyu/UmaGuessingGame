@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { setPlayerName } from "./player-profile.mjs";
 /** Checks sorting controls, persisted drafts, hidden values before reveal and displayed results against a running service. */
 import { mkdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -108,8 +109,7 @@ async function main() {
   try {
     // ---- 1) 开局 ----
     await page.goto(`${WEB_BASE}/play/sort`, { waitUntil: "commit" });
-    await page.waitForSelector("input#sort-name", { timeout: 20000 });
-    await page.getByLabel("显示名").fill("排序E2E");
+    await setPlayerName(page, "排序E2E");
     await page.getByRole("button", { name: /开始对局/ }).click();
 
     // 不用 waitForURL：SSE 长连接让 load 事件永不触发

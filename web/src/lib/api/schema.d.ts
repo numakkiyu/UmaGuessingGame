@@ -374,7 +374,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Create the only active ticket for this session */
+        /**
+         * Create the only active ticket for this session
+         * @description Join a fixed FIFO pool after optional Turnstile and mandatory one-use SHA-256 work. Proof consumption and creation identity commit with the ticket. All members must accept within 20 seconds; the room starts automatically. Queue presence expires after 35 seconds without a heartbeat.
+         */
         post: operations["createMatchmakingTicket"];
         delete?: never;
         options?: never;
@@ -1005,7 +1008,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get?: never;
+        /**
+         * Read verification state without creating an identity
+         * @description Anonymous visits return required=false and verified=false. For an existing session, reports adaptive verification requirement. No token, fingerprint or risk score is returned. This read neither grants access nor extends grant lifetime.
+         */
+        get: operations["getAdmissionStatus"];
         put?: never;
         /**
          * Verify an entry challenge and grant a short session-bound entry permission
@@ -1035,6 +1042,174 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/matchmaking-lobby": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Read public queue and match counts */
+        get: operations["getMatchmakingLobby"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/matchmaking-proofs": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Issue a session-bound one-use admission challenge */
+        post: operations["createMatchmakingProof"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/matchmaking-tickets/current": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Restore the current session ticket */
+        get: operations["getActiveMatchmakingTicket"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/matchmaking-tickets/{ticketId}/heartbeat": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Renew the queue presence lease without extending confirmation */
+        post: operations["heartbeatMatchmakingTicket"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/account": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get account sign-in state
+         * @description Account credentials are independent of anonymous game sessions. Responses never include external provider tokens. The login flow uses authorization code, S256 PKCE and single-use browser-bound state; OIDC additionally verifies issuer, audience, signature and nonce.
+         */
+        get: operations["getAccount"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/account/renew": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Renew an active account session
+         * @description Account credentials are independent of anonymous game sessions. Responses never include external provider tokens. Origin and X-Account-CSRF are checked; renewal is bounded by idle and absolute expiry.
+         */
+        post: operations["renewAccount"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/account/session": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        /**
+         * Sign out of this browser
+         * @description Account credentials are independent of anonymous game sessions. Responses never include external provider tokens. Origin and X-Account-CSRF are checked; renewal is bounded by idle and absolute expiry.
+         */
+        delete: operations["deleteAccountSession"];
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/account/logins/{providerId}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Start external sign-in
+         * @description Account credentials are independent of anonymous game sessions. Responses never include external provider tokens. The login flow uses authorization code, S256 PKCE and single-use browser-bound state; OIDC additionally verifies issuer, audience, signature and nonce.
+         */
+        post: operations["startAccountLogin"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/account/callback/{providerId}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Consume a browser-bound external sign-in response
+         * @description Account credentials are independent of anonymous game sessions. Responses never include external provider tokens. The login flow uses authorization code, S256 PKCE and single-use browser-bound state; OIDC additionally verifies issuer, audience, signature and nonce.
+         */
+        get: operations["accountCallback"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -1050,7 +1225,7 @@ export interface components {
             code: string;
             requestId: string;
             retryable?: boolean;
-            /** @description path.route 的 missing_edge 拒绝使用 field=modeAction.characterIds[N]、message=missing_edge，N为1至6，是缺记录的第N步，也是目标角色的零基索引。仅定位此次提交中缺失的连接，不返回隐藏最短路线。前端应按稳定code和受控field本地化，不直出detail/message。 */
+            /** @description For a path.route rejection with code missing_edge, field is modeAction.characterIds[N] and message is missing_edge. N is 1–6: it identifies the missing step and the zero-based index of its destination in the submitted route. This identifies only the missing connection in that submission, never the hidden shortest route. Localize stable codes and validated field paths; raw detail and message are not player-facing text. */
             fieldErrors?: {
                 field: string;
                 message: string;
@@ -1092,6 +1267,9 @@ export interface components {
                 [key: string]: components["schemas"]["RuntimeCapabilities"];
             };
             admission?: components["schemas"]["AdmissionConfig"];
+            /** @description Controls the public lobby independently of play-form switches. */
+            matchmakingLobbyEnabled?: boolean;
+            accounts?: components["schemas"]["AccountAccess"];
         };
         Mode: {
             modeId: components["schemas"]["ModeId"];
@@ -1109,6 +1287,11 @@ export interface components {
             supportsTeams: boolean;
             /** Format: uri-reference */
             configSchemaUrl?: string;
+            /**
+             * @description Roster guidance for shared rooms; solo challenge admission is independent
+             * @enum {string}
+             */
+            startRule?: "standard" | "clue-puzzle" | "rapport" | "trade" | "strategy-race";
         };
         ModeList: {
             items: components["schemas"]["Mode"][];
@@ -1407,8 +1590,16 @@ export interface components {
             /** @enum {string} */
             winPolicy: "solo" | "first-correct" | "window-attempts";
             opponentShadows: components["schemas"]["ShadowRow"][];
+            /** @description Frozen guessable identities for this round. Includes comparable guess-only characters; does not identify the answer or expose comparison vectors. Clients must not widen this list using the global character directory. Existing rounds retain their original pool. */
+            pool?: {
+                id: string;
+                name: string;
+                imagePath: string;
+            }[];
+            /** @description Winner of a two-player first-correct round ended by an opponent surrender. This is a forfeit victory, not a correct guess. Omitted when no such surrender has ended the round. */
+            surrenderWinnerSubjectId?: string;
         };
-        /** @description 联机占格追加：challenge 的 cells 只投影当前作答主体自己的占格，不得取其他主体的同位置记录；旁观者仅看粗略进度，不随机展示一方的独立棋盘。duel 共用棋盘并按 turnSubjectId 轮流，self.subjectId 标识本人计分方；claim.subjectId 用于展示归属。所有终局成绩按 results 的主体与 rank 展示，duel 比较占格数，不能把共用棋盘正确率当作个人挑战分。揭晓前不得补全隐藏适性；取消局不显示成绩或答案。 */
+        /** @description In challenge play, cells contain only the current scoring subject's claims; records at the same coordinates from other subjects must not be substituted. Observers receive aggregate progress, not an arbitrarily selected private board. Duel play shares one board, alternates turnSubjectId, identifies the viewer's scoring side by self.subjectId, and attributes each claim through claim.subjectId. Final scores and ranks come from results. Duels compare claim counts; shared-board accuracy is not an individual challenge score. Hidden aptitudes remain unavailable before reveal. Cancelled rounds expose neither answers nor scores. */
         StateAptitudeGrid: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -1461,7 +1652,7 @@ export interface components {
                 style: "front" | "pace" | "late" | "end";
             }[];
         };
-        /** @description 运行时赛况投影以 entries 表示无序公开参赛者；clueRelations 是 cooperative 变体既有公开 clues 的等价结构化表达，不增加闭卷信息。本人 self.groups 保留最后确认的并列分组；旧记录只有 order 时不能从答案猜测原分组。截止前允许修订，correctPairs/真实名次只在获准揭晓后显示。answer.ranked.finishRank 保留真实名次及空缺，不按数组位置重编号。 */
+        /** @description entries contains unordered public entrants. In the cooperative variant, clueRelations structures the existing public clues without adding information to memory-only play. self.groups preserves the viewer's last confirmed tie groups; records containing only order must not infer groups from the answer. Answers may be revised until the deadline. correctPairs and actual ranks require authorized reveal. answer.ranked.finishRank preserves real ranks and gaps instead of renumbering entrants by array position. */
         StateRaceRebuild: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -1473,7 +1664,7 @@ export interface components {
             raceDate: string;
             cards: components["schemas"]["PublicCard"][];
             revealedOrder?: string[][];
-            /** @description 仅合作线索模式；与本局公开线索等价，不包含实际名次。旧记录可能缺失。 */
+            /** @description Only present in cooperative clue play. Equivalent to the round's public clues; contains no actual finish ranks. May be absent in older records. */
             clueRelations?: {
                 firstId: string;
                 secondId: string;
@@ -1481,7 +1672,7 @@ export interface components {
                 kind: "before" | "tied";
             }[];
         };
-        /** @description 联机同场之路运行时补充：publicState.config 含 openBook/maxEdges/questionSeconds，start/goal/nodes 为本局公开角色；edges 只在 openBook=true 时包含本局完整同场边及赛事依据，闭卷不得提供或通过 path-neighbors 查询。searchAllowed=true 不能覆盖闭卷，显式 false 可进一步关闭查询。self.path 是本人最后确认的路线；可在 collecting 且截止前重新保存，未到终点的合法路线也可保存但计0分，草稿不自动提交。只有授权揭晓后才提供 self.evidence（实际最后确认路线的每步赛事依据）及 answer.path/answer.evidence（一条最短参考路线），不得由参考路线猜测本人记录或为旧记录补造证据。每条依据含 from/to/raceId/raceName/date；普通玩家不可读取其他主体路线。当前动作最多7个角色，即1到6步；创建配置超过6步拒绝。此说明补充运行时语义，历史投影属性尚未整体结构化。 */
+        /** @description publicState.config contains openBook, maxEdges and questionSeconds; start, goal and nodes are public characters for this round. edges contains the full same-race graph and race evidence only when openBook is true. With openBook false, neither the projection nor path-neighbors exposes edges. searchAllowed true does not override this restriction; explicit false can further disable lookup. self.path is the viewer's last confirmed route. Valid routes may be saved again while collecting and before the deadline, including incomplete routes that score zero. Drafts are not submitted automatically. Authorized reveal exposes self.evidence for each step of the actual confirmed route and answer.path/answer.evidence for one shortest reference route. A reference route must not be substituted for the viewer's route, and evidence must not be fabricated for old records. Each evidence entry includes from, to, raceId, raceName and date. Ordinary players cannot read other subjects' routes. Actions accept at most seven characters, representing one to six steps; creation configurations exceeding six steps are rejected. */
         StateCoRacePath: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -1493,7 +1684,7 @@ export interface components {
             maxEdges: number;
             searchAllowed: boolean;
         };
-        /** @description 联机排序补充：publicState.self.groups 保存本人原始二维并列组；旧记录仅有 order 时不得按答案推断并列。闭卷模式下提交回执和所有普通玩家进度投影在正式揭晓前省略 correctPairs/scoreUnits；仅提供 submitted/revisions/totalPairs 等非答案进度。截止前可修订，以最后确认的一份结算。赛事日期真值为 YYYYMMDD 整数，生日为 MMDD；展示时按当前语言格式化，不改判定值。 */
+        /** @description publicState.self.groups preserves the original two-dimensional tie groups. Records containing only order must not infer ties from answers. In memory-only play, receipts and ordinary-player progress projections omit correctPairs and scoreUnits until authorized reveal; only non-answer progress such as submitted, revisions and totalPairs is exposed. Revisions are accepted until the deadline and the last confirmed answer is scored. Event dates use YYYYMMDD integers and birthdays use MMDD; locale formatting must preserve the underlying comparison values. */
         StateSort: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -1924,7 +2115,7 @@ export interface components {
                 objectives: components["schemas"]["TradeObjectiveView"][];
             };
         };
-        /** @description 联机原型血统拼图运行时补充：subject为公开的原型身份，slots使用sire/dam/sireSire/sireDam/damSire/damDam稳定ID，candidates为horseId/name/nkbId列表，config含answerSeconds/cooperative，self含subjectId/assignments/submissions。progress只公开每个主体已确认填写数，不公开其候选选择或正确率；本人作答可在截止前修订，以最后确认的一份为准。允许部分填写，至少一处，同一候选不得重复。双人合作按两人最后确认作答中答对位置的并集计算共享分，个人答对数不能替代共享成绩；最终成绩读取results，揭晓但尚未结算时不伪造分数。答案在revealed/settled或裁判授权下提供，cancelled不向普通玩家公布答案。题面始终说明这是史实原型血统而非角色家庭关系；允许查看公开原型资料，竞赛界面不得调用练习包获取私有关系填答案。马名保留来源写法，不猜译或按冠名推断关系。此说明补充运行时语义，旧字段投影schema尚未整体替换。 */
+        /** @description subject is the public identity of the real-world horse. slots uses stable IDs sire, dam, sireSire, sireDam, damSire and damDam. candidates lists horseId/name/nkbId; config contains answerSeconds/cooperative; self contains subjectId/assignments/submissions. progress exposes only each subject's confirmed filled count, never selections or accuracy. Answers may be revised until the deadline, with the last confirmed version scored. Partial answers require at least one slot and cannot reuse a candidate. Two-player cooperation scores the union of correctly answered slots in both players' last confirmed answers; an individual correct count is not the shared score. Final scores come from results; do not invent scores between reveal and settlement. Answers are available in revealed/settled phases or with referee authorization; cancelled rounds do not expose answers to ordinary players. The prompt distinguishes real-world pedigree from character family relationships. Public horse records may be consulted, but competitive views must not fetch practice packs to fill private relationships. Preserve horse names as sourced; do not invent translations or infer pedigree from shared name prefixes. */
         StatePedigree: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -2256,7 +2447,7 @@ export interface components {
             kind: "race.order";
             groups: string[][];
         };
-        /** @description 接受2至7个互不重复的角色ID，从本局起点开始且每一步有收录同场记录。无需已到终点即可保存（未到为0分），截止前可修订，以最后确认的一份计分。 */
+        /** @description Accepts two to seven distinct character IDs, beginning at this round's start with a recorded same-race connection for every step. A route may be saved before reaching the goal, in which case it scores zero. Revisions are accepted until the deadline; the last confirmed route is scored. */
         PathRoute: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -2340,7 +2531,7 @@ export interface components {
             kind: "creative.vote";
             optionId: string;
         };
-        /** @description 当前V2棋盘为4至6处，可提交1至6个互不重复的slotId/horseId配对，所有ID必须属于本局。截止前允许全量替换作答；部分空缺按未答处理，未保存的草稿不会自动提交。 */
+        /** @description The current board has four to six slots. Submissions contain one to six slotId/horseId pairs with distinct slots and horses, all belonging to this round. Answers may be replaced in full until the deadline. Empty slots are unanswered; unsaved drafts are not submitted automatically. */
         PedigreeAssignment: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -2405,7 +2596,13 @@ export interface components {
             newRoundId?: string;
         };
         TicketCreate: {
-            modeConfig: components["schemas"]["ClassicConfig"];
+            /**
+             * @deprecated
+             * @description Optional legacy echo of the selected pool rules. Custom queue rules are rejected.
+             */
+            modeConfig?: components["schemas"]["ClassicConfig"];
+            poolId: string;
+            proof: components["schemas"]["MatchProofAnswer"];
         };
         Ticket: {
             ticketId: string;
@@ -2416,6 +2613,9 @@ export interface components {
             expiresAt: string;
             /** Format: date-time */
             serverTime: string;
+            poolId: string;
+            players: number;
+            accepted: number;
         };
         TicketResponse: {
             accept: boolean;
@@ -2642,7 +2842,7 @@ export interface components {
             csrfToken: string;
             sessionId: string;
         };
-        /** @description 历史赛况复原配置。默认闭卷排序；cooperative 开启合作玩法，并提供相邻名次关系线索。 */
+        /** @description Race reconstruction settings. The default variant relies on memory. cooperative enables shared play with clues about adjacent finish positions. */
         RaceRebuildConfig: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -2653,10 +2853,10 @@ export interface components {
             contentPackId: string;
             /** @enum {string} */
             informationStyle: "closed" | "open";
-            /** @description 合作版：公开相邻对的相对顺序线索，使玩家能从线索推出完整名次。 */
+            /** @description Publishes relative-order clues for adjacent entrants, allowing the full order to be inferred in cooperative play. */
             cooperative?: boolean;
         };
-        /** @description 同场之路配置。openBook 开启后提供完整关系边表，供玩家检索与选择；闭卷玩法不提供该表。 */
+        /** @description Same-race route settings. openBook publishes the complete graph for lookup and selection; memory-only play does not expose edges. */
         CoRacePathConfig: {
             /**
              * @description discriminator enum property added by openapi-typescript
@@ -2667,7 +2867,7 @@ export interface components {
             contentPackId: string;
             /** @enum {string} */
             informationStyle: "closed" | "open";
-            /** @description 开卷：发布边表（nodes/edges），闭卷只发布节点。 */
+            /** @description When true, publishes nodes and edges. When false, publishes nodes only. */
             openBook?: boolean;
         };
         RuntimeCapabilities: {
@@ -2774,6 +2974,12 @@ export interface components {
                 displayName: string;
                 avatarPath: string;
             };
+            /** @description Public identities from the frozen challenge content. The current character directory may enrich labels but must not change eligibility. No comparison vectors or answer markers. Optional for stored receipts created before this field existed. */
+            characters?: {
+                characterId: string;
+                displayName: string;
+                avatarPath: string;
+            }[];
         };
         /** @description Explicit public profile vectors for offline practice only; contains no active online question, seed or secret. SHA-256 covers the exact UTF-8 contentJSON string. */
         SortPracticePack: {
@@ -2947,6 +3153,8 @@ export interface components {
             enabled: boolean;
             siteKey?: string;
             browserSignalsEnabled?: boolean;
+            /** @description Session-local repeated-limit checks are enabled; no IP or fingerprint verdicts. */
+            adaptiveEnabled?: boolean;
         };
         HostTransferCreate: {
             targetMembershipId: string;
@@ -3144,6 +3352,86 @@ export interface components {
             japanese?: string;
             english?: string;
             nicknames?: string[];
+        };
+        MatchProofAnswer: {
+            challengeId: string;
+            nonce: string;
+        };
+        MatchProofCreate: {
+            poolId: string;
+        };
+        MatchProof: {
+            challengeId: string;
+            bits: number;
+            /** Format: date-time */
+            expiresAt: string;
+        };
+        MatchPool: {
+            poolId: string;
+            modeId: components["schemas"]["ModeId"];
+            players: number;
+            modeConfig: Record<string, never>;
+            queued: number;
+            confirming: number;
+            playing: number;
+            rooms: number;
+        };
+        MatchLobby: {
+            pools: components["schemas"]["MatchPool"][];
+            queued: number;
+            confirming: number;
+            playing: number;
+            rooms: number;
+            /** Format: date-time */
+            serverTime: string;
+            /** @description Initial no-action timeout in seconds; 0 disables cancellation. Begins when answering opens. */
+            idleSeconds?: number;
+        };
+        ActiveMatchTicket: {
+            ticket: components["schemas"]["Ticket"] | null;
+        };
+        AdmissionStatus: {
+            enabled: boolean;
+            required: boolean;
+            verified: boolean;
+        };
+        /** @description Configured login provider ID, using a preset or a custom OIDC provider. */
+        AccountProviderId: string;
+        AccountAccess: {
+            enabled: boolean;
+            requireLogin: {
+                friend?: boolean;
+                event?: boolean;
+                matchmaking?: boolean;
+            };
+            /** @description Enabled and available providers in configuration order. Disabled providers are omitted. */
+            providers: {
+                id: components["schemas"]["AccountProviderId"];
+                available: boolean;
+                displayNames?: components["schemas"]["AccountProviderLabels"];
+                iconPath?: string;
+            }[];
+        };
+        AccountStatus: {
+            authenticated: boolean;
+            /** Format: uuid */
+            userId?: string;
+            /** Format: date-time */
+            expiresAt?: string;
+            csrfToken?: string;
+        };
+        AccountLoginStart: {
+            /** @enum {string} */
+            returnTo: "/" | "/friends" | "/party" | "/matchmaking";
+        };
+        AccountLoginRedirect: {
+            /** Format: uri */
+            authorizationUrl: string;
+        };
+        AccountProviderLabels: {
+            "zh-Hans": string;
+            "zh-Hant": string;
+            ja: string;
         };
     };
     responses: {
@@ -5079,6 +5367,27 @@ export interface operations {
             default: components["responses"]["Problem"];
         };
     };
+    getAdmissionStatus: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Current verification status */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["AdmissionStatus"];
+                };
+            };
+            default: components["responses"]["Problem"];
+        };
+    };
     verifyAdmission: {
         parameters: {
             query?: never;
@@ -5159,6 +5468,260 @@ export interface operations {
                 };
             };
             default: components["responses"]["Problem"];
+        };
+    };
+    getMatchmakingLobby: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Read public queue and match counts */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MatchLobby"];
+                };
+            };
+            default: components["responses"]["Problem"];
+        };
+    };
+    createMatchmakingProof: {
+        parameters: {
+            query?: never;
+            header: {
+                "X-CSRF-Token": components["parameters"]["Csrf"];
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["MatchProofCreate"];
+            };
+        };
+        responses: {
+            /** @description Issue a session-bound one-use admission challenge */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MatchProof"];
+                };
+            };
+            default: components["responses"]["Problem"];
+        };
+    };
+    getActiveMatchmakingTicket: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Restore the current session ticket */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ActiveMatchTicket"];
+                };
+            };
+            default: components["responses"]["Problem"];
+        };
+    };
+    heartbeatMatchmakingTicket: {
+        parameters: {
+            query?: never;
+            header: {
+                "If-None-Match"?: components["parameters"]["IfNoneMatch"];
+                "X-CSRF-Token": components["parameters"]["Csrf"];
+            };
+            path: {
+                ticketId: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Renew the queue presence lease without extending confirmation */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Ticket"];
+                };
+            };
+            default: components["responses"]["Problem"];
+        };
+    };
+    getAccount: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Success */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["AccountStatus"];
+                };
+            };
+            /** @description Request rejected */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["Problem"];
+                };
+            };
+        };
+    };
+    renewAccount: {
+        parameters: {
+            query?: never;
+            header: {
+                "X-Account-CSRF": string;
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Success */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["AccountStatus"];
+                };
+            };
+            /** @description Request rejected */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["Problem"];
+                };
+            };
+        };
+    };
+    deleteAccountSession: {
+        parameters: {
+            query?: never;
+            header: {
+                "X-Account-CSRF": string;
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Signed out */
+            204: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Request rejected */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["Problem"];
+                };
+            };
+        };
+    };
+    startAccountLogin: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                providerId: components["schemas"]["AccountProviderId"];
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["AccountLoginStart"];
+            };
+        };
+        responses: {
+            /** @description Success */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["AccountLoginRedirect"];
+                };
+            };
+            /** @description Request rejected */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["Problem"];
+                };
+            };
+        };
+    };
+    accountCallback: {
+        parameters: {
+            query: {
+                state: string;
+                code?: string;
+                error?: string;
+                iss?: string;
+            };
+            header?: never;
+            path: {
+                providerId: components["schemas"]["AccountProviderId"];
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Returns to a same-origin game entry with a generic sign-in result */
+            303: {
+                headers: {
+                    Location?: string;
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Request rejected */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["Problem"];
+                };
+            };
         };
     };
 }

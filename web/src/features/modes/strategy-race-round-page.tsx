@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 import "@/i18n/strategy-online";
 import {useMemo, useState} from "react";
 import {Link, useParams} from "react-router";
@@ -88,10 +90,10 @@ export function StrategyRaceRoundPage() {
  function labelFor(id:string,index:number){const team=readTeams(roomQuery.data?.room).find(x=>x.teamId===id);if(team)return team.label;const member=readTeamMembers(roomQuery.data?.room).find(x=>x.membershipId===id);return member?/^(?:\d){6}$/.test(member.publicCode??"")?`${member.displayName} · ${member.publicCode}`:member.displayName:t("participantNumber",{number:index+1});}
  function edit(action:StrategyChoice|null){if(!editable)return;setSelection(action);setNotice("");if(draftScope&&!saveStrategyDraft(draftScope,action))setNotice("saveFailed");}
  async function submit(retry=false){
-  if(!round||!roundId||command.busy||refreshing)return;
-  const spec=round.actions.find(a=>a.action===selection);
-  if(!retry&&(!editable||!isStrategyChoice(selection)||!spec||!isActionAvailable(spec,round.self.stamina)))return;
-  const body:StrategyCommand|undefined=retry?undefined:{phaseVersion:snapshot.meta!.phaseVersion,submissionRevision:snapshot.submissionRevision,controlGeneration:snapshot.controlGeneration,modeAction:{kind:"strategy.action",turn:round.currentTurn,action:selection!}};
+  if(!roundId||command.busy||refreshing)return;
+  const spec=round?.actions.find(a=>a.action===selection);
+  if(!retry&&(!round||!editable||!isStrategyChoice(selection)||!spec||!isActionAvailable(spec,round.self.stamina)))return;
+  const body:StrategyCommand|undefined=retry||!round?undefined:{phaseVersion:snapshot.meta!.phaseVersion,submissionRevision:snapshot.submissionRevision,controlGeneration:snapshot.controlGeneration,modeAction:{kind:"strategy.action",turn:round.currentTurn,action:selection!}};
   setRefreshing(true);setFailure(null);setErrorCode("");setRejected(false);setNotice("");
   try{const result=await command.run(body);if(!result)return;
    if(!result.ok){setFailure(describeFailure(result.error));setErrorCode(result.error instanceof ApiError?result.error.code:"");if(!result.uncertain&&result.error instanceof ApiError&&result.error.isConflict)await snapshot.refetch();if(isCredentialRefreshFailure(result.error))setNeedsRejoin(true);return;}
@@ -104,9 +106,9 @@ export function StrategyRaceRoundPage() {
  if(!roomId)return <ErrorView failure={{kind:"error",title:t("missingTitle"),detail:t("missingDetail"),diagnosticId:null,retryable:false}}/>;
  if(roomQuery.isLoading)return <LoadingBlock label={t("loadingRoom")} rows={3}/>;
  if(roomQuery.isError){const f=describeFailure(roomQuery.error);return f.kind==="forbidden"?<ForbiddenView failure={f} onRetry={()=>void roomQuery.refetch()}/>:<ErrorView failure={f} onRetry={()=>void roomQuery.refetch()}/>;}
- return <div className="uma-stack">
+ return <GameStage mode="strategy-race" className="uma-stack">
   <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/>
-  <ConnectionBar status={realtime.status} detail={roomQuery.data?.room.name??t("room")}/>
+  <ConnectionBar status={realtime.status} detail={roomDisplayName(roomQuery.data?.room, t("room"))}/>
   {needsRejoin||isCredentialRefreshFailure(snapshot.error)?<RejoinPrompt roomId={roomId}/>:null}
   {snapshot.isLoading?<LoadingBlock label={t("loading")} rows={4}/>:null}
   {snapshot.isError?<ErrorView failure={describeFailure(snapshot.error)} onRetry={()=>void snapshot.refetch()}/>:null}
@@ -116,7 +118,7 @@ export function StrategyRaceRoundPage() {
   {info?<Alert tone="danger" title={info.title}><p>{info.detail}</p></Alert>:null}
   {notice?<p role="status" className="text-sm">{notice}</p>:null}
   {round&&round.actions.length?<>
-   <section className="uma-panel min-w-0 p-4"><h1 className="u-fluid-task">{t("title")}</h1><p className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-sm text-[var(--color-muted)]"><span>{phaseLabel(phase)}</span><span>{t("turn",{turn:Math.min(round.currentTurn,round.totalTurns),total:round.totalTurns})}</span><span>{t("window",{seconds:round.decisionSeconds})}</span>{collecting&&countdown.text?<span>{countdown.text}</span>:null}</p>
+   <section className="uma-panel uma-game-detailed-heading min-w-0 p-4"><div className="uma-game-summary-copy"><h1 className="u-fluid-task">{t("title")}</h1><p className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-sm text-[var(--color-muted)]"><span>{phaseLabel(phase)}</span><span>{t("turn",{turn:Math.min(round.currentTurn,round.totalTurns),total:round.totalTurns})}</span><span>{t("window",{seconds:round.decisionSeconds})}</span>{collecting&&countdown.text?<span>{countdown.text}</span>:null}</p></div>
     <RaceTrack className="mt-3" teams={round.standings.map((p,i)=>({...p,label:labelFor(p.subjectId,i),isSelf:p.subjectId===round.self.subjectId,avatarSrc:null}))} totalTurns={round.totalTurns} staminaCap={round.staminaCap} maxGainPerTurn={Math.max(1,...round.actions.flatMap(a=>[a.positionGain,a.alternateGain??0]))}/>
    </section>
    {!cancelled&&(phase==="locked"||reveal)&&round.currentTurn<=round.totalTurns?<Alert tone="warning" title={t("notice")}><p>{t("legacy")}</p></Alert>:null}
@@ -132,5 +134,5 @@ export function StrategyRaceRoundPage() {
    <details className="uma-card uma-disclosure min-w-0 p-4"><summary className="flex min-h-11 cursor-pointer items-center justify-between gap-2 font-semibold">{t("rules")}<ChevronDown aria-hidden="true" className="uma-disclosure__chevron size-4"/></summary><ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-[var(--color-muted)]"><li>{t("ruleLine",{turns:round.totalTurns,seconds:round.decisionSeconds,start:round.startStamina,cap:round.staminaCap})}</li><li>{t("ruleTiming")}</li><li>{t(round.competitive?"ruleScore":"practice")}</li><li>{t("simulation")}</li></ul></details>
   </>:!snapshot.isLoading&&!snapshot.isError?<EmptyView title={t("emptyTitle")} detail={t("emptyDetail")}/>:null}
   <Button asChild variant="secondary" size="primary"><Link to="/">{t("back")}</Link></Button>
- </div>;
+ </GameStage>;
 }

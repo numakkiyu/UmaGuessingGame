@@ -71,25 +71,6 @@ export function toKnownModeId(value: string): ModeId | null {
   return KNOWN_MODE_ID_SET.has(value) ? (value as ModeId) : null;
 }
 
-/** 模式的中文显示名。契约只保证机器标识，显示名由前端提供。 */
-export const MODE_DISPLAY_NAMES: Record<ModeId, string> = {
-  classic: "经典弗一把",
-  "aptitude-grid": "适性交叉占格",
-  draft: "公开编队",
-  "race-rebuild": "历史赛况复原",
-  "co-race-path": "同场之路",
-  sort: "排序",
-  memory: "记忆配对",
-  bluff: "假档案",
-  "clue-puzzle": "团队情报拼图",
-  "strategy-race": "回合制策略赛道",
-  rapport: "默契问答",
-  creative: "创意企划",
-  trade: "档案交易",
-  pedigree: "血统",
-  audio: "听音辨马",
-};
-
 /** Modes with dedicated UI routes; server admission is checked separately. */
 export const PLAYABLE_MODE_IDS = [
   "classic",
@@ -110,11 +91,3 @@ export const PLAYABLE_MODE_IDS = [
 ] as const satisfies readonly ModeId[];
 
 export type PlayableModeId = (typeof PLAYABLE_MODE_IDS)[number];
-
-
-
-/** 未知模式的安全显示名（不臆造规则） */
-export function modeDisplayName(modeId: string): string {
-  const known = toKnownModeId(modeId);
-  return known ? MODE_DISPLAY_NAMES[known] : "未知玩法";
-}

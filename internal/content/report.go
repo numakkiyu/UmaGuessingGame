@@ -247,7 +247,7 @@ func buildQualityReport(ds *Dataset, in *RawInputs, joins *joinStats, ast assetV
 	ec.AmbiguousVectors = countAmbiguityVectors(ds)
 	r.EntityCounts = ec
 
-	r.Gaps = buildDataGaps(ds, in, joins, ast, pr, ec)
+	r.Gaps = buildDataGaps(ds, in, joins, ast, pr, ec, admissions)
 	r.Limitations = buildLimitations()
 	r.PublicIndex = buildPublicIndex(ds)
 
@@ -323,7 +323,7 @@ func countAmbiguityVectors(ds *Dataset) int {
 
 // buildDataGaps enumerates the documented gaps with recomputed values. Each gap
 // from is represented, whether or not it blocks a mode.
-func buildDataGaps(ds *Dataset, in *RawInputs, joins *joinStats, ast assetVerification, pr PlayabilityReport, ec EntityCounts) []DataGap {
+func buildDataGaps(ds *Dataset, in *RawInputs, joins *joinStats, ast assetVerification, pr PlayabilityReport, ec EntityCounts, admissions []ModeAdmission) []DataGap {
 	var gaps []DataGap
 
 	gaps = append(gaps, DataGap{
@@ -390,14 +390,24 @@ func buildDataGaps(ds *Dataset, in *RawInputs, joins *joinStats, ast assetVerifi
 
 	voices := countVoices(in)
 	missingChs := countVoicesWithoutChs(in)
+	admittedAudio := 0
+	audioSeverity := "high"
+	for _, admission := range admissions {
+		if admission.Mode == ModeAudio {
+			admittedAudio = admission.QuestionCount
+			if admission.Available {
+				audioSeverity = "low"
+			}
+		}
+	}
 	gaps = append(gaps, DataGap{
 		ID:       "GAP-007",
 		Area:     "audio",
-		Severity: "high",
-		Measured: fmt.Sprintf("%d voice rows; %d without a simplified-Chinese transcript; 0 with a local decodable file", voices, missingChs),
-		Expected: fmt.Sprintf("%d rows with transcript and local audio", voices),
+		Severity: audioSeverity,
+		Measured: fmt.Sprintf("%d voice rows; %d without a simplified-Chinese transcript; %d reviewed local WebM/Opus clips admitted", voices, missingChs, admittedAudio),
+		Expected: fmt.Sprintf("at least %d reviewed clips", audioMinClips),
 		Impact:   []string{ModeAudio},
-		Detail:   "voice rows carry remote URLs only and no audio file exists in the repository, so no clip passed the decode and listening review",
+		Detail:   "the playable pool contains only selected clips with listening records, matching byte digests and complete Opus decoding; other source rows remain outside the pool",
 	})
 
 	gaps = append(gaps, DataGap{

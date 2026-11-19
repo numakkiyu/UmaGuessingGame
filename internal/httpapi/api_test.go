@@ -7,8 +7,8 @@ import (
 	"testing"
 )
 
-// TestContractOperationSet asserts the router registers exactly the 48 operationIds
-// declared by contracts/openapi.json.
+// TestContractOperationSet asserts the router registers exactly the operationIds
+// declared by api/openapi.json.
 //
 // The expected list is transcribed from the contract file, so a rename, a dropped
 // endpoint or an accidentally added one fails here rather than being discovered by
@@ -16,19 +16,19 @@ import (
 func TestContractOperationSet(t *testing.T) {
 	t.Parallel()
 	want := []string{
-		"createSession", "verifyAdmission", "getCurrentSession", "updateCurrentSession", "deleteCurrentSession",
+		"createSession", "getAdmissionStatus", "verifyAdmission", "getCurrentSession", "updateCurrentSession", "deleteCurrentSession",
 		"getPublicConfig", "getClassicPracticePack", "getSortPracticePack", "getMemoryPracticePack", "getAptitudePracticePack", "getDraftPracticePack", "getRacePracticePack", "getPathPracticePack", "getStrategyPracticePack", "getPedigreePracticePack", "getAudioPracticePack", "createChallenge", "getChallenge", "guessChallenge", "finishChallenge", "listModes", "listCharacters", "getCharacter",
 		"createRoom", "getRoom", "updateRoom", "joinRoom", "updateMembership",
 		"leaveOrRemoveMembership", "transferRoomHost", "createTeam", "issueControlLease", "resolveRoomInvitation",
 		"createRound", "getRound", "createTransition", "createSubmission", "createSurrender",
 		"createPauseRequest", "respondToPause", "requestRematch", "createTrade", "respondToTrade",
-		"createMatchmakingTicket", "getMatchmakingTicket", "cancelMatchmakingTicket", "respondToMatch",
+		"getMatchmakingLobby", "createMatchmakingProof", "getActiveMatchmakingTicket", "heartbeatMatchmakingTicket", "createMatchmakingTicket", "getMatchmakingTicket", "cancelMatchmakingTicket", "respondToMatch",
 		"createEvent", "getEvent", "createSegment", "updateSegment", "getStandings",
 		"createScoreCorrection", "createDisplayGrant", "redeemDisplayGrant",
 		"createRecoveryGrant", "redeemRecoveryGrant", "listRoomEvents", "streamRoomEvents",
 		"upgradeRoomSocket", "getLiveness", "getReadiness", "getPathNeighbors",
 		"createEventTransition",
-		"rotateSessionCsrf",
+		"rotateSessionCsrf", "getAccount", "renewAccount", "deleteAccountSession", "startAccountLogin", "accountCallback",
 	}
 	h := newHarness(t)
 	// Build a server directly to read the route table without an HTTP round trip.

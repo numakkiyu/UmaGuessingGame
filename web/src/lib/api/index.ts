@@ -44,8 +44,9 @@ export function recentRequestIds(): readonly RequestIdLog[] {
 let onUnauthenticatedHandler: (() => void) | null = null;
 let onCsrfInvalidHandler: (() => Promise<boolean>) | null = null;
 let csrfRecovery: Promise<boolean> | null = null;
-let onAdmissionHandler:(()=>Promise<boolean>)|null=null;
-export function setAdmissionHandler(handler:(()=>Promise<boolean>)|null):void{onAdmissionHandler=handler}
+export type AdmissionReason = "entry" | "traffic";
+let onAdmissionHandler:((reason?: AdmissionReason)=>Promise<boolean>)|null=null;
+export function setAdmissionHandler(handler:((reason?: AdmissionReason)=>Promise<boolean>)|null):void{onAdmissionHandler=handler}
 
 
 export function setCsrfRecoveryHandler(handler: (() => Promise<boolean>) | null): void {
@@ -58,7 +59,7 @@ export function setUnauthenticatedHandler(handler: (() => void) | null): void {
 
 export const api: Api = createContractApi({
   getCsrfToken,
-  onAdmissionRequired:()=>onAdmissionHandler?.()??Promise.resolve(false),
+  onAdmissionRequired:(reason)=>onAdmissionHandler?.(reason)??Promise.resolve(false),
   onCsrfInvalid: () => {
     if (csrfRecovery) return csrfRecovery;
     csrfRecovery = (onCsrfInvalidHandler?.() ?? Promise.resolve(false)).finally(() => { csrfRecovery = null; });
@@ -82,7 +83,7 @@ export type ApiContextValue = {
   /** 会话是否仍在加载（页面据此显示 loading 而不是 empty） */
   sessionLoading: boolean;
   setSession: (session: SessionState | null) => void;
-  /** 确保存在匿名会话；已有则直接返回 */
+  /** 确保存在匿名会话，复用已有身份并同步全局昵称 */
   ensureSession: (displayName: string) => Promise<SessionState>;
   /* 用现有会话恢复 CSRF；失败返回 null，不创建新身份 */
   rotateCsrf: () => Promise<SessionState | null>;

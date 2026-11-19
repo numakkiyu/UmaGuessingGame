@@ -10,17 +10,23 @@ export function loadTurnstile(): Promise<Turnstile> {
   if (loading) return loading;
   loading = new Promise<Turnstile>((resolve, reject) => {
     const script = document.createElement("script");
+    let settled = false;
+    function settle() {
+      settled = true; clearTimeout(timeout); script.onload = null; script.onerror = null;
+    }
     const timeout = setTimeout(failed, 12_000);
     function failed() {
-      clearTimeout(timeout); script.remove(); loading = null;
+      if (settled) return;
+      settle(); script.remove(); loading = null;
       reject(new Error("入场确认暂时打不开，请检查网络后重试"));
     }
     script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
     script.async = true;
     script.onerror = failed;
     script.onload = () => {
+      if (settled) return;
       if (!window.turnstile) { failed(); return; }
-      clearTimeout(timeout); resolve(window.turnstile);
+      settle(); resolve(window.turnstile);
     };
     document.head.append(script);
   });

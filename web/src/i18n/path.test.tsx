@@ -40,7 +40,7 @@ describe("co-appearance practice localization", () => {
     let reject!: (error: unknown) => void, signal!: AbortSignal;
     const fetch = vi.spyOn(api, "getPathPracticePack").mockImplementation(s => { signal = s!; return new Promise((_resolve, fail) => { reject = fail; }); });
     render(<MemoryRouter><PathPracticeStartPage /></MemoryRouter>);
-    fireEvent.click(screen.getByRole("radio", { name: "闭卷 · 凭记忆连线" }));
+    fireEvent.click(screen.getByRole("radio", { name: "凭记忆 · 连到终点" }));
     fireEvent.click(await screen.findByRole("button", { name: "准备同场资料" }));
     await language("ja");
     expect((screen.getByRole("radio", { name: "記憶を頼りにつなぐ" }) as HTMLInputElement).checked).toBe(true);

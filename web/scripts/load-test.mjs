@@ -279,7 +279,7 @@ const key = () => crypto.randomUUID().replace(/-/g, "");
  * 这些是服务端按规则正确拒绝的响应，不是故障。
  *
  * - duplicate_guess：同一回合重复猜同一角色（压测随机抽到重复）
- * - round_finished：个人错误额度用尽（回合仍在 collecting，其他人可继续）
+ * - round_finished：个人可猜错次数用尽（回合仍在 collecting，其他人可继续）
  * - round-not-collecting：回合已 locked/revealed（重开局过程中的正常窗口）
  */
 const BUSINESS_REJECTION_CODES = new Set([

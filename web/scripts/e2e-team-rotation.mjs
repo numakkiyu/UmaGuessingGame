@@ -1,3 +1,4 @@
+import { setPlayerName } from "./player-profile.mjs";
 /** Four real browser identities, real Go/SQLite. Every mutation uses UI controls. */
 import { chromium } from 'playwright';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -14,10 +15,10 @@ async function get(i,path){const r=await contexts[i].request.get(base+'/api/v1'+
 async function write(p,method,path,action){const wait=p.waitForResponse(r=>new URL(r.url()).pathname==='/api/v1'+path&&r.request().method()===method);await action();const r=await wait,body=await r.json();if(!r.ok())throw new Error(`${method} ${path} ${r.status()} ${JSON.stringify(body)}`);return body}
 async function waitControl(i,mine){await pages[i].getByRole('status').filter({hasText:mine?'轮到你确认全队作答':/轮到.+确认作答/}).waitFor()}
 async function create(mode){
- await hp.goto(base+'/rooms/new?mode='+mode);await hp.getByLabel('你的显示名').fill(names[0]);await hp.getByLabel('最多几人参加？').fill('4');
+ await hp.goto(base+'/rooms/new?mode='+mode);await setPlayerName(hp, names[0]);await hp.getByLabel('最多几人参加？').fill('4');
  const data=await write(hp,'POST','/rooms',()=>button(hp,'创建好友房间').click());const rid=data.room.roomId;
  await hp.getByTestId('room-invite-code').waitFor();
- for(let i=1;i<4;i++){const p=pages[i];await p.goto(base+'/join?code='+data.inviteCode);await p.getByLabel('显示名',{exact:true}).fill(names[i]);await write(p,'POST',`/rooms/${rid}/memberships`,()=>button(p,'加入房间').click());await p.waitForURL(/\/rooms\/rom_/)}
+ for(let i=1;i<4;i++){const p=pages[i];await p.goto(base+'/join?code='+data.inviteCode);await setPlayerName(p, names[i]);await write(p,'POST',`/rooms/${rid}/memberships`,()=>button(p,'加入房间').click());await p.waitForURL(/\/rooms\/rom_/)}
  await hp.reload();await hp.getByText('需要分队？',{exact:true}).click();
  for(const label of ['胡萝卜队','冲刺队']){if(label==='冲刺队')await hp.getByText('新建队伍',{exact:true}).first().click();await hp.getByLabel('队名',{exact:true}).fill(label);await write(hp,'POST',`/rooms/${rid}/teams`,()=>button(hp,'新建队伍').click())}
  const ids=[];

@@ -24,6 +24,8 @@ const results = await eslint.lintFiles([
   "vite.config.ts",
   "vitest.config.ts",
   "scripts",
+  "public/browser-support.js",
+  "public/browser-notice.js",
 ]);
 
 const formatter = await eslint.loadFormatter("stylish");

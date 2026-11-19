@@ -494,7 +494,7 @@ async function runMode(modeId) {
 
     /*
      * 结算分数从回合视图本身读（契约里没有 /rounds/{id}/results 端点，
-     * 结果是 round.results 字段）。单人练习局按规则不产生竞技分，那属于
+     * 结果是 round.results 字段）。单人挑战局按规则不产生竞技分，那属于
      * 合法结果，如实记录，不当失败。
      */
     const rows = final.round?.results ?? final.results ?? [];
@@ -509,9 +509,9 @@ async function runMode(modeId) {
         sample: rows.slice(0, 3),
       });
     } else {
-      // 单人/练习局不产出竞技分是规则允许的；记录而不伪造。
+      // 单人/挑战局不产出竞技分是规则允许的；记录而不伪造。
       const practice = spec.players === 1;
-      assert(modeId, "无竞技分时是单人练习局（符合规则）", practice, {
+      assert(modeId, "无竞技分时是单人挑战局（符合规则）", practice, {
         players: spec.players,
         note: "多人局没有分数才是问题",
       });

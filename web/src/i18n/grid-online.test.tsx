@@ -1,3 +1,4 @@
+import { dismissFault } from "@/test/dismiss-fault";
 import {act,cleanup,fireEvent,render,screen,waitFor,within} from "@testing-library/react";
 import {afterEach,beforeEach,expect,it,vi} from "vitest";
 import {MemoryRouter,Route,Routes} from "react-router";
@@ -41,10 +42,10 @@ it("真实规则拒绝不占格、不清选择，安全错误切语重译后可�
 it("双人轮流非我方、掉线出局、满盘、只读与讲解阶段全部锁定新操作",async()=>{
  const cases=[{turnSubjectId:"p2",config:{variant:"duel"}},{self:{subjectId:"p1",claims:[],attempts:0,timedOut:true}},{closed:true},{self:undefined}];
  for(const partial of cases){const data=view();Object.assign(data.publicState,partial);f.api.getRound.mockResolvedValue({data});const rendered=show();await screen.findByRole("heading",{name:"适性交叉占格"});await screen.findByRole("heading",{name:"棋盘"});const region=screen.getByRole("region",{name:"棋盘"});expect(within(region).getAllByRole("button").every(button=>button.hasAttribute("disabled"))).toBe(true);rendered.unmount();}
- const data=view();data.round.phase="briefing";f.api.getRound.mockResolvedValue({data});show();await screen.findByText("现在不能占格：观看/简报");expect(screen.getByRole("button",{name:"确认占格（不可撤销）"}).hasAttribute("disabled")).toBe(true);expect(f.api.createSubmission).not.toHaveBeenCalled();
+ const data=view();data.round.phase="briefing";f.api.getRound.mockResolvedValue({data});show();await screen.findByText("现在不能占格：看题与规则说明");expect(screen.getByRole("button",{name:"确认占格（不可撤销）"}).hasAttribute("disabled")).toBe(true);expect(f.api.createSubmission).not.toHaveBeenCalled();
 });
 it("失效待确认操作只在最新快照成功后解除，失败不能放行",async()=>{
- sessionStorage.setItem("uma:game-command:session-original:round-original:grid",JSON.stringify({key:"a".repeat(48),createdAt:Date.now(),body:{phaseVersion:3,submissionRevision:0,controlGeneration:0,modeAction:{kind:"grid.claim",cellId:"",characterId:"a"}}}));show();await screen.findByRole("button",{name:"查看最新棋盘"});f.api.getRound.mockRejectedValueOnce(new Error("private read"));fireEvent.click(screen.getByRole("button",{name:"查看最新棋盘"}));await waitFor(()=>expect(f.api.getRound).toHaveBeenCalledTimes(2));expect(screen.getByRole("button",{name:"查看最新棋盘"})).toBeTruthy();expect(f.api.createSubmission).not.toHaveBeenCalled();
+ sessionStorage.setItem("uma:game-command:session-original:round-original:grid",JSON.stringify({key:"a".repeat(48),createdAt:Date.now(),body:{phaseVersion:3,submissionRevision:0,controlGeneration:0,modeAction:{kind:"grid.claim",cellId:"",characterId:"a"}}}));show();await screen.findByRole("button",{name:"查看最新棋盘"});f.api.getRound.mockRejectedValueOnce(new Error("private read"));fireEvent.click(screen.getByRole("button",{name:"查看最新棋盘"}));await waitFor(()=>expect(f.api.getRound).toHaveBeenCalledTimes(2));await dismissFault();expect(screen.getByRole("button",{name:"查看最新棋盘"})).toBeTruthy();expect(f.api.createSubmission).not.toHaveBeenCalled();
 });
 it("轮流结果只按本人与对手占格和后端名次，不把共用盘算为个人挑战分",async()=>{
  const data=view();data.publicState.config.variant="duel";Object.assign(data.publicState,{aptitudes:[{characterId:"a",aptitudes:{}}]});Object.assign(data.publicState.cells[0]!,{claim:{subjectId:"p2",characterId:"a",name:"来源原名",turn:1,satisfied:true}});data.publicState.subjects[1]!.claims=1;const round=normalizeGridRound(data as never)!;

@@ -4,6 +4,7 @@
  * 命名 SSE 事件逐个注册；每个房间仅保留一个主通道和一个在途轮询。
  */
 import { useEffect, useMemo, useRef, useState } from "react";
+import { networkQuality, type NetworkQuality } from "./network-quality";
 
 /** 三种通道 */
 export type Transport = "websocket" | "sse" | "polling";
@@ -53,6 +54,7 @@ export type UseRealtimeOptions = {
 
 export type UseRealtimeResult = {
   status: RealtimeStatus;
+  quality: NetworkQuality | null;
   transport: Transport;
   /** 最近一次收到的 serverEpoch，用于检测服务端重启 */
   serverEpoch: string | null;
@@ -93,6 +95,7 @@ function isRealtimeMessage(value: unknown): value is RealtimeMessage {
 export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
   const { roomId, enabled = true, pollIntervalMs = 4000, preferWebSocket = false, preferSse = true } = options;
 
+  const [quality, setQuality] = useState<NetworkQuality | null>(null);
   const [status, setStatus] = useState<RealtimeStatus>("connecting");
   const [transport, setTransport] = useState<Transport>("polling");
   const [serverEpoch, setServerEpoch] = useState<string | null>(null);
@@ -143,6 +146,15 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
     let connectedAt: number | null = null;
     let notificationEpoch: string | null = null;
     let newestStateVersion = -1;
+    setQuality(null);
+    const qualitySamples: number[] = [];
+    let qualityFailures = 0;
+    const recordQuality = (duration: number | null) => {
+      if (disposed || stopped) return;
+      if (duration === null) qualityFailures += 1;
+      else { qualityFailures = 0; qualitySamples.push(duration); if (qualitySamples.length > 5) qualitySamples.shift(); }
+      setQuality(networkQuality(qualitySamples, qualityFailures));
+    };
     const seenEvents = new Set<string>();
 
     const emitStatus = (next: RealtimeStatus) => {
@@ -269,6 +281,7 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
         }
         let nextDelay = interval;
         pollInFlight = true;
+        const started = performance.now();
         pollAbort = new AbortController();
         try {
           const query = new URLSearchParams({ limit: "100" });
@@ -279,6 +292,7 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
             cache: "no-store",
             headers: { Accept: "application/json" },
           });
+          if (disposed || stopped) return;
           if (!response.ok) {
             if (response.status === 429 || response.status === 503) {
               const hint = response.headers.get("Retry-After");
@@ -308,6 +322,7 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
             resyncRequired?: boolean;
           };
           if (disposed || stopped) return;
+          recordQuality(performance.now() - started);
           failures = 0;
           lastContact = Date.now();
           setLastSyncedAt(lastContact);
@@ -333,6 +348,7 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
           }
         } catch {
           if (!disposed && !stopped) {
+            recordQuality(null);
             failures += 1;
             nextDelay = Math.max(nextDelay, backoffDelay(failures));
             emitStatus("reconnecting");
@@ -361,7 +377,9 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
         return;
       }
 
+      const activeSource = source;
       source.onopen = () => {
+        if (disposed || stopped || source !== activeSource) return;
         connectedAt = Date.now();
         emitStatus("online");
         lastContact = Date.now();
@@ -375,11 +393,11 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
        */
       for (const type of SSE_EVENT_TYPES) {
         source.addEventListener(type, (event) => {
-          if (event instanceof MessageEvent) handleMessage(String(event.data));
+          if (source === activeSource && event instanceof MessageEvent) handleMessage(String(event.data));
         });
       }
       // 兼容无 event 行的帧（服务端将来若改回默认事件类型）
-      source.onmessage = (event) => handleMessage(String(event.data));
+      source.onmessage = (event) => { if (source === activeSource) handleMessage(String(event.data)); };
 
       source.onerror = () => {
         if (disposed || stopped) return;
@@ -419,6 +437,7 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
       }
 
       socket.onopen = () => {
+        if (disposed || stopped) return;
         connectedAt = Date.now();
         emitStatus("online");
       };
@@ -500,10 +519,15 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
      */
     let probeFailures = 0;
     let probeTimer: number | null = null;
+    let probing = false;
+    let lastQualityProbe = -Infinity;
     const probe = async () => {
-      if (disposed || stopped || currentTransport === "polling" || document.hidden || Date.now() - lastContact < 15000) return;
+      if (disposed || stopped || probing || currentTransport === "polling" || document.hidden || (Date.now() - lastContact < 15000 && performance.now() - lastQualityProbe < 20000)) return;
       // 本机明确离线时不必探测，offline 事件已经处理
       if (typeof navigator !== "undefined" && navigator.onLine === false) return;
+      probing = true;
+      const started = performance.now();
+      lastQualityProbe = started;
       probeAbort = new AbortController();
       try {
         const res = await fetch("/health/live", {
@@ -513,6 +537,7 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
         });
         if (disposed || stopped) return;
         if (res.ok) {
+          recordQuality(performance.now() - started);
           probeFailures = 0;
           lastContact = Date.now();
           // Reachability does not prove a stale game stream caught up. Rebuild
@@ -524,8 +549,10 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
       } catch {
         probeFailures += 1;
       }
+      finally { probing = false; }
+      recordQuality(null);
       // 连续两次失败才降级，避免一次网络抖动就闪成「可能已过期」
-      if (probeFailures >= 2 && !disposed) {
+      if (probeFailures >= 2 && !disposed && !stopped) {
         emitStatus("stale");
       }
     };
@@ -556,5 +583,5 @@ export function useRealtime(options: UseRealtimeOptions): UseRealtimeResult {
     // status 有意不进依赖：只在挂载与重连令牌变化时重建，避免状态回环
   }, [roomId, enabled, pollIntervalMs, preferWebSocket, preferSse, reconnectToken, reconnect]);
 
-  return { status, transport, serverEpoch, lastSyncedAt, reconnect };
+  return { status, quality, transport, serverEpoch, lastSyncedAt, reconnect };
 }

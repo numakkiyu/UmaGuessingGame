@@ -1,3 +1,4 @@
+import { GameStage } from "@/components/uma/game-stage";
 import "@/i18n/aptitude";
 import { useTranslation } from "@/i18n";
 import { cardName, cardMatches } from "@/i18n/entities";
@@ -37,7 +38,7 @@ function GridPracticeGame({ initial }: { initial: GridArchive }) {
   const condition = selected === null ? null : gridConditions(game.rowAxis, selected);
   const picker = <GridPracticePicker cards={cards.filter(c => !used.has(c.id))} selected={picked} onPick={setPicked} disabled={disabled || selected === null} />;
   const confirmButton = <Button variant="primary" block disabled={disabled || !picked || selected === null} onClick={() => void confirm()}><Check className="size-4" aria-hidden="true" />{t("confirmCell")}</Button>;
-  return <div className="uma-stack">
+  return <GameStage mode="aptitude-grid" className="uma-stack">
     <PracticeGameHeading title={gridAdapter.title} modeId={game.modeId} deadlineAt={game.deadlineAt} now={now} finished={finished} />
     <PracticeNotices saved={p.saved} stale={stale} message={p.message} />
     {finished ? <section className="uma-panel space-y-3 p-4 sm:p-5" aria-labelledby="grid-result"><h2 id="grid-result" className="text-xl font-bold">{t(game.claims.length === 9 ? "gridComplete" : "gridResult")}</h2><p className="text-3xl font-bold text-[var(--color-action-green)]">{Math.floor(game.claims.length * 100 / 9)}<span className="ml-1 text-base">{t("points")}</span></p><p className="text-sm text-[var(--color-muted)]">{t("cellsResult",{count:game.claims.length})}</p><Button variant="primary" disabled={busy} onClick={() => void p.again()}><RotateCcw className="size-4" aria-hidden="true" />{t("again")}</Button></section> : null}
@@ -48,8 +49,8 @@ function GridPracticeGame({ initial }: { initial: GridArchive }) {
     {finished && solution ? <details className="uma-card uma-disclosure p-4"><summary className="cursor-pointer font-bold">{t("gridReference")}</summary><p className="mt-3 text-sm leading-6 text-[var(--color-muted)]">{t("gridReferenceHint")}</p><ol className="mt-3 grid gap-2 sm:grid-cols-3">{solution.map((id, i) => { const c = cards.find(c => c.id === id)!, cond = gridConditions(game.rowAxis, i); return <li key={i} className="flex min-w-0 items-center gap-2 rounded-lg border border-[var(--color-line)] p-2"><img src={c.imagePath} alt="" className="size-10 shrink-0 object-contain" loading="lazy" /><div className="min-w-0"><p className="text-xs text-[var(--color-muted)]">{t("condition",{distance:aptitudeValue("distance",cond.distance),style:aptitudeValue("style",cond.style)})}</p><p className="break-words text-sm font-bold">{cardName(c)}</p></div></li>; })}</ol></details> : null}
     <PracticeUtilityActions finished={finished} busy={busy} stale={stale} exportRecord={p.exportRecord} finish={p.finish} />
     <PracticeInstructions rules={gridAdapter.rules} />
-    <Sheet open={open && !finished} onOpenChange={setOpen}><SheetContent closeLabel={t("close")} onCloseAutoFocus={e => { e.preventDefault(); boardHeading.current?.focus(); }}><SheetHeader><SheetTitle>{t("cellPicker")}</SheetTitle><SheetDescription>{condition ? t("cellPickerHint",{distance:aptitudeValue("distance",condition.distance),style:aptitudeValue("style",condition.style)}) : t("cellPickerEmpty")}</SheetDescription></SheetHeader>{picker}<div className="mt-4 space-y-3"><PracticeNotices saved={p.saved} stale={stale} message={p.message} />{confirmButton}</div></SheetContent></Sheet>
-  </div>;
+    <Sheet open={open && !finished} onOpenChange={setOpen}><SheetContent closeLabel={t("close")} footer={<div className="space-y-2"><PracticeNotices saved={p.saved} stale={stale} message={p.message} />{picked ? <p className="truncate text-sm font-semibold">{cardName(cards.find(c => c.id === picked)!)}</p> : null}{confirmButton}</div>} onCloseAutoFocus={e => { e.preventDefault(); boardHeading.current?.focus(); }}><SheetHeader><SheetTitle>{t("cellPicker")}</SheetTitle><SheetDescription>{condition ? t("cellPickerHint",{distance:aptitudeValue("distance",condition.distance),style:aptitudeValue("style",condition.style)}) : t("cellPickerEmpty")}</SheetDescription></SheetHeader>{picker}</SheetContent></Sheet>
+  </GameStage>;
 }
 function GridPracticePicker({ cards, selected, onPick, disabled }: { cards: readonly AptitudeCard[]; selected: string | null; onPick: (id: string) => void; disabled: boolean }) {
   const {t}=useTranslation("aptitude",{keyPrefix:"ui"});

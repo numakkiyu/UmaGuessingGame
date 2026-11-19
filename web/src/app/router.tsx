@@ -1,17 +1,16 @@
 // Game routes are lazy-loaded so entering the lobby does not load every mode
-import { Suspense, useEffect, type ReactNode } from "react";
-import { createBrowserRouter, useLocation, type RouteObject } from "react-router";
+import { lazy, Suspense, useEffect, type ReactNode } from "react";
+import { createBrowserRouter, Navigate, useLocation, type RouteObject } from "react-router";
 import { useApi } from "@/lib/api";
 import { useTranslation } from "@/i18n";
 import { AppShell } from "./app-shell";
 import { RouteErrorBoundary } from "./error-boundary";
 import { lazyWithRecovery } from "./lazy-recovery";
-import { PlayFormatGate } from "@/components/uma/play-format-gate";
+const PlayFormatGate = lazy(() => import("@/components/uma/play-format-gate").then(m => ({default:m.PlayFormatGate})));
 import { LoadingBlock } from "@/components/uma/page-state";
-
-// 大厅和加入页同步加载；长篇帮助与来源按需加载。
+// 大厅同步加载；加入页、长篇帮助与来源按需加载。
 import { LobbyPage } from "@/features/rooms/lobby-page";
-import { JoinPage } from "@/features/rooms/join-page";
+const JoinPage = lazyWithRecovery(() => import("@/features/rooms/join-page").then(m => ({default:m.JoinPage})));
 const HelpPage = lazyWithRecovery(() => import("@/features/rooms/help-page").then(m => ({default:m.HelpPage})));
 const SourcesPage = lazyWithRecovery(() => import("@/features/rooms/sources-page").then(m => ({default:m.SourcesPage})));
 import { NotFoundPage } from "./not-found";
@@ -19,12 +18,6 @@ import { NotFoundPage } from "./not-found";
 // 玩法与活动页懒加载：首屏不加载全部模式
 const ClassicPlayPage = lazyWithRecovery(() =>
   import("@/features/practice/practice-start-page").then((m) => ({ default: m.PracticeStartPage })),
-);
-const ClassicOnlinePlayPage = lazyWithRecovery(() =>
-  import("@/features/classic/classic-online-play-page").then((m) => ({ default: m.ClassicOnlinePlayPage })),
-);
-const ChallengeStartPage = lazyWithRecovery(() =>
-  import("@/features/challenges/challenge-start-page").then(m => ({default:m.ChallengeStartPage})),
 );
 const ChallengeGamePage = lazyWithRecovery(() =>
   import("@/features/challenges/challenge-game-page").then(m => ({default:m.ChallengeGamePage})),
@@ -38,40 +31,13 @@ const RoomEntryPage = lazyWithRecovery(() =>
 const ModeInfoPage = lazyWithRecovery(() =>
   import("@/features/modes/mode-info-page").then((m) => ({ default: m.ModeInfoPage })),
 );
-const SortPlayPage = lazyWithRecovery(() =>
-  import("@/features/modes/sort-play-page").then((m) => ({ default: m.SortPlayPage })),
-);
 
 // –G07 五个玩法的开局页（各自独立 chunk）
-const AptitudeGridPlayPage = lazyWithRecovery(() =>
-  import("@/features/modes/mode-play-pages").then((m) => ({ default: m.AptitudeGridPlayPage })),
-);
-const DraftPlayPage = lazyWithRecovery(() =>
-  import("@/features/modes/mode-play-pages").then((m) => ({ default: m.DraftPlayPage })),
-);
-const RaceRebuildPlayPage = lazyWithRecovery(() =>
-  import("@/features/modes/mode-play-pages").then((m) => ({ default: m.RaceRebuildPlayPage })),
-);
-const CoRacePathPlayPage = lazyWithRecovery(() =>
-  import("@/features/modes/mode-play-pages").then((m) => ({ default: m.CoRacePathPlayPage })),
-);
-const MemoryPlayEntryPage = lazyWithRecovery(() =>
-  import("@/features/modes/mode-play-pages").then((m) => ({ default: m.MemoryPlayEntryPage })),
-);
-const PedigreePlayEntryPage = lazyWithRecovery(() =>
-  import("@/features/modes/mode-play-pages").then((m) => ({ default: m.PedigreePlayEntryPage })),
-);
-const AudioPlayEntryPage = lazyWithRecovery(() =>
-  import("@/features/modes/mode-play-pages").then((m) => ({ default: m.AudioPlayEntryPage })),
-);
 const BluffPlayEntryPage = lazyWithRecovery(() =>
   import("@/features/modes/mode-play-pages").then((m) => ({ default: m.BluffPlayEntryPage })),
 );
 const CluePuzzlePlayPage = lazyWithRecovery(() =>
   import("@/features/modes/mode-play-pages").then((m) => ({ default: m.CluePuzzlePlayPage })),
-);
-const StrategyRacePlayPage = lazyWithRecovery(() =>
-  import("@/features/modes/mode-play-pages").then((m) => ({ default: m.StrategyRacePlayPage })),
 );
 const RapportPlayPage = lazyWithRecovery(() =>
   import("@/features/modes/mode-play-pages").then((m) => ({ default: m.RapportPlayPage })),
@@ -104,7 +70,7 @@ const EventResultsPage = lazyWithRecovery(() =>
 function LazyFallback() {
   const { t } = useTranslation("common");
   return (
-    <div className="uma-stack" role="status" aria-live="polite">
+    <div className="uma-stack" role="status" aria-live="polite" data-route-loading>
       <span className="sr-only">{t("state.loading")}</span>
       <LoadingBlock label={t("state.loading")} rows={3} />
     </div>
@@ -143,7 +109,7 @@ function SessionBoundary({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
   const { restoreSession } = useApi();
   useEffect(() => {
-    if (!/^\/(practice(?:\/|$)|play\/(?:classic|sort|memory|aptitude-grid|draft|race-rebuild|co-race-path|strategy-race|pedigree|audio)\/?$)/.test(pathname)) {
+    if (!/^\/(practice(?:\/|$)|play\/(?:classic|sort|memory|aptitude-grid|draft|race-rebuild|co-race-path|strategy-race|pedigree|audio)(?:\/(?:online|verified))?\/?$)/.test(pathname)) {
       // A failed recovery must never silently create a replacement identity.
       // Online actions retry explicitly through ensureSession.
       void restoreSession?.().catch(() => undefined);
@@ -171,38 +137,40 @@ export const routes: RouteObject[] = [
     errorElement: <RouteErrorBoundary />,
     children: [
       { index: true, element: <LobbyPage /> },
+      { path:"friends",element:withSuspense(<PlayFormatGate form="friend"><LobbyPage /></PlayFormatGate>) },
+      { path:"party",element:withSuspense(<PlayFormatGate form="event"><LobbyPage /></PlayFormatGate>) },
 
 
       { path: "play/classic", element: withSuspense(<ClassicPlayPage />) },
       { path: "practice", element: withSuspense(<ClassicPlayPage />) },
       { path: "practice/:gameId", element: withSuspense(<PracticeGamePage />) },
-      { path: "play/classic/verified", element: withSuspense(<PlayFormatGate form="verified" modeId="classic"><ChallengeStartPage /></PlayFormatGate>) },
+      { path: "play/classic/verified", element: <Navigate replace to="/play/classic" /> },
       { path: "challenges/:challengeId", element: withSuspense(<ChallengeGamePage />) },
-      { path: "play/classic/online", element: withSuspense(<PlayFormatGate form="solo" modeId="classic"><ClassicOnlinePlayPage /></PlayFormatGate>) },
+      { path: "play/classic/online", element: <Navigate replace to="/play/classic" /> },
       { path: "play/sort", element: withSuspense(<SortPracticeStartPage />) },
       { path: "practice/sort/:gameId", element: withSuspense(<SortPracticeGamePage />) },
-      { path: "play/sort/online", element: withSuspense(<PlayFormatGate form="solo" modeId="sort"><SortPlayPage /></PlayFormatGate>) },
+      { path: "play/sort/online", element: <Navigate replace to="/play/sort" /> },
       { path: "play/aptitude-grid", element: withSuspense(<GridPracticeStartPage />) },
       { path: "practice/aptitude-grid/:gameId", element: withSuspense(<GridPracticeGamePage />) },
-      { path: "play/aptitude-grid/online", element: withSuspense(<PlayFormatGate form="solo" modeId="aptitude-grid"><AptitudeGridPlayPage /></PlayFormatGate>) },
+      { path: "play/aptitude-grid/online", element: <Navigate replace to="/play/aptitude-grid" /> },
       { path: "play/draft", element: withSuspense(<DraftPracticeStartPage />) },
       { path: "practice/draft/:gameId", element: withSuspense(<DraftPracticeGamePage />) },
-      { path: "play/draft/online", element: withSuspense(<PlayFormatGate form="solo" modeId="draft"><DraftPlayPage /></PlayFormatGate>) },
+      { path: "play/draft/online", element: <Navigate replace to="/play/draft" /> },
       { path: "play/race-rebuild", element: withSuspense(<RacePracticeStartPage />) },
       { path: "practice/race-rebuild/:gameId", element: withSuspense(<RacePracticeGamePage />) },
-      { path: "play/race-rebuild/online", element: withSuspense(<PlayFormatGate form="solo" modeId="race-rebuild"><RaceRebuildPlayPage /></PlayFormatGate>) },
+      { path: "play/race-rebuild/online", element: <Navigate replace to="/play/race-rebuild" /> },
       { path: "play/co-race-path", element: withSuspense(<PathPracticeStartPage />) },
       { path: "practice/co-race-path/:gameId", element: withSuspense(<PathPracticeGamePage />) },
-      { path: "play/co-race-path/online", element: withSuspense(<PlayFormatGate form="solo" modeId="co-race-path"><CoRacePathPlayPage /></PlayFormatGate>) },
+      { path: "play/co-race-path/online", element: <Navigate replace to="/play/co-race-path" /> },
       { path: "play/memory", element: withSuspense(<MemoryPracticeStartPage />) },
       { path: "practice/memory/:gameId", element: withSuspense(<MemoryPracticeGamePage />) },
-      { path: "play/memory/online", element: withSuspense(<PlayFormatGate form="solo" modeId="memory"><MemoryPlayEntryPage /></PlayFormatGate>) },
+      { path: "play/memory/online", element: <Navigate replace to="/play/memory" /> },
       { path: "play/pedigree", element: withSuspense(<PedigreePracticeStartPage />) },
       { path: "practice/pedigree/:gameId", element: withSuspense(<PedigreePracticeGamePage />) },
-      { path: "play/pedigree/online", element: withSuspense(<PedigreePlayEntryPage />) },
+      { path: "play/pedigree/online", element: <Navigate replace to="/play/pedigree" /> },
       { path: "play/audio", element: withSuspense(<AudioPracticeStartPage />) },
       { path: "practice/audio/:gameId", element: withSuspense(<AudioPracticeGamePage />) },
-      { path: "play/audio/online", element: withSuspense(<AudioPlayEntryPage />) },
+      { path: "play/audio/online", element: <Navigate replace to="/play/audio" /> },
       { path: "play/bluff", element: withSuspense(<BluffPlayEntryPage />) },
       // These four used to fall through to the generic info page, which told the player
       // "this mode has its own entry, go back to the lobby" — but the lobby led right
@@ -211,14 +179,14 @@ export const routes: RouteObject[] = [
       { path: "play/clue-puzzle", element: withSuspense(<CluePuzzlePlayPage />) },
       { path: "play/strategy-race", element: withSuspense(<StrategyPracticeStartPage />) },
       { path: "practice/strategy-race/:gameId", element: withSuspense(<StrategyPracticeGamePage />) },
-      { path: "play/strategy-race/online", element: withSuspense(<PlayFormatGate form="solo" modeId="strategy-race"><StrategyRacePlayPage /></PlayFormatGate>) },
+      { path: "play/strategy-race/online", element: <Navigate replace to="/play/strategy-race" /> },
       { path: "play/rapport", element: withSuspense(<RapportPlayPage />) },
       { path: "play/creative", element: withSuspense(<CreativePlayPage />) },
       { path: "play/trade", element: withSuspense(<TradePlayPage />) },
       // 其余已发布模式走通用说明页
       { path: "play/:modeId", element: withSuspense(<ModeInfoPage />) },
 
-      { path: "join", element: <JoinPage /> },
+      { path: "join", element: withSuspense(<JoinPage />) },
       { path: "rooms/new", element: withSuspense(<PlayFormatGate form="friend"><CreateRoomPage /></PlayFormatGate>) },
       // /rooms/:roomId 按「有无进行中回合」分流到等待区或对应玩法页
       { path: "rooms/:roomId", element: withSuspense(<RoomEntryPage />) },

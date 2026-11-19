@@ -2,7 +2,7 @@ import "@/i18n/classic";
 import { matchLanguage, useTranslation } from "@/i18n";
 // Ignore Enter while an input method is composing so selecting a character does not interrupt text entry
 import { Search } from "lucide-react";
-import { useDeferredValue, useId, useMemo, useRef, useState } from "react";
+import { useDeferredValue, useId, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { AvatarImage } from "./avatar-image";
 import { searchCharacters, searchDisplayName, searchNameRows, type SearchableCharacter, type SearchHit } from "@/lib/search";
 import { cn } from "@/lib/utils";
@@ -60,8 +60,11 @@ export function SearchInput<T extends SearchableCharacter>({
   // 而不是在 effect 里 setState 触发级联渲染（react-hooks/set-state-in-effect）。
   const [lastTrimmed, setLastTrimmed] = useState("");
   const composingRef = useRef(false);
+  const keyboardNavigation = useRef(false);
   const listboxId = useId();
   const inputRef = useRef<HTMLInputElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   const deferredQuery = useDeferredValue(query);
   const trimmed = deferredQuery.trim();
@@ -78,6 +81,50 @@ export function SearchInput<T extends SearchableCharacter>({
   }
 
   const showPanel = open && trimmed.length > 0 && !disabled;
+
+  useLayoutEffect(() => {
+    if (!showPanel) return;
+    const root = rootRef.current, panel = panelRef.current;
+    if (!root || !panel) return;
+    function place() {
+      if (!root || !panel) return;
+      const rect = root.getBoundingClientRect(), viewport = window.visualViewport;
+      const header = document.querySelector(".uma-header")?.getBoundingClientRect();
+      const top = Math.max((viewport?.offsetTop ?? 0) + 8, (header?.bottom ?? 0) + 8);
+      let bottom = (viewport?.offsetTop ?? 0) + (viewport?.height ?? window.innerHeight) - 8;
+      const nav = document.querySelector(".uma-bottom-nav")?.getBoundingClientRect();
+      if (nav && nav.height > 0) bottom = Math.min(bottom, nav.top - 8);
+      const above = Math.max(0, rect.top - top - 5), below = Math.max(0, bottom - rect.bottom - 5);
+      const upward = below < 240 && above > below;
+      panel.style.top = upward ? "auto" : "calc(100% + 4px)";
+      panel.style.bottom = upward ? "calc(100% + 4px)" : "auto";
+      panel.style.maxHeight = `${Math.min(320, upward ? above : below)}px`;
+    }
+    place();
+    const observer = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(place);
+    observer?.observe(root);
+    window.addEventListener("resize", place);
+    window.addEventListener("scroll", place, true);
+    window.visualViewport?.addEventListener("resize", place);
+    window.visualViewport?.addEventListener("scroll", place);
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener("resize", place);
+      window.removeEventListener("scroll", place, true);
+      window.visualViewport?.removeEventListener("resize", place);
+      window.visualViewport?.removeEventListener("scroll", place);
+    };
+  }, [showPanel]);
+
+  useLayoutEffect(() => {
+    if (!showPanel || activeIndex < 0 || !keyboardNavigation.current) return;
+    const option = document.getElementById(`${listboxId}-opt-${activeIndex}`);
+    const list = panelRef.current?.querySelector<HTMLElement>('[role="listbox"]');
+    if (!option || !list) return;
+    const item = option.getBoundingClientRect(), bounds = list.getBoundingClientRect();
+    if (item.top < bounds.top) list.scrollTop += item.top - bounds.top;
+    else if (item.bottom > bounds.bottom) list.scrollTop += item.bottom - bounds.bottom;
+  }, [activeIndex, showPanel, listboxId]);
 
   /*
    * 屏幕阅读器播报（aria-live polite）：只播报结果数量与状态。
@@ -103,9 +150,10 @@ export function SearchInput<T extends SearchableCharacter>({
 
   function handleKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
     // 输入法组合期间不抢 Enter
-    if (composingRef.current || event.nativeEvent.isComposing) return;
+    if (disabled || composingRef.current || event.nativeEvent.isComposing) return;
 
     if (event.key === "ArrowDown") {
+      keyboardNavigation.current = true;
       event.preventDefault();
       if (hits.length === 0) return;
       setOpen(true);
@@ -113,6 +161,7 @@ export function SearchInput<T extends SearchableCharacter>({
       return;
     }
     if (event.key === "ArrowUp") {
+      keyboardNavigation.current = true;
       event.preventDefault();
       if (hits.length === 0) return;
       setOpen(true);
@@ -121,7 +170,7 @@ export function SearchInput<T extends SearchableCharacter>({
     }
     if (event.key === "Enter") {
       const hit = hits[activeIndex];
-      if (hit) {
+      if (showPanel && !loading && !loadError && query === deferredQuery && hit) {
         event.preventDefault();
         if (submitLabel && onSubmit) onSubmit(hit.character);
         else commit(hit.character);
@@ -137,7 +186,10 @@ export function SearchInput<T extends SearchableCharacter>({
   }
 
   return (
-    <div className={cn("relative flex flex-col gap-2", className)}>
+    <div ref={rootRef} className={cn("relative flex flex-col gap-2", className)}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
+      }}>
       <label
         htmlFor={`${listboxId}-input`}
         className={hideLabel ? "sr-only" : "text-sm font-semibold text-[var(--color-ink)]"}
@@ -177,12 +229,11 @@ export function SearchInput<T extends SearchableCharacter>({
           // 16px 正文，iOS 不自动放大
           className="h-12 w-full min-w-0 bg-transparent text-base text-[var(--color-ink)] outline-none placeholder:text-[var(--color-muted)]"
           onChange={(event) => {
+            keyboardNavigation.current = false;
             setQuery(event.target.value);
             setOpen(true);
           }}
           onFocus={() => setOpen(true)}
-          // 失焦延迟关闭，保证点击候选项时先触发 click
-          onBlur={() => window.setTimeout(() => setOpen(false), 120)}
           onCompositionStart={() => {
             composingRef.current = true;
           }}
@@ -199,8 +250,8 @@ export function SearchInput<T extends SearchableCharacter>({
       </p>
 
       {showPanel ? (
-        <div className="absolute left-0 right-0 top-full z-[var(--z-popover)] mt-1 overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-line)] bg-[var(--color-panel)] shadow-[var(--shadow-panel)]">
-          <ul id={listboxId} role="listbox" aria-label={t("search.candidates")} className="max-h-80 overflow-y-auto overscroll-contain p-1">
+        <div ref={panelRef} className="absolute left-0 right-0 top-full z-[var(--z-popover)] flex overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-line)] bg-[var(--color-panel)] shadow-[var(--shadow-panel)]">
+          <ul id={listboxId} role="listbox" aria-label={t("search.candidates")} className="min-h-0 w-full overflow-y-auto overscroll-contain p-1">
             {loading ? (
               <li className="px-3 py-4 text-sm text-[var(--color-muted)]">{t("search.reading")}</li>
             ) : loadError ? (
@@ -224,7 +275,11 @@ export function SearchInput<T extends SearchableCharacter>({
                       "flex min-h-14 w-full items-start gap-3 rounded-[var(--radius-control)] px-2 py-2 text-left",
                       index === activeIndex && "bg-[var(--color-panel-soft)]",
                     )}
-                    onMouseEnter={() => setActiveIndex(index)}
+                    onMouseEnter={() => { keyboardNavigation.current = false; setActiveIndex(index); }}
+                    onMouseDown={(event) => {
+                      // Keep input focus during mouse selection; touch scrolling remains native
+                      if (event.button === 0) event.preventDefault();
+                    }}
                     onClick={() => {
                       if (submitLabel && onSubmit) onSubmit(hit.character);
                       else commit(hit.character);

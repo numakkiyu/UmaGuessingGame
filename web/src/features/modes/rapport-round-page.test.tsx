@@ -1,3 +1,4 @@
+import { dismissFault } from "@/test/dismiss-fault";
 import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
 import { MemoryRouter, Route, Routes } from "react-router";
@@ -65,7 +66,7 @@ it("empty preference reveals are readable and premature reveals are discarded", 
   const raw = { publicState: { ...ps(), questions: [{ ...question, reveal: { chosenOptionId: "q1-o0", chosenLabel: "吃饭", correctPredictorIds: [] } }] } };
   expect(normalizeRapportRound(raw).questions[0]?.reveal).toBeUndefined();
   ps().questions = [{ ...question, locked: true, reveal: { chosenOptionId: "", chosenLabel: "", correctPredictorIds: [] } }];ps().currentQuestion = 2;
-  show();expect(screen.getAllByText("本题未记录偏好，预测不计命中")[0]).toBeTruthy();expect(screen.getAllByText("你这题没有确认")[0]).toBeTruthy();
+  show();expect(screen.getAllByText("这题伙伴没有确认偏好，因此所有预测均不得分")[0]).toBeTruthy();expect(screen.getAllByText("你这题没有确认")[0]).toBeTruthy();
 });
 it("observers see progress and final scores without personal prediction feedback", () => {
   delete ps().self;ps().questions = [{ ...question, locked: true }];ps().currentQuestion = 6;f.view.meta = { roundId:"round",phase: "settled", phaseVersion: 6 };f.view.canSubmit = false;
@@ -102,7 +103,7 @@ it("确认旧操作使用原body与key，不清除新题草稿，读取失败仍
  const page=show();fireEvent.click(screen.getByRole("button",{name:"吃饭"}));fireEvent.click(screen.getByRole("button",{name:"确认我的预测"}));await screen.findByRole("button",{name:"确认刚才的选择"});const original=f.api.createSubmission.mock.calls[0];page.unmount();
  ps().currentQuestion=2;ps().questions=[{...question,locked:true},{...question,questionId:"q2"}];f.view.meta={roundId:"round",phase:"collecting",phaseVersion:11,paused:true};f.view.isError=true;f.view.error=new TimeoutError(10);f.view.submissionRevision=1;
  saveRapportDraft("person:round:rapport:me:q2","q1-o1");await act(async()=>{await changeLanguage("ja")});show();
- fireEvent.click(screen.getByRole("button",{name:rapportOnlineCopy.ja.confirmAction}));await screen.findByText(rapportOnlineCopy.ja.accepted);expect(f.api.createSubmission.mock.calls[1]).toEqual(original);expect(loadRapportDraft("person:round:rapport:me:q2",["q1-o1"])).toEqual({optionId:"q1-o1"});expect(screen.getByRole("button",{name:"补觉"}).getAttribute("aria-pressed")).toBe("true");
+ await dismissFault();fireEvent.click(screen.getByRole("button",{name:rapportOnlineCopy.ja.confirmAction}));await screen.findByText(rapportOnlineCopy.ja.accepted);expect(f.api.createSubmission.mock.calls[1]).toEqual(original);expect(loadRapportDraft("person:round:rapport:me:q2",["q1-o1"])).toEqual({optionId:"q1-o1"});expect(screen.getByRole("button",{name:"补觉"}).getAttribute("aria-pressed")).toBe("true");
 });
 it("错误随语言切换、拒绝内部异常，草稿保存失败如实提示",async()=>{
  f.api.createSubmission.mockRejectedValue(new ApiError({status:422,code:"duplicate_answer",message:"RAW db stack",requestId:null}));show();fireEvent.click(screen.getByRole("button",{name:"吃饭"}));fireEvent.click(screen.getByRole("button",{name:"确认我的预测"}));await screen.findByText(rapportOnlineCopy["zh-Hans"].errors.duplicate_answer);await act(async()=>{await changeLanguage("ja")});expect(screen.getByText(rapportOnlineCopy.ja.errors.duplicate_answer)).toBeTruthy();expect(document.body.textContent).not.toMatch(/RAW|duplicate_answer|phaseVersion/);cleanup();

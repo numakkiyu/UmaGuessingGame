@@ -1,3 +1,4 @@
+import { setPlayerName } from "./player-profile.mjs";
 /** Real UI programme: create, invite, continuous rounds, switch, display and close. */
 import { chromium } from 'playwright';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -22,7 +23,7 @@ try{
  await page.getByRole('heading',{name:'学园周末娱乐杯',exact:true}).waitFor();check('Lobby creates real programme through normal controls',Boolean(eventId));
  const current=await get(`/events/${eventId}`),roomId=current.roomId;const room=await get(`/rooms/${roomId}`);
  check('Organiser hosts without a competing player seat',room.viewer.role==='host',room.viewer);
- const code=await page.getByTestId('event-invite-code').innerText();await player.goto(`${base}/join?code=${code}`);await player.getByLabel('显示名',{exact:true}).fill('特别来宾');await clickWrite(player,'加入房间',`/rooms/${roomId}/memberships`);await player.getByText('本场项目：经典弗一把',{exact:true}).waitFor();
+ const code=await page.getByTestId('event-invite-code').innerText();await player.goto(`${base}/join?code=${code}`);await setPlayerName(player, '特别来宾');await clickWrite(player,'加入房间',`/rooms/${roomId}/memberships`);await player.getByText('本场项目：经典弗一把',{exact:true}).waitFor();
  await page.getByLabel('玩法',{exact:true}).selectOption('sort');await page.getByLabel('分项名称',{exact:true}).fill('档案排序');await page.getByLabel('分项分值上限',{exact:true}).fill('60');await page.getByLabel('回合数',{exact:true}).fill('2');
  const segment=await clickWrite(page,'添加分项',`/events/${eventId}/segments`);await page.getByRole('region',{name:'节目单'}).getByText('档案排序',{exact:true}).waitFor();
  await page.getByLabel('玩法',{exact:true}).selectOption('classic');await page.getByLabel('分项名称',{exact:true}).fill('经典热身');await page.getByLabel('分项分值上限',{exact:true}).fill('40');await page.getByLabel('回合数',{exact:true}).fill('1');

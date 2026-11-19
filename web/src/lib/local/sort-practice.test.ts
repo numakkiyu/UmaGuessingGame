@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import fixtures from "@/lib/domain/testdata/sort-relations.json";
 import { changeSort, scoreSort, sortCards, sortResult, type SortProfile } from "@/lib/domain/sort-practice";
-import { createSortGame, readSortPack, validateSortArchive, type SortPack } from "./sort-practice-store";
+import { availableSortKeys, createSortGame, readSortPack, validateSortArchive, type SortPack } from "./sort-practice-store";
 import { sha256 } from "./checksum";
 function pack():SortPack {
  const profiles:SortProfile[]=Array.from({length:8},(_,i)=>({characterId:`c${i}`,displayName:`角色${i}`,imagePath:`/assets/avatars/c${i}.webp`,values:{height:150+Math.floor(i/2),birthday:101+i}}));
@@ -40,4 +40,14 @@ describe("sorting practice",()=>{
   const contentJSON=JSON.stringify({cards:profiles.map(c=>({...c,values:{height:150}}))});
   expect(()=>createSortGame({...p,contentJSON,sha256:sha256(contentJSON),byteLength:new TextEncoder().encode(contentJSON).length},"height",false)).toThrow();
  });
+});
+
+
+it("offers only keys with six known values and a meaningful comparison",()=>{
+ const profiles=readSortPack(pack()).profiles;
+ expect(availableSortKeys(profiles)).toEqual(["height","birthday"]);
+ const heightOnly=profiles.map((p,i)=>({...p,values:i<2?p.values:{height:p.values.height}}));
+ expect(availableSortKeys(heightOnly)).toEqual(["height"]);
+ expect(availableSortKeys(profiles.map(p=>({...p,values:{height:160}})))).toEqual([]);
+ expect(availableSortKeys(profiles.slice(0,5))).toEqual([]);
 });

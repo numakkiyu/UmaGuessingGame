@@ -13,14 +13,14 @@ describe("normalizeAudioRound", () => {
   it("读实测字段名（audioPath / durationMillis / maxPlays）", () => {
     const round = normalizeAudioRound({
       publicState: {
-        clips: [{ clipId: "c1", audioPath: "/assets/audio/a.mp3", durationMillis: 12000, maxPlays: 2 }],
+        clips: [{ clipId: "c1", audioPath: "/assets/audio/a.webm", durationMillis: 12000, maxPlays: 2 }],
         candidates: [{ candidateId: "1001", name: "特别周" }],
         preloadRequired: true,
         scoring: "每对 25 分",
       },
     });
     expect(round.clips).toHaveLength(1);
-    expect(round.clips[0]?.audioPath).toBe("/assets/audio/a.mp3");
+    expect(round.clips[0]?.audioPath).toBe("/assets/audio/a.webm");
     expect(round.clips[0]?.durationMillis).toBe(12000);
     expect(round.clips[0]?.maxPlays).toBe(2);
     expect(round.candidates[0]?.name).toBe("特别周");
@@ -30,17 +30,17 @@ describe("normalizeAudioRound", () => {
   it("兼容契约字段名（assetUrl / durationMs）", () => {
     const round = normalizeAudioRound({
       publicState: {
-        clips: [{ clipId: "c1", assetUrl: "/assets/audio/b.mp3", durationMs: 5000 }],
+        clips: [{ clipId: "c1", assetUrl: "/assets/audio/b.webm", durationMs: 5000 }],
         candidates: [],
       },
     });
-    expect(round.clips[0]?.audioPath).toBe("/assets/audio/b.mp3");
+    expect(round.clips[0]?.audioPath).toBe("/assets/audio/b.webm");
     expect(round.clips[0]?.durationMillis).toBe(5000);
   });
 
   it("maxPlays 缺失时用默认 2 次", () => {
     const round = normalizeAudioRound({
-      publicState: { clips: [{ clipId: "c1", audioPath: "/a.mp3" }], candidates: [] },
+      publicState: { clips: [{ clipId: "c1", audioPath: "/a.webm" }], candidates: [] },
     });
     expect(round.clips[0]?.maxPlays).toBe(DEFAULT_MAX_PLAYS);
     expect(DEFAULT_MAX_PLAYS).toBe(2);
@@ -48,14 +48,14 @@ describe("normalizeAudioRound", () => {
 
   it("clipId 缺失时用 audioPath 末段作稳定标识", () => {
     const round = normalizeAudioRound({
-      publicState: { clips: [{ audioPath: "/assets/audio/xyz123.mp3" }], candidates: [] },
+      publicState: { clips: [{ audioPath: "/assets/audio/xyz123.webm" }], candidates: [] },
     });
-    expect(round.clips[0]?.clipId).toBe("xyz123.mp3");
+    expect(round.clips[0]?.clipId).toBe("xyz123.webm");
   });
 
   it("没有 audioPath 的条目被跳过（无法播放）", () => {
     const round = normalizeAudioRound({
-      publicState: { clips: [{ clipId: "c1" }, { clipId: "c2", audioPath: "/a.mp3" }], candidates: [] },
+      publicState: { clips: [{ clipId: "c1" }, { clipId: "c2", audioPath: "/a.webm" }], candidates: [] },
     });
     expect(round.clips).toHaveLength(1);
     expect(round.clips[0]?.clipId).toBe("c2");

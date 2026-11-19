@@ -14,7 +14,7 @@ const page = await ctx.newPage();
 await page.goto(`${base}/join?code=${invite}`, { waitUntil: "networkidle" });
 await page.waitForTimeout(800);
 
-// 填显示名（邀请码已由 ?code= 预填）
+// 填昵称（邀请码已由 ?code= 预填）
 await page.getByPlaceholder("其他玩家看到的名字").fill("玩家E3");
 await page.getByRole("button", { name: /加入房间/ }).click();
 await page.waitForTimeout(2000);

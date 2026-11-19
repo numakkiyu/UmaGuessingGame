@@ -12,8 +12,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"net/url"
-	"path"
+	"regexp"
 	"sort"
 	"strings"
 	"time"
@@ -53,9 +52,7 @@ const (
 	CodeIncomplete         = "incomplete_matches"
 	CodeRoundClosed        = "round_closed"
 	CodePlayLimit          = "play_limit_reached"
-	// CodePlaybackFailed is returned when a client reports that a clip would not play.
-	// It is deliberately NOT a wrong answer: the plan says a playback failure must not
-	// be scored as one .
+	// CodePlaybackFailed records a media fault separately from an incorrect answer.
 	CodePlaybackFailed = "playback_failed"
 )
 
@@ -161,11 +158,10 @@ func (c clip) usable() bool {
 
 // Only same-origin asset paths; reject protocol-relative URLs, encoded traversal,
 // query strings, fragments and arbitrary schemes before publishing a media address.
+var audioPathPattern = regexp.MustCompile(`^/assets/audio/[A-Za-z0-9_-]+\.webm$`)
+
 func safeAudioPath(raw string) bool {
-	u, err := url.Parse(raw)
-	return err == nil && u.Scheme == "" && u.Host == "" && u.RawQuery == "" && u.Fragment == "" &&
-		u.Path == raw && strings.HasPrefix(raw, "/assets/") && !strings.ContainsAny(raw, `\%`) && path.Clean(raw) == raw &&
-		(strings.HasSuffix(raw, ".mp3") || strings.HasSuffix(raw, ".ogg") || strings.HasSuffix(raw, ".wav"))
+	return audioPathPattern.MatchString(raw)
 }
 
 // ClipsSection is the pack section carrying the candidate clips.
@@ -288,8 +284,8 @@ func intField(rec modeutil.FieldMap, keys ...string) int {
 
 // candidate is one published character the player may pair a clip with.
 //
-// The character list is the answer space. It includes the true speaker of every clip,
-// so the round is solvable, plus distractors so it is not solvable by elimination.
+// The character list contains each clip's speaker exactly once, matching the
+// published one-to-one pairing rules. Its order is independent of the clips.
 type candidate struct {
 	CharacterID string `json:"characterId"`
 	Name        string `json:"name"`
@@ -302,9 +298,7 @@ type candidate struct {
 // carries the transcript or the speaker: either would hand the answer over.
 type publicClip struct {
 	ClipID string `json:"clipId"`
-	// AudioPath is the served route. It is NOT a secret (a browser must fetch it), so
-	// hiding it is not a security claim; the plan says so explicitly
-	// .
+	// AudioPath is the public, same-origin route used by the player.
 	AudioPath      string `json:"audioPath"`
 	DurationMillis int    `json:"durationMillis"`
 	// MaxPlays is the per-clip play budget.

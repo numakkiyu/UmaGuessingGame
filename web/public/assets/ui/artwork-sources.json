@@ -1,0 +1,1873 @@
+[
+  {
+    "file": "characters/chibi-actions.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "e4dd27bdc44f907a59e7c1ef3eea4c62791598143e62666b3f631bf3ada5ffa1",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official game footage"
+  },
+  {
+    "file": "portraits/1007.webp",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "d56db4adedd2e1d58516979d07b993a4bccf32a84f6b5099cf315ce5ea736d5f"
+  },
+  {
+    "file": "portraits/1006.webp",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "f70b5e342cefd45d9478808a8b62d7c4cd7275b8739e0e7d5b0d8f1be71b49ff"
+  },
+  {
+    "file": "portraits/1001.webp",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "1614a4a92c7fe972634ecffcaac31b2b00b8f743b1b1de47d288f8e12a5e12bc"
+  },
+  {
+    "file": "portraits/1003.webp",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "8ef0dcca9bbc64a78eb12f541358c6b1d7841b5151d69848d11fd32601242e76"
+  },
+  {
+    "file": "portraits/1002.webp",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "c0a6917d756046ecab7496f288316c68e69c6c2e8b1856b16b461a4dec411d9e"
+  },
+  {
+    "file": "portraits/1013.webp",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "fe942d6f24ee5eba51e03d33cfeb238d4146a1aa8720b86c688764b9f64617b0"
+  },
+  {
+    "file": "transition/story-game-live-1.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "1563f7167af64f4a187d2cbd9212400d8adcad7add1acb85d674d5c54ce13b55",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official game footage"
+  },
+  {
+    "file": "transition/02_silencesuzuka.png",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "44f633e01a16d0d8e681e96eaf307b1fb20c60e5d8a657f2d628fd518bf42827"
+  },
+  {
+    "file": "transition/01_specialweek.png",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "72d1cacf4141fd98f50044a3e7cff6e0cbe5108b3d56f88ec422b1c4fa606450"
+  },
+  {
+    "file": "transition/03_tokaiteio.png",
+    "kind": "Official character artwork",
+    "source": "https://umamusume.jp/character/",
+    "sha256": "0cbc6a85da0e487563624cda7a531667b10e695b2e4e415797d6e8a575466788"
+  },
+  {
+    "file": "transition/story-anime-2-fixed.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "5bd4ca1d7d3f6d1f11f84509199a5ad1a183b15493f93978533766b9f097dfcc",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official game footage"
+  },
+  {
+    "file": "transition/02_silencesuzuka.webp",
+    "kind": "Official character artwork",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/1808c56c5ab94a2d992112bad27c59f6/02_silencesuzuka.webp",
+    "sha256": "15f3172676961859a3e46d1274a428960d9f55662405f39c95af1f781e3a8b94"
+  },
+  {
+    "file": "transition/01_specialweek.webp",
+    "kind": "Official character artwork",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d364f937a3e842e89d4ea2b2a02449d8/01_specialweek.webp",
+    "sha256": "a0888fa462ad0d340d77427fa44c5be1fe27106b9e0f11baf8571fabd52d60f9"
+  },
+  {
+    "file": "transition/03_tokaiteio.webp",
+    "kind": "Official character artwork",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/e210ba1023f446e1bb993827cd2b4091/03_tokaiteio.webp",
+    "sha256": "860f1a8d3ea218fb38a4a345c09e311011d72f00a7486fa5093189020c6ce709"
+  },
+  {
+    "file": "transition/story-game-live-2.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "dd55e2133e8e376f17855aa4ae26d768aee5f90ebc4a4a73cdd3f359ce0151e9",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official game footage"
+  },
+  {
+    "file": "transition/story-anime-1.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "f1d3e7f7d73dc270a8780c34583515d90d3a370d9af5d9509729bc5c8ef769c3",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official game footage"
+  },
+  {
+    "file": "backgrounds/academy.webp",
+    "kind": "Game background artwork",
+    "sha256": "f95e0820c72d5676490db2365f30260eb2b044c9246d99267b417d8702075bfe",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/50/n3ccywo2nmnezfi0vbuaqf9a6p3l6c1.png",
+    "page": "https://wiki.biligame.com/umamusume/"
+  },
+  {
+    "file": "backgrounds/clubroom.webp",
+    "kind": "Game background artwork",
+    "sha256": "96c7ced19d9c931dd204612c23fe1ac2ed56e397bd42efb2bce94fc79f6d19be",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/0b/szu0rdgqsrpwjg7gnwhnbirsptz1ybi.png",
+    "page": "https://wiki.biligame.com/umamusume/"
+  },
+  {
+    "file": "backgrounds/concert-stage.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive environment illustration, not official game footage",
+    "sha256": "bef6ade991bb868814b92b2ac68a208c5dcd47488558489e90844edef094e3a2"
+  },
+  {
+    "file": "backgrounds/stage.webp",
+    "kind": "Game background artwork",
+    "sha256": "5dc62ff864d77b8c9d91195923b7c2a83c7265bf516468dd1858652448d70e30",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/52/c50kyuoa1xj073m0pycmdeyzinf9hg5.png",
+    "page": "https://wiki.biligame.com/umamusume/"
+  },
+  {
+    "file": "backgrounds/training-course.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive environment illustration, not official game footage",
+    "sha256": "a53731318cae2e1551d9f738e8e876fccbd507d603565b09aa0db70726d9dad1"
+  },
+  {
+    "file": "avatars/1001.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/53/4zp3sgf37zkkkguq2fcvu5r012edxaz.png",
+    "sha256": "01794c3028b555ecdf3fe9ba400f6fcdcb299e88bc32b077c84e92abc0f1d53c"
+  },
+  {
+    "file": "avatars/1002.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/35/t4xrx0lg8n14lpkzha3vfqvlg2lhjqr.png",
+    "sha256": "c7477fe5e1baa79872cfb689314269e782ca55533147bbf68345a5a188a6a8d1"
+  },
+  {
+    "file": "avatars/1003.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/eb/r94rr4pddfbnypu5sjnz161fkechpte.png",
+    "sha256": "47f9653e9ba4dc4d9c0064f7949484e790661334201278e7d6681e1962df96c0"
+  },
+  {
+    "file": "avatars/1004.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/5d/9ffge5m3hntw62yi2r7q89uqt49txfu.png",
+    "sha256": "758803c962eda9cb903c948f62879f812efaafe554af99da157d81b9744f469b"
+  },
+  {
+    "file": "avatars/1005.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/2a/ow8pf0l75uucwrwir3jl4qda3ray37g.png",
+    "sha256": "a04198b40f1692e72febde7734d0be8b5f475f2ad39055dd177e1cb5066e6d7b"
+  },
+  {
+    "file": "avatars/1006.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/38/naeumi4jpyr8horwvqv3yre3uc6urpf.png",
+    "sha256": "84c99fc35e29e8b3d4c15bb271caad77a58656ffb3a2b18c6826d5af1fafaad9"
+  },
+  {
+    "file": "avatars/1007.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c1/jcw8fo4mur54wf3okq01zv6cw8sb16d.png",
+    "sha256": "28c50c4a6c27423d954373db8ea4c43bccc506b36c47a9f5181fe4835b4663cb"
+  },
+  {
+    "file": "avatars/1008.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c6/7x4nq4r8r4mi1mzbdnoc5h4yb90ik0b.png",
+    "sha256": "6d0c38a057c8c6280174331b9d30272a87b4c7b5b021c8cac76685eef517ebee"
+  },
+  {
+    "file": "avatars/1009.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/fe/1dgkrznrx1oeta3eielsbhicg5byym5.png",
+    "sha256": "0d44ddb71ea1e04066d2eeee8596c41137a05cb174877100a3b93fa77039a17d"
+  },
+  {
+    "file": "avatars/1010.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/da/ar78rcttaanns104wsn2jkhapf5fh8x.png",
+    "sha256": "657a344c7996fc2f65578dd214625b21996ddeef55388f313dbc08f9f8327ff1"
+  },
+  {
+    "file": "avatars/1011.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c5/0qtdv1b2tj5boivcyrud16qzt3wyvzf.png",
+    "sha256": "f442989b5199e7ff03c67f365593d6915caf0b65b6914416f045e4691984579a"
+  },
+  {
+    "file": "avatars/1012.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/e2/l43mgh9g1t53v1txq9dut8xltv63oy0.png",
+    "sha256": "e671b2f61b21a164fd1d30df2ad83ef3dd5240a34599c60fff83753a23e7b149"
+  },
+  {
+    "file": "avatars/1013.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/d7/erhirn4rohrfcvy5tvhrsy1c2xs0te0.png",
+    "sha256": "8a01b4355ff409af113b78e94df5bb43fc8c735a00a0f27f5695b9b9c247174f"
+  },
+  {
+    "file": "avatars/1014.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/96/2mypaxij4ijtdrejij0ptjuojoso5wl.png",
+    "sha256": "610db99d4c3182deea4a2f9d89e5f5c2af4a3c85db16d2ac11f560e949f5a1ca"
+  },
+  {
+    "file": "avatars/1015.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/05/emsa2yazl68rkgu9es6aus7vhmfgjrs.png",
+    "sha256": "e27ca12366c52eff66babc2bb02e41e3308a962ad2d70bb2c4ecdbdc731f8582"
+  },
+  {
+    "file": "avatars/1016.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/23/1oo9awf34jwd9bp24ty7dy1wjl7y5rg.png",
+    "sha256": "151915f3f17c1e0f8052825bc4fb8625f34f1f35266e5b8d46c53710d06a184b"
+  },
+  {
+    "file": "avatars/1017.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/94/lfzxqjm0w2nfoh53nkj8s4hgyc1299k.png",
+    "sha256": "b43106887a4d3a11457618291809e10932435035a7c017ab9aaf0fb3e8cc2464"
+  },
+  {
+    "file": "avatars/1018.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/dd/kfk367zwq89c9yhcyryjoe3c0k3comf.png",
+    "sha256": "797efd3b6826252e07deb9d9d026f5510f995216c197a814ded790b1146e5636"
+  },
+  {
+    "file": "avatars/1019.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/8/89/eanb8dd3xlc5h95l3excaubvzl8zxld.png",
+    "sha256": "8d382c8bd557367a2fd3dfcaa86382dd66d6ce3e7f27b0d0401ed736c606fd43"
+  },
+  {
+    "file": "avatars/1020.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/04/s4x81bg2u53foiomvcpuu24usp8azkh.png",
+    "sha256": "51baaf2d0b54f0f3e5844ad0ee9dea5f5a75f91c33b440cf286298d7b196a422"
+  },
+  {
+    "file": "avatars/1021.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/43/4ntszsgmqmpqkt7ug5wdvgo1jamlbtr.png",
+    "sha256": "fd4540fcae200b1c60b975e1d5e287be7ec755e6313c55f6609c1f4b9d586d70"
+  },
+  {
+    "file": "avatars/1022.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c1/oj6lnmf90p6pvxosb1g33w7cfjtjtom.png",
+    "sha256": "73d7d1dc52b23109241c1da7f12c585c8f993f039b0dd7412a9c40280e221024"
+  },
+  {
+    "file": "avatars/1023.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/a/aa/7t5bsjucynpfjywjhbi964gdxiu2chn.png",
+    "sha256": "8f7b787636474f93be7228dfb47b8caf8318a4789c6acb1e54388d2a8a553e12"
+  },
+  {
+    "file": "avatars/1024.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/6/6b/jnc5alu5q2i3yxkqzomjozctjh4h1ev.png",
+    "sha256": "7df229cff9ca8e344c172d85e9f958c90557dc1ff58979724434eeb1cd220e6f"
+  },
+  {
+    "file": "avatars/1025.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/6/6e/iej4q9fn4se43bztvn9pqwx2r2pulwq.png",
+    "sha256": "7fb1799ac5703f7e5c49b3d0c3f0956d7f2a2fcb3119067901b8c7753f7deaeb"
+  },
+  {
+    "file": "avatars/1026.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/42/76p07e15p1tg8sw5zkf3wvby0auq674.png",
+    "sha256": "a906a6719b38f9b5dd11ddeb1ebac8cc8ccd5e9cc467b9b358b4ec6240169d10"
+  },
+  {
+    "file": "avatars/1027.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/b/b1/5qxbp097kzvsfa7bzfyjllrtz3nbhvd.png",
+    "sha256": "9c26ae86e5bc30fd50c2c54e892b2562ea52be0b86feb752cacee49f7351b407"
+  },
+  {
+    "file": "avatars/1028.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c1/mnvt9mm88o9mx6va9jd38obpgx9ffkw.png",
+    "sha256": "e6dd269155493e7bccbe1d5cb10e142dc423b1211e561324958e80bc829f9e30"
+  },
+  {
+    "file": "avatars/1029.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/9e/kz1efd2fq0wyvrnek9howwe77ko7tuy.png",
+    "sha256": "0c59877d2c1a2bda7cf9696ed4fc349c2b9ffbe3f8d95fff5a59aac49dd02a0b"
+  },
+  {
+    "file": "avatars/1030.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/98/qu3nm9ndwcttfzo34bcctxfk6irzelc.png",
+    "sha256": "8d37ad3efaabe41cd80e1b38765d65e43bec05d2fbe8421878053b18ce30b6aa"
+  },
+  {
+    "file": "avatars/1031.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/ee/b30rs3kdo7ilj94g0w7z8hkdjluz7dk.png",
+    "sha256": "4b50e8a17cd67b9d9f75e09e01616c7b6f4fad172038f4592ff325923623aad7"
+  },
+  {
+    "file": "avatars/1032.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/44/nze7tfx2csa0ow5i4tei3thqf2hmi4e.png",
+    "sha256": "b8ad7d6057c64ef63e62da672a0c28e0b927c09f3816dea33b59d62ac27d00de"
+  },
+  {
+    "file": "avatars/1033.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/a/a6/tumnl0c71dtq9ahkdkw7gx4ojfp9ti1.png",
+    "sha256": "350e818bc3ef563586c24622eab197fa50c31b55fdfd3c5f9a5fff559ec1baf7"
+  },
+  {
+    "file": "avatars/1034.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/8/8e/6dbabvdisp99dkt3ncizyzcpq2lreze.png",
+    "sha256": "82d3eff526f850a533db55a0e3073d4345c2ed1fc9a733eda893e6ae1d88067d"
+  },
+  {
+    "file": "avatars/1035.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c2/48a6nntft0xeb4zw1dimnxjjn3w2t0x.png",
+    "sha256": "dbf0e3f6d230472e1374cb982e30e67208dc9b7a31496992023db7d43cc416ac"
+  },
+  {
+    "file": "avatars/1036.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/d5/ae0e93f6g9lorgwipj5k294966y5nqq.png",
+    "sha256": "376aa4ff4ff6ed32cd7453e5709499e6bb81e6b347f82d0a63983f41fdb3b0fd"
+  },
+  {
+    "file": "avatars/1037.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/f5/hgclwej8rdo6ued069ypthkiugvu8z8.png",
+    "sha256": "245c79a3fdc1b84bfbb8296f1f112965c767d726050de1a3147a8bcb1ed66ec5"
+  },
+  {
+    "file": "avatars/1038.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/a/a6/t5fr09q6v5ehafqytj0a696yf0ke2lt.png",
+    "sha256": "d86eeee79bd4a109f4868c0b4a2edf52c7ea030588295e1e8b132dcd5431c352"
+  },
+  {
+    "file": "avatars/1039.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/7/7f/s4jcwbmtqllj0bukjbsdmmwrugzbmr3.png",
+    "sha256": "2a285bafffa19850494c2ae90ccc0d6be5d4d283dfcb851f5c820ca9ddacc75e"
+  },
+  {
+    "file": "avatars/1040.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/ec/8xbqx0l95rk1zw5464ndpocmlh75txq.png",
+    "sha256": "9ddb91c315a187ede248713c3c7d0a42ce37932569ef1b53db5c91b4c3f32c35"
+  },
+  {
+    "file": "avatars/1041.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/1/1a/ff8p9oezlsfo1hbx59dcgjsu6hf1a06.png",
+    "sha256": "7e2bdcbc1a804e6ddcdb5b1dfafcad4157853185a151192aecaaddcf5109625f"
+  },
+  {
+    "file": "avatars/1042.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/36/ib1tzupjodz3nv8tsfqni46flbgb6gp.png",
+    "sha256": "ae1b6ef60d69a4d29555f6bc2dc72cc97799b32671a021f1e1f8171e46b8e075"
+  },
+  {
+    "file": "avatars/1043.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/8/84/642giknamlv5e3k8s1kao25rpi88hsa.png",
+    "sha256": "a34b40baa223103648881fe7d4f49a56ddada5e42b33f0a6c3c159fb7cd0754e"
+  },
+  {
+    "file": "avatars/1044.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/0d/0xbqu2g1f0etq6j0xgpvedohx6bgyr5.png",
+    "sha256": "d0b05779fd45aa4c7921dee5af8773b4e7c70a938441452d60def05e0a9d4703"
+  },
+  {
+    "file": "avatars/1045.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/6/67/2hzrnox7qhhiogtkaohu6glgj365v69.png",
+    "sha256": "1f5ac10361445a0297d0d172f75ce09ba91cedb9b9e136620abab138bfecf900"
+  },
+  {
+    "file": "avatars/1046.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c5/rxi9e8edfw7f698069zd3oksf7fm46t.png",
+    "sha256": "1fb28f728ebcc26db3b334f56bd7e66925b0c8ab8954032c2ce8ac924c782386"
+  },
+  {
+    "file": "avatars/1047.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/48/jjpuqyj7qju01g5y32j181ta3y4lqut.png",
+    "sha256": "f8d0019c74dd77f3b91f6bb43e1837cb02fea01abb602a90c28569fd05503d44"
+  },
+  {
+    "file": "avatars/1048.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/eb/jfrleycq02idrf2htufif22z3g1cfnt.png",
+    "sha256": "7d7fc6ad7c763ad2073e22a9bd4e643f73fe3564ec262be7d921723401b675c9"
+  },
+  {
+    "file": "avatars/1049.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/31/k19wjdp0zml2mmx9ax6n8mqbedcifjr.png",
+    "sha256": "552337e835ed0c19d25ef8cb843732881b59081fbe339c7da52ef635f0c31825"
+  },
+  {
+    "file": "avatars/1050.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c9/cwy9bpa8659wdmugzl2i2ze53kc5vdx.png",
+    "sha256": "dfaed816f1da39c5ec05dee32a62f7fbf06d2cfd178402aaafc3072da3ad1c7a"
+  },
+  {
+    "file": "avatars/1051.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/f7/twdzc1nhpfqwyieaayyjd2x8yi885vk.png",
+    "sha256": "44b5997f3479d5eddd81094283b9db24a0056d83ee2e90edbb14fb7389f2eb8c"
+  },
+  {
+    "file": "avatars/1052.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/a/a8/chmt12gxt41vyuxljm25lr4rk1fyb69.png",
+    "sha256": "305d88be8eabd8a41428884f7335635c3b5afcbb1e584a4b037f897db12737ad"
+  },
+  {
+    "file": "avatars/1053.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c1/ooqio23oq6whfo95z0nsd0q8tad5qjx.png",
+    "sha256": "f587a9984e21cda1c94e029c04c970f537a78b97107e3eec9ec71e18c3dcdc05"
+  },
+  {
+    "file": "avatars/1054.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/1/1c/fkip959asba7gzeyjigqb17slkirjhw.png",
+    "sha256": "dd16afc697a763db9a310b7400e4e965d4bb2500026954054cbe883030791585"
+  },
+  {
+    "file": "avatars/1055.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/90/s6383eby3y4w2m8h1g9g1lmcgi3sq4t.png",
+    "sha256": "9f9ff8a2905569a8fa2a0d60ec8103fc6c90f3c0ff5d9fd651c2d9c05d2bf655"
+  },
+  {
+    "file": "avatars/1056.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/cf/h1hjj8blpvwsnf0ni1wxp4x1to23bx3.png",
+    "sha256": "f7acac24ead68363234fb6e853b7a3ed7f408fb5f1dc14b9f0b134059ed01ba1"
+  },
+  {
+    "file": "avatars/1057.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/ff/d6210n7sx6cwuykc5g22hjw58xcunq2.png",
+    "sha256": "3bcf3430323463a192b4c29cc85a4e9d6e0b97fbfc9cc4751ef37c1e6d5ef89b"
+  },
+  {
+    "file": "avatars/1058.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/21/9wtivc4g2mlfjbrgucxidvnesxy5fbu.png",
+    "sha256": "edd8113e226ce7b0fb0c27226dcfb15757671f32c7a5fd2cf158481e47d0fe55"
+  },
+  {
+    "file": "avatars/1059.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/58/3l9sdfoxm0javblmgy5oduz3o13obt4.png",
+    "sha256": "c8328bcb128de2388047f0ec4a2fb165571d03e2b356ceb9941187546de7503f"
+  },
+  {
+    "file": "avatars/1060.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/ce/he29nvmuprh728hste91opt5po2s9hp.png",
+    "sha256": "fc9b22159f70fb6dfaf94313f1c9e37916f832e941d3dff49e7697d5f9e03f95"
+  },
+  {
+    "file": "avatars/1061.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/1/17/bqfvtm5nfhok5toagc66zyw3zr39p5e.png",
+    "sha256": "8999aa082f4b5c2aaddfcfe790c11d7e09738749627f4c1c2e69c99b646c4619"
+  },
+  {
+    "file": "avatars/1062.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/42/4v01d4tq01phv0h907zd4zip8dhx7dx.png",
+    "sha256": "77bf6e49ff335a90f60d18423ff6c5f6708761ae7aa3601fb3f809795474fcd9"
+  },
+  {
+    "file": "avatars/1063.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/f4/6kvebqspgqgzlxvicmq7dxfa4icbleb.png",
+    "sha256": "80e9299788b279c74335a5b5254c3147a8c6e1ce16706db7f66ffe8fc906cd1f"
+  },
+  {
+    "file": "avatars/1064.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/fa/5qhb5162s36f8xzucc9p6msycknf6z2.png",
+    "sha256": "75773e6fc8b08ff3f388d202aa8de2bac7e400b3d070b9c84fbc232618e82015"
+  },
+  {
+    "file": "avatars/1065.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/8/82/6nsfbityflddnoh0hzfq4s8zy4kbvem.png",
+    "sha256": "f21c6f6a3c0a351c8cc7fc2de67bcb623d0271c074fc2a22b0225769713924f4"
+  },
+  {
+    "file": "avatars/1066.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/f3/nii27qlyu76oeeibdbw8aenu0u057ke.png",
+    "sha256": "a80943d65ade089c0aa82186e9fd2adaeb70ea62f742414ebf9d8e906a478833"
+  },
+  {
+    "file": "avatars/1067.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/d3/qr1pj3d7yjfc9y807aaf8zmtvtlqokn.png",
+    "sha256": "3112d503c43770217f73506bc03f09186618f86af72799969b34d2d5cab96703"
+  },
+  {
+    "file": "avatars/1068.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/51/6sxxaynisui1qb81422mp8ey3f4jubz.png",
+    "sha256": "1002de39085cdacf350fd167ec13551c9dacf7359875b76e56f1609b0a04c71a"
+  },
+  {
+    "file": "avatars/1069.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/6/65/bdjyyjhv2lu1q4vixs518sjy883b6gg.png",
+    "sha256": "883a0675b3794f5fe5bc818b50e3e96d6dc1b379f264486db96fa1bcd10d202c"
+  },
+  {
+    "file": "avatars/1070.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/1/19/pokh44zt3agsx37jd95ixu1hp3z7izh.png",
+    "sha256": "6a887ba80b0ec574c9d4cab10db2c394e134f04eef6111e86d91980c13083ddf"
+  },
+  {
+    "file": "avatars/1071.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/0d/dk095jodl57uei9fyuuwzq07s2f1zp7.png",
+    "sha256": "4483f563a8aa064ad4efaf5d906da929e4600d073f2d9841d4db1029dbad2850"
+  },
+  {
+    "file": "avatars/1072.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/93/r11at7crzm2twonzh6u4zhmvdna2udf.png",
+    "sha256": "976cb852639ac8604b73e4418c590cb554f5be4ec2292561cd784ec1bba03ebf"
+  },
+  {
+    "file": "avatars/1073.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c1/fley9qycz02acmllare05ouegiw8q91.png",
+    "sha256": "995991602861d6893ff983fc08596380203dbe930efdc9050b2ec5e5b84150e1"
+  },
+  {
+    "file": "avatars/1074.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/d4/j2rriew8ypfywnjsiyunlhuz3wuhaed.png",
+    "sha256": "b34888159e617c93de9367b972ec69b014aa89bed9b55a6c31723eff32537c5d"
+  },
+  {
+    "file": "avatars/1075.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/53/r0h3z15y4kyayng1azdw9kmarqwqeww.png",
+    "sha256": "95b942c677079e8e6151676e6c6fd0abd0601530e4b5c781f4a7088d9c4fa4e6"
+  },
+  {
+    "file": "avatars/1076.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/23/j8nlu0cxmc1ixutm21e0b486haallqt.png",
+    "sha256": "7a75a07bbbd717c9d1886b8c185a27bceeb83f617850e5cd3f88924dc630c7d1"
+  },
+  {
+    "file": "avatars/1077.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/93/p5bxh2nm9t55uhyt8uje5yjnsn42l9n.png",
+    "sha256": "e1ab69b183b84212cd96cf228bf847b6b148b6299945187bb98d11f6421f00e0"
+  },
+  {
+    "file": "avatars/1078.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/7/73/nq5zl2u488kbht3u6a1vnywdo483e0t.png",
+    "sha256": "088ebddb932c5df5823597a1dc39717b6d62c8fcfc122bc7ba48db0bb4e1baef"
+  },
+  {
+    "file": "avatars/1079.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/59/dan2n9llnij30vga7572b0dlwx8u781.png",
+    "sha256": "cf2f25600d4381db7d61ed9ee6ca463a53d30c7df073b54c58aadebeb960c4d2"
+  },
+  {
+    "file": "avatars/1080.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/49/fohqo1z0gb0qyh7xii8hes9e2zm0stb.png",
+    "sha256": "9e00d572b39764fc7032f09932282db105de31d929c341ab273343ab43b7d2ec"
+  },
+  {
+    "file": "avatars/1081.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/5f/cajo6z115mxbrwpm9gmutg91rnljr6i.png",
+    "sha256": "bfdaa6c03b4b2e96c0015fa6e82a8825e194db01e176ff432b2a5f127367437c"
+  },
+  {
+    "file": "avatars/1082.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/3e/hpuvkaeu08riiumzwjajspe2w5dveb8.png",
+    "sha256": "f131429a4b6f0f98fa5e80ce84c7e0d18e2a73bd16ddf4b577ad2d0e7467ed01"
+  },
+  {
+    "file": "avatars/1083.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/45/id9g7cv4wh9wz2bjtnn0sxc0ht0nyws.png",
+    "sha256": "0ba3ebe952748faa70ffb1685c137ee2c2a208b02fd452100a4baeed174720f9"
+  },
+  {
+    "file": "avatars/1084.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/eb/elkj3288791kwlg27u71nt96xx6gdzi.png",
+    "sha256": "5c5d6735cf08cc6d1561baaf912827fc642fa5b71d30425241a686ebf626c95c"
+  },
+  {
+    "file": "avatars/1085.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/08/l6ypi0sacb9evcvdafwgkcxdvlrb3ov.png",
+    "sha256": "8de67e39ecde9afc2b275f547d2421e3665593bf7edfd5d10591dc0679778427"
+  },
+  {
+    "file": "avatars/1086.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/26/0e2f517gvmvmi545w98w6ltfd77baf4.png",
+    "sha256": "3dbf630d96df7592ff02f9ea90440b7c9b4b5c174128241b6f529adcde708a83"
+  },
+  {
+    "file": "avatars/1087.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/b/b4/b09oq13aloyi3ljtticclqwja3puewy.png",
+    "sha256": "64255bf3d3e69d96d3b97f794efac6ef457b9b8fc1b2339a587730aa28d57a56"
+  },
+  {
+    "file": "avatars/1088.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/cf/m01nwnlursczwdwxesdjyoxnn4o7nrc.png",
+    "sha256": "30f6199e8d52fe7f346a4603773cba76e846e9f3f9402304c86e8b92b8d9c3c1"
+  },
+  {
+    "file": "avatars/1089.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/0f/duhndvzbyowoijyifl1dempz2sobxaz.png",
+    "sha256": "6a7cf42e392ed90e5386e3bbd6d4bc35eb38765a37fb19dd0f1d68f56fd47f52"
+  },
+  {
+    "file": "avatars/1090.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/23/ac8r7x340hfx8ogiosa3wraz9zzfqzz.png",
+    "sha256": "db581f4b597757920497cbe289c0065b09c0d55ae151e23ce0b367592d2519a7"
+  },
+  {
+    "file": "avatars/1091.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/52/d4api7wn9sg9jxwjc46f63mg3ss47hp.png",
+    "sha256": "55f2781b2c4243905fe5e650eed53d348778ba4b6d86e45951db3ae39b96cbda"
+  },
+  {
+    "file": "avatars/1092.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/e8/qswqjj90xlfivdrwmd4wjzi8duhf2os.png",
+    "sha256": "668876ead6c2c7a9664556e90675aa169587f74c7cbb4cefc39c59d40b9fdbba"
+  },
+  {
+    "file": "avatars/1093.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/8/86/qswfsoqqklv0wt6tr8e7f513gd2te5r.png",
+    "sha256": "c905e0d5b335d01f3824f6e6f0eb9beca8fdb147cab9f6b78d7958a31f117dcd"
+  },
+  {
+    "file": "avatars/1094.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/ff/eap7jjigp1dqruqxad8g70gdmxc501d.png",
+    "sha256": "704d9d7a60118f01490b4ebfcf392cde8ce8ece635afd6d0436dcc5462e326c9"
+  },
+  {
+    "file": "avatars/1095.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/48/pojjxsuhuraogaaglcc5ixddmf35uyp.png",
+    "sha256": "9fe439b8cd7d028374ba6019721ba7d45e1d5459b67b4b59d6e2b739a81ab91e"
+  },
+  {
+    "file": "avatars/1096.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/8/8a/lekda5gjh4n46uujt4y77qt1c37xszl.png",
+    "sha256": "74f1243b329d4b83853a7a45b2292b1cca55e22b5af8cddb6d15eb2b5b248561"
+  },
+  {
+    "file": "avatars/1097.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c7/2w0k8y1t0fp3pxi06mpbeci68uz2ua0.png",
+    "sha256": "4012aaf72dfebca5991776f46e980a83048d2b7dc3f434a6a1799e76b09498f0"
+  },
+  {
+    "file": "avatars/1098.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/f3/prym4qeo4u2run6857gm4js42x00map.png",
+    "sha256": "9075ef45573b07fe6e06bdc3b4d57eaf3d485ece292e01fc3e980d670035eea2"
+  },
+  {
+    "file": "avatars/1099.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/e9/7kqa3dvg0m59gkliagbkk7jqgsl1721.png",
+    "sha256": "b7a95269c4aab8f40c3bfad25ecfa14e6473d5598eb0018dcbf34c32d8b9efb9"
+  },
+  {
+    "file": "avatars/1100.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/21/6oo19b0lixomddgtk7hn9r1o5cuoqjx.png",
+    "sha256": "f66bd68410c1068bb223afae4ef8d2b40a179f3f4d48c68ab60f7056c455f8b5"
+  },
+  {
+    "file": "avatars/1101.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/5f/01wmr6u2vop5g58ykkfwr9vt8zmaxk0.png",
+    "sha256": "77cf370b051cb7545327a64b07633f906d4b25e4ad2d6be1636351723ba79f07"
+  },
+  {
+    "file": "avatars/1102.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/36/1n01y17gt7h4bmrap89r9uxvzljsa5f.png",
+    "sha256": "1e7ba192235dcb54c145d4f2c6ca4b1e6dc16ceff499201b428890696cec8ae0"
+  },
+  {
+    "file": "avatars/1103.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/fa/19dd4a8fk4c7z6bl1iiztpr5l6o2h4x.png",
+    "sha256": "cec1ab18543ddb9a6577a3c2c9762323e2ef5e3e6ccd49015beb05785a68309e"
+  },
+  {
+    "file": "avatars/1104.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c5/4bdqwlnmxpetzuifwjoj6mp9jqzcf6s.png",
+    "sha256": "2b6e0385eba01e001027920de79f6f40f8dae3e4a2da567400fcff15da224d41"
+  },
+  {
+    "file": "avatars/1105.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/7/7f/1esnztvbg44wm7cpny7datgo07r4pq3.png",
+    "sha256": "05f1b76ac9dacd4295d56f25e3a5679297504cd63a38307964f94ea06a59eb66"
+  },
+  {
+    "file": "avatars/1106.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/04/75vxbwh6lbiubrfb6d9emqs4svoo8up.png",
+    "sha256": "a08d64b1406c2679b5bf496ef69097c3f663413948184d8d483670bd7e275070"
+  },
+  {
+    "file": "avatars/1107.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/8/83/stk4kxpynh7t07hnpjx9mhffaj2pcj2.png",
+    "sha256": "56413a2d1e7a1d91bab9f78b2d925927c2479393f7f531c1baa502ef563459a7"
+  },
+  {
+    "file": "avatars/1108.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/a/ab/k246qfjwrxndwr5v0e0pabsyn3b7zik.png",
+    "sha256": "098ed43572b57c4eb23e71c6b5c2ae1d2d7953964b595a8f42cb502c902647ab"
+  },
+  {
+    "file": "avatars/1109.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/52/frt47osxu96nxijm51ca74zplnr6vh6.png",
+    "sha256": "7322bc3dcc04f76a6a83e81d52bee620c220305e1917f75f1253709bdfb5ad1e"
+  },
+  {
+    "file": "avatars/1110.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/4/42/n938lkm1i29m3boeu47mjcpauzotd91.png",
+    "sha256": "b2cda9a1ddbffedde54b5e5ebb28d031e8cfce6a973bb70b17095fa5ea99b14f"
+  },
+  {
+    "file": "avatars/1111.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c1/dm4ujzrvmvawpa2jvuc52bma2luo8tb.png",
+    "sha256": "b84613ab708fac91c62fc0566302bdde64fce75799e7ddd36532533d47a16cbb"
+  },
+  {
+    "file": "avatars/1112.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/e5/pjc30udaipokbwdmgviwqyutqso014c.png",
+    "sha256": "f536fd55dc5e01e6d3c86929a6bea07ffaedb990b101525e16729e1e89a52f1d"
+  },
+  {
+    "file": "avatars/1113.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/8/83/0nkx3z008l23dzh94xwkrgcmzsmq107.png",
+    "sha256": "c7fccc68b15e3145814e1c42373e1a4c04abbeb5eabbd29c45d782d7b650c737"
+  },
+  {
+    "file": "avatars/1114.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/7/70/rjyag7wubj48xjtkgiuoev1jufdcbzb.png",
+    "sha256": "247a3f05dfa1c5702809a6e5fc1f1768d6ca7b436200757695e9f09302e4c11d"
+  },
+  {
+    "file": "avatars/1115.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/df/k6lfzc4x9ue8o9a6nrmt2b3xoa9k315.png",
+    "sha256": "031b062e0de4dae7a4afb38b13a4cd5192bd0a6a8824ba7b27b38f7303592cc7"
+  },
+  {
+    "file": "avatars/1116.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/b/b7/o8o0h3m9uqjxnrqo8i9lgoggoynheg6.png",
+    "sha256": "ff659a91d093c46823c720f054bd9f5ad476c8669dfa3d00d87408fc9d74a828"
+  },
+  {
+    "file": "avatars/1117.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/39/5v14wg41kpgq6vo1yla1mfr1gbxbld4.png",
+    "sha256": "e50b9a9856de79363ed76987383b0d971bf0e076d2a38a134c2ab097800e6ae8"
+  },
+  {
+    "file": "avatars/1118.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/92/nqybutsao878jt0wfwzsnts9wafyvp1.png",
+    "sha256": "ad030c217c554b684e8a9d835583b137e9ab24eff9e322c3627a7b25e3b48e10"
+  },
+  {
+    "file": "avatars/1119.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/1/10/rrpgodkrxkzb5ubq53ie0jr1f6tlngt.png",
+    "sha256": "2ab23bba07635e0c2cb146346d7d69603411009eb7837b6e6e442032237818d5"
+  },
+  {
+    "file": "avatars/1120.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/0/04/7ayt8h2zsn9hywm9d9xo60odmomazrr.png",
+    "sha256": "93bef4d600f6dc190a508222c30f5932324aab2e414fe393020c1a34a0022d75"
+  },
+  {
+    "file": "avatars/1121.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/b/b1/72h9loov31bn01iurnvatbwdflkm2vz.png",
+    "sha256": "02798440171ef7e17bf8ba905a98638952ed8341b685ed6cf58cfb3dd6e449b3"
+  },
+  {
+    "file": "avatars/1124.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/37/8hk8536k0em32k1nw5tw1p153nru8vw.png",
+    "sha256": "be387d927b2906618fb6ae47205d1021161198e185537f7e28e4e541e3e39073"
+  },
+  {
+    "file": "avatars/1126.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/ee/764mys22kza354zzsfk8ica8buwtyjm.png",
+    "sha256": "19a6e2489bf66396746cf382946e401424865cfa6975878f33bffa395cb09a41"
+  },
+  {
+    "file": "avatars/1127.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/b/b4/lk003m7ylwatr9spf7w3u1lxze3fn1w.png",
+    "sha256": "1d0b3665770ece1f0590cf37efe0840ecda08ed136f7c937c9c44f4e26d5804d"
+  },
+  {
+    "file": "avatars/1128.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/5/58/44gizn1qp1amx14j553we8zihshrx9z.png",
+    "sha256": "e4e763037a38d156e89a1e592614fac1c88c6ccf7ac0a285b10e5b58fce6cdd4"
+  },
+  {
+    "file": "avatars/1129.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/a/af/0pqshenqg3eruz2sb61v37ll6vnxxin.png",
+    "sha256": "c5469e13405a30dffdc024a328cb00ec40fba2b9254d8443ddd0b9b6cd5e84eb"
+  },
+  {
+    "file": "avatars/1130.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/ee/fb55z1uhjnl1n63es9e26c6qbzy7186.png",
+    "sha256": "c27c698fe1bec81a07ee08dcd1d20b006e6900c7f0207d6d730b135167b333ae"
+  },
+  {
+    "file": "avatars/1131.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/fa/dlehszogknadagpvkq97goaugaulb2f.png",
+    "sha256": "0db650a839cab1cfb950fd231661b8d60b07f9130f08bcb962e235132e4295ba"
+  },
+  {
+    "file": "avatars/1132.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/7/78/o6ut61cwmu9xywkdrffvehn7so2366g.png",
+    "sha256": "bf7851c18b9596378075e071ab03bb1f2a4a789f614b3972a5925b7ecc86edd3"
+  },
+  {
+    "file": "avatars/1133.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/ea/1kyw3y8z1nrf6m0gcqgqrlr4l683j0s.png",
+    "sha256": "a113cf685740dfeaae8c920f14965dbfe7e41a3160075bdfa4e4b4cf53e4c282"
+  },
+  {
+    "file": "avatars/1134.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/de/lose7974jg9tfdri2y8hiv2z0fxqsxo.png",
+    "sha256": "c11e184477201d41aaf9c19540aa77c5b344629fb76fc40272b02c3a8eaa8a3e"
+  },
+  {
+    "file": "avatars/1135.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/3f/ssvsxezdw4crp8ylf8h3k15kh5qmn4y.png",
+    "sha256": "7761432a5422a71846e97f5ec5a85a4704816aa4a006a96350a7d90cc8bee8c7"
+  },
+  {
+    "file": "avatars/1136.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/ce/3gelwzym3hiwf31ap1oftqhktq3rhsq.png",
+    "sha256": "cc7104049ec4872c22bb7a0e39c5ef3e49052be67b4531f95f5742b8234cf086"
+  },
+  {
+    "file": "avatars/1137.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/2f/jtuyix87imwruz6rtyj4oozf42u6lxx.png",
+    "sha256": "d56c102d09c64b3327dd8941dc19609a458d3ad907d131865b7c40213fe4edc5"
+  },
+  {
+    "file": "avatars/1138.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/9/9c/tak9b4q7conk72m421yx76m2xyseix1.png",
+    "sha256": "ce96af6bc4defed894aa4ba9f794ba16479d33456d96eeb3d65fd94dbc92d27b"
+  },
+  {
+    "file": "avatars/1140.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/3/39/lgko86f589mvmzrcl1wmg5ubfnhp1fy.png",
+    "sha256": "ebe722f539ea457231bcfa25de9c46dba2ecd40594a74d4c168ad7021c8824a3"
+  },
+  {
+    "file": "avatars/1141.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/eb/o86dlehhbyi45byj0cpgqdxnpvifxle.png",
+    "sha256": "031bdd96c41a675bb34510dba31d8a4414ab1c4a6811392d558fd946d287b3d0"
+  },
+  {
+    "file": "avatars/1142.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/f/fb/lkorwcl9npp15vxug7udobk9cvnki2g.png",
+    "sha256": "174c4f49589e19c9be76b482ec408166fc0a7380056f77a1e7619af3c80a6086"
+  },
+  {
+    "file": "avatars/1143.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/b/b1/s6u6yh1zl662x1g8y8cnjiouibnrz37.png",
+    "sha256": "4cb59a25c43d20a445f85218aef3ffea6bcaf07063b1b7f429b047de70b6d0cf"
+  },
+  {
+    "file": "avatars/1144.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/c/c2/4oftlvbmphioe23ywcnigmw937b84ut.png",
+    "sha256": "3a97675f225bdb46566bce608292674dc1a08600386578926748047fcd9c7d1a"
+  },
+  {
+    "file": "avatars/1145.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/d/dc/muoeexxeh4sav3pguyocqd14hqvy4uu.png",
+    "sha256": "9f7c7b631e4b685288934e684a01a127d1523b6d61a18ecaa36a6bfa7322433e"
+  },
+  {
+    "file": "avatars/1146.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/2/27/4vsq740yyqfq7bpdlvpde19l9i4sgch.png",
+    "sha256": "81fcaeff6d0d07d7305cdf8f08d4824c00394dbf7825696e8665f917fbc9c4ed"
+  },
+  {
+    "file": "avatars/1148.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/e/e0/250mkjdmxqxu3czrpp2yil3yabas8sn.png",
+    "sha256": "434b669ed39ad2f58460cf558baeafe742e4a805939ce0d62748e09756f7066b"
+  },
+  {
+    "file": "avatars/1149.webp",
+    "kind": "Official character portrait",
+    "source": "https://patchwiki.biligame.com/images/umamusume/1/12/cnkoiskc7j5y0cnbr09iecwzif6g5mc.png",
+    "sha256": "4bc4c9d80136a8cdbb56daee253b238b57c37249e84363df5afeceb0e393383c"
+  },
+  {
+    "file": "avatars/extra-winmarilyn.webp",
+    "kind": "Official character portrait",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bea559b24f2d45a68118543f109d219f/winmarilyn_list.png",
+    "sha256": "0998d5863fbbc50d8de683c0d7a658ad63b2ff98b714aa4774613062dae8b4d0"
+  },
+  {
+    "file": "avatars/extra-genuine.webp",
+    "kind": "Official character portrait",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b76b541a06084b4a823081a9204c75b0/genuine_list.png",
+    "sha256": "1f4448bc8cc3cbfed6dc5d59824ab73ad307b489ab5061b4a391d93e7bfb7ba5"
+  },
+  {
+    "file": "avatars/extra-tazuna.webp",
+    "kind": "Official character portrait",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/10329e7971be44b99741c89492ef9d06/hayakawatazuna_list.png",
+    "sha256": "63dbe585904e10659adc0193c9ac12131c5f12298cf041d55d1ff296692d625a"
+  },
+  {
+    "file": "chibi/specialweek-quiz.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "32884af0ded4893f2033597d494a89b147003fa2796b11e314a593ebead1d62a"
+  },
+  {
+    "file": "chibi/suzuka-run.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "3850d5dece91f4293b97c7c42ec6e8de00a3186595cdfd8b38d13491fe1c6046"
+  },
+  {
+    "file": "chibi/teio-cheer.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "c08b107b5307ea9d526f38eb4a401b01952b12c72b19cfc7b2810f7253b18f83"
+  },
+  {
+    "file": "chibi/mcqueen-order.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "4af0c3a5776019f38849422a9fe515996c45303a6eccf42cf40291d116993fb3"
+  },
+  {
+    "file": "chibi/rice-cards.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "3819aacd807edb6855f13683333caf097a39c0b4792a88c558ce6d2b849bde6c"
+  },
+  {
+    "file": "chibi/urara-cheer.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "8a34deff8608cfea40cf83b00cc35cfa88005253c7ee63ac3c9ff3a990fd4f18"
+  },
+  {
+    "file": "chibi/turbo-start.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "0896b9c590a6634aaa1ea96beaf33ffd17cb8c86309290d2662bf9c79f2be8da"
+  },
+  {
+    "file": "chibi/falcon-dance.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "9db90f347d50c133e0e70eadd197a361ebdb28ea5aaf139036479dba10e37356"
+  },
+  {
+    "file": "chibi/specialweek-snack.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "68270af9933dbae4dbe55ab24400224c662af7b43759c6a972466a9fa343b8a6"
+  },
+  {
+    "file": "chibi/duel-special-suzuka.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "cfffb1180b0b329cf5992ba4bfd5d5c855b0ddf755ab6460f8c88df9cf1e94b9"
+  },
+  {
+    "file": "chibi/duel-teio-mcqueen.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "177f804d64ef86beaa5bd0def1ba123f06299069d6f03f892000dec5ea81578f"
+  },
+  {
+    "file": "chibi/four-classmates.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "54010de8a3510718cf084507ea422d08ed0d6c996cbe0562bff97ac94636a135"
+  },
+  {
+    "file": "chibi/four-party.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "3cae746f6176829a1a474aa53991c7a0423d932e3914a632bfa8204a0c7217c6"
+  },
+  {
+    "file": "chibi/mayano-memory.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "2a1d95f28f4b321aa59ef76cfd53e7fc67cb271a1703b35b98c95b06e0e130b8"
+  },
+  {
+    "file": "chibi/oguri-grid.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "bedce8eeddac95427df312ddb38a0fd57e24262a8cb7bd740d8e04d9066f4d34"
+  },
+  {
+    "file": "chibi/rice-path.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "8582c1df93259a60dc1bf89984b722d2597f122efe7f7b1624c0e71c26d1c95b"
+  },
+  {
+    "file": "chibi/opera-sort.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi menu decoration; cropped from a batch illustration",
+    "sha256": "d9822aa3521482dc44868d08bd435d5d1ce35a4234e093755edbbb23fca1c515"
+  },
+  {
+    "file": "transition/runners/01_specialweek.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d364f937a3e842e89d4ea2b2a02449d8/01_specialweek.webp",
+    "sha256": "a0888fa462ad0d340d77427fa44c5be1fe27106b9e0f11baf8571fabd52d60f9",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/02_silencesuzuka.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/1808c56c5ab94a2d992112bad27c59f6/02_silencesuzuka.webp",
+    "sha256": "15f3172676961859a3e46d1274a428960d9f55662405f39c95af1f781e3a8b94",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/03_tokaiteio.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/e210ba1023f446e1bb993827cd2b4091/03_tokaiteio.webp",
+    "sha256": "860f1a8d3ea218fb38a4a345c09e311011d72f00a7486fa5093189020c6ce709",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/04_maruzensky.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b0b9ae56789942cc99e8df6650a90019/04_maruzensky.webp",
+    "sha256": "6aaa3c0fc1fedc009d90d7d3ae400a733a3632bcd593fd9d13abc889f6958c67",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/05_fujikiseki.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/153b1e765e524bf5bfba6393b4513dec/05_fujikiseki.webp",
+    "sha256": "284b5eb66dae5a88475f6660845123a5709192bd0c923f534f06019fd291bdc0",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/06_oguricap.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2019c895471941cca05c5ee697646e3b/06_oguricap.webp",
+    "sha256": "dcdcd3ef4764c8f1846a9df880727806e5047685e810946df20355a31f114481",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/07_goldship.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c023aaa46bd243b58842acfe9469d0f2/07_goldship.webp",
+    "sha256": "c25a044a0fb7dae6bf2b2a7ce06413808873a4e9c50b6a65d680dab1ba0be246",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/08_vodka.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/232f706a621f48beba5a050bedbc0cd4/08_vodka.webp",
+    "sha256": "5db65e18e6cbab3fa3338e813faa8413996446a10626a99575809ed504d0ee67",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/09_daiwascarlet.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/3197f65036d44f50a7a55707a227d988/09_daiwascarlet.webp",
+    "sha256": "427fdf6c86f8e58ccbf77ec6b45b9b1f99d7bd633291e14b95180a26be0b1566",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/10_taikishuttle.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/1a1f305e750f44548a21b24f2183b0b6/10_taikishuttle.webp",
+    "sha256": "0a0dfd68178e00a9c0235aceeecd83f61e9e67dd1c18be5117e2589cdb9cf998",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/agnesdigital.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8fd7ad930a5e4efebaa22dccff1af91d/agnesdigital.webp",
+    "sha256": "3de70d2b5bad1e5139829111277da77e5cdc55589d9f57680cef7d44acf02c22",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/airgroove.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a31a163285fe4ce192ee3fb42841d578/airgroove.webp",
+    "sha256": "eb62b9538dff305efc581ee4c0f586191b0a4511bc5640f6d3dc128cfe229bad",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/elcondorpasa.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/af4af4a21a594041b5a6e491ff9d017c/elcondorpasa.webp",
+    "sha256": "7cbb6ab73f20745442b3e7d2418fd10b2947b5cc67ff978801fd8b57e1326899",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/grasswonder.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6e0e53592d94441aaede638363676c09/grasswonder.webp",
+    "sha256": "f92fd72a029925eed480c990da4c816e1b185495109a58654895cf4f9d58fb75",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/hishiamazon.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d9bd8ab095af4a5baccb334ea48fb3e7/hishiamazon.webp",
+    "sha256": "e5a3de3ada4f2435a011b0d4b02c80f4056bc09ec72325a9bcc3bb4433800f4c",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/mejiromcqueen.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/aba661e23c28455596045f3ba5be6cb1/mejiromcqueen.webp",
+    "sha256": "76bb95e264e4b57424f0ad36a2c80bd4fe1073e6a364a33da5f5cc3354cdb0c0",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/naritabrian.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/72ab9d0829c74581affcd98ccee09410/naritabrian.webp",
+    "sha256": "d4d386c2ea48f4c464be8708f1535ff3521cc68af89be60ac45eb8ffc19d88af",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/seiunsky.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/de77de3798b44248b6218ee684cb27c4/seiunsky.webp",
+    "sha256": "771ed59103cabda44670cff826594f128e3765ff2b39917f13091374300a543c",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/symbolirudolf.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5c13766b5141422596ded511b49744ae/symbolirudolf.webp",
+    "sha256": "3eb2ec73e556595cb147d389d91288fa9672d32529f026b2ecf4a35c67771254",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/tmoperao.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6a95578bde604ebd8749a9e3cf181289/tmoperao.webp",
+    "sha256": "f451659d86e24be4bbd32feb2118e0003ec1d1556b95a5f15b07bab09f03eea4",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/21_tamamocross.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8c76fe3d839c4a82a16a1d16849fe4c4/21_tamamocross.webp",
+    "sha256": "a4580640507bdd228adad4dc819da25b4c7bb7b08f4c8093279abd70f4d75eac",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/22_finemotion.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0417cfd0af0048f98eae434d14c25e13/22_finemotion.webp",
+    "sha256": "7fce47bd28a00a98eadb640180fce2a5bc7630da66825bd2eeffab2dcbfbabad",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/23_biwahayahide.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f0f2fefa233548f382cd956b95845e23/23_biwahayahide.webp",
+    "sha256": "9c6051645e71f834763a560278ed046ae3a6b8ede308340f3ad8a8346f2922b9",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/24_mayanotopgun.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/39741d4fc7e84a13928da46f333bf12e/24_mayanotopgun.webp",
+    "sha256": "d4b3e273ffd56e33b46cefd73a863fb49b5cfaea6d14545302b341152602b510",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/25_manhattancafe.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6b117d5e1f5a4716aba185781c2b4a13/25_manhattancafe.webp",
+    "sha256": "e79b7b0842f7f3b5942c287ae52b7d81477d6a700f85a75cc8365606984d9145",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/26_mihonobourbon.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fe99e4db92bd4de9b7b6d2401183b6cf/26_mihonobourbon.webp",
+    "sha256": "e4600fd6285cbcdd5f55670232a2668dae876bda374c619beda223dcaa78d247",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/28_hishiakebono.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7f3814218dc2408788354a7f0300c8d4/28_hishiakebono.webp",
+    "sha256": "5ce43ead2befeb7af4070d368f2a7dc72c49125207ef89fcd245e1f498c2745f",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/27_mejiroryan.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ee851fdfd07147d39fdb5d82076ef981/27_mejiroryan.webp",
+    "sha256": "51c2cb4a463e33b087206f8c4b0e718e070be2a3070b6a449e391bf6a1e8e3be",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/29_yukinobijin.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4c2075d442be423cbfe1cb7d4f63639c/29_yukinobijin.webp",
+    "sha256": "4da77f813531f3b1ed0f30d2f86b0d289433574983e163f95ab6350e67343b42",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/30_riceshower.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2660853c4f124ec3aa2b718e0f390a8d/30_riceshower.webp",
+    "sha256": "663fe5478de21ceba11684d5f0e75b043961768c226e810f3fdd15f90dc8cb8b",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/31_inesfujin.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0d115432508a45d4b3444c13ad19f506/31_inesfujin.webp",
+    "sha256": "4af6cf6a0ff8e9c176c745f8096596bfee2d346468deca920a4aa5f68aa7cb06",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/32_agnestachyon.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/69446b91ccca41efb945cf7a3c69431a/32_agnestachyon.webp",
+    "sha256": "1b62b82cdc556c99e95492a97dd2042ee51b348b5589d99dfc8ee9b881636bfa",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/42_seekingthepearl.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/88fe444aa5f844fa8772cf2ea87883d9/42_seekingthepearl.webp",
+    "sha256": "0808001730e30f4e271e103a41fb6d38e78d53a6f712a8f08067bc91e684ed3e",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/34_inarione.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/299b47f652f647d69a8ad1998edc1ca7/34_inarione.webp",
+    "sha256": "2c0fb7a32b6ae8893ebf4481047ebf9e9a1480eeb06448bd68ba15a78cf6d68d",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/35_winningticket.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a16bfaebe588423bbc61baf9aa6474fd/35_winningticket.webp",
+    "sha256": "bf674219aa8dc68da5b928c11a9e444cb95bed992eeb76ba45bbf4cf1fb3ac69",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/36_airshakur.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2431572a1a3a4bcb8a6b8b944ef5ca26/36_airshakur.webp",
+    "sha256": "5d62f10356d75b2b1cc7a4fb7e5879015848e3fcebf745103356f0ea33cd4484",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/37_eishinflash.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/e6c15d2908674a3d9f207a7d195ac754/37_eishinflash.webp",
+    "sha256": "dddc9f6f85803abd01288477b2053045a1de71802bbee9f2fd5b608ad811d35e",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/38_currenchan.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/1222fbbc441c45019c52040f296dbb15/38_currenchan.webp",
+    "sha256": "f331c81bbf6f0ea21b1804795822a57a8d39f795287d05709d70cc05baf9b739",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/39_kawakamiprincess.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/44a4d6c5981a423eb3964e6199655093/39_kawakamiprincess.webp",
+    "sha256": "33f909afb837092781639c5e221bd04451fc3b271f3f371b592c1515530c77af",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/40_goldcity.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4b66d4481bcd4987bd8cb0dff48a1a2b/40_goldcity.webp",
+    "sha256": "b7232184166497b409b07ad9c104ebbb653c305d925f05cab560608c17c38775",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/41_sakurabakushino.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/40211d52bfcb499cbfc737fd25e5a2e9/41_sakurabakushino.webp",
+    "sha256": "bc59be69f3360be5a09818cc58c8e4b182842013e399e4d18b2006043707f662",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/43_shinkowindy.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/801b44abed0d4d8e8ca8ace8270f5013/43_shinkowindy.webp",
+    "sha256": "a5f3ab33f42ac001d52f60f0f6f97229db21b9b20bc913ac8f975573c60e49cd",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/44_sweeptosho.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4a36ad1026bf4dc19b90a3b66c280033/44_sweeptosho.webp",
+    "sha256": "a996eba7ae3fd54814bbf64735597ef70b24ef6c11e54f26530e06a3d7da03d6",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/45_supercreek.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b7504a90497e4eb0a65446a0249e4b4b/45_supercreek.webp",
+    "sha256": "48ba9bf94aaae545bcf131a5270cfac77b3d3070b573cb5ee0f978c8609825fe",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/46_smartfalcon.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/488f974bac294b61b366863a5977e2f7/46_smartfalcon.webp",
+    "sha256": "315f2bc78f16bddea8a02d558ed53cc6b6b541afed74a00a4601bca29cecdec2",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/47_zennorobroy.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c8812a0fe022440583b61a513d1dbe1f/47_zennorobroy.webp",
+    "sha256": "7abfda660a6028a93a89254e1aa7c9a0783b145610fffaee59a6db537e409389",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/48_tosenjordan.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6400ca1750e74e339dd069b8f69b7047/48_tosenjordan.webp",
+    "sha256": "aefbac97ffca8e78c4f8821afb7f8e1a4cf087cd8d2f928fe5b0385e81d58053",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/49_nakayamafesta.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c24a4826ad734c26b13cb7ab207fa710/49_nakayamafesta.webp",
+    "sha256": "9bbe3ef59fa4027c7dfbc73da2f58b7f5a028f3720921f4d19837c129fe6d52c",
+    "frames": 10
+  },
+  {
+    "file": "transition/runners/50_naritataishin.webp",
+    "kind": "Official animated runner",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a4e8c164adbc49fe940264119d50410e/50_naritataishin.webp",
+    "sha256": "984ecc3a73419b0363b9f4c99e3a56d827cbe64b226ecdd56d9cf5b4585207d3",
+    "frames": 10
+  },
+  {
+    "file": "characters/specialweek.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b83df291000248a193ca9e46a73ded56/specialweek_01.png",
+    "sha256": "c71f25a3913034d3d2803ba81aaa8b5d68acee73fea4575402c97e6537125514",
+    "frames": 1
+  },
+  {
+    "file": "characters/silencesuzuka.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bfa46677912b4228aa244da162f24f6f/silencesuzuka_01.png",
+    "sha256": "732a23c151e15e09baa64d78be6b417e0119546240ff66be0d95fed888aa5a5e",
+    "frames": 1
+  },
+  {
+    "file": "characters/tokaiteio.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6bcecd8749a74a26a91c8882866d803f/tokaiteio_01.png",
+    "sha256": "350765407101d60b7e080ae836a6796a83f6f445bcc996845d9599e10525b506",
+    "frames": 1
+  },
+  {
+    "file": "characters/oguricap.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f451f629f5934a59a77d2a6a0a4dfa82/oguricap_01.png",
+    "sha256": "2bbb8d34f553c1b81279c914f940a7821bb89eeee53b46820c59b18beb95b5ff",
+    "frames": 1
+  },
+  {
+    "file": "characters/goldship.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a513a0e8049e46418b6ba9bffb26dcb7/goldship_01.png",
+    "sha256": "456483cef53d4fc8bbad737421802da7c66807a1608d6aa5cca074b82aff5a2e",
+    "frames": 1
+  },
+  {
+    "file": "characters/mejiromcqueen.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a67d7f4092af43b4965b99e4f37ec256/mejiromcqueen_01.png",
+    "sha256": "942bae0170886877c2c61be11414e9cfeadd3014c256c266d4fcd440299f8529",
+    "frames": 1
+  },
+  {
+    "file": "characters/riceshower.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6613c28c407243db9019b8e26745e823/riceshower_01.png",
+    "sha256": "66a8ae17278b1882b147318440e20a597b1f8ca7f598b5dcb6e76f1b9a167741",
+    "frames": 1
+  },
+  {
+    "file": "characters/haruurara.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/cd2e152e05ac496bb09e725f17422e39/haruurara_01.png",
+    "sha256": "b86b9df1ac353c8817d52409a31fd8a548bf95b68ae3da6f81435f2de2969b5f",
+    "frames": 1
+  },
+  {
+    "file": "characters/twinturbo.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/97a44e4e5ec64c4cbfa4965a2f26692a/twinturbo_01.png",
+    "sha256": "a0ead4d6cb6e206ca14ad675c44ba369e1c4b40991e801e012285ec8cabf24a8",
+    "frames": 1
+  },
+  {
+    "file": "characters/smartfalcon.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/da3ea29ab2e3436fbb6cd71c2e8286fb/smartfalcon_01.png",
+    "sha256": "fdf699ea03816db27491e802535d42630b2f0645f395cd5108c52e9db18b6cd3",
+    "frames": 1
+  },
+  {
+    "file": "characters/daiwascarlet.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7563885352e3494b8341fc497ae21bc4/daiwascarlet_01.png",
+    "sha256": "7176f637a10a97b19430c9812f1ab557661a8335cfa2b3e6763d5a73eb95c307",
+    "frames": 1
+  },
+  {
+    "file": "characters/vodka.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ee421eb17fc04847908d7fc70c0c00c9/vodka_01.png",
+    "sha256": "f7dd8602d69d56906647da7312008cc963b47521a553145e4c9647ed9befb268",
+    "frames": 1
+  },
+  {
+    "file": "characters/grasswonder.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/3a968740d6d9459d94f16e36ca2c8ec9/grasswonder_01.png",
+    "sha256": "06579636349ccd0a6696ecd3644628b3c524e9a9e34c87d8e339a606e221de8b",
+    "frames": 1
+  },
+  {
+    "file": "characters/elcondorpasa.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5e7d88d0e95a4556bf4b08f98a5ab0b9/elcondorpasa_01.png",
+    "sha256": "862f79667aae5fb8207c0b8ce19df22d301ea0d33bcc697ea931a2a6a2363fb1",
+    "frames": 1
+  },
+  {
+    "file": "characters/tmoperao.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d6c2ec83cea34bcba2fb8098e37f79a3/tmoperao_01.png",
+    "sha256": "d2abb3963beb16e0aba0b789841ea1b98af12482b50b68fed659474831e6d739",
+    "frames": 1
+  },
+  {
+    "file": "characters/mayanotopgun.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/dfae1a48395f4fce90a202a6181993f8/mayanotopgun_01.png",
+    "sha256": "71a0e72cd5cea1707a5a24b1c546f66cd87e6a040bcb1d32ff9fb4d879333bcf",
+    "frames": 1
+  },
+  {
+    "file": "characters/manhattancafe.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/45765c60f4f541aaa9d8e1dced3e0118/manhattancafe_01.png",
+    "sha256": "1f248e477c3c4aa80fc7b7f92d64dc43d7683fa3a5fac4a0981d79bef93561e8",
+    "frames": 1
+  },
+  {
+    "file": "characters/mihonobourbon.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ac067b40532b46ab841af508be40cb82/mihonobourbon_01.png",
+    "sha256": "85afc4fe1ffaa67da80d6fc035412a9c45a2856cde03cb0a8d635aa90f4057df",
+    "frames": 1
+  },
+  {
+    "file": "characters/kitasanblack.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/95f1e817ead3483da05b949f24b46fb0/kitasanblack_01.png",
+    "sha256": "0758aa6fcf6ee211b74f00938f0bb8598a0aa12811ec6deb09cbe4238d074d1e",
+    "frames": 1
+  },
+  {
+    "file": "characters/agnesdigital.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/14aedf7d79774cb5b3c0abb1cec6aca7/agnesdigital_01.png",
+    "sha256": "8778b2af26213a759a96a91c5a13051b9dabc704c64e38f04ccbcaef0241f25d",
+    "frames": 1
+  },
+  {
+    "file": "characters/agnestachyon.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c4c78b3ab1db44aaa45854f5d31ba9d3/agnestachyon_01.png",
+    "sha256": "370c3684028d23e9380a960338ba67731a0a6e8529bc85b45347524717d28ead",
+    "frames": 1
+  },
+  {
+    "file": "characters/seiunsky.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c04ca9b6f2804b4f9e25783796bc5615/seiunsky_01.png",
+    "sha256": "f34cd331d042e953e5e8c64cd1fa65b35fe10547032c743b0ecd0acb8aba4c10",
+    "frames": 1
+  },
+  {
+    "file": "characters/sakurabakushino.webp",
+    "kind": "Official character standing art",
+    "source": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/47ce82485f1e4befae63f6ec8a34a3af/sakurabakushino_01.png",
+    "sha256": "c513efd16217c3899d6000f500ba1457737db854a0f0dbc8854f48e9b8390dad",
+    "frames": 1
+  },
+  {
+    "file": "errors/daitakuhelios.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "21212226756dfbe47229aca809c35b8f80a7b8c4cc03c39a7189b1b53f991685",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/ikunodictus.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "8d45018b9d0c21988d341e6728b6d9dea37752c483d1a954166d3b0ea0822998",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/matikanetannhauser.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "27fb05b0a563703e244ea154b8f867c16ef0e65708abaa888a1434391895d20c",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/mcqueen.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "a7d1a212d97934d1fe0f86f9d3c5b9f8d8cac4be0a9aad46796a76f9d56c11a9",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/mejiropalmer.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "2fc135f595522564ebf4f00558f0a60fea71c1a0649bb5d94bc472af3eab4d9b",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/nicenature.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "a485a460fa38b2fc59fabbb23403d8085ab481a59c6f0956d3ee59c5f85bf096",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/rice.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "e093d3180468e5508aedb3d080d0c30a58be0b7cbde12938baadbc6172b56649",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/specialweek.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "0f5d3e1796e033b17ce8b422a45f296d0bf5b2412ae066156cf0af6019cc3a34",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/teio.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "1cf21ca56774eaa81dac976227068848c3d2f29aa17dbd2712d866ab3cf8ff05",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "errors/twinturbo.webp",
+    "kind": "Generated fan illustration",
+    "sha256": "7ee23f53000b2423c3c3891c49e1ae80c32b4cffa3289d58f50ca5f1e17d5721",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Transparent character decoration for error dialogs; interpretive fan illustration, not official game artwork"
+  },
+  {
+    "file": "chibi/nature-thinking.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi gameplay companion; identity based on official character artwork",
+    "character": "nature",
+    "sha256": "cb7b9a31a4b82c6550c243fcf8b33467dfea792ffc8992d207706541ed4631fb",
+    "referenceSource": "https://umamusume.jp/character/nicenature"
+  },
+  {
+    "file": "chibi/ikuno-notes.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi gameplay companion; identity based on official character artwork",
+    "character": "ikuno",
+    "sha256": "8af15dc6d64f580c3720c151d02c686b8163821deebdf24b2234698de68bd333",
+    "referenceSource": "https://umamusume.jp/character/ikunodictus"
+  },
+  {
+    "file": "chibi/tannhauser-cheer.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi gameplay companion; identity based on official character artwork",
+    "character": "tannhauser",
+    "sha256": "a6c23e1b50f9c4de163ba80e47a7121c279237365f52b46d5e89655b1371ca22",
+    "referenceSource": "https://umamusume.jp/character/matikanetannhauser"
+  },
+  {
+    "file": "chibi/helios-cards.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Text-free chibi gameplay companion; identity based on official character artwork",
+    "character": "helios",
+    "sha256": "5c4eb3475c3fd757cc561a56a69a9dde0e48b28a232eaacd84092983d1b1291d",
+    "referenceSource": "https://umamusume.jp/character/daitakuhelios"
+  },
+  {
+    "file": "matchmaking/season1.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official animation footage",
+    "sha256": "b0970b37c9edf4ecc89534b129a5bd536144ea9f304a36eeba85dcc5d84b6c5f"
+  },
+  {
+    "file": "matchmaking/movie-new-scene.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official animation footage",
+    "sha256": "9294a2ca351e4e7f898fbe75a6760dd61d3cc4a950c06c2d0226d52e28aaa975"
+  },
+  {
+    "file": "matchmaking/cinderella-school.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official animation footage",
+    "sha256": "cca539cbdf89657d428a4ca0a66d5c74af1b827e9bf1ded5836cddf1187f3d3b"
+  },
+  {
+    "file": "matchmaking/rttt.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official animation footage",
+    "sha256": "495e60c81cb9646069a79b0aebe4ce3eda4fd4cd14f1ca4bb071eadaf2049ab3"
+  },
+  {
+    "file": "matchmaking/season3.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official animation footage",
+    "sha256": "e8b132f2f3d1c4be9dda8e4ff07b8be115483aea2a87d3669aaf10873a0b93d5"
+  },
+  {
+    "file": "matchmaking/season2.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Interpretive fan illustration, not official animation footage",
+    "sha256": "4df0209d864720f0f7dc1d2c4a0fca0d0961e6104b9d236b9270efa8224cd7e2"
+  },
+  {
+    "file": "admission/riceshower.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Welcoming chibi decoration for entry confirmation; no embedded text",
+    "sha256": "31d3d2416be8ea12dc1b9f3781c989604c45a0782a44709e4f3d8bf01efafd6a"
+  },
+  {
+    "file": "admission/mihonobourbon.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Welcoming chibi decoration for entry confirmation; no embedded text",
+    "sha256": "5505e4c3d1768fd60893065a6a688a1ecef3f811bfc03be2568a040287698fe2"
+  },
+  {
+    "file": "admission/biwahayahide.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Welcoming chibi decoration for entry confirmation; no embedded text",
+    "sha256": "c5e9fd9300930dc35b2e1bcbca2f0a0e8c0439e58b60170dd507ea80b06c3174"
+  },
+  {
+    "file": "admission/naritataishin.webp",
+    "kind": "Generated fan illustration",
+    "provider": "Grsai",
+    "model": "gpt-image-2.6-sunburst",
+    "description": "Welcoming chibi decoration for entry confirmation; no embedded text",
+    "sha256": "1b98f3a602c0bfa6ac95d401dc018bb5b6271e3390fed1ef278d2c72f5b86be1"
+  }
+]

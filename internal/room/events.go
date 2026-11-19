@@ -121,7 +121,7 @@ func (s *Service) CreateEvent(ctx context.Context, sessionID string, in CreateEv
 		return Event{}, problem.Internal(fmt.Errorf("room: begin create event: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Event{}, err
 	}
 	if id, err := createdResource(ctx, tx, "event_sessions", "creator_session_id", sessionID, in.Command); err != nil {
@@ -306,7 +306,7 @@ func (s *Service) CreateSegment(ctx context.Context, actor Actor, eventID string
 		return Segment{}, problem.Internal(fmt.Errorf("room: begin segment: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Segment{}, err
 	}
 
@@ -403,7 +403,7 @@ func (s *Service) UpdateSegment(ctx context.Context, actor Actor, eventID, segme
 		return Segment{}, problem.Internal(fmt.Errorf("room: begin update segment: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Segment{}, err
 	}
 
@@ -532,7 +532,7 @@ func (s *Service) CreateEventTransition(ctx context.Context, actor Actor, eventI
 		return Event{}, problem.Internal(fmt.Errorf("room: begin event transition: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Event{}, err
 	}
 
@@ -838,7 +838,7 @@ func (s *Service) CreateScoreCorrection(ctx context.Context, actor Actor, eventI
 		return "", 0, 0, problem.Internal(fmt.Errorf("room: begin correction: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return "", 0, 0, err
 	}
 

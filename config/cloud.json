@@ -18,6 +18,9 @@
     }
   },
   "limits": {
+    "apiRequests": 64,
+    "requestPerIPMinute": 6000,
+    "requestPerIPBurst": 1200,
     "sessionCreatePerIPMinute": 120,
     "sessionCreatePerIPBurst": 30,
     "queuedCommands": 512,
@@ -48,6 +51,16 @@
       "createMatchmakingTicket",
       "createChallenge",
       "createEvent"
-    ]
+    ],
+    "adaptive": true,
+    "riskThreshold": 6,
+    "riskWindowSeconds": 60
+  },
+  "matchmaking": {
+    "lobbyEnabled": false,
+    "queueCapacity": 200,
+    "proofBits": 16,
+    "idleEnabled": true,
+    "idleSeconds": 60
   }
 }

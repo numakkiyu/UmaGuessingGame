@@ -13,6 +13,9 @@ var Forms = []string{"local", "verified", "solo", "friend", "matchmaking", "even
 var Modes = []string{"classic", "aptitude-grid", "draft", "race-rebuild", "co-race-path", "sort", "memory", "bluff", "clue-puzzle", "strategy-race", "rapport", "creative", "trade", "pedigree", "audio"}
 
 type Limits struct {
+	APIRequests              int `json:"apiRequests,omitempty"`
+	RequestPerIPMinute       int `json:"requestPerIPMinute,omitempty"`
+	RequestPerIPBurst        int `json:"requestPerIPBurst,omitempty"`
 	SessionCreatePerIPMinute int `json:"sessionCreatePerIPMinute,omitempty"`
 	SessionCreatePerIPBurst  int `json:"sessionCreatePerIPBurst,omitempty"`
 	QueuedCommands           int `json:"queuedCommands,omitempty"`
@@ -26,6 +29,8 @@ type Limits struct {
 }
 
 type Policy struct {
+	Accounts       AccountAccess              `json:"accounts,omitempty"`
+	Matchmaking    Matchmaking                `json:"matchmaking,omitempty"`
 	Network        Network                    `json:"network,omitempty"`
 	Turnstile      Turnstile                  `json:"turnstile,omitempty"`
 	Identity       Identity                   `json:"identity,omitempty"`
@@ -45,6 +50,12 @@ func contains(items []string, value string) bool {
 }
 
 func (p Policy) Validate() error {
+	if err := p.Accounts.Validate(); err != nil {
+		return err
+	}
+	if err := p.Matchmaking.Validate(); err != nil {
+		return err
+	}
 	if _, err := ParseTrustedProxyCIDRs(p.Network.TrustedProxyCIDRs); err != nil {
 		return err
 	}
@@ -70,6 +81,9 @@ func (p Policy) Validate() error {
 		}
 	}
 	for name, item := range map[string]struct{ value, max int }{
+		"apiRequests":              {p.Limits.APIRequests, 4096},
+		"requestPerIPMinute":       {p.Limits.RequestPerIPMinute, 1000000},
+		"requestPerIPBurst":        {p.Limits.RequestPerIPBurst, 100000},
 		"sessionCreatePerIPMinute": {p.Limits.SessionCreatePerIPMinute, 10000},
 		"sessionCreatePerIPBurst":  {p.Limits.SessionCreatePerIPBurst, 2000},
 		"queuedCommands":           {p.Limits.QueuedCommands, 100000},
@@ -155,6 +169,15 @@ func (p Policy) Capabilities(mode string) map[string]bool {
 }
 func (p Policy) ResolvedLimits() Limits {
 	l := p.Limits
+	if l.APIRequests == 0 {
+		l.APIRequests = 128
+	}
+	if l.RequestPerIPMinute == 0 {
+		l.RequestPerIPMinute = 6000
+	}
+	if l.RequestPerIPBurst == 0 {
+		l.RequestPerIPBurst = 1200
+	}
 	if l.SessionCreatePerIPMinute == 0 {
 		l.SessionCreatePerIPMinute = 300
 	}

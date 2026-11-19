@@ -59,7 +59,7 @@ export async function preparePracticeAudio(clips: readonly PracticeAudioClip[], 
         const parts: Uint8Array<ArrayBuffer>[] = []; let length = 0;
         try { while (true) { const { done, value } = await reader.read(); if (done) break; length += value.length; if (length > clip.byteLength) { await reader.cancel(); throw new AudioNotice("damaged"); } parts.push(new Uint8Array(value)); } }
         finally { reader.releaseLock(); }
-        blob = new Blob(parts, { type: "audio/mpeg" }); await validatedBuffer(blob, clip, context);
+        blob = new Blob(parts, { type: "audio/webm; codecs=opus" }); await validatedBuffer(blob, clip, context);
       }
       signal.throwIfAborted();
       // Save again even for the memory fallback; persistence may now be available.

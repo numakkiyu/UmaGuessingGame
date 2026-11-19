@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { setPlayerName } from "./player-profile.mjs";
 import { chromium } from "playwright";
 import { randomBytes } from "node:crypto";
 import { writeFile } from "node:fs/promises";
@@ -8,7 +9,7 @@ const browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CH
 const check=(name,ok,detail)=>{checks.push({name,ok,detail});if(!ok)throw Error(name);};
 page.on("pageerror",e=>errors.push(e.message));
 try{
- await page.goto(base+"/play/pedigree/online");await page.getByLabel("显示名",{exact:true}).fill("拼图验证");await page.getByRole("button",{name:"开始对局",exact:true}).click();await page.getByRole("heading",{name:"血统槽位",exact:true}).waitFor({timeout:30000});
+ await page.goto(base+"/play/pedigree/online");await setPlayerName(page, "拼图验证");await page.getByRole("button",{name:"开始对局",exact:true}).click();await page.getByRole("heading",{name:"血统槽位",exact:true}).waitFor({timeout:30000});
  check("room keeps historical disclaimer and natural scoring instructions",await page.locator("summary").filter({hasText:"史实原型血统"}).isVisible()&&await page.getByText("按答对的位置占比换算为 100 分，最后取整数；未填写的按未答处理。",{exact:true}).isVisible()&&!/floor\(/.test(await page.locator("body").innerText()));
  await page.getByRole("button",{name:"父：还没选",exact:true}).click();await page.getByRole("region",{name:"候选原型马",exact:true}).getByRole("button").first().click();
  const pending=page.waitForResponse(r=>/\/rounds\/[^/]+\/submissions$/.test(r.url())&&r.request().method()==="POST");await page.getByRole("button",{name:"提交血统",exact:true}).click();const response=await pending,receipt=await response.json();check("room accepts a real partial answer",response.ok()&&receipt.outcome==="accepted",{status:response.status()});await page.getByText("已提交。截止前可以继续修改，以最后一次提交为准。",{exact:true}).waitFor();

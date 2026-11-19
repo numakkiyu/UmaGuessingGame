@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 import "@/i18n/path-online";
 import {useMemo, useState} from "react";
 import {Link, useParams} from "react-router";
@@ -109,8 +111,8 @@ export function CoRacePathRoundPage() {
   const info = failure ? rejected ? {...failure, title: t("rejectedTitle"), detail: t("rejectedDetail")} : localizeFailure(failure) : null;
   function edit(next: string[]) { if (!editable || !round || !pathDraftValid(next, round)) return; setPath(next); setQuery(""); setLimit(20); setNotice(""); if (draftScope && !savePathDraft(draftScope, next)) setNotice("saveFailed"); }
   async function submit(retry = false) {
-    if (!roundId || !round || command.busy || refreshing) return;
-    if (!retry && (!editable || !pathDraftValid(path, round) || path.length < 2)) return;
+    if (!roundId || command.busy || refreshing) return;
+    if (!retry && (!round || !editable || !pathDraftValid(path, round) || path.length < 2)) return;
     const body: PathRouteCommand | undefined = retry ? undefined : {phaseVersion: snapshot.meta!.phaseVersion, submissionRevision: snapshot.submissionRevision, controlGeneration: snapshot.controlGeneration, modeAction: {kind: "path.route", characterIds: [...path]}};
     setRefreshing(true); setFailure(null); setRejected(false); setNotice("");
     try {
@@ -133,8 +135,8 @@ export function CoRacePathRoundPage() {
   if (roomQuery.isError) { const error = describeFailure(roomQuery.error); return error.kind === "forbidden" ? <ForbiddenView failure={error} onRetry={() => void roomQuery.refetch()}/> : <ErrorView failure={error} onRetry={() => void roomQuery.refetch()}/>; }
   const connection = realtime.status === "online" ? "online" : realtime.status === "connecting" || realtime.status === "reconnecting" ? "reconnecting" : realtime.status === "stale" ? "stale" : "offline";
   const ownScore = resultsOf(snapshot.raw).flatMap(value => { if (!value || typeof value !== "object") return []; const result = value as Record<string, unknown>; return result.subjectId === round?.self?.subjectId && typeof result.scoreUnits === "number" && Number.isSafeInteger(result.scoreUnits) && result.scoreUnits >= 0 ? [result.scoreUnits] : []; })[0];
-  return <div className="uma-stack">
-    <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={connection} detail={roomQuery.data?.room.name ?? t("room")}/>
+  return <GameStage mode="co-race-path" className="uma-stack">
+    <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={connection} detail={roomDisplayName(roomQuery.data?.room, t("room"))}/>
     <section className="uma-panel p-4"><div className="flex flex-wrap items-start justify-between gap-3"><div className="min-w-0"><h1 className="u-fluid-task">{t("title")}</h1><p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">{phaseLabel(phase)}{round ? ` · ${t(round.openBook ? "openMode" : "closedMode")} · ${t("maxSteps", {count: round.maxEdges})}` : ""}{snapshot.meta?.paused ? ` · ${t("paused")}` : ""}</p>{round?.shortestEdges !== null && round?.shortestEdges !== undefined ? <p className="text-sm">{t("shortest", {count: round.shortestEdges})}</p> : null}</div>{collecting && snapshot.meta?.deadlineAt ? <div className="shrink-0"><p className="text-xs">{t("time")}</p><p className={`uma-code text-2xl font-bold ${countdown.expired ? "text-[var(--color-danger)]" : ""}`} aria-live="off">{countdown.text}</p></div> : null}</div></section>
     {command.pending && !command.busy ? <Alert tone="warning" title={t("confirming")}><p>{t("confirmDetail")}</p><Button variant="secondary" className="h-auto min-h-12 whitespace-normal" disabled={refreshing} onClick={() => void submit(true)}>{t("confirmAction")}</Button></Alert> : null}
     {command.expired ? <Alert tone="warning" title={t("expiredTitle")}><p>{t("expiredDetail")}</p><Button variant="secondary" onClick={() => void snapshot.refetch().then(ok => { if (ok) command.acknowledgeExpired(); })}>{t("latest")}</Button></Alert> : null}
@@ -155,7 +157,7 @@ export function CoRacePathRoundPage() {
       </div><aside className="min-w-0 space-y-4"><section className="uma-card p-4"><h2 className="text-base font-bold">{t("rules")}</h2><ul className="mt-2 space-y-2 text-sm leading-6 text-[var(--color-muted)]">{(t("playRules", {returnObjects: true, seconds: round.questionSeconds ?? 180, max: round.maxEdges}) as string[]).map(rule => <li key={rule}>{rule}</li>)}</ul>{arrived && round.shortestEdges !== null ? <p className="mt-3 text-sm">{t("preview", {score: explainScore(edgeCount(path), round.shortestEdges)})}</p> : null}</section><Button asChild variant="secondary" block><Link to={`/rooms/${roomId}`}>{t("back")}</Link></Button></aside></div>
     </> : null}
     {round && ended ? <PathRevealPanel round={round} cancelled={cancelled} scoreUnits={ownScore}/> : null}
-  </div>;
+  </GameStage>;
 }
 
 export function PathRevealPanel({round, cancelled = false, scoreUnits}: {round: PathRound; cancelled?: boolean; scoreUnits?: number}) {

@@ -6,6 +6,7 @@ import (
 	"encoding/hex"
 	"net/http"
 	"strconv"
+	"strings"
 	"sync"
 	"time"
 
@@ -146,6 +147,9 @@ func (s *statusRecorder) Write(p []byte) (int, error) {
 	return n, err
 }
 
+// Unwrap preserves ResponseController deadlines and WebSocket upgrades.
+func (s *statusRecorder) Unwrap() http.ResponseWriter { return s.ResponseWriter }
+
 // Flush forwards to the wrapped writer so SSE can stream.
 func (s *statusRecorder) Flush() {
 	if f, ok := s.ResponseWriter.(http.Flusher); ok {
@@ -170,7 +174,14 @@ func (s *Server) withLogging(next http.Handler) http.Handler {
 		}
 		op := operationOf(r)
 		if op == "" {
-			op = "unmatched"
+			switch r.URL.Path {
+			case "/health/live":
+				op = "getLiveness"
+			case "/health/ready":
+				op = "getReadiness"
+			default:
+				op = "unmatched"
+			}
 		}
 		s.log.Info("http request",
 			"requestId", requestIDOf(r),
@@ -194,6 +205,10 @@ type LimiterConfig struct {
 	// MaxBuckets caps attacker-controlled key cardinality. Existing clients keep
 	// their allowance when unknown keys are refused at capacity.
 	MaxBuckets int
+	// RequestPerIP bounds work before credential lookups, including invalid cookies.
+	RequestPerIP Rate
+	// AnonymousPerIP bounds public catalogue reads.
+	AnonymousPerIP Rate
 	// PublicPerIP bounds public invite lookups and grant redemption per address.
 	PublicPerIP Rate
 	// SessionCreatePerIP allows coordinated first arrivals behind a venue NAT,
@@ -219,6 +234,18 @@ type Rate struct {
 }
 
 func (c LimiterConfig) withDefaults() LimiterConfig {
+	if c.RequestPerIP.PerMinute <= 0 {
+		c.RequestPerIP.PerMinute = 6000
+	}
+	if c.RequestPerIP.BurstTokens <= 0 {
+		c.RequestPerIP.BurstTokens = 1200
+	}
+	if c.AnonymousPerIP.PerMinute <= 0 {
+		c.AnonymousPerIP.PerMinute = 600
+	}
+	if c.AnonymousPerIP.BurstTokens <= 0 {
+		c.AnonymousPerIP.BurstTokens = 120
+	}
 	if c.MaxBuckets <= 0 {
 		c.MaxBuckets = 20000
 	}
@@ -359,9 +386,42 @@ func (l *Limiter) sweepLocked(now time.Time) {
 func (s *Server) limit(w http.ResponseWriter, r *http.Request, info routeInfo) error {
 	sess, hasSession := sessionOf(r)
 	switch info.RateClass {
+	case "account-login":
+		if ok, retry := s.limiter.Allow("account-login:"+s.clientIP(r), Rate{PerMinute: 30, BurstTokens: 10}); !ok {
+			return problem.RateLimited(retry)
+		}
 	case "session-create":
 		if ok, retry := s.limiter.Allow("session-create-ip:"+s.clientIP(r), s.cfg.Limiter.SessionCreatePerIP); !ok {
 			return problem.RateLimited(retry)
+		}
+	case "matchmaking-lobby":
+		if ok, retry := s.limiter.Allow("match-lobby-ip:"+s.clientIP(r), Rate{PerMinute: 600, BurstTokens: 200}); !ok {
+			return problem.RateLimited(retry)
+		}
+		if hasSession {
+			if ok, retry := s.limiter.Allow("match-lobby-session:"+sess.ID, Rate{PerMinute: 60, BurstTokens: 10}); !ok {
+				return s.sessionRateLimited(sess.ID, retry)
+			}
+		}
+	case "admission-status":
+		// Status polling at an event must not consume invitation redemption's
+		// much smaller shared-IP budget.
+		if ok, retry := s.limiter.Allow("entry-state-ip:"+s.clientIP(r), Rate{PerMinute: 600, BurstTokens: 200}); !ok {
+			return problem.RateLimited(retry)
+		}
+	case "identity-recovery":
+		// A flooded game-action budget must not lock the player out of the
+		// identity/CSRF recovery needed to complete verification after a reload.
+		for _, gate := range []struct {
+			key  string
+			rate Rate
+		}{
+			{"identity-session:" + sess.ID, Rate{PerMinute: 24, BurstTokens: 8}},
+			{"identity-ip:" + s.clientIP(r), Rate{PerMinute: 600, BurstTokens: 200}},
+		} {
+			if ok, retry := s.limiter.Allow(gate.key, gate.rate); !ok {
+				return problem.RateLimited(retry)
+			}
 		}
 	case "admission":
 		for _, gate := range []struct {
@@ -389,6 +449,9 @@ func (s *Server) limit(w http.ResponseWriter, r *http.Request, info routeInfo) e
 			{"verified-ip:" + s.clientIP(r), Rate{PerMinute: 600, BurstTokens: 200}},
 		} {
 			if ok, retry := s.limiter.Allow(gate.key, gate.rate); !ok {
+				if strings.HasPrefix(gate.key, "verified-session:") {
+					return s.sessionRateLimited(sess.ID, retry)
+				}
 				return problem.RateLimited(retry)
 			}
 		}
@@ -402,7 +465,7 @@ func (s *Server) limit(w http.ResponseWriter, r *http.Request, info routeInfo) e
 		if hasSession {
 			ok, retry = s.limiter.Allow("ses:"+sess.ID, s.cfg.Limiter.SessionPerMinute)
 			if !ok {
-				return problem.RateLimited(retry)
+				return s.sessionRateLimited(sess.ID, retry)
 			}
 		}
 	case "stream":
@@ -420,14 +483,16 @@ func (s *Server) limit(w http.ResponseWriter, r *http.Request, info routeInfo) e
 			}
 		}
 	case "", "session":
-		// Authenticated reads without a special class must not silently bypass
-		// the session gate. Anonymous catalogue reads retain their public path.
+		// Catalogue reads have a separate address budget for shared-network venues.
 		if !hasSession {
+			if ok, retry := s.limiter.Allow("catalogue-ip:"+s.clientIP(r), s.cfg.Limiter.AnonymousPerIP); !ok {
+				return problem.RateLimited(retry)
+			}
 			return nil
 		}
 		ok, retry := s.limiter.Allow("ses:"+sess.ID, s.cfg.Limiter.SessionPerMinute)
 		if !ok {
-			return problem.RateLimited(retry)
+			return s.sessionRateLimited(sess.ID, retry)
 		}
 	case "room":
 		if !hasSession {
@@ -438,15 +503,39 @@ func (s *Server) limit(w http.ResponseWriter, r *http.Request, info routeInfo) e
 		// guess loop cannot starve that room's other commands.
 		ok, retry := s.limiter.Allow("ses:"+sess.ID, s.cfg.Limiter.SessionPerMinute)
 		if !ok {
-			return problem.RateLimited(retry)
-		}
-		ok, retry = s.limiter.Allow("room:"+r.PathValue("roomId")+":"+info.OperationID, s.cfg.Limiter.RoomPerMinute)
-		if !ok {
-			return problem.RateLimited(retry)
+			return s.sessionRateLimited(sess.ID, retry)
 		}
 		ok, retry = s.limiter.Allow("act:"+sess.ID+":"+info.OperationID, s.cfg.Limiter.ActionPerMinute)
 		if !ok {
-			return problem.RateLimited(retry)
+			return s.sessionRateLimited(sess.ID, retry)
+		}
+		resource := r.PathValue("roomId")
+		if resource == "" {
+			resource = r.PathValue("roundId")
+		}
+		if resource == "" {
+			resource = r.PathValue("eventId")
+		}
+		if resource != "" && s.rooms != nil {
+			kind := "room"
+			if r.PathValue("roundId") != "" {
+				kind = "round"
+			} else if r.PathValue("eventId") != "" {
+				kind = "event"
+			}
+			// Unauthorised requests retain their session/action limits, but cannot
+			// consume a victim room's allowance just by knowing its URL.
+			roomID, err := s.rooms.CommandBudgetRoom(r.Context(), sess.ID, kind, resource)
+			if err != nil {
+				return problem.Internal(err)
+			}
+			resource = roomID
+		}
+		if resource != "" {
+			ok, retry = s.limiter.Allow("resource:"+resource+":"+info.OperationID, s.cfg.Limiter.RoomPerMinute)
+			if !ok {
+				return problem.RateLimited(retry)
+			}
 		}
 	}
 	return nil
@@ -487,4 +576,9 @@ func (s *Server) observeProblem(r *http.Request, e *problem.Error) {
 		"operationId", operationOf(r),
 		"code", e.Code,
 		"status", e.Status)
+}
+
+func (s *Server) sessionRateLimited(id string, retry int) error {
+	s.admission.ObserveLimit(id)
+	return problem.RateLimited(retry)
 }

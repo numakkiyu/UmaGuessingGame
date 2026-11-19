@@ -1,0 +1,40 @@
+{
+  "upstream": "https://github.com/adobe-fonts/source-han-sans",
+  "version": "2.005R",
+  "license": "SIL Open Font License 1.1",
+  "licenseFile": "OFL.txt",
+  "family": "Uma Sans (Source Han Sans subsets)",
+  "processing": "Regional variable WOFF2 split into common and extended Unicode ranges; renamed to respect the reserved font name",
+  "files": [
+    {
+      "file": "source-han-sans-jp-common.woff2",
+      "sha256": "2e2c454a479eaa0bc36787880eaa232f6c4083ef2f0fa61f4e98bdcdae628b77",
+      "bytes": 633652
+    },
+    {
+      "file": "source-han-sans-jp-extended.woff2",
+      "sha256": "4777104c1c8a22406d6b5a1285a80bced53e1353825c0f4493b890ae2bbb0906",
+      "bytes": 3535300
+    },
+    {
+      "file": "source-han-sans-sc-common.woff2",
+      "sha256": "bfd1c10399e296a9fffb1802c9cffbbc53e097ef7ee4278fa11cd904ac96bdb9",
+      "bytes": 782832
+    },
+    {
+      "file": "source-han-sans-sc-extended.woff2",
+      "sha256": "c5c750ccda06823492dc4486ee3e8cb9b60fc4764103ade8c1a2e1b80fdf6813",
+      "bytes": 7087508
+    },
+    {
+      "file": "source-han-sans-tc-common.woff2",
+      "sha256": "3e3b2cf464d873c3d4f31fb5987f98770cf6902a07f0780e32f4fb2d75605b03",
+      "bytes": 655692
+    },
+    {
+      "file": "source-han-sans-tc-extended.woff2",
+      "sha256": "06838b920b21cab233aec345bb419ebaedca3bf6736c1a9cf3b70fd78def0964",
+      "bytes": 4836996
+    }
+  ]
+}

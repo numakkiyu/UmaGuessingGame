@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 import { SelectField } from "@/components/ui/select";
 import "@/i18n/trade-online";
 import {useMemo, useState} from "react";
@@ -102,7 +104,7 @@ export function TradeRoundPage() {
  const realtime=useRealtime({roomId:roomId??null,enabled:!!roomId,handlers:{onSnapshotNeeded:()=>{void snapshot.refetch();void roomQuery.refetch();}}});
  const message=failure?tradeFailureMessage(failure,t):null;
  function personOf(id:string) {const m=room?.members.find(m=>m.membershipId===id);return m?`${m.nickname??m.displayName}${/^\d{6}$/.test(m.publicCode??"")?` (${t("roomId",{id:m.publicCode})})`:""}`:t("partner");}
- function labelOf(id:string) {const c=round?.instances.find(c=>c.instanceId===id);return c?tradeCardLabel(c.cardId,c.label,i18n.language).text:t("missingCard");}
+ function labelOf(id:string) {const c=round?.instances.find(c=>c.instanceId===id);return c?(tradeCardLabel(c.cardId,c.label,i18n.language).text||t("missingCard")):t("missingCard");}
  function choose(part:Partial<TradeDraft>) {const next={offeredId,recipientId,requestedId,...part};setDraft(next);setNotice("");if(draftScope&&!saveTradeDraft(draftScope,next))setNotice("saveFailed");}
  async function send(body?:TradeCommand) {
   if(!roundId||command.busy||refreshing||!body&&!command.pending)return;
@@ -116,8 +118,8 @@ export function TradeRoundPage() {
  if(!roomId)return <ErrorView failure={{kind:"error",title:t("missingRoom"),detail:t("missingRoomDetail"),diagnosticId:null,retryable:false}}/>;
  const cardList=(ids:string[])=>ids.map(labelOf).join(" / ");
  const rawError=(error:unknown)=>describeFailure(error).kind==="forbidden"?<ForbiddenView failure={describeFailure(error)} onRetry={()=>{void snapshot.refetch();void roomQuery.refetch();}}/>:<ErrorView failure={describeFailure(error)} onRetry={()=>{void snapshot.refetch();void roomQuery.refetch();}}/>;
- return <div className="uma-stack">
-  <ConnectionBar status={realtime.status} detail={room?.name??t("room")}/>
+ return <GameStage mode="trade" className="uma-stack">
+  <ConnectionBar status={realtime.status} detail={roomDisplayName(room, t("room"))}/>
   {isCredentialRefreshFailure(snapshot.error)||isCredentialRefreshFailure(failure)?<RejoinPrompt roomId={roomId}/>:null}
   {roomQuery.isLoading||snapshot.isLoading?<LoadingBlock label={t("loading")} rows={3}/>:null}
   {roomQuery.isError?rawError(roomQuery.error):null}{snapshot.isError?rawError(snapshot.error):null}
@@ -147,5 +149,5 @@ export function TradeRoundPage() {
    {round.instances.some(c=>tradeCardLabel(c.cardId,c.label,i18n.language).original)||round.objectives.some(o=>tradeObjectiveText(o,i18n.language).original)?<p className="text-xs leading-5 text-[var(--color-muted)]">{t("original")}</p>:null}
   </>:!snapshot.isLoading&&!roomQuery.isLoading&&!snapshot.isError&&!roomQuery.isError?<EmptyView title={t("emptyTitle")} detail={t("emptyDetail")}/>:null}
   <Button asChild variant="secondary" className="h-auto min-h-11 whitespace-normal"><Link to="/">{t("back")}</Link></Button>
- </div>;
+ </GameStage>;
 }

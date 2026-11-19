@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { setPlayerName } from "./player-profile.mjs";
 import { chromium } from "playwright";
 import { writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
@@ -24,7 +25,7 @@ async function submit() {
 }
 try {
   await page.goto(base + "/play/race-rebuild/online");
-  await page.getByLabel("显示名", { exact: true }).fill("赛况验证");
+  await setPlayerName(page, "赛况验证");
   await page.getByRole("button", { name: "开始对局", exact: true }).click();
   await board().waitFor({ timeout: 30000 });
   await board().getByRole("button", { name: /合并为并列/ }).first().click();

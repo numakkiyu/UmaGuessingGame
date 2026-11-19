@@ -84,7 +84,7 @@ type SubscribeRequest struct {
 // cancelled) and must not disconnect anyone. Only a nil error with active=false
 // revokes.
 type Revalidator interface {
-	MembershipActive(ctx context.Context, roomID, membershipID string) (active bool, err error)
+	IdentityActive(ctx context.Context, identity Identity) (active bool, err error)
 }
 
 // RoomVersions optionally supplies current versions for a hello. Without it the
@@ -529,7 +529,7 @@ func (h *Hub) Serve(ctx context.Context, opts SubscribeOptions) error {
 		// the Add and the Wait.
 		go func() {
 			defer close(revalidateDone)
-			h.revalidateLoop(s)
+			h.revalidateLoop(ctx, s)
 		}()
 	} else {
 		close(revalidateDone)
@@ -916,12 +916,23 @@ func (h *Hub) readLoop(s *subscriber) {
 		// SSE is server-to-client only.
 		return
 	}
+	tokens := 30.0
+	lastFrame := time.Now()
 	for {
 		raw, err := s.tr.ReadFrame(context.Background())
 		if err != nil {
 			s.terminate(CloseGoingAway, "peer closed")
 			return
 		}
+		now := time.Now()
+		tokens = min(30.0, tokens+now.Sub(lastFrame).Seconds()*5)
+		lastFrame = now
+		if tokens < 1 {
+			h.metrics.Counter("realtime.client.rate_limited", 1)
+			s.terminate(ClosePolicyViolation, "client frame rate exceeded")
+			return
+		}
+		tokens--
 		msg, err := DecodeClientMessage(raw)
 		if err != nil {
 			h.metrics.Counter("realtime.client.rejected", 1)
@@ -1000,23 +1011,28 @@ func (h *Hub) heartbeatLoop(s *subscriber) {
 }
 
 // revalidateLoop periodically re-checks authorisation .
-func (h *Hub) revalidateLoop(s *subscriber) {
+func (h *Hub) revalidateLoop(ctx context.Context, s *subscriber) {
 	t := time.NewTicker(h.cfg.RevalidateInterval)
 	defer t.Stop()
 	for {
+		// Check once on registration too: a transfer can commit between the
+		// handshake lookup and adding this subscriber to the hub.
+		checkCtx, cancel := context.WithTimeout(ctx, h.cfg.HandshakeTimeout)
+		active, err := h.revalidator.IdentityActive(checkCtx, Identity{
+			RoomID: s.roomID, MembershipID: s.membershipID,
+			SessionID: s.sessionID, Role: s.role,
+		})
+		cancel()
+		if err == nil && !active {
+			h.revokeSubscriber(s, "authorization-changed")
+			return
+		}
 		select {
 		case <-s.stop:
 			return
+		case <-ctx.Done():
+			return
 		case <-t.C:
-			active, err := h.revalidator.MembershipActive(context.Background(), s.roomID, s.membershipID)
-			if err != nil {
-				// Transient: never disconnect on a failed check.
-				continue
-			}
-			if !active {
-				h.revokeSubscriber(s, "membership is no longer active")
-				return
-			}
 		}
 	}
 }
@@ -1131,6 +1147,22 @@ func (h *Hub) RevokeMembership(roomID, membershipID, reason string) int {
 
 // RevokeSession disconnects every subscription of one session.
 func (h *Hub) RevokeSession(sessionID, reason string) int {
+	return h.RevokeRoomSession("", sessionID, reason)
+}
+
+// RevokeRoomSession disconnects a previous device in one room. An empty room ID
+// revokes the session everywhere, as required on logout.
+func (h *Hub) RevokeRoomSession(roomID, sessionID, reason string) int {
+	return h.revokeBoundSession(roomID, "", sessionID, reason)
+}
+
+// RevokeIdentity targets an old seat binding without disconnecting a session
+// that has legitimately rejoined under a new membership in the meantime.
+func (h *Hub) RevokeIdentity(identity Identity, reason string) int {
+	return h.revokeBoundSession(identity.RoomID, identity.MembershipID, identity.SessionID, reason)
+}
+
+func (h *Hub) revokeBoundSession(roomID, membershipID, sessionID, reason string) int {
 	if reason == "" {
 		reason = "session revoked"
 	}
@@ -1138,7 +1170,9 @@ func (h *Hub) RevokeSession(sessionID, reason string) int {
 	var subs []*subscriber
 	if set, ok := h.bySess[sessionID]; ok {
 		for _, s := range set {
-			subs = append(subs, s)
+			if (roomID == "" || s.roomID == roomID) && (membershipID == "" || s.membershipID == membershipID) {
+				subs = append(subs, s)
+			}
 		}
 	}
 	h.mu.RUnlock()

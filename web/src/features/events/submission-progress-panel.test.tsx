@@ -26,7 +26,7 @@ describe("progress only uses supplied public fields",()=>{
   expect(screen.queryByRole("alert")).toBeNull();
   v.rerender(<SubmissionProgressPanel round={{publicState:{subjects:[{subjectId:"a",submitted:true},{subjectId:"b"}]}}} phase="collecting"/>);
   expect(screen.queryByText("大家都已作答")).toBeNull();
-  expect(screen.getByText("部分参赛者的进度尚未提供，不能判断大家都已作答")).toBeTruthy();
+  expect(screen.getByText("部分参赛者的进度暂时看不到，还不能确认大家是否都已作答")).toBeTruthy();
  });
  it("solved and exhausted attempts take precedence and same names have distinct room codes",()=>{
   render(<SubmissionProgressPanel phase="collecting" round={{publicState:{subjects:[{subjectId:"a",submitted:false,solved:true},{subjectId:"b",submitted:false,failed:true}]}}} room={{members:[{membershipId:"a",displayName:"同名伙伴",publicCode:"001234"},{membershipId:"b",displayName:"同名伙伴",publicCode:"567890"}]}}/>);

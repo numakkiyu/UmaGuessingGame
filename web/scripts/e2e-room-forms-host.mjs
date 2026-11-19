@@ -1,3 +1,4 @@
+import { setPlayerName } from "./player-profile.mjs";
 /** Independent browser identities, real Go/SQLite, all mutations via visible UI. */
 import {chromium} from 'playwright';
 import {mkdir,writeFile} from 'node:fs/promises';
@@ -18,13 +19,13 @@ try{
   await p.getByRole('button',{name:new RegExp(form)}).click();const links=await p.locator('a.group').evaluateAll(as=>as.map(a=>new URL(a.href).pathname));check(form+'仅显示对应形式的玩法入口',links.length>0&&links.every(v=>pattern.test(v)),links.length);
  }
  for(const width of [320,390,768,1440]){await p.setViewportSize({width,height:1000});check(`大厅 ${width}px 无横溢`,await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));if(width===320||width===1440)await p.screenshot({path:new URL(`lobby-${width}.png`,out).pathname,fullPage:true,animations:'disabled'})}
- await p.goto(base+'/rooms/new?mode=classic');await p.getByLabel('你的显示名').fill('特别周');const friend=await write(p,'POST','/rooms',()=>button(p,'创建好友房间').click());await p.waitForURL(/\/rooms\/rom_/);await p.getByTestId('room-invite-code').waitFor();
+ await p.goto(base+'/rooms/new?mode=classic');await setPlayerName(p, '特别周');const friend=await write(p,'POST','/rooms',()=>button(p,'创建好友房间').click());await p.waitForURL(/\/rooms\/rom_/);await p.getByTestId('room-invite-code').waitFor();
  check('普通多人没有默认分队入口',await p.getByText('需要分队？',{exact:true}).count()===0);check('普通多人显示房间匹配码',(await p.locator('body').innerText()).includes('房间匹配码'));
  await leave(0,friend.room.roomId);
  await p.goto(base+'/events/new');await p.getByLabel('活动名称').fill('特雷森周末游玩会');const event=await write(p,'POST','/events',()=>button(p,'创建并进入主持台').click());await p.waitForURL(/\/events\/evs_.+\/host/);
  const rid=event.roomId,initial=await room(0,rid),code=initial.inviteCode;
  check('活动创建者自动成为主持人',initial.viewer.capabilities.includes('host'));
- for(let i=1;i<3;i++){await pages[i].goto(base+'/join?code='+code);await pages[i].getByLabel('显示名',{exact:true}).fill(i===1?'特别周':'小栗帽');await write(pages[i],'POST',`/rooms/${rid}/memberships`,()=>button(pages[i],'加入房间').click());await pages[i].waitForURL(/\/rooms\/rom_/)}
+ for(let i=1;i<3;i++){await pages[i].goto(base+'/join?code='+code);await setPlayerName(pages[i], i===1?'特别周':'小栗帽');await write(pages[i],'POST',`/rooms/${rid}/memberships`,()=>button(pages[i],'加入房间').click());await pages[i].waitForURL(/\/rooms\/rom_/)}
  await p.goto(base+'/rooms/'+rid);await p.getByRole('heading',{name:'成员',exact:true}).waitFor();await p.getByText('已连接',{exact:true}).waitFor();check('连续切换房间后同步可恢复',true);const full=await room(0,rid);const codes=full.members.map(m=>m.publicCode);check('全员房内 ID 六位且不重复',codes.every(v=>/^\d{6}$/.test(v))&&new Set(codes).size===3,codes);
  const next=await room(1,rid),nextId=next.viewer.membershipId;
  check('团队房保留分队入口',await p.getByText('需要分队？',{exact:true}).count()===1);
@@ -37,7 +38,7 @@ try{
  await pages[1].reload();check('刷新保留房内 ID',(await room(1,rid)).viewer.publicCode===next.viewer.publicCode);
  await contexts[1].setOffline(true);await contexts[1].setOffline(false);check('短暂断网不交接主持',(await room(1,rid)).viewer.capabilities.includes('host'));
  await leave(1,rid);const remaining=await room(0,rid);const hosts=remaining.members.filter(m=>m.capabilities.includes('host'));check('主持退出后只产生一位合格接任者',hosts.length===1&&hosts[0].membershipId!==nextId);
- await pages[1].goto(base+'/join?code='+code);await pages[1].getByLabel('显示名',{exact:true}).fill('特别周');await write(pages[1],'POST',`/rooms/${rid}/memberships`,()=>button(pages[1],'加入房间').click());check('离开后重入保持房内 ID',(await room(1,rid)).viewer.publicCode===next.viewer.publicCode);
+ await pages[1].goto(base+'/join?code='+code);await setPlayerName(pages[1], '特别周');await write(pages[1],'POST',`/rooms/${rid}/memberships`,()=>button(pages[1],'加入房间').click());check('离开后重入保持房内 ID',(await room(1,rid)).viewer.publicCode===next.viewer.publicCode);
  await leave(1,rid);await leave(2,rid);await leave(0,rid);check('最后一人可退出而不遗留控制页面',new URL(p.url()).pathname==='/');
  check('页面无未捕获异常',errors.length===0,errors);
 }catch(error){checks.push({name:'execution',ok:false,detail:String(error)});console.error(error);for(let i=0;i<3;i++){await pages[i].screenshot({path:new URL(`failure-${i}.png`,out).pathname,fullPage:true}).catch(()=>{});await writeFile(new URL(`failure-${i}.txt`,out),await pages[i].locator('body').innerText().catch(()=>''))}}

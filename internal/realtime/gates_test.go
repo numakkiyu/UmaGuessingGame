@@ -861,7 +861,7 @@ func TestOriginRejected(t *testing.T) {
 		host   string
 		want   int
 	}{
-		{"same origin", "https://game.example", "game.example", 0},
+		{"same origin", "http://game.example", "game.example", 0},
 		{"allow-listed host", "http://localhost:5173", "game.example", 0},
 		{"cross site", "https://evil.example", "game.example", 403},
 		{"missing origin", "", "game.example", 403},

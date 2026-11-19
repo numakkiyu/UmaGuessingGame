@@ -22,7 +22,7 @@ const PLAYER_FACING: Array<[string, number, string]> = [
   ["room-full", 422, "满员"],
   ["room-in-progress", 422, "已经开始"],
   ["already-member", 422, "已经在房间"],
-  ["invitation-invalid", 403, "邀请码"],
+  ["invitation-invalid", 403, "房间分享码"],
   ["invitation-not-found", 404, "找不到这个邀请"],
   ["not-a-participant", 403, "不在这一局"],
   ["owner-cannot-leave", 422, "房主不能直接离开"],
@@ -50,7 +50,7 @@ describe("玩家会遇到的错误都有专属文案", () => {
     const f = describeFailure(mkErr(status, code, `server detail for ${code}`));
     expect(f.title).toContain(expectTitle);
     // 关键断言：不能是 422 兜底那句「你填的内容有一处不合规则」所对应的标题
-    expect(f.title).not.toBe("这次提交没通过");
+    expect(f.title).not.toBe("内容还需要调整");
     // 也不能把服务端的英文 detail 直接显示给玩家
     expect(f.detail).not.toContain("server detail");
     // 这些都需要玩家改变操作，不是「重试就好」
@@ -59,7 +59,7 @@ describe("玩家会遇到的错误都有专属文案", () => {
 
   it("未知错误码仍然落到兜底，且不泄露服务端 detail", () => {
     const f = describeFailure(mkErr(422, "some-brand-new-code", "internal wording leaked here"));
-    expect(f.title).toBe("这次提交没通过");
+    expect(f.title).toBe("内容还需要调整");
     expect(f.detail).not.toContain("internal wording");
   });
 });

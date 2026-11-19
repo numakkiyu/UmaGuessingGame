@@ -1,0 +1,51 @@
+/* The provider's own widget remains unobscured inside the themed scene */
+.uma-admission-overlay{position:fixed;inset:0;z-index:90;background:#30433552;backdrop-filter:blur(5px);animation:uma-admission-shade .36s cubic-bezier(.2,0,0,1) both;transition:background .64s cubic-bezier(.2,0,0,1),backdrop-filter .64s}
+.uma-admission-overlay[data-traffic=true]{background:#16202ac9;backdrop-filter:blur(5px) saturate(.65)}
+.uma-admission-overlay[data-success=true]{background:#3043350a;backdrop-filter:blur(0) saturate(1)}
+.uma-admission-edge{position:absolute;inset:0;pointer-events:none;opacity:1;transition:opacity .62s cubic-bezier(.3,0,1,1);animation:uma-admission-edge-in .65s cubic-bezier(.05,.7,.1,1) both;overflow:hidden}
+.uma-admission-edge canvas{width:100%;height:100%;display:block}
+.uma-admission-edge:before,.uma-admission-edge:after{content:"";position:absolute;top:0;bottom:0;width:18%;background:radial-gradient(ellipse at left,#f65b535c,transparent 70%);animation:uma-admission-side .65s cubic-bezier(.2,0,0,1) both}
+.uma-admission-edge:after{right:0;transform:scaleX(-1)}
+.uma-admission-edge[data-fallback=true],.uma-admission-edge[data-reduced=true]{box-shadow:inset 0 0 38px #ef66517a,inset 0 0 8px #ffb2a6b0}
+.uma-admission-edge[data-success=true]{opacity:0}
+.uma-admission-dialog{position:fixed;inset:0;z-index:91;display:flex;justify-content:center;align-items:safe center;overflow:auto;overscroll-behavior:contain;padding:48px 24px;outline:none;isolation:isolate}
+.uma-admission-scene{position:relative;isolation:isolate;flex-shrink:0;width:min(100%,920px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,480px) minmax(0,1fr);align-items:end;animation:uma-admission-enter .42s cubic-bezier(.05,.7,.1,1) both}
+.uma-admission-panel{position:relative;z-index:2;grid-column:2;grid-row:1;min-width:0;border:1px solid #cbdcbd;border-radius:24px;background:#fffefb;box-shadow:0 5px 0 #b7d29a,0 24px 80px #101e2440;overflow:hidden;transition:border-color .35s,box-shadow .35s}
+.uma-admission-ribbon{height:7px;background:linear-gradient(90deg,#95c35f,#b8d68f 64%,#ebd69c)}
+.uma-admission-close{position:absolute;z-index:3;right:8px;top:13px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:transparent;color:#7a886a;border:0}
+.uma-admission-close:hover{background:#e9efdc}.uma-admission-close:focus-visible{outline:3px solid var(--color-blue-deep);outline-offset:-3px}
+.uma-admission-header{padding:27px 30px 0;text-align:center}
+.uma-admission-emblem{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 15px;border:1px solid #c9ddb0;border-radius:18px;background:#eef6e4;color:#5c893b;box-shadow:0 3px 0 #dcebc9;transition:color .3s,background .3s}
+.uma-admission-emblem svg{width:27px;height:27px}
+.uma-admission-title{padding:0;margin:0;color:#354f35;font-size:clamp(21px,2.3vw,26px);font-weight:600;line-height:1.5;text-wrap:balance;overflow-wrap:anywhere}
+.uma-admission-description{margin:9px auto 0;color:#78816c;font-size:14px;line-height:1.85;text-wrap:pretty;max-width:34ch}
+.uma-admission-body{display:flex;flex-direction:column;gap:16px;padding:24px 30px 28px;min-width:0}
+.uma-admission-purpose{display:flex;justify-content:center;gap:7px;align-items:center;color:#697e53;font-size:12px;font-weight:600}
+.uma-admission-purpose svg{width:16px;height:16px;flex-shrink:0}
+.uma-admission-widget{min-height:100px;min-width:0;padding:16px 12px;border:1px solid #d7e3c8;border-radius:15px;background:#f7faf1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+.uma-admission-widget-host{display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:65px}
+.uma-admission-status{display:flex;align-items:center;gap:7px;font-size:13px;line-height:1.7;color:#697a60;text-align:center}.uma-admission-status svg{flex-shrink:0;width:17px;height:17px}
+.uma-admission-status.is-ready{color:#397137;font-weight:600}
+.uma-admission-note{margin:0;color:#828975;font-size:11px;line-height:1.8;text-align:center;text-wrap:pretty}.uma-admission-note span{display:block;margin-top:4px}
+.uma-admission-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:2px}.uma-admission-actions .uma-button{min-height:46px;height:auto;white-space:normal;line-height:1.5;padding:11px 20px;border-radius:12px}.uma-admission-actions .uma-button:last-child{flex:1;min-width:140px}
+.uma-admission-character{grid-row:1;width:240px;max-width:none;height:320px;object-fit:contain;pointer-events:none;user-select:none;position:relative;z-index:3;filter:drop-shadow(0 8px 6px #15281916);animation:uma-admission-cast .5s .08s cubic-bezier(.05,.7,.1,1) both}
+.uma-admission-character.is-left{grid-column:1;justify-self:end;margin-right:-26px;margin-bottom:8px;--cast-x:-16px}.uma-admission-character.is-right{grid-column:3;justify-self:start;margin-left:-26px;margin-bottom:8px;--cast-x:16px;animation-delay:.13s}
+.uma-admission-dialog[data-traffic=true] .uma-admission-panel{border-color:#ecb49a;box-shadow:0 5px 0 #d3a08c,0 24px 90px #11182770}
+.uma-admission-dialog[data-traffic=true] .uma-admission-ribbon{background:linear-gradient(90deg,#efb270,#df7754 65%,#c65b51)}
+.uma-admission-dialog[data-traffic=true] .uma-admission-emblem{background:#fff0e4;color:#be6344;border-color:#ecc7aa;box-shadow:0 3px 0 #f0d7bc}
+.uma-admission-dialog[data-success=true] .uma-admission-panel{border-color:#9cc777;box-shadow:0 5px 0 #add092,0 20px 70px #253e241a}
+.uma-admission-dialog[data-success=true] .uma-admission-ribbon{background:#9bc86b}
+.uma-admission-dialog[data-success=true] .uma-admission-emblem{background:#edf7e3;color:#4e8535;border-color:#c9ddb0;animation:uma-admission-check .36s cubic-bezier(.2,0,0,1) both}
+.uma-admission-dialog[data-success=true] .uma-admission-scene{animation:uma-admission-leave .34s .3s cubic-bezier(.3,0,1,1) both}
+@keyframes uma-admission-enter{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes uma-admission-cast{from{opacity:0;transform:translate(var(--cast-x),8px)}to{opacity:1;transform:translate(0)}}
+@keyframes uma-admission-shade{from{opacity:0}to{opacity:1}}
+@keyframes uma-admission-side{0%{opacity:0;scale:.6 1}35%{opacity:1}100%{opacity:0;scale:1 1}}
+@keyframes uma-admission-edge-in{from{opacity:0;transform:scaleX(1.015)}to{opacity:1;transform:scaleX(1)}}
+@keyframes uma-admission-check{0%{transform:scale(.92)}60%{transform:scale(1.06)}100%{transform:scale(1)}}
+@keyframes uma-admission-leave{to{opacity:0;transform:translateY(-8px) scale(.99)}}
+@media(max-width:900px){.uma-admission-scene{grid-template-columns:64px minmax(0,480px) 64px;width:auto;max-width:100%}.uma-admission-character{width:120px;height:190px}.uma-admission-character.is-left{margin-right:-8px}.uma-admission-character.is-right{margin-left:-8px}}
+@media(max-width:767px){.uma-admission-dialog{padding:28px 16px max(28px,env(safe-area-inset-bottom))}.uma-admission-scene{display:block;width:min(100%,420px);padding-top:83px;padding-bottom:112px}.uma-admission-panel{border-radius:20px}.uma-admission-header{padding:21px 20px 0}.uma-admission-emblem{width:46px;height:46px;border-radius:15px;margin-bottom:12px}.uma-admission-title{font-size:21px}.uma-admission-description{font-size:13px}.uma-admission-body{gap:14px;padding:20px}.uma-admission-character{position:absolute;width:106px;height:140px}.uma-admission-character.is-left{left:-5px;bottom:-6px;margin:0;z-index:3}.uma-admission-character.is-right{right:3px;top:-14px;margin:0;z-index:1;object-position:center top}.uma-admission-note{font-size:11px}.uma-admission-widget{padding:12px;min-height:100px}.uma-admission-actions .uma-button{padding:11px 14px}.uma-admission-scene:after{content:"";position:absolute;right:16px;top:77px;width:80px;height:6px;background:#fffefb;border-radius:50%;filter:blur(2px);z-index:2}}
+@media(max-width:359px){.uma-admission-dialog{padding-inline:12px}.uma-admission-header{padding-inline:14px}.uma-admission-body{padding:18px 14px}.uma-admission-widget{padding:10px}.uma-admission-title{font-size:20px}.uma-admission-actions{gap:8px}.uma-admission-actions .uma-button{font-size:13px;padding-inline:10px}}
+@media(prefers-reduced-motion:reduce){.uma-admission-overlay,.uma-admission-edge,.uma-admission-edge:before,.uma-admission-edge:after,.uma-admission-scene,.uma-admission-character,.uma-admission-emblem{animation:none!important;transition:none!important}}
+[data-motion=reduced] :is(.uma-admission-overlay,.uma-admission-edge,.uma-admission-edge:before,.uma-admission-edge:after,.uma-admission-scene,.uma-admission-character,.uma-admission-emblem){animation:none!important;transition:none!important}

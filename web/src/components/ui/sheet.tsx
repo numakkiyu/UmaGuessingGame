@@ -1,8 +1,9 @@
 
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { X } from "lucide-react";
-import type { ComponentProps } from "react";
+import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/i18n";
 
 export const Sheet = DialogPrimitive.Root;
 export const SheetTrigger = DialogPrimitive.Trigger;
@@ -19,17 +20,21 @@ const SIDE_CLASS: Record<Side, string> = {
 
 export type SheetContentProps = ComponentProps<typeof DialogPrimitive.Content> & {
   side?: Side;
-  /** 关闭按钮的可见文案，便于屏幕阅读器理解上下文 */
+  /** 屏幕阅读器使用的关闭按钮名称 */
   closeLabel?: string;
+  /** 始终可见的主操作，与候选列表的滚动区域分开 */
+  footer?: ReactNode;
 };
 
 export function SheetContent({
   className,
   children,
   side = "bottom",
-  closeLabel = "关闭",
+  closeLabel,
+  footer,
   ...props
 }: SheetContentProps) {
+  const { t } = useTranslation("common");
   return (
     <DialogPrimitive.Portal>
       <DialogPrimitive.Overlay className="uma-dialog-overlay fixed inset-0 z-[var(--z-sheet)]" />
@@ -42,8 +47,8 @@ export function SheetContent({
         )}
         {...props}
       >
-        {/* 内容区独立滚动：底部按钮不会被虚拟键盘挡住 */}
         <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-5">{children}</div>
+        {footer ? <div className="shrink-0 border-t border-[var(--color-line)] bg-[var(--color-panel)] px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom,0px))]">{footer}</div> : null}
         <DialogPrimitive.Close
           className={cn(
             "absolute right-2 top-2 inline-flex size-11 items-center justify-center rounded-[var(--radius-control)]",
@@ -52,7 +57,7 @@ export function SheetContent({
           )}
         >
           <X aria-hidden="true" className="size-5" />
-          <span className="sr-only">{closeLabel}</span>
+          <span className="sr-only">{closeLabel ?? t("actions.close")}</span>
         </DialogPrimitive.Close>
       </DialogPrimitive.Content>
     </DialogPrimitive.Portal>

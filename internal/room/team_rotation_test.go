@@ -96,12 +96,13 @@ func (f *teamRound) submit(t *testing.T, id, kind, payload string) room.Submissi
 	}
 	return rec
 }
-func (f *teamRound) control(t *testing.T, team, holder string, generation int64) {
+func (f *teamRound) control(t *testing.T, team, holder string, generation int64, allowed ...bool) {
 	t.Helper()
 	v := f.view(t, holder)
 	for _, c := range v.TeamControllers {
 		if c.TeamID == team {
-			if c.MembershipID != holder || c.Generation != generation || !v.CanSubmit || v.ControlGeneration != generation {
+			wantAllowed := len(allowed) == 0 || allowed[0]
+			if c.MembershipID != holder || c.Generation != generation || v.CanSubmit != wantAllowed || v.ControlGeneration != generation {
 				t.Fatalf("controller=%+v canSubmit=%v controlGeneration=%d", c, v.CanSubmit, v.ControlGeneration)
 			}
 			return
@@ -199,7 +200,7 @@ func TestStrategyTimeoutRotatesOnceAndPauseHolds(t *testing.T) {
 	if n, err := f.svc.SweepExpired(context.Background()); err != nil || n != 0 {
 		t.Fatalf("paused sweep=%d %v", n, err)
 	}
-	f.control(t, "mem_a", "a1", 0)
+	f.control(t, "mem_a", "a1", 0, false)
 	f.exec(t, `UPDATE rounds SET paused_at=NULL WHERE id=?`, f.roundID)
 	if n, err := f.svc.SweepExpired(context.Background()); err != nil || n != 1 {
 		t.Fatalf("expiry=%d %v", n, err)
@@ -218,7 +219,7 @@ func TestStrategyFinalTurnDoesNotRotateOrAcceptHandover(t *testing.T) {
 		f.submit(t, fmt.Sprintf("a%d", i), "strategy.action", fmt.Sprintf(`{"turn":%d,"action":"steady"}`, turn))
 		f.submit(t, fmt.Sprintf("b%d", i), "strategy.action", fmt.Sprintf(`{"turn":%d,"action":"steady"}`, turn))
 	}
-	f.control(t, "mem_a", "a2", 7)
+	f.control(t, "mem_a", "a2", 7, false)
 	_, err := f.svc.IssueControlLease(context.Background(), room.Actor{SessionID: "ses_owner", RoomID: f.roomID, Capabilities: map[room.Capability]bool{room.CapHost: true}}, room.IssueControlLeaseInput{RoundID: f.roundID, MembershipID: "a1", ExpectedGeneration: 7})
 	if err == nil || problem.As(err).Code != "round-not-collecting" {
 		t.Fatalf("terminal handover=%v", err)

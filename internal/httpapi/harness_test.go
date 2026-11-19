@@ -17,6 +17,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/bhcn/umaguessinggame/internal/account"
 	"github.com/bhcn/umaguessinggame/internal/admission"
 	"github.com/bhcn/umaguessinggame/internal/challenge"
 	"github.com/bhcn/umaguessinggame/internal/deployment"
@@ -102,7 +103,12 @@ func newHarness(t *testing.T, mutate ...func(*harnessConfig)) *harness {
 		}
 		challenges = challenge.New(db, cfg.ChallengeSource, keys, deployment.Policy{}, true)
 	}
+	accounts, err := account.New(context.Background(), db, cfg.Policy.Accounts)
+	if err != nil {
+		t.Fatal(err)
+	}
 	srv := httpapi.New(httpapi.Deps{
+		Accounts:   accounts,
 		Challenges: challenges,
 		Admission:  cfg.Admission,
 		// Cookie and origin policy is applied on the session service below; the

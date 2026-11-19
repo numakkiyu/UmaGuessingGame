@@ -17,6 +17,10 @@
 # Node
 node_modules/
 web/node_modules/
+docs/node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
 web/dist/
 internal/spafs/dist/
 npm-debug.log*

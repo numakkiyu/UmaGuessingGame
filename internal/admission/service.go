@@ -15,6 +15,7 @@ import (
 	"net/url"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/bhcn/umaguessinggame/internal/deployment"
@@ -27,17 +28,22 @@ const siteverifyURL = "https://challenges.cloudflare.com/turnstile/v0/siteverify
 
 type PublicConfig struct {
 	BrowserSignalsEnabled bool   `json:"browserSignalsEnabled,omitempty"`
+	AdaptiveEnabled       bool   `json:"adaptiveEnabled,omitempty"`
 	Enabled               bool   `json:"enabled"`
 	SiteKey               string `json:"siteKey,omitempty"`
 }
 type Service struct {
-	cfg        deployment.Turnstile
-	secret     string
-	secure     bool
-	signingKey [32]byte
-	client     *http.Client
-	slots      chan struct{}
-	now        func() time.Time
+	cfg          deployment.Turnstile
+	secret       string
+	secure       bool
+	signingKey   [32]byte
+	client       *http.Client
+	slots        chan struct{}
+	now          func() time.Time
+	mu           sync.Mutex
+	risks        map[string]riskState
+	riskSequence uint64
+	tokens       map[[32]byte]tokenState
 }
 
 func New(cfg deployment.Turnstile, secret string, secure bool) (*Service, error) {
@@ -48,7 +54,7 @@ func New(cfg deployment.Turnstile, secret string, secure bool) (*Service, error)
 	if cfg.Enabled && strings.TrimSpace(secret) == "" {
 		return nil, fmt.Errorf("turnstile secret environment variable is empty")
 	}
-	s := &Service{cfg: cfg, secret: secret, secure: secure, client: &http.Client{Timeout: 4 * time.Second, CheckRedirect: func(*http.Request, []*http.Request) error { return http.ErrUseLastResponse }}, slots: make(chan struct{}, cfg.MaxConcurrent), now: time.Now}
+	s := &Service{cfg: cfg, secret: secret, secure: secure, client: &http.Client{Timeout: 4 * time.Second, CheckRedirect: func(*http.Request, []*http.Request) error { return http.ErrUseLastResponse }}, slots: make(chan struct{}, cfg.MaxConcurrent), now: time.Now, risks: make(map[string]riskState), tokens: make(map[[32]byte]tokenState)}
 	if _, err := rand.Read(s.signingKey[:]); err != nil {
 		return nil, err
 	}
@@ -58,7 +64,7 @@ func (s *Service) Public() PublicConfig {
 	if s == nil || !s.cfg.Enabled {
 		return PublicConfig{}
 	}
-	return PublicConfig{Enabled: true, SiteKey: s.cfg.SiteKey, BrowserSignalsEnabled: s.cfg.BrowserSignals}
+	return PublicConfig{AdaptiveEnabled: s.adaptive(), Enabled: true, SiteKey: s.cfg.SiteKey, BrowserSignalsEnabled: s.cfg.BrowserSignals}
 }
 func (s *Service) Required(op string) bool {
 	if s == nil || !s.cfg.Enabled {
@@ -93,7 +99,13 @@ func (s *Service) Allowed(r *http.Request, sessionID string) bool {
 	if err != nil || exp <= now || exp > now+int64(s.cfg.GrantSeconds) {
 		return false
 	}
-	return hmac.Equal([]byte(p[1]), []byte(s.sign(sessionID+"|"+p[0])))
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	state := s.risks[sessionID]
+	if s.adaptive() && state.required && state.expires.After(s.now()) {
+		return false
+	}
+	return hmac.Equal([]byte(p[1]), []byte(s.sign(s.grantPayloadLocked(sessionID, p[0]))))
 }
 func (s *Service) Grant(w http.ResponseWriter, sessionID string, sessionExpiry time.Time) time.Time {
 	expires := s.now().Add(time.Duration(s.cfg.GrantSeconds) * time.Second)
@@ -101,10 +113,19 @@ func (s *Service) Grant(w http.ResponseWriter, sessionID string, sessionExpiry t
 		expires = sessionExpiry
 	}
 	stamp := strconv.FormatInt(expires.Unix(), 10)
-	http.SetCookie(w, &http.Cookie{Name: cookieName, Value: stamp + "." + s.sign(sessionID+"|"+stamp), Path: "/api/v1", HttpOnly: true, Secure: s.secure, SameSite: http.SameSiteLaxMode, Expires: expires, MaxAge: max(1, int(expires.Sub(s.now()).Seconds()))})
+	// Clearing risk and signing its revision form one decision. A later limit
+	// must invalidate this grant, including limits observed before SetCookie.
+	s.mu.Lock()
+	s.clearRiskLocked(sessionID)
+	signature := s.sign(s.grantPayloadLocked(sessionID, stamp))
+	s.mu.Unlock()
+	http.SetCookie(w, &http.Cookie{Name: cookieName, Value: stamp + "." + signature, Path: "/api/v1", HttpOnly: true, Secure: s.secure, SameSite: http.SameSiteLaxMode, Expires: expires, MaxAge: max(1, int(expires.Sub(s.now()).Seconds()))})
 	return expires
 }
 func (s *Service) Verify(ctx context.Context, token string) error {
+	return s.VerifyForSession(ctx, token, "")
+}
+func (s *Service) VerifyForSession(ctx context.Context, token, sessionID string) error {
 	if s == nil || !s.cfg.Enabled {
 		return nil
 	}
@@ -117,9 +138,29 @@ func (s *Service) Verify(ctx context.Context, token string) error {
 	default:
 		return problem.RateLimited(2)
 	}
+	digest := sha256.Sum256([]byte(token))
+	if !s.reserveToken(digest, sessionID) {
+		return problem.Forbidden("admission-invalid", "请重新完成入场确认")
+	}
+	consumed := false
+	defer func() {
+		s.mu.Lock()
+		state := s.tokens[digest]
+		state.busy = false
+		state.consumed = consumed
+		s.tokens[digest] = state
+		s.mu.Unlock()
+	}()
 	ctx, cancel := context.WithTimeout(ctx, 4*time.Second)
 	defer cancel()
-	body := url.Values{"secret": {s.secret}, "response": {token}}
+	// Stable per-token UUID makes an uncertain provider retry idempotent.
+	mac := hmac.New(sha256.New, s.signingKey[:])
+	mac.Write([]byte(sessionID + "|" + token))
+	key := mac.Sum(nil)[:16]
+	key[6] = (key[6] & 15) | 64
+	key[8] = (key[8] & 63) | 128
+	idempotency := fmt.Sprintf("%x-%x-%x-%x-%x", key[:4], key[4:6], key[6:8], key[8:10], key[10:])
+	body := url.Values{"secret": {s.secret}, "response": {token}, "idempotency_key": {idempotency}}
 	req, err := http.NewRequestWithContext(ctx, http.MethodPost, siteverifyURL, strings.NewReader(body.Encode()))
 	if err != nil {
 		return problem.Internal(err)
@@ -154,6 +195,7 @@ func (s *Service) Verify(ctx context.Context, token string) error {
 	if !result.Success || !allowedHost || result.Action != action || result.ChallengeTS.IsZero() || age > 5*time.Minute || age < -30*time.Second {
 		return problem.Forbidden("admission-invalid", "请重新完成入场确认")
 	}
+	consumed = true
 	return nil
 }
 

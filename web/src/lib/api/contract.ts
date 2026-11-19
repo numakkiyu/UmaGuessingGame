@@ -82,6 +82,9 @@ export function createContractApi(clientOptions: ApiClientOptions = {}) {
     createSession: (body: ReqBody<"createSession">, signal?: AbortSignal) =>
       call("createSession", "/sessions", { method: "POST", body, signal, noCsrf: true }),
 
+    getAdmissionStatus: (signal?: AbortSignal) =>
+      call("getAdmissionStatus", "/sessions/current/admission", { method: "GET", signal }),
+
     verifyAdmission: (body: ReqBody<"verifyAdmission">, signal?: AbortSignal) =>
       call("verifyAdmission", "/sessions/current/admission", { method:"POST",body,signal }),
 
@@ -298,7 +301,12 @@ export function createContractApi(clientOptions: ApiClientOptions = {}) {
         signal,
       }),
 
-    // ---- 匹配（G01 快速匹配） ----
+    getMatchmakingLobby: (signal?:AbortSignal) => call("getMatchmakingLobby","/matchmaking-lobby",{method:"GET",signal}),
+    getActiveMatchmakingTicket: (signal?:AbortSignal) => call("getActiveMatchmakingTicket","/matchmaking-tickets/current",{method:"GET",signal}),
+    createMatchmakingProof: (body:ReqBody<"createMatchmakingProof">,signal?:AbortSignal) => call("createMatchmakingProof","/matchmaking-proofs",{method:"POST",body,idempotency:true,signal}),
+    heartbeatMatchmakingTicket: (id:string,signal?:AbortSignal) => call("heartbeatMatchmakingTicket",`/matchmaking-tickets/${encodeURIComponent(id)}/heartbeat`,{method:"POST",body:{},signal}),
+
+    // ---- Matchmaking ----
     createMatchmakingTicket: (body: ReqBody<"createMatchmakingTicket">, idempotencyKey?: string, signal?: AbortSignal) =>
       call("createMatchmakingTicket", "/matchmaking-tickets", {
         method: "POST",
@@ -310,18 +318,18 @@ export function createContractApi(clientOptions: ApiClientOptions = {}) {
     getMatchmakingTicket: (ticketId: string, signal?: AbortSignal) =>
       call("getMatchmakingTicket", `/matchmaking-tickets/${encodeURIComponent(ticketId)}`, { method: "GET", signal }),
 
-    cancelMatchmakingTicket: (ticketId: string, signal?: AbortSignal) =>
+    cancelMatchmakingTicket: (ticketId: string, signal?: AbortSignal,key?:string) =>
       call("cancelMatchmakingTicket", `/matchmaking-tickets/${encodeURIComponent(ticketId)}`, {
         method: "DELETE",
-        idempotency: true,
+        idempotency: key ?? true,
         signal,
       }),
 
-    respondToMatch: (ticketId: string, body: ReqBody<"respondToMatch">, signal?: AbortSignal) =>
+    respondToMatch: (ticketId: string, body: ReqBody<"respondToMatch">, signal?: AbortSignal, key?:string) =>
       call("respondToMatch", `/matchmaking-tickets/${encodeURIComponent(ticketId)}/responses`, {
         method: "POST",
         body,
-        idempotency: true,
+        idempotency: key ?? true,
         signal,
       }),
 

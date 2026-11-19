@@ -40,6 +40,8 @@ export function ForbiddenView({ failure: storedFailure, onRetry, retryLabel, cla
   return (
     <Alert
       tone="danger"
+      diagnosticId={failure.diagnosticId ?? undefined}
+      noticeKey={failure.messageKey}
       title={failure.title}
       className={cn("items-start", className)}
       action={
@@ -51,11 +53,6 @@ export function ForbiddenView({ failure: storedFailure, onRetry, retryLabel, cla
       }
     >
       <p>{failure.detail}</p>
-      {failure.diagnosticId ? (
-        <p className="mt-1 text-[var(--text-aux)]">
-          {t("state.problemId")}：<span className="uma-code">{failure.diagnosticId}</span>
-        </p>
-      ) : null}
     </Alert>
   );
 }
@@ -68,6 +65,9 @@ export function ErrorView({ failure: storedFailure, onRetry, retryLabel, classNa
   return (
     <Alert
       tone={tone}
+      fault
+      diagnosticId={failure.diagnosticId ?? undefined}
+      noticeKey={failure.messageKey}
       title={failure.title}
       className={cn("items-start", className)}
       action={
@@ -83,11 +83,6 @@ export function ErrorView({ failure: storedFailure, onRetry, retryLabel, classNa
       }
     >
       <p>{failure.detail}</p>
-      {failure.diagnosticId ? (
-        <p className="mt-1 text-[var(--text-aux)]">
-          {t("state.problemId")}：<span className="uma-code">{failure.diagnosticId}</span>
-        </p>
-      ) : null}
     </Alert>
   );
 }

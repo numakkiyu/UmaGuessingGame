@@ -1,3 +1,4 @@
+import "@/i18n/entry";
 
 import { useTranslation } from "@/i18n";
 import { Check, Loader2 } from "lucide-react";

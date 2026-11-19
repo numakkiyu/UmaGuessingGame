@@ -1,3 +1,6 @@
+import { usePlayerName } from "@/lib/player-name";
+import "@/i18n/entry";
+
 // Resolve the invitation before joining; room identity and member authority come from the response
 import { ArrowRight, KeyRound } from "lucide-react";
 import { useId, useState } from "react";
@@ -20,15 +23,14 @@ type SubmitPhase = "idle" | "submitting" | "confirming";
 
 export function JoinPage() {
   const { t } = useTranslation(["entry", "common"]);
-  const { api, session, ensureSession } = useApi();
+  const { api, ensureSession } = useApi();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const inviteId = useId();
-  const nameId = useId();
   const errorId = useId();
 
   const [inviteCode, setInviteCode] = useState(searchParams.get("code")?.slice(0, 16) ?? "");
-  const [displayName, setDisplayName] = useState(session?.displayName ?? "");
+  const displayName = usePlayerName();
   const [phase, setPhase] = useState<SubmitPhase>("idle");
   const [storedFailure, setFailure] = useState<ReturnType<typeof describeFailure> | null>(null);
   const [fieldError, setFieldError] = useState<"invalidCode" | "invalidName" | null>(null);
@@ -36,7 +38,7 @@ export function JoinPage() {
   const failure = storedFailure ? localizeFailure(storedFailure) : null;
   const normalizedCode = inviteCode.trim().toUpperCase();
   const codeValid = normalizedCode.length >= INVITE_MIN && normalizedCode.length <= INVITE_MAX;
-  const nameValid = displayName.trim().length > 0 && displayName.trim().length <= NAME_MAX;
+  const nameValid = [...displayName.trim()].length > 0 && [...displayName.trim()].length <= NAME_MAX;
   const busy = phase !== "idle";
 
   async function handleSubmit(event: React.FormEvent) {
@@ -123,25 +125,6 @@ export function JoinPage() {
           />
           <p id={`${inviteId}-hint`} className="text-[var(--text-aux)] text-[var(--color-muted)]">
             {t("join.codeHint", { min: INVITE_MIN, max: INVITE_MAX })}
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <Label htmlFor={nameId}>{t("join.name")}</Label>
-          <Input
-            id={nameId}
-            name="displayName"
-            value={displayName}
-            onChange={(event) => setDisplayName(event.target.value)}
-            placeholder={t("join.namePlaceholder")}
-            autoComplete="nickname"
-            maxLength={NAME_MAX}
-            required
-            aria-describedby={`${nameId}-hint`}
-            disabled={busy}
-          />
-          <p id={`${nameId}-hint`} className="text-[var(--text-aux)] text-[var(--color-muted)]">
-            {t("join.nameHint", { max: NAME_MAX })}
           </p>
         </div>
 

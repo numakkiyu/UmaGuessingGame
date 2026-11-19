@@ -14,7 +14,7 @@ export const rapportQuestions = [
    ]
   },
   "zh-Hant": {
-   "prompt": "訓練結束後最想做甚麼？",
+   "prompt": "訓練結束後最想做什麼？",
    "options": [
     "去餐廳再吃一餐",
     "回宿舍補眠",
@@ -25,9 +25,9 @@ export const rapportQuestions = [
   "ja": {
    "prompt": "トレーニングが終わったら、一番したいことは？",
    "options": [
-    "食堂でもうひと食べ",
+    "食堂でもう一食",
     "寮に戻ってひと眠り",
-    "もう1セット追加で練習",
+    "もう1セット追加でチャレンジ",
     "みんなと映画を見る"
    ]
   }
@@ -134,7 +134,7 @@ export const rapportQuestions = [
    ]
   },
   "zh-Hant": {
-   "prompt": "在團隊中，你最想擔任甚麼角色？",
+   "prompt": "在團隊中，你最想擔任什麼角色？",
    "options": [
     "擬定計劃的人",
     "留意細節的人",
@@ -199,7 +199,7 @@ export const rapportQuestions = [
     "去訓練場",
     "去圖書館",
     "逛商店街",
-    "甚麼都不做"
+    "什麼都不做"
    ]
   },
   "ja": {
@@ -385,7 +385,7 @@ export const rapportQuestions = [
   "ja": {
    "prompt": "苦手な距離のレースに出るなら？",
    "options": [
-    "事前に練習を増やす",
+    "事前にチャレンジを増やす",
     "レース中に調整する",
     "相棒のフォローに頼る",
     "結果を受け入れる"
@@ -404,7 +404,7 @@ export const rapportQuestions = [
    ]
   },
   "zh-Hant": {
-   "prompt": "休息日，你最不可能做甚麼？",
+   "prompt": "休息日，你最不可能做什麼？",
    "options": [
     "睡到中午",
     "主動加練",
@@ -416,7 +416,7 @@ export const rapportQuestions = [
    "prompt": "休日に一番しそうにないことは？",
    "options": [
     "昼まで寝る",
-    "自分から追加練習する",
+    "自分から追加チャレンジする",
     "部屋を片づける",
     "レース映像を見る"
    ]

@@ -1,3 +1,4 @@
+import "@/i18n/matchmaking";
 // Route by the server's current round so a direct refresh returns to the same game
 import "@/i18n/room";
 import { useTranslation } from "@/i18n";
@@ -6,7 +7,6 @@ import { Link, useParams } from "react-router";
 import { EmptyView, ErrorView, LoadingBlock } from "@/components/uma/page-state";
 import { useRoom } from "@/lib/api/room-queries";
 import { describeFailure } from "@/lib/api/client";
-import { modeDisplayName } from "@/lib/api/types";
 import { RoomManagement } from "./room-management";
 import { RoomRoster } from "./room-roster";
 import { Button } from "@/components/ui/button";
@@ -61,7 +61,7 @@ const RoomLobbyView = lazy(() =>
 );
 
 export function RoomEntryPage() {
-  const { t } = useTranslation("room");
+  const { t } = useTranslation(["room","matchmaking"]);
   const { roomId } = useParams<{ roomId: string }>();
 
   // 复用与子视图相同的查询键，避免重复请求
@@ -138,7 +138,7 @@ export function RoomEntryPage() {
         return (
           <EmptyView
             title={t("unavailableTitle")}
-            detail={t("unavailableDetail", { mode: modeDisplayName(currentRound.modeId) })}
+            detail={t("unavailableDetail", { mode: t("unknownMode") })}
             action={
               <Button asChild variant="secondary">
                 <Link to="/">{t("home")}</Link>
@@ -158,7 +158,7 @@ export function RoomEntryPage() {
         </div>
       }
     >
-      <div className={currentRound ? "uma-stack uma-play-surface" : "uma-stack"}>{renderRound()}{currentRound && room ? <><details className="uma-disclosure"><summary className="min-h-11 cursor-pointer content-center font-semibold">{t("viewMembers")}</summary><RoomRoster room={room} /></details><RoomManagement room={room} onChanged={() => roomQuery.refetch()} /></> : null}</div>
+      <div className={currentRound ? "uma-stack uma-play-surface" : "uma-stack"}>{renderRound()}{room?.kind === "matchmaking" && currentRound && ["settled","cancelled"].includes(currentRound.phase) ? <Button asChild variant="primary" size="primary"><Link to="/matchmaking">{t("again",{ns:"matchmaking"})}</Link></Button> : null}{currentRound && room ? <><details className="uma-disclosure"><summary className="min-h-11 cursor-pointer content-center font-semibold">{t("viewMembers")}</summary><RoomRoster room={room} /></details><RoomManagement room={room} onChanged={() => roomQuery.refetch()} /></> : null}</div>
     </Suspense>
   );
 }

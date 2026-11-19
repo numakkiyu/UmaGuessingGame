@@ -17,7 +17,7 @@ COPY data/manual/rules-track.json /data/manual/rules-track.json
 RUN pnpm run build
 
 
-FROM golang:1.26-bookworm AS server
+FROM golang:1.26.11-bookworm AS server
 
 WORKDIR /src
 ARG GO_MODULE_PROXY=https://proxy.golang.org,direct

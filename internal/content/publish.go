@@ -834,7 +834,7 @@ func copyAudioClips(pubDir, root string, publishedAudio map[string]bool) ([]File
 		}
 		name := e.Name()
 		// The manifest is build bookkeeping, not a clip.
-		if !strings.HasSuffix(strings.ToLower(name), ".mp3") {
+		if !strings.HasSuffix(name, ".webm") {
 			continue
 		}
 		// Skip clips that no admitted route points at. The directory holds every

@@ -1,5 +1,6 @@
 // Sorting uses ascending order; revealed values and feedback are read from the server projection
 import type { components } from "./types";
+import { settledScore, settledSurrendered } from "./result-score";
 import { validLocalizedNames, type LocalizedNames } from "@/i18n/entities";
 
 type Schemas = components["schemas"];
@@ -33,7 +34,7 @@ export type SortCard = {
   /**
    * 排序用的真实值。
    * 闭卷模式下服务端不下发，此处为 null。
-   * 任何排序逻辑都不得依赖它——那是答案（G06 要求闭卷）。
+   * 仅用于获准公开数值的展示；记忆模式的排序操作不能依赖答案值。
    */
   raw: number | null;
 };
@@ -68,6 +69,7 @@ export type SortRound = {
   submitted: boolean;
   correctPairs: number;
   scoreUnits: number;
+  surrendered?: boolean;
   submissionRevision: number;
   controlGeneration: number;
   canSubmit: boolean;
@@ -191,14 +193,11 @@ export function normalizeSortRound(view: Schemas["RoundView"] | null | undefined
     answer,
     submitted: self["submitted"] === true,
     correctPairs: toNumberOrNull(self["correctPairs"]) ?? 0,
-    /*
-     * 实测：提交后 publicState.self 不含 scoreUnits，只有 correctPairs/totalPairs
-     * （提交回执 feedback 里有 scoreUnits，但快照没有）。
-     * 因此这里按契约公式自行换算，
-     * 而不是显示 0——那会让满分玩家看到「得分 0」。
-     * 一旦后端在快照里补上 scoreUnits，这里会优先用它的值。
-     */
+    surrendered: settledSurrendered(view, self["subjectId"]),
+    // Final results include surrender adjustments absent from answer progress.
     scoreUnits: (() => {
+      const finalScore = settledScore(view, self["subjectId"]);
+      if (finalScore !== null) return finalScore;
       const fromSelf = toNumberOrNull(self["scoreUnits"]);
       if (fromSelf !== null) return fromSelf;
       const correct = toNumberOrNull(self["correctPairs"]) ?? 0;

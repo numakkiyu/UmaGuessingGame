@@ -1,3 +1,4 @@
+import { publishPracticeChange } from "./practice-channel";
 import { LocalizedNotice } from "@/lib/player-notice";
 import type { ClassicGame, PracticePack } from "@/lib/domain/classic-practice";
 import { classicProgress } from "@/lib/domain/classic-practice";
@@ -70,12 +71,7 @@ export async function loadPracticeGame(id: string): Promise<{game:ClassicGame; p
   if (!pack) throw new LocalizedNotice("missingPack");
   return validatePracticeArchive({schemaVersion:1,game,pack});
 }
-function notify(gameId: string) {
-  if (typeof BroadcastChannel !== "undefined") {
-    const channel=new BroadcastChannel("umaguess-practice-changes");
-    channel.postMessage({gameId,writerId:practiceWriterId}); channel.close();
-  }
-}
+function notify(gameId: string) { publishPracticeChange("umaguess-practice-changes",{gameId,writerId:practiceWriterId}); }
 export async function savePracticeGame(game: ClassicGame, expectedRevision: number | null): Promise<void> {
   const db=await openPracticeDB();
   await new Promise<void>((resolve,reject)=>{

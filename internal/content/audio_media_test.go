@@ -12,11 +12,11 @@ func TestAudioCompilationReviewBoundToBytesAndSelectiveCopy(t *testing.T) {
 	if err := os.MkdirAll(dir, 0755); err != nil {
 		t.Fatal(err)
 	}
-	b, err := os.ReadFile("testdata/audio-tone.mp3")
+	b, err := os.ReadFile("testdata/audio-tone.webm")
 	if err != nil {
 		t.Fatal(err)
 	}
-	name := "synthetic-tone.mp3"
+	name := "synthetic-tone.webm"
 	src := filepath.Join(dir, name)
 	if err = os.WriteFile(src, b, 0644); err != nil {
 		t.Fatal(err)
@@ -59,9 +59,29 @@ func TestAudioCompilationReviewBoundToBytesAndSelectiveCopy(t *testing.T) {
 	if _, err = inspectAudioFile(src); err == nil {
 		t.Fatal("a plausible frame header was treated as decoded audio")
 	}
-	for _, bad := range []string{"../x.mp3", "https://x/%2e%2e.mp3", "https://x/file.mp3#suffix", "https://x/a.wav"} {
+	for _, bad := range []string{"../x.webm", "https://x/%2e%2e.webm", "https://x/file.webm#suffix", "https://x/a.wav"} {
 		if audioRouteFor(bad) != "" {
 			t.Fatal("unsafe audio name", bad)
 		}
+	}
+}
+
+func TestWebMOpusRejectsCorruptMedia(t *testing.T) {
+	b, err := os.ReadFile("testdata/audio-tone.webm")
+	if err != nil {
+		t.Fatal(err)
+	}
+	for name, invalid := range map[string][]byte{
+		"empty":                 nil,
+		"mp3 header":            []byte("ID3not-webm"),
+		"truncated header":      b[:10],
+		"truncated media":       b[:len(b)/2],
+		"trailing invalid data": append(append([]byte(nil), b...), 0),
+	} {
+		t.Run(name, func(t *testing.T) {
+			if _, err := decodeWebMOpus(invalid); err == nil {
+				t.Fatal("corrupt media was admitted")
+			}
+		})
 	}
 }

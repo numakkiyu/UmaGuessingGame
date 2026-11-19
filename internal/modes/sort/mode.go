@@ -106,6 +106,7 @@ func decodeConfig(raw json.RawMessage) (Config, error) {
 	if cfg.Key == "" {
 		cfg.Key = KeyHeight
 	}
+	cfg.EventRegion = strings.ToUpper(strings.TrimSpace(cfg.EventRegion))
 	switch cfg.Key {
 	case KeyHeight, KeyBirthday, KeyEventDate:
 	default:
@@ -232,6 +233,9 @@ func parseISODate(s string) (year, month, day int, ok bool) {
 	month = atoi(parts[1])
 	day = atoi(parts[2])
 	if !validMonthDay(month, day) {
+		return 0, 0, 0, false
+	}
+	if _, err := time.Parse("2006-01-02", s); err != nil || year == 0 {
 		return 0, 0, 0, false
 	}
 	return year, month, day, true
@@ -434,6 +438,17 @@ func (*Mode) Prepare(ctx context.Context, in modes.PrepareInput) (modes.Prepared
 	if err != nil {
 		return modes.Prepared{}, err
 	}
+	if cfg.Key == KeyEventDate && cfg.EventRegion == "" {
+		for _, card := range all {
+			if _, known := card.value(KeyEventDate); !known || card.EventRegion == "" {
+				continue
+			}
+			if cfg.EventRegion != "" && card.EventRegion != cfg.EventRegion {
+				return modes.Prepared{}, fmt.Errorf("sort: eventRegion is required when the pool contains multiple regions")
+			}
+			cfg.EventRegion = card.EventRegion
+		}
+	}
 
 	// Only cards with a known value for the active key are admissible .
 	usable := make([]Card, 0, len(all))
@@ -444,7 +459,7 @@ func (*Mode) Prepare(ctx context.Context, in modes.PrepareInput) (modes.Prepared
 		// An event-date question must pin the region, otherwise dates from
 		// different regions would be mixed .
 		if cfg.Key == KeyEventDate {
-			if cfg.EventRegion != "" && card.EventRegion != "" && card.EventRegion != cfg.EventRegion {
+			if card.EventRegion == "" || card.EventRegion != cfg.EventRegion {
 				continue
 			}
 		}
@@ -469,12 +484,8 @@ func (*Mode) Prepare(ctx context.Context, in modes.PrepareInput) (modes.Prepared
 	for i := 0; i < cfg.CardCount; i++ {
 		cards = append(cards, usable[indices[i]])
 	}
-	// Sort the drawn cards by id so the emission order is stable regardless of
-	// the draw order.
-	sort.Slice(cards, func(i, j int) bool { return cards[i].CharacterID < cards[j].CharacterID })
-
-	// Reject an all-equal question: it cannot be answered and must not be
-	// generated .
+	// Replace a constant draw from the remaining shuffled cards in one pass.
+	// Retrying with new seeds could fail repeatedly on pools dominated by ties.
 	first, _ := cards[0].value(cfg.Key)
 	allEqual := true
 	for _, card := range cards[1:] {
@@ -485,10 +496,20 @@ func (*Mode) Prepare(ctx context.Context, in modes.PrepareInput) (modes.Prepared
 		}
 	}
 	if allEqual {
-		return modes.Prepared{}, fmt.Errorf(
-			"sort: the drawn question has %d cards all sharing the same %s value", len(cards), cfg.Key,
-		)
+		for _, index := range indices[cfg.CardCount:] {
+			candidate := usable[index]
+			value, _ := candidate.value(cfg.Key)
+			if value != first {
+				cards[len(cards)-1] = candidate
+				allEqual = false
+				break
+			}
+		}
+		if allEqual {
+			return modes.Prepared{}, fmt.Errorf("sort: all usable cards share the same %s value", cfg.Key)
+		}
 	}
+	sort.Slice(cards, func(i, j int) bool { return cards[i].CharacterID < cards[j].CharacterID })
 
 	roster := make([]rosterEntry, 0, len(in.Subject))
 	seen := make(map[string]struct{}, len(in.Subject))

@@ -32,6 +32,33 @@
       "sha256": "d7ad346edeb5f677286478bf78d578466b4988ae1e3c1d6f9c6fb3e031cf561b",
       "copied": true,
       "format": "jpeg"
+    },
+    {
+      "path": "/assets/ui/branding/party-logo.webp",
+      "source": "docs/public/media/party-logo.webp",
+      "reason": "项目 Logo",
+      "bytes": 32854,
+      "sha256": "e0710642c47a088838be79b50469b622b3ee7fc928392fb4f11c9b480f80609c",
+      "copied": true,
+      "format": "webp"
+    },
+    {
+      "path": "/assets/ui/branding/favicon-64.png",
+      "source": "docs/public/media/favicon-64.png",
+      "reason": "浏览器图标",
+      "bytes": 8830,
+      "sha256": "8dda8b2aa0dff443ab9cd82910375c53d878bb9293e676583d31b80db1aa5fe6",
+      "copied": true,
+      "format": "png"
+    },
+    {
+      "path": "/assets/ui/branding/apple-touch-icon.png",
+      "source": "docs/public/media/apple-touch-icon.png",
+      "reason": "浏览器图标",
+      "bytes": 51273,
+      "sha256": "dda3bd6ce22f973eb9268460087b93e8881addc0d30930a8b523f7ee178ac6d7",
+      "copied": true,
+      "format": "png"
     }
   ]
 }

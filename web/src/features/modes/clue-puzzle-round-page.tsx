@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 /** G09: clues belong to individual members; the confirmed arrangement belongs to their team. */
 import "@/i18n/clue-online";
 import {useMemo,useRef,useState} from "react";
@@ -53,8 +55,8 @@ export function CluePuzzleRoundPage(){
  function readError(error:unknown){const f=localizeFailure(describeFailure(error));return f.kind==="forbidden"?<ForbiddenView failure={f} onRetry={()=>void snapshot.refetch()}/>:<ErrorView failure={f} onRetry={()=>void snapshot.refetch()}/>;}
  const candidateButton=(id:string)=><Button variant="secondary" className="h-auto min-h-11 shrink-0 whitespace-normal" disabled={!editable||activeSlot===null} aria-label={t("chooseCard",{label:labelOf(id)})} onClick={()=>assign(id)}>{t("chooseThis")}</Button>;
  const clues=round?[...round.sharedClues,...round.privateClues,...round.answer?.constraints??[]]:[];
- return <div className="uma-stack">
-  <ConnectionBar status={realtime.status} detail={room?.name??t("room")}/>
+ return <GameStage mode="clue-puzzle" className="uma-stack">
+  <ConnectionBar status={realtime.status} detail={roomDisplayName(room, t("room"))}/>
   {isCredentialRefreshFailure(snapshot.error)||isCredentialRefreshFailure(failure)?<RejoinPrompt roomId={roomId??""}/>:null}
   {snapshot.isLoading||roomQuery.isLoading?<LoadingBlock label={t("loading")} rows={4}/>:null}
   {snapshot.isError?readError(snapshot.error):null}{roomQuery.isError?readError(roomQuery.error):null}
@@ -86,5 +88,5 @@ export function CluePuzzleRoundPage(){
    {round.cards.some(c=>clueCardLabel(c,i18n.language).original)||clues.some(c=>clueText(c,round.cards,i18n.language).original)?<p className="text-xs leading-5 text-[var(--color-muted)]">{t("original")}</p>:null}
   </>:!snapshot.isLoading&&!roomQuery.isLoading&&!snapshot.isError&&!roomQuery.isError?<EmptyView title={t("emptyTitle")} detail={t("emptyDetail")}/>:null}
   <Button asChild variant="secondary" className="h-auto min-h-11 whitespace-normal"><Link to="/">{t("back")}</Link></Button>
- </div>;
+ </GameStage>;
 }

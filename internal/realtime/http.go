@@ -7,7 +7,9 @@ import (
 	"net/http"
 	"strings"
 	"sync"
+	"time"
 
+	"github.com/bhcn/umaguessinggame/internal/weborigin"
 	"github.com/coder/websocket"
 )
 
@@ -33,6 +35,7 @@ type Handler struct {
 	active      int
 	byRoom      map[string]int
 	bySession   map[string]int
+	handshakes  chan struct{}
 }
 
 // ConnectionStats returns aggregate admission counts without exposing room or
@@ -75,6 +78,19 @@ func (h *Handler) admit(w http.ResponseWriter, ident Identity) (func(), bool) {
 	}, true
 }
 
+// enterHandshake limits membership lookups separately from established streams.
+func (h *Handler) enterHandshake(w http.ResponseWriter) (func(), bool) {
+	select {
+	case h.handshakes <- struct{}{}:
+		var once sync.Once
+		return func() { once.Do(func() { <-h.handshakes }) }, true
+	default:
+		w.Header().Set("Retry-After", "2")
+		writeProblem(w, http.StatusServiceUnavailable, "stream-capacity", "stream handshakes are busy; retry later")
+		return nil, false
+	}
+}
+
 // originSet implements the same-origin check plus explicit allow-list entries.
 //
 // and both require Origin validation on the handshake. coder/websocket
@@ -99,12 +115,13 @@ func NewHandler(hub *Hub, auth Authorizer, cfg Config) (*Handler, error) {
 		return nil, err
 	}
 	return &Handler{
-		hub:       hub,
-		auth:      auth,
-		cfg:       cfg,
-		byRoom:    make(map[string]int),
-		bySession: make(map[string]int),
-		origins:   originSet{require: cfg.RequireOrigin, allow: cfg.AllowedOrigins},
+		hub:        hub,
+		auth:       auth,
+		cfg:        cfg,
+		byRoom:     make(map[string]int),
+		bySession:  make(map[string]int),
+		handshakes: make(chan struct{}, 64),
+		origins:    originSet{require: cfg.RequireOrigin, allow: cfg.AllowedOrigins},
 	}, nil
 }
 
@@ -132,7 +149,7 @@ func (o originSet) allowed(r *http.Request) (bool, string) {
 	if !ok {
 		return false, "malformed Origin header"
 	}
-	if strings.EqualFold(host, r.Host) {
+	if weborigin.Same(r, scheme, host) {
 		return true, ""
 	}
 	for _, pat := range o.allow {
@@ -149,22 +166,10 @@ func (o originSet) allowed(r *http.Request) (bool, string) {
 	return false, "Origin not allowed for this host"
 }
 
-// splitOrigin extracts host and scheme from an Origin value without pulling in a
-// full URL parser dependency on the request path.
+// splitOrigin rejects URL components that are not part of a serialized origin.
 func splitOrigin(origin string) (host, scheme string, ok bool) {
-	rest := origin
-	if i := strings.Index(rest, "://"); i >= 0 {
-		scheme = strings.ToLower(rest[:i])
-		rest = rest[i+3:]
-	}
-	// Strip any path, query or fragment; Origin is defined as scheme://host[:port].
-	if i := strings.IndexAny(rest, "/?#"); i >= 0 {
-		rest = rest[:i]
-	}
-	if rest == "" {
-		return "", "", false
-	}
-	return rest, scheme, true
+	scheme, host, ok = weborigin.Parse(origin)
+	return host, scheme, ok
 }
 
 // writeProblem emits a minimal problem document for a rejected handshake.
@@ -191,6 +196,13 @@ func writeProblem(w http.ResponseWriter, status int, code, detail string) {
 // and never occupies a hub slot.
 // 3. Only then upgrade and start serving.
 func (h *Handler) ServeWebSocket(w http.ResponseWriter, r *http.Request) {
+	finishHandshake, ok := h.enterHandshake(w)
+	if !ok {
+		return
+	}
+	defer finishHandshake()
+	_ = http.NewResponseController(w).SetWriteDeadline(time.Now().Add(h.cfg.HandshakeTimeout))
+
 	roomID := r.PathValue("roomId")
 	if roomID == "" {
 		writeProblem(w, http.StatusBadRequest, "missing-room", "roomId is required")
@@ -237,13 +249,14 @@ func (h *Handler) ServeWebSocket(w http.ResponseWriter, r *http.Request) {
 	// primary control.
 	conn, err := websocket.Accept(w, r, &websocket.AcceptOptions{
 		InsecureSkipVerify: false,
-		OriginPatterns:     h.cfg.AllowedOrigins,
+		OriginPatterns:     h.originHosts(),
 		CompressionMode:    websocket.CompressionDisabled,
 	})
 	if err != nil {
 		// Accept has already written its own response.
 		return
 	}
+	finishHandshake()
 	conn.SetReadLimit(h.cfg.MaxClientMessageBytes)
 
 	cursor := r.URL.Query().Get("cursor")
@@ -269,6 +282,13 @@ func (h *Handler) ServeWebSocket(w http.ResponseWriter, r *http.Request) {
 // There is no client-to-server frame on SSE, so no ping/ack: liveness is the
 // comment keep-alive.
 func (h *Handler) ServeSSE(w http.ResponseWriter, r *http.Request) {
+	finishHandshake, ok := h.enterHandshake(w)
+	if !ok {
+		return
+	}
+	defer finishHandshake()
+	_ = http.NewResponseController(w).SetWriteDeadline(time.Now().Add(h.cfg.HandshakeTimeout))
+
 	roomID := r.PathValue("roomId")
 	if roomID == "" {
 		writeProblem(w, http.StatusBadRequest, "missing-room", "roomId is required")
@@ -325,6 +345,8 @@ func (h *Handler) ServeSSE(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	flusher.Flush()
 
+	finishHandshake()
+
 	// Last-Event-ID is what a browser EventSource sends on reconnect; the query
 	// parameter lets a non-browser client resume explicitly.
 	cursor := r.Header.Get("Last-Event-ID")
@@ -340,6 +362,19 @@ func (h *Handler) ServeSSE(w http.ResponseWriter, r *http.Request) {
 		RoomVersion: roomVersion,
 		Transport:   newSSETransport(w, flusher),
 	})
+}
+
+// originHosts adapts already validated origins to coder/websocket host patterns.
+func (h *Handler) originHosts() []string {
+	hosts := make([]string, 0, len(h.cfg.AllowedOrigins))
+	for _, allowed := range h.cfg.AllowedOrigins {
+		if _, host, ok := weborigin.Parse(allowed); ok {
+			hosts = append(hosts, host)
+		} else {
+			hosts = append(hosts, allowed)
+		}
+	}
+	return hosts
 }
 
 func (h *Handler) authorize(r *http.Request, roomID string, websocket bool) (Identity, bool, error) {

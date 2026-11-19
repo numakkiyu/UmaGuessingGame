@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 import "@/i18n/pedigree-online";
 import {useMemo, useState} from "react";
 import {Link, useParams} from "react-router";
@@ -80,7 +82,7 @@ export function PedigreeRoundPage() {
  function assign(horseId:string) { if(!editable||!selected)return;if(draft.some(a=>a.horseId===horseId)){setNotice("usedCandidate");return;}const next=[...draft.filter(a=>a.slotId!==active),{slotId:active!,horseId}];edit(next);setActive(round?.slots.find(s=>!next.some(a=>a.slotId===s.slotId))?.slotId??active); }
  function labelFor(id:string,index:number) { const team=readTeams(roomQuery.data?.room).find(t=>t.teamId===id);if(team)return team.label;const member=readTeamMembers(roomQuery.data?.room).find(m=>m.membershipId===id);return member ? /^\d{6}$/.test(member.publicCode??"") ? `${member.displayName} · ${member.publicCode}` : member.displayName : t("progressLabel",{number:index+1}); }
  async function submit(retry=false) {
-  if(!round||!roundId||command.busy||refreshing)return;if(!retry&&(!editable||!draft.length||!onlinePedigreeDraftValid(draft,round)))return;
+  if(!roundId||command.busy||refreshing)return;if(!retry&&(!round||!editable||!draft.length||!onlinePedigreeDraftValid(draft,round)))return;
   const body:PedigreeAssignmentCommand|undefined=retry?undefined:{phaseVersion:snapshot.meta!.phaseVersion,submissionRevision:snapshot.submissionRevision,controlGeneration:snapshot.controlGeneration,modeAction:{kind:"pedigree.assignment",assignments:sorted(draft)}};
   setRefreshing(true);setFailure(null);setErrorCode("");setRejected(false);setNotice("");
   try { const result=await command.run(body);if(!result)return;
@@ -96,8 +98,8 @@ export function PedigreeRoundPage() {
  if(!roomId)return <ErrorView failure={{kind:"error",title:t("missingTitle"),detail:t("missingDetail"),diagnosticId:null,retryable:false}}/>;
  if(roomQuery.isLoading)return <LoadingBlock label={t("loadingRoom")} rows={3}/>;
  if(roomQuery.isError){const error=describeFailure(roomQuery.error);return error.kind==="forbidden"?<ForbiddenView failure={error} onRetry={()=>void roomQuery.refetch()}/>:<ErrorView failure={error} onRetry={()=>void roomQuery.refetch()}/>;}
- return <div className="uma-stack">
-  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={realtime.status} detail={roomQuery.data?.room.name??t("room")}/>
+ return <GameStage mode="pedigree" className="uma-stack">
+  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={realtime.status} detail={roomDisplayName(roomQuery.data?.room, t("room"))}/>
   <section className="uma-panel p-4"><h1 className="u-fluid-task">{t("title")}</h1><p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">{phaseLabel(phase)}{round?` · ${t(round.cooperative?"cooperativeMode":"soloMode")}`:""}{snapshot.meta?.paused?` · ${t("paused")}`:""}</p>{collecting&&snapshot.meta?.deadlineAt?<p className={`uma-code mt-2 text-xl font-bold ${countdown.expired?"text-[var(--color-danger)]":""}`}><span className="mr-2 text-sm">{t("time")}</span>{countdown.text}</p>:null}</section>
   <section className="uma-card p-4" aria-label={t("prototypeLabel")}><h2 className="text-base font-bold">{t("prototypeLabel")}</h2><p className="mt-2 text-sm leading-6">{t("disclaimer")}</p></section>
   {command.pending&&!command.busy?<Alert tone="warning" title={t("confirmTitle")}><p>{t("confirmDetail")}</p><Button variant="secondary" className="h-auto min-h-12 whitespace-normal" disabled={refreshing} onClick={()=>void submit(true)}>{t("confirmAction")}</Button></Alert>:null}
@@ -117,7 +119,7 @@ export function PedigreeRoundPage() {
   {round&&!cancelled?<details className="uma-card p-4"><summary className="cursor-pointer font-bold">{t("reference")}</summary><p className="mt-3 text-sm leading-6">{t("referenceHint")}</p><dl className="mt-3 space-y-2 text-sm">{SLOT_IDS.map(id=>{const text=pedigreeSlot(id as PedigreeSlotId,i18n.resolvedLanguage);return <div key={id}><dt className="font-bold">{text.label}</dt><dd>{text.means}</dd></div>;})}</dl>{source?<a className="mt-3 inline-flex min-h-11 items-center text-sm underline" href={source} target="_blank" rel="noopener noreferrer">{t("sourceLink")}</a>:<p className="mt-3 text-sm">{t("sourceUnavailable")}</p>}<p className="mt-2 text-xs leading-5">{t("sourceName")}</p></details>:null}
   {round&&!cancelled?<details className="uma-card p-4"><summary className="cursor-pointer font-bold">{t("rulesHeading")}</summary><ul className="mt-3 space-y-2 text-sm leading-6">{(t("onlineRules",{returnObjects:true,seconds:round.answerSeconds??180,slots:round.totalSlots,candidates:round.candidates.length}) as string[]).map(rule=><li key={rule}>{rule}</li>)}{round.cooperative?<li>{t("cooperativeRule")}</li>:null}</ul></details>:null}
   <Button asChild variant="secondary" className="h-auto min-h-11 whitespace-normal"><Link to={`/rooms/${roomId}`}>{t("back")}</Link></Button>
- </div>;
+ </GameStage>;
 }
 export function PedigreeResultPanel({round,cancelled=false,scores}:{round:PedigreeRound;cancelled?:boolean;scores:ReturnType<typeof pedigreeScores>}) {
  const {t,i18n}=useTranslation("pedigreeOnline"),own=scores.find(s=>s.subjectId===round.subjectId),answer=round.answer;

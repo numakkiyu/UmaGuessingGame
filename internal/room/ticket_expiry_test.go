@@ -2,226 +2,115 @@ package room_test
 
 import (
 	"context"
-	"encoding/json"
+	"github.com/bhcn/umaguessinggame/internal/deployment"
+	"github.com/bhcn/umaguessinggame/internal/httpapi/problem"
+	"github.com/bhcn/umaguessinggame/internal/room"
 	"testing"
 	"time"
-
-	"github.com/bhcn/umaguessinggame/internal/modes"
-	"github.com/bhcn/umaguessinggame/internal/room"
 )
 
-// TestExpiredTicketStopsBlockingNewOnes pins that a lapsed ticket is actually
-// retired rather than merely filtered out of queries.
-//
-// Expiry used to be a read-time interpretation only: no code ever wrote the
-// 'expired' status, and the active-ticket check did not look at expires_at. A ticket
-// whose window had passed therefore stayed 'queueing' forever, the partial unique
-// index still counted it, and the same session could never queue again without
-// cancelling by hand. A player who closed the tab was locked out of matchmaking for
-// good — and the client's "match expired" branch could never fire, because the server
-// never reported that status.
-func TestExpiredTicketStopsBlockingNewOnes(t *testing.T) {
-	t.Parallel()
-	db := newDB(t)
-	reg, err := modes.NewRegistry(&sharedStub{id: "classic"})
-	if err != nil {
-		t.Fatalf("registry: %v", err)
-	}
-	svc := room.New(db, room.Config{}, room.Options{Modes: reg, Epoch: "test"})
-	defer svc.Close()
-	ctx := context.Background()
-
-	if _, err := db.Write().ExecContext(ctx, `
-		INSERT INTO sessions (id, token_hash, display_name, csrf_token_hash, kind, created_at, expires_at)
-		VALUES ('ses_q', 'h', 'queueing', 'c', 'player', 0, 9999999999999)`); err != nil {
-		t.Fatalf("seed session: %v", err)
-	}
-
-	in := room.CreateTicketInput{ModeConfig: json.RawMessage(`{"modeId":"classic","config":{}}`)}
-	first, err := svc.CreateMatchmakingTicket(ctx, "ses_q", in)
-	if err != nil {
-		t.Fatalf("first ticket: %v", err)
-	}
-
-	// A second ticket while the first is live must be refused.
-	if _, err := svc.CreateMatchmakingTicket(ctx, "ses_q", in); err == nil {
-		t.Fatal("a live ticket must block a second one")
-	}
-
-	// Push the ticket into the past, exactly as time would.
-	if _, err := db.Write().ExecContext(ctx,
-		`UPDATE matchmaking_tickets SET expires_at = ? WHERE id = ?`,
-		time.Now().Add(-time.Hour).UnixMilli(), first.ID); err != nil {
-		t.Fatalf("expire ticket: %v", err)
-	}
-
-	// The old ticket must be retired, not left in an active status.
-	var status string
-	if err := db.Read().QueryRowContext(ctx,
-		`SELECT status FROM matchmaking_tickets WHERE id = ?`, first.ID).Scan(&status); err != nil {
-		t.Fatalf("read status: %v", err)
-	}
-
-	// Queuing again is the behaviour that matters: without it the player is stuck.
-	second, err := svc.CreateMatchmakingTicket(ctx, "ses_q", in)
-	if err != nil {
-		t.Fatalf("a lapsed ticket must not block a new one: %v", err)
-	}
-	if second.ID == first.ID {
-		t.Error("the new ticket must be a distinct row")
-	}
-
-	// And the stale row must now report itself as expired, so the client's terminal
-	// branch can fire.
-	if err := db.Read().QueryRowContext(ctx,
-		`SELECT status FROM matchmaking_tickets WHERE id = ?`, first.ID).Scan(&status); err != nil {
-		t.Fatalf("re-read status: %v", err)
-	}
-	if status != "expired" {
-		t.Errorf("the lapsed ticket must be marked expired, got %q", status)
+func TestDeclineOrCancelReleasesAcceptedPartner(t *testing.T) {
+	for _, cancel := range []bool{false, true} {
+		t.Run(map[bool]string{false: "decline", true: "cancel"}[cancel], func(t *testing.T) {
+			svc, _ := matchingService(t, deployment.Policy{})
+			ctx := context.Background()
+			a := queueMatch(t, svc, "s0", "classic-duel")
+			b := queueMatch(t, svc, "s1", "classic-duel")
+			if _, err := svc.RespondToMatch(ctx, "s0", a.ID, true); err != nil {
+				t.Fatal(err)
+			}
+			var err error
+			if cancel {
+				err = svc.CancelMatchmakingTicket(ctx, "s1", b.ID)
+			} else {
+				_, err = svc.RespondToMatch(ctx, "s1", b.ID, false)
+			}
+			if err != nil {
+				t.Fatal(err)
+			}
+			got, err := svc.GetMatchmakingTicket(ctx, "s0", a.ID)
+			if err != nil || got.Status != "queueing" {
+				t.Fatalf("stranded accepted player %+v %v", got, err)
+			}
+			third := queueMatch(t, svc, "s2", "classic-duel")
+			if third.Status != "matched-pending-accept" {
+				t.Fatal("released player not matchable")
+			}
+			got, _ = svc.GetMatchmakingTicket(ctx, "s0", a.ID)
+			if got.Status != "matched-pending-accept" || got.Accepted != 0 {
+				t.Fatal("new group inherited old acceptance")
+			}
+		})
 	}
 }
-
-// TestExpiredTicketCannotBeAccepted pins that a lapsed pairing cannot still become a
-// room.
-//
-// Acceptance used to check only the status, never expires_at. An expired ticket
-// could therefore be accepted, flip to 'ready', and — once its partner also accepted
-// — create a room for a pair that had already timed out. The window is real: the
-// acceptance screen can sit open for minutes while the ticket quietly lapses.
-func TestExpiredTicketCannotBeAccepted(t *testing.T) {
-	t.Parallel()
-	db := newDB(t)
-	reg, err := modes.NewRegistry(&sharedStub{id: "classic"})
-	if err != nil {
-		t.Fatalf("registry: %v", err)
-	}
-	svc := room.New(db, room.Config{}, room.Options{Modes: reg, Epoch: "test"})
-	defer svc.Close()
+func TestStaleTicketsAreRetiredAndHeartbeatCannotReviveThem(t *testing.T) {
+	svc, db := matchingService(t, deployment.Policy{})
 	ctx := context.Background()
-
-	for _, id := range []string{"ses_a", "ses_b"} {
-		if _, err := db.Write().ExecContext(ctx, `
-			INSERT INTO sessions (id, token_hash, display_name, csrf_token_hash, kind, created_at, expires_at)
-			VALUES (?, ?, ?, ?, 'player', 0, 9999999999999)`, id, "h_"+id, id, "c_"+id); err != nil {
-			t.Fatalf("seed session %s: %v", id, err)
-		}
+	a := queueMatch(t, svc, "s0", "classic-duel")
+	if _, err := db.Write().Exec(`UPDATE matchmaking_tickets SET lease_until=0 WHERE id=?`, a.ID); err != nil {
+		t.Fatal(err)
 	}
-
-	in := room.CreateTicketInput{ModeConfig: json.RawMessage(`{"modeId":"classic","config":{}}`)}
-	first, err := svc.CreateMatchmakingTicket(ctx, "ses_a", in)
-	if err != nil {
-		t.Fatalf("first ticket: %v", err)
+	got, err := svc.HeartbeatMatchmakingTicket(ctx, "s0", a.ID)
+	if err != nil || got.Status != "expired" {
+		t.Fatalf("lease revived %+v %v", got, err)
 	}
-	second, err := svc.CreateMatchmakingTicket(ctx, "ses_b", in)
-	if err != nil {
-		t.Fatalf("second ticket: %v", err)
-	}
-
-	// Pair them, then let the first lapse.
-	if _, err := db.Write().ExecContext(ctx,
-		`UPDATE matchmaking_tickets SET status='matched-pending-accept', matched_with=? WHERE id=?`,
-		second.ID, first.ID); err != nil {
-		t.Fatalf("pair first: %v", err)
-	}
-	if _, err := db.Write().ExecContext(ctx,
-		`UPDATE matchmaking_tickets SET status='matched-pending-accept', matched_with=? WHERE id=?`,
-		first.ID, second.ID); err != nil {
-		t.Fatalf("pair second: %v", err)
-	}
-	if _, err := db.Write().ExecContext(ctx,
-		`UPDATE matchmaking_tickets SET expires_at=? WHERE id=?`,
-		time.Now().Add(-time.Minute).UnixMilli(), first.ID); err != nil {
-		t.Fatalf("expire first: %v", err)
-	}
-
-	// Accepting a lapsed pairing must fail, not silently create a room.
-	if _, err := svc.RespondToMatch(ctx, "ses_a", first.ID, true); err == nil {
-		t.Error("accepting an expired ticket must be refused")
-	}
-
-	// No room may have been created for this pair.
-	var rooms int
-	if err := db.Read().QueryRowContext(ctx,
-		`SELECT COUNT(1) FROM rooms WHERE name = '快速匹配'`).Scan(&rooms); err != nil {
-		t.Fatalf("count rooms: %v", err)
-	}
-	if rooms != 0 {
-		t.Errorf("no room may be created for an expired pairing, found %d", rooms)
+	if next := queueMatch(t, svc, "s0", "classic-duel"); next.ID == a.ID {
+		t.Fatal("old ID reused")
 	}
 }
-
-// TestPartnerExpiryFailsTheAcceptLoudly pins that a partner lapsing mid-accept
-// produces an error, not a success.
-//
-// The first version of the expiry fix returned nil here, so RespondToMatch answered
-// 201: the accepting player saw "match found", their ticket stayed on 'ready', and no
-// room ever appeared. Suppressing the room was necessary but not sufficient — a
-// silent success is worse than a failure, because nothing retries and nothing
-// explains.
-func TestPartnerExpiryFailsTheAcceptLoudly(t *testing.T) {
-	t.Parallel()
-	db := newDB(t)
-	reg, err := modes.NewRegistry(&sharedStub{id: "classic"})
-	if err != nil {
-		t.Fatalf("registry: %v", err)
-	}
-	svc := room.New(db, room.Config{}, room.Options{Modes: reg, Epoch: "test"})
-	defer svc.Close()
+func TestConfirmationExpiryReleasesGroupAndCannotBeAccepted(t *testing.T) {
+	svc, db := matchingService(t, deployment.Policy{})
 	ctx := context.Background()
-
-	for _, id := range []string{"ses_p", "ses_q2"} {
-		if _, err := db.Write().ExecContext(ctx, `
-			INSERT INTO sessions (id, token_hash, display_name, csrf_token_hash, kind, created_at, expires_at)
-			VALUES (?, ?, ?, ?, 'player', 0, 9999999999999)`, id, "h_"+id, id, "c_"+id); err != nil {
-			t.Fatalf("seed session %s: %v", id, err)
-		}
+	a := queueMatch(t, svc, "s0", "classic-duel")
+	b := queueMatch(t, svc, "s1", "classic-duel")
+	_, _ = svc.RespondToMatch(ctx, "s0", a.ID, true)
+	if _, err := db.Write().Exec(`UPDATE matchmaking_tickets SET expires_at=0 WHERE id=?`, b.ID); err != nil {
+		t.Fatal(err)
 	}
-
-	in := room.CreateTicketInput{ModeConfig: json.RawMessage(`{"modeId":"classic","config":{}}`)}
-	mine, err := svc.CreateMatchmakingTicket(ctx, "ses_p", in)
-	if err != nil {
-		t.Fatalf("my ticket: %v", err)
+	if _, err := svc.RespondToMatch(ctx, "s1", b.ID, true); problem.As(err).Code != "ticket-expired" {
+		t.Fatalf("expired accepted %v", err)
 	}
-	theirs, err := svc.CreateMatchmakingTicket(ctx, "ses_q2", in)
-	if err != nil {
-		t.Fatalf("their ticket: %v", err)
+	got, err := svc.GetMatchmakingTicket(ctx, "s0", a.ID)
+	if err != nil || got.Status != "queueing" || got.RoomID != "" {
+		t.Fatalf("group not released %+v %v", got, err)
 	}
-
-	// Pair them, then let the PARTNER lapse — the partner has not accepted yet, so its
-	// status is still matched-pending-accept.
-	if _, err := db.Write().ExecContext(ctx,
-		`UPDATE matchmaking_tickets SET status='matched-pending-accept', matched_with=? WHERE id=?`,
-		theirs.ID, mine.ID); err != nil {
-		t.Fatalf("pair mine: %v", err)
+}
+func TestHeartbeatDoesNotExtendConfirmationDeadlineAndCancellationCoolsDown(t *testing.T) {
+	svc, _ := matchingService(t, deployment.Policy{})
+	ctx := context.Background()
+	now := time.Now()
+	svc.SetClock(func() time.Time { return now })
+	a := queueMatch(t, svc, "s0", "classic-duel")
+	queueMatch(t, svc, "s1", "classic-duel")
+	before, _ := svc.GetMatchmakingTicket(ctx, "s0", a.ID)
+	now = now.Add(10 * time.Second)
+	after, err := svc.HeartbeatMatchmakingTicket(ctx, "s0", a.ID)
+	if err != nil || after.ExpiresAt != before.ExpiresAt {
+		t.Fatalf("deadline extended %+v %v", after, err)
 	}
-	if _, err := db.Write().ExecContext(ctx,
-		`UPDATE matchmaking_tickets SET status='matched-pending-accept', matched_with=?, expires_at=? WHERE id=?`,
-		mine.ID, time.Now().Add(-time.Minute).UnixMilli(), theirs.ID); err != nil {
-		t.Fatalf("pair theirs: %v", err)
+	if err = svc.CancelMatchmakingTicket(ctx, "s0", a.ID); err != nil {
+		t.Fatal(err)
 	}
-
-	// Accepting must fail loudly.
-	if _, err := svc.RespondToMatch(ctx, "ses_p", mine.ID, true); err == nil {
-		t.Fatal("a lapsed partner must fail the accept, not report success")
+	proof := work(t, svc, "s0", "classic-duel")
+	if _, err = svc.CreateMatchmakingTicket(ctx, "s0", room.CreateTicketInput{PoolID: "classic-duel", Proof: proof}); problem.As(err).Status != 429 {
+		t.Fatalf("no cooldown %v", err)
 	}
-
-	// The accepting ticket must not remain ready when its partner can no longer accept.
-	var status string
-	if err := db.Read().QueryRowContext(ctx,
-		`SELECT status FROM matchmaking_tickets WHERE id = ?`, mine.ID).Scan(&status); err != nil {
-		t.Fatalf("read my status: %v", err)
+	now = now.Add(16 * time.Second)
+	if _, err = svc.CreateMatchmakingTicket(ctx, "s0", room.CreateTicketInput{PoolID: "classic-duel", Proof: proof}); err != nil {
+		t.Fatal(err)
 	}
-	if status == "ready" {
-		t.Error("my ticket must not stay on ready when the partner expired; the accept rolled back")
+}
+func TestTicketOwnershipStillHidesOtherSessions(t *testing.T) {
+	svc, _ := matchingService(t, deployment.Policy{})
+	a := queueMatch(t, svc, "s0", "classic-duel")
+	ctx := context.Background()
+	if _, err := svc.GetMatchmakingTicket(ctx, "s1", a.ID); problem.As(err).Status != 404 {
+		t.Fatal(err)
 	}
-
-	var rooms int
-	if err := db.Read().QueryRowContext(ctx,
-		`SELECT COUNT(1) FROM rooms WHERE name = '快速匹配'`).Scan(&rooms); err != nil {
-		t.Fatalf("count rooms: %v", err)
+	if _, err := svc.HeartbeatMatchmakingTicket(ctx, "s1", a.ID); problem.As(err).Status != 404 {
+		t.Fatal(err)
 	}
-	if rooms != 0 {
-		t.Errorf("no room may be created for an expired pairing, found %d", rooms)
+	if err := svc.CancelMatchmakingTicket(ctx, "s1", a.ID); problem.As(err).Status != 404 {
+		t.Fatal(err)
 	}
 }

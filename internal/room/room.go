@@ -292,6 +292,9 @@ func (c Config) withDefaults() Config {
 
 // Service is the room domain service.
 type Service struct {
+	matchStatsMu         sync.Mutex
+	matchStatsAt         int64
+	matchStats           MatchLobby
 	audioPracticeOnce    sync.Once
 	audioPracticePack    PracticePack
 	audioPracticeErr     error
@@ -479,6 +482,14 @@ func (s *Service) LoadActor(ctx context.Context, sessionID, roomID string) (Acto
 		return Actor{}, problem.Internal(err)
 	}
 
+	var roomKind string
+	if err := s.db.Read().QueryRowContext(ctx, `SELECT json_extract(config_json, '$.kind') FROM rooms WHERE id=?`, roomID).Scan(&roomKind); err != nil {
+		return Actor{}, problem.Internal(err)
+	}
+	if roomKind == "matchmaking" {
+		delete(caps, CapManageRoom)
+		delete(caps, CapHost)
+	}
 	displayName := ""
 	if m != nil {
 		displayName = m.DisplayName

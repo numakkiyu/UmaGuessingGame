@@ -1,3 +1,5 @@
+import { dismissFault } from "@/test/dismiss-fault";
+import { readTrainerProfile, saveTrainerProfile } from "@/lib/trainer-profile";
 import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { MemoryRouter } from "react-router";
@@ -85,17 +87,17 @@ describe("entry resources", () => {
   it("localizes lobby metadata instead of rendering API prose", async () => {
     await language("ja");
     mount(<LobbyPage />);
-    expect(screen.getByRole("heading", { name: "トレーナーさん、当ててみよう！" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: /今日もひと息.*当ててみよう！/ })).toBeTruthy();
     expect(screen.getByText(modes.ja.classic!.description)).toBeTruthy();
     expect(document.body.textContent).not.toContain("不得展示");
     expect(screen.getByRole("link", { name: lobby.ja.start }).getAttribute("href")).toBe("/play/classic");
     expect(screen.getByRole("link", { name: lobby.ja.rules }).getAttribute("href")).toBe("/help");
-    expect(screen.getByRole("link", { name: lobby.ja.join }).getAttribute("href")).toBe("/join");
-    expect(screen.getByRole("link", { name: lobby.ja.createEvent }).getAttribute("href")).toBe("/events/new");
+    expect(screen.queryByRole("link", { name: lobby.ja.join })).toBeNull();
+    expect(screen.queryByRole("link", { name: lobby.ja.createEvent })).toBeNull();
     const card = screen.getByRole("link", { name: new RegExp(modes.ja.classic!.name + ".*プレイできます") });
     expect(card.getAttribute("title")).toBe(`${modes.ja.classic!.name} · プレイできます`);
     await language("zh-Hant");
-    expect(screen.getByRole("heading", { name: "訓練員，來猜猜看！" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: /今天，也來.*猜一場吧！/ })).toBeTruthy();
     expect(screen.getByText(modes["zh-Hant"].classic!.description)).toBeTruthy();
   });
 
@@ -116,18 +118,22 @@ describe("entry resources", () => {
   it("preserves a pending create body and key through a language switch; only form edits start a different request", async () => {
     mock.createRoom.mockRejectedValue(new NetworkError("PRIVATE_RAW", null));
     mount(<CreateRoomPage />);
-    fireEvent.change(screen.getByLabelText("你的显示名"), { target: { value: "原名🍀" } });
+    act(() => saveTrainerProfile({ displayName: "原名🍀", avatarId: "1001" }));
     fireEvent.click(screen.getByRole("button", { name: "创建好友房间" }));
     await screen.findByText("连接中断");
     const first = mock.createRoom.mock.calls[0]!;
     expect(first[0].name).toBe("原名🍀的约局");
     await language("ja");
     expect(screen.getByText("接続が切れました")).toBeTruthy();
-    expect((screen.getByLabelText("あなたのニックネーム") as HTMLInputElement).value).toBe("原名🍀");
+    await dismissFault();
+    expect(readTrainerProfile().displayName).toBe("原名🍀");
+    expect(screen.queryByLabelText("あなたのニックネーム")).toBeNull();
+    expect(mock.ensureSession).toHaveBeenCalledWith("原名🍀");
     fireEvent.click(screen.getByRole("button", { name: "フレンドルームを作成" }));
     await waitFor(() => expect(mock.createRoom).toHaveBeenCalledTimes(2));
     expect(mock.createRoom.mock.calls[1]).toEqual(first);
     await screen.findByText("接続が切れました");
+    await dismissFault();
     fireEvent.change(screen.getByLabelText("ルーム名（省略可）"), { target: { value: "自分で付けた名前" } });
     fireEvent.click(screen.getByRole("button", { name: "フレンドルームを作成" }));
     await waitFor(() => expect(mock.createRoom).toHaveBeenCalledTimes(3));
@@ -139,18 +145,20 @@ describe("entry resources", () => {
     mock.resolve.mockResolvedValue({ data: { joinable: false }, requestId: "safe-join" });
     mount(<JoinPage />);
     fireEvent.click(screen.getByRole("button", { name: "加入房间" }));
-    expect(screen.getByText("房间匹配码应为 6–16 位字符")).toBeTruthy();
+    expect(screen.getByText("房间分享码应为 6–16 位字符")).toBeTruthy();
     await language("ja");
     expect(screen.getByText("ルームコードは 6～16 桁で入力してください")).toBeTruthy();
+    await dismissFault();
     fireEvent.change(screen.getByLabelText("ルームコード"), { target: { value: "abcd1234" } });
-    fireEvent.change(screen.getByLabelText("ニックネーム"), { target: { value: "保持原名" } });
+    act(() => saveTrainerProfile({ displayName: "保持原名", avatarId: "1001" }));
     fireEvent.click(screen.getByRole("button", { name: "ルームに参加" }));
     await screen.findByText("このルームには参加できません");
     expect(mock.resolve).toHaveBeenCalledWith({ inviteCode: "ABCD1234" });
     await language("zh-Hant");
     expect(screen.getByText("目前無法加入這個房間")).toBeTruthy();
     expect(screen.getByText("safe-join")).toBeTruthy();
-    expect((screen.getByLabelText("顯示名稱") as HTMLInputElement).value).toBe("保持原名");
+    expect(readTrainerProfile().displayName).toBe("保持原名");
+    expect(screen.queryByLabelText("暱稱")).toBeNull();
     expect(mock.ensureSession).not.toHaveBeenCalled();
     expect(mock.join).not.toHaveBeenCalled();
   });

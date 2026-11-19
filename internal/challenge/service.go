@@ -56,6 +56,7 @@ type Answer struct {
 }
 type View struct {
 	CharacterIDs   []string           `json:"characterIds"`
+	Characters     []Answer           `json:"characters"`
 	ChallengeID    string             `json:"challengeId"`
 	ModeID         string             `json:"modeId"`
 	RulesVersion   string             `json:"rulesVersion"`
@@ -140,12 +141,16 @@ func (s *Service) Create(ctx context.Context, sessionID, key string, in CreateIn
 	if recent >= 24 || ownActive >= 3 {
 		return View{}, problem.RateLimited(60)
 	}
-	pool, err := classic.PracticeCharacters(s.source, false)
+	pool, err := classic.PracticeCharacters(s.source, true)
 	if err != nil {
 		return View{}, problem.Internal(err)
 	}
-	eligible := make([]classic.Character, 0, len(pool))
-	for _, c := range pool {
+	answers, err := classic.PracticeCharacters(s.source, false)
+	if err != nil {
+		return View{}, problem.Internal(err)
+	}
+	eligible := make([]classic.Character, 0, len(answers))
+	for _, c := range answers {
 		if c.AmbiguityGroup == "" {
 			eligible = append(eligible, c)
 		}
@@ -345,6 +350,7 @@ func (r record) view(now int64, pool []classic.Character) View {
 	v := View{ChallengeID: r.ID, ModeID: "classic", RulesVersion: classic.RulesVersion, Ticket: r.Ticket, ExpiresAt: timestamp(r.Expires), ServerTime: timestamp(now), WrongBudget: r.Budget, RemainingWrong: r.remaining(), Revision: r.Revision, Status: status, Attempts: len(r.Rows), Rows: r.Rows, ScoreUnits: classic.ActivityScore(len(r.Rows), status == "solved", r.Budget)}
 	for _, c := range pool {
 		v.CharacterIDs = append(v.CharacterIDs, c.ID)
+		v.Characters = append(v.Characters, Answer{CharacterID: c.ID, DisplayName: c.Name, AvatarPath: c.ImagePath})
 	}
 	if status != "active" {
 		for _, c := range pool {

@@ -38,24 +38,15 @@ func decodeBody(w http.ResponseWriter, r *http.Request, dst any, limit int64) er
 		return problem.BadRequest("body-required", "a JSON request body is required")
 	}
 	r.Body = http.MaxBytesReader(w, r.Body, limit)
-	dec := json.NewDecoder(r.Body)
-	dec.DisallowUnknownFields()
-	if err := dec.Decode(dst); err != nil {
+	raw, err := io.ReadAll(r.Body)
+	if err != nil {
 		var maxErr *http.MaxBytesError
 		if asMaxBytes(err, &maxErr) {
 			return problem.TooLarge(limit)
 		}
-		if err == io.EOF {
-			return problem.BadRequest("body-required", "a JSON request body is required")
-		}
-		return problem.BadRequest("invalid-json",
-			"the request body is not valid JSON for this operation")
+		return problem.BadRequest("body-unreadable", "the request body could not be read")
 	}
-	// Reject trailing content so two concatenated objects cannot be half-applied.
-	if err := dec.Decode(&struct{}{}); err != io.EOF {
-		return problem.BadRequest("invalid-json", "the request body must contain exactly one JSON object")
-	}
-	return nil
+	return decodeJSON(dst, raw)
 }
 
 // asMaxBytes reports whether err is a body-limit violation.

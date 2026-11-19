@@ -1,3 +1,4 @@
+import { subscribePracticeChanges } from "@/lib/local/practice-channel";
 import { useConfirmation } from "@/lib/confirmation";
 import "@/i18n/practice-flow";
 import { useTranslation } from "@/i18n";
@@ -5,7 +6,7 @@ import { formatDateTime } from "@/i18n/entities";
 import { errorPlayerText, resolvePlayerText, usePlayerText, type PlayerText } from "@/i18n/player-text";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Link, useNavigate, useParams } from "react-router";
-import { Download, Flag, Play, Upload } from "lucide-react";
+import { Download, Flag, Play, Save, Upload } from "lucide-react";
 import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { LoadingBlock } from "@/components/uma/page-state";
@@ -95,7 +96,7 @@ export function ActivityPracticeLoader<P, G extends PracticeBase>({ adapter: a, 
       catch (e) { if (!cancelled) setError({ gameId, message: errorPlayerText(e,"practice","loadFailed") }); }
     })(); return () => { cancelled = true; };
   }, [a, gameId]);
-  if (error?.gameId === gameId) return <div className="uma-stack"><Alert tone="warning" title={t("missingTitle")}>{resolvePlayerText(error.message)}</Alert><Button asChild variant="secondary"><Link to={`/play/${a.modeId}`}>{t("back")}</Link></Button></div>;
+  if (error?.gameId === gameId) return <div className="uma-stack"><Alert fault tone="warning" title={t("missingTitle")}>{resolvePlayerText(error.message)}</Alert><Button asChild variant="secondary"><Link to={`/play/${a.modeId}`}>{t("back")}</Link></Button></div>;
   if (!archive || archive.game.gameId !== gameId) return <LoadingBlock label={t("loadingGame")} rows={3} />;
   return <div key={gameId}>{children(archive)}</div>;
 }
@@ -108,9 +109,7 @@ export function useActivityPractice<P, G extends PracticeBase>(a: PracticeAdapte
   const confirmAction = useConfirmation(`${game.gameId}:${game.revision}:${stale}:${busy}:${game.ended || now >= game.deadlineAt}`);
   useEffect(() => { const id = window.setInterval(() => setNow(Date.now()), 250); return () => clearInterval(id); }, []);
   useEffect(() => {
-    if (typeof BroadcastChannel === "undefined") return;
-    const channel = new BroadcastChannel(ACTIVITY_CHANNEL); channel.onmessage = event => { const data = event.data as { gameId?: string; writerId?: string }; if (data.gameId === initial.game.gameId && data.writerId !== practiceWriterId) setStale(true); };
-    return () => channel.close();
+    return subscribePracticeChanges(ACTIVITY_CHANNEL, data => { if (data.gameId === initial.game.gameId && data.writerId !== practiceWriterId) setStale(true); });
   }, [initial.game.gameId]);
   async function act(update: (g: G, at: number) => G): Promise<boolean> {
     if (inFlight.current || stale) return false; inFlight.current = true; setBusy(true); setMessage("");
@@ -133,7 +132,20 @@ export function useActivityPractice<P, G extends PracticeBase>(a: PracticeAdapte
     catch { setMessage("exportFailed"); }
   }
   async function finish() { if (!inFlight.current && !stale && !game.ended && Date.now() < game.deadlineAt && await confirmAction({ns:"practice",key:"finishConfirm"},"finish")) await act((g, at) => ({ ...g, ended: true, updatedAt: at, revision: g.revision + 1 })); }
-  return { game, now, busy, stale, saved, message, act, again, exportRecord, finish };
+  async function submitAndFinish(submit: (g: G, at: number) => G) {
+    if (inFlight.current || stale || current.current.ended || Date.now() >= current.current.deadlineAt) return;
+    if (await confirmAction({ns:"practice",key:"submitFinishConfirm"},"finish")) {
+      await act((g, at) => {
+        const next = submit(g, at);
+        return { ...next, ended: true };
+      });
+    }
+  }
+  return { game, now, busy, stale, saved, message, act, again, exportRecord, finish, submitAndFinish };
+}
+export function PracticeSubmitActions({ saveLabel, saveDisabled, submitDisabled, save, submit }: { saveLabel: string; saveDisabled: boolean; submitDisabled: boolean; save: () => Promise<unknown>; submit: () => Promise<unknown> }) {
+  const {t}=useTranslation("practice");
+  return <div className="min-w-0 space-y-2"><div className="flex min-w-0 flex-col gap-2 sm:flex-row"><Button variant="secondary" size="primary" className="h-auto min-h-12 flex-1 whitespace-normal" disabled={saveDisabled} onClick={() => void save()}><Save className="size-4 shrink-0" aria-hidden="true" />{saveLabel}</Button><Button variant="primary" size="primary" className="h-auto min-h-12 flex-1 whitespace-normal" disabled={submitDisabled} onClick={() => void submit()}><Flag className="size-4 shrink-0" aria-hidden="true" />{t("submitFinish")}</Button></div><p className="text-sm leading-6 text-[var(--color-muted)]">{t("submitFinishHint")}</p></div>;
 }
 export function PracticeInstructions({ rules }: { rules: readonly string[] }) { const {t}=useTranslation("practice"); return <details className="uma-card uma-disclosure p-4"><summary className="cursor-pointer font-bold">{t("rules")}</summary><div className="mt-3 space-y-2 text-sm leading-6 text-[var(--color-muted)]">{rules.map(rule => <p key={rule}>{rule}</p>)}<p>{t("persistence")}</p></div></details>; }
 export function PracticeGameHeading({ title, modeId, deadlineAt, now, finished }: { title: string; modeId: string; deadlineAt: number; now: number; finished: boolean }) { const {t}=useTranslation("practice"); const seconds = Math.max(0, Math.ceil((deadlineAt - now) / 1000)); return <header className="border-b border-[var(--color-line)] pb-4"><Link to={`/play/${modeId}`} className="text-sm font-semibold text-[var(--color-blue-deep)]">{t("practice")}</Link><div className="mt-2 flex flex-wrap items-center justify-between gap-2"><h1 className="u-fluid-task">{title}</h1><p className="font-bold tabular-nums text-[var(--color-action-green)]">{finished ? t("ended") : t("remaining",{time:`${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`})}</p></div></header>; }

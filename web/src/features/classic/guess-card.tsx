@@ -135,7 +135,7 @@ export function GuessCard({ row, latest = false, className }: GuessCardProps) {
       data-latest={latest ? "true" : "false"}
       data-attempt={row.attempt}
       className={cn(
-        "uma-card overflow-hidden p-3",
+        "uma-card uma-guess-card overflow-hidden p-3",
         latest && "ring-2 ring-[var(--color-blue-deep)]",
         className,
       )}
@@ -207,7 +207,7 @@ export function GuessTable({ rows }: { rows: NormalizedGuessRow[] }) {
   const {t}=useTranslation("classic");
   return (
     <div
-      className="uma-scroll-x w-full rounded-[var(--radius-card)] border border-[var(--color-line)]"
+      className="uma-guess-table uma-scroll-x w-full rounded-[var(--radius-card)] border border-[var(--color-line)]"
       tabIndex={0}
       role="region"
       aria-label={t("feedback.table")}

@@ -1,3 +1,4 @@
+import { publishPracticeChange } from "./practice-channel";
 import { LocalizedNotice } from "@/lib/player-notice";
 import { SortNotice } from "@/i18n/sort";
 import { validLocalizedNames } from "@/i18n/entities";
@@ -40,6 +41,13 @@ export function readSortPack(raw:unknown):{pack:SortPack;profiles:SortProfile[]}
  }
  const pack:SortPack={schemaVersion:1,modeId:"sort",rulesVersion:raw.rulesVersion,datasetVersion:raw.datasetVersion as string,contentPackVersion:raw.contentPackVersion as string,sourceUrls:raw.sourceUrls as string[],reviewStatus:"source-snapshot",contentJSON:raw.contentJSON,sha256:raw.sha256 as string,byteLength:raw.byteLength as number};
  return {pack,profiles};
+}
+/** Offer only keys that can produce a complete, distinguishable six-card question. */
+export function availableSortKeys(profiles: readonly SortProfile[]): SortKey[] {
+ return (["height", "birthday"] as const).filter(key => {
+  const values=profiles.flatMap(profile=>profile.values[key]===undefined?[]:[profile.values[key]]);
+  return values.length>=6&&new Set(values).size>=2;
+ });
 }
 function randomBelow(limit:number,now:number):number {
  const max=Math.floor(0x100000000/limit)*limit;let n:number;
@@ -105,5 +113,5 @@ export async function saveSortGame(game:SortGame,expectedRevision:number|null){
  });notify(game.gameId);
 }
 export async function deleteSortGame(id:string){const db=await openDB();await new Promise<void>((resolve,reject)=>{const tx=db.transaction("games","readwrite");tx.objectStore("games").delete(id);tx.oncomplete=()=>resolve();tx.onabort=()=>reject(new LocalizedNotice("storage"));tx.onerror=()=>reject(new LocalizedNotice("storage"));});notify(id);}
-function notify(gameId:string){if(typeof BroadcastChannel!=="undefined"){const c=new BroadcastChannel("umaguess-activity-changes");c.postMessage({gameId,writerId:practiceWriterId});c.close();}}
-export const volatileSortGames=new Map<string,SortArchive>();
+function notify(gameId:string){publishPracticeChange("umaguess-activity-changes",{gameId,writerId:practiceWriterId});}
+export const volatileSortGames=new Map<string,SortArchive & {savedRevision?:number|null}>();

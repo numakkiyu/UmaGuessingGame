@@ -17,11 +17,13 @@ import "./sort-online";
 import "./strategy-online";
 import "./trade-online";
 import "./classic-online";
+import "./classic-start";
+import "./admission";
 
 // Equal catalogues alone cannot catch a key omitted from all three languages:
 // a healthy timer used to say "page failed to load" in every locale.
 const pages = import.meta.glob("../features/modes/*-round-page.tsx");
-const files = [...Object.keys(pages), "../features/classic/classic-room-page.tsx"];
+const files = [...Object.keys(pages), "../features/classic/classic-room-page.tsx", "../features/classic/classic-online-play-page.tsx", "../features/identity/entry-admission.tsx"];
 it.each(files)("all literal gameplay copy resolves in three locales: %s", file => {
   const source = readFileSync(resolve(process.cwd(), "src/i18n", file), "utf8");
   const namespace = source.match(/useTranslation\("([^"]+)"\)/)?.[1];

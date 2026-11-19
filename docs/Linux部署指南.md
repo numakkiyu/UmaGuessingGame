@@ -1,10 +1,10 @@
-# Linux 部署 V2
+# Linux 部署
 
 推荐使用 Docker Engine 与 Compose v2，应用、题包和数据目录的关系见[技术架构](技术架构说明.md)。SQLite 运行卷必须落在宿主本地文件系统，不要挂载网络共享
 
 ## 准备
 
-安装 Git、Docker Engine、Compose 插件；从源码生成题包还需要 Go 1.26.1。若在宿主构建前端，则另需 Node.js 24、pnpm 10.33.0 与 Make。具体安装方式以发行版及工具官方文档为准
+安装 Git、Docker Engine、Compose 插件；从源码生成题包还需要 Go 1.26.11。若在宿主构建前端，则另需 Node.js 24、pnpm 10.33.0 与 Make。具体安装方式以发行版及工具官方文档为准
 
 ```bash
 docker version
@@ -68,6 +68,6 @@ curl --fail http://localhost:8080/health/ready
 docker compose exec app /app/uma-server backup --dir /backups
 ```
 
-反向代理对外验证还需使用实际 HTTPS 域名完成入房、作答、重连与结算。健康检查不能代替这些流程。数据库单进程持有，不执行 `docker compose up --scale app=2` 共享运行卷
+数据库单进程持有，不执行 `docker compose up --scale app=2` 共享运行卷
 
-更新、密钥与回滚见[维护指南](维护与更新指南.md)和[安全策略](../SECURITY.md)
+更新、密钥与回滚见[维护指南](维护与更新指南.md)和[安全策略](https://github.com/numakkiyu/UmaGuessingGame/blob/main/SECURITY.md)

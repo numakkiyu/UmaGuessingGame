@@ -174,6 +174,9 @@ func (s *Server) handleDeleteCurrentSession(w http.ResponseWriter, r *http.Reque
 		s.writeError(w, r, err)
 		return
 	}
+	if s.realtimeHub != nil {
+		s.realtimeHub.RevokeSession(full.ID, "authorization-changed")
+	}
 	s.sessions.ClearCookie(w)
 	if err := s.storeReceipt(r, sess.ID, "deleteCurrentSession", "", key, raw, http.StatusNoContent, nil); err != nil {
 		s.writeError(w, r, err)
@@ -199,18 +202,20 @@ func (s *Server) handleGetPublicConfig(w http.ResponseWriter, r *http.Request) {
 	}
 	sort.Strings(enabled)
 	s.writeJSON(w, r, http.StatusOK, publicConfigDTO{
-		SiteName:          s.cfg.SiteName,
-		Admission:         s.admission.Public(),
-		APIVersion:        s.cfg.APIVersion,
-		ServerTime:        rfc3339(nowMS()),
-		DeploymentMode:    s.cfg.DeploymentMode,
-		MaxRoomMembers:    s.cfg.MaxRoomMembers,
-		MaxRoomSpectators: s.cfg.MaxRoomSpectators,
-		EnabledModeIDs:    enabled,
-		ModeCapabilities:  s.rooms.ModeCapabilities(),
-		DefaultTransport:  s.cfg.DefaultTransport,
-		AssetBaseURL:      s.assetBaseURL(),
-		BuildVersion:      s.cfg.BuildVersion,
+		Accounts:                s.accounts.Public(),
+		MatchmakingLobbyEnabled: s.rooms.MatchmakingLobbyEnabled(),
+		SiteName:                s.cfg.SiteName,
+		Admission:               s.admission.Public(),
+		APIVersion:              s.cfg.APIVersion,
+		ServerTime:              rfc3339(nowMS()),
+		DeploymentMode:          s.cfg.DeploymentMode,
+		MaxRoomMembers:          s.cfg.MaxRoomMembers,
+		MaxRoomSpectators:       s.cfg.MaxRoomSpectators,
+		EnabledModeIDs:          enabled,
+		ModeCapabilities:        s.rooms.ModeCapabilities(),
+		DefaultTransport:        s.cfg.DefaultTransport,
+		AssetBaseURL:            s.assetBaseURL(),
+		BuildVersion:            s.cfg.BuildVersion,
 	})
 }
 
@@ -257,6 +262,24 @@ func (s *Server) handleListModes(w http.ResponseWriter, r *http.Request) {
 				EstimatedMinutes: 10,
 				InformationStyle: primaryInformationStyle(m.InformationStyles()),
 				SupportsTeams:    m.MaxSubjects() > 1,
+			}
+			item.StartRule = "standard"
+			switch m.ID() {
+			case "clue-puzzle":
+				item.StartRule = m.ID()
+				item.MinPlayers = 3
+				item.MaxPlayers = 48
+			case "rapport":
+				item.StartRule = m.ID()
+				item.MinPlayers = 2
+				item.MaxPlayers = 64
+			case "trade":
+				item.StartRule = m.ID()
+				item.SupportsTeams = false
+			case "strategy-race":
+				item.StartRule = m.ID()
+				item.MinPlayers = 2
+				item.MaxPlayers = s.cfg.MaxRoomMembers
 			}
 			if !avail.Available {
 				item.Availability = "disabled"
@@ -450,10 +473,29 @@ func (s *Server) handleVerifyAdmission(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	if err := s.admission.Verify(r.Context(), body.Token); err != nil {
+	if err := s.admission.VerifyForSession(r.Context(), body.Token, sess.ID); err != nil {
 		s.writeError(w, r, err)
 		return
 	}
 	s.admission.Grant(w, sess.ID, sess.ExpiresAt)
 	s.writeJSON(w, r, http.StatusOK, map[string]bool{"verified": true})
+}
+
+// Status is safe for a first visit: no identity is created just to check risk.
+func (s *Server) handleAdmissionStatus(w http.ResponseWriter, r *http.Request) {
+	var id string
+	if s.sessions != nil {
+		if token := s.sessions.CookieToken(r); token != "" {
+			if sess, err := s.sessions.Lookup(r.Context(), token); err == nil {
+				id = sess.ID
+			}
+		}
+	}
+	if id != "" {
+		if ok, retry := s.limiter.Allow("entry-state-session:"+id, Rate{PerMinute: 30, BurstTokens: 6}); !ok {
+			s.writeError(w, r, problem.RateLimited(retry))
+			return
+		}
+	}
+	s.writeJSON(w, r, http.StatusOK, s.admission.Status(r, id))
 }

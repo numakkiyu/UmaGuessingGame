@@ -1,9 +1,11 @@
 import { withSessionLock } from "@/lib/api/session-lock";
+import { SessionStateError } from "@/lib/api/session-errors";
 import { EntryAdmission } from "@/features/identity/entry-admission";
 // Query retries apply to reads; write retries retain their original request identity at the call site
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StrictMode, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import { ApiContext, api, setSessionCredentials, setCsrfRecoveryHandler, type ApiContextValue, type SessionState } from "@/lib/api";
+import { ApiContext, api, getCsrfToken, getSessionId, setSessionCredentials, setCsrfRecoveryHandler, type ApiContextValue, type SessionState } from "@/lib/api";
+import { readTrainerProfile } from "@/lib/trainer-profile";
 import { ApiError, describeFailure, type Failure } from "@/lib/api/client";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { useReducedMotion } from "@/lib/hooks/use-reduced-motion";
@@ -58,18 +60,20 @@ export function AppProviders({ children }: AppProvidersProps) {
     sessionRef.current = next;
     setSessionState(next);
     setSessionCredentials(next ? { sessionId: next.sessionId, csrfToken: next.csrfToken } : null);
-    if(next)sessionChannel.current?.postMessage(next);
+    if(next)try{sessionChannel.current?.postMessage(next);}catch{/* Identity remains usable when cross-page messaging is blocked. */}
   }, []);
 
   useEffect(()=>{
     if(typeof BroadcastChannel==="undefined")return;
-    const channel=new BroadcastChannel("uma:session-updates");sessionChannel.current=channel;
+    let channel:BroadcastChannel;
+    try{channel=new BroadcastChannel("uma:session-updates");}catch{return;}
+    sessionChannel.current=channel;
     channel.onmessage=(event:MessageEvent<SessionState>)=>{
       const next=event.data;
       if(!next||next.sessionId!==sessionRef.current?.sessionId||typeof next.csrfToken!=="string"||!next.csrfToken)return;
       sessionRef.current=next;setSessionState(next);setSessionCredentials({sessionId:next.sessionId,csrfToken:next.csrfToken});
     };
-    return()=>{sessionChannel.current=null;channel.close()};
+    return()=>{sessionChannel.current=null;try{channel.close();}catch{/* The channel is already unavailable. */}};
   },[]);
 
   // Recovery is demand-driven. Local practice never creates or restores a cloud identity.
@@ -82,10 +86,10 @@ export function AppProviders({ children }: AppProvidersProps) {
       try {
         const response = await api.getCurrentSession();
         const body = response.data;
-        if (!body) throw new Error("暂时无法找回你的座位，请稍后再试");
+        if (!body) throw new SessionStateError("session-restore-failed");
         let token = body.csrfToken;
         if (!token) token = (await api.rotateSessionCsrf()).data?.csrfToken ?? "";
-        if (!token) throw new Error("暂时无法恢复作答，请刷新后再试");
+        if (!token) throw new SessionStateError("session-restore-failed");
         const next: SessionState = { ...body, csrfToken: token };
         sessionRef.current = next;
         if (mountedRef.current) setSession(next);
@@ -128,16 +132,27 @@ export function AppProviders({ children }: AppProvidersProps) {
   const creatingSession = useRef<Promise<SessionState>|null>(null);
   const ensureSession = useCallback(
     async (displayName: string): Promise<SessionState> => {
-      if (sessionRef.current?.csrfToken) return sessionRef.current;
+      const current = sessionRef.current;
+      const preferred = readTrainerProfile().displayName;
+      if (current?.csrfToken && (!preferred || preferred === current.displayName)) return current;
       if (creatingSession.current) return creatingSession.current;
       const pending=withSessionLock(async()=>{
-      if(sessionRef.current?.csrfToken)return sessionRef.current;
-      const restored = await restoreSession();
-      if (restored) return restored;
-      const response = await api.createSession({ displayName });
+      const preferredName = readTrainerProfile().displayName;
+      const restored = sessionRef.current?.csrfToken ? sessionRef.current : await restoreSession();
+      if (restored) {
+        if (!preferredName || preferredName === restored.displayName) return restored;
+        const response = await api.updateCurrentSession({ displayName: preferredName });
+        const latest = sessionRef.current;
+        const token = getCsrfToken();
+        if (!response.data?.displayName || response.data.sessionId !== restored.sessionId || !latest || latest.sessionId !== restored.sessionId || getSessionId() !== restored.sessionId || !token) throw new SessionStateError("session-restore-failed");
+        const next = { ...latest, displayName: response.data.displayName, csrfToken: token };
+        setSession(next);
+        return next;
+      }
+      const response = await api.createSession({ displayName: preferredName || displayName });
       const body = response.data;
       if (!body) {
-        throw new Error("暂时没能为你保留座位，请稍后再试");
+        throw new SessionStateError("session-create-failed");
       }
       const next: SessionState = {
         sessionId: body.sessionId,
@@ -166,7 +181,7 @@ export function AppProviders({ children }: AppProvidersProps) {
         <ApiContext.Provider value={value}>
           <TooltipProvider delayDuration={300} skipDelayDuration={200}>
             {children}
-            <EntryAdmission />
+            <EntryAdmission prepareSession={restoreSession} />
           </TooltipProvider>
         </ApiContext.Provider>
       </QueryClientProvider>

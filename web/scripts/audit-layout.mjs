@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { setPlayerName } from "./player-profile.mjs";
 /** Checks viewport overflow, touch targets and page states in Chromium. Reports and screenshots are local artifacts. */
 import { mkdir, readdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -238,7 +239,7 @@ async function createAuditRoom(browser, base) {
   const page = await context.newPage();
   try {
     await page.goto(`${base}/play/classic`, { waitUntil: "domcontentloaded" });
-    await page.getByLabel("显示名").fill("布局审查");
+    await setPlayerName(page, "布局审查");
     await page.getByRole("button", { name: /开始对局/ }).click();
     await page.waitForURL(/\/rooms\//, { timeout: 30000 });
     const url = new URL(page.url());

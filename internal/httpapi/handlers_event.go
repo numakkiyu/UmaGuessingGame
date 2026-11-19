@@ -1,6 +1,8 @@
 package httpapi
 
 import (
+	"context"
+	"database/sql"
 	"encoding/json"
 	"net/http"
 
@@ -41,6 +43,7 @@ func (s *Server) handleCreateMatchmakingTicket(w http.ResponseWriter, r *http.Re
 	}
 	ticket, err := s.rooms.CreateMatchmakingTicket(r.Context(), sess.ID, room.CreateTicketInput{
 		ModeConfig: body.ModeConfig.Raw,
+		PoolID:     body.PoolID, Proof: body.Proof, Command: &room.CreationCommand{Key: key, Payload: raw},
 	})
 	if err != nil {
 		s.writeError(w, r, err)
@@ -147,6 +150,9 @@ func (s *Server) handleRespondToMatch(w http.ResponseWriter, r *http.Request) {
 		s.writeError(w, r, err)
 		return
 	}
+	if body.Accept && s.blockRiskAdmission(w, r) {
+		return
+	}
 	ticket, err := s.rooms.RespondToMatch(r.Context(), sess.ID, ticketID, body.Accept)
 	if err != nil {
 		s.writeError(w, r, err)
@@ -173,7 +179,8 @@ func toTicketDTO(t room.Ticket) ticketDTO {
 		roomID = &v
 	}
 	return ticketDTO{
-		TicketID:   t.ID,
+		TicketID: t.ID,
+		PoolID:   t.PoolID, Players: t.Players, Accepted: t.Accepted,
 		Status:     mapTicketStatus(t.Status),
 		RoomID:     roomID,
 		ExpiresAt:  rfc3339(t.ExpiresAt),
@@ -847,17 +854,20 @@ func (s *Server) handleRedeemRecoveryGrant(w http.ResponseWriter, r *http.Reques
 		s.writeError(w, r, err)
 		return
 	}
-	membershipID, _, err := s.rooms.RedeemRecoveryGrant(r.Context(), body.GrantCode)
-	if err != nil {
-		s.writeError(w, r, err)
+	previous, form, accessErr := s.rooms.RecoveryAccess(r.Context(), body.GrantCode)
+	if accessErr != nil {
+		s.writeError(w, r, problem.Internal(nil))
 		return
 	}
-	displayName, err := s.rooms.MembershipDisplayName(r.Context(), membershipID)
-	if err != nil {
-		s.writeError(w, r, err)
+	if previous != "" && !s.requireAccount(w, r, form, previous) {
 		return
 	}
-	res, err := s.sessions.Create(r.Context(), displayName)
+	var res session.CreateResult
+	_, _, err = s.rooms.RedeemRecoveryGrant(r.Context(), body.GrantCode, func(ctx context.Context, tx *sql.Tx, name string) (string, error) {
+		var err error
+		res, err = s.sessions.CreateInTransaction(ctx, tx, name)
+		return res.Session.ID, err
+	})
 	if err != nil {
 		s.writeError(w, r, err)
 		return

@@ -1,0 +1,38 @@
+@import url("/fonts/source-han-sans.css");
+body.browser-unsupported { margin: 0; }
+#browser-support {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 48px 20px;
+  background: #edf7ff url("/assets/ui/scenes/lobby-classroom.jpg") center / cover;
+  color: #283b43;
+  font: 16px/1.7 "Noto Sans", "Noto Sans CJK SC", "Hiragino Sans", "Microsoft YaHei", sans-serif;
+}
+#browser-support * { box-sizing: border-box; }
+#browser-support .browser-card {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 36px;
+  border: 1px solid #d4e8dd;
+  border-top: 6px solid #54b67a;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 16px 48px rgba(40, 59, 67, .14);
+}
+#browser-support .browser-logo { display: block; width: 96px; height: 96px; border-radius: 20px; margin: 0 0 28px; }
+#browser-support h1 { font-size: 28px; line-height: 1.4; margin: 24px 0 14px; }
+#browser-support p { margin: 12px 0; }
+#browser-support .browser-requirements { margin: 24px 0; padding: 4px 20px; border-left: 3px solid #54b67a; background: #f2f9f4; }
+#browser-support .browser-small { font-size: 14px; color: #556770; }
+#browser-support button, #browser-support a { font: inherit; }
+#browser-support button { cursor: pointer; }
+#browser-support .browser-languages button { margin: 0 8px 8px 0; padding: 6px 10px; color: #445761; background: #fff; border: 1px solid #c9d9dc; border-radius: 8px; }
+#browser-support .browser-languages button[aria-pressed="true"] { color: #23683f; background: #edf8f0; border-color: #54b67a; }
+#browser-support .browser-refresh { display: block; width: 100%; margin: 28px 0 24px; padding: 12px 18px; border: 1px solid #287b45; border-radius: 12px; background: #32894f; color: #fff; font-weight: 700; }
+#browser-support a { display: inline-block; margin: 4px 20px 4px 0; color: #246d43; text-decoration: underline; }
+#browser-support button:focus, #browser-support a:focus { outline: 3px solid #d04b89; outline-offset: 3px; }
+@media (max-width: 480px) {
+  #browser-support { padding: 24px 12px; }
+  #browser-support .browser-card { padding: 24px 20px; border-radius: 18px; }
+  #browser-support h1 { font-size: 24px; }
+}

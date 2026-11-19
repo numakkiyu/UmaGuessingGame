@@ -1,3 +1,4 @@
+import { setPlayerName } from "./player-profile.mjs";
 /** Real UI writes against isolated Go/SQLite; drop only responses after commit. */
 import { chromium } from 'playwright';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -21,10 +22,10 @@ async function get(i, path) { const response = await contexts[i].request.get(bas
 async function write(page, path, action) { const wait = page.waitForResponse(r => new URL(r.url()).pathname === '/api/v1' + path && r.request().method() === 'POST'); await action(); const response = await wait; if (!response.ok()) throw new Error(`${path} ${response.status()} ${await response.text()}`); return response.json(); }
 async function create(mode, count) {
   const p = pages[0]; await p.goto(base + '/rooms/new?mode=' + mode);
-  await p.getByLabel('你的显示名').fill('特别周'); await p.getByLabel('最多几人参加？').fill(String(count));
+  await setPlayerName(p, '特别周'); await p.getByLabel('最多几人参加？').fill(String(count));
   const room = await write(p, '/rooms', () => button(p, '创建好友房间').click());
   await p.getByTestId('room-invite-code').waitFor(); const rid = room.room.roomId;
-  for (let i = 1; i < count; i++) { const page = pages[i]; await page.goto(base + '/join?code=' + room.inviteCode); await page.getByLabel('显示名', { exact: true }).fill(i === 1 ? '特别周' : '小栗帽'); await write(page, `/rooms/${rid}/memberships`, () => button(page, '加入房间').click()); await page.waitForURL(/\/rooms\/rom_/); }
+  for (let i = 1; i < count; i++) { const page = pages[i]; await page.goto(base + '/join?code=' + room.inviteCode); await setPlayerName(page, i === 1 ? '特别周' : '小栗帽'); await write(page, `/rooms/${rid}/memberships`, () => button(page, '加入房间').click()); await page.waitForURL(/\/rooms\/rom_/); }
   await p.reload(); const round = await write(p, `/rooms/${rid}/rounds`, () => button(p, '开始对局').click());
   return { roomId: rid, roundId: round.roundId };
 }
@@ -50,11 +51,11 @@ try {
   await board.getByRole('button', { name: /未翻开/ }).first().waitFor();
   const before = await get(0, '/rounds/' + memory.roundId), start = requests.length;
   const committed = await dropCommittedResponse(p, `/rounds/${memory.roundId}/submissions`, () => board.getByRole('button', { name: /未翻开/ }).first().click());
-  await button(p, '查看提交结果').click({ trial: true });
+  await button(p, '确认刚才翻的牌').click({ trial: true });
   check('翻牌已保存但响应丢失时保持待确认', committed() === 201 && (await get(0, '/rounds/' + memory.roundId)).submissionRevision === before.submissionRevision + 1);
   check('待确认期间不能再翻别的牌', await board.getByRole('button').evaluateAll(buttons => buttons.every(b => b.disabled)));
   for (const width of [320, 1440]) { await p.setViewportSize({ width, height: 1000 }); check(`翻牌确认 ${width}px 无横溢`, await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth)); await p.screenshot({ path: new URL('memory-confirm-' + width + '.png', out).pathname, fullPage: true, animations: 'disabled' }); }
-  await confirmSame(p, '查看提交结果', start);
+  await confirmSame(p, '确认刚才翻的牌', start);
   check('确认没有多翻一次', (await get(0, '/rounds/' + memory.roundId)).submissionRevision === before.submissionRevision + 1);
   check('确认后能继续翻牌', await board.getByRole('button', { name: /未翻开/ }).first().isEnabled());
 

@@ -213,7 +213,7 @@ func (s *Service) CreateRound(ctx context.Context, actor Actor, in RoundCreateIn
 		return Round{}, problem.Internal(fmt.Errorf("room: begin create round: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Round{}, err
 	}
 	// Preparation must not bind an obsolete roster or room configuration.

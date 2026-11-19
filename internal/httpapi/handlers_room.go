@@ -29,15 +29,18 @@ func (s *Server) handleCreateRoom(w http.ResponseWriter, r *http.Request) {
 		s.writeError(w, r, err)
 		return
 	}
+	var body roomCreateDTO
+	if err := decodeJSON(&body, raw); err != nil {
+		s.writeError(w, r, err)
+		return
+	}
+	if !s.requireAccount(w, r, body.Kind, sess.ID) {
+		return
+	}
 	if replayed, err := s.replayIfPresent(w, r, sess.ID, "createRoom", "", key, raw); err != nil || replayed {
 		if err != nil {
 			s.writeError(w, r, err)
 		}
-		return
-	}
-	var body roomCreateDTO
-	if err := decodeJSON(&body, raw); err != nil {
-		s.writeError(w, r, err)
 		return
 	}
 	res, err := s.rooms.CreateRoom(r.Context(), sess.ID, room.RoomCreateInput{
@@ -297,6 +300,15 @@ func (s *Server) handleLeaveOrRemoveMembership(w http.ResponseWriter, r *http.Re
 	if err != nil {
 		s.writeError(w, r, err)
 		return
+	}
+	// Only a player's own membership may leave without completing verification.
+	if s.admission.RiskRequired(sess.ID) {
+		actor, loadErr := s.rooms.LoadActor(r.Context(), sess.ID, roomID)
+		// A completed departure can be retried after its response was lost.
+		// LeaveOrRemoveBySession checks ownership for inactive memberships.
+		if loadErr == nil && actor.MembershipID() != membershipID && s.blockRiskAdmission(w, r) {
+			return
+		}
 	}
 	key, err := requireIdempotencyKey(r)
 	if err != nil {
@@ -559,7 +571,7 @@ func (s *Server) buildRoomSnapshot(r *http.Request, rm room.Room) (roomSnapshotD
 	}
 	_ = json.Unmarshal(rm.Config.ModeConfig, &configured)
 	var inviteCode *string
-	if actor.Capabilities[room.CapManageRoom] || actor.Capabilities[room.CapHost] {
+	if rm.Config.Kind != "matchmaking" && (actor.Capabilities[room.CapManageRoom] || actor.Capabilities[room.CapHost]) {
 		code := rm.InviteCode
 		inviteCode = &code
 	}
@@ -607,7 +619,7 @@ func (s *Server) capabilitiesFor(actor room.Actor, m room.Membership, rm room.Ro
 		caps[room.CapDisplay] = true
 		caps[room.CapObserve] = true
 	}
-	if m.SessionID == rm.OwnerID {
+	if m.SessionID == rm.OwnerID && rm.Config.Kind != "matchmaking" {
 		caps[room.CapManageRoom] = true
 		if rm.Config.Kind == "event" {
 			caps[room.CapHost] = true

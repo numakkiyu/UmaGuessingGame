@@ -7,6 +7,7 @@ import (
 	"net/netip"
 	"time"
 
+	"github.com/bhcn/umaguessinggame/internal/account"
 	"github.com/bhcn/umaguessinggame/internal/admission"
 	"github.com/bhcn/umaguessinggame/internal/challenge"
 	"github.com/bhcn/umaguessinggame/internal/httpapi/problem"
@@ -41,6 +42,8 @@ type Config struct {
 	MetricsLocalOnly bool
 	// RequestTimeout bounds a single request's handler work.
 	RequestTimeout time.Duration
+	// MaxConcurrentRequests bounds REST work and session lookups.
+	MaxConcurrentRequests int
 	// Limiter configures the token buckets.
 	Limiter LimiterConfig
 
@@ -86,6 +89,9 @@ func (c Config) withDefaults() Config {
 	if c.MaxRoomSpectators <= 0 {
 		c.MaxRoomSpectators = 300
 	}
+	if c.MaxConcurrentRequests <= 0 {
+		c.MaxConcurrentRequests = 128
+	}
 	if c.RequestTimeout <= 0 {
 		c.RequestTimeout = 20 * time.Second
 	}
@@ -94,13 +100,15 @@ func (c Config) withDefaults() Config {
 
 // Server is the composed HTTP handler.
 type Server struct {
-	admission  *admission.Service
-	challenges *challenge.Service
-	cfg        Config
-	log        *slog.Logger
-	metrics    *observability.Metrics
-	health     *observability.Health
-	limiter    *Limiter
+	accounts     *account.Service
+	admission    *admission.Service
+	challenges   *challenge.Service
+	cfg          Config
+	log          *slog.Logger
+	metrics      *observability.Metrics
+	health       *observability.Health
+	limiter      *Limiter
+	requestSlots chan struct{}
 
 	sessions *session.Service
 	rooms    *room.Service
@@ -116,6 +124,7 @@ type Server struct {
 
 // Deps are the collaborators the server needs.
 type Deps struct {
+	Accounts   *account.Service
 	Admission  *admission.Service
 	Challenges *challenge.Service
 	Config     Config
@@ -145,6 +154,7 @@ func New(deps Deps) *Server {
 		metrics = observability.NewMetrics()
 	}
 	s := &Server{
+		accounts:   deps.Accounts,
 		challenges: deps.Challenges,
 		admission:  deps.Admission,
 		cfg:        cfg,
@@ -156,8 +166,10 @@ func New(deps Deps) *Server {
 		readyFn:    deps.Ready,
 	}
 	s.limiter = NewLimiter(cfg.Limiter)
+	s.requestSlots = make(chan struct{}, cfg.MaxConcurrentRequests)
 	s.realtimeHub = deps.Realtime
 	if deps.Realtime != nil {
+		deps.Realtime.SetRevalidator(streamAuthorizer{srv: s})
 		// A construction failure must not silently fall back to polling: the operator
 		// asked for push, and a quiet downgrade would hide a misconfiguration behind
 		// behaviour that still looks like it works. The hub is validated by its own
@@ -229,6 +241,7 @@ func (s *Server) routes() http.Handler {
 	// and panic recovery must wrap the whole chain.
 	var h http.Handler = mux
 	h = s.withLogging(h)
+	h = s.withIngress(h)
 	h = s.recoverPanic(h)
 	h = withRequestID(h)
 	h = s.withSecurityHeaders(h)
@@ -247,8 +260,16 @@ func (s *Server) routes() http.Handler {
 // caller cannot make the server parse anything.
 func (s *Server) wrap(rt route, info routeInfo) http.Handler {
 	inner := withRoute(info, func(w http.ResponseWriter, r *http.Request) {
-		// Rate limiting before authentication work for public routes; for
-		// authenticated routes the session key is only known after resolution.
+		if rt.operationID == "getLiveness" {
+			rt.handler(w, r)
+			return
+		}
+		release, ok := s.admitRequest(w, r)
+		if !ok {
+			return
+		}
+		defer release()
+		// Identity-independent flood gates run before this route wrapper.
 		if rt.auth == "none" {
 			if err := s.limit(w, r, info); err != nil {
 				s.writeError(w, r, err)
@@ -300,9 +321,27 @@ func (s *Server) wrap(rt route, info routeInfo) http.Handler {
 				}
 			}
 		}
+		if !s.checkAccountAccess(w, r, rt.operationID) {
+			return
+		}
+		if rt.write {
+			switch rt.operationID {
+			case "verifyAdmission", "rotateSessionCsrf", "deleteCurrentSession", "cancelMatchmakingTicket", "createSurrender":
+				// Verification and departure must remain possible under adaptive risk.
+			case "leaveOrRemoveMembership", "respondToMatch":
+				// These handlers distinguish departure from removing or accepting others.
+			default:
+				if s.blockRiskAdmission(w, r) {
+					return
+				}
+			}
+		}
 		if s.admission.Required(rt.operationID) && !s.admission.Allowed(r, sess.Session.ID) {
 			s.writeError(w, r, problem.Forbidden("admission-required", "开始前请先完成入场确认"))
 			return
+		}
+		if rt.operationID == "streamRoomEvents" || rt.operationID == "upgradeRoomSocket" {
+			release()
 		}
 		rt.handler(w, r)
 	})
@@ -316,6 +355,15 @@ func (s *Server) wrap(rt route, info routeInfo) http.Handler {
 		})
 	}
 	return s.withTimeout(inner)
+}
+
+func (s *Server) blockRiskAdmission(w http.ResponseWriter, r *http.Request) bool {
+	sess, ok := sessionOf(r)
+	if ok && s.admission.RiskRequired(sess.ID) {
+		s.writeError(w, r, problem.Forbidden("admission-risk-required", "请完成入场确认后继续"))
+		return true
+	}
+	return false
 }
 
 // sessionValue is the request-scoped identity.
@@ -380,7 +428,7 @@ func (s *Server) withSecurityHeaders(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		h := w.Header()
 		h.Set("X-Content-Type-Options", "nosniff")
-		h.Set("Referrer-Policy", "no-referrer")
+		h.Set("Referrer-Policy", "same-origin")
 		h.Set("X-Frame-Options", "DENY")
 		next.ServeHTTP(w, r)
 	})
@@ -394,6 +442,11 @@ func (s *Server) withTimeout(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		ctx, cancel := context.WithTimeout(r.Context(), s.cfg.RequestTimeout)
 		defer cancel()
+		// Context cancellation alone cannot interrupt a slow request body or write.
+		controller := http.NewResponseController(w)
+		deadline, _ := ctx.Deadline()
+		_ = controller.SetReadDeadline(deadline)
+		_ = controller.SetWriteDeadline(deadline.Add(5 * time.Second))
 		next.ServeHTTP(w, r.WithContext(ctx))
 	})
 }
@@ -404,19 +457,25 @@ func (s *Server) withTimeout(next http.Handler) http.Handler {
 // the contract so a missing or renamed operation fails the build.
 func (s *Server) table() []route {
 	return []route{
+		{operationID: "getAccount", method: "GET", pattern: "/api/v1/account", auth: "none", rateClass: "public", handler: s.handleGetAccount},
+		{operationID: "renewAccount", method: "POST", pattern: "/api/v1/account/renew", auth: "none", rateClass: "public", handler: s.handleRenewAccount},
+		{operationID: "deleteAccountSession", method: "DELETE", pattern: "/api/v1/account/session", auth: "none", rateClass: "public", handler: s.handleDeleteAccount},
+		{operationID: "startAccountLogin", method: "POST", pattern: "/api/v1/account/logins/{providerId}", auth: "none", rateClass: "account-login", handler: s.handleStartAccount},
+		{operationID: "accountCallback", method: "GET", pattern: "/api/v1/account/callback/{providerId}", auth: "none", rateClass: "account-login", handler: s.handleAccountCallback},
 		// ---- sessions ----
+		{operationID: "getAdmissionStatus", method: "GET", pattern: "/api/v1/sessions/current/admission", auth: "none", rateClass: "admission-status", handler: s.handleAdmissionStatus},
 		{operationID: "verifyAdmission", method: "POST", pattern: "/api/v1/sessions/current/admission", write: true, auth: "session", rateClass: "admission", handler: s.handleVerifyAdmission},
 		{operationID: "createSession", method: "POST", pattern: "/api/v1/sessions",
 			write: false, rateClass: "session-create", auth: "none", handler: s.handleCreateSession},
 		{operationID: "getCurrentSession", method: "GET", pattern: "/api/v1/sessions/current",
-			auth: "session", handler: s.handleGetCurrentSession},
+			auth: "session", rateClass: "identity-recovery", handler: s.handleGetCurrentSession},
 		{operationID: "updateCurrentSession", method: "PATCH", pattern: "/api/v1/sessions/current",
 			write: true, rateClass: "session", auth: "session", idempotent: true, handler: s.handleUpdateCurrentSession},
 		{operationID: "deleteCurrentSession", method: "DELETE", pattern: "/api/v1/sessions/current",
 			write: true, rateClass: "session", auth: "session", idempotent: true, handler: s.handleDeleteCurrentSession},
 		// Rotate CSRF without changing session identity. Each call issues a new token and takes no Idempotency-Key.
 		{operationID: "rotateSessionCsrf", method: "POST", pattern: "/api/v1/sessions/current/csrf",
-			write: true, rateClass: "session", auth: "session", noCsrf: true, handler: s.handleRotateSessionCsrf},
+			write: true, rateClass: "identity-recovery", auth: "session", noCsrf: true, handler: s.handleRotateSessionCsrf},
 
 		// ---- config, modes, characters ----
 		{operationID: "getPublicConfig", method: "GET", pattern: "/api/v1/config",
@@ -494,10 +553,14 @@ func (s *Server) table() []route {
 			auth: "session", handler: s.handleGetPathNeighbors},
 
 		// ---- matchmaking ----
+		{operationID: "getMatchmakingLobby", method: "GET", pattern: "/api/v1/matchmaking-lobby", auth: "none", rateClass: "matchmaking-lobby", handler: s.handleMatchmakingLobby},
+		{operationID: "createMatchmakingProof", method: "POST", pattern: "/api/v1/matchmaking-proofs", write: true, auth: "session", rateClass: "admission", handler: s.handleMatchmakingProof},
+		{operationID: "getActiveMatchmakingTicket", method: "GET", pattern: "/api/v1/matchmaking-tickets/current", auth: "session", rateClass: "session", handler: s.handleActiveMatchmakingTicket},
+		{operationID: "heartbeatMatchmakingTicket", method: "POST", pattern: "/api/v1/matchmaking-tickets/{ticketId}/heartbeat", write: true, auth: "session", rateClass: "session", handler: s.handleMatchmakingHeartbeat},
 		{operationID: "createMatchmakingTicket", method: "POST", pattern: "/api/v1/matchmaking-tickets",
 			write: true, rateClass: "session", auth: "session", idempotent: true, handler: s.handleCreateMatchmakingTicket},
 		{operationID: "getMatchmakingTicket", method: "GET", pattern: "/api/v1/matchmaking-tickets/{ticketId}",
-			auth: "session", handler: s.handleGetMatchmakingTicket},
+			auth: "session", rateClass: "session", handler: s.handleGetMatchmakingTicket},
 		{operationID: "cancelMatchmakingTicket", method: "DELETE", pattern: "/api/v1/matchmaking-tickets/{ticketId}",
 			write: true, rateClass: "session", auth: "session", idempotent: true, handler: s.handleCancelMatchmakingTicket},
 		{operationID: "respondToMatch", method: "POST", pattern: "/api/v1/matchmaking-tickets/{ticketId}/responses",

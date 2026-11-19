@@ -1,9 +1,10 @@
+import { GameStage } from "@/components/uma/game-stage";
 import { SelectField } from "@/components/ui/select";
 import { useTranslation } from "@/i18n";
 import { pedigreeCopy, pedigreeSlot, localizePedigreePresentation } from "@/i18n/pedigree";
 import { characterName } from "@/i18n/entities";
 import { useMemo, useRef, useState } from "react";
-import { RotateCcw, Save, Search, X } from "lucide-react";
+import { RotateCcw, Search, X } from "lucide-react";
 import { AvatarImage } from "@/components/uma/avatar-image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -13,7 +14,7 @@ import { PEDIGREE_SLOTS, changePedigree, pedigreeResult, type PedigreeGame, type
 import { practiceFinished } from "@/lib/domain/aptitude-practice";
 import { createPedigreeGame, pedigreeStore, readPedigreePack, validatePedigreeArchive, volatilePedigreeGames, type PedigreeArchive, type PedigreePack } from "@/lib/local/pedigree-practice-store";
 import { cn } from "@/lib/utils";
-import { ActivityPracticeLoader, ActivityPracticeStart, PracticeGameHeading, PracticeInstructions, PracticeNotices, PracticeUtilityActions, useActivityPractice, type PracticeAdapter } from "./activity-practice-kit";
+import { ActivityPracticeLoader, ActivityPracticeStart, PracticeGameHeading, PracticeInstructions, PracticeNotices, PracticeUtilityActions, PracticeSubmitActions, useActivityPractice, type PracticeAdapter } from "./activity-practice-kit";
 const rules = pedigreeCopy["zh-Hans"].rules;
 const adapter: PracticeAdapter<PedigreePack, PedigreeGame> = localizePedigreePresentation({
   modeId: "pedigree", title: "原型血统拼图", summary: "沿着父系、母系两条分支，把史实原型马的祖先放回对应的位置", hint: "180 秒，可以查资料卡。先填空位，再保存这版作答；截止前还可以调整", prepareLabel: "准备原型资料", startLabel: "开始血统拼图", filePrefix: "umaguess-pedigree", rules,
@@ -50,13 +51,13 @@ function PedigreePracticeGame({ initial }: { initial: PedigreeArchive }) {
       candidateHeading.current?.scrollIntoView({ block: "start", behavior: "instant" });
     });
   }
-  function saveButton(className?: string) { return <Button className={className} variant="primary" size="primary" block disabled={locked || !game.draft.length || same} onClick={() => void act((g, at) => changePedigree(g, g.draft, true, at))}><Save className="size-4" aria-hidden="true" />{t("save")}</Button>; }
+  function saveButton(className?: string) { return <div className={className}><PracticeSubmitActions saveLabel={t("save")} saveDisabled={locked || !game.draft.length || same} submitDisabled={locked || !game.draft.length} save={() => p.act((g, at) => changePedigree(g, g.draft, true, at))} submit={() => p.submitAndFinish((g, at) => changePedigree(g, g.draft, true, at))} /></div>; }
   function slotCard(id: PedigreeSlotId) {
     const spec = { ...PEDIGREE_SLOTS.find(s => s.slotId === id)!, ...pedigreeSlot(id) }, selected = result ? result.rows.find(r => r.slotId === id)!.selected : draft.get(id) ?? null;
     const row = result?.rows.find(r => r.slotId === id);
     return <div key={id} className="min-w-0" data-pedigree-slot={id}><button type="button" aria-pressed={!finished && active === id} aria-label={t("fillSlot", { slot: spec.label, name: name(selected) })} disabled={locked} onClick={() => chooseSlot(id)} className={cn("min-h-24 w-full rounded-lg border-2 p-3 text-left transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-blue-deep)] disabled:cursor-default", row ? row.correct ? "border-[var(--color-action-green)] bg-[var(--color-brand-green-soft)]" : "border-[var(--color-line)] bg-[var(--color-panel-soft)]" : active === id ? "border-[var(--color-blue-deep)] bg-[var(--color-panel-soft)]" : "border-[var(--color-line)] bg-[var(--color-panel)]")}><span className="flex items-baseline justify-between gap-2"><span className="font-bold text-[var(--color-ink)]">{spec.label}</span><span className="text-xs text-[var(--color-muted)]">{t(spec.generation === 1 ? "firstGeneration" : "secondGeneration")}</span></span><span className="mt-1 block text-xs leading-5 text-[var(--color-muted)]">{spec.means}</span><span className="mt-2 block break-words text-sm font-semibold">{name(selected)}</span>{row ? <span className="mt-1 block text-xs font-bold">{t(row.correct ? "correct" : row.selected ? "incorrect" : "unanswered")}</span> : null}</button>{!finished && selected ? <Button variant="ghost" size="sm" disabled={locked} aria-label={t("clearSlot", { slot: spec.label })} onClick={() => void act((g, at) => changePedigree(g, g.draft.filter(a => a.slotId !== id), false, at))}><X className="size-3" aria-hidden="true" />{t("clear")}</Button> : null}{row && !row.correct ? <p className="mt-2 break-words text-sm leading-6 text-[var(--color-muted)]">{t("expected", { name: name(row.expected) })}</p> : null}</div>;
   }
-  return <div className="uma-stack mx-auto max-w-[1280px]">
+  return <GameStage mode="pedigree" className="uma-stack mx-auto max-w-[1280px]">
     <PracticeGameHeading title={adapter.title} modeId="pedigree" deadlineAt={game.deadlineAt} now={now} finished={finished} />
     <p className="rounded-lg border border-[var(--color-line)] bg-[var(--color-panel-soft)] px-4 py-3 text-sm leading-6">{t("disclaimer")}</p>
     <PracticeNotices saved={p.saved} stale={stale} message={p.message} />
@@ -76,5 +77,5 @@ function PedigreePracticeGame({ initial }: { initial: PedigreeArchive }) {
       <details className="uma-card uma-disclosure p-4"><summary className="cursor-pointer font-bold">{t("reference")}</summary><p className="mt-3 text-xs leading-5 text-[var(--color-muted)]">{t("disclaimer")}</p><dl className="mt-3 divide-y divide-[var(--color-line)]">{PEDIGREE_SLOTS.map(s => <div key={s.slotId} className="py-2 text-sm leading-6"><dt className="font-bold">{pedigreeSlot(s.slotId).label} · {pedigreeSlot(s.slotId).means}</dt><dd className="break-words text-[var(--color-muted)]">{name(family.relations[s.slotId])}</dd></div>)}</dl><p className="mt-3 text-xs leading-5 text-[var(--color-muted)]">{t("source")}</p></details>
       <PracticeInstructions rules={adapter.rules} /><PracticeUtilityActions finished={finished} busy={busy} stale={stale} exportRecord={p.exportRecord} finish={p.finish} />
     </aside></div>
-  </div>;
+  </GameStage>;
 }

@@ -1,3 +1,4 @@
+import {createMatchingTicket} from "./matchmaking-support.mjs";
 /** Real configured processes: entry routing and API policy must agree. */
 import { chromium } from 'playwright';
 import { spawn } from 'node:child_process';
@@ -25,7 +26,7 @@ async function instance(name,policy,run){
  const config=resolve(data,'config.json');await writeFile(config,JSON.stringify(policy,null,2));
  const probe=createServer();probe.listen(0,'127.0.0.1');await once(probe,'listening');const port=probe.address().port;await new Promise(r=>probe.close(r));
  const base=`http://127.0.0.1:${port}`;
- const child=spawn(resolve(root,'bin/uma-server'),['-addr',`127.0.0.1:${port}`,'-data',data,'-content',resolve(process.env.UMA_CONTENT_DIR ?? resolve(root,'content')),'-web',resolve(root,'web/dist'),'-config',config,'-allowed-origins',base,'-log-level','warn'],{cwd:root,stdio:['ignore','pipe','pipe']});
+ const child=spawn(resolve(process.env.UMA_SERVER_BIN ?? resolve(root,'bin/uma-server')),['-addr',`127.0.0.1:${port}`,'-data',data,'-content',resolve(process.env.UMA_CONTENT_DIR ?? resolve(root,'content')),'-web',resolve(root,'web/dist'),'-config',config,'-allowed-origins',base,'-log-level','warn'],{cwd:root,stdio:['ignore','pipe','pipe']});
  let log='';child.stdout.on('data',d=>{log+=d});child.stderr.on('data',d=>{log+=d});
  const exited=once(child,'exit');
  const contexts=[];
@@ -60,12 +61,12 @@ async function identity(context,base,name){
 try{
  await instance('selected',{deploymentMode:'lan',forms:{...forms,verified:true,friend:true},modes:modePolicy,limits:{playersPerRoom:4}},async({base,context})=>{
   const ctx=await context(),page=await ctx.newPage();page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(base);await page.getByRole('link',{name:'创建好友房间',exact:true}).waitFor();
-  check('selected: classic entry uses permitted challenge',await page.locator('a[href="/play/classic/verified"]').count()>0);
-  check('selected: sort entry uses permitted friend flow',await page.locator('a[href="/rooms/new?mode=sort"]').count()>0);
+  await page.goto(base);await page.getByRole('heading',{name:'训练员，来弗一把！',exact:true}).waitFor();
+  check('selected: home never falls through to remote solo',await page.locator('a[href="/play/classic/verified"]').count()===0);
+  await page.goto(`${base}/friends`);await page.locator('a[href="/rooms/new?mode=sort"]').waitFor();check('selected: friend hub uses permitted friend flow',await page.locator('a[href="/rooms/new?mode=sort"]').count()>0);
   check('selected: disabled match entry absent',await page.locator('a[href="/matchmaking"]').count()===0);
-  await page.getByRole('link',{name:'创建好友房间',exact:true}).click();await page.getByLabel('这局玩什么？',{exact:true}).waitFor();
-  const options=await page.locator('#friend-mode option').evaluateAll(els=>els.map(e=>e.value));
+  await page.locator('a[href="/rooms/new?mode=sort"]').click();await page.getByLabel('这局玩什么？',{exact:true}).waitFor();
+  const options=await (async()=>{await page.locator('#friend-mode').click();const values=await page.getByRole('option').evaluateAll(els=>els.map(e=>e.dataset.value));await page.keyboard.press('Escape');return values;})();
   check('selected: friend form offers only permitted mode',options.length===1&&options[0]==='sort',options);
   check('selected: configured participant cap reaches form',await page.getByLabel('最多几人参加？',{exact:true}).getAttribute('max')==='4');
   const call=await identity(ctx,base,'配置测试员');
@@ -77,12 +78,12 @@ try{
   check('selected: allowed friend request succeeds',allowed.status===201,allowed.status);
   // Practice routes also recover already prepared records. A configuration
   // switch refuses new pack distribution; it cannot revoke downloaded records.
-  await page.goto(`${base}/play/classic`);await page.getByRole('button',{name:'准备练习资料',exact:true}).waitFor();
+  await page.goto(`${base}/play/classic`);await page.getByRole('button',{name:'准备挑战资料',exact:true}).waitFor();
   const refused=page.waitForResponse(r=>r.url().includes('/practice-packs/')&&r.request().method()==='GET');
-  await page.getByRole('button',{name:'准备练习资料',exact:true}).click();
+  await page.getByRole('button',{name:'准备挑战资料',exact:true}).click();
   check('selected: disabled practice cannot obtain fresh pack',(await refused).status()===403);
   await page.getByRole('status').filter({hasText:'可以返回大厅'}).waitFor();
-  check('selected: preparation refusal gives player next step',await page.getByRole('button',{name:'开始练习',exact:true}).count()===0);
+  check('selected: preparation refusal gives player next step',await page.getByRole('button',{name:'开始挑战',exact:true}).count()===0);
   check('selected: player copy hides configuration location',findExecutionLocationWords(await readPlayerSurface(page)).length===0);
   await page.screenshot({path:resolve(evidence,'disabled-entry-390.png'),fullPage:true});
  });
@@ -91,15 +92,15 @@ try{
   await page.goto(base);await page.locator('a[href="/matchmaking"]').first().waitFor();
   check('matching: matching-only entry is reachable',await page.locator('a[href="/matchmaking"]').count()>0&&await page.getByRole('link',{name:'创建好友房间',exact:true}).count()===0);
   const one=await identity(a,base,'先排队'),two=await identity(b,base,'后排队');
-  const first=await one('/matchmaking-tickets',{modeConfig:classic}),second=await two('/matchmaking-tickets',{modeConfig:classic});
+  const first=await createMatchingTicket({call:(_method,path,body)=>one(path,body)}),second=await createMatchingTicket({call:(_method,path,body)=>two(path,body)});
   check('matching: matching-only policy permits both tickets',first.status===201&&second.status===201);
   await one(`/matchmaking-tickets/${first.body.ticketId}/responses`,{accept:true});
   const paired=await two(`/matchmaking-tickets/${second.body.ticketId}/responses`,{accept:true});
   check('matching: matching-only policy creates shared room',paired.status===201&&Boolean(paired.body.roomId));
   const start=await one(`/rooms/${paired.body.roomId}/rounds`,{});
-  check('matching: saved rules start while friend form closed',start.status===201&&start.body.modeId==='classic',start.status);
+  check('matching: confirmed room started automatically; participant cannot create another round',start.status===403,start.status);
   const room=await a.request.get(`${base}/api/v1/rooms/${paired.body.roomId}`);const snapshot=await room.json();
-  check('matching: public snapshot preserves purpose and mode',room.status()===200&&snapshot.kind==='matchmaking'&&snapshot.modeId==='classic');
+  check('matching: public snapshot preserves purpose and mode',room.status()===200&&snapshot.kind==='matchmaking'&&snapshot.modeId==='classic'&&snapshot.currentRound?.phase==='collecting');
  });
  check('No uncaught browser errors',errors.length===0,errors);
 }catch(error){checks.push({name:'execution',ok:false,detail:String(error)});console.error(error);}

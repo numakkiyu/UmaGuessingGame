@@ -21,6 +21,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/bhcn/umaguessinggame/internal/account"
 	"github.com/bhcn/umaguessinggame/internal/admission"
 	"github.com/bhcn/umaguessinggame/internal/challenge"
 	"github.com/bhcn/umaguessinggame/internal/deployment"
@@ -348,7 +349,7 @@ func run() error {
 	// connection every 150ms, which also delays every notification — including a
 	// revocation — by up to one tick. The dispatcher is what turns committed
 	// outbox rows into frames.
-	streamConfig := realtime.Config{MaxConnections: cfg.policy.Limits.Connections, MaxConnectionsPerRoom: cfg.policy.Limits.ConnectionsPerRoom, MaxConnectionsPerSession: cfg.policy.Limits.ConnectionsPerSession}
+	streamConfig := realtime.Config{AllowedOrigins: cfg.allowedOrigin, MaxConnections: cfg.policy.Limits.Connections, MaxConnectionsPerRoom: cfg.policy.Limits.ConnectionsPerRoom, MaxConnectionsPerSession: cfg.policy.Limits.ConnectionsPerSession}
 	hub, hubErr := realtime.NewHub(streamConfig)
 	if hubErr != nil {
 		return fmt.Errorf("build realtime hub: %w", hubErr)
@@ -378,7 +379,15 @@ func run() error {
 	if err != nil {
 		return fmt.Errorf("entry validation config: %w", err)
 	}
+	if cfg.policy.Accounts.Enabled && (!cfg.secureCookies || cfg.allowNoOrigin) {
+		return errors.New("accounts require secure cookies and strict Origin validation")
+	}
+	accounts, err := account.New(ctx, db, cfg.policy.Accounts)
+	if err != nil {
+		return err
+	}
 	srv := httpapi.New(httpapi.Deps{
+		Accounts:   accounts,
 		Admission:  entry,
 		Challenges: challenges,
 		// Cookie/origin policy is configured on the session service above, and the
@@ -387,22 +396,24 @@ func run() error {
 		// httpapi.Config would be settable and inert.
 		Config: httpapi.Config{
 			Limiter: httpapi.LimiterConfig{
-				MaxBuckets: cfg.policy.Limits.RateLimitBuckets,
+				MaxBuckets:   cfg.policy.Limits.RateLimitBuckets,
+				RequestPerIP: httpapi.Rate{PerMinute: cfg.policy.Limits.RequestPerIPMinute, BurstTokens: cfg.policy.Limits.RequestPerIPBurst},
 				SessionCreatePerIP: httpapi.Rate{PerMinute: cfg.policy.Limits.SessionCreatePerIPMinute,
 					BurstTokens: cfg.policy.Limits.SessionCreatePerIPBurst},
 			},
-			APIVersion:        "1",
-			RealtimeConfig:    streamConfig,
-			BuildVersion:      version,
-			SiteName:          "UmaGuessingGame",
-			DeploymentMode:    cfg.deployment,
-			MaxRoomMembers:    cfg.policy.Limits.PlayersPerRoom,
-			MaxRoomSpectators: cfg.policy.Limits.SpectatorsPerRoom,
-			DefaultTransport:  "auto",
-			TrustProxy:        cfg.trustProxy,
-			TrustedProxies:    cfg.trustedProxies,
-			MetricsLocalOnly:  cfg.metricsLocal,
-			RequestTimeout:    20 * time.Second,
+			APIVersion:            "1",
+			RealtimeConfig:        streamConfig,
+			BuildVersion:          version,
+			SiteName:              "UmaGuessingGame",
+			DeploymentMode:        cfg.deployment,
+			MaxRoomMembers:        cfg.policy.Limits.PlayersPerRoom,
+			MaxRoomSpectators:     cfg.policy.Limits.SpectatorsPerRoom,
+			DefaultTransport:      "auto",
+			TrustProxy:            cfg.trustProxy,
+			TrustedProxies:        cfg.trustedProxies,
+			MetricsLocalOnly:      cfg.metricsLocal,
+			RequestTimeout:        20 * time.Second,
+			MaxConcurrentRequests: cfg.policy.Limits.APIRequests,
 		},
 		Logger:   log,
 		Metrics:  metrics,
@@ -433,6 +444,7 @@ func run() error {
 		Addr:              cfg.addr,
 		Handler:           rootHandler,
 		ReadHeaderTimeout: 10 * time.Second,
+		ReadTimeout:       20 * time.Second,
 		// A streaming response is long-lived, so WriteTimeout must be zero; the
 		// per-request context timeout bounds handler work instead.
 		WriteTimeout:   0,

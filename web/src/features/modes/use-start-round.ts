@@ -1,3 +1,4 @@
+import "@/i18n/entry";
 // Each startup step retains its own body and request key for retries after an uncertain response
 import { useCallback, useRef, useState } from "react";
 import { useNavigate } from "react-router";

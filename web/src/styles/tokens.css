@@ -1,33 +1,27 @@
-
-
 @theme {
 
-  /* page #EDF7FF 上 ink #1F3655 = 11.27:1，muted #526B87 = 5.08:1 */
-  --color-page: #edf7ff;
-  --color-page-tint: #e5f4ff;
-  /* panel #FFFFFF 上 ink = 12.23:1，muted = 5.51:1 */
+  /* 淡绿页面基底，场景图保持低不透明度 */
+  --color-page: #f4f8ed;
+  --color-page-tint: #eef5e5;
+  /* 正文区域使用白色面板 */
   --color-panel: #ffffff;
-  --color-panel-soft: #f5fbff;
+  --color-panel-soft: #f7faf3;
 
-  --color-ink: #1f3655;
-  /* 状态底上的深字：correct #4FB85F 上 6.29:1、near #F1C550 上 9.68:1、wrong #8D98AB 上 5.43:1 */
+  --color-ink: #304739;
   --color-ink-strong: #12233a;
-  --color-muted: #526b87;
+  --color-muted: #5a705e;
   --color-name-secondary: #52525b;
 
-  /* brand-green 只作强调/选中底，必须配深色文字：ink on #97D81C = 7.08:1 */
+  /* 亮绿用于装饰和选中底，操作按钮使用深绿 */
   --color-brand-green: #97d81c;
-  --color-brand-green-soft: #dcf6a3;
-  /* 需要白字的深绿按钮：白 on #367A16 = 5.31:1；hover #2C6212 = 7.34:1 */
+  --color-brand-green-soft: #e4f1d3;
   --color-action-green: #367a16;
   --color-action-green-hover: #2c6212;
 
-  /* blue #3F88F7 对白仅 3.46:1，只用于非文本强调/边界；正文链接用 blue-deep */
+  /* 深蓝用于链接与焦点环 */
   --color-blue: #3f88f7;
-  /* blue-deep on panel 5.87:1、on page 5.41:1，可作正文链接与焦点环 */
   --color-blue-deep: #255fcb;
 
-  /* gold 配深色文字：ink on #F3C754 = 7.63:1 */
   --color-gold: #f3c754;
   /* Sakura is decorative and must remain distinct from result colors */
   --color-sakura: #f2a0b8;
@@ -37,28 +31,21 @@
   --color-correct: #4fb85f;
   --color-near: #f1c550;
   --color-wrong: #8d98ab;
-  /* 三态关键边界：对 panel 分别为 4.57 / 3.38 / 4.54:1，满足非文本 ≥3:1 */
   --color-correct-edge: #358546;
   --color-near-edge: #b0851a;
   --color-wrong-edge: #6b7789;
 
-  /* 装饰性细分隔线：对 panel 1.49:1，只作视觉分区，不承担语义边界 */
-  --color-line: #c3d6ea;
-  /* 需要满足 ≥3:1 的输入框/控件边界：对 panel 3.62:1、对 page 3.34:1 */
-  --color-line-strong: #6b89ac;
+  /* 淡色分隔线与深色控件边界分别使用 */
+  --color-line: #d8e4cf;
+  --color-line-strong: #78936b;
 
-  /* 错误色：on panel 6.54:1、on page 6.02:1 */
+  /* 错误文字搭配浅红背景 */
   --color-danger: #b3261e;
   --color-danger-soft: #fdecea;
 
 
-  /* 不联网加载字体，全部走系统栈回退 */
-  --font-sans:
-    "HarmonyOS Sans SC", "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC",
-    "Microsoft YaHei UI", "Hiragino Sans GB", sans-serif;
-  --font-numeric:
-    "DIN Alternate", "Bahnschrift SemiCondensed", "Yu Gothic UI", ui-sans-serif, system-ui,
-    sans-serif;
+  --font-sans: var(--uma-font);
+  --font-numeric: var(--uma-font);
 
   /* 辅助文字最低 13px/1.5；正文 16px/1.6 由 base 层强制 */
   --text-aux: 0.8125rem;
@@ -162,7 +149,7 @@
 }
 
 /*
- * 高度变体（ ：viewport height <600px 时主控不悬空占半屏）。
+ * 高度不足 600px 时缩减辅助内容，为主要操作留出空间。
  * 用 @custom-variant 暴露给 Tailwind，让短屏能隐藏非必要元素，
  * 把游戏反馈优先放进首屏。
  */

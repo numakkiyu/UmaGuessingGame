@@ -4,6 +4,7 @@ import { MemoryRouter,Routes,Route } from "react-router";
 import { changeLanguage } from "@/i18n";
 import { ApiError } from "@/lib/api/client";
 import { EventDisplayPage } from "./event-display-page";
+import { dismissFault } from "@/test/dismiss-fault";
 const f=vi.hoisted(()=>({api:{getEvent:vi.fn(),redeemDisplayGrant:vi.fn()},data:{} as Record<string,unknown>}));
 vi.mock("@/lib/api",()=>({useApi:()=>({api:f.api})}));
 vi.mock("@/features/events/use-event-data",async original=>({...await original<object>(),useEventData:()=>f.data}));
@@ -32,7 +33,7 @@ it("unknown redemption is not retried; explicit read restores a lost response",a
  expect(f.api.redeemDisplayGrant).toHaveBeenCalledExactlyOnceWith({grantCode:"example-pair-code-1234",eventId:"e"});
  await act(async()=>{await changeLanguage("zh-Hant");});expect(f.api.redeemDisplayGrant).toHaveBeenCalledTimes(1);
  f.api.getEvent.mockResolvedValueOnce({data:{eventId:"e"}});
- fireEvent.click(screen.getByRole("button",{name:"查看配對狀態"}));await screen.findByRole("heading",{name:"伙伴杯"});
+ fireEvent.click(screen.getByRole("button",{name:"檢視配對狀態"}));await screen.findByRole("heading",{name:"伙伴杯"});
  expect(document.body.textContent).not.toContain("secret network trace");expect(JSON.stringify(sessionStorage)).not.toContain("example-pair-code-1234");
 });
 it("deduplicates pending redemption and relocalizes known mismatch without changing original code",async()=>{
@@ -42,7 +43,7 @@ it("deduplicates pending redemption and relocalizes known mismatch without chang
  const form=screen.getByRole("textbox").closest("form")!;fireEvent.submit(form);fireEvent.submit(form);
  expect(f.api.redeemDisplayGrant).toHaveBeenCalledTimes(1);
  await act(async()=>{reject(new ApiError({status:409,code:"grant-event-mismatch",message:"private",requestId:null}));});
- await screen.findByText(/属于另一个活动/);await act(async()=>{await changeLanguage("ja");});expect(screen.getByText(/別のイベント/)).toBeTruthy();expect((screen.getByRole("textbox") as HTMLInputElement).value).toBe("example-pair-code-1234");
+ await screen.findByText(/属于另一个活动/);await act(async()=>{await changeLanguage("ja");});expect(screen.getByText(/別のイベント/)).toBeTruthy();await dismissFault();expect((screen.getByRole("textbox") as HTMLInputElement).value).toBe("example-pair-code-1234");
 });
 it("cookie-backed refresh shows tied scores and room IDs, cancelled event never mounts old round",async()=>{
  f.api.getEvent.mockResolvedValue({data:{eventId:"e"}});

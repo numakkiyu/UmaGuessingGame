@@ -9,6 +9,7 @@ import (
 	"time"
 
 	"github.com/bhcn/umaguessinggame/internal/httpapi/problem"
+	"github.com/bhcn/umaguessinggame/internal/jsoninput"
 	"github.com/bhcn/umaguessinggame/internal/room"
 )
 
@@ -111,6 +112,9 @@ func problemTooLarge() error { return problem.TooLarge(maxBodyBytes) }
 func decodeJSON(dst any, raw []byte) error {
 	if len(raw) == 0 {
 		return problem.BadRequest("body-required", "a JSON request body is required")
+	}
+	if err := jsoninput.ValidateObject(raw); err != nil {
+		return problem.BadRequest("invalid-json", "the request body must be one JSON object with unique fields and bounded depth")
 	}
 	dec := json.NewDecoder(bytes.NewReader(raw))
 	dec.DisallowUnknownFields()

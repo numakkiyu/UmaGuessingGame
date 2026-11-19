@@ -321,8 +321,8 @@ func SectionSchemas() []SectionSchema {
 			Section:    SectionAudioClips,
 			Mode:       ModeAudio,
 			Kind:       "array",
-			ItemFields: []string{"characterId", "audioUrl", "jp", "chs", "cht", "hasLocalFile"},
-			Notes:      "audioUrl is the upstream wiki CDN address recorded in the snapshot. hasLocalFile is true only when a non-empty clip exists under data/assets/audio; the mode needs a decodable local file, so a recorded URL alone is not material.",
+			ItemFields: []string{"characterId", "audioUrl", "jp", "chs", "cht", "hasLocalFile", "clipId", "characterName", "audioPath", "durationMillis", "byteLength", "sha256", "transcript", "speakerVerified", "reviewed", "decodable"},
+			Notes:      "The curated pool includes source attribution, verified local media metadata and review flags. Only decodable, reviewed local clips are admitted. This server-side section includes answers; live rounds publish opaque clip identifiers and media routes without speaker mappings or transcripts.",
 		},
 	}
 }

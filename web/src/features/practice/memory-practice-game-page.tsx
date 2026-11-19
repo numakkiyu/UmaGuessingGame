@@ -1,3 +1,5 @@
+import { subscribePracticeChanges } from "@/lib/local/practice-channel";
+import { GameStage } from "@/components/uma/game-stage";
 import { useConfirmation } from "@/lib/confirmation";
 import "@/i18n/practice-flow";
 import { useTranslation } from "@/i18n";
@@ -29,7 +31,7 @@ export function MemoryPracticeGamePage() {
     })();
     return () => { cancelled = true; };
   }, [gameId]);
-  if (error?.gameId === gameId) return <div className="uma-stack"><Alert tone="warning" title={tp("missingTitle")}>{resolvePlayerText(error.message)}</Alert><Button asChild variant="secondary"><Link to="/play/memory">{tp("back")}</Link></Button></div>;
+  if (error?.gameId === gameId) return <div className="uma-stack"><Alert fault tone="warning" title={tp("missingTitle")}>{resolvePlayerText(error.message)}</Alert><Button asChild variant="secondary"><Link to="/play/memory">{tp("back")}</Link></Button></div>;
   if (!archive || archive.game.gameId !== gameId) return <LoadingBlock label={tp("loadingGame")} rows={3} />;
   return <MemoryPracticeGame key={gameId} initial={archive} />;
 }
@@ -40,7 +42,7 @@ function MemoryPracticeGame({ initial }: { initial: MemoryArchive }) {
   const navigate = useNavigate(), [game, setGame] = useState(initial.game), [now, setNow] = useState(Date.now);
   const [busy, setBusy] = useState(false), [stale, setStale] = useState(false), [saved, setSaved] = useState(() => !volatileMemoryGames.has(initial.game.gameId));
   const [media, setMedia] = useState<"loading" | "ready" | "error">("loading"), [retry, setRetry] = useState(0);
-  const inFlight = useRef(false), current = useRef(game);
+  const inFlight = useRef(false), current = useRef(game), lastSaved = useRef<number|null>(volatileMemoryGames.has(initial.game.gameId)?volatileMemoryGames.get(initial.game.gameId)?.savedRevision??null:initial.game.revision);
   const faces = useMemo(() => readMemoryPack(initial.pack).faces, [initial.pack]);
   const state = memoryState(game, now), beforeStart = game.startedAt === null && !state.finished;
   const confirmAction = useConfirmation(`${game.gameId}:${game.revision}:${stale}:${busy}:${state.finished}`);
@@ -62,19 +64,13 @@ function MemoryPracticeGame({ initial }: { initial: MemoryArchive }) {
     return () => { cancelled = true; cleanups.forEach(cleanup => cleanup()); };
   }, [boardImages, retry]);
   useEffect(() => {
-    if (typeof BroadcastChannel === "undefined") return;
-    const channel = new BroadcastChannel(ACTIVITY_CHANNEL);
-    channel.onmessage = event => {
-      const data = event.data as { gameId?: string; writerId?: string };
-      if (data.gameId === initial.game.gameId && data.writerId !== practiceWriterId) setStale(true);
-    };
-    return () => channel.close();
+    return subscribePracticeChanges(ACTIVITY_CHANNEL, data => { if (data.gameId === initial.game.gameId && data.writerId !== practiceWriterId) setStale(true); });
   }, [initial.game.gameId]);
   async function commit(next: MemoryGame) {
-    try { await memoryStore.save(next, initial.pack, current.current.revision); setSaved(true); volatileMemoryGames.delete(next.gameId); }
+    try { await memoryStore.save(next, initial.pack, lastSaved.current); lastSaved.current = next.revision; setSaved(true); volatileMemoryGames.delete(next.gameId); }
     catch (error) {
       if (error instanceof PracticeConflict) { setStale(true); throw error; }
-      volatileMemoryGames.set(next.gameId, { ...initial, game: next }); setSaved(false);
+      volatileMemoryGames.set(next.gameId, { ...initial, game: next, savedRevision:lastSaved.current }); setSaved(false);
     }
     current.current = next; setGame(next); setNow(Date.now());
   }
@@ -109,7 +105,7 @@ function MemoryPracticeGame({ initial }: { initial: MemoryArchive }) {
     } catch { setMessage("exportFailed"); }
   }
   const remaining = game.startedAt === null ? null : Math.max(0, Math.ceil(((state.viewing ? game.startedAt + VIEW_MS : state.deadlineAt!) - now) / 1000));
-  return <div className="mx-auto w-full max-w-5xl space-y-4">
+  return <GameStage mode="memory" className="mx-auto w-full max-w-5xl space-y-4">
     <header className="border-b border-[var(--color-line)] pb-4"><Link to="/play/memory" className="text-sm font-semibold text-[var(--color-blue-deep)]">{tp("practice")}</Link><div className="mt-2 flex flex-wrap items-center justify-between gap-2"><h1 className="u-fluid-task">{t("title")}</h1><p className="font-bold tabular-nums text-[var(--color-action-green)]">{state.finished ? tp("ended") : beforeStart ? t("beforeStart") : t(state.viewing ? "viewingTime" : "answeringTime",{count:remaining ?? 0})}</p></div></header>
     {!saved ? <Alert tone="warning" title={tp("unsaved")}>{tp("unsavedDetail")}</Alert> : null}
     {stale ? <Alert tone="warning" title={tp("stale")} action={<Button variant="secondary" onClick={() => window.location.reload()}>{tp("reload")}</Button>}>{tp("staleDetail")}</Alert> : null}
@@ -129,5 +125,5 @@ function MemoryPracticeGame({ initial }: { initial: MemoryArchive }) {
         <div className="flex flex-wrap gap-2"><Button variant="secondary" onClick={exportRecord}><Download className="size-4" aria-hidden="true" />{tp("export")}</Button>{!state.finished ? <Button variant="ghost" onClick={() => void action("finish")} disabled={busy || stale}><Flag className="size-4" aria-hidden="true" />{tp("finish")}</Button> : null}</div>
       </aside>
     </div>
-  </div>;
+  </GameStage>;
 }

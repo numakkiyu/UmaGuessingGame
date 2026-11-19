@@ -1,3 +1,5 @@
+import { roomDisplayName } from "@/lib/room-display-name";
+import { GameStage } from "@/components/uma/game-stage";
 import "@/i18n/grid-online";
 import {useTranslation} from "@/i18n";
 import {axisName,aptitudeValue} from "@/i18n/aptitude-values";
@@ -85,10 +87,10 @@ export function AptitudeGridRoundPage() {
  const info=failure ? mappedError ? {...failure,title:t("errorTitle"),detail:mappedError} : rejected ? {...failure,title:t("rejectedTitle"),detail:t("rejectedDetail")} : localizeFailure(failure) : null;
  function pick(next:Choice){if(!canAct||busy)return;setChoice(next);saveChoice(scope,next);setNotice("");}
  async function claim(retry=false){
-  if(!roundId||!round||command.busy||refreshing)return;
-  if(!retry&&(!canAct||busy||!selectedCell||selectedCell.claim||!selectedCard||used.has(selectedCard.id)))return;
+  if(!roundId||command.busy||refreshing)return;
+  if(!retry&&(!round||!canAct||busy||!selectedCell||selectedCell.claim||!selectedCard||used.has(selectedCard.id)))return;
   const body:GridClaimCommand|undefined=retry?undefined:{phaseVersion:snapshot.meta!.phaseVersion,submissionRevision:snapshot.submissionRevision,controlGeneration:snapshot.controlGeneration,modeAction:{kind:"grid.claim",cellId:selectedCell!.cellId,characterId:selectedCard!.id}};
-  const original=body??command.pending?.body,action=original?.modeAction,target=action?.kind==="grid.claim"?round.cells.find(c=>c.cellId===action.cellId):null;
+  const original=body??command.pending?.body,action=original?.modeAction,target=action?.kind==="grid.claim"?round?.cells.find(c=>c.cellId===action.cellId):null;
   setRefreshing(true);setFailure(null);setErrorCode("");setRejected(false);setNotice("");
   try{
    const result=await command.run(body);if(!result)return;
@@ -101,8 +103,8 @@ export function AptitudeGridRoundPage() {
  if(roomQuery.isLoading)return <LoadingBlock label={t("loadingRoom")} rows={3}/>;
  if(roomQuery.isError){const failure=describeFailure(roomQuery.error);return failure.kind==="forbidden"?<ForbiddenView failure={failure} onRetry={()=>void roomQuery.refetch()}/>:<ErrorView failure={failure} onRetry={()=>void roomQuery.refetch()}/>;}
  const connectionStatus=realtime.status==="online"?"online":realtime.status==="connecting"||realtime.status==="reconnecting"?"reconnecting":realtime.status==="stale"?"stale":"offline";
- return <div className="uma-stack">
-  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={connectionStatus} detail={roomQuery.data?.room.name??t("room")}/>
+ return <GameStage mode="aptitude-grid" className="uma-stack">
+  <TeamRoundControl room={roomQuery.data?.room} raw={snapshot.raw} onChanged={snapshot.refetch}/><ConnectionBar status={connectionStatus} detail={roomDisplayName(roomQuery.data?.room, t("room"))}/>
   <section className="uma-panel p-4"><div className="flex flex-wrap items-start justify-between gap-3"><div className="min-w-0"><h1 className="u-fluid-task">{t("title")}</h1><p className="mt-1 text-sm text-[var(--color-muted)]">{phaseLabel(currentPhase)} · {t(duel?"duel":"challenge")} · {t("occupied",{count:round?.cells.filter(c=>c.claim).length??0})}</p></div>{collecting&&snapshot.meta?.deadlineAt&&!ended ? <div className="flex shrink-0 flex-col items-end"><span className="text-xs text-[var(--color-muted)]">{t(duel?"turnRemaining":"remaining")}</span><span className={cn("uma-code text-2xl font-bold tabular-nums",countdown.expired?"text-[var(--color-danger)]":"text-[var(--color-ink)]")} aria-live="off">{countdown.text}</span></div>:null}</div></section>
   {command.pending&&!command.busy?<Alert tone="warning" title={t("confirmTitle")}><p>{t("confirmDetail")}</p><Button variant="secondary" className="h-auto min-h-12 whitespace-normal" disabled={refreshing} onClick={()=>void claim(true)}>{t("confirmAction")}</Button></Alert>:null}
   {command.expired?<Alert tone="warning" title={t("expiredTitle")}><p>{t("expiredDetail")}</p><Button variant="secondary" onClick={()=>{void snapshot.refetch().then(ok=>{if(ok)command.acknowledgeExpired();});}}>{t("latest")}</Button></Alert>:null}
@@ -126,7 +128,7 @@ export function AptitudeGridRoundPage() {
    <aside className="uma-stack uma-stack--tight min-w-0">{!ended?<PoolPicker pool={round.pool} selectedCell={selectedCell} selectedCardId={choice.characterId} disabled={busy||!canAct} used={used} onPick={id=>pick({...choice,characterId:id})}/>:null}<section className="uma-card p-4"><h2 className="text-base font-bold">{t("rules")}</h2><ul className="mt-2 space-y-1.5 text-sm leading-6 text-[var(--color-muted)]"><li>{t(duel?"duelRule":"challengeRule")}</li>{duel?<li>{t("turnRule")}</li>:null}<li>{t("uniqueRule")}</li><li>{t("hiddenRule")}</li>{round.self?<li>{t("mine",{count:round.self.claims.length})}</li>:null}</ul></section><Button variant="secondary" block disabled={command.busy||refreshing} onClick={()=>void snapshot.refetch()}><RotateCcw aria-hidden="true" className="size-4"/>{t("refresh")}</Button><Button asChild variant="secondary" block><Link to={`/rooms/${roomId}`}>{t("back")}</Link></Button></aside>
   </div>:null}
   {ended&&round?<GridResult round={round} cancelled={currentPhase==="cancelled"} labelFor={labelFor} scores={parseGridScores(resultsOf(snapshot.raw))}/>:null}
- </div>;
+ </GameStage>;
 }
 
 export type GridScore={subjectId:string;scoreUnits:number;rank:number|null};

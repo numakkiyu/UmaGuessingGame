@@ -1,14 +1,16 @@
 
 import type { ComponentProps } from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/i18n";
 
 export function Table({ className, containerClassName, ...props }: ComponentProps<"table"> & { containerClassName?: string }) {
+  const { t } = useTranslation("common");
   return (
     <div
       className={cn("uma-scroll-x w-full rounded-[var(--radius-card)] border border-[var(--color-line)]", containerClassName)}
       tabIndex={0}
       role="region"
-      aria-label="数据表格，可横向滚动"
+      aria-label={t("access.tableScroll")}
     >
       <table className={cn("w-full border-collapse text-left text-sm", className)} {...props} />
     </div>

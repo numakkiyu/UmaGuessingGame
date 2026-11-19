@@ -87,3 +87,32 @@ func TestRoomPublicationRejectsConnectionMessages(t *testing.T) {
 		}
 	}
 }
+
+func TestRecoveryRevokesOnlyTheTransferredBinding(t *testing.T) {
+	h := newTestHub(t, nil)
+	old := identity("room-recovery", "seat-old", "device-old", "player")
+	target := newFakeSSETransport()
+	subscribe(t, h, old, "", target)
+	target.waitType(t, TypeHello, time.Second)
+	for _, ident := range []Identity{
+		identity("room-other", "seat-other", "device-old", "player"),
+		identity("room-recovery", "seat-new", "device-old", "player"),
+		identity("room-recovery", "seat-old", "device-new", "player"),
+	} {
+		tr := newFakeSSETransport()
+		subscribe(t, h, ident, "", tr)
+		tr.waitType(t, TypeHello, time.Second)
+		defer func() {
+			select {
+			case <-tr.closed:
+				t.Error("unrelated binding was closed")
+			default:
+			}
+		}()
+	}
+	if n := h.RevokeIdentity(old, "authorization-changed"); n != 1 {
+		t.Fatalf("revoked %d bindings", n)
+	}
+	target.waitType(t, TypeSessionRevoked, time.Second)
+	target.waitClosed(t, time.Second)
+}

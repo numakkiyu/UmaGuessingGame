@@ -27,6 +27,10 @@ const BANNED = [
   "WebSocket", "轮询降级", "outbox", "roomVersion", "phaseVersion", "epoch",
   // 存储和部署
   "SQLite", "WAL", "Docker",
+  // 功能说明直接写用途与状态。
+  "保留品牌预设", "保留品牌預設", "品牌预设", "品牌預設",
+  "示例成绩", "範例成績", "示例榜单", "範例榜單", "预览账户", "預覽帳號",
+  "仅供预览", "僅供預覽", "プレビュー用", "サンプルスコア",
   // 开发进度和验收
   "骨架已就绪", "待联调", "占位实现", "全绿", "兜底策略",
   // 明确的「还没做」措辞：未完成状态不作为可用玩法展示
@@ -34,11 +38,32 @@ const BANNED = [
   // 原始错误
   "HTTP 403", "HTTP 500", "异常堆栈",
   // 助手自述
-  "作为 AI", "根据你的需求", "我已为你", "希望能帮到你",
+  "作为 AI", "作為 AI", "AIとして", "根据你的需求", "根據你的需求", "ご要望に応じて", "我已为你", "希望能帮到你",
   // 空泛宣传
   "赋能", "全方位", "全面提升", "丝滑闭环", "极致体验", "沉浸式盛宴",
   // 编号措辞：界面使用「问题编号」，「诊断编号」是开发用语
   "诊断编号",
+];
+
+// Catalog values are interface text; internal parsers and diagnostics may still
+// use these words to describe data rather than to instruct players.
+const CATALOG_BANNED = [
+  "字段", "欄位資料未知", "快照", "基线", "總預測槽數", "总预测槽数", "全予想枠数",
+  "首版关闭", "只读大屏", "唯讀展示畫面", "正在校验", "界面还没做好",
+  "再试一次通常就好", "同样的内容再提交还是会被拒绝", "不奖励下载速度",
+  "旧的游玩流程", "舊的遊玩流程", "以前の進め方", "空投票阶段", "空投票階段", "空の投票時間",
+  "max(20", "三维计分", "三維計分", "あなたの側", "参加枠一つにつき",
+  "下载速度没有额外加分", "下載速度沒有額外加分", "ダウンロードの速さで得点",
+  "无法防止另外录音", "不保证阻止录音", "無法保證阻止錄音", "録音や音声の保存を防ぐものでは",
+  "候选马池", "候選馬池", "提交修订",
+  "指定用词不会随语言切换改变", "指定用詞不會隨語言切換改變",
+  "切换语言不会改变线索含义", "切換語言不會改變線索含義",
+  // Reviewed explanatory detours; actual rules, rights and privacy distinctions stay allowed.
+  "不把故障当作答错", "不把故障當作答錯",
+  "不是官方人格或人气排名", "不代表官方角色性格或人氣排名",
+  "不是最终成绩，也不代表原作胜率", "並非最終成績，也不代表原作勝率",
+  "公式のキャラクター設定や人気順位を表すものではありません",
+  "最終得点や原作での勝率を示すものではありません",
 ];
 
 /* 必要故障诊断仅按具体文案豁免，主提示仍需独立可理解，不得包含凭证、路径、堆栈或答案 */
@@ -105,11 +130,12 @@ export function extractVisibleStrings(source, filename = "copy.tsx") {
 export function findViolations(source, filename = "copy.tsx") {
   const strings = extractVisibleStrings(source, filename);
   const violations = [];
+  const banned = /(?:^|[/\\])i18n[/\\]/.test(filename) ? [...BANNED, ...CATALOG_BANNED] : BANNED;
   for (const { text, line } of strings) {
     for (const word of findExecutionLocationWords(text)) {
       violations.push({ line, word, text: text.slice(0, 100) });
     }
-    for (const word of BANNED) {
+    for (const word of banned) {
       if (ALLOWED_DIAGNOSTIC_CONTEXT.some(allowed => text.includes(allowed) && word === allowed)) continue;
       if (text.includes(word)) violations.push({ line, word, text: text.slice(0, 100) });
     }
@@ -119,6 +145,7 @@ export function findViolations(source, filename = "copy.tsx") {
 
 async function main() {
 const files = await collectFiles(SRC);
+files.push(resolve(HERE, "../public/browser-notice.js"));
 const violations = [];
 let scannedStrings = 0;
 

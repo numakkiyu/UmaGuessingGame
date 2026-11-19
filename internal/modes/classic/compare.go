@@ -486,9 +486,9 @@ func parseCharacter(fm modeutil.FieldMap) (Character, bool) {
 //
 // The pack publishes two pools: "cards" is the competitive pool with ambiguous
 // nine-field vectors already removed, and "practiceCards" is the wider pool that
-// still contains them, each tagged with ambiguityGroup. A practice round draws
-// from the wider pool; a competitive round must not, because two characters with
-// identical feedback cannot be told apart .
+// still contains them, each tagged with ambiguityGroup. Competitive answers use
+// the narrower pool; guesses may use the wider pool without making those
+// characters eligible answers.
 func loadCharacters(src modes.ContentSource, practice bool) ([]Character, error) {
 	raw, err := modeutil.Section(src, "classic.characters", "classic", "characters")
 	if err != nil {

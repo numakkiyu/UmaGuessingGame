@@ -2,6 +2,7 @@ package room
 
 import (
 	"context"
+	"crypto/subtle"
 	"database/sql"
 	"encoding/json"
 	"errors"
@@ -50,12 +51,15 @@ func (s *Service) Join(ctx context.Context, sessionID, roomID string, in JoinInp
 	if err != nil {
 		return Membership{}, err
 	}
+	if room.Config.Kind == "matchmaking" {
+		return Membership{}, problem.Forbidden("matchmaking-reserved", "only matched participants can enter this room")
+	}
 	if room.Config.Kind == "solo" && sessionID != room.OwnerID {
 		return Membership{}, problem.Forbidden("solo-room", "solo play cannot admit another member")
 	}
 	// The code must match this room. Comparing inside the transaction keeps the
 	// check and the insert atomic.
-	if room.InviteCode == "" || !strings.EqualFold(room.InviteCode, code) {
+	if room.InviteCode == "" || subtle.ConstantTimeCompare([]byte(strings.ToUpper(room.InviteCode)), []byte(code)) != 1 {
 		return Membership{}, problem.Forbidden("invitation-invalid",
 			"the invitation code does not grant access to this room")
 	}
@@ -68,6 +72,9 @@ func (s *Service) Join(ctx context.Context, sessionID, roomID string, in JoinInp
 			"the room has already started; new members cannot join")
 	}
 
+	if err = s.checkAccountSeat(ctx, tx, sessionID, roomID, room.Config.Kind); err != nil {
+		return Membership{}, err
+	}
 	// Capacity is enforced against active memberships inside the transaction so
 	// two simultaneous joins cannot both pass a stale count.
 	var players, spectators int
@@ -163,7 +170,7 @@ func (s *Service) UpdateMembership(ctx context.Context, actor Actor, membershipI
 		return Membership{}, problem.Internal(fmt.Errorf("room: begin patch membership: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Membership{}, err
 	}
 
@@ -344,7 +351,7 @@ func (s *Service) LeaveOrRemoveMembership(ctx context.Context, actor Actor, memb
 		return problem.Internal(fmt.Errorf("room: begin leave: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return err
 	}
 
@@ -533,7 +540,7 @@ func (s *Service) CreateTeam(ctx context.Context, actor Actor, label, color stri
 		return Team{}, problem.Internal(fmt.Errorf("room: begin create team: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return Team{}, err
 	}
 
@@ -602,7 +609,7 @@ func (s *Service) IssueControlLease(ctx context.Context, actor Actor, in IssueCo
 		return ControlLease{}, problem.Internal(fmt.Errorf("room: begin lease: %w", err))
 	}
 	defer tx.Rollback()
-	if err := validateControllerQ(ctx, tx, actor); err != nil {
+	if err := s.validateControllerQ(ctx, tx, actor); err != nil {
 		return ControlLease{}, err
 	}
 

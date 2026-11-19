@@ -20,7 +20,7 @@ func (p *audioPracticeIndex) Section(name string) (json.RawMessage, bool) {
 	}
 	clips := []any{}
 	for i := 0; i < 8; i++ {
-		clips = append(clips, map[string]any{"clipId": fmt.Sprintf("clip-%d", i), "characterId": fmt.Sprintf("char-%d", i), "characterName": fmt.Sprintf("合成角色%d", i), "audioPath": fmt.Sprintf("/assets/audio/tone-%d.mp3", i), "durationMillis": 1000, "byteLength": 99, "sha256": strings.Repeat("a", 64), "transcript": "合成测试音，不是真实台词", "decodable": true, "speakerVerified": true, "reviewed": true, "audioUrl": "DO_NOT_EXPORT", "reviewer": "DO_NOT_EXPORT"})
+		clips = append(clips, map[string]any{"clipId": fmt.Sprintf("clip-%d", i), "characterId": fmt.Sprintf("char-%d", i), "characterName": fmt.Sprintf("合成角色%d", i), "audioPath": fmt.Sprintf("/assets/audio/tone-%d.webm", i), "durationMillis": 1000, "byteLength": 99, "sha256": strings.Repeat("a", 64), "transcript": "合成测试音，不是真实台词", "decodable": true, "speakerVerified": true, "reviewed": true, "audioUrl": "DO_NOT_EXPORT", "reviewer": "DO_NOT_EXPORT"})
 	}
 	b, _ := json.Marshal(clips)
 	return b, true

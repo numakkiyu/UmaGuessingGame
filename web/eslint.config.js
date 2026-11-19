@@ -22,6 +22,11 @@ export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
+    files: ["public/browser-support.js", "public/browser-notice.js"],
+    languageOptions: { ecmaVersion: 5, sourceType: "script", globals: globals.browser },
+    rules: { "@typescript-eslint/no-unused-vars": ["error", { caughtErrors: "none" }] },
+  },
+  {
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2023,
