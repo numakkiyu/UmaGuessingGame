@@ -70,6 +70,9 @@ jobs:
       - name: Vet
         run: go vet ./...
 
+      - name: Compile content for integration tests
+        run: go run ./cmd/content build --out content
+
       - name: Test with race detection and coverage
         run: |
           go test ./... -count=1 -race -covermode=atomic -coverprofile=coverage.out
