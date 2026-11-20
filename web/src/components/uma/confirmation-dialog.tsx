@@ -25,12 +25,12 @@ export function ConfirmationDialog() {
       }}
       onPointerDownOutside={event => event.preventDefault()}>
       <DialogHeader>
-        <DialogTitle>{t(`confirmation.${request.kind}.title`)}</DialogTitle>
+        <DialogTitle>{request.labels ? resolvePlayerText(request.labels.title) : t(`confirmation.${request.kind}.title`)}</DialogTitle>
         <DialogDescription className="mt-2 break-words">{resolvePlayerText(request.message)}</DialogDescription>
       </DialogHeader>
       <DialogFooter>
         <Button ref={cancel} variant="secondary" size="primary" className="h-auto min-h-12 whitespace-normal" onClick={() => answer(false)}>{t("confirmation.cancel")}</Button>
-        <Button variant={request.kind === "remove" ? "danger" : "primary"} size="primary" className="h-auto min-h-12 whitespace-normal" onClick={() => answer(true)}>{t(`confirmation.${request.kind}.action`)}</Button>
+        <Button variant={request.kind === "remove" ? "danger" : "primary"} size="primary" className="h-auto min-h-12 whitespace-normal" onClick={() => answer(true)}>{request.labels ? resolvePlayerText(request.labels.action) : t(`confirmation.${request.kind}.action`)}</Button>
       </DialogFooter>
     </DialogContent>
   </Dialog>;

@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-7753a3?style=flat-square" alt="MIT"></a>
-<a href="docs/ja/玩法与规则.md"><img src="https://img.shields.io/badge/Modes-14%20open%20%2F%2015%20engines-609570?style=flat-square" alt="14 open modes / 15 engines"></a>
+<a href="docs/ja/玩法与规则.md"><img src="https://img.shields.io/badge/Modes-15%20available-609570?style=flat-square" alt="15 available modes"></a>
 <img src="https://img.shields.io/badge/Languages-zh--Hans%20%2F%20zh--Hant%20%2F%20ja-5583a1?style=flat-square" alt="简体中文 / 繁體中文 / 日本語">
 <a href="docs/ja/快速开始.md"><img src="https://img.shields.io/badge/PC%20%26%20Mobile-Responsive-bb7a61?style=flat-square" alt="PC and mobile"></a>
 </p>
@@ -28,6 +28,8 @@
 <a id="play"></a>
 
 ## 遊び方ガイド
+
+[ウマ娘知識テスト](docs/ja/玩法与规则.md#ウマ娘知識テスト)では、全身イラストを見て名前とプロフィールを答えます。毎回ランダムに 20 人を出題し、提出後に評価と答え合わせを確認できます
 
 現在の問題パックは 14 種目に対応。「にせプロフィール発表会」は事実の確認中です。種目と遊び方はサイトごとに設定できます
 

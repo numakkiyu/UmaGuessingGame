@@ -2,7 +2,8 @@ import { useCallback, useLayoutEffect, useRef } from "react";
 import type { PlayerText } from "@/i18n/player-text";
 
 export type ConfirmationKind = "finish" | "remove" | "submit" | "prepare" | "report";
-type Confirmation = { id: number; message: PlayerText; kind: ConfirmationKind; opener: HTMLElement | null };
+type ConfirmationLabels = { title: PlayerText; action: PlayerText };
+type Confirmation = { id: number; message: PlayerText; kind: ConfirmationKind; opener: HTMLElement | null; labels?: ConfirmationLabels };
 let current: Confirmation | null = null;
 let sequence = 0;
 let settle: ((accepted: boolean) => void) | null = null;
@@ -18,7 +19,7 @@ export function answerConfirmation(id: number, accepted: boolean) {
 export function cancelConfirmation() { settle?.(false); }
 
 /** One decision at a time. Cancellation never authorizes an operation. */
-export function requestConfirmation(message: PlayerText, kind: ConfirmationKind, signal: AbortSignal): Promise<boolean> {
+export function requestConfirmation(message: PlayerText, kind: ConfirmationKind, signal: AbortSignal, labels?: ConfirmationLabels): Promise<boolean> {
   if (signal.aborted || current) return Promise.resolve(false);
   return new Promise(resolve => {
     const abort = () => finish(false);
@@ -31,7 +32,7 @@ export function requestConfirmation(message: PlayerText, kind: ConfirmationKind,
       listeners.forEach(listener => listener());
       resolve(accepted && !signal.aborted);
     }
-    current = { id: ++sequence, message, kind, opener: document.activeElement instanceof HTMLElement ? document.activeElement : null };
+    current = { id: ++sequence, message, kind, opener: document.activeElement instanceof HTMLElement ? document.activeElement : null, labels };
     settle = finish;
     signal.addEventListener("abort", abort, { once: true });
     listeners.forEach(listener => listener());
@@ -45,10 +46,10 @@ export function useConfirmation(scope = "") {
     const controller = new AbortController(); owner.current = controller;
     return () => { controller.abort(); if (owner.current === controller) owner.current = null; };
   }, [scope]);
-  return useCallback(async (message: PlayerText, kind: ConfirmationKind) => {
+  return useCallback(async (message: PlayerText, kind: ConfirmationKind, labels?: ConfirmationLabels) => {
     const controller = owner.current;
     if (!controller) return false;
-    const accepted = await requestConfirmation(message, kind, controller.signal);
+    const accepted = await requestConfirmation(message, kind, controller.signal, labels);
     return accepted && owner.current === controller && !controller.signal.aborted;
   }, []);
 }

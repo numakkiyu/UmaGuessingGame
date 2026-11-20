@@ -1,0 +1,171 @@
+.uma-game-stage.uma-concentration { max-width: 760px; }
+.uma-concentration h1:focus { outline: none; }
+.uma-concentration-time { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; font-size: 13px; color: var(--color-muted); }
+.uma-game-stage.uma-concentration>.uma-concentration-welcome { display: grid; justify-items: center; gap: 22px; text-align: center; padding: clamp(28px,5vw,48px); }
+.uma-concentration-welcome>img { border-radius: 22px; box-shadow: 0 5px 18px #62548314; }
+.uma-concentration-welcome h1 { font-size: clamp(24px,3vw,32px); }
+.uma-concentration-welcome>p { max-width: 42ch; color: var(--color-muted); line-height: 1.9; font-size: 14px; }
+.uma-concentration-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.uma-concentration-tags span { padding: 6px 10px; border-radius: 8px; background: #edf5e5; color: #426432; font-size: 13px; }
+.uma-concentration-player { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: center; gap: 12px; width: 100%; padding-block: 18px; border-block: 1px dashed var(--color-line); overflow-wrap: anywhere; }
+.uma-concentration-player span { color: var(--color-muted); font-size: 13px; }
+.uma-concentration-player strong { font-size: 20px; font-weight: 600; }
+.uma-concentration-game-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.uma-concentration .uma-concentration-game-heading h1 { font-size: 18px; font-weight: 600; }
+.uma-concentration-progress { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; color: var(--color-muted); font-size: 13px; }
+.uma-concentration-progress>span:first-child { font-weight: 600; color: var(--color-action-green); font-size: 14px; font-variant-numeric: tabular-nums; }
+.uma-concentration-progress progress { flex: 0 0 100%; width: 100%; height: 7px; border: 0; border-radius: 6px; background: #e5eddd; accent-color: var(--color-action-green); }
+.uma-concentration-progress progress::-webkit-progress-bar { background: #e5eddd; border-radius: 6px; }
+.uma-concentration-progress progress::-webkit-progress-value { background: #91c45c; border-radius: 6px; transition: width 350ms cubic-bezier(.2,.8,.2,1); }
+.uma-concentration-portrait { position: relative; display: grid; grid-template-rows: minmax(0,1fr); place-items: center; height: 348px; padding: 14px 16px; overflow: hidden; isolation: isolate; border: 4px solid #fff; border-radius: 24px; background: #f4f7f0; box-shadow: 0 3px 0 #e4ebde,0 8px 24px #3751210a; }
+.uma-concentration-portrait-backdrop { position: absolute; inset: -20px; background-size: cover; background-position: 50% 35%; filter: blur(16px); opacity: .18; z-index: -2; }
+.uma-concentration-portrait:after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg,#fff 0%,#ffffff77 18%,transparent 65%); z-index: -1; }
+.uma-concentration-portrait>img { height: 100%; min-height: 0; max-height: 100%; width: 100%; max-width: 100%; object-fit: contain; filter: drop-shadow(0 10px 12px #48553818); animation: concentration-reveal 360ms cubic-bezier(.2,.75,.25,1); }
+.uma-concentration-portrait>[role="alert"] { max-width: 90%; }
+.uma-concentration-form { display: grid; gap: 24px; padding: clamp(20px,4vw,32px); }
+.uma-concentration-form h2 { display: flex; align-items: center; gap: 12px; padding-left: 12px; border-left: 4px solid #81b650; font-size: 17px; font-weight: 600; line-height: 1.5; }
+.uma-concentration-required { display: grid; gap: 12px; }
+.uma-concentration-form label,.uma-concentration-field-label { display: block; color: var(--color-muted); font-size: 13px; font-weight: 400; }
+.uma-concentration-bonus { display: grid; gap: 20px; padding-top: 24px; border-top: 1px solid var(--color-line); }
+.uma-concentration-bonus h2 { border-left-color: #7a9bce; }
+.uma-concentration-bonus h2>span { padding: 3px 8px; border-radius: 7px; background: #f1f5fa; color: #60758e; font-size: 13px; font-weight: 400; }
+.uma-concentration-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px 18px; }
+.uma-concentration-fields>div { display: grid; align-content: start; gap: 8px; min-width: 0; }
+.uma-concentration-fields input { border-color: #a8b9a0; }
+.uma-concentration-birthday { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+.uma-concentration-birthday>div,.uma-concentration-height { position: relative; min-width: 0; }
+.uma-concentration-birthday>div>span,.uma-concentration-height>span { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--color-muted); font-size: 13px; pointer-events: none; }
+.uma-concentration-birthday input { padding-right: 38px; }
+.uma-concentration-height input { padding-right: 44px; }
+.uma-concentration-form>.uma-button { min-height: 50px; white-space: normal; }
+.uma-concentration-form>.uma-concentration-previous { justify-self: center; min-height: 44px; margin-top: -14px; font-size: 13px; }
+.uma-concentration-rules { padding: 18px 22px; }
+.uma-concentration-rules summary { display: flex; align-items: center; gap: 10px; min-height: 44px; cursor: pointer; font-size: 14px; font-weight: 600; }
+.uma-concentration-rules summary:after { content: "+"; margin-left: auto; font-size: 20px; font-weight: 400; }
+.uma-concentration-rules[open] summary:after { content: "−"; }
+.uma-concentration-rules ol { margin-top: 16px; padding-left: 20px; list-style: decimal; display: grid; gap: 12px; color: var(--color-muted); font-size: 13px; line-height: 1.9; }
+/* One result sheet: the award leads, details stay quiet below it. */
+.uma-game-stage>.uma-concentration-result:has(h1) {
+  --result-accent: var(--color-action-green);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-panel-lg);
+  background: var(--color-panel);
+  box-shadow: 0 4px 0 #e5eddf;
+  isolation: isolate;
+}
+.uma-concentration-result-heading { padding: 28px 32px 0; text-align: center; }
+.uma-concentration-result-heading h1 { font-size: clamp(20px,3vw,26px); }
+.uma-concentration-result-player { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 20px; margin-top: 12px; }
+.uma-concentration-result-player>strong { min-width: 0; max-width: 100%; font-size: 15px; font-weight: 500; overflow-wrap: anywhere; }
+.uma-concentration-result-player time { font-variant-numeric: tabular-nums; }
+.uma-concentration-award-stage { position: relative; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,240px) minmax(0,1fr); align-items: center; gap: 16px; padding: 12px 28px 22px; }
+.uma-concentration-award-stage:after { content: ""; position: absolute; inset: auto 10% 10px; height: 1px; background: linear-gradient(90deg,transparent,var(--color-line),transparent); z-index: -1; }
+.uma-concentration-award-art.uma-menu-character-art { position: static; justify-self: center; width: 100%; max-width: 148px; height: 180px; object-fit: contain; opacity: 1; transform: none; pointer-events: none; }
+.uma-concentration-award-art.is-left { grid-column: 1; grid-row: 1; object-position: right bottom; }
+.uma-concentration-award-art.is-right { grid-column: 3; grid-row: 1; object-position: left bottom; }
+.uma-concentration-award { display: grid; grid-column: 2; grid-row: 1; justify-items: center; justify-self: center; gap: 0; min-width: 0; width: 100%; text-align: center; }
+.uma-concentration-rank { --rank-lift: -3%; display: grid; place-items: center; width: min(100%,200px); aspect-ratio: 1; }
+.uma-concentration-rank[data-rank="SSS"] { --rank-lift: -2.35%; }
+.uma-concentration-rank[data-rank="SS"] { --rank-lift: -4.4%; }
+.uma-concentration-rank:is([data-rank="A"],[data-rank="B"],[data-rank="C"]) { --rank-lift: -4%; }
+.uma-concentration-rank>img { display: block; width: 100%; height: 100%; object-fit: contain; transform: translateY(var(--rank-lift)); }
+.uma-concentration-rank>strong { color: var(--color-ink); font-size: 64px; line-height: 1; font-weight: 600; }
+.uma-concentration-value { display: grid; justify-items: center; width: 100%; color: var(--result-accent); }
+.uma-concentration-value>strong { display: grid; grid-template-columns: 26px auto 26px; justify-content: center; align-items: baseline; font-size: 58px; line-height: 1.15; font-weight: 600; font-variant-numeric: tabular-nums; }
+.uma-concentration-value>strong:before { content: ""; }
+.uma-concentration-value small { justify-self: start; margin-left: 3px; font-size: 23px; font-weight: 500; }
+.uma-concentration-value>span:last-child { margin-top: 4px; color: var(--color-muted); font-size: 14px; }
+.uma-concentration-scoreline { padding: 0 28px 22px; }
+.uma-concentration-scoreline>div { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 12px; }
+.uma-concentration-scoreline dt { color: var(--color-muted); font-size: 14px; }
+.uma-concentration-scoreline dd { font-variant-numeric: tabular-nums; }
+.uma-concentration-scoreline strong { font-size: 28px; font-weight: 600; }
+.uma-concentration-scoreline dd>span { font-size: 14px; color: var(--color-muted); }
+.uma-concentration-metrics { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; padding: 24px 32px; border-top: 1px solid var(--color-line); background: var(--color-panel-soft); }
+.uma-concentration-metrics>div { min-width: 0; }
+.uma-concentration-metrics dt { font-size: 13px; color: var(--color-muted); line-height: 1.6; overflow-wrap: anywhere; }
+.uma-concentration-metrics dd { margin: 6px 0 10px; font-size: 24px; font-weight: 600; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.uma-concentration-metrics small { margin-left: 2px; font-size: 13px; font-weight: 400; }
+.uma-concentration-metrics [role="meter"] { height: 6px; border-radius: 3px; background: #e1e9da; overflow: hidden; }
+.uma-concentration-metrics [role="meter"]>span { display: block; height: 100%; transform-origin: left; }
+.uma-concentration-metrics [role="meter"]>span>span { display: block; height: 100%; background: #6e9d48; border-radius: 3px; transform-origin: left; }
+.uma-concentration-result-footer { padding: 24px 32px 12px; }
+.uma-concentration-result-actions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.uma-concentration-result-actions .uma-button { min-height: 48px; height: auto; white-space: normal; }
+.uma-concentration-result-notices { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; min-height: 44px; column-gap: 16px; color: var(--color-muted); font-size: 13px; text-align: center; }
+.uma-concentration-result-notices .uma-button { min-height: 44px; font-size: 13px; }
+.uma-concentration-review>header { margin-bottom: 18px; }
+.uma-concentration-review h2 { font-size: 22px; font-weight: 600; }
+.uma-concentration-review>header>p { margin-top: 8px; color: var(--color-muted); font-size: 14px; line-height: 1.8; }
+.uma-concentration-review-item { margin-bottom: 10px; border: 1px solid var(--color-line); border-radius: var(--radius-card); background: var(--color-panel); }
+.uma-concentration-review-item>summary { display: grid; grid-template-columns: 18px 44px minmax(0,1fr) auto 17px; align-items: center; gap: 14px; padding: 10px 20px; min-height: 80px; cursor: pointer; list-style: none; }
+.uma-concentration-review-item>summary::-webkit-details-marker { display: none; }
+.uma-concentration-review-item>summary:focus-visible { outline: 2px solid var(--color-blue-deep); outline-offset: 3px; border-radius: var(--radius-card); }
+.uma-concentration-review-number { color: var(--color-muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.uma-concentration-review-item>summary>img { width: 44px; height: 58px; object-fit: contain; }
+.uma-concentration-review-item>summary>strong { font-size: 15px; font-weight: 600; overflow-wrap: anywhere; }
+.uma-concentration-review-score { font-size: 19px; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.uma-concentration-review-score small { font-size: 13px; color: var(--color-muted); font-weight: 400; }
+.uma-concentration-review-item>summary>svg { color: var(--color-muted); transition: transform var(--duration-quick) var(--ease-primary); }
+.uma-concentration-review-item[open]>summary>svg { transform: rotate(180deg); }
+.uma-concentration-review-body { padding: 0 20px 8px; }
+.uma-concentration-review-fields { border-top: 1px solid var(--color-line); }
+.uma-concentration-review-fields>div { display: grid; grid-template-columns: minmax(110px,.8fr) minmax(0,2fr); gap: 16px; padding: 16px 12px; border-bottom: 1px solid var(--color-line); }
+.uma-concentration-review-fields>div[data-correct="true"] { background: #f3f8ed; }
+.uma-concentration-review-fields h3 { display: grid; align-content: start; justify-items: start; gap: 6px; font-size: 14px; font-weight: 500; }
+.uma-concentration-field-score { display: inline-flex; align-items: center; gap: 4px; color: var(--color-muted); font-size: 13px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.uma-concentration-review-fields>div[data-correct="true"] .uma-concentration-field-score { color: var(--color-action-green); }
+.uma-concentration-review-fields dl { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; font-size: 14px; line-height: 1.7; }
+.uma-concentration-review-fields dt { margin-bottom: 4px; color: var(--color-muted); font-size: 13px; }
+.uma-concentration-review-fields dd { overflow-wrap: anywhere; }
+.uma-concentration-sources { display: flex; flex-wrap: wrap; gap: 8px 18px; padding-top: 8px; }
+.uma-concentration-sources a { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; color: var(--color-blue-deep); text-decoration: underline; text-underline-offset: 3px; font-size: 13px; }
+/* The real values and actions are present throughout this single reveal. */
+.uma-concentration-result[data-reveal="true"] { animation: concentration-sheet var(--duration-reveal) var(--ease-primary) both; }
+.uma-concentration-result[data-reveal="true"] .uma-concentration-rank { animation: concentration-rank var(--duration-reveal) var(--ease-primary) 160ms both; }
+.uma-concentration-result[data-reveal="true"] .uma-concentration-metrics [role="meter"]>span>span { animation: concentration-meter var(--duration-reveal) var(--ease-primary) both; animation-delay: calc(400ms + var(--metric-index) * 40ms); }
+.uma-concentration-result[data-reveal="true"] .uma-concentration-award-stage:before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg,transparent 36%,#fff8 49%,transparent 62%); animation: concentration-sheen var(--duration-scene) var(--ease-primary) 200ms both; }
+.uma-concentration-review-item[open] .uma-concentration-review-body { animation: concentration-detail var(--duration-standard) var(--ease-primary); }
+@keyframes concentration-sheet { from { transform: translateY(12px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes concentration-rank { from { transform: translateY(6px) scale(.94); opacity: .4; } 75% { transform: translateY(-1px) scale(1.025); opacity: 1; } to { transform: none; opacity: 1; } }
+@keyframes concentration-meter { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes concentration-sheen { from { transform: translateX(-30%); opacity: 0; } 25% { opacity: .7; } to { transform: translateX(30%); opacity: 0; } }
+@keyframes concentration-detail { from { transform: translateY(-3px); opacity: .4; } to { transform: none; opacity: 1; } }
+@keyframes concentration-reveal { from { opacity: 0; transform: translateX(10px) scale(.985); } to { opacity: 1; transform: none; } }
+@media (max-width: 767px) {
+  .uma-concentration-portrait { height: 292px; border-radius: 20px; }
+  .uma-concentration-fields { grid-template-columns: minmax(0,1fr); }
+  .uma-concentration-result-heading { padding: 24px 20px 0; }
+  .uma-concentration-award-stage { grid-template-columns: minmax(0,1fr) minmax(0,156px) minmax(0,1fr); gap: 0; padding: 8px 12px 20px; }
+  .uma-concentration-award-art.uma-menu-character-art { height: 116px; }
+  .uma-concentration-rank { width: 156px; max-width: 100%; }
+  .uma-concentration-rank>strong { font-size: 48px; }
+  .uma-concentration-value>strong { font-size: 48px; }
+  .uma-concentration-metrics { grid-template-columns: minmax(0,1fr); gap: 16px; padding: 22px 20px; }
+  .uma-concentration-metrics>div { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: baseline; gap: 8px 12px; }
+  .uma-concentration-metrics dd { margin: 0; font-size: 20px; }
+  .uma-concentration-metrics [role="meter"] { grid-column: 1/-1; }
+  .uma-concentration-result-footer { padding: 20px 20px 8px; }
+  .uma-concentration-result-actions { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .uma-concentration-review-item>summary { grid-template-columns: 16px 34px minmax(0,1fr) auto 14px; gap: 8px; padding: 10px 12px; }
+  .uma-concentration-review-item>summary>img { width: 34px; height: 50px; }
+  .uma-concentration-review-score { font-size: 17px; }
+  .uma-concentration-review-score small { font-size: 13px; }
+  .uma-concentration-review-body { padding-inline: 12px; }
+  .uma-concentration-review-fields>div { grid-template-columns: minmax(0,1fr); gap: 10px; padding: 14px 10px; }
+  .uma-concentration-review-fields h3 { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; }
+  .uma-concentration-review-fields dl { grid-template-columns: minmax(0,1fr); gap: 10px; }
+}
+@media (max-height: 599px) {
+  .uma-concentration-portrait { height: clamp(160px,42vh,240px); }
+  .uma-concentration-form { gap: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .uma-concentration-portrait>img,.uma-concentration-result[data-reveal="true"],.uma-concentration-result[data-reveal="true"] *,.uma-concentration-result[data-reveal="true"] :before,.uma-concentration-review-item[open] .uma-concentration-review-body { animation: none; }
+  .uma-concentration-progress progress::-webkit-progress-value,.uma-concentration-review-item>summary>svg { transition: none; }
+}
+[data-motion="reduced"] :is(.uma-concentration-portrait>img,.uma-concentration-result,.uma-concentration-result *,.uma-concentration-result :before,.uma-concentration-review-body) { animation: none !important; }
+[data-motion="reduced"] .uma-concentration-review-item>summary>svg { transition: none; }
+[data-motion="reduced"] .uma-concentration-progress progress::-webkit-progress-value { transition: none; }

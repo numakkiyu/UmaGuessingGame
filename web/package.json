@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b --noEmit && vite build",
+    "build": "node scripts/build-concentration.mjs --check && tsc -b --noEmit && vite build",
     "size": "node scripts/check-size.mjs",
     "build:only": "vite build",
     "preview": "vite preview",

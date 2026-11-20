@@ -11,9 +11,11 @@ COPY web/package.json web/pnpm-lock.yaml ./
 RUN corepack enable && pnpm install --frozen-lockfile
 
 COPY web/ ./
-# Type-checking includes the shared rules fixture used by the practice tests.
-# Preserve its repository-relative location; do not copy unrelated datasets.
+# Preserve repository-relative inputs for rule tests and catalog verification.
 COPY data/manual/rules-track.json /data/manual/rules-track.json
+COPY data/manual/concentration-*.json /data/manual/
+COPY data/wiki/v2/characters.json /data/wiki/v2/characters.json
+COPY data/normalized/characters/ /data/normalized/characters/
 RUN pnpm run build
 
 

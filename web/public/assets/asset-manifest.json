@@ -59,6 +59,69 @@
       "sha256": "dda3bd6ce22f973eb9268460087b93e8881addc0d30930a8b523f7ee178ac6d7",
       "copied": true,
       "format": "png"
+    },
+    {
+      "path": "/assets/ui/ranks/sss.webp",
+      "bytes": 42930,
+      "sha256": "8c4f81d7ab91112c707c2656622dd01383fca8fd57d7d1f3b45b8e074418fd24",
+      "format": "webp",
+      "source": "generated/concentration-ranks",
+      "reason": "浓度测试结算评级",
+      "copied": true
+    },
+    {
+      "path": "/assets/ui/ranks/ss.webp",
+      "bytes": 39010,
+      "sha256": "afcb1b2401e8748b890946da49bf52444c2e213aa0ec7bfa6065d6e0f076beda",
+      "format": "webp",
+      "source": "generated/concentration-ranks",
+      "reason": "浓度测试结算评级",
+      "copied": true
+    },
+    {
+      "path": "/assets/ui/ranks/s.webp",
+      "bytes": 40642,
+      "sha256": "708a4bae56a3f3c0f91198cecaacd4514829044063147705cdfbb921437511de",
+      "format": "webp",
+      "source": "generated/concentration-ranks",
+      "reason": "浓度测试结算评级",
+      "copied": true
+    },
+    {
+      "path": "/assets/ui/ranks/a.webp",
+      "bytes": 36318,
+      "sha256": "edacf8b1fd9fe7a92b448f5a1774c6528eec6c9aebd8eee4a75adadd98878ad3",
+      "format": "webp",
+      "source": "generated/concentration-ranks",
+      "reason": "浓度测试结算评级",
+      "copied": true
+    },
+    {
+      "path": "/assets/ui/ranks/b.webp",
+      "bytes": 37936,
+      "sha256": "8aecc98de00f26ca39d68162f8bc7b623abade723370ceb951991745bc777f71",
+      "format": "webp",
+      "source": "generated/concentration-ranks",
+      "reason": "浓度测试结算评级",
+      "copied": true
+    },
+    {
+      "path": "/assets/ui/ranks/c.webp",
+      "bytes": 38348,
+      "sha256": "616607630982efaa0b89927dc122b3558f39764631d39592d08d2b30f4d9c4cf",
+      "format": "webp",
+      "source": "generated/concentration-ranks",
+      "reason": "浓度测试结算评级",
+      "copied": true
+    },
+    {
+      "path": "/assets/ui/ranks/d.webp",
+      "bytes": 32544,
+      "sha256": "bbbaf6dc95e40bc7f622e0e41fb44d118090705ea4d4ded9fc7a0c4ce890215d",
+      "format": "webp",
+      "source": "generated/concentration-ranks",
+      "reason": "浓度测试结算评级",
+      "copied": true
     }
   ]
 }

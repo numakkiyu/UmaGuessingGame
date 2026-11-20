@@ -1,0 +1,3108 @@
+{
+  "retrievedAt": "2026-11-19",
+  "legacyRoster": [
+    "1001",
+    "1002",
+    "1003",
+    "1004",
+    "1005",
+    "1006",
+    "1007",
+    "1008",
+    "1009",
+    "1010",
+    "1011",
+    "1012",
+    "1013",
+    "1014",
+    "1015",
+    "1016",
+    "1017",
+    "1018",
+    "1019",
+    "1020",
+    "1021",
+    "1022",
+    "1023",
+    "1024",
+    "1025",
+    "1026",
+    "1027",
+    "1028",
+    "1029",
+    "1030",
+    "1031",
+    "1032",
+    "1033",
+    "1034",
+    "1035",
+    "1036",
+    "1037",
+    "1038",
+    "1039",
+    "1040",
+    "1041",
+    "1042",
+    "1043",
+    "1044",
+    "1045",
+    "1046",
+    "1047",
+    "1048",
+    "1049",
+    "1050",
+    "1051",
+    "1052",
+    "1053",
+    "1054",
+    "1055",
+    "1056",
+    "1057",
+    "1058",
+    "1059",
+    "1060",
+    "1061",
+    "1062",
+    "1063",
+    "1064",
+    "1065",
+    "1066",
+    "1067",
+    "1068",
+    "1069",
+    "1070",
+    "1071",
+    "1072",
+    "1073",
+    "1074",
+    "1075",
+    "1076",
+    "1077",
+    "1078",
+    "1079",
+    "1080",
+    "1081",
+    "1082",
+    "1083",
+    "1084",
+    "1085",
+    "1086",
+    "1087",
+    "1088",
+    "1089",
+    "1090",
+    "1091",
+    "1093",
+    "1092",
+    "1094",
+    "1095",
+    "1096",
+    "1097",
+    "1098",
+    "1099",
+    "1100",
+    "1101",
+    "1102",
+    "1103",
+    "1104",
+    "1105",
+    "1106",
+    "1107",
+    "1108",
+    "1109",
+    "1110",
+    "1111",
+    "1112",
+    "1113",
+    "1114",
+    "1115",
+    "1116",
+    "1117",
+    "1118",
+    "1119",
+    "1120",
+    "1121",
+    "1124",
+    "1126",
+    "1127",
+    "1128",
+    "1129",
+    "1130",
+    "1131",
+    "1132",
+    "1133",
+    "1134",
+    "1135",
+    "1136"
+  ],
+  "profiles": [
+    {
+      "id": "1001",
+      "official": {
+        "id": "specialweek",
+        "name": "スペシャルウィーク",
+        "en": "Special Week",
+        "cv": "和氣あず未",
+        "birthday": "5月2日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/specialweek",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b83df291000248a193ca9e46a73ded56/specialweek_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b83df291000248a193ca9e46a73ded56/specialweek_01.png",
+        "path": "/assets/ui/standing/fe675fe7aaee830b.webp",
+        "sha256": "6e6a43734de1eb2f2b05b7326d637916525cb59666996d3bb6731f61d0e4b7a0",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1002",
+      "official": {
+        "id": "silencesuzuka",
+        "name": "サイレンススズカ",
+        "en": "Silence Suzuka",
+        "cv": "高野麻里佳",
+        "birthday": "5月1日",
+        "height": "161cm"
+      },
+      "source": "https://umamusume.jp/character/silencesuzuka",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bfa46677912b4228aa244da162f24f6f/silencesuzuka_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bfa46677912b4228aa244da162f24f6f/silencesuzuka_01.png",
+        "path": "/assets/ui/standing/b281bc2c616cb3c3.webp",
+        "sha256": "213fed12564384a4ef9a77056d148840d3e7fad2b59062e2421f15efee3e104e",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1003",
+      "official": {
+        "id": "tokaiteio",
+        "name": "トウカイテイオー",
+        "en": "Tokai Teio",
+        "cv": "Machico",
+        "birthday": "4月20日",
+        "height": "150cm"
+      },
+      "source": "https://umamusume.jp/character/tokaiteio",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6bcecd8749a74a26a91c8882866d803f/tokaiteio_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6bcecd8749a74a26a91c8882866d803f/tokaiteio_01.png",
+        "path": "/assets/ui/standing/8c9a013ab70c0434.webp",
+        "sha256": "8a102bc036b3441ed4a6f7deef7b980f6ffe1bc28746589410bfb83d5234a3dd",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1004",
+      "official": {
+        "id": "maruzensky",
+        "name": "マルゼンスキー",
+        "en": "Maruzensky",
+        "cv": "Lynn",
+        "birthday": "5月19日",
+        "height": "164cm"
+      },
+      "source": "https://umamusume.jp/character/maruzensky",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/818171863b7a438bad3f3f6e1869aa03/maruzensky_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/818171863b7a438bad3f3f6e1869aa03/maruzensky_01.png",
+        "path": "/assets/ui/standing/75992a5ac67ff644.webp",
+        "sha256": "df38156a7d5729d3a1d7ed0604594a3cc0ac9fd87199e2b1ac156010af405bc1",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1005",
+      "official": {
+        "id": "fujikiseki",
+        "name": "フジキセキ",
+        "en": "Fuji Kiseki",
+        "cv": "松井恵理子",
+        "birthday": "4月15日",
+        "height": "168cm"
+      },
+      "source": "https://umamusume.jp/character/fujikiseki",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6cbe2c5632464f1e8faf0c5a23d6f609/fujikiseki_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6cbe2c5632464f1e8faf0c5a23d6f609/fujikiseki_01.png",
+        "path": "/assets/ui/standing/7f861bcee185de00.webp",
+        "sha256": "7bb195b72a0db53848de414a73aa4327700b4ef8cdaf4612c50ec438ca276d79",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1006",
+      "official": {
+        "id": "oguricap",
+        "name": "オグリキャップ",
+        "en": "Oguri Cap",
+        "cv": "高柳知葉",
+        "birthday": "3月27日",
+        "height": "167cm"
+      },
+      "source": "https://umamusume.jp/character/oguricap",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f451f629f5934a59a77d2a6a0a4dfa82/oguricap_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f451f629f5934a59a77d2a6a0a4dfa82/oguricap_01.png",
+        "path": "/assets/ui/standing/478c4ffb1cbcea37.webp",
+        "sha256": "18548c3e3bd488cf087fb3750da83ede73d046415d2223d2caa380551b8ff05b",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1007",
+      "official": {
+        "id": "goldship",
+        "name": "ゴールドシップ",
+        "en": "Gold Ship",
+        "cv": "上田瞳",
+        "birthday": "3月6日",
+        "height": "170cm"
+      },
+      "source": "https://umamusume.jp/character/goldship",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a513a0e8049e46418b6ba9bffb26dcb7/goldship_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a513a0e8049e46418b6ba9bffb26dcb7/goldship_01.png",
+        "path": "/assets/ui/standing/2c8b871e52d4e5f5.webp",
+        "sha256": "b714a59b925268c79c22284acaff1c82390f673e91e8feb4609067666a9691e6",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1008",
+      "official": {
+        "id": "vodka",
+        "name": "ウオッカ",
+        "en": "Vodka",
+        "cv": "大橋彩香",
+        "birthday": "4月4日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/vodka",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ee421eb17fc04847908d7fc70c0c00c9/vodka_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ee421eb17fc04847908d7fc70c0c00c9/vodka_01.png",
+        "path": "/assets/ui/standing/9aaf689fbcdfe9f6.webp",
+        "sha256": "a9380723574682bda11ed2e1d1ffc45dc9d896142e5767c931c5a64ff0b2ae50",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1009",
+      "official": {
+        "id": "daiwascarlet",
+        "name": "ダイワスカーレット",
+        "en": "Daiwa Scarlet",
+        "cv": "木村千咲",
+        "birthday": "5月13日",
+        "height": "163cm"
+      },
+      "source": "https://umamusume.jp/character/daiwascarlet",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7563885352e3494b8341fc497ae21bc4/daiwascarlet_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7563885352e3494b8341fc497ae21bc4/daiwascarlet_01.png",
+        "path": "/assets/ui/standing/6ad4a6b1e5ea5569.webp",
+        "sha256": "c081373a7241c2ca47d4b82fe78b93fc8648f9467ac409a2bee34ec8536419c8",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1010",
+      "official": {
+        "id": "taikishuttle",
+        "name": "タイキシャトル",
+        "en": "Taiki Shuttle",
+        "cv": "大坪由佳",
+        "birthday": "3月23日",
+        "height": "172cm"
+      },
+      "source": "https://umamusume.jp/character/taikishuttle",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/312f1d4bb68a489e9d2ec64aee104f10/taikishuttle_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/312f1d4bb68a489e9d2ec64aee104f10/taikishuttle_01.png",
+        "path": "/assets/ui/standing/7a5df5ffa0dec222.webp",
+        "sha256": "685da2ad2c39bc34855e92f917ee875d9ceabd792e6bbc951662682adb178977",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1011",
+      "official": {
+        "id": "grasswonder",
+        "name": "グラスワンダー",
+        "en": "Grass Wonder",
+        "cv": "前田玲奈",
+        "birthday": "2月18日",
+        "height": "152cm"
+      },
+      "source": "https://umamusume.jp/character/grasswonder",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/3a968740d6d9459d94f16e36ca2c8ec9/grasswonder_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/3a968740d6d9459d94f16e36ca2c8ec9/grasswonder_01.png",
+        "path": "/assets/ui/standing/3dd9c0995d54c0ab.webp",
+        "sha256": "442746e539d180f85997a5a0b86260b5826035f02b8694648fe9c1335a440d54",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1012",
+      "official": {
+        "id": "hishiamazon",
+        "name": "ヒシアマゾン",
+        "en": "Hishi Amazon",
+        "cv": "巽悠衣子",
+        "birthday": "3月26日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/hishiamazon",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/575005fa93fa4c60bd6211a28c5b3a57/hishiamazon_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/575005fa93fa4c60bd6211a28c5b3a57/hishiamazon_01.png",
+        "path": "/assets/ui/standing/165940940a02a187.webp",
+        "sha256": "4d02d74c7f778efa71d05d2928189b7847d46677cc11f2a65fd68d38a21e1727",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1013",
+      "official": {
+        "id": "mejiromcqueen",
+        "name": "メジロマックイーン",
+        "en": "Mejiro McQueen",
+        "cv": "大西沙織",
+        "birthday": "4月3日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/mejiromcqueen",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a67d7f4092af43b4965b99e4f37ec256/mejiromcqueen_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a67d7f4092af43b4965b99e4f37ec256/mejiromcqueen_01.png",
+        "path": "/assets/ui/standing/2ec42bc1f3e672fc.webp",
+        "sha256": "a4a32c2665b8de5eb0e248ec644aa935cd3ffb462f4ed821130ab2ce31fb14f6",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1014",
+      "official": {
+        "id": "elcondorpasa",
+        "name": "エルコンドルパサー",
+        "en": "El Condor Pasa",
+        "cv": "髙橋ミナミ",
+        "birthday": "3月17日",
+        "height": "163cm"
+      },
+      "source": "https://umamusume.jp/character/elcondorpasa",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5e7d88d0e95a4556bf4b08f98a5ab0b9/elcondorpasa_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5e7d88d0e95a4556bf4b08f98a5ab0b9/elcondorpasa_01.png",
+        "path": "/assets/ui/standing/df4865fca1f15916.webp",
+        "sha256": "f55b16d7354c4a2cead3d94dd424b19f4aaf00aba7399ec7083246c17871a0ea",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1015",
+      "official": {
+        "id": "tmoperao",
+        "name": "テイエムオペラオー",
+        "en": "T.M. Opera O",
+        "cv": "徳井青空",
+        "birthday": "3月13日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/tmoperao",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d6c2ec83cea34bcba2fb8098e37f79a3/tmoperao_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d6c2ec83cea34bcba2fb8098e37f79a3/tmoperao_01.png",
+        "path": "/assets/ui/standing/9553627933b214db.webp",
+        "sha256": "b61549ce4ac9147ea5435f0afda7f928376016f08d9bf9a1475e9b72dfb2a9e3",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1016",
+      "official": {
+        "id": "naritabrian",
+        "name": "ナリタブライアン",
+        "en": "Narita Brian",
+        "cv": "衣川里佳",
+        "birthday": "5月3日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/naritabrian",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b91120544d734f40941e5a04ee460865/naritabrian_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b91120544d734f40941e5a04ee460865/naritabrian_01.png",
+        "path": "/assets/ui/standing/ef32cc5c2b7c6209.webp",
+        "sha256": "c3ed256bfa63a2ef5d7c73f608080aee71c16f79ab2222bf365fa40c95e10b5a",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1017",
+      "official": {
+        "id": "symbolirudolf",
+        "name": "シンボリルドルフ",
+        "en": "Symboli Rudolf",
+        "cv": "田所あずさ",
+        "birthday": "3月13日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/symbolirudolf",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/151e07d4c1c7478c9ec60df45aa7d8f4/symbolirudolf_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/151e07d4c1c7478c9ec60df45aa7d8f4/symbolirudolf_01.png",
+        "path": "/assets/ui/standing/b0ab628c9e146218.webp",
+        "sha256": "a7b284cb677f1ef51b056ab04c47de325ccb0d96fd26456bf51451bad1e552f0",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1018",
+      "official": {
+        "id": "airgroove",
+        "name": "エアグルーヴ",
+        "en": "Air Groove",
+        "cv": "青木瑠璃子",
+        "birthday": "4月6日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/airgroove",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/597bf28be6a24fb7b6a17780342d8a3b/airgroove_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/597bf28be6a24fb7b6a17780342d8a3b/airgroove_01.png",
+        "path": "/assets/ui/standing/9989a37538faecc4.webp",
+        "sha256": "a52c5748bb1db932410847ff6b6c0dee5097eaa28abd59278bda658a3a2ac692",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1019",
+      "official": {
+        "id": "agnesdigital",
+        "name": "アグネスデジタル",
+        "en": "Agnes Digital",
+        "cv": "鈴木みのり",
+        "birthday": "5月15日",
+        "height": "143cm"
+      },
+      "source": "https://umamusume.jp/character/agnesdigital",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/14aedf7d79774cb5b3c0abb1cec6aca7/agnesdigital_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/14aedf7d79774cb5b3c0abb1cec6aca7/agnesdigital_01.png",
+        "path": "/assets/ui/standing/61ab550f4c85a975.webp",
+        "sha256": "6619a8ef63bebfbd465fdf70b5c0e672cce26da66eb017c9cc92d94664fa506b",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1020",
+      "official": {
+        "id": "seiunsky",
+        "name": "セイウンスカイ",
+        "en": "Seiun Sky",
+        "cv": "鬼頭明里",
+        "birthday": "4月26日",
+        "height": "155cm"
+      },
+      "source": "https://umamusume.jp/character/seiunsky",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c04ca9b6f2804b4f9e25783796bc5615/seiunsky_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c04ca9b6f2804b4f9e25783796bc5615/seiunsky_01.png",
+        "path": "/assets/ui/standing/f296867839c8befa.webp",
+        "sha256": "46f4eb3618f58db0b114e2f86f2684b25d7078a267afb348191a2c272bf0838e",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1021",
+      "official": {
+        "id": "tamamocross",
+        "name": "タマモクロス",
+        "en": "Tamamo Cross",
+        "cv": "大空直美",
+        "birthday": "5月23日",
+        "height": "140cm"
+      },
+      "source": "https://umamusume.jp/character/tamamocross",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/47327fadbf754099b7cf94d3b9619bb2/tamamocross_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/47327fadbf754099b7cf94d3b9619bb2/tamamocross_01.png",
+        "path": "/assets/ui/standing/cdad86ca9450d1c1.webp",
+        "sha256": "322d989b8ac6b6ab3fc887d7c74ecaca46236c555d3503f089cbc572d0fc902b",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1022",
+      "official": {
+        "id": "finemotion",
+        "name": "ファインモーション",
+        "en": "Fine Motion",
+        "cv": "橋本ちなみ",
+        "birthday": "1月27日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/finemotion",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/101f96d6600a4f99b4b5cbe189b3456d/finemotion_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/101f96d6600a4f99b4b5cbe189b3456d/finemotion_01.png",
+        "path": "/assets/ui/standing/f00f2e7bca65e9f8.webp",
+        "sha256": "450458f2079cebb783cd6f69ba1f9554cd6750fc435976144d8b5206d2cb14d1",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1023",
+      "official": {
+        "id": "biwahayahide",
+        "name": "ビワハヤヒデ",
+        "en": "Biwa Hayahide",
+        "cv": "近藤唯",
+        "birthday": "3月10日",
+        "height": "171cm"
+      },
+      "source": "https://umamusume.jp/character/biwahayahide",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8daf2053d6e847068a500a868df599c7/biwahayahide_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8daf2053d6e847068a500a868df599c7/biwahayahide_01.png",
+        "path": "/assets/ui/standing/6629ddae3736e894.webp",
+        "sha256": "8d9de020b8b91ec31b2f59f80b2bad8636ba054fa58fabe41793b72d8b7c3e0d",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1024",
+      "official": {
+        "id": "mayanotopgun",
+        "name": "マヤノトップガン",
+        "en": "Mayano Top Gun",
+        "cv": "星谷美緒",
+        "birthday": "3月24日",
+        "height": "143cm"
+      },
+      "source": "https://umamusume.jp/character/mayanotopgun",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/dfae1a48395f4fce90a202a6181993f8/mayanotopgun_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/dfae1a48395f4fce90a202a6181993f8/mayanotopgun_01.png",
+        "path": "/assets/ui/standing/e39eef82f61b21e2.webp",
+        "sha256": "d0d6e1f14504a1114884fe5f11731cd5858a630c851335a88187ac60e579f729",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1025",
+      "official": {
+        "id": "manhattancafe",
+        "name": "マンハッタンカフェ",
+        "en": "Manhattan Cafe",
+        "cv": "小倉唯",
+        "birthday": "3月5日",
+        "height": "155cm"
+      },
+      "source": "https://umamusume.jp/character/manhattancafe",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/45765c60f4f541aaa9d8e1dced3e0118/manhattancafe_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/45765c60f4f541aaa9d8e1dced3e0118/manhattancafe_01.png",
+        "path": "/assets/ui/standing/46372791018924b8.webp",
+        "sha256": "55ef5f39b11dc00e5204658ca657ea54e3dd48b760fc64181c9ecf8d9900cc3f",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1026",
+      "official": {
+        "id": "mihonobourbon",
+        "name": "ミホノブルボン",
+        "en": "Mihono Bourbon",
+        "cv": "長谷川育美",
+        "birthday": "4月25日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/mihonobourbon",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ac067b40532b46ab841af508be40cb82/mihonobourbon_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ac067b40532b46ab841af508be40cb82/mihonobourbon_01.png",
+        "path": "/assets/ui/standing/582c0168ba17eac4.webp",
+        "sha256": "0fa8b6fc1afdb28a14d406ac14f89fc11f156a2322aa16eebe71e74b7d5807c7",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1027",
+      "official": {
+        "id": "mejiroryan",
+        "name": "メジロライアン",
+        "en": "Mejiro Ryan",
+        "cv": "土師亜文",
+        "birthday": "4月11日",
+        "height": "163cm"
+      },
+      "source": "https://umamusume.jp/character/mejiroryan",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/13dd0b9e780c4a4ba4c3da34a6e46fc9/mejiroryan_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/13dd0b9e780c4a4ba4c3da34a6e46fc9/mejiroryan_01.png",
+        "path": "/assets/ui/standing/60f256c7ccbc7480.webp",
+        "sha256": "cf8340ce4d5e7508c31279331b7c9bc8a7768051607f08a5be33193ecbdfcc86",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1028",
+      "official": {
+        "id": "hishiakebono",
+        "name": "ヒシアケボノ",
+        "en": "Hishi Akebono",
+        "cv": "松嵜麗",
+        "birthday": "2月27日",
+        "height": "180cm"
+      },
+      "source": "https://umamusume.jp/character/hishiakebono",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/eae88015f23c4709b60ca8cfa2785041/hishiakebono_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/eae88015f23c4709b60ca8cfa2785041/hishiakebono_01.png",
+        "path": "/assets/ui/standing/a73060afb61efe1b.webp",
+        "sha256": "e605794b61fffcb3192b96d138aea606f50199f595c99ba4c5358205e6c35f30",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1029",
+      "official": {
+        "id": "yukinobijin",
+        "name": "ユキノビジン",
+        "en": "Yukino Bijin",
+        "cv": "山本希望",
+        "birthday": "3月10日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/yukinobijin",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d1409c27dc8848d8a8ca14be018022e5/yukinobijin_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d1409c27dc8848d8a8ca14be018022e5/yukinobijin_01.png",
+        "path": "/assets/ui/standing/d9a5223b761c375d.webp",
+        "sha256": "94f6c69fe6714123ab4f9c3d99140785416b78187a72ca7889e4907e22678829",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1030",
+      "official": {
+        "id": "riceshower",
+        "name": "ライスシャワー",
+        "en": "Rice Shower",
+        "cv": "石見舞菜香",
+        "birthday": "3月5日",
+        "height": "145cm"
+      },
+      "source": "https://umamusume.jp/character/riceshower",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6613c28c407243db9019b8e26745e823/riceshower_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6613c28c407243db9019b8e26745e823/riceshower_01.png",
+        "path": "/assets/ui/standing/2f1987bf98c09d2f.webp",
+        "sha256": "79b49a9d93b1329331d478b4779a34119bdbca5f5699927db1b811dd0ffb0e79",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1031",
+      "official": {
+        "id": "inesfujin",
+        "name": "アイネスフウジン",
+        "en": "Ines Fujin",
+        "cv": "長江里加",
+        "birthday": "4月10日",
+        "height": "167cm"
+      },
+      "source": "https://umamusume.jp/character/inesfujin",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6921325f85004f59aafb8077a5273d28/inesfujin_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6921325f85004f59aafb8077a5273d28/inesfujin_01.png",
+        "path": "/assets/ui/standing/3e34b5dc434bcf31.webp",
+        "sha256": "d20858f9f6eff4495793232310596c4215ad43bb30f61a800a925fdae2c100b2",
+        "width": 480,
+        "height": 845
+      },
+      "reviewed": {
+        "cv": [
+          "長江里加",
+          "长江里加"
+        ],
+        "reason": "官网现任声优为長江里加，排除百科中的换任说明及引用标记",
+        "sources": [
+          "https://umamusume.jp/character/inesfujin"
+        ]
+      }
+    },
+    {
+      "id": "1032",
+      "official": {
+        "id": "agnestachyon",
+        "name": "アグネスタキオン",
+        "en": "Agnes Tachyon",
+        "cv": "上坂すみれ",
+        "birthday": "4月13日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/agnestachyon",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c4c78b3ab1db44aaa45854f5d31ba9d3/agnestachyon_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c4c78b3ab1db44aaa45854f5d31ba9d3/agnestachyon_01.png",
+        "path": "/assets/ui/standing/340ab11db8d1a743.webp",
+        "sha256": "cab2d479a4bd6049548bfd8ab1250895cca94b67d995a5cc26ecf39862bb39df",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1033",
+      "official": {
+        "id": "admirevega",
+        "name": "アドマイヤベガ",
+        "en": "Admire Vega",
+        "cv": "咲々木瞳",
+        "birthday": "3月12日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/admirevega",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a1c1c3b232d74b0abe59d2cd18bc9fac/admirevega_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a1c1c3b232d74b0abe59d2cd18bc9fac/admirevega_01.png",
+        "path": "/assets/ui/standing/f8b7291025863577.webp",
+        "sha256": "7121b06c12c7b782b4530e543f6ffdb51e39a59a26bb232ff6a0fff2424b7246",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1034",
+      "official": {
+        "id": "inarione",
+        "name": "イナリワン",
+        "en": "Inari One",
+        "cv": "井上遥乃",
+        "birthday": "5月7日",
+        "height": "139cm"
+      },
+      "source": "https://umamusume.jp/character/inarione",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8d7f0bf8f4ba4774a86f768780e4c328/inarione_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8d7f0bf8f4ba4774a86f768780e4c328/inarione_01.png",
+        "path": "/assets/ui/standing/6719009a76851c4b.webp",
+        "sha256": "2ef57fab932c2e57a299e75304219f787b39a6bf6ffb1369c2fa3f2ddeccb3c3",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1035",
+      "official": {
+        "id": "winningticket",
+        "name": "ウイニングチケット",
+        "en": "Winning Ticket",
+        "cv": "渡部優衣",
+        "birthday": "3月21日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/winningticket",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c2ad02545673465b9e44a6183a8aee85/winningticket_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c2ad02545673465b9e44a6183a8aee85/winningticket_01.png",
+        "path": "/assets/ui/standing/f46733e1619957ff.webp",
+        "sha256": "f7f0547abecabcec6732795baa55a1d12399422c6a899df4a30f6a75bb6ba79b",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1036",
+      "official": {
+        "id": "airshakur",
+        "name": "エアシャカール",
+        "en": "Air Shakur",
+        "cv": "津田美波",
+        "birthday": "2月26日",
+        "height": "168cm"
+      },
+      "source": "https://umamusume.jp/character/airshakur",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ce6aea4462cf4ce4bd1b240d20248a8f/airshakur_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ce6aea4462cf4ce4bd1b240d20248a8f/airshakur_01.png",
+        "path": "/assets/ui/standing/56cc29cee9e859a5.webp",
+        "sha256": "3f624b9efba92b24fba613e8c4a7c408fbdf30b30d6c0f60b689de5530fb63b5",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1037",
+      "official": {
+        "id": "eishinflash",
+        "name": "エイシンフラッシュ",
+        "en": "Eishin Flash",
+        "cv": "藤野彩水",
+        "birthday": "3月27日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/eishinflash",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a12327a6bd624fbe8248ce0b798907bb/eishinflash_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a12327a6bd624fbe8248ce0b798907bb/eishinflash_01.png",
+        "path": "/assets/ui/standing/920c37d6464a8f20.webp",
+        "sha256": "b6fb25587032dc942dfded0bf133325de46c55162f5188a91d8204db3e4cedf8",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1038",
+      "official": {
+        "id": "currenchan",
+        "name": "カレンチャン",
+        "en": "Curren Chan",
+        "cv": "篠原侑",
+        "birthday": "3月31日",
+        "height": "155cm"
+      },
+      "source": "https://umamusume.jp/character/currenchan",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b8f78b609e8b48d4a48e4e6d4a613503/currenchan_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b8f78b609e8b48d4a48e4e6d4a613503/currenchan_01.png",
+        "path": "/assets/ui/standing/0c1c43111448b131.webp",
+        "sha256": "48f122f87f17c50bef578d4346341240af1c2ceb79c3d81f0e77dcdee51d340e",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1039",
+      "official": {
+        "id": "kawakamiprincess",
+        "name": "カワカミプリンセス",
+        "en": "Kawakami Princess",
+        "cv": "高橋花林",
+        "birthday": "6月5日",
+        "height": "154cm"
+      },
+      "source": "https://umamusume.jp/character/kawakamiprincess",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/75cc1a01be9642bb8e808ae0bc12d66b/kawakamiprincess_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/75cc1a01be9642bb8e808ae0bc12d66b/kawakamiprincess_01.png",
+        "path": "/assets/ui/standing/00037f39cf870a1f.webp",
+        "sha256": "dab2a33cfa13eff416745297e6bdcaf4ae762caa6a6c783b6c44806e8188ab2b",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1040",
+      "official": {
+        "id": "goldcity",
+        "name": "ゴールドシチー",
+        "en": "Gold City",
+        "cv": "香坂さき",
+        "birthday": "4月16日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/goldcity",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d4600617e0f745dbac8886dcf69c2bc1/goldcity_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d4600617e0f745dbac8886dcf69c2bc1/goldcity_01.png",
+        "path": "/assets/ui/standing/0d21ae129a64e1d1.webp",
+        "sha256": "30147dfc09bb22ed8870a17b8b37693a56413d8308efe93b7c5ec7543cf4fbb2",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1041",
+      "official": {
+        "id": "sakurabakushino",
+        "name": "サクラバクシンオー",
+        "en": "Sakura Bakushin O",
+        "cv": "三澤紗千香",
+        "birthday": "4月14日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/sakurabakushino",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/47ce82485f1e4befae63f6ec8a34a3af/sakurabakushino_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/47ce82485f1e4befae63f6ec8a34a3af/sakurabakushino_01.png",
+        "path": "/assets/ui/standing/8c6c42f379f08f03.webp",
+        "sha256": "649e0b3ad4204b7030680923f8b2a69e1c7ca7cdeec0ca474c9963e982b66271",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1042",
+      "official": {
+        "id": "seekingthepearl",
+        "name": "シーキングザパール",
+        "en": "Seeking the Pearl",
+        "cv": "福原綾香",
+        "birthday": "4月16日",
+        "height": "168cm"
+      },
+      "source": "https://umamusume.jp/character/seekingthepearl",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c8e9354a84494234a5b8e82a7747b715/seekingthepearl_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c8e9354a84494234a5b8e82a7747b715/seekingthepearl_01.png",
+        "path": "/assets/ui/standing/216da54b5931a6d3.webp",
+        "sha256": "8bec8cf637f10db1cbc911e63b26317890fd93fe1e70f31ad7afbc1506bdd4a5",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1043",
+      "official": {
+        "id": "shinkowindy",
+        "name": "シンコウウインディ",
+        "en": "Shinko Windy",
+        "cv": "高田憂希",
+        "birthday": "4月14日",
+        "height": "152cm"
+      },
+      "source": "https://umamusume.jp/character/shinkowindy",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/481a5fde8def4f48a5929ba4b001af37/shinkowindy_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/481a5fde8def4f48a5929ba4b001af37/shinkowindy_01.png",
+        "path": "/assets/ui/standing/c0aa4a0be7ba2839.webp",
+        "sha256": "010f121d0c4f36c963dd2ae057b0958645efa3179bdeaff4091b58170d411f90",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1044",
+      "official": {
+        "id": "sweeptosho",
+        "name": "スイープトウショウ",
+        "en": "Sweep Tosho",
+        "cv": "杉浦しおり",
+        "birthday": "5月9日",
+        "height": "139cm"
+      },
+      "source": "https://umamusume.jp/character/sweeptosho",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/96d957c17a9843199ded2fd1b7821670/sweeptosho_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/96d957c17a9843199ded2fd1b7821670/sweeptosho_01.png",
+        "path": "/assets/ui/standing/a0a531122de46561.webp",
+        "sha256": "b35519ea4629d9c4ef3c77598f0f144371cc9103615f7df0b56e0e27c455b342",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1045",
+      "official": {
+        "id": "supercreek",
+        "name": "スーパークリーク",
+        "en": "Super Creek",
+        "cv": "優木かな",
+        "birthday": "5月27日",
+        "height": "168cm"
+      },
+      "source": "https://umamusume.jp/character/supercreek",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6d82dbfc03b54c4d8ced45ba6a870e82/supercreek_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6d82dbfc03b54c4d8ced45ba6a870e82/supercreek_01.png",
+        "path": "/assets/ui/standing/40794500a2845c94.webp",
+        "sha256": "64364c932ccaa6526d13019721e0a2875ca2828710e07839c912eddf080c73d2",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1046",
+      "official": {
+        "id": "smartfalcon",
+        "name": "スマートファルコン",
+        "en": "Smart Falcon",
+        "cv": "大和田仁美",
+        "birthday": "4月4日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/smartfalcon",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/da3ea29ab2e3436fbb6cd71c2e8286fb/smartfalcon_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/da3ea29ab2e3436fbb6cd71c2e8286fb/smartfalcon_01.png",
+        "path": "/assets/ui/standing/6db44caad5c968a5.webp",
+        "sha256": "eef70404c34118855849d4415ac2690dbd5ddc1d3bc704cc543c58a8a29939d5",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1047",
+      "official": {
+        "id": "zennorobroy",
+        "name": "ゼンノロブロイ",
+        "en": "Zenno Rob Roy",
+        "cv": "照井春佳",
+        "birthday": "3月27日",
+        "height": "140cm"
+      },
+      "source": "https://umamusume.jp/character/zennorobroy",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/22562302eaa0454d94c757ef06ba088f/zennorobroy_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/22562302eaa0454d94c757ef06ba088f/zennorobroy_01.png",
+        "path": "/assets/ui/standing/025ca19d7b07d7f5.webp",
+        "sha256": "c05f01e3248b00167fb67a5386971455fc6cbcbc315c7884f5de082f83d5d679",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1048",
+      "official": {
+        "id": "tosenjordan",
+        "name": "トーセンジョーダン",
+        "en": "Tosen Jordan",
+        "cv": "鈴木絵理",
+        "birthday": "2月4日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/tosenjordan",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f11210abbe6a47c0bb312b7aeee50b25/tosenjordan_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f11210abbe6a47c0bb312b7aeee50b25/tosenjordan_01.png",
+        "path": "/assets/ui/standing/6d6ae523edc27b23.webp",
+        "sha256": "43edda47d44d1d03def6fc5ba6d4a4f77f0b01ace6fe19ac05e8d3d6306d07f6",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1049",
+      "official": {
+        "id": "nakayamafesta",
+        "name": "ナカヤマフェスタ",
+        "en": "Nakayama Festa",
+        "cv": "下地紫野",
+        "birthday": "4月5日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/nakayamafesta",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/dd9ada0f5a7447a4afaea7297c502abc/nakayamafesta_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/dd9ada0f5a7447a4afaea7297c502abc/nakayamafesta_01.png",
+        "path": "/assets/ui/standing/0c62cc42d6479a69.webp",
+        "sha256": "a47d2a7d71a8737a33843fc04f34d50c5994c955ab4bc2f206caa4c27ff1ec6f",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1050",
+      "official": {
+        "id": "naritataishin",
+        "name": "ナリタタイシン",
+        "en": "Narita Taishin",
+        "cv": "渡部恵子",
+        "birthday": "6月10日",
+        "height": "145cm"
+      },
+      "source": "https://umamusume.jp/character/naritataishin",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/3b797ed3a412464593259a20d8c21c2e/naritataishin_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/3b797ed3a412464593259a20d8c21c2e/naritataishin_01.png",
+        "path": "/assets/ui/standing/ffa6059b954a4602.webp",
+        "sha256": "7a3cc6e84a9102a4e92a92d523312ed0ce11fe7ea47fb86a9ccff48db294daf6",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1051",
+      "official": {
+        "id": "nishinoflower",
+        "name": "ニシノフラワー",
+        "en": "Nishino Flower",
+        "cv": "河井晴菜",
+        "birthday": "4月19日",
+        "height": "135cm"
+      },
+      "source": "https://umamusume.jp/character/nishinoflower",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b098283e2934489ba436e4bf61462359/nishinoflower_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b098283e2934489ba436e4bf61462359/nishinoflower_01.png",
+        "path": "/assets/ui/standing/11382b8de6b4b042.webp",
+        "sha256": "2753717c634289381cf39c1f33b847f88c15ebfc28150018dc5c935e98c94e50",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1052",
+      "official": {
+        "id": "haruurara",
+        "name": "ハルウララ",
+        "en": "Haru Urara",
+        "cv": "首藤志奈",
+        "birthday": "2月27日",
+        "height": "140cm"
+      },
+      "source": "https://umamusume.jp/character/haruurara",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/cd2e152e05ac496bb09e725f17422e39/haruurara_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/cd2e152e05ac496bb09e725f17422e39/haruurara_01.png",
+        "path": "/assets/ui/standing/d8b5e2791d0d1cee.webp",
+        "sha256": "3ebf906b7bb85d856f81da4a2192f02ad0d59096c3f7e472020cdb87653ea115",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1053",
+      "official": {
+        "id": "bamboomemory",
+        "name": "バンブーメモリー",
+        "en": "Bamboo Memory",
+        "cv": "藍原ことみ",
+        "birthday": "5月14日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/bamboomemory",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8cce53c243244db3a7bd181bd983791b/bamboomemory_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8cce53c243244db3a7bd181bd983791b/bamboomemory_01.png",
+        "path": "/assets/ui/standing/285b71922aaa01d8.webp",
+        "sha256": "56f35f552c1de6923d120b35a4dca129a8df0230d697fc192ef5d3c242e9b817",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1054",
+      "official": {
+        "id": "bikopegasus",
+        "name": "ビコーペガサス",
+        "en": "Biko Pegasus",
+        "cv": "田中あいみ",
+        "birthday": "2月8日",
+        "height": "144cm"
+      },
+      "source": "https://umamusume.jp/character/bikopegasus",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/17d036c3260844ad8f63fa8b3ccdb751/bikopegasus_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/17d036c3260844ad8f63fa8b3ccdb751/bikopegasus_01.png",
+        "path": "/assets/ui/standing/7d7179c146d0d6af.webp",
+        "sha256": "03d1955ac960de27caae94dcab475ea7321291283c46691449189e3135971a79",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1055",
+      "official": {
+        "id": "marveloussunday",
+        "name": "マーベラスサンデー",
+        "en": "Marvelous Sunday",
+        "cv": "三宅麻理恵",
+        "birthday": "5月31日",
+        "height": "145cm"
+      },
+      "source": "https://umamusume.jp/character/marveloussunday",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/9d6073e3efb043b6a08bfb778ac4e059/marveloussunday_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/9d6073e3efb043b6a08bfb778ac4e059/marveloussunday_01.png",
+        "path": "/assets/ui/standing/02abf8fa7d9c4db0.webp",
+        "sha256": "01113a7f054cde11f22c8e50f4a94f2e50c6cc0d578bae8dbde63e4816445e87",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1056",
+      "official": {
+        "id": "matikanefukukitaru",
+        "name": "マチカネフクキタル",
+        "en": "Matikanefukukitaru",
+        "cv": "新田ひより",
+        "birthday": "5月22日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/matikanefukukitaru",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d8d03b9466f4459baaa48b728e83dfc2/matikanefukukitaru_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d8d03b9466f4459baaa48b728e83dfc2/matikanefukukitaru_01.png",
+        "path": "/assets/ui/standing/e8c5e943ad4fd9d1.webp",
+        "sha256": "5efed16dc24cf1f440acd1d16c8c064a6c5413d625306da0f53d84e50af48209",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1057",
+      "official": {
+        "id": "mrcb",
+        "name": "ミスターシービー",
+        "en": "Mr. C.B.",
+        "cv": "天海由梨奈",
+        "birthday": "4月7日",
+        "height": "166cm"
+      },
+      "source": "https://umamusume.jp/character/mrcb",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bf003ab69cbb4fc6b84fa0af6842a5ff/mrcb_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bf003ab69cbb4fc6b84fa0af6842a5ff/mrcb_01.png",
+        "path": "/assets/ui/standing/b910260d6ccd1fed.webp",
+        "sha256": "df987190340c5fdf4c9e7d68beffda0f914a080f92655500593f3744f8c75b86",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1058",
+      "official": {
+        "id": "meishodoto",
+        "name": "メイショウドトウ",
+        "en": "Meisho Doto",
+        "cv": "和多田美咲",
+        "birthday": "3月25日",
+        "height": "164cm"
+      },
+      "source": "https://umamusume.jp/character/meishodoto",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d871208fad994db8802db3bd03504e2d/meishodoto_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d871208fad994db8802db3bd03504e2d/meishodoto_01.png",
+        "path": "/assets/ui/standing/fb5316204aa75301.webp",
+        "sha256": "a3171d920b2f410da3dfe9a71815d408e7bc48a0830f4e11b2c1df86f4da6c46",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1059",
+      "official": {
+        "id": "mejirodober",
+        "name": "メジロドーベル",
+        "en": "Mejiro Dober",
+        "cv": "久保田ひかり",
+        "birthday": "5月6日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/mejirodober",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/83e04ec121e44f559c358abac201855a/mejirodober_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/83e04ec121e44f559c358abac201855a/mejirodober_01.png",
+        "path": "/assets/ui/standing/12051e9967d26fab.webp",
+        "sha256": "8c149b910f097ed2f36d37d5a1dd2443435002f2931cc3cee847b6753c7ffe60",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1060",
+      "official": {
+        "id": "nicenature",
+        "name": "ナイスネイチャ",
+        "en": "Nice Nature",
+        "cv": "前田佳織里",
+        "birthday": "4月16日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/nicenature",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c5d3b5f6d4bf4410bd4867a290179286/nicenature_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c5d3b5f6d4bf4410bd4867a290179286/nicenature_01.png",
+        "path": "/assets/ui/standing/8dfd13f437605362.webp",
+        "sha256": "a6de54b9e555999cd18602ca78d1d83478491a61257e1ae5ae764eb0d139f40d",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1061",
+      "official": {
+        "id": "kinghalo",
+        "name": "キングヘイロー",
+        "en": "King Halo",
+        "cv": "佐伯伊織",
+        "birthday": "4月28日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/kinghalo",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/28e742d62e064f848aab335a42e118bd/kinghalo_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/28e742d62e064f848aab335a42e118bd/kinghalo_01.png",
+        "path": "/assets/ui/standing/5d9e09b09389f1e4.webp",
+        "sha256": "80f071f1704b9202e0d251f53178b45e6b24ab35e9b5dcc031da65d012379787",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1062",
+      "official": {
+        "id": "matikanetannhauser",
+        "name": "マチカネタンホイザ",
+        "en": "Matikanetannhauser",
+        "cv": "遠野ひかる",
+        "birthday": "5月7日",
+        "height": "155cm"
+      },
+      "source": "https://umamusume.jp/character/matikanetannhauser",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6618b991e38948639d4a4ce5bf5cfa9b/matikanetannhauser_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6618b991e38948639d4a4ce5bf5cfa9b/matikanetannhauser_01.png",
+        "path": "/assets/ui/standing/ae4def1ecaae8be2.webp",
+        "sha256": "055496fa67131677ba401c65d27d2f149b1f65a9144470efcd1554073afb41c4",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1063",
+      "official": {
+        "id": "ikunodictus",
+        "name": "イクノディクタス",
+        "en": "Ikuno Dictus",
+        "cv": "田澤茉純",
+        "birthday": "4月16日",
+        "height": "163cm"
+      },
+      "source": "https://umamusume.jp/character/ikunodictus",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a731d50919fa4d90adbf762121f20662/ikunodictus_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a731d50919fa4d90adbf762121f20662/ikunodictus_01.png",
+        "path": "/assets/ui/standing/0fe39b99b379952d.webp",
+        "sha256": "0838edd1b2b3c06874778954b88dc398c43d9371146da8b747768c3265db6b7c",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1064",
+      "official": {
+        "id": "mejiropalmer",
+        "name": "メジロパーマー",
+        "en": "Mejiro Palmer",
+        "cv": "のぐちゆり",
+        "birthday": "3月21日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/mejiropalmer",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8dd3cf5a03bb41c3a19375ca00153bd2/mejiropalmer_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8dd3cf5a03bb41c3a19375ca00153bd2/mejiropalmer_01.png",
+        "path": "/assets/ui/standing/0087cf99a4636ebd.webp",
+        "sha256": "ae6968708dc6063994bb95a641891c78fc30b85f2296700c504905f12727b62c",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1065",
+      "official": {
+        "id": "daitakuhelios",
+        "name": "ダイタクヘリオス",
+        "en": "Daitaku Helios",
+        "cv": "山根綺",
+        "birthday": "4月10日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/daitakuhelios",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6bad42d8510341f6b9cc7f3029c92957/daitakuhelios_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6bad42d8510341f6b9cc7f3029c92957/daitakuhelios_01.png",
+        "path": "/assets/ui/standing/4f95c3cf2c7c5bb5.webp",
+        "sha256": "e11ebbb34c6f4ffe3cb459d16fc34adb4f68bbe673d894370934e1373d1a0be4",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1066",
+      "official": {
+        "id": "twinturbo",
+        "name": "ツインターボ",
+        "en": "Twin Turbo",
+        "cv": "花井美春",
+        "birthday": "4月13日",
+        "height": "146cm"
+      },
+      "source": "https://umamusume.jp/character/twinturbo",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/97a44e4e5ec64c4cbfa4965a2f26692a/twinturbo_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/97a44e4e5ec64c4cbfa4965a2f26692a/twinturbo_01.png",
+        "path": "/assets/ui/standing/eab8ff114cc63fd8.webp",
+        "sha256": "8de390443bbc75492099b46c9d8c5c09402878dac3f908d5e466be7321e714e7",
+        "width": 480,
+        "height": 818
+      }
+    },
+    {
+      "id": "1067",
+      "official": {
+        "id": "satonodiamond",
+        "name": "サトノダイヤモンド",
+        "en": "Satono Diamond",
+        "cv": "立花日菜",
+        "birthday": "1月30日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/satonodiamond",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0ab3350bc8e844839654e07ef2fca62d/satonodiamond_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0ab3350bc8e844839654e07ef2fca62d/satonodiamond_01.png",
+        "path": "/assets/ui/standing/f48280c0107726b9.webp",
+        "sha256": "8ad66e86992cdf698075d309b55052351f622816f8d308ce5b23fe9ff12a62c8",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1068",
+      "official": {
+        "id": "kitasanblack",
+        "name": "キタサンブラック",
+        "en": "Kitasan Black",
+        "cv": "矢野妃菜喜",
+        "birthday": "3月10日",
+        "height": "162cm"
+      },
+      "source": "https://umamusume.jp/character/kitasanblack",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/95f1e817ead3483da05b949f24b46fb0/kitasanblack_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/95f1e817ead3483da05b949f24b46fb0/kitasanblack_01.png",
+        "path": "/assets/ui/standing/0f0b82fae280ae9f.webp",
+        "sha256": "0271b8305750745132cea905f2a4b91b7ae0c375ae094d5de6baf5f8f980012e",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1069",
+      "official": {
+        "id": "sakurachiyonoo",
+        "name": "サクラチヨノオー",
+        "en": "Sakura Chiyono O",
+        "cv": "野口瑠璃子",
+        "birthday": "2月19日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/sakurachiyonoo",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5259ee7844ab4d198d5072f85002c0f0/sakurachiyonoo_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5259ee7844ab4d198d5072f85002c0f0/sakurachiyonoo_01.png",
+        "path": "/assets/ui/standing/2ff2a721fab172f1.webp",
+        "sha256": "81ea11b22ca5b9a7930cff673bfacbc6d4dfe5842b07ce9c4ebeafe99b941800",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1070",
+      "official": {
+        "id": "siriussymboli",
+        "name": "シリウスシンボリ",
+        "en": "Sirius Symboli",
+        "cv": "ファイルーズあい",
+        "birthday": "3月26日",
+        "height": "167cm"
+      },
+      "source": "https://umamusume.jp/character/siriussymboli",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/058cbc5392aa4c61bcc838edfab88f86/siriussymboli_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/058cbc5392aa4c61bcc838edfab88f86/siriussymboli_01.png",
+        "path": "/assets/ui/standing/d0f451801443fa14.webp",
+        "sha256": "5531b45e316cc92688bf37076aa950d04dc52fcd7c87ccb9588933a7f5730e57",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1071",
+      "official": {
+        "id": "mejiroardan",
+        "name": "メジロアルダン",
+        "en": "Mejiro Ardan",
+        "cv": "会沢紗弥",
+        "birthday": "3月28日",
+        "height": "162cm"
+      },
+      "source": "https://umamusume.jp/character/mejiroardan",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fc3a5ba0e2ad4a7fa313bd5eed999269/mejiroardan_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fc3a5ba0e2ad4a7fa313bd5eed999269/mejiroardan_01.png",
+        "path": "/assets/ui/standing/34be1021b378c570.webp",
+        "sha256": "f10c74332bedaf192f0f4e95cfa886bcddcceb7343cb96b86932b5aa3bd9e113",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1072",
+      "official": {
+        "id": "yaenomuteki",
+        "name": "ヤエノムテキ",
+        "en": "Yaeno Muteki",
+        "cv": "日原あゆみ",
+        "birthday": "4月11日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/yaenomuteki",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fe669191ca7647849931110cbfab9f96/yaenomuteki_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fe669191ca7647849931110cbfab9f96/yaenomuteki_01.png",
+        "path": "/assets/ui/standing/f8b2f96ed09b16bf.webp",
+        "sha256": "0f5b088569a2cbfd58b2d1496031fd3c1e29d3cba3b255bc64ce17bbb5cb0a4f",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1073",
+      "official": {
+        "id": "tsurumarutsuyoshi",
+        "name": "ツルマルツヨシ",
+        "en": "Tsurumaru Tsuyoshi",
+        "cv": "青山吉能",
+        "birthday": "4月6日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/tsurumarutsuyoshi",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/86929dbbed954b95b8210f59181292c4/tsurumarutsuyoshi_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/86929dbbed954b95b8210f59181292c4/tsurumarutsuyoshi_01.png",
+        "path": "/assets/ui/standing/be1722b1d104ffb2.webp",
+        "sha256": "c06582305ea791b85dcd741bc3eb42a1814201d27b99fdd5dd3f07b05270f391",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1074",
+      "official": {
+        "id": "mejirobright",
+        "name": "メジロブライト",
+        "en": "Mejiro Bright",
+        "cv": "大西綺華",
+        "birthday": "4月19日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/mejirobright",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/95e7c8374b6c4d38a38eafd583772d73/mejirobright_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/95e7c8374b6c4d38a38eafd583772d73/mejirobright_01.png",
+        "path": "/assets/ui/standing/fde3f2e7127f6810.webp",
+        "sha256": "003aa20e5fb78a2dab8f329e7278eab788dc86de948470bff195ca4c9f65a67b",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1075",
+      "official": {
+        "id": "daringtact",
+        "name": "デアリングタクト",
+        "en": "Daring Tact",
+        "cv": "羊宮妃那",
+        "birthday": "4月15日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/daringtact",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c6853e11b4564e028ff649b0984e67ec/daringtact_01_2.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c6853e11b4564e028ff649b0984e67ec/daringtact_01_2.png",
+        "path": "/assets/ui/standing/337b02741a9561b6.webp",
+        "sha256": "3e2495385a367f6b8cec4ec9a75149f66be50870a3198c117c205eabeaa116c7",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1076",
+      "official": {
+        "id": "sakuralaurel",
+        "name": "サクラローレル",
+        "en": "Sakura Laurel",
+        "cv": "真野美月",
+        "birthday": "5月8日",
+        "height": "162cm"
+      },
+      "source": "https://umamusume.jp/character/sakuralaurel",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/14495d70e17b488ea1a98ac2b975ab50/sakuralaurel_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/14495d70e17b488ea1a98ac2b975ab50/sakuralaurel_01.png",
+        "path": "/assets/ui/standing/61dbec1d67afe651.webp",
+        "sha256": "a3f5c5ae74e6385b67beb7cb2f77c1ae97de914aa10133366ec900c82bdee6b6",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1077",
+      "official": {
+        "id": "naritatoproad",
+        "name": "ナリタトップロード",
+        "en": "Narita Top Road",
+        "cv": "中村カンナ",
+        "birthday": "4月4日",
+        "height": "166cm"
+      },
+      "source": "https://umamusume.jp/character/naritatoproad",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7065e47f258b46f18ffb4a1677dab843/naritatoproad_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7065e47f258b46f18ffb4a1677dab843/naritatoproad_01.png",
+        "path": "/assets/ui/standing/bcce03f625c22998.webp",
+        "sha256": "ca2aafb733b0f64132b0ba61b37133fd134e3d0481232fa68af5f2c4c047d249",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1078",
+      "official": {
+        "id": "yamaninzephyr",
+        "name": "ヤマニンゼファー",
+        "en": "Yamanin Zephyr",
+        "cv": "今泉りおな",
+        "birthday": "5月27日",
+        "height": "154cm"
+      },
+      "source": "https://umamusume.jp/character/yamaninzephyr",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a0d8a6a2e39b4c0bb40556755b471f60/yamaninzephyr_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a0d8a6a2e39b4c0bb40556755b471f60/yamaninzephyr_01.png",
+        "path": "/assets/ui/standing/d88c39de46401a31.webp",
+        "sha256": "dbfe3418f1dc7deb4d72a0cb01f8483f97daef0f1e6f870ee47f9f3c62cbbbf0",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1079",
+      "official": {
+        "id": "furioso",
+        "name": "フリオーソ",
+        "en": "Furioso",
+        "cv": "西連寺亜希",
+        "birthday": "5月1日",
+        "height": "161cm"
+      },
+      "source": "https://umamusume.jp/character/furioso",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/57f6d89f9bc24188a8f68434dae22ebb/furioso_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/57f6d89f9bc24188a8f68434dae22ebb/furioso_01.png",
+        "path": "/assets/ui/standing/de2d0a787b335176.webp",
+        "sha256": "afe0d5d2a8ef7d57788da9929e228020dc20fb1e65cfb839cfbcd45230a6e8e6",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1080",
+      "official": {
+        "id": "transcend",
+        "name": "トランセンド",
+        "en": "Transcend",
+        "cv": "塚田悠衣",
+        "birthday": "3月9日",
+        "height": "164cm"
+      },
+      "source": "https://umamusume.jp/character/transcend",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c59987f599934c2592cc8228a75c1b43/transcend_01_3.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c59987f599934c2592cc8228a75c1b43/transcend_01_3.png",
+        "path": "/assets/ui/standing/32eb1a8dafeb0873.webp",
+        "sha256": "03d190b8a1a14ea3a89a8b2245313787d80ec60f6d2eca5331c35ce20457fbea",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1081",
+      "official": {
+        "id": "espoircity",
+        "name": "エスポワールシチー",
+        "en": "Espoir City",
+        "cv": "亜咲花",
+        "birthday": "4月22日",
+        "height": "153cm"
+      },
+      "source": "https://umamusume.jp/character/espoircity",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6434712c24974ac4bf62878175b9e6c5/espoircity_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6434712c24974ac4bf62878175b9e6c5/espoircity_01.png",
+        "path": "/assets/ui/standing/e18037f42fd038fa.webp",
+        "sha256": "58624888071010115c4fc95fce1b97d295004c08a89e262c988f513d1ef066e3",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1082",
+      "official": {
+        "id": "northflight",
+        "name": "ノースフライト",
+        "en": "North Flight",
+        "cv": "指出毬亜",
+        "birthday": "4月12日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/northflight",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/9c691e0cf2c54935bbd07634aa233d14/northflight_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/9c691e0cf2c54935bbd07634aa233d14/northflight_01.png",
+        "path": "/assets/ui/standing/3ef58410b868298f.webp",
+        "sha256": "cf46c2607a19387696a33a7e35b4172094a7b3f280bc8834a1a65136c3fc89ee",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1083",
+      "official": {
+        "id": "symbolikriss",
+        "name": "シンボリクリスエス",
+        "en": "Symboli Kris S",
+        "cv": "春川芽生",
+        "birthday": "1月21日",
+        "height": "170cm"
+      },
+      "source": "https://umamusume.jp/character/symbolikriss",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8f765d3060b14a76aeb20dea062ba5ca/symbolikriss_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8f765d3060b14a76aeb20dea062ba5ca/symbolikriss_01.png",
+        "path": "/assets/ui/standing/1090b9e9eba719a3.webp",
+        "sha256": "0476c66e75b0a2f49220dce9eb44b264489ece569555d2d0572a053a8d286328",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1084",
+      "official": {
+        "id": "taninogimlet",
+        "name": "タニノギムレット",
+        "en": "Tanino Gimlet",
+        "cv": "松岡美里",
+        "birthday": "5月4日",
+        "height": "166cm"
+      },
+      "source": "https://umamusume.jp/character/taninogimlet",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7ed422b4fec947b0b6ae03065c469dc6/taninogimlet_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7ed422b4fec947b0b6ae03065c469dc6/taninogimlet_01.png",
+        "path": "/assets/ui/standing/9fbb55aa1ca6da90.webp",
+        "sha256": "d2a8559a15739c532084dbc19a0ca2568cfd3655e0b90820cfa25d785beca258",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1085",
+      "official": {
+        "id": "daiichiruby",
+        "name": "ダイイチルビー",
+        "en": "Daiichi Ruby",
+        "cv": "礒部花凜",
+        "birthday": "4月15日",
+        "height": "141cm"
+      },
+      "source": "https://umamusume.jp/character/daiichiruby",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c20fa139235a4f58a1d882bfbf319ba8/daiichiruby_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c20fa139235a4f58a1d882bfbf319ba8/daiichiruby_01.png",
+        "path": "/assets/ui/standing/0c0ad5934ba82dd2.webp",
+        "sha256": "79f5efb9c2a5ae98de120c17ae8ff7f06850d623d1e7a6449b60c8e19fdfe5b1",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1086",
+      "official": {
+        "id": "mejiroramonu",
+        "name": "メジロラモーヌ",
+        "en": "Mejiro Ramonu",
+        "cv": "東山奈央",
+        "birthday": "4月9日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/mejiroramonu",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ba1c47c6ade64e58b52d61e37f780bd9/mejiroramonu_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ba1c47c6ade64e58b52d61e37f780bd9/mejiroramonu_01.png",
+        "path": "/assets/ui/standing/084ae23e6996e701.webp",
+        "sha256": "98bef492bd22704397078cfbb4ea0f5a3399111a74ad7df6b1141cb83b161113",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1087",
+      "official": {
+        "id": "astonmachan",
+        "name": "アストンマーチャン",
+        "en": "Aston Machan",
+        "cv": "井上ほの花",
+        "birthday": "3月5日",
+        "height": "152cm"
+      },
+      "source": "https://umamusume.jp/character/astonmachan",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c1de0b8961074cb39b2644b4b42e7249/astonmachan_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c1de0b8961074cb39b2644b4b42e7249/astonmachan_01.png",
+        "path": "/assets/ui/standing/c6d537e112156be1.webp",
+        "sha256": "c50fc4b27848751fb3c633086344dcf023b82afabc618a99c4dad403c3794803",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1088",
+      "official": {
+        "id": "satonocrown",
+        "name": "サトノクラウン",
+        "en": "Satono Crown",
+        "cv": "鈴代紗弓",
+        "birthday": "3月10日",
+        "height": "163cm"
+      },
+      "source": "https://umamusume.jp/character/satonocrown",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/976ce360b8da45c6bf5b2c55cfedd015/satonocrown_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/976ce360b8da45c6bf5b2c55cfedd015/satonocrown_01.png",
+        "path": "/assets/ui/standing/9dacbde326501c9f.webp",
+        "sha256": "86f6393ceb442dce1dcfed1390636aba127cea38e42037ec486317d6c1812bf6",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1089",
+      "official": {
+        "id": "chevalgrand",
+        "name": "シュヴァルグラン",
+        "en": "Cheval Grand",
+        "cv": "夏吉ゆうこ",
+        "birthday": "3月14日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/chevalgrand",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2586e598fc0a4759839b1a8f43957bdb/chevalgrand_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2586e598fc0a4759839b1a8f43957bdb/chevalgrand_01.png",
+        "path": "/assets/ui/standing/8cf04f0d07191f04.webp",
+        "sha256": "59e24429f6b7cf6343f91ab068fad0dfd2ce9b2286a35f5c5b4fc3f942125b02",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1090",
+      "official": {
+        "id": "verxina",
+        "name": "ヴィルシーナ",
+        "en": "Verxina",
+        "cv": "奥野香耶",
+        "birthday": "3月5日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/verxina",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a2b2b24ff9e7432db998df83282c9583/verxina_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a2b2b24ff9e7432db998df83282c9583/verxina_01.png",
+        "path": "/assets/ui/standing/b7768fbb1847758d.webp",
+        "sha256": "7a7869a3e01cf2fe66309e334599f9939e76b470d9e5da31aa01debe8c62fdce",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1091",
+      "official": {
+        "id": "vivlos",
+        "name": "ヴィブロス",
+        "en": "Vivlos",
+        "cv": "伊藤彩沙",
+        "birthday": "4月9日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/vivlos",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a5ccdd75e9e242c1b9302b8a281dfcd6/vivlos_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a5ccdd75e9e242c1b9302b8a281dfcd6/vivlos_01.png",
+        "path": "/assets/ui/standing/11bde34a6593b3da.webp",
+        "sha256": "8c8af39f02e62d5ee593baac887d5a4cc05e0ac359971e7639b00a687199d358",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1092",
+      "official": {
+        "id": "dantsuflame",
+        "name": "ダンツフレーム",
+        "en": "Dantsu Flame",
+        "cv": "福嶋晴菜",
+        "birthday": "4月19日",
+        "height": "163cm"
+      },
+      "source": "https://umamusume.jp/character/dantsuflame",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c5e6c882f4af4c9f99384a131456ed85/dantsuflame_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c5e6c882f4af4c9f99384a131456ed85/dantsuflame_01.png",
+        "path": "/assets/ui/standing/5f302d143dace627.webp",
+        "sha256": "cb6c91e9bc240b875911a0f6e84f9fac8446569b7bdade6d80529bd015b8804f",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1093",
+      "official": {
+        "id": "ksmiracle",
+        "name": "ケイエスミラクル",
+        "en": "K.S.Miracle",
+        "cv": "佐藤日向",
+        "birthday": "3月16日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/ksmiracle",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a9fa26cae4ac4f18a624b6d89f6f645c/k-s-miracle_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a9fa26cae4ac4f18a624b6d89f6f645c/k-s-miracle_01.png",
+        "path": "/assets/ui/standing/1ff7b91c979ea344.webp",
+        "sha256": "03334505a9df677b5c2455925e3c1e5fafb210484557bdc7050ee7ee228107dc",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1094",
+      "official": {
+        "id": "junglepocket",
+        "name": "ジャングルポケット",
+        "en": "Jungle Pocket",
+        "cv": "藤本侑里",
+        "birthday": "5月7日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/junglepocket",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fe765184219342b498ddd1399610e108/junglepocket_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fe765184219342b498ddd1399610e108/junglepocket_01.png",
+        "path": "/assets/ui/standing/f1250af9005fb93c.webp",
+        "sha256": "8e873a1f0890fa5e1bf1c935ecf3fd1613803f28d17175ff066fb439bbbcd752",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1095",
+      "official": {
+        "id": "believe",
+        "name": "ビリーヴ",
+        "en": "Believe",
+        "cv": "秋山実咲",
+        "birthday": "4月26日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/believe",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/cbc254e838f149f0becff8f44cf984cc/believe_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/cbc254e838f149f0becff8f44cf984cc/believe_01.png",
+        "path": "/assets/ui/standing/e0d8014e6e3c51d7.webp",
+        "sha256": "e08b43883a5d49503ed3cf09db608a6ec63d4a62bdfef6fc4199c37421584376",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1096",
+      "official": {
+        "id": "noreason",
+        "name": "ノーリーズン",
+        "en": "No Reason",
+        "cv": "河野ひより",
+        "birthday": "6月4日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/noreason",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c81b10e8d43b454686a5d9ddace5eaa1/noreason_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/c81b10e8d43b454686a5d9ddace5eaa1/noreason_01.png",
+        "path": "/assets/ui/standing/8352dd9eb8b64669.webp",
+        "sha256": "09b21e2ac15a421883da6fbf1c85cc09206d6a464bc1591e63b3db7be4c00f3d",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1097",
+      "official": {
+        "id": "stillinlove",
+        "name": "スティルインラブ",
+        "en": "Still in Love",
+        "cv": "宮下早紀",
+        "birthday": "5月2日",
+        "height": "153cm"
+      },
+      "source": "https://umamusume.jp/character/stillinlove",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4fd066e2f2514aed9a8a0db4bbf90bca/stillinlove_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4fd066e2f2514aed9a8a0db4bbf90bca/stillinlove_01.png",
+        "path": "/assets/ui/standing/235aa062e6372588.webp",
+        "sha256": "4281689245e3e015f9b8b878a2de723f67b63f99c3e2b43be6b5570a3048a71c",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1098",
+      "official": {
+        "id": "copanorickey",
+        "name": "コパノリッキー",
+        "en": "Copano Rickey",
+        "cv": "稲垣好",
+        "birthday": "3月24日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/copanorickey",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ab52e4ba47f141c089303006c14cda51/copanorickey_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ab52e4ba47f141c089303006c14cda51/copanorickey_01.png",
+        "path": "/assets/ui/standing/4aec429ac0bfafdb.webp",
+        "sha256": "1ad938259ff168fac97bd546be5ea718b17756716078f014b45df3477c33c730",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1099",
+      "official": {
+        "id": "hokkotarumae",
+        "name": "ホッコータルマエ",
+        "en": "Hokko Tarumae",
+        "cv": "菊池紗矢香",
+        "birthday": "5月26日",
+        "height": "162cm"
+      },
+      "source": "https://umamusume.jp/character/hokkotarumae",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5ab59f5512744acc8fac9dd8755293c2/hokkotarumae_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5ab59f5512744acc8fac9dd8755293c2/hokkotarumae_01.png",
+        "path": "/assets/ui/standing/330e14d4ae806123.webp",
+        "sha256": "9369ccb07792462697df11f5a291d9ec94ae9d3bb1fa20e26dd6f75d051aa67f",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1100",
+      "official": {
+        "id": "wonderacute",
+        "name": "ワンダーアキュート",
+        "en": "Wonder Acute",
+        "cv": "須藤叶希",
+        "birthday": "3月14日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/wonderacute",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0e3da657432c4ba8b13443833d4885c6/wonderacute_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0e3da657432c4ba8b13443833d4885c6/wonderacute_01.png",
+        "path": "/assets/ui/standing/ab9828ca390581b7.webp",
+        "sha256": "1c4a0b11b10de7e5950bcb28f7db73c1d28232b5843120bf56c4bd7a4e2e74f2",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1101",
+      "official": {
+        "id": "samsonbig",
+        "name": "サムソンビッグ",
+        "en": "Samson Big",
+        "cv": "根本京里",
+        "birthday": "4月14日",
+        "height": "143cm"
+      },
+      "source": "https://umamusume.jp/character/samsonbig",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/67897b4078a74063851597f3afc4aef4/samsonbig_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/67897b4078a74063851597f3afc4aef4/samsonbig_01.png",
+        "path": "/assets/ui/standing/36ab771eba23f49d.webp",
+        "sha256": "968a5741209b3fd3b3287a297f53671f59bfa33c96300806a8ea7fe809de9245",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1102",
+      "official": {
+        "id": "soundsofearth",
+        "name": "サウンズオブアース",
+        "en": "Sounds of Earth",
+        "cv": "MAKIKO",
+        "birthday": "4月12日",
+        "height": "161cm"
+      },
+      "source": "https://umamusume.jp/character/soundsofearth",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b33ce60e64f44c9eaea3085fb1f8b6ac/soundsofearth_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b33ce60e64f44c9eaea3085fb1f8b6ac/soundsofearth_01.png",
+        "path": "/assets/ui/standing/277375b99e186c72.webp",
+        "sha256": "6008e7c82cb22baca1d2d3b8a9172b06e18739e8bbe4cf8816113ab77680f073",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1103",
+      "official": {
+        "id": "royceandroyce",
+        "name": "ロイスアンドロイス",
+        "en": "Royce and Royce",
+        "cv": "田辺留依",
+        "birthday": "3月10日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/royceandroyce",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/9fca2cba57394722b11fd672cbad5a77/royceandroyce_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/9fca2cba57394722b11fd672cbad5a77/royceandroyce_01.png",
+        "path": "/assets/ui/standing/f0d588a225e6e6ba.webp",
+        "sha256": "07dc45e2d45184e777a1cfd4a05cc94624f7610333a4762570a9e5aa262809d3",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1104",
+      "official": {
+        "id": "katsuragiace",
+        "name": "カツラギエース",
+        "en": "Katsuragi Ace",
+        "cv": "藤原夏海",
+        "birthday": "4月24日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/katsuragiace",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f7f6df1b350c4d2ea8dc91e76eef1940/katsuragiace_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f7f6df1b350c4d2ea8dc91e76eef1940/katsuragiace_01.png",
+        "path": "/assets/ui/standing/d74fe97872d8a425.webp",
+        "sha256": "7da37e481766fb99d5d4fc9336e981d46d695261d15c2578ef25c37fe2ff1b1f",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1105",
+      "official": {
+        "id": "neouniverse",
+        "name": "ネオユニヴァース",
+        "en": "Neo Universe",
+        "cv": "白石晴香",
+        "birthday": "5月21日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/neouniverse",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8800d168b0b446c39c9a321c0f4eb36d/neouniverse_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8800d168b0b446c39c9a321c0f4eb36d/neouniverse_01.png",
+        "path": "/assets/ui/standing/47c5fbf51c636da0.webp",
+        "sha256": "e85e621ba7ff00fd75c7b598923e3a267fafdcc1bf8c9f6916a5a14d3606f202",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1106",
+      "official": {
+        "id": "hishimiracle",
+        "name": "ヒシミラクル",
+        "en": "Hishi Miracle",
+        "cv": "春日さくら",
+        "birthday": "3月31日",
+        "height": "156cm"
+      },
+      "source": "https://umamusume.jp/character/hishimiracle",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4e48072ee7bd411dbcffba92127d21b7/hishimiracle_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4e48072ee7bd411dbcffba92127d21b7/hishimiracle_01.png",
+        "path": "/assets/ui/standing/fb7bab9edf08f024.webp",
+        "sha256": "e1131feb0e6408fd48e11e20b36e77c1d5205393ea2bc1c24f573ec22e1c7fca",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1107",
+      "official": {
+        "id": "tapdancecity",
+        "name": "タップダンスシチー",
+        "en": "Tap Dance City",
+        "cv": "篠田みなみ",
+        "birthday": "3月16日",
+        "height": "170cm"
+      },
+      "source": "https://umamusume.jp/character/tapdancecity",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/9ef04805690944f996574fd63713b679/tapdancecity_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/9ef04805690944f996574fd63713b679/tapdancecity_01.png",
+        "path": "/assets/ui/standing/86cb35a822329fe1.webp",
+        "sha256": "3bd0c21443e9a1134d22fea5725b6dc79e29ebaa70482b032afb59c2b05b2374",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1108",
+      "official": {
+        "id": "duramente",
+        "name": "ドゥラメンテ",
+        "en": "Duramente",
+        "cv": "秋奈",
+        "birthday": "3月22日",
+        "height": "166cm"
+      },
+      "source": "https://umamusume.jp/character/duramente",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6390f368fb4840ecae6bd927e53ab7c9/duramente_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6390f368fb4840ecae6bd927e53ab7c9/duramente_01.png",
+        "path": "/assets/ui/standing/737c6b9773fa031b.webp",
+        "sha256": "5bf47ea1ca1abc2a09c9c5fd7eb58566c6bcd1aa23d7f966ffe9d8da18e0fed4",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1109",
+      "official": {
+        "id": "rheinkraft",
+        "name": "ラインクラフト",
+        "en": "Rhein Kraft",
+        "cv": "小島菜々恵",
+        "birthday": "4月4日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/rheinkraft",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5f4d7e880ff94bbd8d37b0e5b2b8b5c6/rheinkraft_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5f4d7e880ff94bbd8d37b0e5b2b8b5c6/rheinkraft_01.png",
+        "path": "/assets/ui/standing/6711597a2bc4e587.webp",
+        "sha256": "3c5c2e5535e909a27307ede5207c7b43c22a3d414af0c7e1ddbbee5236a74379",
+        "width": 480,
+        "height": 846
+      }
+    },
+    {
+      "id": "1110",
+      "official": {
+        "id": "cesario",
+        "name": "シーザリオ",
+        "en": "Cesario",
+        "cv": "佐藤榛夏",
+        "birthday": "3月31日",
+        "height": "167cm"
+      },
+      "source": "https://umamusume.jp/character/cesario",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bb448380e41849778a897c9bbeb212a6/cesario_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bb448380e41849778a897c9bbeb212a6/cesario_01.png",
+        "path": "/assets/ui/standing/055f78940c076303.webp",
+        "sha256": "beeeed65d144f8c4371ef5d22ffa32d1e8ced186edf29ec574141bce2eef24b7",
+        "width": 480,
+        "height": 846
+      }
+    },
+    {
+      "id": "1111",
+      "official": {
+        "id": "airmessiah",
+        "name": "エアメサイア",
+        "en": "Air Messiah",
+        "cv": "根本優奈",
+        "birthday": "2月4日",
+        "height": "162cm"
+      },
+      "source": "https://umamusume.jp/character/airmessiah",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/688780c486b84f74936826cdea9dc3bb/airmessiah_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/688780c486b84f74936826cdea9dc3bb/airmessiah_01.png",
+        "path": "/assets/ui/standing/0ffe1abd1a082153.webp",
+        "sha256": "05a3d00f055f2da49655b8d907e6651041ba67ed914d08293b67c567fa540d47",
+        "width": 480,
+        "height": 846
+      }
+    },
+    {
+      "id": "1112",
+      "official": {
+        "id": "daringheart",
+        "name": "デアリングハート",
+        "en": "Daring Heart",
+        "cv": "希水しお",
+        "birthday": "3月9日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/daringheart",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8d0f42f9f431444282ea753a62d7852e/daringheart_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8d0f42f9f431444282ea753a62d7852e/daringheart_01.png",
+        "path": "/assets/ui/standing/fe91a760983d401d.webp",
+        "sha256": "6fb5d23aca08c279901fad6f1310741f268ee77fb7a0f84fa16e26cb36faf331",
+        "width": 480,
+        "height": 846
+      }
+    },
+    {
+      "id": "1113",
+      "official": {
+        "id": "fusaichipandora",
+        "name": "フサイチパンドラ",
+        "en": "Fusaichi Pandora",
+        "cv": "佳原萌枝",
+        "birthday": "2月27日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/fusaichipandora",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0c4d2e0e7b0e4973b824ccc9d37e28fe/fusaichipandora_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0c4d2e0e7b0e4973b824ccc9d37e28fe/fusaichipandora_01.png",
+        "path": "/assets/ui/standing/b7e307660e1611cb.webp",
+        "sha256": "08c838bf6b33cdcba3a29335a0f7657a28c7f1f3a84f3141da0f8e73dd5abafd",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1114",
+      "official": {
+        "id": "buenavista",
+        "name": "ブエナビスタ",
+        "en": "Buena Vista",
+        "cv": "和泉風花",
+        "birthday": "3月14日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/buenavista",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8f101c720e31473b8801a18e54b3afa3/buenavista_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8f101c720e31473b8801a18e54b3afa3/buenavista_01.png",
+        "path": "/assets/ui/standing/793a84a351bd364d.webp",
+        "sha256": "f5095c516a032833e32e63a92bf92f0f1fd8269dde1d2fcd2ce48f545f002462",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1115",
+      "official": {
+        "id": "orfevre",
+        "name": "オルフェーヴル",
+        "en": "Orfevre",
+        "cv": "日笠陽子",
+        "birthday": "5月14日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/orfevre",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fe1cd487093943248a8351e7d1979d67/orfevre_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/fe1cd487093943248a8351e7d1979d67/orfevre_01.png",
+        "path": "/assets/ui/standing/71af0fdd2e7f62c1.webp",
+        "sha256": "17047fe0e997b6b3dd3038011c8757a1b24bd3af3626481f6b553e9f8272136b",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1116",
+      "official": {
+        "id": "gentildonna",
+        "name": "ジェンティルドンナ",
+        "en": "Gentildonna",
+        "cv": "芹澤優",
+        "birthday": "2月20日",
+        "height": "167cm"
+      },
+      "source": "https://umamusume.jp/character/gentildonna",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/881a726e15d84434a98575f8621caffc/gentildonna_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/881a726e15d84434a98575f8621caffc/gentildonna_01.png",
+        "path": "/assets/ui/standing/10e35e8e93e91e58.webp",
+        "sha256": "bf7800c2f4d896f427b0b5baafa42ce3e6aeb69932cbf6e1a377514e5e92f6b5",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1117",
+      "official": {
+        "id": "winvariation",
+        "name": "ウインバリアシオン",
+        "en": "Win Variation",
+        "cv": "月城日花",
+        "birthday": "4月10日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/winvariation",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5975f3c059dd4a168fa1f0ded5dec00f/winvariation_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5975f3c059dd4a168fa1f0ded5dec00f/winvariation_01.png",
+        "path": "/assets/ui/standing/e1d9ce80c3abd825.webp",
+        "sha256": "37f8aaf59a6691d368a925b10626c884da08c64c20fd5364633a882611cae27e",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1118",
+      "official": {
+        "id": "admiregroove",
+        "name": "アドマイヤグルーヴ",
+        "en": "Admire Groove",
+        "cv": "鈴木日菜",
+        "birthday": "4月30日",
+        "height": "165cm"
+      },
+      "source": "https://umamusume.jp/character/admiregroove",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2d91385722a346988b8f14953e59c5fe/admiregroove_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2d91385722a346988b8f14953e59c5fe/admiregroove_01.png",
+        "path": "/assets/ui/standing/63ecbfa3a1ad34a1.webp",
+        "sha256": "b56b4c07d9730ff925093e5a9b16ba87d819c34024ce5ed4dbee0ea4803c2b06",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1119",
+      "official": {
+        "id": "dreamjourney",
+        "name": "ドリームジャーニー",
+        "en": "Dream Journey",
+        "cv": "吉岡茉祐",
+        "birthday": "2月24日",
+        "height": "144cm"
+      },
+      "source": "https://umamusume.jp/character/dreamjourney",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a9906794762440ae858b253ee233ecc8/dreamjourney_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a9906794762440ae858b253ee233ecc8/dreamjourney_01.png",
+        "path": "/assets/ui/standing/b280279a0ef279d0.webp",
+        "sha256": "63c4927de5a87951b866e5ffd68e2bcf437f335a916a05d59d5e67586951ea71",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1120",
+      "official": {
+        "id": "calstonelighto",
+        "name": "カルストンライトオ",
+        "en": "Calstone Light O",
+        "cv": "望月ゆみこ",
+        "birthday": "5月3日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/calstonelighto",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7a0c73cb22f446e98c28ace27eaf028e/calstonelighto_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7a0c73cb22f446e98c28ace27eaf028e/calstonelighto_01.png",
+        "path": "/assets/ui/standing/829f00a11ddfdebb.webp",
+        "sha256": "c78ceecd7becb1ca8a9816c4d2203e39238890eecd6ae0de064c683b86cc74e9",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1121",
+      "official": {
+        "id": "durandal",
+        "name": "デュランダル",
+        "en": "Durandal",
+        "cv": "野木奏",
+        "birthday": "5月25日",
+        "height": "162cm"
+      },
+      "source": "https://umamusume.jp/character/durandal",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/720bfbd382fb4a61b9ad11889acccbb3/durandal_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/720bfbd382fb4a61b9ad11889acccbb3/durandal_01.png",
+        "path": "/assets/ui/standing/3958de59a1ae60b4.webp",
+        "sha256": "fff37cd684d5e0d99e51ac34772f60f768dcbb7e61e00b0b0772ae0e06fa2d84",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1124",
+      "official": {
+        "id": "bubblegumfellow",
+        "name": "バブルガムフェロー",
+        "en": "Bubble Gum Fellow",
+        "cv": "神谷早矢佳",
+        "birthday": "4月11日",
+        "height": "166cm"
+      },
+      "source": "https://umamusume.jp/character/bubblegumfellow",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f20183bdd3144cc78ae80158a4638b18/bubblegumfellow_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f20183bdd3144cc78ae80158a4638b18/bubblegumfellow_01.png",
+        "path": "/assets/ui/standing/736e537f0f664a3d.webp",
+        "sha256": "3aefc021d48a810b266514972b6dd00671c4e61a53bfedc8eba855151c435d94",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1126",
+      "official": {
+        "id": "sakurachitoseo",
+        "name": "サクラチトセオー",
+        "en": "Sakura Chitose O",
+        "cv": "明智璃子",
+        "birthday": "5月11日",
+        "height": "164cm"
+      },
+      "source": "https://umamusume.jp/character/sakurachitoseo",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/634945162f1c4bae87fda88f55716621/sakurachitoseo_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/634945162f1c4bae87fda88f55716621/sakurachitoseo_01.png",
+        "path": "/assets/ui/standing/5817ae4948371f9b.webp",
+        "sha256": "4efddb3d67e331ec15ba85510bad108949d5edfc03a68582b345aeaeb516ea49",
+        "width": 480,
+        "height": 845
+      },
+      "reviewed": {
+        "chineseNames": [
+          "樱花千岁王",
+          "櫻花千歲王"
+        ],
+        "reason": "サクラチトセオー与サクラチヨノオー为不同角色，排除搜索误配的樱花千代王",
+        "sources": [
+          "https://umamusume.jp/character/sakurachitoseo"
+        ]
+      }
+    },
+    {
+      "id": "1127",
+      "official": {
+        "id": "fenomeno",
+        "name": "フェノーメノ",
+        "en": "Fenomeno",
+        "cv": "日比優理香",
+        "birthday": "4月20日",
+        "height": "171cm"
+      },
+      "source": "https://umamusume.jp/character/fenomeno",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/197e3067b38c47a8b2da86f6d6a0728a/fenomeno_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/197e3067b38c47a8b2da86f6d6a0728a/fenomeno_01.png",
+        "path": "/assets/ui/standing/7377a71607a8dabc.webp",
+        "sha256": "5ce768f61acad5759af31c8502f08c2e59e5325b8aa40b6047d13f12e4f996e5",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1128",
+      "official": {
+        "id": "blastonepiece",
+        "name": "ブラストワンピース",
+        "en": "Blast Onepiece",
+        "cv": "紫月杏朱彩",
+        "birthday": "4月2日",
+        "height": "174cm"
+      },
+      "source": "https://umamusume.jp/character/blastonepiece",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f8fec7fa9def45ec828821d6c8b0ed27/blastonepiece_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/f8fec7fa9def45ec828821d6c8b0ed27/blastonepiece_01.png",
+        "path": "/assets/ui/standing/94c47d91f1bebd7b.webp",
+        "sha256": "87a02dadd59a8de977c32c497353302159393b4011eaa930991883e691b8274f",
+        "width": 480,
+        "height": 802
+      }
+    },
+    {
+      "id": "1129",
+      "official": {
+        "id": "almondeye",
+        "name": "アーモンドアイ",
+        "en": "Almond Eye",
+        "cv": "石原夏織",
+        "birthday": "3月10日",
+        "height": "163cm"
+      },
+      "source": "https://umamusume.jp/character/almondeye",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/79f6294c41e149278d792d6636fecb5d/almondeye_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/79f6294c41e149278d792d6636fecb5d/almondeye_01.png",
+        "path": "/assets/ui/standing/e9ab39f01d431c52.webp",
+        "sha256": "0bca14fdc5639a8e8bb426b41386fd4c01ddf369b32082625145843634e957e3",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1130",
+      "official": {
+        "id": "luckylilac",
+        "name": "ラッキーライラック",
+        "en": "Lucky Lilac",
+        "cv": "中島由貴",
+        "birthday": "4月3日",
+        "height": "162cm"
+      },
+      "source": "https://umamusume.jp/character/luckylilac",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/626d216f287b4a5ba03bdb1791f2d739/luckylilac_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/626d216f287b4a5ba03bdb1791f2d739/luckylilac_01.png",
+        "path": "/assets/ui/standing/78c0781a0697b821.webp",
+        "sha256": "4b13862358987bbee8a861e97d77d3d607855a9fa77526425e70d6c2b423d21c",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1131",
+      "official": {
+        "id": "granalegria",
+        "name": "グランアレグリア",
+        "en": "Gran Alegria",
+        "cv": "夏目妃菜",
+        "birthday": "1月24日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/granalegria",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/22aaeb4acffa41a49ea2e9203d711da5/granalegria_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/22aaeb4acffa41a49ea2e9203d711da5/granalegria_01.png",
+        "path": "/assets/ui/standing/af6b495dd2d7c117.webp",
+        "sha256": "f4601a549b8d7123c935ed77c0ffdc16476c575e3a643704c88b41a95817506a",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1132",
+      "official": {
+        "id": "lovesonlyyou",
+        "name": "ラヴズオンリーユー",
+        "en": "Loves Only You",
+        "cv": "久保田未夢",
+        "birthday": "3月26日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/lovesonlyyou",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d090b2bf1b3d44d38418cd10a39934e1/lovesonlyyou_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d090b2bf1b3d44d38418cd10a39934e1/lovesonlyyou_01.png",
+        "path": "/assets/ui/standing/e754478c35f2708c.webp",
+        "sha256": "e1f89db3354bc7fef0cb0b6a35a43f2408a414ad7aecd36340c3eb1d0d7e0e16",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1133",
+      "official": {
+        "id": "chronogenesis",
+        "name": "クロノジェネシス",
+        "en": "Chrono Genesis",
+        "cv": "真名瀬日和",
+        "birthday": "3月6日",
+        "height": "152cm"
+      },
+      "source": "https://umamusume.jp/character/chronogenesis",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/e0460992f1344a479e29f0f4ac044a14/chronogenesis_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/e0460992f1344a479e29f0f4ac044a14/chronogenesis_01.png",
+        "path": "/assets/ui/standing/7a99d42d79e9bafe.webp",
+        "sha256": "e74319051ab44580032cce1189f3433c00fc6592755359b1250ee09d17cb6210",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1134",
+      "official": {
+        "id": "currenbouquetdor",
+        "name": "カレンブーケドール",
+        "en": "Curren Bouquetd'or",
+        "cv": "小田杏樹",
+        "birthday": "4月23日",
+        "height": "153cm"
+      },
+      "source": "https://umamusume.jp/character/currenbouquetdor",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4975d4060304488a9b30fe63625bb08f/currenbouquetdor_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/4975d4060304488a9b30fe63625bb08f/currenbouquetdor_01.png",
+        "path": "/assets/ui/standing/6cc6eefb674286f7.webp",
+        "sha256": "93e4ca586c75e18bdc3be2e83a019d670b71ec172ddefe0e8d9739b19c04b905",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1135",
+      "official": {
+        "id": "staygold",
+        "name": "ステイゴールド",
+        "en": "Stay Gold",
+        "cv": "松田颯水",
+        "birthday": "3月24日",
+        "height": "142cm"
+      },
+      "source": "https://umamusume.jp/character/staygold",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5fae768d52124d939f3eeedf5e1220c5/staygold_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/5fae768d52124d939f3eeedf5e1220c5/staygold_01.png",
+        "path": "/assets/ui/standing/d7008e68b135c3c7.webp",
+        "sha256": "4a17657594425922b0df7b0f081a2f6a639e0544f82ee225db7da5d57a2a6517",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1136",
+      "official": {
+        "id": "reddesire",
+        "name": "レッドディザイア",
+        "en": "Red Desire",
+        "cv": "関根瞳",
+        "birthday": "4月19日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/reddesire",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ffb7fe4173ae45ea8b1befcd7db223b4/reddesire_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ffb7fe4173ae45ea8b1befcd7db223b4/reddesire_01.png",
+        "path": "/assets/ui/standing/35ca46713cea7233.webp",
+        "sha256": "d1f1b3888641e03a2ea4e7a4e0fa40d4b76e6a09999c3d6e2aba2eeeeca5d872",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1137",
+      "official": {
+        "id": "kiseki",
+        "name": "キセキ",
+        "en": "Kiseki",
+        "cv": "星希成奏",
+        "birthday": "5月13日",
+        "height": "166cm"
+      },
+      "source": "https://umamusume.jp/character/kiseki",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2c06ffa1f24f40f69176710c874e2501/kiseki_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/2c06ffa1f24f40f69176710c874e2501/kiseki_01.png",
+        "path": "/assets/ui/standing/96be21608a6aa9d2.webp",
+        "sha256": "2b3e9fd4add8feefc026634a17a4c9162c07b58606a8b5b3a20f93d08cb8638d",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1138",
+      "official": {
+        "id": "foreveryoung",
+        "name": "フォーエバーヤング",
+        "en": "Forever Young",
+        "cv": "海弓シュリ",
+        "birthday": "2月24日",
+        "height": "167cm"
+      },
+      "source": "https://umamusume.jp/character/foreveryoung",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/708cf648f364469d81b7e80bb378c0b5/foreveryoung_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/708cf648f364469d81b7e80bb378c0b5/foreveryoung_01.png",
+        "path": "/assets/ui/standing/41966e55400c17d8.webp",
+        "sha256": "27a29507fb9f0b9f5133d543f079ba8d6e9f580ceef21c7277f4435fd1fe3071",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1140",
+      "official": {
+        "id": "marchelorraine",
+        "name": "マルシュロレーヌ",
+        "en": "Marche Lorraine",
+        "cv": "近貞月乃",
+        "birthday": "2月4日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/marchelorraine",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/530293256a724890a8884238bf9d4295/marchelorraine_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/530293256a724890a8884238bf9d4295/marchelorraine_01.png",
+        "path": "/assets/ui/standing/bc10b57514d76124.webp",
+        "sha256": "73fa7016085b1f809bfde3b01a8858e00c10ebb81b9211ae32a34bcbe85c70d5",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1141",
+      "official": {
+        "id": "epiphaneia",
+        "name": "エピファネイア",
+        "en": "Epiphaneia",
+        "cv": "千賀光莉",
+        "birthday": "2月11日",
+        "height": "159cm"
+      },
+      "source": "https://umamusume.jp/character/epiphaneia",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6415427d7d47465f9cf8d5d31cbc6a43/epiphaneia_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/6415427d7d47465f9cf8d5d31cbc6a43/epiphaneia_01.png",
+        "path": "/assets/ui/standing/434dbd07bc54f593.webp",
+        "sha256": "825be0df9fda1f7c3a19b3a4141ef1139574ac4bda639655cc0f53b1523b3dfb",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1142",
+      "official": {
+        "id": "logotype",
+        "name": "ロゴタイプ",
+        "en": "Logotype",
+        "cv": "髙橋美空",
+        "birthday": "3月10日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/logotype",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/476a5174e441428389a97f25b51c3b63/logotype_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/476a5174e441428389a97f25b51c3b63/logotype_01.png",
+        "path": "/assets/ui/standing/73401dfc9377b9ed.webp",
+        "sha256": "3415d4625cd553e098e2aea826c2e7aafffdaf2dca0c3e8c21c02358d409fb3a",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1143",
+      "official": {
+        "id": "victoirepisa",
+        "name": "ヴィクトワールピサ",
+        "en": "Victoire Pisa",
+        "cv": "嶋野花",
+        "birthday": "3月31日",
+        "height": "161cm"
+      },
+      "source": "https://umamusume.jp/character/victoirepisa",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b0732ebb951941e490270684307142dc/victoirepisa_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/b0732ebb951941e490270684307142dc/victoirepisa_01.png",
+        "path": "/assets/ui/standing/a183251a8414fd81.webp",
+        "sha256": "3ef24dd3a70c60e773ebad4be45c3b520cb19576789ac6e18beb3dbe16c50d43",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1144",
+      "official": {
+        "id": "rosekingdom",
+        "name": "ローズキングダム",
+        "en": "Rose Kingdom",
+        "cv": "菊池ゆりな",
+        "birthday": "5月10日",
+        "height": "155cm"
+      },
+      "source": "https://umamusume.jp/character/rosekingdom",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8520590863054ce7b95d942050df296b/rosekingdom_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8520590863054ce7b95d942050df296b/rosekingdom_01.png",
+        "path": "/assets/ui/standing/28fdc24c9abb066e.webp",
+        "sha256": "9894f31e15a9033f891823262074a4cb8f39fb0a6500dbc4fa564968adad5ca8",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1145",
+      "official": {
+        "id": "rulership",
+        "name": "ルーラーシップ",
+        "en": "Rulership",
+        "cv": "海野水玉",
+        "birthday": "5月15日",
+        "height": "160cm"
+      },
+      "source": "https://umamusume.jp/character/rulership",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/706397ffa714415ba382102075672284/rulership_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/706397ffa714415ba382102075672284/rulership_01.png",
+        "path": "/assets/ui/standing/a5bef651c8e3fd6c.webp",
+        "sha256": "ddfee9fe53ae6d940812234772fa0ee05b6403cfb7ae70e816e283747ae93421",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1146",
+      "official": {
+        "id": "efforia",
+        "name": "エフフォーリア",
+        "en": "Efforia",
+        "cv": "香里有佐",
+        "birthday": "3月10日",
+        "height": "164cm"
+      },
+      "source": "https://umamusume.jp/character/efforia",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ba860d05635f417b89e735122b64138b/efforia_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ba860d05635f417b89e735122b64138b/efforia_01.png",
+        "path": "/assets/ui/standing/0b36980af5c0346a.webp",
+        "sha256": "f6c37aa394d3ad4d2222622711a0f4597677e13de9476e28522d6711aab65d01",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1148",
+      "official": {
+        "id": "titleholder",
+        "name": "タイトルホルダー",
+        "en": "Titleholder",
+        "cv": "華成結",
+        "birthday": "2月10日",
+        "height": "155cm"
+      },
+      "source": "https://umamusume.jp/character/titleholder",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8ac0c410ad7a420db16a5b805bf05819/titleholder_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8ac0c410ad7a420db16a5b805bf05819/titleholder_01.png",
+        "path": "/assets/ui/standing/542cacae1d41132a.webp",
+        "sha256": "5eff7cce0eea79e3efa07740d1c66fc53c59d461963d9ec36778d4ebf0d86206",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "1149",
+      "official": {
+        "id": "phalaenopsis",
+        "name": "ファレノプシス",
+        "en": "Phalaenopsis",
+        "cv": "浅見春那",
+        "birthday": "4月4日",
+        "height": "151cm"
+      },
+      "source": "https://umamusume.jp/character/phalaenopsis",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/cdd4f4716ab048fc959251f28ed80ced/phalaenopsis_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/cdd4f4716ab048fc959251f28ed80ced/phalaenopsis_01.png",
+        "path": "/assets/ui/standing/3b2252403733f1c1.webp",
+        "sha256": "555af0b3413ebf3c2a4655239bc476cf722e8d0236e309403e9abf7c8c0e8e64",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "mg-ジェニュイン",
+      "official": {
+        "id": "genuine",
+        "name": "ジェニュイン",
+        "en": "Genuine",
+        "cv": "福島美里衣",
+        "birthday": "4月28日",
+        "height": "157cm"
+      },
+      "source": "https://umamusume.jp/character/genuine",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0a9a194156a14806a64bd462f090e0b3/genuine_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/0a9a194156a14806a64bd462f090e0b3/genuine_01.png",
+        "path": "/assets/ui/standing/7bcb71e02abd8a96.webp",
+        "sha256": "d1fb43d969647c1933fff5bdc229637bb51277fa35e79fc82e68a94d8f977023",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "mg-ウインマリリン",
+      "official": {
+        "id": "winmarilyn",
+        "name": "ウインマリリン",
+        "en": "Win Marilyn",
+        "cv": "廣瀬千夏",
+        "birthday": "5月23日",
+        "height": "158cm"
+      },
+      "source": "https://umamusume.jp/character/winmarilyn",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ad0596af8da44b3b884896de2d58c8f3/winmarilyn_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/ad0596af8da44b3b884896de2d58c8f3/winmarilyn_01.png",
+        "path": "/assets/ui/standing/161c5850aaec5f17.webp",
+        "sha256": "6f4c6cc41dbe09e33cc7ccbf71833107ff68868e21fb2f6081467f4ca9e6f918",
+        "width": 480,
+        "height": 845
+      }
+    },
+    {
+      "id": "mg-駿川たづな",
+      "official": {
+        "id": "hayakawatazuna",
+        "name": "駿川たづな",
+        "en": "Hayakawa Tazuna",
+        "cv": "藤井ゆきよ"
+      },
+      "source": "https://umamusume.jp/character/hayakawatazuna",
+      "standing": {
+        "url": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/3a778cbeb7f342d489c98f7d978a68a3/hayakawatazuna_01.png?w=480&fm=webp&q=85",
+        "sourceUrl": "https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/3a778cbeb7f342d489c98f7d978a68a3/hayakawatazuna_01.png",
+        "path": "/assets/ui/standing/c35f3692b70180a7.webp",
+        "sha256": "1bebd41296e8761aea7458135c64db4a2512d5c0488f5613414f6427fd30650b",
+        "width": 480,
+        "height": 845
+      }
+    }
+  ],
+  "compatibleCatalogs": [
+    {
+      "version": "1430926db96589b2",
+      "rosterSha256": "1fb4b1cc9463c39bc81454dbcef0daf5eabde9850b42d2b1bb383d3ecd554c8a"
+    },
+    {
+      "version": "7c15d251fd6fb2b2",
+      "rosterSha256": "1fb4b1cc9463c39bc81454dbcef0daf5eabde9850b42d2b1bb383d3ecd554c8a"
+    }
+  ]
+}

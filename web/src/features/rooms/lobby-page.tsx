@@ -19,6 +19,7 @@ import { anyCanPlay, formEntry, type PlayerForm } from "@/lib/deployment/capabil
 
 
 import { entryTimeKey, friendSeats } from "./mode-entry-details";
+import { ConcentrationModeCard } from "@/features/concentration/concentration-mode-card";
 
 type ModeCategory = "knowledge" | "coop" | "strategy";
 
@@ -113,7 +114,7 @@ export function LobbyPage() {
           )
         ) : null}
 
-        {!modesQuery.isLoading && !configQuery.isLoading && !modesFailure && !configFailure && playableModes.length === 0 ? (
+        {!modesQuery.isLoading && !configQuery.isLoading && !modesFailure && !configFailure && playableModes.length === 0 && form !== "single" ? (
           <EmptyView
             title={t("empty")}
             detail={t("emptyDetail")}
@@ -125,9 +126,10 @@ export function LobbyPage() {
           />
         ) : null}
 
-        {playableModes.length > 0 ? (
+        {playableModes.length > 0 || form === "single" ? (
           <ul className="uma-mode-grid">
             {playableModes.map(mode => <li key={mode.modeId} className="min-w-0"><ModeCard mode={mode} category={CATEGORY_OF[mode.modeId as ModeId] ?? "knowledge"} href={formEntry(configQuery.data, mode.modeId, form)!} form={form} instanceLimit={configQuery.data?.maxRoomMembers ?? 0} /></li>)}
+            {form === "single" ? <li className="min-w-0"><ConcentrationModeCard /></li> : null}
           </ul>
         ) : null}
       </section>

@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import "@/styles/gameplay.css";
 
 const companions: Readonly<Record<string, readonly string[]>> = {
+  concentration: ["ikuno-notes", "specialweek-quiz", "nature-thinking"],
   classic: ["nature-thinking", "tannhauser-cheer", "teio-cheer", "urara-cheer"],
   memory: ["helios-cards", "mayano-memory", "rice-cards"],
   "aptitude-grid": ["ikuno-notes", "oguri-grid", "specialweek-quiz"],
