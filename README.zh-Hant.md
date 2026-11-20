@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-7753a3?style=flat-square" alt="MIT"></a>
-<a href="docs/zh-Hant/玩法与规则.md"><img src="https://img.shields.io/badge/Modes-14%20open%20%2F%2015%20engines-609570?style=flat-square" alt="14 open modes / 15 engines"></a>
+<a href="docs/zh-Hant/玩法与规则.md"><img src="https://img.shields.io/badge/Modes-15%20available-609570?style=flat-square" alt="15 available modes"></a>
 <img src="https://img.shields.io/badge/Languages-zh--Hans%20%2F%20zh--Hant%20%2F%20ja-5583a1?style=flat-square" alt="简体中文 / 繁體中文 / 日本語">
 <a href="docs/zh-Hant/快速开始.md"><img src="https://img.shields.io/badge/PC%20%26%20Mobile-Responsive-bb7a61?style=flat-square" alt="PC and mobile"></a>
 </p>
@@ -28,6 +28,8 @@
 <a id="play"></a>
 
 ## 玩法圖鑑
+
+[賽馬娘濃度測試](docs/zh-Hant/玩法与规则.md#賽馬娘濃度測試)看全身立繪辨認角色，每局隨機 20 位，填寫名字與角色資料，交卷後查看評級與逐題答案
 
 目前題庫開放 14 項，「假檔案發表會」仍在核對事實題。站點可分別設定玩法與遊玩方式
 

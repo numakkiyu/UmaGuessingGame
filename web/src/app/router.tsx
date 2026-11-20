@@ -19,6 +19,7 @@ import { NotFoundPage } from "./not-found";
 const ClassicPlayPage = lazyWithRecovery(() =>
   import("@/features/practice/practice-start-page").then((m) => ({ default: m.PracticeStartPage })),
 );
+const ConcentrationPage = lazyWithRecovery(() => import("@/features/concentration/concentration-page").then(m => ({ default: m.ConcentrationPage })));
 const ChallengeGamePage = lazyWithRecovery(() =>
   import("@/features/challenges/challenge-game-page").then(m => ({default:m.ChallengeGamePage})),
 );
@@ -109,7 +110,7 @@ function SessionBoundary({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
   const { restoreSession } = useApi();
   useEffect(() => {
-    if (!/^\/(practice(?:\/|$)|play\/(?:classic|sort|memory|aptitude-grid|draft|race-rebuild|co-race-path|strategy-race|pedigree|audio)(?:\/(?:online|verified))?\/?$)/.test(pathname)) {
+    if (!/^\/(practice(?:\/|$)|play\/(?:concentration|classic|sort|memory|aptitude-grid|draft|race-rebuild|co-race-path|strategy-race|pedigree|audio)(?:\/(?:online|verified))?\/?$)/.test(pathname)) {
       // A failed recovery must never silently create a replacement identity.
       // Online actions retry explicitly through ensureSession.
       void restoreSession?.().catch(() => undefined);
@@ -142,6 +143,7 @@ export const routes: RouteObject[] = [
 
 
       { path: "play/classic", element: withSuspense(<ClassicPlayPage />) },
+      { path: "play/concentration", element: withSuspense(<ConcentrationPage />) },
       { path: "practice", element: withSuspense(<ClassicPlayPage />) },
       { path: "practice/:gameId", element: withSuspense(<PracticeGamePage />) },
       { path: "play/classic/verified", element: <Navigate replace to="/play/classic" /> },

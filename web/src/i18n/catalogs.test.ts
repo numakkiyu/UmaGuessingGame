@@ -29,6 +29,19 @@ it("all registered catalogs have nonempty translations and matching interpolatio
   }
 });
 
+it("fixed interface paragraphs omit final full stops while character quotations keep their punctuation", () => {
+  const violations: string[] = [];
+  for (const lng of LANGUAGES) {
+    for (const [namespace, resource] of Object.entries(i18n.services.resourceStore.data[lng]!)) {
+      for (const [key, text] of Object.entries(leaves(resource))) {
+        if (namespace === "stage" && key.endsWith(".quote")) continue;
+        if (/。\s*$/.test(text)) violations.push(`${lng}:${namespace}:${key}`);
+      }
+    }
+  }
+  expect(violations).toEqual([]);
+});
+
 it("rule explanations retain real text limits and emoji counting caveats in every locale", () => {
   for (const lng of LANGUAGES) {
     expect(modeRules[lng].bluff.rules.join(" ")).toMatch(/2[–～]40/);

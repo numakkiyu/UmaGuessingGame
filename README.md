@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-7753a3?style=flat-square" alt="MIT"></a>
-<a href="docs/玩法与规则.md"><img src="https://img.shields.io/badge/Modes-14%20open%20%2F%2015%20engines-609570?style=flat-square" alt="14 open modes / 15 engines"></a>
+<a href="docs/玩法与规则.md"><img src="https://img.shields.io/badge/Modes-15%20available-609570?style=flat-square" alt="15 available modes"></a>
 <img src="https://img.shields.io/badge/Languages-zh--Hans%20%2F%20zh--Hant%20%2F%20ja-5583a1?style=flat-square" alt="简体中文 / 繁體中文 / 日本語">
 <a href="docs/快速开始.md"><img src="https://img.shields.io/badge/PC%20%26%20Mobile-Responsive-bb7a61?style=flat-square" alt="PC and mobile"></a>
 </p>
@@ -28,6 +28,8 @@
 <a id="play"></a>
 
 ## 玩法图鉴
+
+[马娘浓度测试](docs/玩法与规则.md#马娘浓度测试)按全身立绘辨认角色，每局随机 20 位，填写名字与角色资料，交卷后查看评级和逐题答案
 
 当前内容包开放 14 项玩法，「假档案发布会」的事实题仍在核对。站点可分别配置各玩法与游玩方式
 

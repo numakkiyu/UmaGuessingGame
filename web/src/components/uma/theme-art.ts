@@ -18,7 +18,7 @@ export function pageScene(path: string): string {
   if (/^\/matchmaking(?:\/|$)/.test(path)) return "/assets/ui/backgrounds/stage.webp";
   if (/^\/help(?:\/|$)/.test(path)) return "/assets/ui/scenes/results-riverside.jpg";
   if (/^\/sources(?:\/|$)/.test(path)) return "/assets/ui/backgrounds/academy.webp";
-  if (/^\/(play|practice)\/(classic|sort|pedigree|race-rebuild|audio)/.test(path)) return "/assets/ui/scenes/lobby-classroom.jpg";
+  if (/^\/(play|practice)\/(concentration|classic|sort|pedigree|race-rebuild|audio)/.test(path)) return "/assets/ui/scenes/lobby-classroom.jpg";
   if (/^\/(play|practice|challenges)(\/|$)/.test(path)) return "/assets/ui/backgrounds/academy.webp";
   return "/assets/ui/backgrounds/training-course.webp";
 }

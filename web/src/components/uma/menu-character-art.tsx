@@ -2,6 +2,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const modeArtwork: Readonly<Record<string, string>> = {
+  concentration: "ikuno-notes",
   classic: "specialweek-quiz", memory: "mayano-memory", "aptitude-grid": "oguri-grid",
   "race-rebuild": "mcqueen-order", sort: "opera-sort", "co-race-path": "rice-path",
   "strategy-race": "turbo-start", draft: "falcon-dance", pedigree: "rice-cards",
